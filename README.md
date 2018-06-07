@@ -1,2 +1,2 @@
 # resess.github.io
-This is the repository used to host the supplementary materials for papers. 
+Welcome to ReSeSS GitHub page.
