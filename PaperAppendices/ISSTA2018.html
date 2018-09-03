@@ -75,7 +75,7 @@ This website provides supplementary materials for the paper <a href="https://dl.
  <h2>Expected results</h2>
   
   <div>
-  <p>This section contains (1) the full list of benchmarks (from DroidBench and ICCBench) that we use in our study, (2) target criteria of each application, and (3) the ground truth we follow, determined by the list of sources/sinks and tool configurations we use.<br/>
+  <p>This section contains (1) the full list of benchmarks (from DroidBench and ICCBench) that we use in our study, (2) target criterion of each application, and (3) the ground truth we follow, determined by the list of sources/sinks and tool configurations we use.<br/>
 
 
   There are seven columns in the table. Here we explain every column and provide suggestions to the readers about how to read the table:<br/></p>
@@ -84,7 +84,7 @@ This website provides supplementary materials for the paper <a href="https://dl.
   <li><b>Category:</b> In DroidBench and ICCBench, authors put benchmarks to different folders based on what aspect of Android/Java the benchmark is designed to test. We extracted the folder name as categories, and numbered them</li>
   <li><b>AppID:</b> We numbered all benchmarks in DroidBench we use, from 1 to 109, obeying the order of "Category". The same to ICCBench benchmarks.</li>
   <li><b>AppName:</b> The name of the benchmark, which are extracted from DroidBench and ICCBench testsuites</li>
-  <li><b>TargetCriteriaID</b> and <b>TargetCriteriaDesciption:</b> Each of the DroidBench and ICCBench application is designed to test a particular aspect of taint analysis, which we refer to as the <i>Target Criteria</i> (short as <i>Criteria</i>) of the benchmark. Developers generally annotate the <i>criteria</i> in source code. We extract this information from DroidBench and ICCBench applications annotations, which is the column <i>"CriteriaDesciption"</i>. For easy reference, we number each criteria in the format [Test Suite Name][Category ID][subid of application inside this category], for example, if we look at the first row, "DB1.1" means the criteria <i>"Aliases must be computed precisely or a false positive will be found."</i> is tested by the first benchmark "Merge1" in the first category "Aliasing" in DroidBench test suite. </li>
+  <li><b>TargetCriteriaID</b> and <b>TargetCriteriaDesciption:</b> Each of the DroidBench and ICCBench application is designed to test a particular aspect of taint analysis, which we refer to as the <i>Target Criterion</i> (short as <i>Criterion</i>) of the benchmark. Developers generally annotate the <i>criterion</i> in source code. We extract this information from DroidBench and ICCBench applications annotations, which is the column <i>"CriteriaDesciption"</i>. For easy reference, we number each criterion in the format [Test Suite Name][Category ID][subid of application inside this category], for example, if we look at the first row, "DB1.1" means the criterion <i>"Aliases must be computed precisely or a false positive will be found."</i> is tested by the first benchmark "Merge1" in the first category "Aliasing" in DroidBench test suite. </li>
   <li><b>Number of designer's expected flow(s):</b> In DroidBench and ICCBench, developers annotated the number of expected leaks, which are what we extracted to this column.</li>
   <li><b>Number of our expected flow(s):</b> With our selection of sources, sinks, and configuration parameters discussed in previous subsections, the expected flows for each benchmark application might deviate from the result annotated by the benchmark designers. We thus manually analyzed each of the benchmark applications, extracting all flows expected under our configuration setup.</li>
 </ul>
@@ -2921,8 +2921,8 @@ The table consists of two main parts, which are:
 
 Let's take the benchmark <i>67.ActivityCommunication2</i> as an example, what we can learn from the table is:
 <ul> 
-<li><i>FlowDroid+IccTA</i> reported 1 FP due to criteria <b>DB2.2</b>, and 1 FN due to criteria <b>N5</b>. Details about the two criterion can be found in table <a href="#ExpectedResults"><i>Expected results</i></a>.
-<li> <i>AmanDroid</i> reported 2 FPs. One FP is due to criteria <b>DB8.2</b>, which is expected, and antoher FP is due to criteria <b>DB6.1</b>, which is unexpected.</li>
+<li><i>FlowDroid+IccTA</i> reported 1 FP due to criterion <b>DB8.2</b>. Details about the criterion can be found in table <a href="#ExpectedResults"><i>Expected results</i></a>.
+<li> <i>AmanDroid</i> reported 2 FPs. One FP is due to criterion <b>DB8.2</b>, which is expected, and antoher FP is due to criterion <b>DB6.1</b>, which is unexpected.</li>
 <li> <i>DroidSafe</i> successfully handled the benchmark, with no FP nor FN.</li>
 </ul>
 <br>
