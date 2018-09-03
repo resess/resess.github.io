@@ -2240,12 +2240,12 @@ td
 <a name="NewGoals"></a> 
 <h2>New sources of failures we identified during manualling analyzing results reported by tools</h2>
 
-When manually looking into results reported by the tools, we observed that for all studied tools, in 40 DroidBench applications (out of 109), and 17 ICCBench applications (out of 24), failures occurs for reasons different from any original target criterion covered by all benchmarks. We further identified these failure scenarios that were not covered by existing benchmark applications, and summarized all new criterion attributing to failures in the table below. <br/><br/>
+When manually looking into results reported by the tools, we observed that for all studied tools, in 40 DroidBench applications (out of 109), and 17 ICCBench applications (out of 24), failures occurs for reasons different from any original target criteria covered by all benchmarks. We further identified these failure scenarios that were not covered by existing benchmark applications, and summarized all new criteria attributing to failures in the table below. <br/><br/>
 
 The table has two columns, which are: <br/>
 <ul>
-  <li><b>CriteriaID:</b> All new goals we identified are indexed in the format <i>UBC*</i>, from <i>UBC1</i> to <i>UBC4</i>; <i>UN</i> indicates cases where there is an excpetion and analysis fails, or the reason for the failure is unknown. </li>
-  <li><b>CriteriaDescription:</b> This describe the details about newly found criterion.</li>
+  <li><b>CriteriaID:</b> All new criteria we identified are indexed in the format <i>UBC*</i>, from <i>UBC1</i> to <i>UBC4</i>; <i>UN</i> indicates cases where there is an excpetion and analysis fails, or the reason for the failure is unknown. </li>
+  <li><b>CriteriaDescription:</b> This describe the details about newly found criteria.</li>
 </ul>
 
 
@@ -2856,24 +2856,24 @@ td
 -->
 </style>
 
-<table border=0 cellpadding=0 cellspacing=0 width=562 style='border-collapse:
- collapse;table-layout:fixed;width:562pt'>
+<table border=0 cellpadding=0 cellspacing=0 width=600 style='border-collapse:
+ collapse;table-layout:fixed;width:600pt'>
  <col width=65 style='width:65pt'>
- <col width=497 style='mso-width-source:userset;mso-width-alt:21205;width:497pt'>
+ <col width=535 style='mso-width-source:userset;mso-width-alt:21205;width:497pt'>
  <tr height=20 style='mso-height-source:userset;height:20.0pt'>
   <td height=20 class=xl108 width=65 style='height:20.0pt;width:65pt'>CriteriaID</td>
-  <td class=xl108 width=497 style='border-left:none;width:497pt'>CriteriaDescription</td>
+  <td class=xl108 width=535 style='border-left:none;width:535'>CriteriaDescription</td>
  </tr>
  <tr height=15 style='height:15.0pt'>
   <td height=15 class=xl65 style='height:15.0pt;border-top:none'>UBC1</td>
   <td class=xl67 style='border-top:none;border-left:none'>Handle taint
   propagation through setHint() and getHint() methods of Android widgets
-  [IccTA, AmanDroid].</td>
+  [FlowDroid+IccTA, AmanDroid].</td>
  </tr>
  <tr height=15 style='height:15.0pt'>
   <td height=15 class=xl65 style='height:15.0pt;border-top:none'>UBC2</td>
   <td class=xl67 style='border-top:none;border-left:none'>Detect flows from
-  location-related sources to sinks. [AmanDroid].</td>
+  location-related sources to sinks [AmanDroid].</td>
  </tr>
  <tr height=15 style='height:15.0pt'>
   <td height=15 class=xl65 style='height:15.0pt;border-top:none'>UBC3</td>
@@ -2889,12 +2889,12 @@ td
   <td rowspan=2 height=30 class=xl79 style='border-bottom:.5pt solid black;
   height:30.0pt;border-top:none'>UN</td>
   <td class=xl67 style='border-top:none;border-left:none'>Fail to detect flow
-  due to unknown reasons [IccTA, AmanDroid, DroidSafe].</td>
+  due to unknown reasons [FlowDroid+IccTA, AmanDroid, DroidSafe].</td>
  </tr>
  <tr height=15 style='height:15.0pt'>
   <td height=15 class=xl67 style='height:15.0pt;border-top:none;border-left:
   none'>Tool is crushed with exceptions (NullPointerException, etc.) during
-  analysis [IccTA].</td>
+  analysis [FlowDroid+IccTA].</td>
  </tr>
 </table>
 
