@@ -56,7 +56,7 @@
 
        body {
             /* background: #f2f2f2; */
-            
+
             padding-bottom: 0px !important;
         }
 
@@ -71,7 +71,7 @@
             line-height: 1.58;
             letter-spacing: -.003em;
         }
-    
+
         a:link {
             color: blue;
         }
@@ -259,15 +259,11 @@
             <p style="font-size:18px">Organize contents of your research paper into the followings latex files(.tex):</p>
             <ul>
                 <li>paper.text </li>
-                <div class="a">
-                    This file should contain the title of your paper, the headers, and inclusion of the files that you
+                <ul><li>This file should contain the title of your paper, the headers, and inclusion of the files that you
                     need for your paper (as
-                    below).
-                </div>
+                    below).</li></ul>
                 <li>macro.tex </li>
-                <div class="a">
-                    This file should contain all packages, commands, etc. (just copy from the template)
-                </div>
+                <ul><li>This file should contain all packages, commands, etc. (just copy from the template)</li></ul>
                 <li>abstract.tex </li>
                 <li>intro.tex </li>
                 <li>background.tex </li>
@@ -276,17 +272,22 @@
                 <li>related.tex </li>
                 <li>conclusion.tex </li>
                 <li>00.bib </li>
-                <div class="a">
-                    This file should contain the references to research papers, journals, etc.
-                </div>
+                <ul>
+                  <li>This file should contain the references to research papers, journals, etc. Bibtex entries of the references should be in this format: <b><i>last:names:of:all:authors:venue:year</i></b>.</li>
+                  <li>For exmaple, <a href="https://dl.acm.org/citation.cfm?id=2594390">this</a> paper should be referenced as:</li>
+                  <div class="a">
+                    <i><b>@InProceedings{Hao:Liu:Nath:Halfond:Govindan:MobiSys:2013,<br />
+                      ...<br />
+                    }</b></i><br/>
+                  </div>
+                </ul>
                 <li>Make file </li>
-                <div class="a">
+                <ul><li>
                     A make file to build the latex package (just copy from the template). Please refer to
                     <a href="Research_Paper_Template.zip">Research paper template</a>. Run "make" before you commit and
                     make sure you paper compiles every time
                     you commit.
-                </div>
-
+                </li></ul>
             </ul>
             <p style="font-size:18px">
                 Note- Please start each sentence in new line in latex files for better reviewability
