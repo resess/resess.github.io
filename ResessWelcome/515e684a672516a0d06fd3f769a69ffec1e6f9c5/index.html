@@ -228,6 +228,34 @@
                 </li>
             </ul>
 
+            <h3>Remote Execution on Zeus</h3>
+            <ul>
+                <li>Two options:
+                    <ul>
+                        <li>GNU Screen</li>
+                        <li>Tmux</li>
+                    </ul>
+                </li>
+                <li>GNU Screen
+                    <ul>
+                        <li>Start screen: screen</li>
+                        <li>Detach screen: CTRL-A-D</li>
+                        <li>Re-attach latest screen: screen -r</li>
+                        <li>Re-attach screen by ID: screen -r [ID]</li>
+                        <li>List screen sessions: screen -ls</li>
+                    </ul>
+                </li>
+                <li>Tmux
+                    <ul>
+                        <li>Start tmux session: tmux new -s [TAG_NAME]</li>
+                        <li>Access existing tmux by ID: tmux a [ID]</li>
+                        <li>Access existing tmux by tag name: tmux a -t [TAG_NAME]</li>
+                        <li>List tmux sessions: tmux ls</li>
+                        <li>Kill tmux session: tmux kill-session -t [TAG_NAME]</li>
+                    </ul>
+                </li>
+            </ul>
+
 
             <h3>Meeting minutes and research notes </h3>
             <ul>
