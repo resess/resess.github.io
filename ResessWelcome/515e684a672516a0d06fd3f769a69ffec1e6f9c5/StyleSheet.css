@@ -1,0 +1,106 @@
+/* .navbar-brand {
+transform: translateX(-50%);
+left: 50%;
+position: absolute;
+} */
+/*h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #f2f2f2;
+    margin: 0px;
+}*/
+
+.wrapper {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.left-align {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    /* background: #f2f2f2; */
+}
+
+.footer {
+    margin-top: 10px;
+    text-align: center;
+    bottom: 0px;
+    color: black;
+    background-color: F8F8F8;
+    padding: 10px;
+    float: left;
+    width: 100%;
+}
+
+div.a {
+    margin-left: 50px;
+}
+
+.header {
+    text-align: center;
+    padding: 25px;
+}
+
+body {
+    /* background: #f2f2f2; */
+
+    padding-bottom: 0px !important;
+}
+
+/*        .wrapper ul{
+    padding-left: 0px;
+}*/
+
+ul li {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+}
+
+a:link {
+    color: blue;
+}
+
+.logo-plus-button-plus-icon {
+    font-family: Arial;
+    background-color: #4285f4;
+    background-image: url(https://calendar.google.com/googlecalendar/images/logo-plus.png);
+    background-position: center;
+    width: 18px;
+    height: 18px;
+}
+
+
+
+
+/* experiemnt */
+
+
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
