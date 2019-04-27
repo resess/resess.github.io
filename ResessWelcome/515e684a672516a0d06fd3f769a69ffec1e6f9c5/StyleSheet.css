@@ -77,26 +77,21 @@ a:link {
 
 
 .category{
-  background-color: #777;
-  color: white;
   text-align: left;
-  padding: 18px;
-
 }
+
 
 
 /* for collapsible elements */
 
 .collapsible {
-  /*background-color: #777;*/
-  /*color: white;*/
+  padding: 10px;
   cursor: pointer;
-  padding: 12px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .active, .collapsible:hover {
@@ -105,7 +100,7 @@ a:link {
 }
 
 .collapsible:after {
-  content: '\002B';
+  content: "\002B";
   /*color: white;*/
   font-weight: bold;
   float: right;
@@ -122,5 +117,4 @@ a:link {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
-  font-size:;
 }
