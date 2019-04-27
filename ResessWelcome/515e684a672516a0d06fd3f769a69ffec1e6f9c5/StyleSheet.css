@@ -76,31 +76,51 @@ a:link {
 }
 
 
-
-
-/* experiemnt */
-
-
-
-.collapsible {
+.category{
   background-color: #777;
   color: white;
-  cursor: pointer;
+  text-align: left;
   padding: 18px;
+
+}
+
+
+/* for collapsible elements */
+
+.collapsible {
+  /*background-color: #777;*/
+  /*color: white;*/
+  cursor: pointer;
+  padding: 12px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 22px;
 }
 
 .active, .collapsible:hover {
-  background-color: #555;
+  /*background-color: #777;*/
+  font-weight:bold;
+}
+
+.collapsible:after {
+  content: '\002B';
+  /*color: white;*/
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
 }
 
 .content {
   padding: 0 18px;
-  display: none;
+  max-height: 0;
   overflow: hidden;
+  transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
+  font-size:;
 }
