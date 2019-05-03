@@ -63,7 +63,7 @@ ul li {
 }
 
 a:link {
-    color: blue;
+    /*color: blue;*/
 }
 
 .logo-plus-button-plus-icon {
@@ -92,10 +92,11 @@ a:link {
   text-align: left;
   outline: none;
   font-size: 20px;
+  background-color: #FFF;
 }
 
 .active, .collapsible:hover {
-  /*background-color: #777;*/
+  background-color: #DDD;
   font-weight:bold;
 }
 
