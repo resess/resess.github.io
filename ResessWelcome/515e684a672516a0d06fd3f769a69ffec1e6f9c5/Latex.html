@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Writing Mistakes</title>
+    <!-- link to main stylesheet -->
+    <!--  <link rel="stylesheet" type="text/css" href="/css/main.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <style type="text/css">
+        /*h1 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #f2f2f2;
+            margin: 0px;
+        }*/
+
+        .wrapper {
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        .left-align {
+            float: left;
+            width: 100%;
+            margin-top: 20px;
+            /*  background: #f2f2f2; */
+        }
+
+
+        div.a {
+            margin-left: 50px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .footer {
+            margin-top: 10px;
+            text-align: center;
+            bottom: 0px;
+            color: black;
+            background-color: F8F8F8;
+            padding: 10px;
+            float: left;
+            width: 100%;
+        }
+
+        body {
+            padding-bottom: 0px !important;
+        }
+
+        /*        .wrapper ul{
+            padding-left: 0px;
+        }*/
+
+        /* ul li ol {
+            font-weight: 400;
+            font-style: normal;
+            font-size: 18px;
+            line-height: 1.58;
+            letter-spacing: -.003em;
+        } */
+
+        .nav a{
+            font-size: 18px !important;
+        }
+        .list {
+            font-size: 18px;
+        }
+        a:link {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#"><span class="mb-0 h1">ReSSeS Lab's Internal Page</span></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarNavDropdown" class="navbar-collapse collapse">
+                    <ul class="navbar-nav mr-auto"></ul>
+
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"> <a class="nav-link" href="index.html">Getting Started</a>
+                        </li>
+                        <li class="nav-item active "> <a class="nav-link" href="#">Writing Mistakes<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="wrapper">
+            <h1 class="header">Organize Contents of Research Paper in LaTex Files</h1>
+            <div class="left-align">
+                <p style="font-size:22px">Organize contents of your research paper into the followings latex files(.tex):</p>
+                <div class="list">
+                <ul>
+                    <li>paper.text </li>
+                    <ul><li>This file should contain the title of your paper, the headers, and inclusion of the files that you
+                        need for your paper (as
+                        below).</li></ul>
+                    <li>macro.tex </li>
+                    <ul><li>This file should contain all packages, commands, etc. (just copy from the template)</li></ul>
+                    <li>abstract.tex </li>
+                    <li>intro.tex </li>
+                    <li>background.tex </li>
+                    <li>approach.tex</li>
+                    <li>results.tex </li>
+                    <li>related.tex </li>
+                    <li>conclusion.tex </li>
+                    <li>00.bib </li>
+                    <ul>
+                      <li>This file should contain the references to research papers, journals, etc. Bibtex entries of the references should be in this format: <b><i>last:names:of:all:authors:venue:year</i></b>.</li>
+                      <li>For exmaple, <a href="https://dl.acm.org/citation.cfm?id=2594390">this</a> paper should be referenced as:</li>
+                      <div class="a">
+                        <i><b>@InProceedings{Hao:Liu:Nath:Halfond:Govindan:MobiSys:2013,<br />
+                          ...<br />
+                        }</b></i><br/>
+                      </div>
+                    </ul>
+                    <li>Make file </li>
+                    <ul><li>
+                        A make file to build the latex package (just copy from the template). Please refer to
+                        <a href="Research_Paper_Template.zip">Research paper template</a>. Run "make" before you commit and
+                        make sure you paper compiles every time
+                        you commit.
+                    </li></ul>
+                </ul>
+                <p style="font-size:18px">
+                    Note- Please start each sentence in new line in latex files for better reviewability
+                </p>
+                <p style="font-size:18px">Latex reference materials</p>
+                <ul>
+                    <li>
+                        <a href="https://en.wikibooks.org/wiki/LaTeX">https://en.wikibooks.org/wiki/LaTeX</a>
+                    </li>
+                    <li>
+                        <a href="https://www2.cs.duke.edu/courses/fall03/cps260/notes/lshort.pdf">https://www2.cs.duke.edu/courses/fall03/cps260/notes/lshort.pdf</a>
+                    </li>
+                    <li>
+                        <a href="http://www.andy-roberts.net/writing/latex">http://www.andy-roberts.net/writing/latex</a>
+                    </li>
+                </ul>
+        
+
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+        <!--  <footer class="footer">
+            <div class="container">
+                <span class="text-muted">ReSeSS Lab - 4095, Fred Kaiser Building, UBC</span>
+            </div>
+        </footer> -->
+</body>
+
+</html>
