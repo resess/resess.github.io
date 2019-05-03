@@ -95,7 +95,7 @@ a:link {
   background-color: #FFF;
 }
 
-.active, .collapsible:hover {
+.active2, .collapsible:hover {
   background-color: #DDD;
   font-weight:bold;
 }
@@ -108,7 +108,7 @@ a:link {
   margin-left: 5px;
 }
 
-.active:after {
+.active2:after {
   content: "\2212";
 }
 

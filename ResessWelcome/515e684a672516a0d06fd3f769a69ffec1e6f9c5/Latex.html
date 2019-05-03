@@ -33,7 +33,10 @@
 
 
         div.a {
-            margin-left: 50px;
+            margin-left: 35px;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: bold;
         }
 
         .header {
@@ -94,10 +97,9 @@
                     <ul class="navbar-nav mr-auto"></ul>
 
                     <ul class="nav navbar-nav">
-                        <li class="nav-item"> <a class="nav-link" href="index.html">Getting Started</a>
-                        </li>
-                        <li class="nav-item active "> <a class="nav-link" href="#">Writing Mistakes<span class="sr-only">(current)</span></a>
-                        </li>
+                        <li class="nav-item "> <a class="nav-link" href="index.html">Getting Started</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="WritingMistakes.html">Writing Mistakes</a> </li>
+                        <li class="nav-item active"> <a class="nav-link" href="#">LaTeX<span class="sr-only">(current)</span></a></li>
                     </ul>
                 </div>
                 </div>
@@ -105,17 +107,19 @@
         </header>
 
         <div class="wrapper">
-            <h1 class="header">Organize Contents of Research Paper in LaTex Files</h1>
+            <h1 class="header" style="font-size:38px">Organize Contents of a Research Paper in LaTeX Files</h1>
             <div class="left-align">
                 <p style="font-size:22px">Organize contents of your research paper into the followings latex files(.tex):</p>
                 <div class="list">
                 <ul>
-                    <li>paper.text </li>
-                    <ul><li>This file should contain the title of your paper, the headers, and inclusion of the files that you
-                        need for your paper (as
-                        below).</li></ul>
+                    <li>paper.tex </li>
+                    <ul>
+                        <li>This file should contain the title of your paper, the headers, and inclusion of the files that you need for your paper (as below).</li>
+                    </ul>
                     <li>macro.tex </li>
-                    <ul><li>This file should contain all packages, commands, etc. (just copy from the template)</li></ul>
+                    <ul>
+                        <li>This file should contain all packages, commands, etc. (just copy from the template).</li>
+                    </ul>
                     <li>abstract.tex </li>
                     <li>intro.tex </li>
                     <li>background.tex </li>
@@ -125,26 +129,89 @@
                     <li>conclusion.tex </li>
                     <li>00.bib </li>
                     <ul>
-                      <li>This file should contain the references to research papers, journals, etc. Bibtex entries of the references should be in this format: <b><i>last:names:of:all:authors:venue:year</i></b>.</li>
-                      <li>For exmaple, <a href="https://dl.acm.org/citation.cfm?id=2594390">this</a> paper should be referenced as:</li>
+                      <li>This file should contain the references to research papers, journals, etc. </li>
+                      <li>Bibtex entries of the references should be in this format: <b><i>last:names:of:all:authors:venue:year</i></b>.</li>
+                      <li>All paper titles should be in title case. The title should be surrounded with "<i><b>{{}}</i></b>", to preserve the title capitalization.</li>
+                      <li><a href="https://dl.acm.org/citation.cfm?id=2594390">Conference papers</a> should be referenced as:</li>
                       <div class="a">
-                        <i><b>@InProceedings{Hao:Liu:Nath:Halfond:Govindan:MobiSys:2013,<br />
-                          ...<br />
-                        }</b></i><br/>
+                        @InProceedings{Hao:Liu:Nath:Halfond:Govindan:MobiSys:2013,<br />
+                            author = {Shuai Hao and Bin Liu and Suman Nath and William G.J. Halfond and Ramesh Govindan}, <br />
+                            title = {{PUMA: Programmable UI-Automation for Large-Scale Dynamic Analysis of Mobile Apps}}, <br />
+                            booktitle = {Proc. of the 12th Annual International Conference on Mobile Systems, Applications, and Services (MobiSys)},<br />
+                            year = {2014},<br />
+                            pages = {204--217}<br />
+                        }<br />
                       </div>
+
+                      
+                      <li><a href="https://ieeexplore.ieee.org/abstract/document/7843626">Journal papers</a> should be referenced as:</li>
+                      <div class="a">
+                        @article{Li:Zhu:Rubin:Chechik:TSE:2018, <br />
+                        author={Yi Li and Chenguang Zhu and Julia Rubin and Marsha Chechik}, <br />
+                        title={{Semantic Slicing of Software Version Histories}}, <br />
+                        journal={IEEE Transactions on Software Engineering (TSE)}, <br />
+                        year={2018}, <br />
+                        volume={44}, <br />
+                        number={2}, <br />
+                        pages={182--201}<br />
+                        }<br />
+                      </div>
+
+                      <li><a href="https://books.google.ca/books?hl=en&lr=&id=fGNvCgAAQBAJ&oi=fnd&pg=PR5&dq=The+Practice+of+Social+Research&ots=3SsUINibSc&sig=Z5-TVY6O6soUkCOCo4zowhslcQc&redir_esc=y#v=onepage&q=The%20Practice%20of%20Social%20Research&f=false">Books</a> should be referenced as:</li>
+                      <div class="a">
+                        @book{Babbie:book:2015,<br />
+                        author={Earl Babbie},<br />
+                        title={{The Practice of Social Research}},<br />
+                        year={2015},<br />
+                        publisher={Nelson Education}<br />
+                        }<br />
+                      </div>
+
+                      <li><a href="ftp://ftp.cs.washington.edu/tr/2010/03/UW-CSE-10-03-01.PDF">Technical reports</a> should be referenced as:</li>
+                      <div class="a">
+                        @techreport{Brun:Holmes:Ernst:Notkin:TechReport:2010,<br />
+                        author = {Yuriy Brun and Reid Holmes and Michael D. Ernst and David Notkin},<br />
+                        title = {{Speculative Identification of Merge Conflicts and Non-Conflicts}},<br />
+                        year = {2010},<br />
+                        institution = {University of Washington},<br />
+                        number = {UW-CSE-10-03-01}<br />
+                        }<br />
+                      </div>
+
+                      <li><a href="https://istio.io">Tools</a> should be referenced as:</li>
+                      <div class="a">
+                        @misc{istio,<br />
+                        author={},<br />
+                        title = {{Istio: Connect, Secure, Control, and Observe Services}},<br />
+                        howpublished = {\url{https://istio.io/}},<br />
+                        year={2019},<br />
+                        note = {(Last accessed: May 2019)}<br />
+                        }<br />
+                      </div>
+
+
+                      <li><a href="https://martinfowler.com/articles/microservices.html">URLs</a> should be referenced as:</li>
+                      <div class="a">
+                        @misc{Lewis:Fowler:url:2014,<br />
+                        author={James Lewis, Martin Fowler},<br />
+                        title = {{Microservices: A Definition of This New Architectural Term}},<br />
+                        howpublished = {\url{https://www.martinfowler.com/articles/microservices.html}},<br />
+                        year={2014},<br />
+                        note = {(Last accessed: May 2019)}<br />
+                        }<br />
+                      </div>
+
                     </ul>
                     <li>Make file </li>
                     <ul><li>
                         A make file to build the latex package (just copy from the template). Please refer to
-                        <a href="Research_Paper_Template.zip">Research paper template</a>. Run "make" before you commit and
-                        make sure you paper compiles every time
-                        you commit.
+                        <a href="Research_Paper_Template.zip">research paper template</a>. Run "make" before you commit and make sure you paper compiles every time you commit.
                     </li></ul>
                 </ul>
-                <p style="font-size:18px">
+                <p style="font-size:22px">
                     Note- Please start each sentence in new line in latex files for better reviewability
                 </p>
-                <p style="font-size:18px">Latex reference materials</p>
+                <p style="font-size:22px">Latex reference materials</p>
                 <ul>
                     <li>
                         <a href="https://en.wikibooks.org/wiki/LaTeX">https://en.wikibooks.org/wiki/LaTeX</a>
