@@ -55,6 +55,7 @@ java [options] -jar /path/to/soot-infoflow-cmd-jar-with-dependencies.jar -a /pat
 #### Frequently-used Arguments: Basic Taint Analysis
 
 **TODO (The following is just a sample)** 
+
 | Option | Description | Default | Recommendation (if different to default) |
 |---------------------|--------------------------------------------------------|---------|------------------------------------------|
 | configfile | Use the given configuration file |  |  |
