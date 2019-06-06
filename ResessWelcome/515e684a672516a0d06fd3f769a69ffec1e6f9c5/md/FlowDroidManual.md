@@ -122,5 +122,7 @@ java [options] -jar /path/to/soot-infoflow-cmd-jar-with-dependencies.jar -a /pat
 **TODO** 
 
 ## Soot
+Soot is a Java optimization framework that can be used as the basis for purforming program analysis on Java programs (e.g. Android apps are written in Java).
 
+Normally, we include Soot as a module and use the APIs to access the basic functionalities.
 **TODO** 
