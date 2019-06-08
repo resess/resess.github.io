@@ -615,27 +615,12 @@ UnitGraph g = new ExceptionalUnitGraph(body);
 
 Soot has four different point-to analysis.
 In this section, we present two frameworks for doing points-to analysis in Soot,
-the SPARK and geomPTA frameworks.
+the CHA and geomPTA frameworks.
 
 The goal of a points-to analysis is to compute a function which given a variable returns the set of possible targets.
 The sets resulting from a points-to analysis are necessary in order to do many other kinds of analysis like alias analysis or for improving precision of e.g. a call graph.
 
 Soot provides the PointsToAnalysis and PointsToSet interfaces which any points-to analysis should implement.
-The PointsToAnalysis interface contains the method:
-
-```java
-reachingObjects(Local l)
-```
-
-which returns the set of objects pointed to by l as a PointsToSet.
-
-PointsToSet contains methods for testing for nonempty intersection with other PointsToSets and a method which returns the set of all possible runtime types of the objects in the set. 
-
-The current points-to set can be accessed using:
-
-```java
-Scene.v().getPointsToAnalysis()
-```
 
 How to create the current points-to set depends on the implementation
 used.
@@ -646,9 +631,73 @@ The Soot Pointer Analysis Research Kit (SPARK) framework, Paddle, and geomPTA fr
 
 We will discuss and show how to setup and use CHA and geomPTA point-to analysis.
 
+- CHA
 
+The PointsToAnalysis interface contains the method:
 
-#### Reverse engineer apps
+```java
+PointsToAnalysis.reachingObjects(Local l)
+```
+
+which returns the set of objects pointed to by l as a PointsToSet.
+
+PointsToSet contains methods for testing for nonempty intersection with other PointsToSets and a method which returns the set of all possible runtime types of the objects in the set.
+
+The current points-to set can be accessed using:
+
+```java
+Scene.v().getPointsToAnalysis()
+```
+
+- geomPTA
+When we need to implement a context-sensitive point-to analysis in Soot, *geomPTA* is the best choice. GeomPTA is substantially faster than the other context-sensitive point-to analysis in Soot, Paddle.
+
+To run geomPTA, specify the options "cg.spark enabled:true" and "cg.spark geom-pta:true".
+An note is that the option "cg.spark simplify-offline" should be false.
+
+A useful option is "cg.spark geom-runs", which is 1 by default. This option controls how many times the geomPTA will be iterated, where more iterations mean better precision. Usually, setting "cg.spark geom-runs:2" can obtain high precision and that does not cost 2X running time.
+
+By default, geomPTA does not compute context sensitive points-to information for non-core pointers, such as pointers in the library functions.
+If you want to change this default behavior to compute points-to information for all pointers, please set the option "cg.spark geom-app-only:false".
+
+The *context-insensitive* point-to information can be querried in the same way. The *context-sensitive* point-to information should be querried through intreface ```soot.jimple.spark.geom.geomPA.GeomQueries```.
+
+In geomPTA, the context for a pointer l can be specified using the last K call edges to func(l), and there are two functions to retrieve the context:
+
+```java
+public boolean contextsByCallChain(Edge[] callEdgeChain, Local l, PtSensVisitor visitor)
+```
+
+```java
+public boolean contextByCallChain(Edge[] callEdgeChain, Local l, SparkField field, PtSensVisitor visitor)
+```
+
+The two functions are similar except that the first function queries variable l and the second function queries the expression l.field.
+The call edges given in callEdgeChain are in the order that callEdgeChain[0] is the farthest call edge in the chain and callEdgeChain[k-1] is direct call edge of func(l).
+The last parameter visitor is a container that stores the querying result. Usually, you can use following code to create a container:
+
+```java
+PtSensVisitor visitor = new Obj_full_extractor();
+```
+
+Then, the point-to information can be accessed through iterate the visitor, e.g.:
+
+```java
+GeomPointsTo geomPTA = (GeomPointsTo) Scene.v().getPointsToAnalysis();
+GeomQueries geomQueries = new GeomQueries(geomPTA);
+Set<Type> geomContextTypes = new HashSet<>();
+PtSensVisitor<?> visitor = new Obj_full_extractor();
+if (geomQueries.kCFA(x, (Local)arg, visitor)) {
+    for (Object icv_obj : visitor.outList) {
+        IntervalContextVar icv = (IntervalContextVar) icv_obj;
+        AllocNode obj = (AllocNode) icv.var;
+        Type type = obj.getType();
+        geomContextTypes.add(type);
+    }
+}
+```
+
+In the above example, ```GeomQueries.kCFA``` is similar to ```GeomQueries.contextByCallChain```, and the possible types that the local variable l points to is stored in the set ```geomContextTypes```.
 
 #### Instrument apps
 
