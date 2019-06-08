@@ -156,4 +156,26 @@ A Soot dependency can be added via Maven, Gradle, SBT, etc using the following c
 
 ### Basic options
 
+#### General
+|||
+|--- |--- |
+|-coffi|Use the good old Coffi front end for parsing Java bytecode (instead of using ASM).|
+|-jasmin-backend|Use the Jasmin back end for generating Java bytecode (instead of using ASM).|
+|-h -help|Display help and exit|
+|-pl -phase-list|Print list of available phases|
+|-ph phase-phase-help phase|Print help for specified
+               phase|
+|-version|Display version information and exit|
+|-v -verbose|Verbose mode|
+|-interactive-mode|Run in interactive mode|
+|-unfriendly-mode|Allow Soot to run with no command-line options|
+|-app|Run in application mode|
+|-w -whole-program|Run in whole-program mode|
+|-ws -whole-shimple|Run in whole-shimple mode|
+|-fly -on-the-fly|Run in on-the-fly mode|
+|-validate|Run internal validation on bodies|
+|-debug|Print various Soot debugging info|
+|-debug-resolver|Print debugging info from SootResolver|
+|-ignore-resolving-levels|Ignore mismatching resolving levels|
+
 **TODO** 
