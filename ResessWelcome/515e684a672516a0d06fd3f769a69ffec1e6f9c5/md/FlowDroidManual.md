@@ -631,7 +631,7 @@ The Soot Pointer Analysis Research Kit (SPARK) framework, Paddle, and geomPTA fr
 
 We will discuss and show how to setup and use CHA and geomPTA point-to analysis:
 
-- CHA
+- **CHA**
 
 The PointsToAnalysis interface contains the method:
 
@@ -649,7 +649,7 @@ The current points-to set can be accessed using:
 Scene.v().getPointsToAnalysis()
 ```
 
-- geomPTA
+- **geomPTA**
 
 When we need to implement a context-sensitive point-to analysis in Soot, *geomPTA* is the best choice. GeomPTA is substantially faster than the other context-sensitive point-to analysis in Soot, Paddle.
 
@@ -705,4 +705,4 @@ In the above example, ```GeomQueries.kCFA``` is similar to ```GeomQueries.contex
 The Soot [wiki](https://github.com/Sable/soot/wiki/Instrumenting-Android-Apps-with-Soot) povides detailed instruction on how to instrument Android apps with Soot.
 
 You need to align and sign the APK file after the transformation to be able to run it.
-[My github repo](https://github.com/DulingLai/Soot_Instrumenter/tree/master/InstrumentAPK) provides a sample project on instrumenting the APK file using Soot.
+[My GitHub repo](https://github.com/DulingLai/Soot_Instrumenter/tree/master/InstrumentAPK) provides a sample project on instrumenting the APK file using Soot.
