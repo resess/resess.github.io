@@ -135,7 +135,7 @@ Altough Soot is normally included as a module in your project, there could be so
 
 Then, Soot is invoked as follows:
 
-```.java
+```java
 java javaOptions soot.Main [ sootOption* ] classname*
 ```
 
@@ -144,7 +144,7 @@ java javaOptions soot.Main [ sootOption* ] classname*
 
 A Soot dependency can be added via Maven, Gradle, SBT, etc using the following coordinates:
 
-```.xml
+```xml
 <dependencies>
   <dependency>
     <groupId>ca.mcgill.sable</groupId>
