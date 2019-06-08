@@ -157,25 +157,89 @@ A Soot dependency can be added via Maven, Gradle, SBT, etc using the following c
 ### Basic options
 
 #### General
-|||
-|--- |--- |
-|-coffi|Use the good old Coffi front end for parsing Java bytecode (instead of using ASM).|
-|-jasmin-backend|Use the Jasmin back end for generating Java bytecode (instead of using ASM).|
-|-h -help|Display help and exit|
-|-pl -phase-list|Print list of available phases|
-|-ph phase-phase-help phase|Print help for specified
-               phase|
-|-version|Display version information and exit|
-|-v -verbose|Verbose mode|
-|-interactive-mode|Run in interactive mode|
-|-unfriendly-mode|Allow Soot to run with no command-line options|
-|-app|Run in application mode|
-|-w -whole-program|Run in whole-program mode|
-|-ws -whole-shimple|Run in whole-shimple mode|
-|-fly -on-the-fly|Run in on-the-fly mode|
-|-validate|Run internal validation on bodies|
-|-debug|Print various Soot debugging info|
-|-debug-resolver|Print debugging info from SootResolver|
-|-ignore-resolving-levels|Ignore mismatching resolving levels|
+
+<table border="3">
+         <tbody><tr>
+            <td><tt>-coffi </tt><br></td>
+            <td colspan="2">Use the good old Coffi front end for parsing Java bytecode (instead of using ASM).</td>
+         </tr>
+         <tr>
+            <td><tt>-jasmin-backend </tt><br></td>
+            <td colspan="2">Use the Jasmin back end for generating Java bytecode (instead of using ASM).</td>
+         </tr>
+         <tr>
+            <td><tt>-h </tt><br><tt>-help </tt><br></td>
+            <td colspan="2">Display help and exit</td>
+         </tr>
+         <tr>
+            <td><tt>-pl </tt><br><tt>-phase-list </tt><br></td>
+            <td colspan="2">Print list of available phases</td>
+         </tr>
+         <tr>
+            <td><tt>-ph <var>phase</var></tt><br><tt>-phase-help <var>phase</var></tt><br></td>
+            <td colspan="2">Print help for specified
+               <var>phase</var>
+               
+            </td>
+         </tr>
+         <tr>
+            <td><tt>-version </tt><br></td>
+            <td colspan="2">Display version information and exit</td>
+         </tr>
+         <tr>
+            <td><tt>-v </tt><br><tt>-verbose </tt><br></td>
+            <td colspan="2">Verbose mode</td>
+         </tr>
+         <tr>
+            <td><tt>-interactive-mode </tt><br></td>
+            <td colspan="2">Run in interactive mode</td>
+         </tr>
+         <tr>
+            <td><tt>-unfriendly-mode </tt><br></td>
+            <td colspan="2">Allow Soot to run with no command-line options</td>
+         </tr>
+         <tr>
+            <td><tt>-app </tt><br></td>
+            <td colspan="2">Run in application mode</td>
+         </tr>
+         <tr>
+            <td><tt>-w </tt><br><tt>-whole-program </tt><br></td>
+            <td colspan="2">Run in whole-program mode</td>
+         </tr>
+         <tr>
+            <td><tt>-ws </tt><br><tt>-whole-shimple </tt><br></td>
+            <td colspan="2">Run in whole-shimple mode</td>
+         </tr>
+         <tr>
+            <td><tt>-fly </tt><br><tt>-on-the-fly </tt><br></td>
+            <td colspan="2">Run in on-the-fly mode</td>
+         </tr>
+         <tr>
+            <td><tt>-validate </tt><br></td>
+            <td colspan="2">Run internal validation on bodies</td>
+         </tr>
+         <tr>
+            <td><tt>-debug </tt><br></td>
+            <td colspan="2">Print various Soot debugging info</td>
+         </tr>
+         <tr>
+            <td><tt>-debug-resolver </tt><br></td>
+            <td colspan="2">Print debugging info from SootResolver</td>
+         </tr>
+         <tr>
+            <td><tt>-ignore-resolving-levels </tt><br></td>
+            <td colspan="2">Ignore mismatching resolving levels</td>
+         </tr>
+      </tbody></table>
+
+### Use Cases
+
+#### Callgraph construction
+
+#### Point-to Analysis
+
+#### Reverse engineer apps
+
+#### Instrument apps
 
 **TODO** 
