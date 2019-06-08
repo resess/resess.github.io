@@ -574,16 +574,16 @@ Iterator edgeIt = cg.edgesOutOf(m);
 ```
 
 Soot provides several different control flow graphs (CFG) in the package
-soot.toolkits.graph. 
+soot.toolkits.graph.
 
 At the base of these graphs sits the interface DirectedGraph;
 it defines methods for getting: the entry and exit points to the graph, the successors and predecessors of a given node, an iterator to iterate over the graph
 in some undefined order and the graphs size (number of nodes).
 
 The implementations we will describe here are those that represent a CFG
-in which the nodes are Soot Units. 
+in which the nodes are Soot Units.
 The base class for these kinds of graphs is UnitGraph, an abstract class that
-provides facilities to build CFGs. 
+provides facilities to build CFGs.
 There are three different implementations of
 it: *BriefUnitGraph*, *ExceptionalUnitGraph* and *TrapUnitGraph*.
 
@@ -600,21 +600,53 @@ CFG generally used when performing control flow analyses.
 
 - **TrapUnitGraph** like ExceptionalUnitGraph, takes into account exceptions
 that might be thrown. There are three major differences:
-
-(1) Edges are added from every trapped unit (i.e., within a try block) to the trap handler;
-
-(2) There are no edges from predecessors of units that may throw an implicit exception to the trap handler (unless they are also trapped);
-
-(3) There is always an edge from a unit that may throw an implicit exception to the trap handler.
+Edges are added from every trapped unit (i.e., within a try block) to the trap handler;
+There are no edges from predecessors of units that may throw an implicit exception to the trap handler (unless they are also trapped);
+There is always an edge from a unit that may throw an implicit exception to the trap handler.
 
 To build a CFG for a given method body you simply pass the body to one
-of the CFG constructors — e.g.:
+of the CFG constructors, e.g.:
 
 ```java
 UnitGraph g = new ExceptionalUnitGraph(body);
 ```
 
 #### Point-to Analysis
+
+Soot has four different point-to analysis.
+In this section, we present two frameworks for doing points-to analysis in Soot,
+the SPARK and geomPTA frameworks.
+
+The goal of a points-to analysis is to compute a function which given a variable returns the set of possible targets.
+The sets resulting from a points-to analysis are necessary in order to do many other kinds of analysis like alias analysis or for improving precision of e.g. a call graph.
+
+Soot provides the PointsToAnalysis and PointsToSet interfaces which any points-to analysis should implement.
+The PointsToAnalysis interface contains the method:
+
+```java
+reachingObjects(Local l)
+```
+
+which returns the set of objects pointed to by l as a PointsToSet.
+
+PointsToSet contains methods for testing for nonempty intersection with other PointsToSets and a method which returns the set of all possible runtime types of the objects in the set. 
+
+The current points-to set can be accessed using:
+
+```java
+Scene.v().getPointsToAnalysis()
+```
+
+How to create the current points-to set depends on the implementation
+used.
+Soot provides four implementations of the points-to interface: CHA (a
+dumb version), SPARK, Paddle, and geomPTA.
+The dumb version simply assumes that every variable might point to every other variable which is conservatively sound but not terribly accurate.
+The Soot Pointer Analysis Research Kit (SPARK) framework, Paddle, and geomPTA frameworks provide a more accurate analysis at the cost of more complicated setup and speed.
+
+We will discuss and show how to setup and use CHA and geomPTA point-to analysis.
+
+
 
 #### Reverse engineer apps
 
