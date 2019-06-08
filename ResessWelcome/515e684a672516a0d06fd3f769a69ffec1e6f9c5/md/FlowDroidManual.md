@@ -600,8 +600,11 @@ CFG generally used when performing control flow analyses.
 
 - **TrapUnitGraph** like ExceptionalUnitGraph, takes into account exceptions
 that might be thrown. There are three major differences:
-(1) Edges are added from every trapped unit (i.e., within a try block) to the trap handler.
-(2) There are no edges from predecessors of units that may throw an implicit exception to the trap handler (unless they are also trapped).
+
+(1) Edges are added from every trapped unit (i.e., within a try block) to the trap handler;
+
+(2) There are no edges from predecessors of units that may throw an implicit exception to the trap handler (unless they are also trapped);
+
 (3) There is always an edge from a unit that may throw an implicit exception to the trap handler.
 
 To build a CFG for a given method body you simply pass the body to one
