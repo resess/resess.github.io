@@ -135,7 +135,7 @@ Altough Soot is normally included as a module in your project, there could be so
 
 Then, Soot is invoked as follows:
 
-```java
+```bash
 java javaOptions soot.Main [ sootOption* ] classname*
 ```
 
@@ -558,7 +558,56 @@ A Soot dependency can be added via Maven, Gradle, SBT, etc using the following c
 
 ### Use Cases
 
-#### Callgraph construction
+#### Control flow graph construction
+
+You can access the callgraph constructed by Soot through calling:
+```java
+Callgraph cg = Scene.v().getCallGraph();
+```
+
+Then, it is possible to iterate the edges in the cg, e.g.:
+```java
+SootMethod m = b.getMethod();
+Iterator edgeIt = cg.edgesOutOf(m);
+```
+
+Soot provides several different control flow graphs (CFG) in the package
+soot.toolkits.graph. 
+
+At the base of these graphs sits the interface DirectedGraph;
+it defines methods for getting: the entry and exit points to the graph, the successors and predecessors of a given node, an iterator to iterate over the graph
+in some undefined order and the graphs size (number of nodes).
+
+The implementations we will describe here are those that represent a CFG
+in which the nodes are Soot Units. 
+The base class for these kinds of graphs is UnitGraph, an abstract class that
+provides facilities to build CFGs. 
+There are three different implementations of
+it: BriefUnitGraph, ExceptionalUnitGraph and TrapUnitGraph.
+* BriefUnitGraph is very simple in the sense that it doesn’t have edges representing control flow due to exceptions being thrown.
+* ExceptionalUnitGraph includes edges from throw clauses to their handler
+(catch block, referred to in Soot as Trap), that is if the trap is local
+to the method body. Additionally, this graph takes into account exceptions that might be implicitly thrown by the VM (e.g. ArrayIndexOutOfBoundsException). For every unit that might throw an implicit exception, there will be an edge from each of that units predecessors to the
+respective trap handler’s first unit. Furthermore, should the excepting
+unit contain side effects an edge will also be added from it to the trap
+handler. If it has no side effects this edge can be selectively added or not
+26
+with a parameter passed to one of the graphs constructors. This is the
+CFG generally used when performing control flow analyses.
+* TrapUnitGraph like ExceptionalUnitGraph, takes into account exceptions
+that might be thrown. There are three major differences:
+1. Edges are added from every trapped unit (i.e., within a try block)
+to the trap handler.
+2. There are no edges from predecessors of units that may throw an
+implicit exception to the trap handler (unless they are also trapped).
+3. There is always an edge from a unit that may throw an implicit
+exception to the trap handler.
+
+To build a CFG for a given method body you simply pass the body to one
+of the CFG constructors — e.g.:
+```java
+UnitGraph g = new ExceptionalUnitGraph(body);
+```
 
 #### Point-to Analysis
 
