@@ -57,68 +57,62 @@ java [options] -jar /path/to/soot-infoflow-cmd-jar-with-dependencies.jar -a /pat
 
 #### Frequently-used Arguments: Basic Taint Analysis
 
-**TODO (The following is just a sample)** 
-
-| Option | Description | Default | Recommendation (if different to default) |
-|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| sourcessinksfile | Definition file for sources and sinks. | null | **You must set it to a file with proper sources and sinks. A sample of   file with sources and sinks can be found   [here](https://resess.github.io/ResessWelcome/515e684a672516a0d06fd3f769a69ffec1e6f9c5/attachments/SourcesAndSinks.txt).** |
-| enablereflection | Enable support for reflective method   calls. |  |  |
-| taintwrapper | Use the specified taint wrapper   algorithm (NONE, EASY, STUBDROID, MULTI). **Note: NONE: No taint wrapper,   EASY: Use taint wrappers defined in *taintwrapperfile*, STUBDROID: Use   definitions defined in *taintwrapperfile*, MULTI: Use multiple definition files   defined in *taintwrapperfile*.** | If *taintwrapperfile* is defined:   MULTI. If *taintwrapperfile* is not defined: DEFAULT. | Do not modify the default value of it or set it to EAST with   *taintwrapperfile* set to a file with easy taint wrappers. |
-| taintwrapperfile | Definition file for the taint wrapper. | null | Set it to the file with easy taint wrappers when *taintwrapper* is set to   EASY. |
-| logsourcesandsinks | Write the discovered sources and   sinks to the log output. |  |  |
-| cgalgo | Callgraph algorithm to use (AUTO,   CHA, VTA, RTA, SPARK, GEOM). |  |  |
-| implicit | Use the specified mode when   processing implicit data flows (NONE, ARRAYONLY, ALL). |  |  |
+| Option | Usage | Description | Default | Recommendation (if different to default) |
+|--------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| sourcessinksfile | -s args | Definition file for sources and   sinks. | null | **You must set it to a file with proper sources and sinks. A sample of   file with sources and sinks can be found   [here](https://resess.github.io/ResessWelcome/515e684a672516a0d06fd3f769a69ffec1e6f9c5/attachments/SourcesAndSinks.txt).** |
+| enablereflection | -r | Enable support for reflective   method calls. | false | Set to true if needed. |
+| taintwrapper | -tw args | Use the specified taint wrapper   algorithm (NONE, EASY, STUBDROID, MULTI). **Note: NONE: No taint wrapper,   EASY: Use taint wrappers defined in *taintwrapperfile*, STUBDROID: Use   definitions defined in *taintwrapperfile*, MULTI: Use multiple definition files   defined in *taintwrapperfile*, DEFAULT: Use StubDroid with internal   summaries.** | If *taintwrapperfile* is   defined: MULTI. If *taintwrapperfile* is not defined: DEFAULT. | Do not modify the default value of it or set it to EAST with   *taintwrapperfile* set to a file with easy taint wrappers. |
+| taintwrapperfile | -t args | Definition file for the taint   wrapper. | null | Set it to the file with easy taint wrappers when *taintwrapper* is set to   EASY. |
+| logsourcesandsinks | -ls | Write the discovered sources and   sinks to the log output. **Note: This option seems like no effect with   FlowDroid that is under development.** | Disabled | Include this option in command line to enable it if needed. |
+| cgalgo | -cg args | Callgraph algorithm to use   (AUTO, CHA, VTA, RTA, SPARK, GEOM). **Note: AUTO and SPARK: Use Soot Pointer   Anlysis Research Kit (Spark) that refines the results of CHA to achieve a   more precise points-to analysis; CHA: Class Hierarychy Analysis, the fatest call   graph generation mechanism, but it leads to several edges to different method   definitions of subtypes; VTA: Variable-Type Analysis, with a flow-insensitive   analysis; RTA: Rapid Type Anlysis, CHA with addition information about the   instantiated classes; GEOM: geomPTA, a context senstitive points-to analysis   based on Spark.** | AUTO |  |
+| implicit | -I args | Use the specified mode when   processing implicit data flows (NONE, ARRAYONLY, ALL). **Note: ARRAYONLY:   Create a new taint when a non-tainted array is accessed using a tainted   index, but do not follow other control-flow dependencies; ALL: Follow all   control flow dependencies that involve tainted data.** | NONE |  |
 
 #### Frequently-used Arguments: ICC-related
 
-**TODO (The following is just a sample)** 
-
-| Option | Description | Default | Recommendation (if different to default) |
-|--------------------|------------------------------------------------------------------------------------------------------------|---------|------------------------------------------|
-| iccmodel | File containing the inter-component   data flow model (ICC model). |  |  |
-| noiccresultspurify | Do not purify the ICC results, i.e.,   do not remove simple flows that also have a corresponding ICC flow. |  |  |
+| Option | Usage | Description | Default | Recommendation (if different to default) |
+|--------------------|----------|------------------------------------------------------------------------------------------------------------|----------|-------------------------------------------------------------|
+| iccmodel | -im args | File containing the   inter-component data flow model (ICC model). | null | Set it to the file with ICC model. |
+| noiccresultspurify | -np | Do not purify the ICC results,   i.e., do not remove simple flows that also have a corresponding ICC flow. | Disabled | Include this option in command line to enable it if needed. |
 
 #### Other Arguments (NOT recommended to modify)
 
-**TODO (The following is just a sample)** 
-
-| Option | Description | Default | Recommendation (if different to default) |
-|----------------------------|-----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|------------------------------------------|
-| configfile | Use the given configuration file. | Defined in   loadConfigurationFile.java of soot-infoflow-android. |  |
-| outputfile | Output XML file for the discovered   data flows. **Note: it must be a directory when analyzing multiple APKs.** | null |  |
-| additionalclasspath | Additional JAR file that shal be put on the classpath. | null |  |
-| skipapkfile | APK file to skip when processing a directory of input files. | null |  |
-| timeout | Timeout for the main data flow analysis. | null |  |
-| callbacktimeout | Timeout for the callback collection phase. | null |  |
-| resulttimeout | Timeout for the result collection   phase. |  |  |
-| nostatic | Do not track static data flows. |  |  |
-| nocallbacks | Do not analyze Android callbacks. |  |  |
-| noexceptions | Do not track taints across   exceptional control flow edges. |  |  |
-| notypechecking | Disable type checking during taint   propagation. |  |  |
-| missingsummariesoutputfile | Outputs a file with information   about which summaries are missing. |  |  |
-| aplength | Maximum access path length. |  |  |
-| nothischainreduction | Disable reduction of inner class   chains. |  |  |
-| aliasflowins | Use a flow-insensitive alias   analysis. |  |  |
-| paths | Compute the taint propagation paths   and not just source-to-sink connections. This is a shorthand notation for -pr   fast. |  |  |
-| maxthreadnum | Limit the maximum number of threads   to the given value. |  |  |
-| onecomponentatatime | Analyze one Android component at a   time. |  |  |
-| onesourceatatime | Analyze one source at a time. |  |  |
-| sequentialpathprocessing | Process the result paths   sequentially instead of in parallel. |  |  |
-| singlejoinpointabstraction | Only use a single abstraction at   join points, i.e., do not support multiple sources for one value. |  |  |
-| maxcallbackspercomponent | Eliminate Android components that   have more than the given number of callbacks. |  |  |
-| maxcallbacksdepth | Only analyze callback chains up to   the given depth. |  |  |
-| mergedexfiles | Merge all dex files in the given APK   file into one analysis target. |  |  |
-| pathspecificresults | Report different results for same   source/sink pairs if they differ in their propagation paths. |  |  |
-| layoutmode | Mode for considerung layout controls   as sources (NONE, PWD, ALL). |  |  |
-| pathalgo | Use the specified algorithm for   computing result paths (CONTEXTSENSITIVE, CONTEXTINSENSITIVE, SOURCESONLY). |  |  |
-| callbackanalyzer | Use the specified callback analyzer   (DEFAULT, FAST). |  |  |
-| dataflowsolver | Use the specified data flow solver   (CONTEXTFLOWSENSITIVE, FLOWINSENSITIVE). |  |  |
-| aliasalgo | Use the specified aliasing algorithm   (NONE, FLOWSENSITIVE, PTSBASED, LAZY). |  |  |
-| codeelimination | Use the specified code elimination   algorithm (NONE, PROPAGATECONSTS, REMOVECODE). |  |  |
-| callbacksourcemode | Use the specified mode for defining   which callbacks introduce which sources (NONE, ALL, SOURCELIST). |  |  |
-| pathreconstructionmode | Use the specified mode for   reconstructing taint propagation paths (NONE, FAST, PRECISE). |  |  |
-| staticmode | Use the specified mode when tracking   static data flows (CONTEXTFLOWSENSITIVE, CONTEXTFLOWINSENSITIVE, NONE). |  |  |
-| analyzeframeworks | Analyze the full frameworks together   with the app without any optimizations. |  |  |
+| Option | Usage | Description | Default | Recommendation (if different to default) |
+|----------------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|-------------------------------------------------------------|
+| configfile | -c args | Use the given configuration   file. | Defined in loadConfigurationFile.java of   soot-infoflow-android. |  |
+| outputfile | -o args | Output XML file for the   discovered data flows. **Note: it must be a directory when analyzing multiple   APKs.** | null |  |
+| additionalclasspath | -ac args | Additional JAR file that shal be   put on the classpath. | null |  |
+| skipapkfile | -si args | APK file to skip when processing   a directory of input files. | null |  |
+| timeout | -dt args | Timeout for the main data flow   analysis. | null |  |
+| callbacktimeout | -ct args | Timeout for the callback   collection phase. | null |  |
+| resulttimeout | -rt args | Timeout for the result   collection phase. | null |  |
+| nostatic | -ns | Do not track static data flows. | Disabled (StaticFieldTrackingMode is ContextFlowSensitive) |  |
+| nocallbacks | -nc | Do not analyze Android   callbacks. | Disabled |  |
+| noexceptions | -ne | Do not track taints across   exceptional control flow edges. | Disabled |  |
+| notypechecking | -nt | Disable type checking during   taint propagation. | Disabled |  |
+| missingsummariesoutputfile | -mt args | Outputs a file with information   about which summaries are missing. | null |  |
+| aplength | -al args | Maximum access path length. | 5 |  |
+| nothischainreduction | -nr | Disable reduction of inner class   chains. | Disabled |  |
+| aliasflowins | -af | Use a flow-insensitive alias   analysis. | Disabled |  |
+| paths | -cp | Compute the taint propagation   paths and not just source-to-sink connections. This is a shorthand notation   for -pr fast. | Disabled | Include this option in command line to enable it if needed. |
+| maxthreadnum | -mt args | Limit the maximum number of   threads to the given value. **Note: Cannot locate the effect of this option   in the source code.** | *UNKNOWN* |  |
+| onecomponentatatime | -ot | Analyze one Android component at   a time. | Disabled |  |
+| onesourceatatime | -os | Analyze one source at a time. | Disabled |  |
+| sequentialpathprocessing | -sp | Process the result paths   sequentially instead of in parallel. | Disabled |  |
+| singlejoinpointabstraction | -sa | Only use a single abstraction at   join points, i.e., do not support multiple sources for one value. | Disabled |  |
+| maxcallbackspercomponent | -mc args | Eliminate Android components   that have more than the given number of callbacks. | 100 |  |
+| maxcallbacksdepth | -md args | Only analyze callback chains up   to the given depth. | Unlimited (-1) |  |
+| mergedexfiles | -d | Merge all dex files in the given   APK file into one analysis target. |  |  |
+| pathspecificresults | -ps | Report different results for   same source/sink pairs if they differ in their propagation paths. | Disabled | Include this option in command line to enable it if needed. |
+| layoutmode | -l args | Mode for considerung layout   controls as sources (NONE, PWD, ALL). **Note: PWD: MatchSensitiveOnly, only   use sensitive alyout components (e.g. password fields) as sources; ALL:   MatchAll, use all layout components as sources. | PWD |  |
+| pathalgo | -pa args | Use the specified algorithm for   computing result paths (CONTEXTSENSITIVE, CONTEXTINSENSITIVE, SOURCESONLY). | CONTEXTSENSITIVE |  |
+| callbackanalyzer | -ca args | Use the specified callback   analyzer (DEFAULT, FAST). | DEFAULT |  |
+| dataflowsolver | -ds args | Use the specified data flow   solver (CONTEXTFLOWSENSITIVE, FLOWINSENSITIVE). | CONTEXTFLOWSENSITIVE |  |
+| aliasalgo | -aa args | Use the specified aliasing   algorithm (NONE, FLOWSENSITIVE, PTSBASED, LAZY). **Note: FLOWSENSITIVE: A   fully flow-sensitive algorithm based on Andromeda; PTSBASED: A   flow-insensitive algorithm based on Soot's points-to sets; LAZY: Propagate   every taint everywhere to on-demand check whether it aliases with any value   access.** | FLOWSENSITIVE |  |
+| codeelimination | -ce args | Use the specified code   elimination algorithm (NONE, PROPAGATECONSTS, REMOVECODE). **Note:   PROPAGATECONSTS: Perform an inter-procedural constant propagation and folding   and then remove all code that is unreachable; REMOVECODE: in addition to the   inter-procedural constant propagation and folding, also remove live code that   cannot potentially influence the outcome of the taint analysis.** | PROPAGATECONSTS |  |
+| callbacksourcemode | -cs args | Use the specified mode for   defining which callbacks introduce which sources (NONE, ALL, SOURCELIST).   **Note: ALL: All callback parameters are sources; SOURCELIST: Only parameters   from callback methods explicitly defined as sources are treated as sources.** | SOURCELIST |  |
+| pathreconstructionmode | -pr args | Use the specified mode for   reconstructing taint propagation paths (NONE, FAST, PRECISE). **Note: FAST:   Reconstruct the path between source and sink, but allow for simplifications   to improve performance; PRECISE: Reconstruct the precise path between source   and sink, do not simplify anything.** | NONE |  |
+| staticmode | -sf args | Use the specified mode when   tracking static data flows (CONTEXTFLOWSENSITIVE, CONTEXTFLOWINSENSITIVE,   NONE). **Note: CONTEXTFLOWSENSITIVE: Track taints on static fields as normal   taint abstraction, which is context- and flow-sensitive; CONTEXTFLOWINSENSITIVE:   Track taints on static fields as field-based annotations, which is neitherr   context-, nor flow-sensitive.** | CONTEXTFLOWSENSITIVE |  |
+| analyzeframeworks | -ff | Analyze the full frameworks   together with the app without any optimizations. | Disabled |  |
 
 ### Legacy Version
 
