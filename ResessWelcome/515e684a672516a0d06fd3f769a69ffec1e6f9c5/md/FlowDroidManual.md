@@ -233,6 +233,126 @@ A Soot dependency can be added via Maven, Gradle, SBT, etc using the following c
     </tbody>
 </table>
 
+#### Input
+
+<table>
+    <tbody>
+        <tr>
+            <td><tt>-cp <var>path</var></tt><br><tt>-soot-class-path <var>path</var></tt><br><tt>-soot-classpath <var>path</var></tt><br></td>
+            <td colspan="2">Use
+               <var>path</var>
+               as the classpath for finding classes.
+            </td>
+        </tr>
+        <tr>
+            <td><tt>-pp </tt><br><tt>-prepend-classpath </tt><br></td>
+            <td colspan="2">Prepend the given soot classpath to the default classpath.</td>
+        </tr>
+        <tr>
+            <td><tt>-ice </tt><br><tt>-ignore-classpath-errors </tt><br></td>
+            <td colspan="2">Ignores invalid entries on the Soot classpath.</td>
+        </tr>
+        <tr>
+            <td><tt>-process-multiple-dex </tt><br></td>
+            <td colspan="2">Process all DEX files found in APK.</td>
+        </tr>
+        <tr>
+            <td><tt>-search-dex-in-archives </tt><br></td>
+            <td colspan="2">Also includes Jar and Zip files when searching for DEX files under the provided classpath.
+            </td>
+        </tr>
+        <tr>
+            <td><tt>-process-path <var>dir</var></tt><br><tt>-process-dir <var>dir</var></tt><br></td>
+            <td colspan="2">Process all classes found in
+               <var>dir</var>
+            </td>
+        </tr>
+        <tr>
+            <td><tt>-oaat </tt><br></td>
+            <td colspan="2">From the process-dir, processes one class at a time.</td>
+        </tr>
+        <tr>
+            <td><tt>-android-jars <var>path</var></tt><br></td>
+            <td colspan="2">Use
+               <var>path</var>
+               as the path for finding the android.jar file
+            </td>
+        </tr>
+        <tr>
+            <td><tt>-force-android-jar <var>path</var></tt><br></td>
+            <td colspan="2">Force Soot to use
+               <var>path</var>
+               as the path for the android.jar file.
+            </td>
+        </tr>
+        <tr>
+            <td><tt>-android-api-version <var>version</var></tt><br></td>
+            <td colspan="2">Force Soot to use
+               <var>version</var>
+               as the API version when readin in APK or DEX files.
+            </td>
+        </tr>
+        <tr>
+            <td><tt>-ast-metrics </tt><br></td>
+            <td colspan="2">Compute AST Metrics if performing java to jimple</td>
+        </tr>
+        <tr>
+            <td><tt>-src-prec <var>format</var></tt><br></td>
+            <td><tt>c&nbsp;
+                  </tt><tt>class&nbsp;
+                  </tt><br><tt>only-class&nbsp;
+                  </tt><br><tt>J&nbsp;
+                  </tt><tt>jimple&nbsp;
+                  </tt><br><tt>java&nbsp;
+                  </tt><br><tt>apk&nbsp;
+                  </tt><br><tt>apk-class-jimple&nbsp;
+                  </tt><tt>apk-c-j&nbsp;
+                  </tt><br></td>
+            <td colspan="1">Sets source precedence to
+               <var>format</var>
+               files
+            </td>
+        </tr>
+        <tr>
+            <td><tt>-full-resolver </tt><br></td>
+            <td colspan="2">Force transitive resolving of referenced classes</td>
+        </tr>
+        <tr>
+            <td><tt>-allow-phantom-refs </tt><br></td>
+            <td colspan="2">Allow unresolved classes; may cause errors</td>
+        </tr>
+        <tr>
+            <td><tt>-allow-phantom-elms </tt><br></td>
+            <td colspan="2">Allow phantom methods and fields in non-phantom classes</td>
+        </tr>
+        <tr>
+            <td><tt>-no-bodies-for-excluded </tt><br></td>
+            <td colspan="2">Do not load bodies for excluded classes</td>
+        </tr>
+        <tr>
+            <td><tt>-j2me </tt><br></td>
+            <td colspan="2">Use J2ME mode; changes assignment of types</td>
+        </tr>
+        <tr>
+            <td><tt>-main-class <var>class</var></tt><br></td>
+            <td colspan="2">Sets the main class for whole-program analysis.</td>
+        </tr>
+        <tr>
+            <td><tt>-polyglot </tt><br></td>
+            <td colspan="2">Use Java 1.4 Polyglot frontend instead of JastAdd</td>
+        </tr>
+        <tr>
+            <td><tt>-permissive-resolving </tt><br></td>
+            <td colspan="2">Use alternative sources when classes cannot be found using the normal resolving strategy
+            </td>
+        </tr>
+        <tr>
+            <td><tt>-drop-bodies-after-load </tt><br></td>
+            <td colspan="2">Drop the method source after it has served its purpose of loading the method body</td>
+        </tr>
+    </tbody>
+</table>
+
 ### Use Cases
 
 #### Callgraph construction
