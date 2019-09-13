@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>Benchmark - GoalExplorer</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Benchmark | GoalExplorer</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Benchmark" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="GoalExplorer is a tool that performs goal-driven exploration to trigger functionality of interest for Android apps." />
+<meta property="og:description" content="GoalExplorer is a tool that performs goal-driven exploration to trigger functionality of interest for Android apps." />
+<link rel="canonical" href="http://localhost:4000/docs/evaluation/benchmark.html" />
+<meta property="og:url" content="http://localhost:4000/docs/evaluation/benchmark.html" />
+<meta property="og:site_name" content="GoalExplorer" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/docs/evaluation/benchmark.html","headline":"Benchmark","description":"GoalExplorer is a tool that performs goal-driven exploration to trigger functionality of interest for Android apps.","@type":"WebPage","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">GoalExplorer</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+  <ul class="navigation-list">
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/" class="navigation-list-link">Home</a>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/overview.html" class="navigation-list-link">Overview</a>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/apis" class="navigation-list-link">API Methods</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/apis/fragments.html" class="navigation-list-link">Fragment Transactions</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/apis/menus.html" class="navigation-list-link">Menus/Drawers/Dialogs</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/apis/icc.html" class="navigation-list-link">ICC Methods</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="http://localhost:4000/docs/evaluation" class="navigation-list-link">Evaluation</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/evaluation/googleplay.html" class="navigation-list-link">Google Play</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item  active">
+                      
+                      <a href="http://localhost:4000/docs/evaluation/benchmark.html" class="navigation-list-link active">Benchmark</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/docs/evaluation/accuracy.html" class="navigation-list-link">Accuracy</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/docs/instruction.html" class="navigation-list-link">Installation</a>
+            
+          </li>
+        
+      
+    
+  </ul>
+</nav>
+
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site is dedicated for <a href="https://2019.ase-conferences.org/">ASE'19</a></p>
+        <p> </p>
+        <p class="text-small text-grey-dk-000 mb-0">More info will be available after the review process</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search GoalExplorer" aria-label="Search GoalExplorer" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+            <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
+              
+                <li class="d-inline-block my-0"><a href="https://drive.google.com/open?id=1w6MXs5gPbX-lpl2SE1jYz_Xo1A40rY13">Download GoalExplorer</a></li>
+              
+            </ul>
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/docs/evaluation">Evaluation</a></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>Benchmark</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 id="benchmark-apps">Benchmark Apps</h1>
+
+<p>The benchmark evaluation set contains the 68 F-Droid apps that both <cite><a href="https://dl.acm.org/citation.cfm?id=2931054">Sapienz</a></cite> and <cite><a href="https://dl.acm.org/citation.cfm?id=3106298">Stoat</a></cite> were evaluated on, with additional 25 F-Droid introduced by the Stoat authors.
+This benchmark has 93 F-Droid apps in total.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Package Name</th>
+      <th>Version</th>
+      <th>Size(KB)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>net.jaqpot.netcounter</td>
+      <td>0.13.1</td>
+      <td>0.203125</td>
+    </tr>
+    <tr>
+      <td>com.google.android.divideandconquer</td>
+      <td>1.4</td>
+      <td>0.184570313</td>
+    </tr>
+    <tr>
+      <td>com.threedlite.urforms</td>
+      <td>1.12</td>
+      <td>0.342773438</td>
+    </tr>
+    <tr>
+      <td>biz.gyrus.yaab</td>
+      <td>1.10.1</td>
+      <td>0.37109375</td>
+    </tr>
+    <tr>
+      <td>net.fercanet.LNM</td>
+      <td>1.2</td>
+      <td>0.594726563</td>
+    </tr>
+    <tr>
+      <td>org.passwordmaker.android</td>
+      <td>1.1.7</td>
+      <td>0.124023438</td>
+    </tr>
+    <tr>
+      <td>com.twsitedapps.homemanager</td>
+      <td>2131099649</td>
+      <td>0.274414063</td>
+    </tr>
+    <tr>
+      <td>org.balau.fakedawn</td>
+      <td>1.3</td>
+      <td>0.223632813</td>
+    </tr>
+    <tr>
+      <td>us.achromaticmetaphor.imcktg</td>
+      <td>0.4</td>
+      <td>0.19921875</td>
+    </tr>
+    <tr>
+      <td>org.beide.bomber</td>
+      <td>1</td>
+      <td>0.595703125</td>
+    </tr>
+    <tr>
+      <td>com.addi</td>
+      <td>1.98</td>
+      <td>20.59277344</td>
+    </tr>
+    <tr>
+      <td>campyre.android</td>
+      <td>1.0.1</td>
+      <td>0.802734375</td>
+    </tr>
+    <tr>
+      <td>org.wordpress.android</td>
+      <td>2.0 Alpha</td>
+      <td>1.444335938</td>
+    </tr>
+    <tr>
+      <td>com.sunyata.kindmind</td>
+      <td>1.0.0_BETA</td>
+      <td>0.422851563</td>
+    </tr>
+    <tr>
+      <td>net.mandaria.tippytipper</td>
+      <td>1.1.3</td>
+      <td>0.135742188</td>
+    </tr>
+    <tr>
+      <td>com.google.android.opengles.triangle</td>
+      <td>null</td>
+      <td>0.015625</td>
+    </tr>
+    <tr>
+      <td>com.beust.android.translate</td>
+      <td>1.6</td>
+      <td>0.5078125</td>
+    </tr>
+    <tr>
+      <td>org.jtb.alogcat</td>
+      <td>2.6.1</td>
+      <td>0.279296875</td>
+    </tr>
+    <tr>
+      <td>com.ringdroid</td>
+      <td>2.6</td>
+      <td>0.333007813</td>
+    </tr>
+    <tr>
+      <td>com.github.cetoolbox</td>
+      <td>1</td>
+      <td>0.193359375</td>
+    </tr>
+    <tr>
+      <td>com.android.lolcat</td>
+      <td>2</td>
+      <td>0.203125</td>
+    </tr>
+    <tr>
+      <td>com.example.amazed</td>
+      <td>2.0.2</td>
+      <td>0.1640625</td>
+    </tr>
+    <tr>
+      <td>com.evancharlton.mileage</td>
+      <td>3.1.1</td>
+      <td>0.529296875</td>
+    </tr>
+    <tr>
+      <td>org.waxworlds.edam.importcontacts</td>
+      <td>1.1</td>
+      <td>0.205078125</td>
+    </tr>
+    <tr>
+      <td>com.angrydoughnuts.android.alarmclock</td>
+      <td>1.9</td>
+      <td>0.322265625</td>
+    </tr>
+    <tr>
+      <td>com.example.anycut</td>
+      <td>0.5</td>
+      <td>0.17578125</td>
+    </tr>
+    <tr>
+      <td>info.bpace.munchlife</td>
+      <td>1.4.2</td>
+      <td>0.540039063</td>
+    </tr>
+    <tr>
+      <td>org.swiftp</td>
+      <td>1.25</td>
+      <td>0.0859375</td>
+    </tr>
+    <tr>
+      <td>org.wikipedia</td>
+      <td>1.2.1</td>
+      <td>1.356445313</td>
+    </tr>
+    <tr>
+      <td>org.nerdcircus.android.klaxon</td>
+      <td>0.27</td>
+      <td>0.200195313</td>
+    </tr>
+    <tr>
+      <td>com.nephoapp.anarxiv</td>
+      <td>1</td>
+      <td>0.208007813</td>
+    </tr>
+    <tr>
+      <td>edu.killerud.fileexplorer</td>
+      <td>1</td>
+      <td>0.181640625</td>
+    </tr>
+    <tr>
+      <td>com.example.android.musicplayer</td>
+      <td>1</td>
+      <td>0.073242188</td>
+    </tr>
+    <tr>
+      <td>fr.kwiatkowski.ApkTrack</td>
+      <td>1.1h</td>
+      <td>0.620117188</td>
+    </tr>
+    <tr>
+      <td>fr.keuse.rightsalert</td>
+      <td>0.3a</td>
+      <td>0.197265625</td>
+    </tr>
+    <tr>
+      <td>org.scoutant.blokish</td>
+      <td>0.5.1</td>
+      <td>0.44140625</td>
+    </tr>
+    <tr>
+      <td>de.freewarepoint.whohasmystuff</td>
+      <td>1.0.7</td>
+      <td>0.075195313</td>
+    </tr>
+    <tr>
+      <td>com.everysoft.autoanswer</td>
+      <td>1.5</td>
+      <td>0.244140625</td>
+    </tr>
+    <tr>
+      <td>de.zieren.rot13</td>
+      <td>1.0.2</td>
+      <td>0.171875</td>
+    </tr>
+    <tr>
+      <td>ch.blinkenlights.battery</td>
+      <td>2130968576</td>
+      <td>1.296875</td>
+    </tr>
+    <tr>
+      <td>com.google.android.opengles.spritetext</td>
+      <td>null</td>
+      <td>0.030273438</td>
+    </tr>
+    <tr>
+      <td>de.homac.Mirrored</td>
+      <td>0.2.3</td>
+      <td>0.049804688</td>
+    </tr>
+    <tr>
+      <td>in.shick.lockpatterngenerator</td>
+      <td>2.2</td>
+      <td>0.278320313</td>
+    </tr>
+    <tr>
+      <td>jp.sblo.pandora.aGrep</td>
+      <td>0.2.1</td>
+      <td>0.274414063</td>
+    </tr>
+    <tr>
+      <td>com.google.android.photostream</td>
+      <td>1.1</td>
+      <td>0.28515625</td>
+    </tr>
+    <tr>
+      <td>org.jfedor.frozenbubble</td>
+      <td>1.12</td>
+      <td>0.63671875</td>
+    </tr>
+    <tr>
+      <td>com.smorgasbork.hotdeath</td>
+      <td>1.0.7</td>
+      <td>7.833007813</td>
+    </tr>
+    <tr>
+      <td>org.paulmach.textedit</td>
+      <td>1.5</td>
+      <td>0.2734375</td>
+    </tr>
+    <tr>
+      <td>com.frankcalise.h2droid</td>
+      <td>1.5</td>
+      <td>0.213867188</td>
+    </tr>
+    <tr>
+      <td>caldwell.ben.bites</td>
+      <td>1.3</td>
+      <td>0.264648438</td>
+    </tr>
+    <tr>
+      <td>com.teleca.jamendo</td>
+      <td>1.0.5 [BETA]</td>
+      <td>0.591796875</td>
+    </tr>
+    <tr>
+      <td>org.totschnig.myexpenses</td>
+      <td>1.6.0</td>
+      <td>0.430664063</td>
+    </tr>
+    <tr>
+      <td>com.hectorone.multismssender</td>
+      <td>2.6</td>
+      <td>0.223632813</td>
+    </tr>
+    <tr>
+      <td>com.nloko.android.syncmypix</td>
+      <td>0.15</td>
+      <td>0.33984375</td>
+    </tr>
+    <tr>
+      <td>com.hykwok.CurrencyConverter</td>
+      <td>1.1</td>
+      <td>0.2421875</td>
+    </tr>
+    <tr>
+      <td>com.zachrattner.pockettalk</td>
+      <td>2.5</td>
+      <td>0.209960938</td>
+    </tr>
+    <tr>
+      <td>com.commonsware.android.arXiv</td>
+      <td>2.0.22</td>
+      <td>0.670898438</td>
+    </tr>
+    <tr>
+      <td>hu.vsza.adsdroid</td>
+      <td>1.6</td>
+      <td>0.28515625</td>
+    </tr>
+    <tr>
+      <td>a2dp.Vol</td>
+      <td>2.11.12</td>
+      <td>0.5234375</td>
+    </tr>
+    <tr>
+      <td>com.bretternst.URLazy</td>
+      <td>1.0a</td>
+      <td>0.170898438</td>
+    </tr>
+    <tr>
+      <td>cri.sanity</td>
+      <td>2.11</td>
+      <td>0.606445313</td>
+    </tr>
+    <tr>
+      <td>org.liberty.android.fantastischmemo</td>
+      <td>2131230964</td>
+      <td>0.9453125</td>
+    </tr>
+    <tr>
+      <td>com.tum.yahtzee</td>
+      <td>1.1</td>
+      <td>0.041992188</td>
+    </tr>
+    <tr>
+      <td>i4nc4mp.myLockcomplete</td>
+      <td>a3 revision</td>
+      <td>0.194335938</td>
+    </tr>
+    <tr>
+      <td>org.smerty.zooborns</td>
+      <td>1.4.4</td>
+      <td>0.038085938</td>
+    </tr>
+    <tr>
+      <td>org.dnaq.dialer2</td>
+      <td>2.9</td>
+      <td>0.3125</td>
+    </tr>
+    <tr>
+      <td>com.chmod0.manpages</td>
+      <td>1.51</td>
+      <td>0.205078125</td>
+    </tr>
+    <tr>
+      <td>aarddict.android</td>
+      <td>1.6.11</td>
+      <td>1.827148438</td>
+    </tr>
+    <tr>
+      <td>marto.rtl_tcp_andro</td>
+      <td>2.2</td>
+      <td>0.408203125</td>
+    </tr>
+    <tr>
+      <td>eu.domob.angulo</td>
+      <td>2131099649</td>
+      <td>0.1875</td>
+    </tr>
+    <tr>
+      <td>jpf.android.diary</td>
+      <td>1</td>
+      <td>0.022460938</td>
+    </tr>
+    <tr>
+      <td>com.kvance.Nectroid</td>
+      <td>1.2.4</td>
+      <td>0.278320313</td>
+    </tr>
+    <tr>
+      <td>com.eleybourn.bookcatalogue</td>
+      <td>3.8</td>
+      <td>0.801757813</td>
+    </tr>
+    <tr>
+      <td>com.zoffcc.applications.aagtl</td>
+      <td>1.0.31</td>
+      <td>0.470703125</td>
+    </tr>
+    <tr>
+      <td>jp.gr.java_conf.hatalab.mnv</td>
+      <td>0.4</td>
+      <td>0.317382813</td>
+    </tr>
+    <tr>
+      <td>com.kkinder.charmap</td>
+      <td>1.0.1</td>
+      <td>0.174804688</td>
+    </tr>
+    <tr>
+      <td>com.gluegadget.hndroid</td>
+      <td>0.2</td>
+      <td>0.27734375</td>
+    </tr>
+    <tr>
+      <td>com.irahul.worldclock</td>
+      <td>0.6</td>
+      <td>1.100585938</td>
+    </tr>
+    <tr>
+      <td>net.sf.andbatdog.batterydog</td>
+      <td>0.1.1</td>
+      <td>0.168945313</td>
+    </tr>
+    <tr>
+      <td>com.templaro.opsiz.aka</td>
+      <td>1</td>
+      <td>0.23046875</td>
+    </tr>
+    <tr>
+      <td>com.fsck.k9</td>
+      <td>3.512</td>
+      <td>2.630859375</td>
+    </tr>
+    <tr>
+      <td>demo.killerud.gestures</td>
+      <td>1</td>
+      <td>0.163085938</td>
+    </tr>
+    <tr>
+      <td>com.morphoss.acal</td>
+      <td>1.62</td>
+      <td>1.350585938</td>
+    </tr>
+    <tr>
+      <td>org.jessies.dalvikexplorer</td>
+      <td>3.9</td>
+      <td>0.248046875</td>
+    </tr>
+    <tr>
+      <td>com.bwx.bequick</td>
+      <td>1.9.9.3</td>
+      <td>0.379882813</td>
+    </tr>
+    <tr>
+      <td>com.android.spritemethodtest</td>
+      <td>null</td>
+      <td>0.046875</td>
+    </tr>
+    <tr>
+      <td>hiof.enigma.android.soundboard</td>
+      <td>1</td>
+      <td>0.060546875</td>
+    </tr>
+    <tr>
+      <td>org.tomdroid</td>
+      <td>0.7.5</td>
+      <td>1.0546875</td>
+    </tr>
+    <tr>
+      <td>es.senselesssolutions.gpl.weightchart</td>
+      <td>1.0.4</td>
+      <td>0.108398438</td>
+    </tr>
+    <tr>
+      <td>org.liberty.android.fantastischmemo</td>
+      <td>2131230964</td>
+      <td>0.946289063</td>
+    </tr>
+    <tr>
+      <td>net.everythingandroid.timer</td>
+      <td>1.1.0</td>
+      <td>0.196289063</td>
+    </tr>
+  </tbody>
+</table>
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
