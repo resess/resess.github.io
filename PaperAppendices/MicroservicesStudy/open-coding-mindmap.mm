@@ -1,7 +1,8 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1543608657945" ID="ID_1825957001" MODIFIED="1576890141120" STYLE="bubble" TEXT="Study">
+<node CREATED="1543608657945" ID="ID_1825957001" MODIFIED="1577664222236" STYLE="bubble" TEXT="Study">
 <edge COLOR="#808080" STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="10"/>
 <node CREATED="1543608678622" ID="ID_1147878348" MODIFIED="1550689702363" POSITION="right" STYLE="bubble">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -31,23 +32,54 @@
 <node CREATED="1543609402795" ID="ID_609775231" MODIFIED="1552030184155" TEXT="Split by business capabilities">
 <node CREATED="1543609404494" ID="ID_1742506137" MODIFIED="1543609405847" TEXT="16"/>
 </node>
-<node CREATED="1543609409775" ID="ID_1412219918" MODIFIED="1552030184156" TEXT="Split by data access">
+<node CREATED="1543609409775" ID="ID_1412219918" MODIFIED="1577661220666" TEXT="Split by data access">
 <node CREATED="1543609412802" ID="ID_463818264" MODIFIED="1543609416026" TEXT="6"/>
 </node>
-<node CREATED="1543609423191" ID="ID_751696263" MODIFIED="1552030184156" TEXT="Split by team structure">
+<node CREATED="1543609423191" ID="ID_751696263" MODIFIED="1577661219373" TEXT="Split by team structure">
 <node CREATED="1543609424379" ID="ID_1629549322" MODIFIED="1543609425100" TEXT="3"/>
 </node>
 <node CREATED="1543609430203" ID="ID_511758295" MODIFIED="1552030184157" TEXT="Split by dependencies">
 <node CREATED="1543609431209" ID="ID_1490665901" MODIFIED="1552032021523" TEXT="5"/>
 </node>
-<node CREATED="1576888863326" ID="ID_1090166128" MODIFIED="1576889222392" TEXT="Split by delivery cycles">
-<icon BUILTIN="stop-sign"/>
-<node CREATED="1576889303265" ID="ID_20954018" MODIFIED="1576889744287" TEXT="1 interviewee">
-<icon BUILTIN="stop-sign"/>
-</node>
-</node>
 <node CREATED="1543609436858" ID="ID_1637493641" MODIFIED="1576888897111" TEXT="Split by resource consumption">
 <node CREATED="1543609442462" ID="ID_543469983" MODIFIED="1552032023524" TEXT="10"/>
+</node>
+<node CREATED="1576888863326" ID="ID_1090166128" MODIFIED="1577665225328">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font color="#0066ff">Split by delivery cycles</font>
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1576889303265" ID="ID_20954018" MODIFIED="1577663395498">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      1
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1577663396800" ID="ID_1162132315" MODIFIED="1577663834850">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font color="#0066ff">5&#160;(survey)</font>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
 </node>
 </node>
 <node CREATED="1543608932250" ID="ID_1926981922" MODIFIED="1576889064343">
@@ -64,20 +96,25 @@
     </p>
   </body>
 </html></richcontent>
-<node CREATED="1543608940011" ID="ID_620452527" MODIFIED="1552030184161" TEXT="Fixing defects is the responsibility of service owners">
+<node CREATED="1543608940011" ID="ID_620452527" MODIFIED="1577662708340" TEXT="Fixing defects is the responsibility of service owners">
 <node CREATED="1543609040365" ID="ID_261880385" MODIFIED="1543609095566" TEXT="6"/>
 </node>
-<node CREATED="1543609029159" FOLDED="true" ID="ID_1441772067" MODIFIED="1576889112061" TEXT="Architecture decisions are the responsibility of service owners">
+<node CREATED="1543609029159" ID="ID_1441772067" MODIFIED="1577662701973">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Making architecture decisions is the responsibility of service owners
+    </p>
+  </body>
+</html>
+</richcontent>
 <node CREATED="1543609046227" ID="ID_1020505340" MODIFIED="1543609093410" TEXT="7"/>
 </node>
 <node CREATED="1543609033874" ID="ID_505513173" MODIFIED="1552030184163" TEXT="No owner means no one is responsible">
 <node CREATED="1543609048528" ID="ID_1091194490" MODIFIED="1543609100988" TEXT="4"/>
-</node>
-<node CREATED="1576889071457" ID="ID_108398428" MODIFIED="1576889096343" TEXT="Training newcomers is the responsibility of service owners">
-<icon BUILTIN="bookmark"/>
-<node CREATED="1576889277615" ID="ID_1436814105" MODIFIED="1576889296534" TEXT="1 survey participant">
-<icon BUILTIN="bookmark"/>
-</node>
 </node>
 </node>
 <node CREATED="1543609351524" ID="ID_184682340" MODIFIED="1576888752681">
@@ -127,17 +164,11 @@
 <node CREATED="1543609233424" ID="ID_1756617401" MODIFIED="1552030184147" TEXT="Logging and monitoring is critical and shouldn&apos;t be an afterthought ">
 <node CREATED="1543609236113" ID="ID_730509152" MODIFIED="1549089363476" TEXT="9"/>
 </node>
-<node CREATED="1543609241529" ID="ID_683497532" MODIFIED="1552030184148" TEXT="Automated anomaly detection in logs">
+<node CREATED="1543609241529" ID="ID_683497532" MODIFIED="1577662822950" TEXT="Automated anomaly detection in logs">
 <node CREATED="1543609243453" ID="ID_1625908999" MODIFIED="1549089384953" TEXT="8"/>
 </node>
 <node CREATED="1543609250147" ID="ID_1879060522" MODIFIED="1552030184149" TEXT="Log extensive information about services">
 <node CREATED="1543609251506" ID="ID_734795988" MODIFIED="1543609252256" TEXT="3"/>
-</node>
-<node CREATED="1576889144367" ID="ID_133390243" MODIFIED="1576889188774" TEXT="Can be used to create compliance and auditing reports">
-<icon BUILTIN="bookmark"/>
-<node CREATED="1576889250211" ID="ID_1540317159" MODIFIED="1576889269056" TEXT="1 survey participant">
-<icon BUILTIN="bookmark"/>
-</node>
 </node>
 </node>
 <node CREATED="1543609264500" ID="ID_1486179780" MODIFIED="1552030183800">
@@ -213,7 +244,7 @@
   </body>
 </html></richcontent>
 <edge COLOR="#808080" STYLE="bezier" WIDTH="thin"/>
-<node CREATED="1543609501466" ID="ID_334101475" MODIFIED="1576888947106">
+<node CREATED="1543609501466" ID="ID_334101475" MODIFIED="1577662882074">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -236,10 +267,43 @@
 <node CREATED="1543609527913" ID="ID_1486504017" MODIFIED="1552030184164" TEXT="Standalone microservice">
 <node CREATED="1543609529889" ID="ID_443243658" MODIFIED="1543609531716" TEXT="5"/>
 </node>
-<node CREATED="1576888984140" ID="ID_1260583252" MODIFIED="1576889227759" TEXT="Sidecar">
-<icon BUILTIN="stop-sign"/>
-<node CREATED="1576889746181" ID="ID_1543066145" MODIFIED="1576889812438" TEXT="1 interviewee">
-<icon BUILTIN="stop-sign"/>
+<node CREATED="1576888984140" ID="ID_1260583252" MODIFIED="1577663233870">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font color="#0066ff">Sidecar</font>
+    </p>
+  </body>
+</html>
+</richcontent>
+<node CREATED="1576889746181" ID="ID_1543066145" MODIFIED="1577663336636">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font color="#000000">1</font>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node CREATED="1577663078420" ID="ID_1694051990" MODIFIED="1577663823707">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font color="#0066ff">3&#160;(survey)</font>
+    </p>
+  </body>
+</html>
+</richcontent>
 </node>
 </node>
 </node>
