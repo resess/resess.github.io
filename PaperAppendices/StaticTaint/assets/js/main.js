@@ -45,7 +45,7 @@
                         return
                     }
                     var query = $(this).val();
-                    var searchPage = "https://resess.github.io/PaperAppendices/StaticTaint//search/?q=" + query;
+                    var searchPage = "https://resess.github.io//PaperAppendices/StaticTaint//search/?q=" + query;
                     document.location = searchPage;
                     return false;
                 });
