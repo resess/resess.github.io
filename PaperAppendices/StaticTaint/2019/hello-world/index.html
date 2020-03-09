@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.55.6" />
+
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+<link rel="alternate" type="application/rss&#43;xml" href="/docs/index.xml">
+
+<link rel="shortcut icon" href="/assets/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/assets/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/assets/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/assets/favicons/android-96x196.png" sizes="96x196">
+<link rel="icon" type="image/png" href="/assets/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/assets/favicons/android-192x192.png"sizes="192x192">
+
+<title>Two Thousand Nineteen</title>
+<meta property="og:title" content="Two Thousand Nineteen" />
+<meta property="og:description" content="This website provides supplementary materials for the paper Analyzing Android Taint Analysis Tools: FlowDroid, Amandroid, and DroidSafe submitted to Empirical Software Engineering.
+" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://resess.github.io/PaperAppendices/StaticTaint/" />
+<meta property="og:site_name" content="https://resess.github.io/PaperAppendices/StaticTaint/" />
+
+<meta itemprop="name" content="Two Thousand Nineteen">
+<meta itemprop="description" content="This website provides supplementary materials for the paper Analyzing Android Taint Analysis Tools: FlowDroid, Amandroid, and DroidSafe submitted to Empirical Software Engineering.
+">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Two Thousand Nineteen"/>
+<meta name="twitter:description" content="This website provides supplementary materials for the paper Analyzing Android Taint Analysis Tools: FlowDroid, Amandroid, and DroidSafe submitted to Empirical Software Engineering.
+"/>
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/palette.css">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+
+  
+
+  <body class="td-section">
+    <header>
+        <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+            <span class="text-uppercase font-weight-bold">Analyzing Android Taint Analysis Tools: FlowDroid, Amandroid, and DroidSafe</span>
+	</a>
+</nav>
+</header>
+
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          <div id="td-sidebar-menu" class="td-sidebar__inner">  
+  <form class="td-sidebar__search d-flex align-items-center">
+ <input type="search" class="form-control td-search-input" placeholder="&#xf002 Search this site…" aria-label="Search this site…" autocomplete="off">
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>  
+  <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/index" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Overview</a>
+  </li><ul>
+    <li class="collapse show" id="overview">
+        <ul class="td-sidebar-nav__section pr-md-3">
+          <li class="td-sidebar-nav__section-title">
+            <a href="/config" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Tool Configurations</a>
+          </li>
+          <ul><li class="collapse show" id=""></li></ul>
+          <li class="td-sidebar-nav__section-title">
+            <a href="/benchmark" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Benchmarks</a>
+          </li>
+          <ul><li class="collapse show" id="">
+              <a class="td-sidebar-link td-sidebar-link__page " id="m-overview-benchmarks-sources-and-sinks" href="/benchmark#sources-and-sinks">Sources and sinks</a><a class="td-sidebar-link td-sidebar-link__page " id="m-overview-benchmarks-selected-benchmarks-and-expected-results" href="/benchmark#selected-benchmarks-and-expected-results">Selected benchmarks and expected results</a><a class="td-sidebar-link td-sidebar-link__page " id="m-overview-benchmarks-excluded-benchmarks" href="/benchmark#excluded-benchmarks">Excluded benchmarks</a><a class="td-sidebar-link td-sidebar-link__page " id="m-overview-benchmarks-sources-of-failures" href="/benchmark#sources-of-failures">Sources of failures</a>
+              </li></ul>
+          <li class="td-sidebar-nav__section-title">
+            <a href="/ggplay" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Google Play Apps</a>
+          </li>
+          <ul><li class="collapse show" id="">
+              <a class="td-sidebar-link td-sidebar-link__page " id="m-overview-google-play-apps-distribution-of-api-levels" href="/ggplay#distribution-of-API-levels">Distribution of API levels</a><a class="td-sidebar-link td-sidebar-link__page " id="m-overview-google-play-apps-sources-and-sinks" href="/ggplay#sources-and-sinks">Sources and sinks</a><a class="td-sidebar-link td-sidebar-link__page " id="m-overview-google-play-apps-selected-apps-and-expected-results" href="/ggplay#selected-apps-and-expected-results">Selected apps and expected results</a><a class="td-sidebar-link td-sidebar-link__page " id="m-overview-google-play-apps-sources-of-failures" href="/ggplay#sources-of-failures">Sources of failures</a>
+              </li></ul>
+          <li class="td-sidebar-nav__section-title">
+            <a href="/ubcbench" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">UBCBench</a>
+          </li>
+          <ul><li class="collapse show" id="">
+              <a class="td-sidebar-link td-sidebar-link__page " id="m-overview-ubcbench-new-sources-of-failures" href="/ubcbench#new-sources-of-failures">New sources of failures</a><a class="td-sidebar-link td-sidebar-link__page " id="m-overview-ubcbench-download-link" href="/ubcbench#download-link">Download link</a>
+              </li></ul>
+    </ul>
+  </nav>
+</div>
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	      <ol class="breadcrumb spb-1">
+                <li class="breadcrumb-item active" aria-current="page">
+	          <a href="https://resess.github.io/PaperAppendices/StaticTaint//2019/hello-world/">Two Thousand Nineteen</a>
+                </li>
+	      </ol>
+           </nav>
+           <div class="td-content">
+	      <h1 style="margin-bottom:0px">Two Thousand Nineteen</h1>
+<span class="badge badge-warning">warning-badge</span><span class="badge badge-danger">danger-badge</span>
+<span class="post-date" style="font-style: italic;">June 28, 2019</span>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function() {
+
+    var toc = $('#TOC');
+
+    // Select each header
+    sections = $('.td-content h1');
+        $.each(sections, function(idx, v) {
+            section = $(v);
+            var div_id = $(section).attr('id');
+            var div_text = section.text().split('¶')[0];
+            var parent = $("#" + div_id)
+            var content = '<li id="link_' + div_id + '" class="md-nav__item"><a class="md-nav__link" href="#' + div_id + '" title="' + div_text +'">' + div_text +'</a></li>';
+            $(toc).append(content);
+
+            // Add section code to subnavigation
+            var children = $('<nav class="md-nav"><ul class="md-nav__list"></nav></ul>')
+            var contenders = $("#" + div_id).nextUntil("h1");
+            $.each(contenders, function(idx, contender){
+               if($(contender).is('h2') || $(contender).is('h3')) {
+                   var contender_id = $(contender).attr('id');
+                   var contender_text = $(contender).text().split('¶')[0];
+                   var content = '<li class="md-nav__item"><a class="md-nav__link" href="#' + contender_id + '" title="' + contender_text +'">' + contender_text +'</a></li>';
+                   children.append(content);
+                }
+             })
+             $("#link_" + div_id).append(children);
+        });
+    });
+</script>
+
+<script>
+var headers = ["h1", "h2", "h3", "h4"]
+var colors = ["red", "orange", "green", "blue"]
+
+$.each(headers, function(i, header){
+    var color = colors[i];
+    $(header).each(function () {
+        var href=$(this).attr("id");
+        $(this).append('<a class="headerlink" style="color:' + color + '" href="#' + href + '" title="Permanent link">¶</a>')
+    });
+})
+</script>
+
+<script>
+$('h1').first().append('<div></div>')</script>
+
+	
+              
+              <br/>
+
+
+           </div>
+          </main>
+        </div>
+      </div>
+      <footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+
+</div>
+<div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+  <small class="text-white">© 2020 Junbin Zhang All Rights Reserved</small>
+  
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="/assets/js/main.js"></script>
+
+  </body>
+</html>
