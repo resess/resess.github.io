@@ -1,7 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i";
 @fa-font-path: "../webfonts";
 
-/* Custom */
+/*** Custom - begins ***/
 span.norm {
     display: inline-block;
     height: 30px; /*sets height of element*/
@@ -10,6 +10,34 @@ span.norm {
     padding-right: 10px; /*sets 'padding'*/
     line-height: 30px; /*for this, it sets vertical alignment*/
 }
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    line-height: 1.2;
+}
+th {
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+td {
+    border: 1px solid black;
+    vertical-align: middle;
+}
+
+.orange {
+    background-color: coral;
+}
+
+.blue {
+    background-color: cornflowerblue;
+}
+
+.center {
+    text-align: center;
+    vertical-align: middle;
+}
+/*** Custom - ends ***/
 
 .gh-source {
     display: block;
@@ -344,10 +372,6 @@ caption {
     color: #888;
     text-align: left;
     caption-side: bottom
-}
-
-th {
-    text-align: inherit
 }
 
 label {
@@ -1407,7 +1431,6 @@ pre code {
         -webkit-flex: 0 0 75%;
         -ms-flex: 0 0 75%;
         flex: 0 0 75%;
-        max-width: 75%
     }
     .col-md-10 {
         -webkit-box-flex: 0;
@@ -1862,7 +1885,6 @@ pre code {
         -webkit-flex: 0 0 66.66666667%;
         -ms-flex: 0 0 66.66666667%;
         flex: 0 0 66.66666667%;
-        max-width: 66.66666667%
     }
     .col-xl-9 {
         -webkit-box-flex: 0;
@@ -2034,9 +2056,7 @@ pre code {
 .table td,
 .td-box .row.section>table td,
 .td-content>table td {
-    padding: .75rem;
-    vertical-align: top;
-    border-top: 1px solid #dee2e6
+    padding: 3px;
 }
 
 .table thead th,
@@ -2333,7 +2353,6 @@ pre code {
 .table-responsive,
 .td-box .row.section>table,
 .td-content>table {
-    display: block;
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
