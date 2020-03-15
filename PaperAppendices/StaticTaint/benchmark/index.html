@@ -81,7 +81,7 @@
             <a href="/PaperAppendices/StaticTaint/benchmark" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Benchmarks</a>
           </li>
           <ul><li class="collapse show" id="">
-              <a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-sources-and-sinks" href="/PaperAppendices/StaticTaint/benchmark#sources-and-sinks">Sources and sinks</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-selected-benchmarks-and-expected-results" href="/PaperAppendices/StaticTaint/benchmark#selected-benchmarks-and-expected-results">Selected benchmarks and expected results</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-excluded-benchmarks" href="/PaperAppendices/StaticTaint/benchmark#excluded-benchmarks">Excluded benchmarks</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-sources-of-failures" href="/PaperAppendices/StaticTaint/benchmark#sources-of-failures">Sources of failures</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-comparison-to-our-issta-18-paper" href="/PaperAppendices/StaticTaint/benchmark#comparison-to-our-issta18-paper">Comparison to our ISSTA'18 paper</a>
+              <a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-sources-and-sinks" href="/PaperAppendices/StaticTaint/benchmark#sources-and-sinks">Sources and sinks</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-selected-benchmarks-and-expected-results" href="/PaperAppendices/StaticTaint/benchmark#selected-benchmarks-and-expected-results">Selected benchmarks and expected results</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-excluded-benchmarks" href="/PaperAppendices/StaticTaint/benchmark#excluded-benchmarks">Excluded benchmarks</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-sources-of-failures" href="/PaperAppendices/StaticTaint/benchmark#sources-of-failures">Sources of failures</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-comparison-to-our-issta-18-paper" href="/PaperAppendices/StaticTaint/benchmark#comparison-to-our-issta18-paper">Comparison to our ISSTA'18 paper</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-other-results" href="/PaperAppendices/StaticTaint/benchmark#other-results">Other results</a>
               </li></ul>
           <li class="td-sidebar-nav__section-title">
             <a href="/PaperAppendices/StaticTaint/ggplay" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Google Play Apps</a>
@@ -366,7 +366,7 @@ There are seven columns in the table. Here we explain every column and provide s
 <p>The table consists of two main parts, which are:</p>
 
 <ul>
-  <li><strong>App</strong> and <strong>TargetCriteriaID</strong>: These two columns are information of benchmarks, matching <em>AppID+AppName</em>, and <em>TargetCriteriaID</em> in <em>Selected benchmarks and expected results</em> table.</li>
+  <li><strong>App</strong> and <strong>TargetCriteriaID</strong>: These two columns are information of benchmarks, matching <em>AppID+AppName</em>, and <em>TargetCriteriaID</em> in <a href="#selected-benchmarks-and-expected-results"><em>Selected benchmarks and expected results</em></a> table.</li>
   <li>
     <p><strong>The left columns are all about results of studied tools.</strong> For example, if we look at the columns under FlowDroid, we list details about <em>FP</em> (false positives) and <em>FN</em> (false negatives) flows reported by FlowDroid. For each benchmark, we list:</p>
 
@@ -579,19 +579,19 @@ There are seven columns in the table. Here we explain every column and provide s
 
 <h2 id="comparison-to-our-issta18-paper">Comparison to our ISSTA’18 paper</h2>
 
-<p>We compare our results to <a href="http://www.ece.ubc.ca/~mjulia/publications/Analyzing_the_Analyzers_2018.pdf">our ISSTA’18 paper</a>. There are two differences in our experiments compared to the ISSTA’18 paper:</p>
+<p>We compare our results to <a href="https://dl.acm.org/doi/10.1145/3213846.3213873">our ISSTA’18 paper</a>. There are two differences in our experiments compared to the ISSTA’18 paper:</p>
 
 <ul>
   <li>For selected Android static taint analyzers, we used <em>FlowDroid</em> v2.7.1 in this work vs. v2.0 in the earlier work, and <em>Amandroid</em> v3.2.0 vs. v3.1.1 in the earlier work. <em>DroidSafe</em> did not have any updates from the time of ISSTA’18.</li>
   <li>For selected benchmark suites, we used DroidBench v3.0 instead of v2.0 as in the earlier work. We included 51 new benchmark apps and 1 fixed apps from DroidBench v3.0 in out test suite. ICCBench did not have any updates from the time of ISSTA’18.</li>
 </ul>
 
-<p>In the following two tables, we list benchmark apps on which different versions of <em>FlowDroid</em> and <em>Amandroid</em> reported inconsistent results. As we only ran benchmark apps in DroidBench v2.0 in our ISSTA’18 paper, we only present results for benchmark apps in DroidBench v2.0.</p>
+<p>In the following two tables, we list benchmark apps on which different versions of <em>FlowDroid</em> and <em>Amandroid</em> reported inconsistent results. <strong>As we only ran benchmark apps in DroidBench v2.0 in our ISSTA’18 paper, we only present results for benchmark apps in DroidBench v2.0.</strong></p>
 
 <p>Specifically, these tables consists of the following two parts:</p>
 
 <ul>
-  <li><strong>App</strong> and <strong>TargetCriteriaID</strong>: These two columns are information of benchmarks, matching <em>AppID+AppName</em>, and <em>TargetCriteriaID</em> in <em>Selected benchmarks and expected results</em> table.</li>
+  <li><strong>App</strong> and <strong>TargetCriteriaID</strong>: These two columns are information of benchmarks, matching <em>AppID+AppName</em>, and <em>TargetCriteriaID</em> in <a href="#selected-benchmarks-and-expected-results"><em>Selected benchmarks and expected results</em></a> table.</li>
   <li><strong>Results of FlowDroid or Amandroid under different version.</strong> We list details about <em>FP</em> (false positives) and <em>FN</em> (false negatives) flows reported by FlowDroid v2.7.1 and v2.0 (in the first table) as well as Amandroid v3.2.0 and v3.1.1 (in the second table). We <span class="norm">highlighted</span> differences between two versions of each tool.</li>
 </ul>
 
@@ -657,6 +657,40 @@ There are seven columns in the table. Here we explain every column and provide s
     <tr><td>19. icc_implicit_mix2</td><td>ICC2.7</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUBC4</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
     <tr><td>21. rpc_localservice</td><td>ICC4.1</td><td class="blue">1</td><td class="blue">1xICC4.1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td><td>0</td><td></td></tr>
     </table>
+
+<h2 id="other-results">Other results</h2>
+
+<p>For comparative purposes, we provided results of the following versions of tools, running on selected <strong>158 apps of DroidBench v3.0</strong> and <strong>24 apps of ICCBench v2.0</strong>.</p>
+
+<ul>
+  <li><em>FlowDroid</em> v2.7.1 without <em>IccTA</em>.</li>
+  <li><em>FlowDroid</em> v2.0.</li>
+  <li><em>FlowDroid</em> v1.5.</li>
+  <li><em>Amandroid</em> v3.1.1.</li>
+</ul>
+
+<p>The following table consists of three parts:</p>
+
+<ul>
+  <li><strong>Tool</strong>: The name of the tool and its version.</li>
+  <li><strong>#FP</strong> and <strong>#FN</strong>: Number of <em>FP</em> (false positives) and <em>FN</em> (false negatives) flows reported by each version of tool.</li>
+  <li><strong>Precision</strong>, <strong>Recall</strong>, and <strong>F-Measure</strong>: The calculated accuracy of each version of tool.</li>
+</ul>
+
+<table>
+    <tr><th>Tool</th><th>#FP</th><th>#FN</th><th>Precision</th><th>Recall</th><th>F-Measure</th></tr>
+    <tr><th class="orange" colspan="6">DroidBench</th></tr>
+    <tr><td>FlowDroid v2.7.1 (without IccTA)</td><td>15</td><td>56</td><td>87</td><td>65</td><td>74</td></tr>
+    <tr><td>FlowDroid v2.0</td><td>15</td><td>44</td><td>88</td><td>72</td><td>79</td></tr>
+    <tr><td>FlowDroid v1.5</td><td>16</td><td>65</td><td>85</td><td>59</td><td>70</td></tr>
+    <tr><td>Amandroid v3.1.1</td><td>43</td><td>59</td><td>70</td><td>63</td><td>66</td></tr>
+    <tr><th class="orange" colspan="6">ICCBench</th></tr>
+    <tr><td>FlowDroid v2.7.1 (without IccTA)</td><td>0</td><td>20</td><td>100</td><td>41</td><td>58</td></tr>
+    <tr><td>FlowDroid v2.0</td><td>0</td><td>8</td><td>100</td><td>76</td><td>87</td></tr>
+    <tr><td>FlowDroid v1.5</td><td>0</td><td>17</td><td>100</td><td>50</td><td>67</td></tr>
+    <tr><td>Amandroid v3.1.1</td><td>6</td><td>0</td><td>85</td><td>100</td><td>92</td></tr>
+</table>
+
 
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
