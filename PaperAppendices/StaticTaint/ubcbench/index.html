@@ -122,30 +122,29 @@
 <p>We further identified these failure scenarios that were not covered by existing benchmark applications, and summarized all new criteria attributing to failures in the table below. The table has two columns, which are:</p>
 
 <ul>
-  <li><strong>CriteriaID</strong>: All new criteria we identified are indexed in the format <em>UBCx</em>, from UBC1 to UBC15; TO indicates cases where a tool ran out of time to analyze an app; UN indicates cases where the reason for the failure is unknown.</li>
+  <li><strong>CriteriaID</strong>: All new criteria we identified are indexed in the format <em>UBCx</em>, from UBC1 to UBC14; TO indicates cases where a tool ran out of time to analyze an app; UN indicates cases where the reason for the failure is unknown.</li>
   <li><strong>CriteriaDescription</strong>: This describe the details about newly found criteria.</li>
   <li><strong>Tool</strong>: The tool(s) where we identified the new criteria.</li>
 </ul>
 
 <table>
     <tr><th>CriteriaID</th><th>CriteriaDescription</th><th>Tool</th></tr>
-    <tr><td>UBC1</td><td>Handle taint propagation through SharedPreferences.</td><td>FlowDroid, Amandroid</td></tr>
-    <tr><td>UBC2</td><td>Bug in IccTA when handling ICC methods onServiceConnected(ComponentName, Ibinder).<br />Our patch can be found <a href="https://github.com/secure-software-engineering/FlowDroid/pull/235">here</a>.</td><td>FlowDroid</td></tr>
-    <tr><td>UBC3</td><td>Handle taint propagation through setHint() and getHint() methods of Android widgets.</td><td>FlowDroid, Amandroid</td></tr>
-    <tr><td>UBC4</td><td>Do not filter flows with sinks that are ICC methods.</td><td>Amandroid</td></tr>
-    <tr><td>UBC5</td><td>Precisely model Android framework methods.</td><td>FlowDroid, Amandroid</td></tr>
-    <tr><td>UBC6</td><td>Detect flows from location-related sources to sinks.</td><td>Amandroid</td></tr>
-    <tr><td>UBC7</td><td>Do not treat callback Intent parameters as sources .</td><td>Amandroid</td></tr>
-    <tr><td>UBC8</td><td>Report correct entry method of the flow.</td><td>DroidSafe</td></tr>
-    <tr><td>UBC9</td><td>Handle reflective calls with method getClass().</td><td>DroidSafe</td></tr>
-    <tr><td>UBC10</td><td>Resolve setContentView(int) to the correct layout file when the argument is not directly a resource ID.</td><td>FlowDroid</td></tr>
-    <tr><td>UBC11</td><td>Collect callbacks registered in fragments.</td><td>FlowDroid, Amandroid</td></tr>
-    <tr><td>UBC12</td><td>Handle reflective calls with method getConstructor().</td><td>FlowDroid, Amandroid</td></tr>
-    <tr><td>UBC13</td><td>Bug in IccTA when handling ICC methods PendingIntent.send().<br />Our patch can be found <a href="https://github.com/secure-software-engineering/FlowDroid/pull/239">here</a>.</td><td>FlowDroid</td></tr>
-    <tr><td>UBC14</td><td>Bug in Soot when handling reflection.<br />Our path can be found <a href="https://github.com/Sable/soot/pull/1316">here</a>.</td><td>FlowDroid</td></tr>
-    <tr><td>UBC15</td><td>Do not report duplicated flows.</td><td>Amandroid</td></tr>
+    <tr><td>UBC1</td><td>Bug in IccTA when handling ICC methods onServiceConnected(ComponentName, Ibinder).<br />Our patch can be found <a href="https://github.com/secure-software-engineering/FlowDroid/pull/235">here</a>.</td><td>FlowDroid</td></tr>
+    <tr><td>UBC2</td><td>Handle taint propagation through setHint() and getHint() methods of Android widgets.</td><td>FlowDroid, Amandroid</td></tr>
+    <tr><td>UBC3</td><td>Do not filter flows with sinks that are ICC methods.</td><td>Amandroid</td></tr>
+    <tr><td>UBC4</td><td>Precisely model Android framework methods.</td><td>FlowDroid, Amandroid</td></tr>
+    <tr><td>UBC5</td><td>Detect flows from location-related sources to sinks.</td><td>Amandroid</td></tr>
+    <tr><td>UBC6</td><td>Do not treat callback Intent parameters as sources .</td><td>Amandroid</td></tr>
+    <tr><td>UBC7</td><td>Report correct entry method of the flow.</td><td>DroidSafe</td></tr>
+    <tr><td>UBC8</td><td>Handle reflective calls with method getClass().</td><td>DroidSafe</td></tr>
+    <tr><td>UBC9</td><td>Resolve setContentView(int) to the correct layout file when the argument is not directly a resource ID.</td><td>FlowDroid</td></tr>
+    <tr><td>UBC10</td><td>Collect callbacks registered in fragments.</td><td>FlowDroid, Amandroid</td></tr>
+    <tr><td>UBC11</td><td>Handle reflective calls with method getConstructor().</td><td>FlowDroid, Amandroid</td></tr>
+    <tr><td>UBC12</td><td>Bug in IccTA when handling ICC methods PendingIntent.send().<br />Our patch can be found <a href="https://github.com/secure-software-engineering/FlowDroid/pull/239">here</a>.</td><td>FlowDroid</td></tr>
+    <tr><td>UBC13</td><td>Bug in Soot when handling reflection.<br />Our path can be found <a href="https://github.com/Sable/soot/pull/1316">here</a>.</td><td>FlowDroid</td></tr>
+    <tr><td>UBC14</td><td>Do not report duplicated flows.</td><td>Amandroid</td></tr>
     <tr><td>TO</td><td>Fail to detect flow due to running out of time.</td><td>Amandroid, DroidSafe</td></tr>
-    <tr><td>UN</td><td>Fail to detect flow due to unknown reasons.</td><td>Amandroid</td></tr>
+    <tr><td>UN</td><td>Fail to detect flow due to unknown reasons.</td><td>Amandroid, DroidSafe</td></tr>
     </table>
 
 <h2 id="download-link">Download link</h2>
