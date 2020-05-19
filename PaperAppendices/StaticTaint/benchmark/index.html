@@ -25,8 +25,8 @@
 <meta property="og:description" content="This website provides supplementary materials for the paper Analyzing Android Taint Analysis Tools: FlowDroid, Amandroid, and DroidSafe submitted to Empirical Software Engineering.
 " />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://resess.github.io/" />
-<meta property="og:site_name" content="https://resess.github.io/" />
+<meta property="og:url" content="http://localhost:4000" />
+<meta property="og:site_name" content="http://localhost:4000" />
 
 <meta itemprop="name" content="Benchmarks">
 <meta itemprop="description" content="This website provides supplementary materials for the paper Analyzing Android Taint Analysis Tools: FlowDroid, Amandroid, and DroidSafe submitted to Empirical Software Engineering.
@@ -87,13 +87,13 @@
             <a href="/PaperAppendices/StaticTaint/ggplay" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Google Play Apps</a>
           </li>
           <ul><li class="collapse show" id="">
-              <a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-distribution-of-api-levels" href="/PaperAppendices/StaticTaint/ggplay#distribution-of-API-levels">Distribution of API levels</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-sources-and-sinks" href="/PaperAppendices/StaticTaint/ggplay#sources-and-sinks">Sources and sinks</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-selected-apps-and-expected-results" href="/PaperAppendices/StaticTaint/ggplay#selected-apps-and-expected-results">Selected apps and expected results</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-sources-of-failures" href="/PaperAppendices/StaticTaint/ggplay#sources-of-failures">Sources of failures</a>
+              <a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-distribution-of-api-levels" href="/PaperAppendices/StaticTaint/ggplay#distribution-of-API-levels">Distribution of API levels</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-login-identification" href="/PaperAppendices/StaticTaint/ggplay#login-identification">Login Identification</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-sources-and-sinks" href="/PaperAppendices/StaticTaint/ggplay#sources-and-sinks">Sources and sinks</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-selected-apps-and-expected-results" href="/PaperAppendices/StaticTaint/ggplay#selected-apps-and-expected-results">Selected apps and expected results</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-sources-of-failures" href="/PaperAppendices/StaticTaint/ggplay#sources-of-failures">Sources of failures</a>
               </li></ul>
           <li class="td-sidebar-nav__section-title">
             <a href="/PaperAppendices/StaticTaint/ubcbench" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">UBCBench</a>
           </li>
           <ul><li class="collapse show" id="">
-              <a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-ubcbench-new-sources-of-failures" href="/PaperAppendices/StaticTaint/ubcbench#new-sources-of-failures">New sources of failures</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-ubcbench-download-link" href="/PaperAppendices/StaticTaint/ubcbench#download-link">Download link</a>
+              <a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-ubcbench-new-sources-of-failures" href="/PaperAppendices/StaticTaint/ubcbench#new-sources-of-failures">New sources of failures</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-ubcbench-fixed-bugs" href="/PaperAppendices/StaticTaint/ubcbench#fixed-bugs">Fixed bugs</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-ubcbench-download-link" href="/PaperAppendices/StaticTaint/ubcbench#download-link">Download link</a>
               </li></ul>
     </ul>
   </nav>
@@ -112,7 +112,7 @@
 
 <h2 id="sources-and-sinks">Sources and sinks</h2>
 
-<p>We provided the list of sources and sinks we used for benchmark apps (<em>SS-Bench</em>) in Section 3.4.1 (Table 3) of <a href="">our paper</a>.</p>
+<p>We provided the list of sources and sinks we used for benchmark apps (<em>SS-Bench</em>) in Section 3.3.2 (Table 3) of <a href="">our paper</a>.</p>
 
 <h2 id="selected-benchmarks-and-expected-results">Selected benchmarks and expected results</h2>
 
@@ -121,7 +121,7 @@ There are seven columns in the table. Here we explain every column and provide s
 
 <ul>
   <li><strong>Category</strong>: In DroidBench and ICCBench, authors put benchmarks to different folders based on what aspect of Android/Java the benchmark is designed to test. We extracted the folder name as categories, and numbered them.</li>
-  <li><strong>AppID</strong>: We numbered all benchmarks in DroidBench we use, from 1 to 109, obeying the order of “Category”. The same to ICCBench benchmarks.</li>
+  <li><strong>AppID</strong>: We numbered all benchmarks in DroidBench we use, from 1 to 158, obeying the order of “Category”. The same to ICCBench benchmarks.</li>
   <li><strong>AppName</strong>: The name of the benchmark, which are extracted from DroidBench and ICCBench test suites.</li>
   <li><strong>TargetCriteriaID</strong> and <strong>TargetCriteriaDesciption</strong>: Each of the DroidBench and ICCBench application is designed to test a particular aspect of taint analysis, which we refer to as the <em>Target Criterion</em> (short as <em>Criterion</em>) of the benchmark. Developers generally annotate the criterion in source code. We extract this information from DroidBench and ICCBench applications annotations, which is the column <em>“CriteriaDesciption”</em>. For easy reference, we number each criterion in the format [Test Suite Name][Category ID][subid of application inside this category], for example, if we look at the first row, “DB1.1” means the criterion <em>“Aliases must be computed precisely or a false positive will be found.”</em> is tested by the first benchmark “Merge1” in the first category “Aliasing” in DroidBench test suite.</li>
   <li><strong>Number of designer’s expected flow(s)</strong>: In DroidBench and ICCBench, developers annotated the number of expected leaks, which are what we extracted to this column.</li>
@@ -368,11 +368,18 @@ There are seven columns in the table. Here we explain every column and provide s
 <ul>
   <li><strong>App</strong> and <strong>TargetCriteriaID</strong>: These two columns are information of benchmarks, matching <em>AppID+AppName</em>, and <em>TargetCriteriaID</em> in <a href="#selected-benchmarks-and-expected-results"><em>Selected benchmarks and expected results</em></a> table.</li>
   <li>
-    <p><strong>The left columns are all about results of studied tools.</strong> For example, if we look at the columns under FlowDroid, we list details about <em>FP</em> (false positives) and <em>FN</em> (false negatives) flows reported by FlowDroid. For each benchmark, we list:</p>
+    <p><strong>The left columns are all about results of studied tools.</strong> We list details about <em>FP</em> (false positives) and <em>FN</em> (false negatives) flows reported by each tool. For each benchmark, we list:</p>
 
     <ul>
-      <li><strong>#FP/#FN</strong>: The number of FPs/FNs reported by <em>FlowDroid</em>.</li>
-      <li><strong>FailingCriteria</strong>: Detailed breakdown of all FPs(/FNs) got reported by <em>FlowDroid</em> on the benchmark. The format is <em>[Number of FPs(/FNs)]x[FailingCriteria of The FPs(/FNs)]</em>. Note that we <span class="norm">highlighted</span> flows reported by tools which are not original designed for the tool.</li>
+      <li><strong>#FP/#FN</strong>: The number of FPs/FNs reported by a tool.</li>
+      <li>
+        <p><strong>FailingCriteria</strong>: Detailed breakdown of all FPs(/FNs) got reported by a tool on the benchmark. The format is <em>[Number of FPs(/FNs)]x[FailingCriteria of The FPs(/FNs)]</em>. Note that we <span class="norm">highlighted</span> flows reported by tools which are not original designed for the tool. We also included flows affected by special semantics of <em>Amandroid</em> and <em>DroidSafe</em> in this column, denoted by the following:</p>
+
+        <ul>
+          <li><em>SEM1</em>: <em>Amandroid</em> and <em>DroidSafe</em> filter out intra-component flows for ICC-related sinks.</li>
+          <li><em>SEM2</em>: <em>DroidSafe</em> reports the location of the entry method.</li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ul>
@@ -402,9 +409,9 @@ There are seven columns in the table. Here we explain every column and provide s
     <tr><td>8. Library2</td><td>DB2.4</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>9. LogNoLeak</td><td>DB2.5</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>10. Obfuscation1</td><td>DB2.6</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xDB2.6</td></tr>
-    <tr><td>11. Parcel1</td><td>DB2.7</td><td>0</td><td></td><td>1</td><td>1xDB2.7</td><td>0</td><td></td><td>1</td><td>1xDB2.7</td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>11. Parcel1</td><td>DB2.7</td><td>0</td><td></td><td>1</td><td class="blue">1xBUG1</td><td>0</td><td></td><td>1</td><td>1xDB2.7</td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>12. PrivateDataLeak3</td><td>DB2.8</td><td>0</td><td></td><td>1</td><td>1xDB2.8</td><td>0</td><td></td><td>1</td><td>1xDB2.8</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>13. PublicAPIField1</td><td>DB2.9</td><td>0</td><td></td><td>1</td><td>1xDB2.9</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>13. PublicAPIField1</td><td>DB2.9</td><td>0</td><td></td><td>1</td><td class="blue">1xBUG1</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>14. PublicAPIField2</td><td>DB2.10</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>15. View1</td><td>DB2.11</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xDB2.11</td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>16. ArrayAccess1</td><td>DB3.1</td><td>1</td><td>1xDB3.1</td><td>0</td><td></td><td>1</td><td>1xDB3.1</td><td>0</td><td></td><td>1</td><td>1xDB3.1</td><td>0</td><td></td></tr>
@@ -417,18 +424,18 @@ There are seven columns in the table. Here we explain every column and provide s
     <tr><td>23. HashMapAccess1</td><td>DB3.8</td><td>1</td><td>1xDB3.8</td><td>0</td><td></td><td>1</td><td>1xDB3.8</td><td>0</td><td></td><td>1</td><td>1xDB3.8</td><td>0</td><td></td></tr>
     <tr><td>24. ListAccess1</td><td>DB3.9</td><td>1</td><td>1xDB3.9</td><td>0</td><td></td><td>1</td><td>1xDB3.9</td><td>0</td><td></td><td>1</td><td>1xDB3.9</td><td>0</td><td></td></tr>
     <tr><td>25. MultidimensionalArray1</td><td>DB3.10</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xDB3.10</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>26. AnonymousClass1</td><td>DB4.1</td><td>0</td><td></td><td>0</td><td></td><td>2</td><td class="blue">1xUBC4<br />1xUBC5</td><td>2</td><td class="blue">2xUBC5</td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>26. AnonymousClass1</td><td>DB4.1</td><td>0</td><td></td><td>0</td><td></td><td>2</td><td class="blue">1xUBC3<br />1xUBC4</td><td>2</td><td class="blue">2xUBC4</td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>27. Button1</td><td>DB4.2</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>28. Button2</td><td>DB4.3</td><td>1</td><td>1xDB4.3</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xDB1.1</td><td>0</td><td></td></tr>
+    <tr><td>28. Button2</td><td>DB4.3</td><td>1</td><td class="blue">1xDB6.7</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xDB1.1</td><td>0</td><td></td></tr>
     <tr><td>29. Button3</td><td>DB4.4</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xDB4.4</td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>30. Button4</td><td>DB4.5</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xDB4.5</td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>31. Button5</td><td>DB4.6</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC2</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC2</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>32. LocationLeak1</td><td>DB4.7</td><td>0</td><td></td><td>0</td><td></td><td>3</td><td class="blue">1xUBC4<br />2xUBC5</td><td>2</td><td class="blue">2xUBC5</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>33. LocationLeak2</td><td>DB4.8</td><td>0</td><td></td><td>0</td><td></td><td>3</td><td class="blue">1xUBC4<br />2xUBC5</td><td>2</td><td class="blue">2xUBC5</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>34. LocationLeak3</td><td>DB4.9</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>2</td><td class="blue">2xUBC5</td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>32. LocationLeak1</td><td>DB4.7</td><td>0</td><td></td><td>0</td><td></td><td>3</td><td class="blue">1xUBC3<br />2xUBC4</td><td>2</td><td class="blue">2xUBC4</td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>33. LocationLeak2</td><td>DB4.8</td><td>0</td><td></td><td>0</td><td></td><td>3</td><td class="blue">1xUBC3<br />2xUBC4</td><td>2</td><td class="blue">2xUBC4</td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>34. LocationLeak3</td><td>DB4.9</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>2</td><td class="blue">2xUBC4</td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>35. MethodOverride1</td><td>DB4.10</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>36. MultiHandlers1</td><td>DB4.11</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>37. Ordering1</td><td>DB4.12</td><td>0</td><td></td><td>0</td><td></td><td>3</td><td class="blue">1xDB4.12<br />2xUBC5</td><td>0</td><td></td><td>2</td><td>2xDB4.12</td><td>0</td><td></td></tr>
+    <tr><td>37. Ordering1</td><td>DB4.12</td><td>0</td><td></td><td>0</td><td></td><td>3</td><td class="blue">1xDB4.12<br />2xUBC4</td><td>0</td><td></td><td>2</td><td>2xDB4.12</td><td>0</td><td></td></tr>
     <tr><td>38. RegisterGlobal1</td><td rowspan="2">DB4.13</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xDB9.9</td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>39. RegisterGlobal2</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xDB9.9</td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>40. Unregister1</td><td>DB4.14</td><td>1</td><td>1xDB4.14</td><td>0</td><td></td><td>1</td><td>1xDB4.14</td><td>0</td><td></td><td>1</td><td>1xDB4.14</td><td>0</td><td></td></tr>
@@ -456,17 +463,17 @@ There are seven columns in the table. Here we explain every column and provide s
     <tr><td>62. ObjectSensitivity2</td><td>DB6.7</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xDB1.1</td><td>0</td><td></td></tr>
     <tr><td>63. Clone1</td><td>DB7.1</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>64. Exceptions1</td><td>DB7.2</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>65. Exceptions2</td><td>DB7.3</td><td>0</td><td></td><td>0</td><td></td><td>3</td><td class="blue">3xUBC4</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>66. Exceptions3</td><td>DB7.4</td><td>1</td><td>1xDB7.4</td><td>0</td><td></td><td>4</td><td class="blue">1xDB7.4<br />3xUBC4</td><td>0</td><td></td><td>1</td><td>1xDB7.4</td><td>0</td><td></td></tr>
+    <tr><td>65. Exceptions2</td><td>DB7.3</td><td>0</td><td></td><td>0</td><td></td><td>3</td><td class="blue">3xUBC3</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>66. Exceptions3</td><td>DB7.4</td><td>1</td><td>1xDB7.4</td><td>0</td><td></td><td>4</td><td class="blue">1xDB7.4<br />3xUBC3</td><td>0</td><td></td><td>1</td><td>1xDB7.4</td><td>0</td><td></td></tr>
     <tr><td>67. Exceptions4</td><td>DB7.5</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xDB7.5</td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>68. Exceptions5</td><td rowspan="2">DB7.6</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xDB7.6</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>69. Exceptions6</td><td>0</td><td></td><td>0</td><td></td><td>3</td><td class="blue">3xUBC4</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>70. Exceptions7</td><td>DB7.7</td><td>0</td><td></td><td>0</td><td></td><td>4</td><td class="blue">1xDB7.4<br />3xUBC4</td><td>0</td><td></td><td>1</td><td>1xDB7.4</td><td>0</td><td></td></tr>
-    <tr><td>71. FactoryMethods1</td><td>DB7.8</td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC4</td><td>2</td><td class="blue">2xUBC5</td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>69. Exceptions6</td><td>0</td><td></td><td>0</td><td></td><td>3</td><td class="blue">3xUBC3</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>70. Exceptions7</td><td>DB7.7</td><td>0</td><td></td><td>0</td><td></td><td>4</td><td class="blue">1xDB7.4<br />3xUBC3</td><td>0</td><td></td><td>1</td><td>1xDB7.4</td><td>0</td><td></td></tr>
+    <tr><td>71. FactoryMethods1</td><td>DB7.8</td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td><td>2</td><td class="blue">2xUBC4</td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>72. Loop1</td><td rowspan="2">DB7.9</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUN</td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>73. Loop2</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUN</td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>74. Serialization1</td><td>DB7.10</td><td>0</td><td></td><td>1</td><td>1xDB7.10</td><td>0</td><td></td><td>1</td><td>1xDB7.10</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>75. SourceCodeSpecific1</td><td>DB7.11</td><td>0</td><td></td><td>0</td><td></td><td>4</td><td class="blue">4xUBC4</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>75. SourceCodeSpecific1</td><td>DB7.11</td><td>0</td><td></td><td>0</td><td></td><td>4</td><td class="blue">4xUBC3</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>76. StartProcessWithSecret1</td><td>DB7.12</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xDB7.12</td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>77. StaticInitialization1</td><td>DB7.13</td><td>0</td><td></td><td>1</td><td>1xDB7.13</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>78. StaticInitialization2</td><td>DB7.14</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
@@ -476,76 +483,76 @@ There are seven columns in the table. Here we explain every column and provide s
     <tr><td>82. StringToCharArray1</td><td>DB7.18</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>83. StringToOutputStream1</td><td>DB7.19</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>84. UnreachableCode</td><td>DB7.20</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>85. VirtualDispatch1</td><td>DB7.21</td><td>1</td><td>1xDB7.21</td><td>0</td><td></td><td>1</td><td>1xDB7.21</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC7</td><td>1</td><td class="blue">1xUBC7</td></tr>
+    <tr><td>85. VirtualDispatch1</td><td>DB7.21</td><td>1</td><td>1xDB7.21</td><td>0</td><td></td><td>1</td><td>1xDB7.21</td><td>0</td><td></td><td>1</td><td>1xSEM2</td><td>1</td><td>1xSEM2</td></tr>
     <tr><td>86. VirtualDispatch2</td><td>DB7.22</td><td>1</td><td>1xDB7.22</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>87. VirtualDispatch3</td><td>DB7.23</td><td>1</td><td>1xDB7.23</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>88. ActivityCommunication1</td><td>DB8.1</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>89. ActivityCommunication2</td><td>DB8.2</td><td>0</td><td></td><td>1</td><td>1xDB8.2</td><td>1</td><td>1xDB8.2</td><td>1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>90. ActivityCommunication3</td><td>DB8.3</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td></tr>
-    <tr><td>91. ActivityCommunication4</td><td>DB8.4</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>92. ActivityCommunication5</td><td>DB8.5</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td></tr>
-    <tr><td>93. ActivityCommunication6</td><td>DB8.6</td><td>0</td><td></td><td>1</td><td>1xDB8.6</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td></tr>
-    <tr><td>94. ActivityCommunication7</td><td>DB8.7</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td></tr>
-    <tr><td>95. ActivityCommunication8</td><td>DB8.8</td><td>0</td><td></td><td>1</td><td>1xDB8.8</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>96. BroadcastTaintAndLeak1</td><td>DB8.9</td><td>0</td><td></td><td>1</td><td>1xDB8.9</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td>1</td><td>1xUN</td></tr>
-    <tr><td>97. ComponentNotInManifest1</td><td>DB8.10</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td></tr>
+    <tr><td>89. ActivityCommunication2</td><td>DB8.2</td><td>0</td><td></td><td>1</td><td>1xDB8.2</td><td>1</td><td>1xDB8.2</td><td>1</td><td>1xSEM1</td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>90. ActivityCommunication3</td><td>DB8.3</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM1</td><td>0</td><td></td><td>1</td><td>1xSEM1</td></tr>
+    <tr><td>91. ActivityCommunication4</td><td>DB8.4</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM1</td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>92. ActivityCommunication5</td><td>DB8.5</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM1</td><td>0</td><td></td><td>1</td><td>1xSEM1</td></tr>
+    <tr><td>93. ActivityCommunication6</td><td>DB8.6</td><td>0</td><td></td><td>1</td><td>1xDB8.6</td><td>0</td><td></td><td>1</td><td>1xSEM1</td><td>0</td><td></td><td>1</td><td>1xSEM1</td></tr>
+    <tr><td>94. ActivityCommunication7</td><td>DB8.7</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM1</td><td>0</td><td></td><td>1</td><td>1xSEM1</td></tr>
+    <tr><td>95. ActivityCommunication8</td><td>DB8.8</td><td>0</td><td></td><td>1</td><td>1xDB8.8</td><td>0</td><td></td><td>1</td><td>1xSEM1</td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>96. BroadcastTaintAndLeak1</td><td>DB8.9</td><td>0</td><td></td><td>1</td><td class="blue">1xBUG2</td><td>0</td><td></td><td>1</td><td>1xSEM1</td><td>0</td><td></td><td>1</td><td class="blue">1xUN</td></tr>
+    <tr><td>97. ComponentNotInManifest1</td><td>DB8.10</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM1</td><td>0</td><td></td><td>1</td><td>1xSEM1</td></tr>
     <tr><td>98. EventOrdering1</td><td>DB8.11</td><td>0</td><td></td><td>1</td><td class="blue">1xDB8.16</td><td>0</td><td></td><td>1</td><td class="blue">1xDB8.16</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>99. IntentSink1</td><td>DB8.12</td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC4</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>100. IntentSink2</td><td>DB8.13</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td><td>1</td><td class="blue">1xDB8.18</td><td>0</td><td></td></tr>
-    <tr><td>101. IntentSource1</td><td>DB8.14</td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC6</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>102. ServiceCommunication1</td><td>DB8.15</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC1</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>103. SharedPreferences1</td><td>DB8.16</td><td>0</td><td></td><td>1</td><td class="blue">1xDB8.16</td><td>0</td><td></td><td>1</td><td class="blue">1xDB8.16</td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>99. IntentSink1</td><td>DB8.12</td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>100. IntentSink2</td><td>DB8.13</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM1</td><td>1</td><td class="blue">1xDB8.18</td><td>0</td><td></td></tr>
+    <tr><td>101. IntentSource1</td><td>DB8.14</td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC5</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>102. ServiceCommunication1</td><td>DB8.15</td><td>0</td><td></td><td>1</td><td class="blue">1xEX</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>103. SharedPreferences1</td><td>DB8.16</td><td>0</td><td></td><td>1</td><td>1xDB8.16</td><td>0</td><td></td><td>1</td><td>1xDB8.16</td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>104. Singletons1</td><td>DB8.17</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xDB8.17</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>105. UnresolvableIntent1</td><td>DB8.18</td><td>0</td><td></td><td>2</td><td>2xDB8.18</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>106. ActivityEventSequence1</td><td>DB9.1</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xDB9.1</td><td>1</td><td class="blue">1xUBC7</td><td>1</td><td class="blue">1xUBC7</td></tr>
-    <tr><td>107. ActivityEventSequence2</td><td>DB9.2</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC7</td><td>0</td><td></td></tr>
-    <tr><td>108. ActivityEventSequence3</td><td>DB9.3</td><td>0</td><td></td><td>1</td><td>1xDB9.3</td><td>1</td><td class="blue">1xUBC4</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC7</td><td>0</td><td></td></tr>
+    <tr><td>105. UnresolvableIntent1</td><td>DB8.18</td><td>0</td><td></td><td>2</td><td>2xDB8.18</td><td>0</td><td></td><td>1</td><td>1xSEM1</td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>106. ActivityEventSequence1</td><td>DB9.1</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xDB9.1</td><td>1</td><td>1xSEM2</td><td>1</td><td>1xSEM2</td></tr>
+    <tr><td>107. ActivityEventSequence2</td><td>DB9.2</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xDB9.2</td><td>0</td><td></td></tr>
+    <tr><td>108. ActivityEventSequence3</td><td>DB9.3</td><td>0</td><td></td><td>1</td><td>1xDB9.3</td><td>1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td>1</td><td>1xSEM2</td><td>0</td><td></td></tr>
     <tr><td>109. ActivityLifecycle1</td><td>DB9.4</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>110. ActivityLifecycle2</td><td>DB9.5</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xDB9.5</td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>111. ActivityLifecycle3</td><td>DB9.6</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>112. ActivityLifecycle4</td><td>DB9.7</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>113. ActivitySavedState1</td><td>DB9.8</td><td>0</td><td></td><td>1</td><td>1xDB9.8</td><td>0</td><td></td><td>1</td><td>1xDB9.8</td><td>1</td><td class="blue">1xUBC7</td><td>1</td><td class="blue">1xUBC7</td></tr>
-    <tr><td>114. ApplicationLifecycle1</td><td>DB9.9</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xDB9.9</td><td>1</td><td class="blue">1xUBC7</td><td>1</td><td class="blue">1xUBC7</td></tr>
-    <tr><td>115. ApplicationLifecycle2</td><td>DB9.10</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xDB9.9</td><td>1</td><td class="blue">1xUBC7</td><td>1</td><td class="blue">1xUBC7</td></tr>
-    <tr><td>116. ApplicationLifecycle3</td><td>DB9.11</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xDB9.9</td><td>1</td><td class="blue">1xUBC7</td><td>1</td><td class="blue">1xUBC7</td></tr>
-    <tr><td>117. AsynchronousEventOrdering1</td><td>DB9.12</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC7</td><td>1</td><td class="blue">1xUBC7</td></tr>
+    <tr><td>113. ActivitySavedState1</td><td>DB9.8</td><td>0</td><td></td><td>1</td><td>1xDB9.8</td><td>0</td><td></td><td>1</td><td>1xDB9.8</td><td>1</td><td>1xSEM2</td><td>1</td><td>1xSEM2</td></tr>
+    <tr><td>114. ApplicationLifecycle1</td><td>DB9.9</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xDB9.9</td><td>1</td><td>1xSEM2</td><td>1</td><td>1xSEM2</td></tr>
+    <tr><td>115. ApplicationLifecycle2</td><td>DB9.10</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xDB9.9</td><td>1</td><td>1xSEM2</td><td>1</td><td>1xSEM2</td></tr>
+    <tr><td>116. ApplicationLifecycle3</td><td>DB9.11</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xDB9.9</td><td>1</td><td>1xSEM2</td><td>1</td><td>1xSEM2</td></tr>
+    <tr><td>117. AsynchronousEventOrdering1</td><td>DB9.12</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM2</td><td>1</td><td>1xSEM2</td></tr>
     <tr><td>118. BroadcastReceiverLifecycle1</td><td>DB9.13</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>119. BroadcastReceiverLifecycle2</td><td rowspan="2">DB9.14</td><td>0</td><td></td><td>1</td><td>1xDB9.14</td><td>0</td><td></td><td>1</td><td>1xDB9.14</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>120. BroadcastReceiverLifecycle3</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC7</td><td>0</td><td></td></tr>
+    <tr><td>120. BroadcastReceiverLifecycle3</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM2</td><td>0</td><td></td></tr>
     <tr><td>121. EventOrdering1</td><td>DB9.15</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>122. FragmentLifecycle1</td><td>DB9.16</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC7</td><td>1</td><td class="blue">1xUBC7</td></tr>
-    <tr><td>123. FragmentLifecycle2</td><td>DB9.17</td><td>0</td><td></td><td>1</td><td>1xDB9.17</td><td>0</td><td></td><td>1</td><td>1xDB9.17</td><td>1</td><td class="blue">1xUBC7</td><td>0</td><td></td></tr>
-    <tr><td>124. ServiceEventSequence1</td><td>DB9.18</td><td>0</td><td></td><td>1</td><td>1xDB9.18</td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC7</td><td>0</td><td></td></tr>
-    <tr><td>125. ServiceEventSequence2</td><td rowspan="2">DB9.19</td><td>0</td><td></td><td>1</td><td>1xDB9.19</td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC7</td><td>1</td><td class="blue">1xUBC7</td></tr>
-    <tr><td>126. ServiceEventSequence3</td><td>0</td><td></td><td>1</td><td>1xDB9.19</td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC7</td><td>1</td><td class="blue">1xUBC7</td></tr>
-    <tr><td>127. ServiceLifecycle1</td><td>DB9.20</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC7</td><td>1</td><td class="blue">1xUBC7</td></tr>
-    <tr><td>128. ServiceLifecycle2</td><td>DB9.21</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC7</td><td>0</td><td></td></tr>
-    <tr><td>129. SharedPreferenceChanged1</td><td>DB9.22</td><td>0</td><td></td><td>1</td><td class="blue">1xDB8.16</td><td>0</td><td></td><td>1</td><td class="blue">1xDB8.16</td><td>1</td><td class="blue">1xUBC7</td><td>1</td><td class="blue">1xUBC7</td></tr>
+    <tr><td>122. FragmentLifecycle1</td><td>DB9.16</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM2</td><td>1</td><td>1xSEM2</td></tr>
+    <tr><td>123. FragmentLifecycle2</td><td>DB9.17</td><td>0</td><td></td><td>1</td><td>1xDB9.17</td><td>0</td><td></td><td>1</td><td>1xDB9.17</td><td>1</td><td>1xSEM2</td><td>0</td><td></td></tr>
+    <tr><td>124. ServiceEventSequence1</td><td>DB9.18</td><td>0</td><td></td><td>1</td><td>1xDB9.18</td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM2</td><td>0</td><td></td></tr>
+    <tr><td>125. ServiceEventSequence2</td><td rowspan="2">DB9.19</td><td>0</td><td></td><td>1</td><td>1xDB9.19</td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM2</td><td>1</td><td>1xSEM2</td></tr>
+    <tr><td>126. ServiceEventSequence3</td><td>0</td><td></td><td>1</td><td>1xDB9.19</td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM2</td><td>1</td><td>1xSEM2</td></tr>
+    <tr><td>127. ServiceLifecycle1</td><td>DB9.20</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM2</td><td>1</td><td>1xSEM2</td></tr>
+    <tr><td>128. ServiceLifecycle2</td><td>DB9.21</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM2</td><td>0</td><td></td></tr>
+    <tr><td>129. SharedPreferenceChanged1</td><td>DB9.22</td><td>0</td><td></td><td>1</td><td class="blue">1xDB8.16</td><td>0</td><td></td><td>1</td><td class="blue">1xDB8.16</td><td>1</td><td>1xSEM2</td><td>1</td><td>1xSEM2</td></tr>
     <tr><td>130. Reflection1</td><td>DB10.1</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>131. Reflection2</td><td>DB10.2</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xDB10.2</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>132. Reflection3</td><td>DB10.3</td><td>0</td><td></td><td>1</td><td>1xDB10.3</td><td>0</td><td></td><td>1</td><td>1xDB10.3</td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>132. Reflection3</td><td>DB10.3</td><td>0</td><td></td><td>1</td><td class="blue">1xBUG1</td><td>0</td><td></td><td>1</td><td>1xDB10.3</td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>133. Reflection4</td><td>DB10.4</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xDB10.4</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>134. Reflection5</td><td rowspan="5">DB10.5</td><td>0</td><td></td><td>1</td><td>1xDB10.5</td><td>0</td><td></td><td>1</td><td>1xDB10.5</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC8</td></tr>
-    <tr><td>135. Reflection6</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xDB10.5</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC8</td></tr>
-    <tr><td>136. Reflection7</td><td>0</td><td></td><td>1</td><td>1xDB10.5</td><td>0</td><td></td><td>1</td><td>1xDB10.5</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC8</td></tr>
-    <tr><td>137. Reflection8</td><td>0</td><td></td><td>1</td><td>1xDB10.5</td><td>0</td><td></td><td>1</td><td>1xDB10.5</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC8</td></tr>
-    <tr><td>138. Reflection9</td><td>0</td><td></td><td>1</td><td>1xDB10.5</td><td>0</td><td></td><td>1</td><td>1xDB10.5</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC8</td></tr>
-    <tr><td>139. ActivityCommunication2</td><td rowspan="10">DB11.1</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>2</td><td class="blue">2xUBC8</td></tr>
-    <tr><td>140. AllReflection</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>2</td><td class="blue">2xUBC8</td></tr>
-    <tr><td>141. OnlyIntent</td><td>0</td><td></td><td>1</td><td>1xDB11.1</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>2</td><td class="blue">2xUBC8</td></tr>
-    <tr><td>142. OnlyIntentReceive</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>2</td><td class="blue">2xUBC8</td></tr>
-    <tr><td>143. OnlySMS</td><td>0</td><td></td><td>1</td><td>1xDB11.1</td><td>0</td><td></td><td>2</td><td class="blue">1xDB11.1<br />1xUBC3</td><td>0</td><td></td><td>2</td><td class="blue">2xUBC8</td></tr>
-    <tr><td>144. OnlyTelephony</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>145. OnlyTelephony_Dynamic</td><td>0</td><td></td><td>3</td><td>3xDB11.1</td><td>0</td><td></td><td>3</td><td>3xDB11.1</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>146. OnlyTelephony_Reverse</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>147. OnlyTelephony_Substring</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>148. SharedPreferences1</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>2</td><td class="blue">2xUBC8</td></tr>
-    <tr><td>149. AsyncTask1</td><td>DB12.1</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC7</td><td>1</td><td class="blue">1xUBC7</td></tr>
-    <tr><td>150. Executor1</td><td>DB12.2</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC7</td><td>1</td><td class="blue">1xUBC7</td></tr>
-    <tr><td>151. JavaThread1</td><td>DB12.3</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC7</td><td>0</td><td></td></tr>
-    <tr><td>152. JavaThread2</td><td>DB12.4</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC7</td><td>1</td><td class="blue">1xUBC7</td></tr>
-    <tr><td>153. Looper1</td><td>DB12.5</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC7</td><td>1</td><td class="blue">1xUBC7</td></tr>
-    <tr><td>154. TimeTask1</td><td>DB12.6</td><td>0</td><td></td><td>1</td><td>1xDB12.6</td><td>0</td><td></td><td>1</td><td>1xDB12.6</td><td>1</td><td class="blue">1xUBC7</td><td>1</td><td class="blue">1xUBC7</td></tr>
+    <tr><td>134. Reflection5</td><td rowspan="5">DB10.5</td><td>0</td><td></td><td>1</td><td class="blue">1xBUG1</td><td>0</td><td></td><td>1</td><td>1xDB10.5</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC6</td></tr>
+    <tr><td>135. Reflection6</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xDB10.5</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC6</td></tr>
+    <tr><td>136. Reflection7</td><td>0</td><td></td><td>1</td><td class="blue">1xBUG1</td><td>0</td><td></td><td>1</td><td>1xDB10.5</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC6</td></tr>
+    <tr><td>137. Reflection8</td><td>0</td><td></td><td>1</td><td class="blue">1xBUG1</td><td>0</td><td></td><td>1</td><td>1xDB10.5</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC6</td></tr>
+    <tr><td>138. Reflection9</td><td>0</td><td></td><td>1</td><td class="blue">1xBUG1</td><td>0</td><td></td><td>1</td><td>1xDB10.5</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC6</td></tr>
+    <tr><td>139. ActivityCommunication2</td><td rowspan="10">DB11.1</td><td>0</td><td></td><td>2</td><td class="blue">2xUN</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>2</td><td class="blue">2xUBC6</td></tr>
+    <tr><td>140. AllReflection</td><td>0</td><td></td><td>2</td><td class="blue">2xUBC1</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>2</td><td class="blue">2xUBC6</td></tr>
+    <tr><td>141. OnlyIntent</td><td>0</td><td></td><td>1</td><td class="blue">1xUN</td><td>0</td><td></td><td>2</td><td class="blue">2xUBC1</td><td>0</td><td></td><td>2</td><td class="blue">2xUBC6</td></tr>
+    <tr><td>142. OnlyIntentReceive</td><td>0</td><td></td><td>2</td><td class="blue">2xUBC1</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>2</td><td class="blue">2xUBC6</td></tr>
+    <tr><td>143. OnlySMS</td><td>0</td><td></td><td>1</td><td class="blue">1xUN</td><td>0</td><td></td><td>2</td><td>1xDB11.1<br />1xSEM1</td><td>0</td><td></td><td>2</td><td class="blue">2xUBC6</td></tr>
+    <tr><td>144. OnlyTelephony</td><td>0</td><td></td><td>2</td><td class="blue">2xUBC1</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>145. OnlyTelephony_Dynamic</td><td>0</td><td></td><td>3</td><td class="blue">3xUBC1</td><td>0</td><td></td><td>3</td><td>3xDB11.1</td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>146. OnlyTelephony_Reverse</td><td>0</td><td></td><td>2</td><td class="blue">2xUBC1</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>147. OnlyTelephony_Substring</td><td>0</td><td></td><td>2</td><td class="blue">2xUBC1</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>148. SharedPreferences1</td><td>0</td><td></td><td>2</td><td class="blue">2xDB8.16</td><td>0</td><td></td><td>2</td><td>2xDB11.1</td><td>0</td><td></td><td>2</td><td class="blue">2xUBC6</td></tr>
+    <tr><td>149. AsyncTask1</td><td>DB12.1</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM2</td><td>1</td><td>1xSEM2</td></tr>
+    <tr><td>150. Executor1</td><td>DB12.2</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM2</td><td>1</td><td>1xSEM2</td></tr>
+    <tr><td>151. JavaThread1</td><td>DB12.3</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM2</td><td>0</td><td></td></tr>
+    <tr><td>152. JavaThread2</td><td>DB12.4</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM2</td><td>1</td><td>1xSEM2</td></tr>
+    <tr><td>153. Looper1</td><td>DB12.5</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM2</td><td>1</td><td>1xSEM2</td></tr>
+    <tr><td>154. TimeTask1</td><td>DB12.6</td><td>0</td><td></td><td>1</td><td>1xDB12.6</td><td>0</td><td></td><td>1</td><td>1xDB12.6</td><td>1</td><td>1xSEM2</td><td>1</td><td>1xSEM2</td></tr>
     <tr><td>155. SimpleUnreachable1</td><td rowspan="4">DB13.1</td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xDB13.1</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>156. UnreachableBoth</td><td>1</td><td>1xDB13.1</td><td>0</td><td></td><td>1</td><td>1xDB13.1</td><td>0</td><td></td><td>1</td><td>1xDB13.1</td><td>0</td><td></td></tr>
     <tr><td>157. UnreachableSink1</td><td>1</td><td>1xDB13.1</td><td>0</td><td></td><td>1</td><td>1xDB13.1</td><td>0</td><td></td><td>1</td><td>1xDB13.1</td><td>0</td><td></td></tr>
@@ -553,28 +560,28 @@ There are seven columns in the table. Here we explain every column and provide s
     <tr><th class="orange" colspan="14">ICCBench</th></tr>
     <tr><td>1. icc_explicit_nosrc_nosink</td><td rowspan="2">ICC1.1</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td rowspan="24" colspan="4" class="center">NA</td></tr>
     <tr><td>2. icc_explicit_nosrc_sink</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>3. icc_explicit_src_nosink</td><td rowspan="3">ICC1.2</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td></tr>
-    <tr><td>4. icc_explicit_src_sink</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td></tr>
-    <tr><td>13. icc_explicit1</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td></tr>
+    <tr><td>3. icc_explicit_src_nosink</td><td rowspan="3">ICC1.2</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM1</td></tr>
+    <tr><td>4. icc_explicit_src_sink</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM1</td></tr>
+    <tr><td>13. icc_explicit1</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM1</td></tr>
     <tr><td>5. icc_implicit_nosrc_nosink</td><td rowspan="2">ICC1.3</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
     <tr><td>6. icc_implicit_nosrc_sink</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>7. icc_implicit_src_nosink</td><td rowspan="3">ICC1.4</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td></tr>
-    <tr><td>8. icc_implicit_src_sink</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td></tr>
-    <tr><td>14. icc_implicit_action</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td></tr>
-    <tr><td>9. icc_intentservice</td><td>ICC1.5</td><td>0</td><td></td><td>1</td><td>1xICC1.5</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>10. icc_stateful</td><td>ICC1.6</td><td>0</td><td></td><td>1</td><td>1xICC1.6</td><td>2</td><td class="blue">1xUBC4<br />1xUBC6</td><td>0</td><td></td></tr>
-    <tr><td>11. icc_dynregister1</td><td>ICC2.1</td><td>0</td><td></td><td>1</td><td>1xICC2.1</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td></tr>
-    <tr><td>12. icc_dynregister2</td><td>ICC2.2</td><td>0</td><td></td><td>1</td><td>1xICC2.2</td><td>1</td><td>1xICC2.2</td><td>1</td><td class="blue">1xUBC3</td></tr>
-    <tr><td>15. icc_implicit_category</td><td>ICC2.3</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td></tr>
-    <tr><td>16. icc_implicit_data1</td><td>ICC2.4</td><td>0</td><td></td><td>1</td><td>1xICC2.4</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td></tr>
-    <tr><td>17. icc_implicit_data2</td><td>ICC2.5</td><td>0</td><td></td><td>1</td><td>1xICC2.5</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td></tr>
-    <tr><td>18. icc_implicit_mix1</td><td>ICC2.6</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>2</td><td class="blue">2xUBC3</td></tr>
-    <tr><td>19. icc_implicit_mix2</td><td>ICC2.7</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td class="blue">1xUBC3</td></tr>
-    <tr><td>20. icc_rpc_comprehensive</td><td>ICC3.1</td><td>0</td><td></td><td>2</td><td class="blue">2xUBC1</td><td>2</td><td class="blue">1xUBC4<br />1xUBC6</td><td>0</td><td></td></tr>
-    <tr><td>21. rpc_localservice</td><td>ICC4.1</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC1</td><td>1</td><td>1xICC4.1</td><td>0</td><td></td></tr>
-    <tr><td>22. rpc_messengerservice</td><td>ICC4.2</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC1</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>23. rpc_remoteservice</td><td>ICC4.3</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC1</td><td>0</td><td></td><td>0</td><td></td></tr>
-    <tr><td>24. rpc_returnsensitive</td><td>ICC4.4</td><td>0</td><td></td><td>1</td><td class="blue">1xUBC1</td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>7. icc_implicit_src_nosink</td><td rowspan="3">ICC1.4</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM1</td></tr>
+    <tr><td>8. icc_implicit_src_sink</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM1</td></tr>
+    <tr><td>14. icc_implicit_action</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM1</td></tr>
+    <tr><td>9. icc_intentservice</td><td>ICC1.5</td><td>0</td><td></td><td>1</td><td class="blue">1xBUG2</td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>10. icc_stateful</td><td>ICC1.6</td><td>0</td><td></td><td>1</td><td>1xICC1.6</td><td>2</td><td class="blue">1xUBC3<br />1xUBC5</td><td>0</td><td></td></tr>
+    <tr><td>11. icc_dynregister1</td><td>ICC2.1</td><td>0</td><td></td><td>1</td><td class="blue">1xBUG2</td><td>0</td><td></td><td>1</td><td>1xSEM1</td></tr>
+    <tr><td>12. icc_dynregister2</td><td>ICC2.2</td><td>0</td><td></td><td>1</td><td class="blue">1xBUG2</td><td>1</td><td>1xICC2.2</td><td>1</td><td>1xSEM1</td></tr>
+    <tr><td>15. icc_implicit_category</td><td>ICC2.3</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM1</td></tr>
+    <tr><td>16. icc_implicit_data1</td><td>ICC2.4</td><td>0</td><td></td><td>1</td><td>1xICC2.4</td><td>0</td><td></td><td>1</td><td>1xSEM1</td></tr>
+    <tr><td>17. icc_implicit_data2</td><td>ICC2.5</td><td>0</td><td></td><td>1</td><td>1xICC2.5</td><td>0</td><td></td><td>1</td><td>1xSEM1</td></tr>
+    <tr><td>18. icc_implicit_mix1</td><td>ICC2.6</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>2</td><td>2xSEM1</td></tr>
+    <tr><td>19. icc_implicit_mix2</td><td>ICC2.7</td><td>0</td><td></td><td>0</td><td></td><td>0</td><td></td><td>1</td><td>1xSEM1</td></tr>
+    <tr><td>20. icc_rpc_comprehensive</td><td>ICC3.1</td><td>0</td><td></td><td>2</td><td class="blue">2xEX</td><td>2</td><td class="blue">1xUBC3<br />1xUBC5</td><td>0</td><td></td></tr>
+    <tr><td>21. rpc_localservice</td><td>ICC4.1</td><td>0</td><td></td><td>1</td><td class="blue">1xEX</td><td>1</td><td>1xICC4.1</td><td>0</td><td></td></tr>
+    <tr><td>22. rpc_messengerservice</td><td>ICC4.2</td><td>0</td><td></td><td>1</td><td class="blue">1xEX</td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>23. rpc_remoteservice</td><td>ICC4.3</td><td>0</td><td></td><td>1</td><td class="blue">1xEX</td><td>0</td><td></td><td>0</td><td></td></tr>
+    <tr><td>24. rpc_returnsensitive</td><td>ICC4.4</td><td>0</td><td></td><td>1</td><td class="blue">1xEX</td><td>0</td><td></td><td>0</td><td></td></tr>
     </table>
 
 <h2 id="comparison-to-our-issta18-paper">Comparison to our ISSTA’18 paper</h2>
@@ -583,7 +590,7 @@ There are seven columns in the table. Here we explain every column and provide s
 
 <ul>
   <li>For selected Android static taint analyzers, we used <em>FlowDroid</em> v2.7.1 in this work vs. v2.0 in the earlier work, and <em>Amandroid</em> v3.2.0 vs. v3.1.1 in the earlier work. <em>DroidSafe</em> did not have any updates from the time of ISSTA’18.</li>
-  <li>For selected benchmark suites, we used DroidBench v3.0 instead of v2.0 as in the earlier work. We included 51 new benchmark apps from DroidBench v3.0 in out test suite. ICCBench did not have any updates from the time of ISSTA’18.</li>
+  <li>For selected benchmark suites, we used DroidBench v3.0 instead of v2.0 as in the earlier work. We included 49 new benchmark apps from DroidBench v3.0 in out test suite. ICCBench did not have any updates from the time of ISSTA’18.</li>
 </ul>
 
 <p>In the following two tables, we list benchmark apps on which different versions of <em>FlowDroid</em> and <em>Amandroid</em> reported inconsistent results. <strong>As we only ran benchmark apps in DroidBench v2.0 in our ISSTA’18 paper, we only present results for benchmark apps in DroidBench v2.0.</strong></p>
@@ -602,16 +609,16 @@ There are seven columns in the table. Here we explain every column and provide s
     <tr><th colspan="2">FP</th><th colspan="2">FN</th><th colspan="2">FP</th><th colspan="2">FN</th></tr>
     <tr><th>#FP</th><th>Criteria</th><th>#FN</th><th>Criteria</th><th>#FP</th><th>Criteria</th><th>#FN</th><th>Criteria</th></tr>
     <tr><th colspan="10" class="orange">DroidBench</th></tr>
-    <tr><td>11. Parcel1</td><td>DB2.7</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xDB2.7</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>13. PublicAPIField1</td><td>DB2.9</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xDB2.9</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>11. Parcel1</td><td>DB2.7</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xBUG1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>13. PublicAPIField1</td><td>DB2.9</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xBUG1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
     <tr><td>14. PublicAPIField2</td><td>DB2.10</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xDB2.10</td></tr>
-    <tr><td>96. BroadcastTaintAndLeak1</td><td>DB8.9</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xDB8.9</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>132. Reflection3</td><td>DB10.3</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xDB10.3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>96. BroadcastTaintAndLeak1</td><td>DB8.9</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xBUG2</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>132. Reflection3</td><td>DB10.3</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xBUG1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
     <tr><th colspan="10" class="orange">ICCBench</th></tr>
-    <tr><td>9. icc_intentservice</td><td>ICC1.5</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xICC1.5</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>9. icc_intentservice</td><td>ICC1.5</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xBUG2</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
     <tr><td>10. icc_stateful</td><td>ICC1.6</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xICC1.6</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>11. icc_dynregister1</td><td>ICC2.1</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xICC2.1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>12. icc_dynregister2</td><td>ICC2.2</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xICC2.2</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>11. icc_dynregister1</td><td>ICC2.1</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xBUG2</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>12. icc_dynregister2</td><td>ICC2.2</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xBUG2</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
     </table>
 
 <table>
@@ -620,41 +627,41 @@ There are seven columns in the table. Here we explain every column and provide s
     <tr><th>#FP</th><th>Criteria</th><th>#FN</th><th>Criteria</th><th>#FP</th><th>Criteria</th><th>#FN</th><th>Criteria</th></tr>
     <tr><th colspan="10" class="orange">DroidBench</th></tr>
     <tr><td>25. MultidimensionalArray1</td><td>DB3.10</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xDB3.10</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>34. LocationLeak3</td><td>DB4.9</td><td class="blue">0</td><td class="blue"></td><td>2</td><td>2xUBC5</td><td class="blue">2</td><td class="blue">1xDB6.1<br />1xUBC5</td><td>2</td><td>2xUBC5</td></tr>
+    <tr><td>34. LocationLeak3</td><td>DB4.9</td><td class="blue">0</td><td class="blue"></td><td>2</td><td>2xUBC4</td><td class="blue">2</td><td class="blue">1xDB6.1<br />1xUBC4</td><td>2</td><td>2xUBC4</td></tr>
     <tr><td>36. MultiHandlers1</td><td>DB4.11</td><td class="blue">0</td><td class="blue"></td><td>0</td><td></td><td class="blue">4</td><td class="blue">4xDB4.11</td><td>0</td><td></td></tr>
-    <tr><td>65. Exceptions2</td><td>DB7.3</td><td class="blue">3</td><td class="blue">3xUBC4</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td><td>0</td><td></td></tr>
-    <tr><td>66. Exceptions3</td><td>DB7.4</td><td class="blue">4</td><td class="blue">1xDB7.4<br />3xUBC4</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xDB7.4</td><td>0</td><td></td></tr>
+    <tr><td>65. Exceptions2</td><td>DB7.3</td><td class="blue">3</td><td class="blue">3xUBC3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td><td>0</td><td></td></tr>
+    <tr><td>66. Exceptions3</td><td>DB7.4</td><td class="blue">4</td><td class="blue">1xDB7.4<br />3xUBC3</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xDB7.4</td><td>0</td><td></td></tr>
     <tr><td>72. Loop1</td><td rowspan="2">DB7.9</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUN</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
     <tr><td>73. Loop2</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUN</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>89. ActivityCommunication2</td><td>DB8.2</td><td>1</td><td>1xDB8.2</td><td class="blue">1</td><td class="blue">1xUBC3</td><td>1</td><td>1xDB8.2</td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>90. ActivityCommunication3</td><td>DB8.3</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>91. ActivityCommunication4</td><td>DB8.4</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>92. ActivityCommunication5</td><td>DB8.5</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>93. ActivityCommunication6</td><td>DB8.6</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>94. ActivityCommunication7</td><td>DB8.7</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>95. ActivityCommunication8</td><td>DB8.8</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>96. BroadcastTaintAndLeak1</td><td>DB8.9</td><td class="blue">0</td><td class="blue"></td><td class="blue">1</td><td class="blue">1xUBC3</td><td class="blue">1</td><td class="blue">1xDB6.1</td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>97. ComponentNotInManifest1</td><td>DB8.10</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>100. IntentSink2</td><td>DB8.13</td><td class="blue">0</td><td class="blue"></td><td class="blue">1</td><td class="blue">1xUBC3</td><td class="blue">1</td><td class="blue">1xDB6.1</td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>101. IntentSource1</td><td>DB8.14</td><td class="blue">1</td><td class="blue">1xUBC6</td><td>0</td><td></td><td class="blue">3</td><td class="blue">1xDB6.1<br />2xUBC6</td><td>0</td><td></td></tr>
-    <tr><td>105. UnresolvableIntent1</td><td>DB8.18</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>89. ActivityCommunication2</td><td>DB8.2</td><td>1</td><td>1xDB8.2</td><td class="blue">1</td><td class="blue">1xSEM1</td><td>1</td><td>1xDB8.2</td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>90. ActivityCommunication3</td><td>DB8.3</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xSEM1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>91. ActivityCommunication4</td><td>DB8.4</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xSEM1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>92. ActivityCommunication5</td><td>DB8.5</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xSEM1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>93. ActivityCommunication6</td><td>DB8.6</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xSEM1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>94. ActivityCommunication7</td><td>DB8.7</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xSEM1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>95. ActivityCommunication8</td><td>DB8.8</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xSEM1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>96. BroadcastTaintAndLeak1</td><td>DB8.9</td><td class="blue">0</td><td class="blue"></td><td class="blue">1</td><td class="blue">1xSEM1</td><td class="blue">1</td><td class="blue">1xDB6.1</td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>97. ComponentNotInManifest1</td><td>DB8.10</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xSEM1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>100. IntentSink2</td><td>DB8.13</td><td class="blue">0</td><td class="blue"></td><td class="blue">1</td><td class="blue">1xSEM1</td><td class="blue">1</td><td class="blue">1xDB6.1</td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>101. IntentSource1</td><td>DB8.14</td><td class="blue">1</td><td class="blue">1xUBC5</td><td>0</td><td></td><td class="blue">3</td><td class="blue">1xDB6.1<br />2xUBC5</td><td>0</td><td></td></tr>
+    <tr><td>105. UnresolvableIntent1</td><td>DB8.18</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xSEM1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
     <tr><td>110. ActivityLifecycle2</td><td>DB9.5</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xDB9.5</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
     <tr><td>131. Reflection2</td><td>DB10.2</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xDB10.2</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
     <tr><td>133. Reflection4</td><td>DB10.4</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xDB10.4</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
     <tr><th colspan="10" class="orange">ICCBench</th></tr>
-    <tr><td>3. icc_explicit_src_nosink</td><td rowspan="3">ICC1.2</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>4. icc_explicit_src_sink</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>13. icc_explicit1</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>7. icc_implicit_src_nosink</td><td rowspan="3">ICC1.4</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>8. icc_implicit_src_sink</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>14. icc_implicit_action</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>11. icc_dynregister1</td><td>ICC2.1</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>12. icc_dynregister2</td><td>ICC2.2</td><td>1</td><td>1xICC2.2</td><td class="blue">1</td><td class="blue">1xUBC3</td><td>1</td><td>1xICC2.2</td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>15. icc_implicit_category</td><td>ICC2.3</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>16. icc_implicit_data1</td><td>ICC2.4</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>17. icc_implicit_data2</td><td>ICC2.5</td><td class="blue">0</td><td class="blue"></td><td class="blue">1</td><td class="blue">1xUBC3</td><td class="blue">1</td><td class="blue">1xDB6.1</td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>18. icc_implicit_mix1</td><td>ICC2.6</td><td>0</td><td></td><td class="blue">2</td><td class="blue">2xUBC3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
-    <tr><td>19. icc_implicit_mix2</td><td>ICC2.7</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xUBC3</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>3. icc_explicit_src_nosink</td><td rowspan="3">ICC1.2</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xSEM1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>4. icc_explicit_src_sink</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xSEM1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>13. icc_explicit1</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xSEM1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>7. icc_implicit_src_nosink</td><td rowspan="3">ICC1.4</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xSEM1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>8. icc_implicit_src_sink</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xSEM1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>14. icc_implicit_action</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xSEM1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>11. icc_dynregister1</td><td>ICC2.1</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xSEM1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>12. icc_dynregister2</td><td>ICC2.2</td><td>1</td><td>1xICC2.2</td><td class="blue">1</td><td class="blue">1xSEM1</td><td>1</td><td>1xICC2.2</td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>15. icc_implicit_category</td><td>ICC2.3</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xSEM1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>16. icc_implicit_data1</td><td>ICC2.4</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xSEM1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>17. icc_implicit_data2</td><td>ICC2.5</td><td class="blue">0</td><td class="blue"></td><td class="blue">1</td><td class="blue">1xSEM1</td><td class="blue">1</td><td class="blue">1xDB6.1</td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>18. icc_implicit_mix1</td><td>ICC2.6</td><td>0</td><td></td><td class="blue">2</td><td class="blue">2xSEM1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
+    <tr><td>19. icc_implicit_mix2</td><td>ICC2.7</td><td>0</td><td></td><td class="blue">1</td><td class="blue">1xSEM1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td></tr>
     <tr><td>21. rpc_localservice</td><td>ICC4.1</td><td class="blue">1</td><td class="blue">1xICC4.1</td><td>0</td><td></td><td class="blue">0</td><td class="blue"></td><td>0</td><td></td></tr>
     </table>
 
