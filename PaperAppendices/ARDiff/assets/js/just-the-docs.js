@@ -44,7 +44,7 @@ function initNav() {
 
 function initSearch() {
   var request = new XMLHttpRequest();
-  request.open('GET', 'https://pmarsceill.github.io/just-the-docs/assets/js/search-data.json', true);
+  request.open('GET', 'https://anonymousresearcher2020.github.io/assets/js/search-data.json', true);
 
   request.onload = function(){
     if (request.status >= 200 && request.status < 400) {
@@ -52,7 +52,7 @@ function initSearch() {
       var data = JSON.parse(request.responseText);
       
       
-      lunr.tokenizer.separator = /[\s/]+/
+      lunr.tokenizer.separator = /[\s\-/]+/
       
       
       var index = lunr(function () {
