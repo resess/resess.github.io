@@ -25,8 +25,8 @@
 <meta property="og:description" content="This website provides supplementary materials for the paper Analyzing Android Taint Analysis Tools: FlowDroid, Amandroid, and DroidSafe submitted to Empirical Software Engineering.
 " />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:4000" />
-<meta property="og:site_name" content="http://localhost:4000" />
+<meta property="og:url" content="https://resess.github.io/" />
+<meta property="og:site_name" content="https://resess.github.io/" />
 
 <meta itemprop="name" content="UBCBench">
 <meta itemprop="description" content="This website provides supplementary materials for the paper Analyzing Android Taint Analysis Tools: FlowDroid, Amandroid, and DroidSafe submitted to Empirical Software Engineering.
@@ -122,22 +122,24 @@
 <p>We further identified these failure scenarios that were not covered by existing benchmark applications, and summarized all new criteria attributing to failures in the table below. The table has two columns, which are:</p>
 
 <ul>
-  <li><strong>CriteriaID</strong>: All new criteria we identified are indexed in the format <em>UBCx</em>, from UBC1 to UBC9; TO indicates cases where a tool ran out of time to analyze an app; UN indicates cases where the reason for the failure is unknown.</li>
+  <li><strong>CriteriaID</strong>: All new criteria we identified are indexed in the format <em>U-DB[cat].[index]</em>, where <em>[cat]</em> is the category of DroidBench and <em>[index]</em> is an index in that category; TO indicates cases where a tool ran out of time to analyze an app; UN indicates cases where the reason for the failure is unknown.</li>
   <li><strong>CriteriaDescription</strong>: This describe the details about newly found criteria.</li>
   <li><strong>Tool</strong>: The tool(s) where we identified the new criteria.</li>
 </ul>
 
 <table>
 <tr><th>CriteriaID</th><th>CriteriaDescription</th><th>Tool</th></tr>
-<tr><td>UBC1</td><td>Recongize sources and sinks invoked using reflection.</td><td>FlowDroid</td></tr>
-<tr><td>UBC2</td><td>Handle taint propagation through setHint() and getHint() methods of Android widgets.</td><td>FlowDroid, Amandroid</td></tr>
-<tr><td>UBC3</td><td>Precisely model Android framework methods.</td><td>FlowDroid, Amandroid</td></tr>
-<tr><td>UBC4</td><td>Detect flows from location-related sources to sinks.</td><td>Amandroid</td></tr>
-<tr><td>UBC5</td><td>Do not treat callback Intent parameters as sources .</td><td>Amandroid</td></tr>
-<tr><td>UBC6</td><td>Handle reflective calls with method getClass().</td><td>DroidSafe</td></tr>
-<tr><td>UBC7</td><td>Resolve setContentView(int) to the correct layout file when the argument is not directly a resource ID.</td><td>FlowDroid</td></tr>
-<tr><td>UBC8</td><td>Collect callbacks registered in fragments.</td><td>FlowDroid, Amandroid</td></tr>
-<tr><td>UBC9</td><td>Handle reflective calls with method getConstructor().</td><td>FlowDroid, Amandroid</td></tr>
+<tr><td>U-DB2.12</td><td>Precisely model Android framework methods.</td><td>FlowDroid, Amandroid</td></tr>
+<tr><td>U-DB4.15</td><td>Detect flows from location-related sources to sinks.</td><td>Amandroid</td></tr>
+<tr><td>U-DB4.16</td><td>Do not treat callback Intent parameters as sources .</td><td>Amandroid</td></tr>
+<tr><td>U-DB4.17</td><td>Resolve setContentView(int) to the correct layout file when the argument is not directly a resource ID.</td><td>FlowDroid</td></tr>
+<tr><td>U-DB4.18</td><td>Collect callbacks registered in fragments.</td><td>FlowDroid, Amandroid</td></tr>
+<tr><td>U-DB7.24</td><td>Handle casting statements.</td><td>FlowDroid, Amandroid</td></tr>
+<tr><td>U-DB7.25</td><td>Handle context sensitivity properly.</td><td>Amandroid</td></tr>
+<tr><td>U-DB7.26</td><td>Do not report duplicated flows that can be triggered from multiple locations.</td><td>Amandroid</td></tr>
+<tr><td>U-DB10.6</td><td>Recongize sources and sinks invoked using reflection.</td><td>FlowDroid</td></tr>
+<tr><td>U-DB10.7</td><td>Handle reflective calls with method getClass().</td><td>DroidSafe</td></tr>
+<tr><td>U-DB10.8</td><td>Handle reflective calls with method getConstructor().</td><td>FlowDroid, Amandroid</td></tr>
 <tr><td>TO</td><td>Fail to detect flow due to running out of time.</td><td>Amandroid, DroidSafe</td></tr>
 <tr><td>UN</td><td>Fail to detect flow due to unknown reasons.</td><td>FlowDroid, Amandroid, DroidSafe</td></tr>
 </table>

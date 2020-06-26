@@ -25,8 +25,8 @@
 <meta property="og:description" content="This website provides supplementary materials for the paper Analyzing Android Taint Analysis Tools: FlowDroid, Amandroid, and DroidSafe submitted to Empirical Software Engineering.
 " />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:4000" />
-<meta property="og:site_name" content="http://localhost:4000" />
+<meta property="og:url" content="https://resess.github.io/" />
+<meta property="og:site_name" content="https://resess.github.io/" />
 
 <meta itemprop="name" content="Google Play Apps">
 <meta itemprop="description" content="This website provides supplementary materials for the paper Analyzing Android Taint Analysis Tools: FlowDroid, Amandroid, and DroidSafe submitted to Empirical Software Engineering.
@@ -130,7 +130,7 @@
     <tr><td>16</td><td>3 (0.05%)</td><td>16 (0.29%)</td></tr>
     <tr><td>17</td><td>3 (0.05%)</td><td>19 (0.34%)</td></tr>
     <tr><td>18</td><td>1 (0.02%)</td><td>20 (0.36%)</td></tr>
-    <tr><td><b>19</b></td><td>9 (0.16%)</td><td><b>29 (0.52%)</b></td></tr>
+    <tr><td>19</td><td>9 (0.16%)</td><td>29 (0.52%)</td></tr>
     <tr><td>20</td><td>0 (0.00%)</td><td>29 (0.52%)</td></tr>
     <tr><td>21</td><td>14 (0.25%)</td><td>43 (0.77%)</td></tr>
     <tr><td>22</td><td>27 (0.48%)</td><td>70 (1.26%)</td></tr>
@@ -145,11 +145,11 @@
     <tr><td>Unknown</td><td>14 (0.25%)</td><td>NA</td></tr>
     </table>
 
-<p><strong>The first step of our Google Play apps selection is to keep apps of API level 25 or below. This selection resulted in 188 apps of API 25 and below, among which 29 apps are of API level 19 and below.</strong></p>
+<p><strong>The first step of our Google Play apps selection is to keep apps of API level 25 or below. This selection resulted in 188 apps.</strong></p>
 
 <h2 id="login-identification">Login Identification</h2>
 
-<p>After retriving the API level of each app, we kept apps of API level 25 or below. This selection resulted in 188 apps of API 25 and below, among which 29 apps are of API level 19 and below. We then executed every app on a device for 20 minutes, and check whether the app contains any authentication functionality. We confirmed reliable authentication mechanism in 51 out of 188 apps, 4 of which are of API level 19 or below.</p>
+<p>After retriving the API level of each app, we kept apps of API level 25 or below. This selection resulted in 188 apps. We then executed every app on a device for 20 minutes, and check whether the app contains any authentication functionality. We confirmed reliable authentication mechanism in 51 out of 188 apps.</p>
 
 <p>In this section, we listed all 51 apps with reliable authentication mechanism. We also provide what type of login functionality we identified from each app.</p>
 
@@ -276,11 +276,9 @@ L5: <strong>sink(b);</strong> <br /></p>
 <table>
     <tr><th rowspan="2">APILevel</th><th rowspan="2">AppID</th><th rowspan="2">AppName</th><th rowspan="2">APKSize (MB)</th><th rowspan="2"># of<br />component(s)</th><th colspan="2"># of expected<br />flow(s)</th></tr>
     <tr><th>Login</th><th>Others</th></tr>
-    <tr><th colspan="7" class="orange">Apps of API Level 19 or below</th></tr>
     <tr><td>14</td><td>1</td><td>com.echangecadeaux</td><td>3</td><td>31</td><td>1</td><td>0</td></tr>
     <tr><td>17</td><td>2</td><td>com.rtp.livepass.android</td><td>26</td><td>57</td><td>1</td><td>0</td></tr>
     <tr><td>19</td><td>3</td><td>com.tripadvisor.tripadvisor</td><td>9</td><td>79</td><td>1</td><td>0</td></tr>
-    <tr><th colspan="7" class="orange">Apps of API Level between 19 (exclusive) to 25</th></tr>
     <tr><td rowspan="2">21</td><td>4</td><td>ca.intact.mydrivingdiscount</td><td>7</td><td>42</td><td>1</td><td>0</td></tr>
     <tr><td>5</td><td>com.asiandate</td><td>17</td><td>39</td><td>1</td><td>0</td></tr>
     <tr><td rowspan="6">22</td><td>6</td><td>ca.passportparking.mobile.passportcanada</td><td>22</td><td>134</td><td>1</td><td>0</td></tr>
@@ -294,7 +292,7 @@ L5: <strong>sink(b);</strong> <br /></p>
     <tr><td>24</td><td>14</td><td>com.ackroo.mrgas</td><td>20</td><td>18</td><td>1</td><td>14 (reported by FlowDroid)</td></tr>
     <tr><td rowspan="6">25</td><td>15</td><td>com.airbnb.android</td><td>59</td><td>235</td><td>1</td><td>0</td></tr>
     <tr><td>16</td><td>com.bose.gd.events</td><td>15</td><td>157</td><td>1</td><td>1 (reported by Amandroid, <i>k=1</i>)</td></tr>
-    <tr><td>17</td><td>com.phonehalo.itemtracker</td><td>37</td><td>85</td><td>1</td><td>2 (reported by Amandroid, <i>k=5</i>)</td></tr>
+    <tr><td>17</td><td>com.phonehalo.itemtracker</td><td>37</td><td>85</td><td>1</td><td>2 (reported by Amandroid, both <i>k=5</i> and <i>k=1</i>)</td></tr>
     <tr><td>18</td><td>com.viagogo.consumer.viagogo.playstore</td><td>13</td><td>20</td><td>1</td><td>0</td></tr>
     <tr><td>19</td><td>com.yelp.android</td><td>45</td><td>314</td><td>1</td><td>0</td></tr>
     <tr><td>20</td><td>onxmaps.hunt</td><td>86</td><td>58</td><td>1</td><td>0</td></tr>
@@ -307,7 +305,7 @@ L5: <strong>sink(b);</strong> <br /></p>
 
 <h2 id="sources-of-failures">Sources of failures</h2>
 
-<p>In this section, we detailedly list our manual inspection results about sources of failures on Google Play apps. The table below have multiple columns, we will describe each column and provide instructions on how to read the table.</p>
+<p>Our analysis results can be downloaded <a href="https://drive.google.com/file/d/10DL_zpQJrmNvRoL35uJNxuJX7PwH1GvS/view?usp=sharing"><strong>here</strong></a>. In this section, we detailedly list our manual inspection results about sources of failures on Google Play apps. The table below have multiple columns, we will describe each column and provide instructions on how to read the table.</p>
 
 <p>The table consists of two main parts, which are:</p>
 
@@ -328,34 +326,32 @@ L5: <strong>sink(b);</strong> <br /></p>
 <p>Details of our newly-identified sources of failures (i.e., <em>UBCx</em>) can be found <a href="/PaperAppendices/StaticTaint/ubcbench#new-sources-of-failures"><strong>here</strong></a>.</p>
 
 <table>
-    <tr><th rowspan="4">App</th><th rowspan="2" colspan="4">FlowDroid v2.7.1</th><th colspan="10">Amandroid v3.2.0</th><th rowspan="2" colspan="4">DroidSafe</th></tr>
+    <tr><th rowspan="4">App</th><th rowspan="2" colspan="4">FlowDroid v2.7.1</th><th colspan="10">Amandroid v3.2.0</th></tr>
     <tr><th colspan="5"><i>k=5</i></th><th colspan="5"><i>k=1</i></th></tr>
-    <tr><th colspan="2">FP</th><th colspan="2">FN</th><th colspan="2">FP</th><th colspan="2">FN</th><th rowspan="2"># timed out<br />component(s)</th><th colspan="2">FP</th><th colspan="2">FN</th><th rowspan="2"># timed out<br />component(s)</th><th colspan="2">FP</th><th colspan="2">FN</th></tr>
-    <tr><th>#FP</th><th>Criteria</th><th>#FN</th><th>Criteria</th><th>#FP</th><th>Criteria</th><th>#FN</th><th>Criteria</th><th>#FP</th><th>Criteria</th><th>#FN</th><th>Criteria</th><th>#FP</th><th>Criteria</th><th>#FN</th><th>Criteria</th></tr>
-    <tr><th colspan="19" class="orange">Apps of API Level 19 or below</th></tr>
-    <tr><td>1. com.echangecadeaux</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>23</td><td>0</td><td></td><td>1</td><td>1xOM</td><td>20</td><td>0</td><td></td><td>1</td><td>1xTO</td></tr>
-    <tr><td>2. com.rtp.livepass.android</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xUBC9</td><td>0</td><td>0</td><td></td><td>1</td><td>1xUBC9</td><td>0</td><td>0</td><td></td><td>1</td><td>1xOOM</td></tr>
-    <tr><td>3. com.tripadvisor.tripadvisor</td><td>0</td><td></td><td>1</td><td>1xUBC9</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>71</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>7</td><td>0</td><td></td><td>1</td><td>1xTO</td></tr>
-    <tr><th colspan="19" class="orange">Apps of API Level between 19 (exclusive) to 25</th></tr>
-    <tr><td>4. ca.intact.mydrivingdiscount</td><td>0</td><td></td><td>1</td><td>1xDB8.16</td><td>0</td><td></td><td>1</td><td>1xDB8.16</td><td>0</td><td>0</td><td></td><td>1</td><td>1xDB8.16</td><td>0</td><td rowspan="17" colspan="4" class="center">NA</td></tr>
-    <tr><td>5. com.asiandate</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>2</td><td>0</td><td></td><td>1</td><td>1xUBC8</td><td>0</td></tr>
-    <tr><td>6. ca.passportparking.mobile.passportcanada</td><td>0</td><td></td><td>1</td><td>1xUBC8</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>81</td><td>0</td><td></td><td>1</td><td>1xUBC8</td><td>18</td></tr>
-    <tr><td>7. com.aldiko.android</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xUBC9</td><td>5</td><td>0</td><td></td><td>1</td><td>1xUBC9</td><td>0</td></tr>
-    <tr><td>8. com.aldiko.classic</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xUBC9</td><td>5</td><td>0</td><td></td><td>1</td><td>1xUBC9</td><td>0</td></tr>
-    <tr><td>9. com.passportparking.mobile.parkvictoria</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>93</td><td>0</td><td></td><td>1</td><td>1xUBC9</td><td>22</td></tr>
-    <tr><td>10. com.passportparking.mobile.toronto</td><td>0</td><td></td><td>1</td><td>1xUBC8</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>82</td><td>0</td><td></td><td>1</td><td>1xUBC9</td><td>8</td></tr>
-    <tr><td>11. tc.tc.scsm.phonegap</td><td>0</td><td></td><td>1</td><td>1xUBC8</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>83</td><td>0</td><td></td><td>1</td><td>1xUBC9</td><td>49</td></tr>
-    <tr><td>12. com.onetapsolutions.morneau.activity</td><td>0</td><td></td><td>1</td><td>1xUBC7</td><td>0</td><td></td><td>3</td><td>3xTO</td><td>0</td><td>40</td><td>15xUBC12<br />25xSEM3</td><td>0</td><td></td><td>0</td></tr>
-    <tr><td>13. net.fieldwire.app</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>15</td><td>0</td><td></td><td>1</td><td>1xUBC9</td><td>4</td></tr>
-    <tr><td>14. com.ackroo.mrgas</td><td>2</td><td>2xUBC3</td><td>0</td><td></td><td>0</td><td></td><td>15</td><td>15xTO</td><td>11</td><td>78</td><td>69xUBC12<br />9xSEM3</td><td>10</td><td>10xUN</td><td>0</td></tr>
+    <tr><th colspan="2">FP</th><th colspan="2">FN</th><th colspan="2">FP</th><th colspan="2">FN</th><th rowspan="2"># timed out<br />component(s)</th><th colspan="2">FP</th><th colspan="2">FN</th><th rowspan="2"># timed out<br />component(s)</th></tr>
+    <tr><th>#FP</th><th>Criteria</th><th>#FN</th><th>Criteria</th><th>#FP</th><th>Criteria</th><th>#FN</th><th>Criteria</th><th>#FP</th><th>Criteria</th><th>#FN</th><th>Criteria</th></tr>
+    <tr><td>1. com.echangecadeaux</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>23</td><td>0</td><td></td><td>1</td><td>1xOM</td><td>20</td></tr>
+    <tr><td>2. com.rtp.livepass.android</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>0</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>0</td></tr>
+    <tr><td>3. com.tripadvisor.tripadvisor</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>71</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>7</td></tr>
+    <tr><td>4. ca.intact.mydrivingdiscount</td><td>0</td><td></td><td>1</td><td>1xDB8.16</td><td>0</td><td></td><td>1</td><td>1xDB8.16</td><td>0</td><td>0</td><td></td><td>1</td><td>1xDB8.16</td><td>0</td></tr>
+    <tr><td>5. com.asiandate</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>2</td><td>0</td><td></td><td>1</td><td>1xU-DB4.17</td><td>0</td></tr>
+    <tr><td>6. ca.passportparking.mobile.passportcanada</td><td>0</td><td></td><td>1</td><td>1xU-DB4.17</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>81</td><td>0</td><td></td><td>1</td><td>1xU-DB4.17</td><td>18</td></tr>
+    <tr><td>7. com.aldiko.android</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>5</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>0</td></tr>
+    <tr><td>8. com.aldiko.classic</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>5</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>0</td></tr>
+    <tr><td>9. com.passportparking.mobile.parkvictoria</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>93</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>22</td></tr>
+    <tr><td>10. com.passportparking.mobile.toronto</td><td>0</td><td></td><td>1</td><td>1xU-DB4.17</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>82</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>8</td></tr>
+    <tr><td>11. tc.tc.scsm.phonegap</td><td>0</td><td></td><td>1</td><td>1xU-DB4.17</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>83</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>49</td></tr>
+    <tr><td>12. com.onetapsolutions.morneau.activity</td><td>0</td><td></td><td>3</td><td>3xU-DB2.12</td><td>0</td><td></td><td>3</td><td>3xTO</td><td>0</td><td>40</td><td>15xU-DB7.25<br />25xU-DB7.26</td><td>0</td><td></td><td>0</td></tr>
+    <tr><td>13. net.fieldwire.app</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>15</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>4</td></tr>
+    <tr><td>14. com.ackroo.mrgas</td><td>2</td><td>2xU-DB2.12</td><td>0</td><td></td><td>0</td><td></td><td>15</td><td>15xTO</td><td>11</td><td>78</td><td>69xU-DB7.25<br />9xU-DB7.26</td><td>10</td><td>10xUN</td><td>0</td></tr>
     <tr><td>15. com.airbnb.android</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>86</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>32</td></tr>
-    <tr><td>16. com.bose.gd.events</td><td>0</td><td></td><td>1</td><td>1xUBC10</td><td>0</td><td></td><td>2</td><td>2xTO</td><td>82</td><td>0</td><td></td><td>4</td><td>4xUBC12</td><td>2</td></tr>
-    <tr><td>17. com.phonehalo.itemtracker</td><td>0</td><td></td><td>3</td><td>3xEX</td><td>8</td><td>8xSEM3</td><td>1</td><td>1xUBC9</td><td>5</td><td>8</td><td>8xSEM3</td><td>1</td><td>1xUBC9</td><td>0</td></tr>
-    <tr><td>18. com.viagogo.consumer.viagogo.playstore</td><td>0</td><td></td><td>1</td><td>1xUBC10</td><td>0</td><td></td><td>1</td><td>1xUBC10</td><td>0</td><td>0</td><td></td><td>1</td><td>1xUBC10</td><td>0</td></tr>
-    <tr><td>19. com.yelp.android</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xUBC9</td><td>21</td><td>0</td><td></td><td>1</td><td>1xUBC9</td><td>14</td></tr>
+    <tr><td>16. com.bose.gd.events</td><td>0</td><td></td><td>2</td><td>1xU-DB10.8<br />1xUN</td><td>0</td><td></td><td>2</td><td>2xTO</td><td>82</td><td>0</td><td></td><td>4</td><td>4xU-DB7.25</td><td>2</td></tr>
+    <tr><td>17. com.phonehalo.itemtracker</td><td>0</td><td></td><td>3</td><td>3xEX</td><td>8</td><td>8xU-DB7.26</td><td>1</td><td>1xU-DB4.18</td><td>5</td><td>8</td><td>8xU-DB7.26</td><td>1</td><td>1xU-DB4.18</td><td>0</td></tr>
+    <tr><td>18. com.viagogo.consumer.viagogo.playstore</td><td>0</td><td></td><td>1</td><td>1xU-DB10.8</td><td>0</td><td></td><td>1</td><td>1xU-DB10.8</td><td>0</td><td>0</td><td></td><td>1</td><td>1xU-DB10.8</td><td>0</td></tr>
+    <tr><td>19. com.yelp.android</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>21</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>14</td></tr>
     <tr><td>20. onxmaps.hunt</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>27</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>16</td></tr>
     <tr><td colspan="14"></td></tr>
-    <tr><td rowspan="4" colspan="8"></td><th>Min</th><td>0</td><td rowspan="4" colspan="3"></td><th>Min</th><td>0</td><td rowspan="4" colspan="4"></td></tr>
+    <tr><td rowspan="4" colspan="8"></td><th>Min</th><td>0</td><td rowspan="4" colspan="3"></td><th>Min</th><td>0</td></tr>
     <tr><th>Max</th><td>93</td><th>Max</th><td>49</td></tr>
     <tr><th>Mean</th><td>38</td><th>Mean</th><td>31</td></tr>
     <tr><th>Median</th><td>22</td><th>Median</th><td>5.5</td></tr>
