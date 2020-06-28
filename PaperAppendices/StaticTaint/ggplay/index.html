@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.55.6" />
+
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+<link rel="alternate" type="application/rss&#43;xml" href="/docs/index.xml">
+
+<link rel="shortcut icon" href="/PaperAppendices/StaticTaint/assets/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/PaperAppendices/StaticTaint/assets/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/PaperAppendices/StaticTaint/assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/PaperAppendices/StaticTaint/assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/PaperAppendices/StaticTaint/assets/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/PaperAppendices/StaticTaint/assets/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/PaperAppendices/StaticTaint/assets/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/PaperAppendices/StaticTaint/assets/favicons/android-96x196.png" sizes="96x196">
+<link rel="icon" type="image/png" href="/PaperAppendices/StaticTaint/assets/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/PaperAppendices/StaticTaint/assets/favicons/android-192x192.png"sizes="192x192">
+
+<title>Google Play Apps</title>
+<meta property="og:title" content="Google Play Apps" />
+<meta property="og:description" content="This website provides supplementary materials for the paper Analyzing Android Taint Analysis Tools: FlowDroid, Amandroid, and DroidSafe submitted to Empirical Software Engineering.
+" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://resess.github.io/" />
+<meta property="og:site_name" content="https://resess.github.io/" />
+
+<meta itemprop="name" content="Google Play Apps">
+<meta itemprop="description" content="This website provides supplementary materials for the paper Analyzing Android Taint Analysis Tools: FlowDroid, Amandroid, and DroidSafe submitted to Empirical Software Engineering.
+">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Google Play Apps"/>
+<meta name="twitter:description" content="This website provides supplementary materials for the paper Analyzing Android Taint Analysis Tools: FlowDroid, Amandroid, and DroidSafe submitted to Empirical Software Engineering.
+"/>
+
+<link rel="stylesheet" href="/PaperAppendices/StaticTaint/assets/css/main.css">
+<link rel="stylesheet" href="/PaperAppendices/StaticTaint/assets/css/palette.css">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+
+  
+
+  <body class="td-section">
+    <header>
+        <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/PaperAppendices/StaticTaint/">
+            <span class="text-uppercase font-weight-bold">Analyzing Android Taint Analysis Tools: FlowDroid, Amandroid, and DroidSafe</span>
+	</a>
+</nav>
+</header>
+
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          <div id="td-sidebar-menu" class="td-sidebar__inner">  
+  <form class="td-sidebar__search d-flex align-items-center">
+ <input type="search" class="form-control td-search-input" placeholder="&#xf002 Search this site…" aria-label="Search this site…" autocomplete="off">
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>  
+  <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/PaperAppendices/StaticTaint/index" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">ANALYZING ANDROID TAINT ANALYSIS TOOLS: FLOWDROID, AMANDROID, AND DROIDSAFE</a>
+  </li><ul>
+    <li class="collapse show" id="analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe">
+        <ul class="td-sidebar-nav__section pr-md-3">
+          <li class="td-sidebar-nav__section-title">
+            <a href="/PaperAppendices/StaticTaint/config" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Tool Configurations</a>
+          </li>
+          <ul><li class="collapse show" id=""></li></ul>
+          <li class="td-sidebar-nav__section-title">
+            <a href="/PaperAppendices/StaticTaint/benchmark" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Benchmarks</a>
+          </li>
+          <ul><li class="collapse show" id="">
+              <a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-sources-and-sinks" href="/PaperAppendices/StaticTaint/benchmark#sources-and-sinks">Sources and sinks</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-selected-benchmarks-and-expected-results" href="/PaperAppendices/StaticTaint/benchmark#selected-benchmarks-and-expected-results">Selected benchmarks and expected results</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-excluded-benchmarks" href="/PaperAppendices/StaticTaint/benchmark#excluded-benchmarks">Excluded benchmarks</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-sources-of-failures" href="/PaperAppendices/StaticTaint/benchmark#sources-of-failures">Sources of failures</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-comparison-to-our-issta-18-paper" href="/PaperAppendices/StaticTaint/benchmark#comparison-to-our-issta18-paper">Comparison to our ISSTA'18 paper</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-other-results" href="/PaperAppendices/StaticTaint/benchmark#other-results">Other results</a>
+              </li></ul>
+          <li class="td-sidebar-nav__section-title">
+            <a href="/PaperAppendices/StaticTaint/ggplay" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Google Play Apps</a>
+          </li>
+          <ul><li class="collapse show" id="">
+              <a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-distribution-of-api-levels" href="/PaperAppendices/StaticTaint/ggplay#distribution-of-API-levels">Distribution of API levels</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-login-identification" href="/PaperAppendices/StaticTaint/ggplay#login-identification">Login Identification</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-sources-and-sinks" href="/PaperAppendices/StaticTaint/ggplay#sources-and-sinks">Sources and sinks</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-selected-apps-and-expected-results" href="/PaperAppendices/StaticTaint/ggplay#selected-apps-and-expected-results">Selected apps and expected results</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-sources-of-failures" href="/PaperAppendices/StaticTaint/ggplay#sources-of-failures">Sources of failures</a>
+              </li></ul>
+          <li class="td-sidebar-nav__section-title">
+            <a href="/PaperAppendices/StaticTaint/ubcbench" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">UBCBench</a>
+          </li>
+          <ul><li class="collapse show" id="">
+              <a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-ubcbench-new-sources-of-failures" href="/PaperAppendices/StaticTaint/ubcbench#new-sources-of-failures">New sources of failures</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-ubcbench-fixed-bugs" href="/PaperAppendices/StaticTaint/ubcbench#fixed-bugs">Fixed bugs</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-ubcbench-download-link" href="/PaperAppendices/StaticTaint/ubcbench#download-link">Download link</a>
+              </li></ul>
+    </ul>
+  </nav>
+</div>
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	      <ol class="breadcrumb spb-1">
+                <li class="breadcrumb-item active" aria-current="page">
+                </li>
+	      </ol>
+           </nav>
+           <div class="td-content">
+	      <h1 id="google-play-apps">Google Play Apps</h1>
+
+<h2 id="distribution-of-api-levels">Distribution of API levels</h2>
+
+<p>We downloaded top 100 apps from each of the 58 free app categories in the Canadian Google Play Store as of December 2019, arriving at 5,569 apps. We listed the distribution of API levels of these Google Play apps in the following table.</p>
+
+<p>We did not find any app of API level 6 or below, thus these API levels are omitted in the following table. In addition, there are 14 apps that we cannot extract the API levels.</p>
+
+<table>
+    <tr><th>API Level</th><th># of apps<br />at this level (%)</th><th># of apps<br />below this level (%)</th></tr>
+    <tr><td>7</td><td>2 (0.04%)</td><td>2 (0.04%)</td></tr>
+    <tr><td>8</td><td>1 (0.02%)</td><td>3 (0.05%)</td></tr>
+    <tr><td>9</td><td>2 (0.04%)</td><td>5 (0.09%)</td></tr>
+    <tr><td>10</td><td>1 (0.02%)</td><td>6 (0.11%)</td></tr>
+    <tr><td>11</td><td>0 (0.00%)</td><td>6 (0.11%)</td></tr>
+    <tr><td>12</td><td>0 (0.00%)</td><td>6 (0.11%)</td></tr>
+    <tr><td>13</td><td>1 (0.02%)</td><td>7 (0.13%)</td></tr>
+    <tr><td>14</td><td>6 (0.11%)</td><td>13 (0.23%)</td></tr>
+    <tr><td>15</td><td>0 (0.00%)</td><td>13 (0.23%)</td></tr>
+    <tr><td>16</td><td>3 (0.05%)</td><td>16 (0.29%)</td></tr>
+    <tr><td>17</td><td>3 (0.05%)</td><td>19 (0.34%)</td></tr>
+    <tr><td>18</td><td>1 (0.02%)</td><td>20 (0.36%)</td></tr>
+    <tr><td>19</td><td>9 (0.16%)</td><td>29 (0.52%)</td></tr>
+    <tr><td>20</td><td>0 (0.00%)</td><td>29 (0.52%)</td></tr>
+    <tr><td>21</td><td>14 (0.25%)</td><td>43 (0.77%)</td></tr>
+    <tr><td>22</td><td>27 (0.48%)</td><td>70 (1.26%)</td></tr>
+    <tr><td>23</td><td>41 (0.74%)</td><td>111 (1.99%)</td></tr>
+    <tr><td>24</td><td>23 (0.41%)</td><td>134 (2.41%)</td></tr>
+    <tr><td><b>25</b></td><td>54 (0.97%)</td><td><b>188 (3.38%)</b></td></tr>
+    <tr><td>26</td><td>439 (7.88%)</td><td>627 (11.26%)</td></tr>
+    <tr><td>27</td><td>342 (6.14%)</td><td>969 (17.40%)</td></tr>
+    <tr><td>28</td><td>3802 (68.27%)</td><td>4771 (85.67%)</td></tr>
+    <tr><td>29</td><td>782 (14.04%)</td><td>5553 (99.71%)</td></tr>
+    <tr><td>30</td><td>2 (0.04%)</td><td>5555 (99.75%)</td></tr>
+    <tr><td>Unknown</td><td>14 (0.25%)</td><td>NA</td></tr>
+    </table>
+
+<p><strong>The first step of our Google Play apps selection is to keep apps of API level 25 or below. This selection resulted in 188 apps.</strong></p>
+
+<h2 id="login-identification">Login Identification</h2>
+
+<p>After retriving the API level of each app, we kept apps of API level 25 or below. This selection resulted in 188 apps. We then executed every app on a device for 20 minutes, and check whether the app contains any authentication functionality. We confirmed reliable authentication mechanism in 51 out of 188 apps.</p>
+
+<p>In this section, we listed all 51 apps with reliable authentication mechanism. We also provide what type of login functionality we identified from each app.</p>
+
+<p>The following table consists of these columns:</p>
+
+<ul>
+  <li><strong>APILevel</strong>: The API level of an app. We sorted all the apps by their API levels, from the smallest one to the largest one.</li>
+  <li><strong>AppName</strong>: The full package name of the app.</li>
+  <li><strong>Category</strong>: On Google Play Store, apps are categorized into 58 categories, e.g., <em>AUTO_AND_VEHICLES</em>, <em>BOOKS_AND_REFERENCE</em>. We listed the category of an app on Google Play Store in this column. An app may from multiple categories, e.g., <em>com.facebook.katana</em> from both <em>APPLICATION</em> and <em>SOCIAL</em> categories. We confirmed that the APKs from different categories with the same app name are identical.</li>
+  <li><strong>LoginType</strong>: What type of login functionality we identified from each app. There are mainly two types of login:
+    <ul>
+      <li><em>Traditional</em>: Login functionality is not delegated to third-party OAuth service providers.</li>
+      <li>OAuth (including <em>Google Sign In</em>, <em>Facebook Login</em> and <em>Weibo</em>): Login functionality is delegated to third-party OAuth service providers.</li>
+    </ul>
+  </li>
+  <li><strong>Included/Excluded</strong>: Whether we included or excluded an app. For apps that are excluded, we also provided the reason in parentheses.</li>
+</ul>
+
+<table>
+    <tr><th>APILevel</th><th>AppName</th><th>Category</th><th>LoginType</th><th>Included/Excluded</th></tr>
+    <tr><td>14</td><td>com.echangecadeaux</td><td>SOCIAL</td><td>Traditional</td><td>&#10003;</td></tr>
+    <tr><td>16</td><td>lagamerie.nope</td><td>GAME_TRIVIA</td><td>Google Sign In</td><td>&#10007; (OAuth)</td></tr>
+    <tr><td>17</td><td>com.rtp.livepass.android</td><td>SPORTS</td><td>Traditional</td><td>&#10003;</td></tr>
+    <tr><td>19</td><td>com.tripadvisor.tripadvisor</td><td>TRAVEL_AND_LOCAL</td><td>Traditional<br />Google Sign In<br />Facebook Login</td><td>&#10003;</td></tr>
+    <tr><td rowspan="4">21</td><td>ca.intact.mydrivingdiscount</td><td>FINANCE</td><td>Traditional</td><td>&#10003;</td></tr>
+    <tr><td>com.asiandate</td><td>SOCIAL</td><td>Traditional</td><td>&#10003;</td></tr>
+    <tr><td>com.facebook.katana</td><td>APPLICATION, SOCIAL</td><td>Traditional</td><td>&#10007; (Highly obfuscated)</td></tr>
+    <tr><td>com.facebook.orca</td><td>ANDROID_WEAR, APPLICATION, COMMUNICATION</td><td>Traditional</td><td>&#10007; (Highly obfuscated)</td></tr>
+    <tr><td rowspan="7">22</td><td>ca.passportparking.mobile.passportcanada</td><td>MAPS_AND_NAVIGATION</td><td>Traditional</td><td>&#10003;</td></tr>
+    <tr><td>com.aldiko.android</td><td>BOOKS_AND_REFERENCE</td><td>Traditional</td><td>&#10003;</td></tr>
+    <tr><td>com.aldiko.classic</td><td>BOOKS_AND_REFERENCE</td><td>Traditional</td><td>&#10003;</td></tr>
+    <tr><td>com.ninjakiwi.monkeycity</td><td>GAME_STRATEGY</td><td>Google Sign In</td><td>&#10007; (OAuth)</td></tr>
+    <tr><td>com.passportparking.mobile.parkvictoria</td><td>MAPS_AND_NAVIGATION</td><td>Traditional</td><td>&#10003;</td></tr>
+    <tr><td>com.passportparking.mobile.toronto</td><td>MAPS_AND_NAVIGATION</td><td>Traditional</td><td>&#10003;</td></tr>
+    <tr><td>tc.tc.scsm.phonegap</td><td>TOOLS</td><td>Traditional</td><td>&#10003;</td></tr>
+    <tr><td rowspan="12">23</td><td>co.adultfnder.android</td><td>DATING</td><td>Traditional</td><td>&#10007; (WebView)</td></tr>
+    <tr><td>com.distinctivegames.hockey2016</td><td>GAME_SPORTS</td><td>Google Sign In</td><td>&#10007; (OAuth)</td></tr>
+    <tr><td>com.giantssoftware.fs14</td><td>FAMILY, FAMILY_EDUCATION, GAME_SIMULATION</td><td>Google Sign In</td><td>&#10007; (OAuth)</td></tr>
+    <tr><td>com.luckyslots.slotcircus</td><td>GAME_CASINO</td><td>Facebook Login</td><td>&#10007; (OAuth)</td></tr>
+    <tr><td>com.onetapsolutions.morneau.activity</td><td>HEALTH_AND_FITNESS</td><td>Traditional</td><td>&#10003;</td></tr>
+    <tr><td>com.superluckycasino.billionaire.slots.vegas.android.free</td><td>GAME_CASINO</td><td>Facebook Login</td><td>&#10007; (OAuth)</td></tr>
+    <tr><td>com.superluckycasino.doubleup.slots.vegas.android.free</td><td>GAME_CASINO</td><td>Facebook Login</td><td>&#10007; (OAuth)</td></tr>
+    <tr><td>com.superluckycasino.fortunespin.slots.vegas.android.free</td><td>GAME_BOARD</td><td>Facebook Login</td><td>&#10007; (OAuth)</td></tr>
+    <tr><td>com.superluckycasino.getrich.slots.vegas.android.free</td><td>GAME_CARD</td><td>Facebook Login</td><td>&#10007; (OAuth)</td></tr>
+    <tr><td>com.undergroundcreative.superstarbandmanager</td><td>GAME_MUSIC</td><td>Traditional</td><td>&#10007; (WebView)</td></tr>
+    <tr><td>es.socialpoint.dragonland</td><td>GAME_ADVENTURE</td><td>Google Sign In<br />Facebook Login</td><td>&#10007; (OAuth)</td></tr>
+    <tr><td>&#10007;et.fieldwire.app</td><td>BUSINESS</td><td>Traditional</td><td>&#10003;</td></tr>
+    <tr><td rowspan="8">24</td><td>com.ackroo.mrgas</td><td>AUTO_AND_VEHICLES</td><td>Traditional</td><td>&#10003;</td></tr>
+    <tr><td>com.adobe.adobephotoshopfix</td><td>PHOTOGRAPHY</td><td>Traditional</td><td>&#10007; (WebView)</td></tr>
+    <tr><td>com.andromo.dev601172.app653895</td><td>HOUSE_AND_HOME</td><td>Traditional</td><td>&#10007; (WebView)</td></tr>
+    <tr><td>com.robtopx.geometrydashmeltdown</td><td>GAME_ARCADE</td><td>Traditional</td><td>&#10007; (Unity)</td></tr>
+    <tr><td>com.robtopx.geometrydashsubzero</td><td>GAME_ARCADE</td><td>Traditional</td><td>&#10007; (Unity)</td></tr>
+    <tr><td>com.robtopx.geometrydashworld</td><td>GAME_ARCADE</td><td>Traditional</td><td>&#10007; (Unity)</td></tr>
+    <tr><td>com.robtopx.geometryjumplite</td><td>GAME_ARCADE</td><td>Traditional</td><td>&#10007; (Unity)</td></tr>
+    <tr><td>com.zuuks.city.driving</td><td>GAME_RACING</td><td>Google Sign In<br />Facebook Login</td><td>&#10007; (OAuth)</td></tr>
+    <tr><td rowspan="16">25</td><td>com.adobe.photoshopmix</td><td>PHOTOGRAPHY</td><td>Traditional</td><td>&#10007; (WebView)</td></tr>
+    <tr><td>com.adobe.reader</td><td>APPLICATION, PRODUCTIVITY</td><td>Traditional</td><td>&#10007; (WebView)</td></tr>
+    <tr><td>com.airbnb.android</td><td>TRAVEL_AND_LOCAL</td><td>Traditional<br />Google Sign In<br />Facebook Login<br />Weibo</td><td>&#10003;</td></tr>
+    <tr><td>com.bonusxp.legend</td><td>GAME_ADVENTURE</td><td>Google Sign In</td><td>&#10007; (OAuth)</td></tr>
+    <tr><td>com.bose.gd.events</td><td>EVENTS</td><td>Traditional</td><td>&#10003;</td></tr>
+    <tr><td>com.eggheadgames.quicklogicproblems</td><td>FAMILY_BRAINGAMES</td><td>Facebook Login</td><td>&#10007; (OAuth)</td></tr>
+    <tr><td>com.instagram.android</td><td>APPLICATION, SOCIAL</td><td>Traditional<br />Facebook Login</td><td>&#10007; (Highly obfuscated)</td></tr>
+    <tr><td>com.kolesnik.pregnancy</td><td>PARENTING</td><td>Google Sign In</td><td>&#10007; (OAuth)</td></tr>
+    <tr><td>com.ludia.tmnt</td><td>GAME_ROLE_PLAYING</td><td>Google Sign In</td><td>&#10007; (OAuth)</td></tr>
+    <tr><td>com.monclubsportif.monclubsportif</td><td>SPORTS</td><td>Traditional</td><td>&#10007; (WebView)</td></tr>
+    <tr><td>com.phonehalo.itemtracker</td><td>PRODUCTIVITY</td><td>Traditional</td><td>&#10003;</td></tr>
+    <tr><td>com.reludo.shootingrangechallenge</td><td>GAME_SPORTS</td><td>Google Sign In<br />Facebook Login</td><td>&#10007; (OAuth)</td></tr>
+    <tr><td>com.snow_trails</td><td>AUTO_AND_VEHICLES</td><td>Traditional</td><td>&#10007; (React Native)</td></tr>
+    <tr><td>com.viagogo.consumer.viagogo.playstore</td><td>EVENTS</td><td>Traditional<br />Facebook Login</td><td>&#10003;</td></tr>
+    <tr><td>com.yelp.android</td><td>TRAVEL_AND_LOCAL</td><td>Traditional<br />Google Sign In<br />Facebook Login</td><td>&#10003;</td></tr>
+    <tr><td>onxmaps.hunt</td><td>SPORTS</td><td>Traditional<br />Facebook Login</td><td>&#10003;</td></tr>
+</table>
+
+<p>Our final app selection consists of 20 Google Play apps.</p>
+
+<h2 id="sources-and-sinks">Sources and sinks</h2>
+
+<p>We provided the list of sources and sinks we used for benchmark apps (<em>SS-GP</em>) in Section 3.4.2 (Table 6) of <a href="">our paper</a>.</p>
+
+<h2 id="selected-apps-and-expected-results">Selected apps and expected results</h2>
+
+<p>This section contains (1) a package contains 20 Google Play apps that we used in our study and details of expected flows (2) a table with information of these Google Play apps that we used in our study and the number of expected flows (ground truth) we identified.</p>
+
+<p>All selected apps and the corresponding expected results can be downloaded <a href="https://drive.google.com/open?id=1X0_OgiOcMGEqpiXR2BkZj2x6PkN5KZac"><strong>here</strong></a>. To compress the size of this package, We did not include the decompiled source code of each app. However, the decompiled tool <a href="https://github.com/skylot/jadx"><em>Jadx v1.0.0</em></a> is provided <a href="https://drive.google.com/open?id=1E3HiQn75NUzsmufWJV8aqt1kCBxKs6f4"><strong>here</strong></a>.</p>
+
+<p>Expected results are stored in <code class="language-plaintext highlighter-rouge">docx</code> files, where we <strong>highlighted</strong> the source and sink methods as well as which variables is tainted in each statement. For example, for the following code snippet:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span>  <span class="kn">package</span> <span class="n">ubc</span><span class="o">.</span><span class="na">junbin</span><span class="o">;</span>
+<span class="mi">2</span>  <span class="kd">class</span> <span class="nc">clz</span> <span class="o">{</span>
+<span class="mi">3</span>    <span class="nc">String</span> <span class="n">a</span> <span class="o">=</span> <span class="n">source</span><span class="o">();</span> <span class="c1">// source</span>
+<span class="mi">4</span>    <span class="nc">String</span> <span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">;</span>
+<span class="mi">5</span>    <span class="n">sink</span><span class="o">(</span><span class="n">b</span><span class="o">);</span> <span class="c1">// sink</span>
+<span class="mi">6</span>  <span class="o">}</span>
+</code></pre></div></div>
+
+<p>We presents the expected results as:</p>
+
+<blockquote>
+  <p>// expected source and sink are put at the top of a flow <br />
+Expected source: source() <br />
+Expected sink: sink() <br />
+<br />
+&gt; ubc.junbin.clz: // the class to locate statements <br />
+L3: String <strong>a</strong> = <strong>source()</strong>; <br />
+L4: String <strong>b</strong> = <strong>a</strong>; <br />
+L5: <strong>sink(b);</strong> <br /></p>
+</blockquote>
+
+<p>The following table detailedly presents information of these 20 selected apps, which consists of these columns:</p>
+
+<ul>
+  <li><strong>APILevel</strong>: The API level of an app. We sorted all the apps by their API levels, from the smallest one to the largest one.</li>
+  <li><strong>AppID</strong>: We numbered all Google Play apps we used, from 1 to 20, obeying the order of “APILevel”.</li>
+  <li><strong>AppName</strong>: The full package name of the app.</li>
+  <li><strong>Number of component(s)</strong>: The number of Android components declared in the manifest file of an app.</li>
+  <li><strong>Number of expected flow(s)</strong>: We listed the number of two kinds of expected flows in our ground truth:
+    <ul>
+      <li><strong>Login</strong>: We manually analyzed each applications and extracted expected flows related to login functionality.</li>
+      <li><strong>Others</strong>: For flows reported by tools regarding functionalities other than login, we validated them by manually checking the source code of applications, and added all valid flows into our ground truth.</li>
+    </ul>
+  </li>
+</ul>
+
+<table>
+    <tr><th rowspan="2">APILevel</th><th rowspan="2">AppID</th><th rowspan="2">AppName</th><th rowspan="2">APKSize (MB)</th><th rowspan="2"># of<br />component(s)</th><th colspan="2"># of expected<br />flow(s)</th></tr>
+    <tr><th>Login</th><th>Others</th></tr>
+    <tr><td>14</td><td>1</td><td>com.echangecadeaux</td><td>3</td><td>31</td><td>1</td><td>0</td></tr>
+    <tr><td>17</td><td>2</td><td>com.rtp.livepass.android</td><td>26</td><td>57</td><td>1</td><td>0</td></tr>
+    <tr><td>19</td><td>3</td><td>com.tripadvisor.tripadvisor</td><td>9</td><td>79</td><td>1</td><td>0</td></tr>
+    <tr><td rowspan="2">21</td><td>4</td><td>ca.intact.mydrivingdiscount</td><td>7</td><td>42</td><td>1</td><td>0</td></tr>
+    <tr><td>5</td><td>com.asiandate</td><td>17</td><td>39</td><td>1</td><td>0</td></tr>
+    <tr><td rowspan="6">22</td><td>6</td><td>ca.passportparking.mobile.passportcanada</td><td>22</td><td>134</td><td>1</td><td>0</td></tr>
+    <tr><td>7</td><td>com.aldiko.android</td><td>17</td><td>78</td><td>1</td><td>0</td></tr>
+    <tr><td>8</td><td>com.aldiko.classic</td><td>17</td><td>78</td><td>1</td><td>0</td></tr>
+    <tr><td>9</td><td>com.passportparking.mobile.parkvictoria</td><td>22</td><td>137</td><td>1</td><td>0</td></tr>
+    <tr><td>10</td><td>com.passportparking.mobile.toronto</td><td>23</td><td>134</td><td>1</td><td>0</td></tr>
+    <tr><td>11</td><td>tc.tc.scsm.phonegap</td><td>22</td><td>116</td><td>1</td><td>0</td></tr>
+    <tr><td rowspan="2">23</td><td>12</td><td>com.onetapsolutions.morneau.activity</td><td>18</td><td>101</td><td>1</td><td>2 (reported by Amandroid, <i>k=1</i>)</td></tr>
+    <tr><td>13</td><td>net.fieldwire.app</td><td>7</td><td>28</td><td>1</td><td>0</td></tr>
+    <tr><td>24</td><td>14</td><td>com.ackroo.mrgas</td><td>20</td><td>18</td><td>1</td><td>14 (reported by FlowDroid)</td></tr>
+    <tr><td rowspan="6">25</td><td>15</td><td>com.airbnb.android</td><td>59</td><td>235</td><td>1</td><td>0</td></tr>
+    <tr><td>16</td><td>com.bose.gd.events</td><td>15</td><td>157</td><td>1</td><td>1 (reported by Amandroid, <i>k=1</i>)</td></tr>
+    <tr><td>17</td><td>com.phonehalo.itemtracker</td><td>37</td><td>85</td><td>1</td><td>2 (reported by Amandroid, both <i>k=5</i> and <i>k=1</i>)</td></tr>
+    <tr><td>18</td><td>com.viagogo.consumer.viagogo.playstore</td><td>13</td><td>20</td><td>1</td><td>0</td></tr>
+    <tr><td>19</td><td>com.yelp.android</td><td>45</td><td>314</td><td>1</td><td>0</td></tr>
+    <tr><td>20</td><td>onxmaps.hunt</td><td>86</td><td>58</td><td>1</td><td>0</td></tr>
+    <tr><td colspan="8"></td></tr>
+    <tr><td rowspan="4" colspan="2"></td><th>Min</th><td>3</td><td>18</td><td rowspan="4" colspan="2"></td></tr>
+    <tr><th>Max</th><td>86</td><td>314</td></tr>
+    <tr><th>Mean</th><td>24</td><td>97</td></tr>
+    <tr><th>Median</th><td>19</td><td>78.5</td></tr>
+    </table>
+
+<h2 id="sources-of-failures">Sources of failures</h2>
+
+<p>Our analysis results can be downloaded <a href="https://drive.google.com/file/d/10DL_zpQJrmNvRoL35uJNxuJX7PwH1GvS/view?usp=sharing"><strong>here</strong></a>. In this section, we detailedly list our manual inspection results about sources of failures on Google Play apps. The table below have multiple columns, we will describe each column and provide instructions on how to read the table.</p>
+
+<p>The table consists of two main parts, which are:</p>
+
+<ul>
+  <li><strong>App</strong>: This column is information of Google Play apps, matching <em>AppID+AppName</em> in <a href="#selected-apps-and-expected-results"><em>Selected apps and expected results</em></a> table.</li>
+  <li>
+    <p><strong>The left columns are all about results of studied tools.</strong> We list details about <em>FP</em> (false positives) and <em>FN</em> (false negatives) flows reported by each tool. For each benchmark, we list:</p>
+
+    <ul>
+      <li><strong>#FP/#FN</strong>: The number of FPs/FNs reported by a tool.</li>
+      <li><strong>FailingCriteria</strong>: Detailed breakdown of all FPs(/FNs) got reported by a tool on the benchmark. The format is <em>[Number of FPs(/FNs)]x[FailingCriteria of The FPs(/FNs)]</em>. We also included flows affected by the special semantic of <em>Amandroid</em> in reporting duplicted flows, denoted by <em>SEM3</em>.</li>
+    </ul>
+
+    <p>Specifically for <em>Amandroid</em>, we list the results under different depths of context sensitivity: <em>k=5</em> and <em>k=1</em>, repectively; we also list the number of components timed out for each app.</p>
+  </li>
+</ul>
+
+<p>Details of our newly-identified sources of failures (i.e., <em>UBCx</em>) can be found <a href="/PaperAppendices/StaticTaint/ubcbench#new-sources-of-failures"><strong>here</strong></a>.</p>
+
+<table>
+    <tr><th rowspan="4">App</th><th rowspan="2" colspan="4">FlowDroid v2.7.1</th><th colspan="10">Amandroid v3.2.0</th></tr>
+    <tr><th colspan="5"><i>k=5</i></th><th colspan="5"><i>k=1</i></th></tr>
+    <tr><th colspan="2">FP</th><th colspan="2">FN</th><th colspan="2">FP</th><th colspan="2">FN</th><th rowspan="2"># timed out<br />component(s)</th><th colspan="2">FP</th><th colspan="2">FN</th><th rowspan="2"># timed out<br />component(s)</th></tr>
+    <tr><th>#FP</th><th>Criteria</th><th>#FN</th><th>Criteria</th><th>#FP</th><th>Criteria</th><th>#FN</th><th>Criteria</th><th>#FP</th><th>Criteria</th><th>#FN</th><th>Criteria</th></tr>
+    <tr><td>1. com.echangecadeaux</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>23</td><td>0</td><td></td><td>1</td><td>1xOM</td><td>20</td></tr>
+    <tr><td>2. com.rtp.livepass.android</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>0</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>0</td></tr>
+    <tr><td>3. com.tripadvisor.tripadvisor</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>71</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>7</td></tr>
+    <tr><td>4. ca.intact.mydrivingdiscount</td><td>0</td><td></td><td>1</td><td>1xDB8.16</td><td>0</td><td></td><td>1</td><td>1xDB8.16</td><td>0</td><td>0</td><td></td><td>1</td><td>1xDB8.16</td><td>0</td></tr>
+    <tr><td>5. com.asiandate</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>2</td><td>0</td><td></td><td>1</td><td>1xU-DB4.17</td><td>0</td></tr>
+    <tr><td>6. ca.passportparking.mobile.passportcanada</td><td>0</td><td></td><td>1</td><td>1xU-DB4.17</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>81</td><td>0</td><td></td><td>1</td><td>1xU-DB4.17</td><td>18</td></tr>
+    <tr><td>7. com.aldiko.android</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>5</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>0</td></tr>
+    <tr><td>8. com.aldiko.classic</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>5</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>0</td></tr>
+    <tr><td>9. com.passportparking.mobile.parkvictoria</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>93</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>22</td></tr>
+    <tr><td>10. com.passportparking.mobile.toronto</td><td>0</td><td></td><td>1</td><td>1xU-DB4.17</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>82</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>8</td></tr>
+    <tr><td>11. tc.tc.scsm.phonegap</td><td>0</td><td></td><td>1</td><td>1xU-DB4.17</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>83</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>49</td></tr>
+    <tr><td>12. com.onetapsolutions.morneau.activity</td><td>0</td><td></td><td>3</td><td>3xU-DB2.12</td><td>0</td><td></td><td>3</td><td>3xTO</td><td>0</td><td>40</td><td>15xU-DB7.25<br />25xU-DB7.26</td><td>0</td><td></td><td>0</td></tr>
+    <tr><td>13. net.fieldwire.app</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>15</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>4</td></tr>
+    <tr><td>14. com.ackroo.mrgas</td><td>2</td><td>2xU-DB2.12</td><td>0</td><td></td><td>0</td><td></td><td>15</td><td>15xTO</td><td>11</td><td>78</td><td>69xU-DB7.25<br />9xU-DB7.26</td><td>10</td><td>10xUN</td><td>0</td></tr>
+    <tr><td>15. com.airbnb.android</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>86</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>32</td></tr>
+    <tr><td>16. com.bose.gd.events</td><td>0</td><td></td><td>2</td><td>1xU-DB10.8<br />1xUN</td><td>0</td><td></td><td>2</td><td>2xTO</td><td>82</td><td>0</td><td></td><td>4</td><td>4xU-DB7.25</td><td>2</td></tr>
+    <tr><td>17. com.phonehalo.itemtracker</td><td>0</td><td></td><td>3</td><td>3xEX</td><td>8</td><td>8xU-DB7.26</td><td>1</td><td>1xU-DB4.18</td><td>5</td><td>8</td><td>8xU-DB7.26</td><td>1</td><td>1xU-DB4.18</td><td>0</td></tr>
+    <tr><td>18. com.viagogo.consumer.viagogo.playstore</td><td>0</td><td></td><td>1</td><td>1xU-DB10.8</td><td>0</td><td></td><td>1</td><td>1xU-DB10.8</td><td>0</td><td>0</td><td></td><td>1</td><td>1xU-DB10.8</td><td>0</td></tr>
+    <tr><td>19. com.yelp.android</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>21</td><td>0</td><td></td><td>1</td><td>1xU-DB4.18</td><td>14</td></tr>
+    <tr><td>20. onxmaps.hunt</td><td>0</td><td></td><td>1</td><td>1xEX</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>27</td><td>0</td><td></td><td>1</td><td>1xTO</td><td>16</td></tr>
+    <tr><td colspan="14"></td></tr>
+    <tr><td rowspan="4" colspan="8"></td><th>Min</th><td>0</td><td rowspan="4" colspan="3"></td><th>Min</th><td>0</td></tr>
+    <tr><th>Max</th><td>93</td><th>Max</th><td>49</td></tr>
+    <tr><th>Mean</th><td>38</td><th>Mean</th><td>31</td></tr>
+    <tr><th>Median</th><td>22</td><th>Median</th><td>5.5</td></tr>
+    </table>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function() {
+
+    var toc = $('#TOC');
+
+    // Select each header
+    sections = $('.td-content h1');
+        $.each(sections, function(idx, v) {
+            section = $(v);
+            var div_id = $(section).attr('id');
+            var div_text = section.text().split('¶')[0];
+            var parent = $("#" + div_id)
+            var content = '<li id="link_' + div_id + '" class="md-nav__item"><a class="md-nav__link" href="#' + div_id + '" title="' + div_text +'">' + div_text +'</a></li>';
+            $(toc).append(content);
+
+            // Add section code to subnavigation
+            var children = $('<nav class="md-nav"><ul class="md-nav__list"></nav></ul>')
+            var contenders = $("#" + div_id).nextUntil("h1");
+            $.each(contenders, function(idx, contender){
+               if($(contender).is('h2') || $(contender).is('h3')) {
+                   var contender_id = $(contender).attr('id');
+                   var contender_text = $(contender).text().split('¶')[0];
+                   var content = '<li class="md-nav__item"><a class="md-nav__link" href="#' + contender_id + '" title="' + contender_text +'">' + contender_text +'</a></li>';
+                   children.append(content);
+                }
+             })
+             $("#link_" + div_id).append(children);
+        });
+    });
+</script>
+
+<script>
+var headers = ["h1", "h2", "h3", "h4"]
+var colors = ["red", "orange", "green", "blue"]
+
+$.each(headers, function(i, header){
+    var color = colors[i];
+    $(header).each(function () {
+        var href=$(this).attr("id");
+        $(this).append('<a class="headerlink" style="color:' + color + '" href="#' + href + '" title="Permanent link">¶</a>')
+    });
+})
+</script>
+
+
+
+	
+              
+              <br/>
+
+
+           </div>
+          </main>
+        </div>
+      </div>
+      <footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+
+</div>
+<div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+  <small class="text-white">© 2020 Junbin Zhang All Rights Reserved</small>
+  
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="/PaperAppendices/StaticTaint/assets/js/main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Microservices Study</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+body{font-size: 14pt}
+
+
+blockquote {
+    margin: 0;
+}
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+</style>
+
+<body>
+
+
+	<!-- Header -->
+	<header class="w3-container w3-green w3-center" style="padding:64px 64px">
+	  <h4 class="w3-margin w3-jumbo" style="padding:20px 256px">Promises and Challenges of Microservices: an Exploratory Study</h4>
+	</header>
+
+
+<div style="padding:40px 256px">
+<h1 id="interviewstudy">Interview Study</h1>
+
+<h2 id="dataanalysisprocess">Data Analysis Process</h2>
+
+<p>For open coding, two of the authors of the paper independently read the transcripts line by line and identified concepts - <em>key ideas contained in data</em>. When looking for concepts, we searched for the best phrase that describes conceptually what we believe is indicated by the raw data. On a weekly basis, all the authors met to discuss the identified concepts and to refine and merge them if needed. That was done using card sorting: each card represented a quote labeled with the concepts, and we grouped the quotes and refined the concepts, as needed.</p>
+
+<!-- <img src="card_sorting_exercise8.jpeg" width="300">  <img src="card_sorting_exercise12.jpeg" width="300"> -->
+
+<p><a href="card_sorting_exercise8.jpeg"><img src="card_sorting_exercise8.jpeg" alt="" /></a>  <a href="card_sorting_exercise12.jpeg"><img src="card_sorting_exercise12.jpeg" alt="" /></a></p>
+
+<h2 id="categoriesidentifiedininterviewstudy">Categories Identified in Interview Study</h2>
+
+<p><img src="table-interview.png" alt="drawing" width="800"/></p>
+
+<h1 id="surveystudy">Survey Study</h1>
+
+<h2 id="surveyquestions">Survey Questions</h2>
+
+<p>The survey consisted of 13 groups of questions and a total of 38 questions of mixed types. Most of the questions were single or multiple choices, numeric range choices, yes/no options, and open-ended text entries.</p>
+
+<p>In addition to the microservice background and demographic information, we asked questions related to architectural concepts, infrastructure, and code management. In each question, participants had a chance to either agree or disagree with best practices identified during the interview study, or identify their solution for a particular challenge. We also asked participants to distinguish between the solution they apply in practice (what they do) and their perception (what they think they should do).</p>
+
+<p>Here is the list of survey questions:</p>
+
+<hr />
+
+<p>Q1: How long have you been developing microservices? [Number entry]</p>
+
+<p>Q2: In your most significant microservice-based development project, how long has the team been developing microservices? [Number entry]</p>
+
+<p>Q3: How many members are there in the team?  [Number entry]</p>
+
+<p>Q4: How many microservices does the team develop and maintain? [Numeric range choices]</p>
+
+<ul>
+<li>&lt; 6</li>
+
+<li>6-10</li>
+
+<li>11-20</li>
+
+<li>21-30</li>
+
+<li>31-50</li>
+
+<li>51-100</li>
+
+<li>&gt;100</li>
+</ul>
+
+<p>Q5: How many microservices do you typically work on? [Numeric range choices]</p>
+
+<ul>
+<li>&lt; 6</li>
+
+<li>6-10</li>
+
+<li>11-20</li>
+
+<li>21-30</li>
+
+<li>31-50</li>
+
+<li>51-100</li>
+
+<li>&gt;100</li>
+</ul>
+
+<p>Q6: Are you working on commercial or open source project? [Single choice]</p>
+
+<ul>
+<li>Commercial</li>
+
+<li>Open source</li>
+</ul>
+
+<blockquote>
+  <p>Robust logging and monitoring systems are critical for efficient microservice-based development.</p>
+</blockquote>
+
+<p>Q7: To what extent do you agree with the above statement in general? [Single choice]</p>
+
+<ul>
+<li>Agree. These systems should be set up as early as possible.</li>
+
+<li>Agree. These systems should be set up later during the project.</li>
+
+<li>Disagree. I do not think these systems are necessary.</li>
+
+<li>Other: [Text entry]</li>
+</ul>
+
+<p>Q8: In the context of your project, when did you set up logging and monitoring? [Single choice]</p>
+
+<ul>
+<li>As early as possible.</li>
+
+<li>Later during the project.</li>
+
+<li>We did not set them up yet.</li>
+
+<li>Other: [Text entry]</li>
+</ul>
+
+<p>Q9: In the context of your project, what information is being logged? [Multiple choice]</p>
+
+<ul>
+<li>Up/down status of microservices.</li>
+
+<li>The number of requests each microservice receives per a certain period.</li>
+
+<li>The input/output of each request.</li>
+
+<li>The request and response time for each call.</li>
+
+<li>Resource consumption of each microservice, such as CPU, memory, and disk.</li>
+
+<li>Other: [Text entry]</li>
+</ul>
+
+<p>Q10: In the context of your project, what is the logged information used for? [Multiple choice]</p>
+
+<ul>
+<li>Troubleshooting.</li>
+
+<li>Creating reports for our clients (e.g., availability and latency in SLA reports).</li>
+
+<li>Dashboarding and data visualization (e.g., to plot graphs with response time).</li>
+
+<li>Proactive anomaly detection (e.g., software that analyzes the logged data and generates alerts, when needed).</li>
+
+<li>Other: [Text entry]</li>
+</ul>
+
+<blockquote>
+  <p>Distributed tracing is critical for microservice-based application development and maintenance.</p>
+</blockquote>
+
+<p>Q11: To what extent do you agree with the above statement in general? [Single choice]</p>
+
+<ul>
+<li>Agree. Distributed tracing should be set up as early as possible.</li>
+
+<li>Agree. Distributed tracing should be set up later during the project.</li>
+
+<li>Disagree. I do not think distributed tracing is necessary.</li>
+
+<li>Other: [Text entry]</li>
+</ul>
+
+<p>Q12: In the context of your project, when did you set up distributed tracing? [Single choice]</p>
+
+<ul>
+<li>As early as possible.</li>
+
+<li>Later during the project.</li>
+
+<li>We did not set it up yet.</li>
+
+<li>Other: [Text entry]</li>
+</ul>
+
+<blockquote>
+  <p>Automating the microservice setup process (e.g., automatically generating a microservice skeleton and plugging it into the entire product) is critical to save development time and costs.</p>
+</blockquote>
+
+<p>Q13: To what extent do you agree with the above statement in general? [Single choice]</p>
+
+<ul>
+<li>Agree. Such a process should be set up as early as possible.</li>
+
+<li>Agree. Such a process should be set up later during the project.</li>
+
+<li>Disagree. I do not think such a process is necessary.</li>
+
+<li>Other: [Text entry]</li>
+</ul>
+
+<p>Q14: In the context of your project, when did you automate the microservice setup? [Single choice]</p>
+
+<ul>
+<li>As early as possible.</li>
+
+<li>Later during the project.</li>
+
+<li>We did not automate it yet.</li>
+
+<li>Other: [Text entry]</li>
+</ul>
+
+<p>Q15: In the context of your project, how did you define the granularity of microservices? [Multiple choice]</p>
+
+<ul>
+<li>By business capabilities (i.e., grouping code that performs the same high-level functionality).</li>
+
+<li>By data access (i.e., grouping code that accesses the same data).</li>
+
+<li>By dependencies (i.e., grouping code that depends on a similar set of other sub-systems).</li>
+
+<li>By delivery lifecycle (i.e., grouping code that has to be released together).</li>
+
+<li>By team structure (i.e., grouping code that is developed by the same team).</li>
+
+<li>By resource consumption (i.e., to ensure that the split into microservices does not result in excessive resource consumption due to containerization, etc.)</li>
+
+<li>Other: [Text entry]</li>
+</ul>
+
+<blockquote>
+  <p>Each microservice can be developed using its own programming language.</p>
+</blockquote>
+
+<p>Q16: To what extent do you agree with the above statement in general? [Single choice]</p>
+
+<ul>
+<li>Agree. Always use the most appropriate language for each microservice.</li>
+
+<li>Disagree. A company should restrict to use a specific set/number of languages (e.g., to facilitate an automated microservice setup process).</li>
+
+<li>Other: [Text entry]</li>
+</ul>
+
+<p>Q17: In the context of your project, do you regulate the use of programming languages? [Single choice]</p>
+
+<ul>
+<li>No. We always use the most appropriate language for each microservice.</li>
+
+<li>Yes. We have a restricted number / set of languages to use.</li>
+
+<li>Other: [Text entry]</li>
+</ul>
+
+<blockquote>
+  <p>Each microservice should be owned by a specific person or team.</p>
+</blockquote>
+
+<p>Q18: To what extent do you agree with the above statement in general? [Single choice]</p>
+
+<ul>
+<li>Agree.</li>
+
+<li>Disagree. A company should not define owners for microservices.</li>
+
+<li>Other: [Text entry]</li>
+</ul>
+
+<p>Q19: In the context of your project, do you identify microservice owners? [Single choice]</p>
+
+<ul>
+<li>Yes. We define a clear owner for each microservice</li>
+
+<li>No. We do not define owners for microservices.</li>
+
+<li>Other: [Text entry]</li>
+</ul>
+
+<p>Q20: If you specify service owners, what are their responsibilities? [Multiple choice]</p>
+
+<ul>
+<li>Troubleshoot their microservice</li>
+
+<li>Fix bugs in their microservice</li>
+
+<li>Decide on the design and architecture of their microservice</li>
+
+<li>Implement new feature requests</li>
+
+<li>Other: [Text entry]</li>
+</ul>
+
+<blockquote>
+  <p>In microservice-based development, some code is shared by multiple microservices, e.g., the code of authentication, logging, and monitoring.</p>
+</blockquote>
+
+<p>Q21: How should one manage such common code? [Single choice]</p>
+
+<ul>
+<li>As a standalone library that is used by other microservices. Have one version of the library that is used in all microservices.</li>
+
+<li>As a standalone library that is used by other microservices. Allow different microservices to use different versions of a shared library.</li>
+
+<li>As a standalone microservice.</li>
+
+<li>As a standalone microservice that runs as a sidecar.</li>
+
+<li>Other: [Text entry]</li>
+</ul>
+
+<p>Q22: In the context of your project, how do you manage common code? [Single choice]</p>
+
+<ul>
+<li>As a standalone library that is used by other microservices. We have one version of the library that is used in all microservices.</li>
+
+<li>As a standalone library that is used by other microservices. We allow different microservices to use different versions of a shared library.</li>
+
+<li>As a standalone microservice.</li>
+
+<li>As a standalone microservice that runs as a sidecar.</li>
+
+<li>We do not have any common code.</li>
+
+<li>Other: [Text entry]</li>
+</ul>
+
+<blockquote>
+  <p>Different customers might get a different variant of the developed product.</p>
+</blockquote>
+
+<p>Q23: How should one implement such variants? [Single choice]</p>
+
+<ul>
+<li>Use feature flags/toggles (run-time decision)</li>
+
+<li>Use role-based access: we check if the client has access to the called API (run-time decision)</li>
+
+<li>Use separate deployments: independent modules are combined for each deployment as needed (build-time decision)</li>
+
+<li>Other: [Text entry]</li>
+</ul>
+
+<p>Q24: In the context of your project, how do you implement variants? [Single choice]</p>
+
+<ul>
+<li>Using feature flags/toggles (run-time decision)</li>
+
+<li>Using role-based access: we check if the client has access to the called API (run-time decision)</li>
+
+<li>Using separate deployments: independent modules are combined for each deployment as needed (build-time decision)</li>
+
+<li>N/A: we do not have variants.</li>
+
+<li>Other: [Text entry]</li>
+</ul>
+
+<p>Q25: In the context of your project, how do you manage API changes? [Multiple choice]</p>
+
+<ul>
+<li>Via direct API calls</li>
+
+<li>Via a proxy, such as API gateway</li>
+
+<li>Via a client library, such as Swagger</li>
+
+<li>Via message-based communication, such as RabbitMQ</li>
+
+<li>Other: [Text entry]</li>
+</ul>
+
+<blockquote>
+  <p>There are currently more than 200 free and commercial tools in the Cloud Native Interactive Landscape website for supporting microservice-based engineering. Moreover, new tools are frequently developed and become available.</p>
+</blockquote>
+
+<p>Q26: In the context of your project, are you actively evaluating new tools or plan to do so in the future? [Single choice]</p>
+
+<ul>
+<li>We are happy with the tools that we have and rarely look for opportunities to replace them.</li>
+
+<li>We often evaluate newer tools and extend our toolset when better tools become available.</li>
+
+<li>We plan to evaluate newer tools but have not done that yet.</li>
+
+<li>Other: [Text entry]</li>
+</ul>
+
+<p>Q27: What is the next big challenge for microservices? [Text entry]</p>
+
+<p>Q28: Any additional comments / suggestions you want to share with us? [Text entry]</p>
+
+<p>Q29: Did you participate in our earlier interview study? [Yes/no option]</p>
+
+<ul>
+<li>Yes</li>
+
+<li>No</li>
+</ul>
+
+<p>Q30-Q37: The following questions are intended to collect demographic information about the survey participant. The questions are fully optional but your answers will be highly appreciated.</p>
+
+<p>1) How long have you been working in industry? [Number entry]</p>
+
+<p>2) Which company do you work at? [Text entry]</p>
+
+<p>3) How long have you been working at the company? [Number entry]</p>
+
+<p>4) What is your job title? [Text entry]</p>
+
+<p>5) What type of application are you developing? [Text entry]</p>
+
+<p>6) What is your age? [Number entry]</p>
+
+<p>7) What is your gender? [Single choice]</p>
+
+<ul>
+<li>Male</li>
+
+<li>Female</li>
+
+<li>Prefer not to say</li>
+
+<li>Other</li>
+</ul>
+
+<p>8) What is the highest degree that you have received? [Single choice]</p>
+
+<ul>
+<li>No degree</li>
+
+<li>Undergraduate level degree (e.g., Bachelor's)</li>
+
+<li>Graduate level degree (e.g., Master's, PhD)</li>
+
+<li>Other</li>
+</ul>
+
+<p>Q38: If you would like to receive the results of the study, please fill out your contact information. This information will only be used to contact you with the results. It will not be associated with your other input during data aggregation.</p>
+
+<p>Name :  [Text entry]</p>
+
+<p>Email : [Text entry]    </p>
+
+<p>Thank you very much for taking the time filling in the survey, we sincerely appreciate your help!</p>
+
+<hr />
+
+<h2 id="surveyresults">Survey Results</h2>
+
+<p>We received a total of 185 responses; 61 of them were complete (completion rate: 33%) and 37 satisfied the same participant selection criteria we applied for interview study: at least two years of microservice development experience.</p>
+
+<h1 id="mappingconceptstoquotes">Mapping Concepts to Quotes</h1>
+
+<p>Concepts that discuss problems, practices, or concerns around same topics were grouped together to form categories. Our mapping of number of quotes -> concepts -> subcategories -> categories is below. We only include concepts that were mentioned by at least three interview or survey participants. In the mindmap, concepts reaching the threshold of 3 participants after the analysis of the survey results are marked <font color="#0066ff">in blue</font>.</p>
+
+<p><a href="open-coding-mindmap.png"><img src="open-coding-mindmap.png" alt="" /></a></p>
+
+<p>Digial version can be downloaded <a href="open-coding-mindmap.mm">here</a>.</p>
+</div>
+</body>
