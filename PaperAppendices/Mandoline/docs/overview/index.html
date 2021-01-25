@@ -41,7 +41,7 @@
             <div class="side-bar">
                 <div class="site-header"> 
                     <div id="texts" style="display:inline;"> 
-                        <a href="../../index.html" class="site-title lh-tight"> <span style="font-variant:small-caps;">Mandoline</span> </a> <button class="menu-button fs-3 js-main-nav-trigger" data-text-toggle="Hide" type="button">Menu</button>
+                        <a href="../../index.html" class="site-title lh-tight"> <span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;">Mandoline</span> </a> <button class="menu-button fs-3 js-main-nav-trigger" data-text-toggle="Hide" type="button">Menu</button>
                     </div>
                     <div id="image" style="display:inline;">
                         <img src="../../img/Mandoline/mandoline_Logo_noname.png" alt = "logo" width="50" height="50" />
@@ -72,14 +72,14 @@
                                         </div>
                                         <hr />
                                         <p><span style="font-size:20px;"><b>Step 1: Static Analysis.</b></span></p>
-                                        <p>MANDOLINE runs a lightweight static analysis to instrument the app and to calculate control-flow and dependence relationships for each statement. 
+                                        <p><span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;">Mandoline</span> runs a lightweight static analysis to instrument the app and to calculate control-flow and dependence relationships for each statement. 
                                             The instrumentation records a unique identifier for each basic-block and a unique identifier of the execution thread
                                             (using Thread.getId()).
-                                            The user installs the instrumented app on the device, MANDOLINE either replays a pre-recorded execution script provided by the user or allows the user to trigger the app manually to reproduce its faulty behavior. 
+                                            The user installs the instrumented app on the device, <span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;">Mandoline</span> either replays a pre-recorded execution script provided by the user or allows the user to trigger the app manually to reproduce its faulty behavior. 
                                             The execution trace produced during this process, comprised of a sequence of the executed statement instances, is passed to the second step – Dynamic Control-Flow Graph (DCFG) construction.</p>
                                             <p><span style="font-size:20px;"><b>Step 2: DCFG Construction.</b></span></p>
                                             <p>
-                                                MANDOLINE first extracts all statement instances for each executed basic-block, producing a set of DCFG nodes. 
+                                                <span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;">Mandoline</span> first extracts all statement instances for each executed basic-block, producing a set of DCFG nodes. 
                                                 It then separates the nodes by their thread identifiers and adds control-flow edges between statement instances with the same thread identifier in their order of execution. 
                                                 We then identify and detect Android callback methods using the callback identification logic of FlowDroid. 
                                                 We add a registration dependency edge to represent each such registration.
@@ -89,7 +89,7 @@
                                             </p>
                                             <p><span style="font-size:20px;"><b>Step 3: Dynamic Slicing.</b></span></p>
                                             <p>
-                                                MANDOLINE slices the
+                                                <span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;">Mandoline</span> slices the
                                                 produced DCFG using the slicing criterion provided by the
                                                 user: a tuple consisting of a statement instance to slice from
                                                 and any number of variables used in the instance. 
@@ -115,4 +115,4 @@
                                                 alias <span class="math"> <i>v</i></span> is the statement whose definition reaches <span class="math"> <i>s</i></span>.
                                             </p>
                                             <p><span style="font-size:20px;"><b>For more details</b></span></p>
-                                            <p><a href="https://www.ece.ubc.ca/~mjulia/publications.html"><span style="font-variant:small-caps;">Mandoline</span>: Dynamic Slicing of Android Applications with Trace-Based Alias Analysis</a></p>
+                                            <p><a href="https://www.ece.ubc.ca/~mjulia/publications.html"><span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;">Mandoline</span>: Dynamic Slicing of Android Applications with Trace-Based Alias Analysis</a></p>
