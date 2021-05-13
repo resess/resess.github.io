@@ -60,4 +60,131 @@
         <div class="page">
         <div id="main-content" class="page-content" role="main">
             <p class="fs-6 fw-300" style="padding-top: 25px;"> <span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;">Slicer4J</span>'s implementation is available <a href="https://github.com/resess/Mandoline/tree/master/Slicer4J">here</a>.</p>
+            <p class="fs-6 fw-300" style="padding-top: 25px;"> 
+
+You can list <span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;">Slicer4J</span> options using:  <code>python3 slicer4j.py -h</code>
+
+<hr>
+
+<p style="font-size:30px"><b>Slicer4J Mandatory Options: </b></p>
+
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-73oq">Option<br></th>
+    <th class="tg-73oq">Description</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-73oq">-h</td>
+    <td class="tg-73oq">show help message and exit</td>
+  </tr>
+  <tr>
+    <td class="tg-73oq">-j</td>
+    <td class="tg-73oq">Path to jar file</td>
+  </tr>
+  <tr>
+    <td class="tg-73oq">-o</td>
+    <td class="tg-73oq">Output folder</td>
+  </tr>
+  <tr>
+    <td class="tg-73oq">-b</td>
+    <td class="tg-73oq">line to slice backward from, in the form of FileName:LineNumber </td>
+  </tr>
+</tbody>
+</table>
+
+<br>
+<br>
+
+<p style="font-size:30px"><b>Slicer4J Optional Options: </b></p>
+
+
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-73oq">Option<br></th>
+    <th class="tg-73oq">Description</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-73oq">-m</td>
+    <td class="tg-73oq">Main class to run with arguments, in the form of "FileName Arguments"</td>
+  </tr>
+  <tr>
+    <td class="tg-73oq">-tc</td>
+    <td class="tg-73oq">Test class name to run, if this is provided, -tm must also be provided</td>
+  </tr>
+  <tr>
+    <td class="tg-73oq">-tm</td>
+    <td class="tg-73oq">Test method to run</td>
+  </tr>
+  <tr>
+    <td class="tg-73oq">-dep</td>
+    <td class="tg-73oq">Directory to folder containing JAR dependencies, if any</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">-mod</td>
+    <td class="tg-0lax">Folder containing user-defined method models</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">-d</td>
+    <td class="tg-0lax">Slice with data-flow dependencies only</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">-c</td>
+    <td class="tg-0lax">Slice with control dependencies only</td>
+  </tr>
+</tbody>
+</table>
+
+<br>
+<br>
+
+ 
+<p style="font-size:30px"><b>User defined-method models: </b></p>
+
+
+The following is an example for defining your own method models. 
+
+For the methods in this class:
+<br>
+<br>
+
+<div id="image">
+    <img src="../../img/code.png" alt = "code" width="300" height="300" />
+</div>
+<br>
+
+create an XML file named <code>com.myproject.Myclass.xml</code> and place it in a folder containing your method models, this is the folder we pass to Slicer4J using the <code>-mod</code> option
+<br>
+
+For example, here's the model for the above class
+<br>
+<br>
+
+<div id="image">
+    <img src="../../img/xml.png" alt = "code" width="700" height="700" />
+</div>
+<br>
+
+The <code>id</code> of each method is the method signature. Each method has flows <code>from</code> parameters, the receiver, and their fields, <code>to</code> other parameters, the receiver, their fields, and the return.
+<br>
+
+Each flow is specified with it <code>sourceSinkType</code> as <code>Parameter</code>, <code>Field</code>, or <code>Return</code>.
+<code>Parameter</code> is used for parameters. <code>Field</code> is used for the receiver or fields of the receiver. <code>Return</code> is for the method return.
+<br>
+<br>
+
+For parameters, we also need <code>ParameterIndex</code> to specify which parameter (first, second, etc.).
+For fields, we specify the signature of the field in <code>AccessPath</code> and its type in <code>AccessPathTypes</code>.
+
+
+
+
+            </p>
 
