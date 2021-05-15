@@ -74,10 +74,10 @@
     <li class="collapse show" id="analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe">
         <ul class="td-sidebar-nav__section pr-md-3">
           <li class="td-sidebar-nav__section-title">
-            <a href="/PaperAppendices/StaticTaint/tools" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Tool Selection and Configurations</a>
+            <a href="/PaperAppendices/StaticTaint/ttools" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Tool Selection and Configurations</a>
           </li>
           <ul><li class="collapse show" id="">
-              <a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-tool-selection-and-configurations-tool-selection" href="/PaperAppendices/StaticTaint/tools#tool-selection">Tool Selection</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-tool-selection-and-configurations-tool-configurations" href="/PaperAppendices/StaticTaint/tools#tool-configurations">Tool Configurations</a>
+              <a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-tool-selection-and-configurations-tool-selection" href="/PaperAppendices/StaticTaint/ttools#tool-selection">Tool Selection</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-tool-selection-and-configurations-tool-configurations" href="/PaperAppendices/StaticTaint/ttools#tool-configurations">Tool Configurations</a>
               </li></ul>
           <li class="td-sidebar-nav__section-title">
             <a href="/PaperAppendices/StaticTaint/benchmark" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Benchmarks</a>
@@ -224,11 +224,11 @@
 				
 					,
 					
-					"tools": {
-						"id": "tools",
+					"ttools": {
+						"id": "ttools",
 						"title": "Tool Selection and Configurations",
 						"categories": "",
-						"url": " /tools/",
+						"url": " /ttools/",
 						"content": "# Tool Selection and Configurations\n\n## Tool Selection\n\nBesides using *FlowDroid*, *Amandroid*, and *DroidSafe*, we performed a systematic literature review identifying relevant papers published between January 2016 and December 2020.\nWe identified 41 papers related to static taint analysis. The availability and applicability are listed in the following table.\nThe tool we included (*DroidRA*) is highlighted in blue.\n\n{% include /table/tab_tools.html %}\n\n## Tool Configurations\n\nWe described how we chose the tool configurations for each tool in detail in Section 3.2 of [our paper]().\n\nWe also provided the list of sources and sinks for [benchmarks]({{ site.baseurl }}/benchmark#sources-and-sinks) and [Google Play apps]({{ site.baseurl }}/ggplay#sources-and-sinks)."
 					}
 					
