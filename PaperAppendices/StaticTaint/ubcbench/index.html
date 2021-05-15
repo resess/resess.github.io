@@ -25,8 +25,8 @@
 <meta property="og:description" content="This website provides supplementary materials for the paper Analyzing Android Taint Analysis Tools: FlowDroid, Amandroid, and DroidSafe submitted to Empirical Software Engineering.
 " />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://resess.github.io/" />
-<meta property="og:site_name" content="https://resess.github.io/" />
+<meta property="og:url" content="http://localhost:4000" />
+<meta property="og:site_name" content="http://localhost:4000" />
 
 <meta itemprop="name" content="UBCBench">
 <meta itemprop="description" content="This website provides supplementary materials for the paper Analyzing Android Taint Analysis Tools: FlowDroid, Amandroid, and DroidSafe submitted to Empirical Software Engineering.
@@ -74,9 +74,11 @@
     <li class="collapse show" id="analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe">
         <ul class="td-sidebar-nav__section pr-md-3">
           <li class="td-sidebar-nav__section-title">
-            <a href="/PaperAppendices/StaticTaint/config" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Tool Configurations</a>
+            <a href="/PaperAppendices/StaticTaint/tools" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Tool Selection and Configurations</a>
           </li>
-          <ul><li class="collapse show" id=""></li></ul>
+          <ul><li class="collapse show" id="">
+              <a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-tool-selection-and-configurations-tool-selection" href="/PaperAppendices/StaticTaint/tools#tool-selection">Tool Selection</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-tool-selection-and-configurations-tool-configurations" href="/PaperAppendices/StaticTaint/tools#tool-configurations">Tool Configurations</a>
+              </li></ul>
           <li class="td-sidebar-nav__section-title">
             <a href="/PaperAppendices/StaticTaint/benchmark" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Benchmarks</a>
           </li>
@@ -87,7 +89,7 @@
             <a href="/PaperAppendices/StaticTaint/ggplay" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Google Play Apps</a>
           </li>
           <ul><li class="collapse show" id="">
-              <a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-distribution-of-api-levels" href="/PaperAppendices/StaticTaint/ggplay#distribution-of-API-levels">Distribution of API levels</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-login-identification" href="/PaperAppendices/StaticTaint/ggplay#login-identification">Login Identification</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-sources-and-sinks" href="/PaperAppendices/StaticTaint/ggplay#sources-and-sinks">Sources and sinks</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-selected-apps-and-expected-results" href="/PaperAppendices/StaticTaint/ggplay#selected-apps-and-expected-results">Selected apps and expected results</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-sources-of-failures" href="/PaperAppendices/StaticTaint/ggplay#sources-of-failures">Sources of failures</a>
+              <a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-login-scenario" href="/PaperAppendices/StaticTaint/ggplay#login-scenario">Login scenario</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-spyware-scenario" href="/PaperAppendices/StaticTaint/ggplay#spyware-scenario">Spyware scenario</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-overall-selected-apps-and-expected-results" href="/PaperAppendices/StaticTaint/ggplay#overall-selected-apps-and-expected-results">Overall selected apps and expected results</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-sources-of-failures" href="/PaperAppendices/StaticTaint/ggplay#sources-of-failures">Sources of failures</a>
               </li></ul>
           <li class="td-sidebar-nav__section-title">
             <a href="/PaperAppendices/StaticTaint/ubcbench" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">UBCBench</a>
@@ -129,19 +131,21 @@
 
 <table>
 <tr><th>CriteriaID</th><th>CriteriaDescription</th><th>Tool</th></tr>
-<tr><td>U-DB2.12</td><td>Precisely model Android framework methods.</td><td>FlowDroid, Amandroid</td></tr>
+<tr><td>U-DB2.12</td><td>Precisely model Android framework methods.</td><td>FlowDroid</td></tr>
 <tr><td>U-DB4.15</td><td>Detect flows from location-related sources to sinks.</td><td>Amandroid</td></tr>
 <tr><td>U-DB4.16</td><td>Do not treat callback Intent parameters as sources .</td><td>Amandroid</td></tr>
 <tr><td>U-DB4.17</td><td>Resolve setContentView(int) to the correct layout file when the argument is not directly a resource ID.</td><td>FlowDroid</td></tr>
 <tr><td>U-DB4.18</td><td>Collect callbacks registered in fragments.</td><td>FlowDroid, Amandroid</td></tr>
 <tr><td>U-DB7.24</td><td>Handle casting statements.</td><td>FlowDroid, Amandroid</td></tr>
-<tr><td>U-DB7.25</td><td>Handle context sensitivity properly.</td><td>Amandroid</td></tr>
-<tr><td>U-DB7.26</td><td>Do not report duplicated flows that can be triggered from multiple locations.</td><td>Amandroid</td></tr>
 <tr><td>U-DB10.6</td><td>Recongize sources and sinks invoked using reflection.</td><td>FlowDroid</td></tr>
 <tr><td>U-DB10.7</td><td>Handle reflective calls with method getClass().</td><td>DroidSafe</td></tr>
-<tr><td>U-DB10.8</td><td>Handle reflective calls with method getConstructor().</td><td>FlowDroid, Amandroid</td></tr>
-<tr><td>TO</td><td>Fail to detect flow due to running out of time.</td><td>Amandroid, DroidSafe</td></tr>
-<tr><td>UN</td><td>Fail to detect flow due to unknown reasons.</td><td>FlowDroid, Amandroid, DroidSafe</td></tr>
+<tr><td>U-DB10.8</td><td>Handle method overloading.</td><td>DroidSafe</td></tr>
+<tr><td>U-DB10.9</td><td>Handle reflective calls using strings defined in resource files.</td><td>DroidSafe</td></tr>
+<tr><td>U-DB10.10</td><td>Handle dynamically-constructed reflective calls.</td><td>DroidRA</td></tr>
+<tr><td>U-DB10.11</td><td>Handle reflective calls to Android framework methods.</td><td>DroidRA</td></tr>
+<tr><td>U-DB10.12</td><td>Handle reflective calls with method getConstructor().</td><td>FlowDroid, DroidRA</td></tr>
+<tr><td>TO</td><td>Fail to detect flow due to running out of time.</td><td>-</td></tr>
+<tr><td>UN</td><td>Fail to detect flow due to unknown reasons.</td><td>-</td></tr>
 </table>
 
 <h2 id="download-link">Download link</h2>
@@ -166,9 +170,9 @@
 <tr><td>Bug of StubDroid's summaries for handling reflection.<br />Reported by us, fixed by the authors <a href="https://github.com/secure-software-engineering/FlowDroid/commit/952ea8dc1ff6e118af9f709c7dd062b067b5556c">(see commit)</a>.</td><td>132, 134, 136, 137, 138</td><td></td><td></td></tr>
 <tr><td rowspan="2">BUG2</td><td>Bug in IccTA when handling Broadcast Receivers.<br />Fixed by us <a href="https://github.com/secure-software-engineering/FlowDroid/pull/245">(see pull request)</a>.</td><td>96</td><td>11, 12</td><td></td></tr>
 <tr><td>Bug in IccTA when handling IntentServices.<br />Fixed by us <a href="https://github.com/secure-software-engineering/FlowDroid/pull/245">(see pull request)</a>.</td><td></td><td>9</td><td></td></tr>
-<tr><td rowspan="3">EX</td><td>Exception thrown in IccTA when handling bound Services.<br />Fixed by us <a href="https://github.com/secure-software-engineering/FlowDroid/pull/235">(see pull request)</a>.</td><td>102</td><td>20, 21, 22, 23, 24</td><td>2, 7, 8, 15</td></tr>
-<tr><td>Exception thrown in IccTA when handling ICC methods with no parameter.<br />Fixed by us <a href="https://github.com/secure-software-engineering/FlowDroid/pull/239">(see pull request)</a>.</td><td></td><td></td><td>1, 17</td></tr>
-<tr><td>Exception thrown in Soot when handling reflection.<br />Fixed by us <a href="https://github.com/Sable/soot/pull/1316">(see pull request)</a>.</td><td></td><td></td><td>5, 9, 13, 19, 20</td></tr>
+<tr><td rowspan="3">EX</td><td>Exception thrown in IccTA when handling bound Services.<br />Fixed by us <a href="https://github.com/secure-software-engineering/FlowDroid/pull/235">(see pull request)</a>.</td><td>102</td><td>20, 21, 22, 23, 24</td><td>2, 7, 14</td></tr>
+<tr><td>Exception thrown in IccTA when handling ICC methods with no parameter.<br />Fixed by us <a href="https://github.com/secure-software-engineering/FlowDroid/pull/239">(see pull request)</a>.</td><td></td><td></td><td>1, 16</td></tr>
+<tr><td>Exception thrown in Soot when handling reflection.<br />Fixed by us <a href="https://github.com/Sable/soot/pull/1316">(see pull request)</a>.</td><td></td><td></td><td>5, 8, 12, 18, 19</td></tr>
 </table>
 
 <script
