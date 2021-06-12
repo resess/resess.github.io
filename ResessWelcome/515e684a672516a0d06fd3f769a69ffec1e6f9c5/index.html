@@ -9,7 +9,9 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    
+
+    <link rel="stylesheet" type="text/css" href="StyleSheetCode.css"> 
+        
 </head>
 
 
@@ -39,9 +41,9 @@
 
         <div class="left-align">
 
-        <p>What to expect from your <A HREF="https://www.grad.ubc.ca/campus-community/life-grad-student-ubc/what-expect">life as a graduate student at UBC</A></p>   
+        <p>What to expect from your <a href="https://www.grad.ubc.ca/campus-community/life-grad-student-ubc/what-expect">life as a graduate student at UBC</A></p>   
 
-	<p>Do you need a PhD? <A HREF="DoYouNeedaPhD_by_NickFeamster.pdf">by Nick Feamster</A></p>
+	<p>Do you need a PhD? <a href="doc/DoYouNeedaPhD_by_NickFeamster.pdf">by Nick Feamster</A></p>
 
         <h2 class="category">ReSeSS Lab Procedures</h2>
 
@@ -64,7 +66,7 @@
                             <li>Click on <div style="display:inline-block;" class="logo-plus-button-plus-icon"></div>
                                 button on the
                                 right bottom corner. In case you cannot find <div style="display:inline-block;" class="logo-plus-button-plus-icon"></div>
-                                button, refer <a href="Add Calendar Button.png">this image</a>.</li>
+                                button, refer <a href="img/AddCalendarButton.png">this image</a>.</li>
                             <li>Mark your availability in the ReSeSS calendar and use the end date for all recurrent events (e.g., mark your classes and set the end date of your classes to the end of the term).</li>
                         </ul>
                     </li>
@@ -146,40 +148,37 @@
             </div>
 
 
-            <button class="collapsible"> Access to lab's GitHub repo </button>
+            <button class="collapsible">Lab GitHub repo </button>
             <div class="content">
                 <ul>
-                    <li>Send an e-mail to
+                    <li>To get access to the lab's GitHub repo send an e-mail to
                         <a href="mailto:devkhv129@gmail.com"> Harsha</a> or
                         <a href="mailto:Dora93wang@gmail.com"> Yingying</a> with your GitHub username to join <a href="https://github.com/resess">lab's GitHub repo </a></li>
                 </ul>
-            </div>
-
-
-
-            <button class="collapsible"> Create a project in lab's GitHub repo</button>
-            <div class="content">
                 <ul>
-                    <li>Create a repo for your project in <a href="https://github.com/resess">lab's GitHub page</a>. Name it {year_project_name} e.g. 2018_android_login_exploration. The project name in the example denotes the year in which project was started and a meaningful name, so the viewer can guess what the project is about from its name.</li>
-                    <li>Keep the repo private.</li>
-                    <li>Put details about the project in ReadMe file. This should include a short overview of the project, maintainer of the project, pre-requisites and how one can get started. Check <a href="https://help.github.com/articles/about-readmes/">GitHub guidelines</a> for more details.
-                    </li>
-                    <li>Projects in our lab have predefined categories / tags, such as mobile-energy, mobile-security, microservices, etc. Tag your repo with an appropriate category. A repo can also have multiple tags. Refer to this <a href="https://help.github.com/articles/classifying-your-repository-with-topics/">link</a> on how to tag projects.
-                    </li>
+                    <li>To create a project in lab's GitHub repo</li>
+                    <ul>
+                        <li>Create a repo for your project in <a href="https://github.com/resess">lab's GitHub page</a>. Name it {year_project_name} e.g. 2018_android_login_exploration. The project name in the example denotes the year in which project was started and a meaningful name, so the viewer can guess what the project is about from its name.</li>
+                        <li>Keep the repo private.</li>
+                        <li>Put details about the project in ReadMe file. This should include a short overview of the project, maintainer of the project, pre-requisites and how one can get started. Check <a href="https://help.github.com/articles/about-readmes/">GitHub guidelines</a> for more details.
+                        </li>
+                        <li>Projects in our lab have predefined categories / tags, such as mobile-energy, mobile-security, microservices, etc. Tag your repo with an appropriate category. A repo can also have multiple tags. Refer to this <a href="https://help.github.com/articles/classifying-your-repository-with-topics/">link</a> on how to tag projects.
+                        </li>
+                    </ul>
                 </ul>
             </div>
 
 
 
-            <button class="collapsible">Access Zeus server</button>
+            <button class="collapsible">Access to Zeus server</button>
             <div class="content">
                 <ul>
-                    <li>Submit a request e-mail to it@ece.ubc.ca with following information:
+                    <li>If you do not have an @ece.ubc.ca account, then submit a request to create one via e-mail to it@ece.ubc.ca with following information:
                         <ul>
                             <li>Your Name: [FULL NAME] </li>
                             <li>Your Student: [ID NUMBER]</li>
                             <li>Name of Supervisor : Prof. Julia Rubin</li>
-                            <li>Your ECE mail ID </li>
+                            <li>Your requested ECE email ID </li>
                         </ul>
                     </li>
                     <li>To access Zeus, ssh [your ece mail account]@zeus.ece.ubc.ca</li>
@@ -202,16 +201,57 @@
                             <li>Put everything that you want to share with the group, including software installations in
                                 /data/common,
                                 e.g., under /data/common/software/XXX. </li>
+                            <li>Do not place any files under /home !!!</li>                                
                         </ul>
                     </li>
 
-                    
-
-                    <li><a href="EmulatorSetup.pdf">Android emulator setup</a>.</li>
                 </ul>
             </div>
 
 
+        <h2 class="category">Scientific Writing </h2>
+
+	<button class="collapsible">Paper writing guide</button>
+              <div class="content">
+	       <ul>
+                 <li><a href="Latex.html">Writting papers in Latex - instructions</a>.</li>
+                 <li><a href="WritingMistakes.html">Common writing mistakes</a>.</li>
+		 <li><a href="http://www.cs.cmu.edu/~Compose/shaw-icse03.pdf">Writing good software engineering research papers</a> (by Mary Shaw).</li>
+               </ul>
+	      </div>
+
+	     <button class="collapsible">Presentation guide</button>
+	     <div class="content">
+             <ul> 
+		 <li>Use PowerPoint (not Keynote) for your presentations and format the slides as Standard (4x3), not Widescreen (16x9). </li>
+		 <li>Fonts in all presentations should always be at least 20 points. </li>
+		 <li>Always include slide numbers.</li>
+		 <li>Do not use the equation feature, just symbols. </li>
+		 <li>One message per slide, one slide per message. A good slide should not contain more than 30-40 words</li>
+		 <li>Do not write in full sentences. Break your message into bullet points.</li>
+		 <li>Bullet points should be consistent in structure (verbs vs. nouns, punctuation, etc.).</li>
+		 <li>Examples of good presentations are <a href="doc/presentations/ISSTA18.pptx">here</a>, 
+			 <a href="doc/presentations/ASE19.pptx">here</a>, and 
+			 <a href="doc/presentations/EqCheck.pptx">here</a>.</li>
+	     </ul>
+             </div>
+
+        <button class="collapsible">Email guide</button>
+            <div class="content">
+                <ul> 
+                    <li><a href="doc/emails/email1.pdf">Example: Asking about tool/data</a></li>
+                    <li><a href="doc/emails/email2.pdf">Example: Asking a question about finding/result #1</a></li>
+                    <li><a href="doc/emails/email3.pdf">Example: Asking a question about finding/result #2</a></li>
+                </ul>
+            </div>
+
+             <button class="collapsible">Literature Review</button>
+            <div class="content">
+                <p><a href="LiteratureReview.html">How to perform a literature review.</a></p>
+            </div>
+
+
+        <h2 class="category">Technical Tips and Tricks</h2>
 
             <button class="collapsible"> Remote execution on Zeus </button>
             <div class="content">
@@ -243,51 +283,94 @@
                 </ul>
             </div>
 
-
-        
-
-        <h2 class="category">Scientific Writing </h2>
-
-	<button class="collapsible">Paper writing guide</button>
-              <div class="content">
-	       <ul>
-                 <li><a href="Latex.html">Writting papers in Latex - instructions</a>.</li>
-                 <li><a href="WritingMistakes.html">Common writing mistakes</a>.</li>
-		 <li><a href="http://www.cs.cmu.edu/~Compose/shaw-icse03.pdf">Writing good software engineering research papers</a> (by Mary Shaw).</li>
-               </ul>
-	      </div>
-
-	     <button class="collapsible">Presentation guide</button>
-	     <div class="content">
-             <ul> 
-		 <li>Use PowerPoint (not Keynote) for your presentations and format the slides as Standard (4x3), not Widescreen (16x9). </li>
-		 <li>Fonts in all presentations should always be at least 20 points. </li>
-		 <li>Always include slide numbers.</li>
-		 <li>Do not use the equation feature, just symbols. </li>
-		 <li>One message per slide, one slide per message. A good slide should not contain more than 30-40 words</li>
-		 <li>Do not write in full sentences. Break your message into bullet points.</li>
-		 <li>Bullet points should be consistent in structure (verbs vs. nouns, punctuation, etc.).</li>
-		 <li>Examples of good presentations are <a href="ISSTA18.pptx">here</a>, 
-			 <a href="ASE19.pptx">here</a>, and 
-			 <a href="EqCheck.pptx">here</a>.</li>
-	     </ul>
-             </div>
-
-            <button class="collapsible">Literature Review</button>
+            <button class="collapsible">Setting Up a VNC Viewer on Zeus</button>
             <div class="content">
-                <ul> 
-                    <li>Coming soon.</li>
-                    <!-- For Sahar --> 
-                </ul>
-            </div>
+                <p>On Zeus</p>
+                <ol>
+                    <li>Include the following in your PATH variable, if not there already:<br>
+                        <code>/emulator<br>
+                        /platform-tools/<br>
+                        /cmdline-tools/tools/bin</code>
+                        
+                        <p>E.g., use the following command:<br>
+                            <code>export PATH=$PATH:sdk_path/emulator/</code>
+                        </p>
+                    </li>
 
+                    <li>Check permissions of <code>/dev/kvm</code>. If it does not have <code>crwxrwxrwx+</code> permissions, give it to the file using the following command:<br>
+                        <code>sudo chmod 777 /dev/kvm</code>
+                    </li>
+
+                    <li>Create a VNC server and write down its id.<br> 
+                        	<code>vncserver</code> (id is after "... desktop is zeus:") 
+                    </li>
+
+                    <li>Find the IP address, and write it down.<br> 
+                        <code>ifconfig</code> (The IP address is inet addr for eth0) 
+                    </li>
+                </ol>
+
+                <p>On Your Machine</p>
+                <ol start="5">
+                    <li>Install VNC viewer if not done already:<br>
+                        <a href="https://www.realvnc.com/en/connect/download/viewer/">https://www.realvnc.com/en/connect/download/viewer/</a>
+                    </li>
+                    
+                    <li>Make sure you are connected to UBC network (ubcprivate or via VPN)</li>
+
+                    <li>Open VNC viewer, sign up or sign in.</li>
+
+                    <li>Open the new connection window:<br> 
+                        <code>File->New connection->General</code>
+                    </li>
+
+                    <li>Set the VNC server to be Zeus.<br>
+                        <code>ip_address:590</code> + id of VNC server written down in Step 3.
+                    </li>
+
+                    <li>Double click to connect to the viewer.</li>
+
+                    <li>Input VNC password</li>
+
+                    <li>You are ready to go. For example, open a terminal window to run any command:<br>
+                        <code>Right click->Debian->Applications->Terminal Emulators->LXTerminal</code>
+                    </li> 
+                </ol>
+	        </div>
+
+	        <button class="collapsible">Running Android Emulator in VNC on Zeus</button>
+            <div class="content">
+                <ol>
+                    <li>Follow the steps in Section <i>"Setting Up a VNC Viewer on Zeus"</i> to set up VNC viewer</li>
+
+                    <li>Open VNC viewer, connect to Zeus, and open a terminal window</li>
+
+                    <li>On Zeus, create an emulator and write down its name:<br>
+                        <code>avdmanager create avd -n test -k "sdk_id"</code>
+                    </li>
+
+                    <li>Create a script, <code>android_emu.sh</code>, with the following code and make the script executable.<br>
+                        <code>#!/bin/bash<br>
+                        adb kill-server<br> 
+                        adb start-server<br>
+                        emulator -avd $1 -port 5554 -gpu guest -writable-system -no-snapshot</code>
+                    </li>
+
+                    <li>Run the script created in Step 4, use the emulator name written down in Step 3 (it is passed to the script as the first parameter). For example,<br>
+                        <code>./android_emu.sh test</code>
+                    </li>
+                    
+                    <li>Wait and you should see the emulator!</li>
+                    
+                </ol>
+            </div>
 
         <h2 class="category">Useful Resources </h2>
             <button class="collapsible">Code Analysis</button>
             <div class="content">
                 <ul>
 	           <li><a href="FlowDroidManual.html">FlowDroid</a>.</li>
-		   <li><a href="Analysis-Lecture.pdf">Prof. Rubin's basic intro to analysis</a>.</li>
+		   <li><a href="doc/Analysis-Lecture.pdf">Prof. Rubin's basic intro to analysis</a>.</li>
 		   <li><a href="https://www.coursera.org/lecture/software-security/static-analysis-introduction-part-1-flZPC">Coursera static analysis course</a>.</li>
 		   <li><a href="https://cs.au.dk/~amoeller/spa/spa.pdf">Static Program Analysis, Moller and Schwartzbach</a>.</li>
                    <li><a href="https://www.youtube.com/playlist?list=PLamk8lFsMyPXrUIQm5naAQ08aK2ctv6gE">Code Analyses, Paderborn University</a>.</li>
@@ -316,14 +399,16 @@
             <button class="collapsible">Lab's logo</button>
              <div class="content">
                  <ul>
-                     <li>Download lab's logo from <a href="Lab's-Logo.docx">here</a>.</li>
+                     <li>Download the lab's logo from <a href="doc/LabLogo.docx">here</a>.</li>
                  </ul>
              </div>
  
              <button class="collapsible">Name tag template</button>
              <div class="content">
                  <ul>
-                     <li>The source PSD file of name tag can be downloaded <a href="attachments/Tag.psd">here</a>. Dependent fonts will be uploaded later or please find by yourself. The size to print the tags can be downloaded <a href="attachments/print.docx">here</a>.</li>
+                     <li>The source PSD file of name tag can be downloaded <a href="doc/LabNameTag.psd">here</a>. 
+			     Dependent fonts will be uploaded later or please find by yourself. 
+			     The size of the final tag file to print can be downloaded <a href="doc/LabNameTagToPrint.docx">here</a>.</li>
                  </ul>
              </div>
         </div>
