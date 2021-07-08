@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="en-US"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><title>Implementation - ARDiff</title><link rel="shortcut icon" href="https://resess.github.io/artifacts/ARDiff/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="https://resess.github.io/artifacts/ARDiff/assets/css/just-the-docs.css"> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2709176-10"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', "UA-2709176-10"); </script> <script type="text/javascript" src="https://resess.github.io/artifacts/ARDiff/assets/js/vendor/lunr.min.js"></script> <script type="text/javascript" src="https://resess.github.io/artifacts/ARDiff/assets/js/just-the-docs.js"></script><meta name="viewport" content="width=device-width, initial-scale=1"><title>Implementation | ARDiff</title><meta name="generator" content="Jekyll v4.0.1" /><meta property="og:title" content="Implementation" /><meta property="og:locale" content="en_US" /><meta name="description" content="A Jekyll theme for documentation" /><meta property="og:description" content="A Jekyll theme for documentation" /><link rel="canonical" href="https://resess.github.io/artifacts/ARDiff/docs/implementation" /><meta property="og:url" content="https://resess.github.io/artifacts/ARDiff/docs/implementation" /><meta property="og:site_name" content="ARDiff" /> <script type="application/ld+json"> {"description":"A Jekyll theme for documentation","headline":"Implementation","@type":"WebPage","url":"https://resess.github.io/artifacts/ARDiff/docs/implementation","@context":"https://schema.org"}</script><body> <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"> <symbol id="link" viewBox="0 0 16 16"><title>Link</title><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path> </symbol> </svg><div class="page-wrap"><div class="side-bar"><div class="site-header"> <a href="https://resess.github.io/artifacts/ARDiff" class="site-title lh-tight"> ARDiff </a> <button class="menu-button fs-3 js-main-nav-trigger" data-text-toggle="Hide" type="button">Menu</button></div><div class="navigation main-nav js-main-nav"><nav role="navigation" aria-label="Main navigation"><ul class="navigation-list"><li class="navigation-list-item"><a href="https://resess.github.io/artifacts/ARDiff/" class="navigation-list-link">Home</a><li class="navigation-list-item"><a href="https://resess.github.io/artifacts/ARDiff/docs/benchmark" class="navigation-list-link">Benchmark</a><li class="navigation-list-item active"><a href="https://resess.github.io/artifacts/ARDiff/docs/implementation" class="navigation-list-link active">Implementation</a><li class="navigation-list-item"><a href="https://resess.github.io/artifacts/ARDiff/docs/results" class="navigation-list-link">Results</a></ul></nav></div><footer class="site-footer"><p class="text-small text-grey-dk-000 mb-4">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p></footer></div><div class="main-content-wrap js-main-content" tabindex="0"><div class="main-content"><div class="page-header js-page-header"><div class="search"><div class="search-input-wrap"> <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search ARDiff" aria-label="Search ARDiff" autocomplete="off"> <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg></div><div class="js-search-results search-results-wrap"></div></div></div><div class="page"><div id="main-content" class="page-content" role="main"><h2 id="the-source-code-of-our-framework-is-available-on-github"> <a href="#the-source-code-of-our-framework-is-available-on-github" class="anchor-heading"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#link"></use></svg></a> The source code of our framework is available on <a href="https://github.com/resess/ARDiff/tree/v1.0.0/Implementation">GitHub</a>.</h2><hr/><p>This repository contains the implementation of ARDiff: an equivalence checking framework that allows scaling symbolic-execution-based equivalence checking for cases that consider two subsequent versions of a program. </p>
+<p>It includes:</p>
+<ul>
+<li>The implementation of ARDiff abstraction-refinement approach (&quot;ARDiff: Scaling Program Equivalence Checking via Iterative Abstraction and Refinement of Common Code&quot;, ESEC/FSE, 2020)</li>
+<li>An implementation of DSE -- a baseline equivalence checking technique (&quot;Differential Symbolic Execution&quot;, FSE, 2008)</li>
+<li>An implementation of IMP-S -- a baseline equivalence checking technique (&quot;Regression Verification using Impact Summaries&quot;, SPIN, 2013)</li>
+</ul>
+<h2 id="installing">Installing</h2>
+<p>Java Development Kit (JDK) version 8 is required.</p>
+<p>Clone the repository:</p>
+<pre><code class="lang-yaml">git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://github.com/resess/ARDiff.git
+</code></pre>
+<p>ARDiff has dependencies on JPF-core, JPF-Symbc Z3-solver. We included all dependencies in the tool. </p>
+<h3 id="jpf">JPF</h3>
+<p>Pre-built versions of <a href="https://github.com/SymbolicPathFinder/jpf-symbc">JPF-Symbc</a>. and <a href="https://https://github.com/javapathfinder/jpf-core">JPF-core</a> are included in the project under the folder jpf-git.</p>
+<p>You need to create in your home directory a .jpf directory.</p>
+<p>On Linux/OSX:</p>
+<pre><code class="lang-yaml"><span class="hljs-built_in">mkdir</span> ~/.jpf
+</code></pre>
+<p>On Windows:</p>
+<pre><code class="lang-yaml"><span class="hljs-built_in">mkdir</span> <span class="hljs-variable">%UserProfile%</span>/.jpf
+</code></pre>
+<p>Next, inside the .jpf directory, you need to include a file name &quot;site.properties&quot; with the following content:</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">jpf-core</span> = /.../path-to-ARDiff_Equiv_Checking-folder/Implementation/jpf-git/jpf-core
+<span class="hljs-attr">jpf-symbc</span> = /.../path-to-ARDiff_Equiv_Checking-folder/Implementation/jpf-git/jpf-symbc
+<span class="hljs-attr">extensions</span> = <span class="hljs-variable">${jpf-core}</span>,<span class="hljs-variable">${jpf-symbc}</span>
+</code></pre>
+<h3 id="z3">Z3</h3>
+<p>For checking the equivalence of symbolic summaries, the Z3 constraint solver is used. </p>
+<p>The Z3 library files needed by JPF-symbc for Unix and Windows are provided in our Implementation directory (under jpf-git/jpf-symbc/lib) and must be included in the PATH (Windows) or LD_LIBRARY_PATH (Linux) or DYLD_LIBRARY_PATH (OSX) environnment variable. For example:</p>
+<pre><code class="lang-yaml"><span class="hljs-keyword">export</span> LD_LIBRARY_PATH=<span class="hljs-string">"/.../path-to-ARDiff_Equiv_Checking-folder/Implementation/jpf-git/jpf-symbc/lib"</span>
+</code></pre>
+<p>You can refer to <a href="https://github.com/Z3Prover/z3">Z3</a> for more information or to build Z3 yourself.</p>
+<h2 id="setup">Setup</h2>
+<p>The .jar file to run the framework is provided in:</p>
+<pre><code class="lang-yaml"><span class="hljs-regexp">/.../</span>path-to-ARDiff_Equiv_Checking-folder<span class="hljs-regexp">/Implementation/</span>target<span class="hljs-regexp">/artifacts/</span>Implementation_jar<span class="hljs-regexp">/Implementation.jar</span>
+</code></pre>
+<p>The project can also be opened as a Maven project in an IDE in order to change/update the source code. The main class is Runner.Runner</p>
+<h2 id="usage">Usage</h2>
+<p>You should run the tool from the ARDiff_Equiv_Checking/Implementation folder:</p>
+<pre><code class="lang-yaml">cd /.../path-<span class="hljs-keyword">to</span>-ARDiff_Equiv_Checking-folder/<span class="hljs-keyword">Implementation</span>/
+
+java -jar target/artifacts/Implementation_jar/<span class="hljs-keyword">Implementation</span>.jar --path1 path/<span class="hljs-keyword">to</span>/the/first/<span class="hljs-function"><span class="hljs-keyword">method</span> --<span class="hljs-title">path2</span> <span class="hljs-title">path</span>/<span class="hljs-title">to</span>/<span class="hljs-title">the</span>/<span class="hljs-title">second</span>/<span class="hljs-title">method</span> --<span class="hljs-title">tool</span> <span class="hljs-title">ToolName</span> --<span class="hljs-title">t</span> <span class="hljs-title">timeout</span> --<span class="hljs-title">bound</span> <span class="hljs-title">LoopBoundLimit</span> --<span class="hljs-title">minint</span> <span class="hljs-title">Integer</span> --<span class="hljs-title">maxint</span> <span class="hljs-title">Integer</span> --<span class="hljs-title">mindouble</span> <span class="hljs-title">Double</span> --<span class="hljs-title">maxdouble</span> <span class="hljs-title">Double</span></span>
+</code></pre>
+<p>For OSX/Linux users, if you are running into some issues indicating &quot;no libz3java in java.library.path&quot;, 
+try adding Z3 directory (&quot;jpf-git/jpf-symbc/lib&quot;) to &quot;java.library.path&quot;:</p>
+<pre><code class="lang-yaml">java -Djava.library.path=jpf-git/jpf-symbc/lib -jar target/artifacts/Implementation_jar/<span class="hljs-keyword">Implementation</span>.jar --path1 path/<span class="hljs-keyword">to</span>/the/first/<span class="hljs-function"><span class="hljs-keyword">method</span> --<span class="hljs-title">path2</span> <span class="hljs-title">path</span>/<span class="hljs-title">to</span>/<span class="hljs-title">the</span>/<span class="hljs-title">second</span>/<span class="hljs-title">method</span> --<span class="hljs-title">tool</span> <span class="hljs-title">ToolName</span> --<span class="hljs-title">t</span> <span class="hljs-title">timeout</span> --<span class="hljs-title">bound</span> <span class="hljs-title">LoopBoundLimit</span> --<span class="hljs-title">minint</span> <span class="hljs-title">Integer</span> --<span class="hljs-title">maxint</span> <span class="hljs-title">Integer</span> --<span class="hljs-title">mindouble</span> <span class="hljs-title">Double</span> --<span class="hljs-title">maxdouble</span> <span class="hljs-title">Double</span></span>
+</code></pre>
+<p>There are 9 arguments for configuring the framework: --path1 and --path2 are mandatory and the other eight are optional. </p>
+<p>You need to give the paths to two (compilable) Java classes (with different names), each containing one of the target methods.</p>
+<ul>
+<li><p>Note that the signature (i.e the name and the input parameters) and the return type must be the same for the two methods.</p>
+</li>
+<li><p>If the classes contain more than one method, the first method is considered as the target method for equivalence checking. </p>
+</li>
+<li><p>The final result and time are shown in the terminal. <strong>Extra information from running the tools will be stored in the directory of --path1. In particular, the final result is stored under path1/outputs</strong></p>
+</li>
+</ul>
+<p>You can also choose the tool, the bound limit to unroll loops in JPF-symbc and min and max values for integers and doubles. </p>
+<p>You can choose the timeout in milliseconds. This timeout is for constraint solving in both JPF-symbc and Z3, it is not an overall timeout for the tool. </p>
+<p>If you want to stop the tool after t seconds, for example 5, you can use any timeout mechanism.
+On Linux or OSX for instance, the Linux timeout command:  </p>
+<pre><code class="lang-yaml">timeout <span class="hljs-number">5</span> java -jar target/artifacts/Implementation_jar/<span class="hljs-keyword">Implementation</span>.jar --path1 path/<span class="hljs-keyword">to</span>/the/first/<span class="hljs-function"><span class="hljs-keyword">method</span> --<span class="hljs-title">path2</span> <span class="hljs-title">path</span>/<span class="hljs-title">to</span>/<span class="hljs-title">the</span>/<span class="hljs-title">second</span>/<span class="hljs-title">method</span> --<span class="hljs-title">tool</span> <span class="hljs-title">ToolName</span>  --<span class="hljs-title">t</span> <span class="hljs-title">timeout</span> --<span class="hljs-title">bound</span> <span class="hljs-title">LoopBoundLimit</span> --<span class="hljs-title">minint</span> <span class="hljs-title">Integer</span> --<span class="hljs-title">maxint</span> <span class="hljs-title">Integer</span> --<span class="hljs-title">mindouble</span> <span class="hljs-title">Double</span> --<span class="hljs-title">maxdouble</span> <span class="hljs-title">Double</span></span>
+</code></pre>
+<p>You might need to install first &quot;coreutils&quot;. </p>
+<p>For  OSX users :</p>
+<pre><code class="lang-yaml"><span class="hljs-keyword">brew </span><span class="hljs-keyword">install </span>coreutils
+</code></pre>
+<p>For  Linux users :</p>
+<pre><code class="lang-yaml">apt-<span class="hljs-keyword">get</span> install coreutils
+</code></pre>
+<p>On Windows, you can use the  START-TIMEOUT builtins combination or other timeout tools, for example <a href="https://github.com/pshved/timeout">this one</a>.</p>
+<p>To obtain the overall time taken by the tool, in addition to the detailed times (in milisecond) we provide, you can also use timing mechanisms such as the Linux time command which gives you the CPU runtime of the process:</p>
+<pre><code class="lang-yaml">time java -jar target/artifacts/Implementation_jar/<span class="hljs-keyword">Implementation</span>.jar --path1 path/<span class="hljs-keyword">to</span>/the/first/<span class="hljs-function"><span class="hljs-keyword">method</span> --<span class="hljs-title">path2</span> <span class="hljs-title">path</span>/<span class="hljs-title">to</span>/<span class="hljs-title">the</span>/<span class="hljs-title">second</span>/<span class="hljs-title">method</span> --<span class="hljs-title">tool</span> <span class="hljs-title">ToolName</span>  --<span class="hljs-title">t</span> <span class="hljs-title">timeout</span> --<span class="hljs-title">bound</span> <span class="hljs-title">LoopBoundLimit</span> --<span class="hljs-title">minint</span> <span class="hljs-title">Integer</span> --<span class="hljs-title">maxint</span> <span class="hljs-title">Integer</span> --<span class="hljs-title">mindouble</span> <span class="hljs-title">Double</span> --<span class="hljs-title">maxdouble</span> <span class="hljs-title">Double</span></span>
+</code></pre>
+<h2 id="example">Example</h2>
+<p>Executing the following command (on OSX) runs ARDiff on the example &quot;Airy/MAX/Eq&quot;. </p>
+<pre><code class="lang-yaml"><span class="hljs-selector-tag">time</span> timeout <span class="hljs-number">300</span> java -jar target/artifacts/Implementation_jar/Implementation<span class="hljs-selector-class">.jar</span> --path1 ../benchmarks/Airy/MAX/Eq/oldV<span class="hljs-selector-class">.java</span> --path2 ../benchmarks/Airy/MAX/Eq/newV<span class="hljs-selector-class">.java</span> --tool A
+</code></pre>
+<p><img src="/img/eg.png" alt=""></p>
+<h2 id="benchmark">Benchmark</h2>
+<p>You can find our dataset here:</p>
+<pre><code class="lang-yaml"><span class="hljs-regexp">/.../</span>path-to-ARDiff_Equiv_Checking-folder<span class="hljs-regexp">/benchmarks/</span>
+</code></pre>
+<h2 id="running-ardiff-on-our-benchmark">Running ARDiff on Our Benchmark</h2>
+<p>You can run each pair of methods in the benchmark individually (as described above) or run all of them in sequence by running the script we provided.</p>
+<p>There are three scripts for running the tool on the benchmark, one for each operating system.</p>
+<p>Note, in terms of system requirements, running benchmarks need at least 16 GB memory and the expected runtime is 10-14 hrs. </p>
+<ul>
+<li>16GB is a safe bound to ensure symbolic execution and the SMT solver can handle complex examples. This requirement can be easily modified by changing the -Xms parameter in the scripts, however we can not guarantee that you will obtain the same results (as some cases might become UNKNOWN)</li>
+</ul>
+<p>For example, the following script is for Linux users:</p>
+<pre><code class="lang-yaml"><span class="hljs-keyword">cd</span> /.../path-<span class="hljs-keyword">to</span>-ARDiff_Equiv_Checking-folder/Implementation/
+<span class="hljs-keyword">sh</span> RunningBenchmarksOnLinux.<span class="hljs-keyword">sh</span>
+</code></pre>
+<p>OSX users should use RunningBenchmarksOnMac.sh.</p>
+<p>The script runs DSE, IMP-S, and ARDiff on each Equivalent and Non-Equivalent pairs of methods for each benchmark. </p>
+</div></div></div></div></div>

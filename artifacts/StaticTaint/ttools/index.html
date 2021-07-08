@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.55.6" />
+
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+<link rel="alternate" type="application/rss&#43;xml" href="/docs/index.xml">
+
+<link rel="shortcut icon" href="/artifacts/StaticTaint/assets/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/artifacts/StaticTaint/assets/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/artifacts/StaticTaint/assets/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/artifacts/StaticTaint/assets/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/artifacts/StaticTaint/assets/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/artifacts/StaticTaint/assets/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/artifacts/StaticTaint/assets/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/artifacts/StaticTaint/assets/favicons/android-96x196.png" sizes="96x196">
+<link rel="icon" type="image/png" href="/artifacts/StaticTaint/assets/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/artifacts/StaticTaint/assets/favicons/android-192x192.png"sizes="192x192">
+
+<title>Tool Selection and Configurations</title>
+<meta property="og:title" content="Tool Selection and Configurations" />
+<meta property="og:description" content="This website provides supplementary materials for the paper Analyzing Android Taint Analysis Tools: FlowDroid, Amandroid, and DroidSafe submitted to Empirical Software Engineering.
+" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:4000" />
+<meta property="og:site_name" content="http://localhost:4000" />
+
+<meta itemprop="name" content="Tool Selection and Configurations">
+<meta itemprop="description" content="This website provides supplementary materials for the paper Analyzing Android Taint Analysis Tools: FlowDroid, Amandroid, and DroidSafe submitted to Empirical Software Engineering.
+">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Tool Selection and Configurations"/>
+<meta name="twitter:description" content="This website provides supplementary materials for the paper Analyzing Android Taint Analysis Tools: FlowDroid, Amandroid, and DroidSafe submitted to Empirical Software Engineering.
+"/>
+
+<link rel="stylesheet" href="/artifacts/StaticTaint/assets/css/main.css">
+<link rel="stylesheet" href="/artifacts/StaticTaint/assets/css/palette.css">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+
+  
+
+  <body class="td-section">
+    <header>
+        <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/artifacts/StaticTaint/">
+            <span class="text-uppercase font-weight-bold">Analyzing Android Taint Analysis Tools: FlowDroid, Amandroid, and DroidSafe</span>
+	</a>
+</nav>
+</header>
+
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          <div id="td-sidebar-menu" class="td-sidebar__inner">  
+  <form class="td-sidebar__search d-flex align-items-center">
+ <input type="search" class="form-control td-search-input" placeholder="&#xf002 Search this site…" aria-label="Search this site…" autocomplete="off">
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>  
+  <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/artifacts/StaticTaint/index" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">ANALYZING ANDROID TAINT ANALYSIS TOOLS: FLOWDROID, AMANDROID, AND DROIDSAFE</a>
+  </li><ul>
+    <li class="collapse show" id="analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe">
+        <ul class="td-sidebar-nav__section pr-md-3">
+          <li class="td-sidebar-nav__section-title">
+            <a href="/artifacts/StaticTaint/benchmark" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Benchmarks</a>
+          </li>
+          <ul><li class="collapse show" id="">
+              <a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-sources-and-sinks" href="/artifacts/StaticTaint/benchmark#sources-and-sinks">Sources and sinks</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-selected-benchmarks-and-expected-results" href="/artifacts/StaticTaint/benchmark#selected-benchmarks-and-expected-results">Selected benchmarks and expected results</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-excluded-benchmarks" href="/artifacts/StaticTaint/benchmark#excluded-benchmarks">Excluded benchmarks</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-sources-of-failures" href="/artifacts/StaticTaint/benchmark#sources-of-failures">Sources of failures</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-comparison-to-our-issta-18-paper" href="/artifacts/StaticTaint/benchmark#comparison-to-our-issta18-paper">Comparison to our ISSTA'18 paper</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-benchmarks-other-results" href="/artifacts/StaticTaint/benchmark#other-results">Other results</a>
+              </li></ul>
+          <li class="td-sidebar-nav__section-title">
+            <a href="/artifacts/StaticTaint/ggplay" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Google Play Apps</a>
+          </li>
+          <ul><li class="collapse show" id="">
+              <a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-login-scenario" href="/artifacts/StaticTaint/ggplay#login-scenario">Login scenario</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-spyware-scenario" href="/artifacts/StaticTaint/ggplay#spyware-scenario">Spyware scenario</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-overall-selected-apps-and-expected-results" href="/artifacts/StaticTaint/ggplay#overall-selected-apps-and-expected-results">Overall selected apps and expected results</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-google-play-apps-sources-of-failures" href="/artifacts/StaticTaint/ggplay#sources-of-failures">Sources of failures</a>
+              </li></ul>
+          <li class="td-sidebar-nav__section-title">
+            <a href="/artifacts/StaticTaint/ubcbench" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">UBCBench</a>
+          </li>
+          <ul><li class="collapse show" id="">
+              <a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-ubcbench-new-sources-of-failures" href="/artifacts/StaticTaint/ubcbench#new-sources-of-failures">New sources of failures</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-ubcbench-download-link" href="/artifacts/StaticTaint/ubcbench#download-link">Download link</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-ubcbench-fixed-bugs" href="/artifacts/StaticTaint/ubcbench#fixed-bugs">Fixed bugs</a>
+              </li></ul>
+          <li class="td-sidebar-nav__section-title">
+            <a href="/artifacts/StaticTaint/ttools" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Tool Selection and Configurations</a>
+          </li>
+          <ul><li class="collapse show" id="">
+              <a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-tool-selection-and-configurations-tool-selection" href="/artifacts/StaticTaint/ttools#tool-selection">Tool Selection</a><a class="td-sidebar-link td-sidebar-link__page " id="m-analyzing-android-taint-analysis-tools-flowdroid-amandroid-and-droidsafe-tool-selection-and-configurations-tool-configurations" href="/artifacts/StaticTaint/ttools#tool-configurations">Tool Configurations</a>
+              </li></ul>
+    </ul>
+  </nav>
+</div>
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	      <ol class="breadcrumb spb-1">
+                <li class="breadcrumb-item active" aria-current="page">
+                </li>
+	      </ol>
+           </nav>
+           <div class="td-content">
+	      <h1 id="tool-selection-and-configurations">Tool Selection and Configurations</h1>
+
+<h2 id="tool-selection">Tool Selection</h2>
+
+<p>Besides using <em>FlowDroid</em>, <em>Amandroid</em>, and <em>DroidSafe</em>, we performed a systematic literature review identifying relevant papers published between January 2016 and December 2020.
+We identified 41 papers related to static taint analysis. The availability and applicability are listed in the following table.
+The tool we included (<em>DroidRA</em>) is highlighted in <span class="norm">blue</span>.</p>
+
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Year</th>
+        <th>Title</th>
+        <th>Included/Excluded?</th>
+        <th>Reason</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>2020</td>
+        <td><a href="https://link.springer.com/article/10.1007/s10207-019-00471-w">DroidRista: a highly precise static data flow analysis framework for android applications</a></td>
+        <td>Excluded</td>
+        <td>We contacted the authors for source code but there was no response.</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>2020</td>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3368089.3409745">Borrowing your enemy's arrows: the case of code reuse in Android via direct inter-app code invocation</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for detecting IAC flows only.</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>2020</td>
+        <td><a href="https://www.usenix.org/conference/usenixsecurity20/presentation/elsabagh">FIRMSCOPE: Automatic Uncovering of Privilege-Escalation Vulnerabilities in Pre-Installed Apps in Android Firmware</a></td>
+        <td>Excluded</td>
+        <td>We contacted the authors for source code but there was no response.</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>2020</td>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/9286029/">Broadening Horizons of Multilingual Static Analysis: Semantic Summary Extraction from C Code for JNI Program Analysis</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for performaing native code analysis.</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>2020</td>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/9303643/">Compositional Taint Analysis of Native Codes for Security Vetting of Android Applications</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for performaing native code analysis.</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>2020</td>
+        <td><a href="https://publications.waset.org/10011664/improving-taint-analysis-of-android-applications-using-finite-state-machines">Improving Taint Analysis of Android Applications Using Finite State Machines</a></td>
+        <td>Excluded</td>
+        <td>The authors explicitly informed us that the tool is not open-source.</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>2020</td>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/9236807/">Inter-Language Static Analysis for Android Application Security</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for performaing native code analysis.</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>2019</td>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-030-37231-6_19">IIFA: modular inter-app intent information flow analysis of android applications</a></td>
+        <td>Excluded</td>
+        <td>The authors explicitly informed us that the tool is not open-source.</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>2019</td>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/8613913/">Specifying callback control flow of mobile apps using Finite Automata</a></td>
+        <td>Excluded</td>
+        <td>We contacted the authors for source code but there was no response.</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>2019</td>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/8952383/">Performance-boosting sparsification of the IFDS algorithm with applications to taint analysis</a></td>
+        <td>Excluded</td>
+        <td>The authors explicitly informed us that the tool is not open-source.</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>2019</td>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/8802687/">FastDroid: efficient taint analysis for Android applications</a></td>
+        <td>Excluded</td>
+        <td>The authors explicitly informed us that the tool is not open-source.</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>2019</td>
+        <td><a href="https://www.sciencedirect.com/science/article/pii/S1045926X18302064">A scalable, flow-and-context-sensitive taint analysis of android applications</a></td>
+        <td>Excluded</td>
+        <td>The authors explicitly informed us that the tool is not open-source.</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>2019</td>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/9117398/">PILDroid: A System for Detecting the Leakage of Privacy Information using the JNI</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for performaing native code analysis.</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>2019</td>
+        <td><a href="https://www.atlantis-press.com/proceedings/cnci-19/125906920">A Static Detection of Inter-Component Communication Vulnerability in Android Application</a></td>
+        <td>Excluded</td>
+        <td>The authors explicitly informed us that the tool is not open-source.</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>2019</td>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-981-13-7561-3_16">APPLADroid: Automaton Based Inter-app Privacy Leak Analysis for Android</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for detecting IAC flows only.</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>2018</td>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3243734.3243835">Jn-saf: Precise and efficient ndk/jni-aware inter-language static analysis framework for security vetting of android applications with native code</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for performaing native code analysis.</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>2018</td>
+        <td><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/spe.2577">Ripple: Reflection analysis for Android apps in incomplete information environments</a></td>
+        <td>Excluded</td>
+        <td>This tool is built on top of a nightly build of FlowDroid between version 1.0 and 1.5 in 2016, which is not supported by the authors of FlowDroid anymore. We contacted the authors of Ripple to check if they can provide a latest solution with newer FlowDroid but we did not have their response.</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>2018</td>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/8587187/">Identifying mobile inter-app communication risks</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for detecting IAC flows only.</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>2018</td>
+        <td><a href="https://link.springer.com/article/10.1007/s10515-017-0228-z">Lifting inter-app data-flow analysis to large app sets</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for detecting IAC flows only.</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>2018</td>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/8456010/">SDLI: static detection of leaks across intents</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for detecting IAC flows only.</td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>2018</td>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/8546876/">Detecting privacy leaks in Android apps using inter-component information flow control analysis</a></td>
+        <td>Excluded</td>
+        <td>We contacted the authors for source code but there was no response.</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>2018</td>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3230833.3232825">Practical precise taint-flow static analysis for android app sets</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for detecting IAC flows only.</td>
+      </tr>
+      <tr>
+        <td>23</td>
+        <td>2018</td>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/8599963/">A Static Analysis Model for Implicit Information Leakage in Android Application</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for detecting implicit flows.</td>
+      </tr>
+      <tr>
+        <td>24</td>
+        <td>2017</td>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3052973.3053004">Collusive data leak and more: Large-scale threat analysis of inter-app communications</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for detecting IAC flows only.</td>
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>2017</td>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-319-66332-6_7">Precisely and scalably vetting javascript bridge in android hybrid apps</a></td>
+        <td>Excluded</td>
+        <td>This tool is for detecting flows between Java and JavaScript.</td>
+      </tr>
+      <tr>
+        <td>26</td>
+        <td>2017</td>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/3052973.3055163">Detecting Inter-App Information Leakage Paths</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for detecting IAC flows only.</td>
+      </tr>
+      <tr>
+        <td>27</td>
+        <td>2017</td>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/8029452/">Sneakleak: Detecting multipartite leakage paths in android apps</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for detecting IAC flows only.</td>
+      </tr>
+      <tr>
+        <td>28</td>
+        <td>2017</td>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/8029458/">Sniffdroid: Detection of inter-app privacy leaks in android</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for detecting IAC flows only.</td>
+      </tr>
+      <tr>
+        <td>29</td>
+        <td>2017</td>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/8115699/">SEALANT: A detection and visualization tool for inter-app security vulnerabilities in androic</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for detecting IAC flows only.</td>
+      </tr>
+      <tr>
+        <td>30</td>
+        <td>2017</td>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/8024534/">Contextual approach for identifying malicious Inter-Component privacy leaks in Android apps</a></td>
+        <td>Excluded</td>
+        <td>We contacted the authors for source code but there was no response.</td>
+      </tr>
+      <tr>
+        <td>31</td>
+        <td>2017</td>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-319-78813-5_15">Linkflow: Efficient large-scale inter-app privacy leakage detection</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for detecting IAC flows only.</td>
+      </tr>
+      <tr>
+        <td>32</td>
+        <td>2017</td>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/8029461/">Improving Leakage Path Coverage in Android Apps</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for detecting IAC flows only.</td>
+      </tr>
+      <tr>
+        <td>33</td>
+        <td>2017</td>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-319-68690-5_19">An Improved Android Collusion Attack Detection Method Based on Program Slicing</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for detecting IAC flows only.</td>
+      </tr>
+      <tr>
+        <td class="blue">34</td>
+        <td class="blue">2016</td>
+        <td class="blue"><a href="https://dl.acm.org/doi/abs/10.1145/2931037.2931044">Droidra: Taming reflection to support whole-program analysis of android apps</a></td>
+        <td class="blue">Included</td>
+        <td class="blue"></td>
+      </tr>
+      <tr>
+        <td>35</td>
+        <td>2016</td>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/7582763/">HybriDroid: static analysis framework for Android hybrid applications</a></td>
+        <td>Excluded</td>
+        <td>This tool is for detecting flows between Java and JavaScript.</td>
+      </tr>
+      <tr>
+        <td>36</td>
+        <td>2016</td>
+        <td><a href="https://ieeexplore.ieee.org/abstract/document/7467346/">HornDroid: Practical and sound static analysis of Android applications by SMT solving</a></td>
+        <td>Excluded</td>
+        <td>This tool only reports sinks for each flow and it requires extra engineering efforts to match sources to sinks to form complete flows.</td>
+      </tr>
+      <tr>
+        <td>37</td>
+        <td>2016</td>
+        <td><a href="https://www.sciencedirect.com/science/article/pii/S0167404816300037">Dexteroid: Detecting malicious behaviors in android apps using reverse-engineered life cycle models</a></td>
+        <td>Excluded</td>
+        <td>We contacted the authors for source code but there was no response.</td>
+      </tr>
+      <tr>
+        <td>38</td>
+        <td>2016</td>
+        <td><a href="https://dl.acm.org/doi/abs/10.1145/2897845.2897927">R-droid: Leveraging android app analysis with static slice optimization</a></td>
+        <td>Excluded</td>
+        <td>We contacted the authors for source code but there was no response.</td>
+      </tr>
+      <tr>
+        <td>39</td>
+        <td>2016</td>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-981-10-0557-2_68">Android security analysis based on inter-application relationships</a></td>
+        <td>Excluded</td>
+        <td>This tool is designed for detecting IAC flows only.</td>
+      </tr>
+      <tr>
+        <td>40</td>
+        <td>2016</td>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-319-46598-2_3">DAPA: degradation-aware privacy analysis of android apps</a></td>
+        <td>Excluded</td>
+        <td>Confirmed by the authors, this tool is not able to handle Java and Android library methods unless the users manual analyze and replace library methods in the source code of the apps to the format the tool understands. It is impractical to manually replace all methods in the large numbers of benchmark apps and complicated real apps.</td>
+      </tr>
+      <tr>
+        <td>41</td>
+        <td>2016</td>
+        <td><a href="https://link.springer.com/chapter/10.1007/978-3-319-59608-2_35">Data Flow Analysis on Android Platform with Fragment Lifecycle Modeling</a></td>
+        <td>Excluded</td>
+        <td>We contacted the authors for source code but there was no response.</td>
+      </tr>
+    </tbody>
+    </table>
+
+<h2 id="tool-configurations">Tool Configurations</h2>
+
+<p>We described how we chose the tool configurations for each tool in detail in Section 3.2 of <a href="">our paper</a>.</p>
+
+<p>We also provided the list of sources and sinks for <a href="/artifacts/StaticTaint/benchmark#sources-and-sinks">benchmarks</a> and <a href="/artifacts/StaticTaint/ggplay#sources-and-sinks">Google Play apps</a>.</p>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function() {
+
+    var toc = $('#TOC');
+
+    // Select each header
+    sections = $('.td-content h1');
+        $.each(sections, function(idx, v) {
+            section = $(v);
+            var div_id = $(section).attr('id');
+            var div_text = section.text().split('¶')[0];
+            var parent = $("#" + div_id)
+            var content = '<li id="link_' + div_id + '" class="md-nav__item"><a class="md-nav__link" href="#' + div_id + '" title="' + div_text +'">' + div_text +'</a></li>';
+            $(toc).append(content);
+
+            // Add section code to subnavigation
+            var children = $('<nav class="md-nav"><ul class="md-nav__list"></nav></ul>')
+            var contenders = $("#" + div_id).nextUntil("h1");
+            $.each(contenders, function(idx, contender){
+               if($(contender).is('h2') || $(contender).is('h3')) {
+                   var contender_id = $(contender).attr('id');
+                   var contender_text = $(contender).text().split('¶')[0];
+                   var content = '<li class="md-nav__item"><a class="md-nav__link" href="#' + contender_id + '" title="' + contender_text +'">' + contender_text +'</a></li>';
+                   children.append(content);
+                }
+             })
+             $("#link_" + div_id).append(children);
+        });
+    });
+</script>
+
+<script>
+var headers = ["h1", "h2", "h3", "h4"]
+var colors = ["red", "orange", "green", "blue"]
+
+$.each(headers, function(i, header){
+    var color = colors[i];
+    $(header).each(function () {
+        var href=$(this).attr("id");
+        $(this).append('<a class="headerlink" style="color:' + color + '" href="#' + href + '" title="Permanent link">¶</a>')
+    });
+})
+</script>
+
+
+
+	
+              
+              <br/>
+
+
+           </div>
+          </main>
+        </div>
+      </div>
+      <footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+
+</div>
+<div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+  <small class="text-white">© 2020 Junbin Zhang All Rights Reserved</small>
+  
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="/artifacts/StaticTaint/assets/js/main.js"></script>
+
+  </body>
+</html>
