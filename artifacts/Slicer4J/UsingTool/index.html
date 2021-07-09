@@ -10,9 +10,9 @@
             }
         </style>
         <meta name="Description" content="Slicer4J is a dynamic slicer for Java programs.">
-        <link rel="shortcut icon" href="../../img/slicer4j_logo.png" type="image/x-icon">
-        <link rel="stylesheet" href="../../assets/css/just-the-docs.css">
-        <script type="text/javascript" src="../../assets/js/vendor/lunr.min.js"></script> <script type="text/javascript" src="../../assets/js/just-the-docs.js"></script>
+        <link rel="shortcut icon" href="../img/slicer4j_logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="../assets/css/just-the-docs.css">
+        <script type="text/javascript" src="../assets/js/vendor/lunr.min.js"></script> <script type="text/javascript" src="../assets/js/just-the-docs.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Home | Slicer4J</title>
         <meta name="generator" content="Jekyll v3.8.6" />
@@ -35,24 +35,26 @@
         <div class="side-bar">
          <div class="site-header"> 
             <div id="texts" style="display:inline;"> 
-                <a href="../../index.html" class="site-title lh-tight"> <span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;">Slicer4J</span> </a> <button class="menu-button fs-3 js-main-nav-trigger" data-text-toggle="Hide" type="button">Menu</button>
+                <a href="../index.html" class="site-title lh-tight"> <span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;">Slicer4J</span> </a> <button class="menu-button fs-3 js-main-nav-trigger" data-text-toggle="Hide" type="button">Menu</button>
             </div>
             <div id="image" style="display:inline;">
-                <img src="../../img/slicer4j_logo_noname.png" alt = "logo" width="50" height="50" />
+                <img src="../img/slicer4j_logo_noname.png" alt = "logo" width="50" height="50" />
             </div>
         </div>
             <div class="navigation main-nav js-main-nav">
                 <nav role="navigation" aria-label="Main navigation">
                     <ul class="navigation-list">
-                        <li class="navigation-list-item"><a href="../../index.html" class="navigation-list-link">Home</a>
-                        <li class="navigation-list-item active"><a href="../../docs/tool/index.html" class="navigation-list-link active">Tool</a>
-                            <li class="navigation-list-item"><a href="../../Demo/index.html" class="navigation-list-link">Demo</a>
+                        <li class="navigation-list-item"><a href="../index.html" class="navigation-list-link">Home</a>
+                        <li class="navigation-list-item"><a href="../ToolSetup/index.html" class="navigation-list-link">Tool Setup</a>
+                        <li class="navigation-list-item active"><a href="../UsingTool/index.html" class="navigation-list-link active">Using the Tool</a>
+                        <li class="navigation-list-item"><a href="../Benchmarks/index.html" class="navigation-list-link">Evaluation Benchmarks</a>
+                        <li class="navigation-list-item"><a href="../Demo/index.html" class="navigation-list-link">Demo</a>
                     </ul>
                     </ul>
                 </nav>
             </div>
             <footer class="site-footer">
-                <p class="text-small text-grey-dk-000 mb-0">Online Appendix</p>
+              <p style="font-size:14px"> <b>If you use this tool, please cite:</b> <br> Khaled Ahmed, Mieszko Lis, and Julia Rubin. <a>Slicer4J: A Dynamic Slicer for Java.</a> The ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE), 2021</p>
             </footer>
         </div>
         <div class="main-content-wrap js-main-content" tabindex="0">
@@ -64,67 +66,30 @@
 
 
 <p style="font-size:18px">
-  <b>Requirements</b> <br>
-  &bull;Runs on Windows, Linux, and Mac OS<br>
-  &bull;Install python3 <br>
-  &emsp;&bull; Linux: <a href="https://docs.python-guide.org/starting/install3/linux/">https://docs.python-guide.org/starting/install3/linux/</a> <br>
-  &emsp;&bull; Mac: <a href="https://docs.python-guide.org/starting/install3/osx/">https://docs.python-guide.org/starting/install3/osx/</a> <br>
-  &emsp;&bull; Windows: <a href="https://docs.python.org/3/using/windows.html">https://docs.python.org/3/using/windows.html</a> <br>
-
-  &bull;Clone the <a href="https://github.com/resess/DynamicSlicingCore">dynamic slicing core</a> <br>
 
 
-  &bull;Requires Java Runtime Environment version 9 or above. <br>
-
-<hr>
-
-<b>Building The Tool</b> <br>
-
-Build and install the dynamic slicing core, go to the core's repo: <a href="https://github.com/resess/DynamicSlicingCore">https://github.com/resess/DynamicSlicingCore</a> <br>
-
-<code>
-cd core/ <br>
-mvn -Dmaven.test.skip=true clean install <br>
-cd - <br>
-</code>
-
-
-<br>
-Build Slicer4J, go back to Slicer4J's repo <br>
-
-<code>
-cd Slicer4J/ <br>
-mvn -Dmaven.test.skip=true clean install <br>
-cd - <br>
-</code>
-
-
-
-<hr>
-
-<b> Using The Tool </b> <br>
+<b> Using the Tool </b> <br><br>
 
 Display the command line options using: <br>
 
 <code>java -cp "Mandoline/target/mandoline-jar-with-dependencies.jar:Mandoline/target/lib/*" ca.ubc.ece.resess.slicer.dynamic.slicer4j.Slicer -h</code> <br>
 
-A simpler method to use Slicer4J is by using the wrapper python script: scripts/slicer4j.py <br>
+<hr>
 
-You can list the script options using: python3 slicer4j.py -h <br>
+<b> Wrapper script </b> <br><br>
+A simpler method to use Slicer4J is by using the wrapper python script: <code>scripts/slicer4j.py</code> <br>
+
+<br>
+You can list the script options using: <code>python3 slicer4j.py -h</code> <br>
+<br>
 
 
 Slicer4J uses up to 8GB of RAM. The tool will crash with <code>OutOfMemoryError</code> exception if the trace size is greater than 8GB. <br>
-In that case, you can <a href="https://docs.oracle.com/cd/E21764_01/web.1111/e13814/jvm_tuning.htm#PERFM161" change maximum heap size ></a> allocated to Slicer4J by changing the -Xmx8g to a higher value (e.g. -Xmx16g). <br>
+In that case, you can <a href="https://docs.oracle.com/cd/E21764_01/web.1111/e13814/jvm_tuning.htm#PERFM161">change maximum heap size</a>  allocated to Slicer4J by changing the -Xmx8g to a higher value (e.g. -Xmx16g). <br>
 
 <hr>
 
-
-</p>
-
-<hr>
-
-
-<p style="font-size:30px"><b>Slicer4J Mandatory Options: </b></p>
+<b>Mandatory Options: </b>
 
 
 <table class="tg">
@@ -157,7 +122,7 @@ In that case, you can <a href="https://docs.oracle.com/cd/E21764_01/web.1111/e13
 <br>
 <br>
 
-<p style="font-size:30px"><b>Slicer4J Optional Options: </b></p>
+<b>Optional Options: </b>
 
 
 
@@ -200,11 +165,10 @@ In that case, you can <a href="https://docs.oracle.com/cd/E21764_01/web.1111/e13
 </tbody>
 </table>
 
-<br>
-<br>
+<hr>
 
  
-<p style="font-size:30px"><b>User-defined method models: </b></p>
+<b>User-defined method models: </b> <br><br>
 
 
 The following is an example for defining your own method models. 
@@ -214,7 +178,7 @@ For the methods in this class:
 <br>
 
 <div id="image">
-    <img src="../../img/code.png" alt = "code" width="300" height="300" />
+    <img src="../img/code.png" alt = "code" width="300" height="300" />
 </div>
 <br>
 
@@ -226,7 +190,7 @@ For example, here's the model for the above class
 <br>
 
 <div id="image">
-    <img src="../../img/xml.png" alt = "code" width="700" height="700" />
+    <img src="../img/xml.png" alt = "code" width="700" height="700" />
 </div>
 <br>
 
@@ -243,6 +207,5 @@ For fields, we specify the signature of the field in <code>AccessPath</code> and
 
 
 
-
-            </p>
+</p>
 

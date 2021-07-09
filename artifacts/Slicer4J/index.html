@@ -45,14 +45,16 @@
                 <nav role="navigation" aria-label="Main navigation">
                     <ul class="navigation-list">
                         <li class="navigation-list-item active"><a href="./index.html" class="navigation-list-link active">Home</a>
-                        <li class="navigation-list-item"><a href="./docs/tool/index.html" class="navigation-list-link">Tool</a>
+                        <li class="navigation-list-item"><a href="./ToolSetup/index.html" class="navigation-list-link">Tool Setup</a>
+                        <li class="navigation-list-item"><a href="./UsingTool/index.html" class="navigation-list-link">Using the Tool</a>
+                        <li class="navigation-list-item"><a href="./Benchmarks/index.html" class="navigation-list-link">Evaluation Benchmarks</a>
                         <li class="navigation-list-item"><a href="./Demo/index.html" class="navigation-list-link">Demo</a>
                     </ul>
                     </ul>
                 </nav>
             </div>
             <footer class="site-footer">
-                <p class="text-small text-grey-dk-000 mb-0">Online Appendix</p>
+                <p style="font-size:14px"> <b>If you use this tool, please cite:</b> <br> Khaled Ahmed, Mieszko Lis, and Julia Rubin. <a>Slicer4J: A Dynamic Slicer for Java.</a> The ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE), 2021</p>
             </footer>
         </div>
         <div class="main-content-wrap js-main-content" tabindex="0">
@@ -76,7 +78,8 @@ To address these limitations, we contribute a new dynamic slicing tool for Java,
 it then constructs a thread-aware, inter-procedural dynamic control-flow graph and uses the graph to compute the slice.
 To support slicing through Java framework methods and native code, <span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;">Slicer4J</span> relies on a set of pre-constructed data-flow
 summaries of the main framework methods.
-It also allows the users to further customize this set, adding user-defined methods when needed.
+It also allows the users to further customize this set, adding user-defined methods when needed. <br>
+
 <!-- We demonstrate the applicability of <span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;">Slicer4J</span> on ten benchmark and open-source Java programs, comparing it with JavaSlicer, -->
 <!-- and discuss how to use and extend the tool. -->
         </p>
