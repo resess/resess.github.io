@@ -1,0 +1,63 @@
+digraph "Graph" {
+	1 [label="EC:System:BootEvents:BootComplete"]
+	2 [label="EC:System:DeveloperEvents"]
+	3 [label="DR:Device:SoftwareSpecs:AndroidVersion"]
+	4 [label="CC:Device:SoftwareSpecs:AndroidVersion"]
+	5 [label="DR:Time"]
+	6 [label="CC:Environment:Time"]
+	7 [label="DR:InformationStealing:Device"]
+	8 [label="P:InformationStealing:Device"]
+	9 [label="DR:Internet"]
+	10 [label="CC:ExternalServer:Internet"]
+	17 [label="EC:User:InstallApp"]
+	11 [label="&#916;P:PrivilegeAbuse:DeviceAdmin"]
+	12 [label="&#916;P:AdAbuse:AggressiveAds"]
+	13 [label="&#916;EC:User:SensitiveInput"]
+	14 [label="&#916;EC:User:ButtonClick"]
+	15 [label="&#916;DR:InformationStealing:User-Specific:Account:Social"]
+	16 [label="&#916;P:InformationStealing:User-Specific:Account:Social"]
+	3 -> 4 [label="" style=solid]
+	5 -> 6 [label="" style=solid]
+	7 -> 8 [label="" style=solid]
+	9 -> 10 [label="" style=solid]
+	15 -> 16 [label="" style=solid]
+	1 -> 3 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	3 -> 4 [label="" style=dotted]
+	4 -> 5 [label="  True" style=dotted]
+	5 -> 6 [label="" style=dotted]
+	6 -> 7 [label="  True" style=dotted]
+	7 -> 8 [label="" style=dotted]
+	8 -> 9 [label="" style=dotted]
+	9 -> 10 [label="" style=dotted]
+	10 -> 17 [label="  True" style=dotted]
+	17 -> 11 [label="  True" style=dotted]
+	17 -> 12 [label="" style=dotted]
+	17 -> 13 [label="" style=dotted]
+	13 -> 14 [label="" style=dotted]
+	14 -> 15 [label="" style=dotted]
+	15 -> 16 [label="" style=dotted]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+		9
+		10
+		17
+	}
+	subgraph cluster_2 {
+		label="Downloaded(Remote), Bytecode"
+		11
+		12
+		13
+		14
+		15
+		16
+	}
+}

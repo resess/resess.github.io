@@ -1,0 +1,55 @@
+digraph "Graph" {
+	1 [label="EC:User:ApplicationLaunch"]
+	2 [label="EC:User:SensitiveInput"]
+	3 [label="EC:User:ButtonClick"]
+	4 [label="EC:System:DeveloperEvents"]
+	5 [label="DR:Internet"]
+	6 [label="CC:ExternalServer:Internet"]
+	7 [label="DR:InformationStealing:Device"]
+	8 [label="DR:InformationStealing:User-Specific:SMS"]
+	9 [label="DR:InformationStealing:User-Specific:Contacts"]
+	10 [label="DR:InformationStealing:User-Specific:Account:Social"]
+	11 [label="DR:InformationStealing:User-Specific:StoredFiles"]
+	12 [label="DR:InformationStealing:Device"]
+	13 [label="P:InformationStealing"]
+	14 [label="CC:ExternalServer:Internet"]
+	1 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	3 -> 4 [label="" style=dotted]
+	4 -> 5 [label="" style=dotted]
+	5 -> 6 [label="" style=dotted]
+	6 -> 7 [label="  True" style=dotted]
+	6 -> 14 [label="  False" style=dotted]
+	14 -> 11 [label="  True" style=dotted]
+	11 -> 12 [label="" style=dotted]
+	12 -> 13 [label="" style=dotted]
+	7 -> 8 [label="" style=dotted]
+	8 -> 9 [label="" style=dotted]
+	9 -> 10 [label="" style=dotted]
+	10 -> 11 [label="" style=dotted]
+	5 -> 6 [label="" style=solid]
+	5 -> 14 [label="" style=solid]
+	7 -> 13 [label="" style=solid]
+	8 -> 13 [label="" style=solid]
+	9 -> 13 [label="" style=solid]
+	10 -> 13 [label="" style=solid]
+	11 -> 13 [label="" style=solid]
+	12 -> 13 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+		9
+		10
+		11
+		12
+		13
+		14
+	}
+}

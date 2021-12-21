@@ -1,0 +1,16 @@
+digraph "Graph" {
+	1 [label="EC:User:ApplicationLaunch"]
+	2 [label="EC:User:ClipboardText"]
+	3 [label="CC:Application:DataFormat:WalletAddress"]
+	4 [label="P:ClipboardHijacking"]
+	1 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	3 -> 4 [label="  True" style=dotted]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+	}
+}

@@ -1,0 +1,36 @@
+digraph "Graph" {
+	1 [label="EC:User:ApplicationLaunch"]
+	2 [label="H:IconManipulation:HideIcon"]
+	3 [label="CC:Device:Network"]
+	4 [label="DR:Internet"]
+	5 [label="CC:Environment:Location"]
+	9 [label="CC:ExternalServer:Internet"]
+	6 [label="EC:System:Developer"]
+	7 [label="DR:Internet"]
+	8 [label="&#916;P:AdAbuse"]
+	1 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	3 -> 4 [label="" style=dotted]
+	4 -> 5 [label="" style=dotted]
+	5 -> 9 [label="  True" style=dotted]
+	9 -> 6 [label="  True" style=dotted]
+	6 -> 7 [label="" style=dotted]
+	7 -> 8 [label="" style=dotted]
+	4 -> 5 [label="" style=solid]
+	4 -> 9 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		9
+	}
+	subgraph cluster_2 {
+		label="Downloaded(Remote), Bytecode"
+		8
+	}
+}

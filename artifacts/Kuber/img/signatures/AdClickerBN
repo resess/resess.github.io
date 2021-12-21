@@ -1,0 +1,27 @@
+digraph "Graph" {
+	1 [label="EC:System:NetworkStatus:ConnectivityChange"]
+	6 [label="EC:Scheduling"]
+	2 [label="CC:Device:Network"]
+	3 [label="DR:Internet"]
+	4 [label="CC:ExternalServer:Internet"]
+	5 [label="P:AdAbuse:AdClickFraud"]
+	1 -> 6 [label="" style=dotted]
+	6 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	3 -> 4 [label="" style=dotted]
+	4 -> 5 [label="  True" style=dotted]
+	3 -> 4 [label="" style=solid]
+	3 -> 5 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		6
+	}
+	subgraph cluster_2 {
+		label="Downloaded(Remote), Web"
+		5
+	}
+}

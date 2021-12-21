@@ -1,0 +1,42 @@
+digraph "Graph" {
+	1 [label="EC:User:ApplicationLaunch"]
+	2 [label="DR:Device:SoftwareSpec:AndroidVersion"]
+	3 [label="CC:Device:SoftwareSpec:AndroidVersion"]
+	4 [label="DR:Application:Permission"]
+	5 [label="CC:Application:Permission"]
+	6 [label="EC:System:DeveloperEvents"]
+	7 [label="DR:Device:SoftwareSpec:InstalledApp:User-Specific"]
+	8 [label="CC:Device:SoftwareSpec:InstalledApp:User-Specific"]
+	9 [label="EC:User:InstallApp"]
+	10 [label="P:AdAbuse:AggressiveAds"]
+	1 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	3 -> 6 [label="  True" style=dotted]
+	3 -> 4 [label="  False" style=dotted]
+	4 -> 5 [label="" style=dotted]
+	5 -> 6 [label="  True" style=dotted]
+	6 -> 7 [label="" style=dotted]
+	7 -> 8 [label="" style=dotted]
+	8 -> 9 [label="  False" style=dotted]
+	8 -> 10 [label="  True" style=dotted]
+	9 -> 10 [label="" style=dotted]
+	2 -> 3 [label="" style=solid]
+	4 -> 5 [label="" style=solid]
+	7 -> 8 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+	}
+	subgraph cluster_2 {
+		label="Hidden(Local), Bytecode"
+		9
+		10
+	}
+}

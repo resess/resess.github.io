@@ -1,0 +1,41 @@
+digraph "Graph" {
+	1 [label="EC:User:ApplicationLaunch"]
+	11 [label="EC:Scheduling"]
+	2 [label="DR:StealInformation:Device"]
+	3 [label="P:StealInformation:Device"]
+	4 [label="CC:Device:Network"]
+	5 [label="DR:Internet"]
+	6 [label="EC:System:DeveloperEvents"]
+	7 [label="CC:ExternalServer:Internet"]
+	8 [label="DR:Time"]
+	9 [label="CC:Environment:Time"]
+	10 [label="P:PremiumCharges:SMS"]
+	1 -> 11 [label="" style=dotted]
+	11 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	3 -> 4 [label="" style=dotted]
+	4 -> 5 [label="" style=dotted]
+	5 -> 6 [label="" style=dotted]
+	6 -> 7 [label="" style=dotted]
+	7 -> 8 [label="" style=dotted]
+	8 -> 9 [label="" style=dotted]
+	9 -> 10 [label="" style=dotted]
+	2 -> 3 [label="" style=solid]
+	5 -> 7 [label="" style=solid]
+	8 -> 9 [label="" style=solid]
+	5 -> 10 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+		9
+		10
+		11
+	}
+}

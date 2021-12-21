@@ -1,0 +1,29 @@
+digraph "Graph" {
+	1 [label="EC:User:Launch"]
+	2 [label="EC:User:ButtonClick"]
+	3 [label="&#916;EC:User:SensitiveInput"]
+	4 [label="&#916;EC:User:ButtonClick"]
+	5 [label="&#916;DR:Account:Banking"]
+	6 [label="&#916;P:InformationStealing:Account:Banking"]
+	1 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	3 -> 4 [label="" style=dotted]
+	4 -> 5 [label="" style=dotted]
+	5 -> 6 [label="" style=dotted]
+	5 -> 6 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+	}
+	subgraph cluster_2 {
+		label="Hidden(Local), Web"
+		2
+	}
+	subgraph cluster_3 {
+		label="Downloaded(Remote), Bytecode"
+		3
+		4
+		5
+		6
+	}
+}

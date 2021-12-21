@@ -1,0 +1,139 @@
+digraph "Graph" {
+	1 [label="EC:User:ApplicationLaunch"]
+	2 [label="EC:Scheduling"]
+	3 [label="DR:Application:Permission"]
+	4 [label="CC:Application:Permission"]
+	5 [label="DR:Device:SoftwareSpecs:AndroidVersion"]
+	6 [label="CC:Device:SoftwareSpecs:AndroidVersion"]
+	7 [label="DR:Device:SoftwareSpecs:Sandbox"]
+	8 [label="CC:Device:SoftwareSpecs:Sandbox"]
+	3 -> 4 [label="" style=solid]
+	5 -> 6 [label="" style=solid]
+	7 -> 8 [label="" style=solid]
+	9 -> 11 [label="" style=solid]
+	10 -> 11 [label="" style=solid]
+	1 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	3 -> 4 [label="" style=dotted]
+	4 -> 5 [label="  False" style=dotted]
+	4 -> 7 [label="  True" style=dotted]
+	5 -> 6 [label="" style=dotted]
+	6 -> 7 [label="  True" style=dotted]
+	7 -> 8 [label="" style=dotted]
+	8 -> 9 [label="  True" style=dotted]
+	9 -> 10 [label="" style=dotted]
+	10 -> 11 [label="" style=dotted]
+	11 -> 12 [label="" style=solid]
+	9 [label="DR:InformationStealing:Device"]
+	10 [label="DR:InformationStealing:User-Specific:PhoneNumber"]
+	11 [label="P:InformationStealing"]
+	12 [label="DR:Internet"]
+	13 [label="CC:ExternalServer:Internet"]
+	14 [label="EC:User:InstallApp"]
+	15 [label="P:Unknown"]
+	16 [label="CC:ExternalServer:Internet"]
+	17 [label="DR:InformationStealing:User-Specific:SMS"]
+	18 [label="P:InformationStealing:User-Specific:SMS"]
+	12 -> 13 [label="" style=dotted]
+	12 -> 13 [label="" style=solid]
+	13 -> 14 [label="  True" style=dotted]
+	14 -> 15 [label="" style=dotted]
+	12 -> 16 [label="" style=dotted]
+	16 -> 17 [label="  True" style=dotted]
+	17 -> 18 [label="" style=dotted]
+	17 -> 18 [label="" style=solid]
+	19 [label="CC:ExternalServer:Internet"]
+	20 [label="DR:InformationStealing:User-Specific:CallHistory"]
+	21 [label="P:InformationStealing:User-Specific:CallHistory"]
+	12 -> 19 [label="" style=dotted]
+	12 -> 19 [label="" style=solid]
+	19 -> 20 [label="  True" style=dotted]
+	20 -> 21 [label="" style=dotted]
+	20 -> 21 [label="" style=solid]
+	22 [label="CC:ExternalServer:Internet"]
+	23 [label="DR:InformationStealing:User-Specific:InstalledApps"]
+	24 [label="P:InformationStealing:User-Specific:InstalledApps"]
+	12 -> 22 [label="" style=dotted]
+	12 -> 22 [label="" style=solid]
+	22 -> 23 [label="  True" style=dotted]
+	23 -> 24 [label="" style=dotted]
+	23 -> 24 [label="" style=solid]
+	25 [label="CC:ExternalServer:Internet"]
+	26 [label="DR:InformationStealing:User-Specific:Location"]
+	27 [label="P:InformationStealing:User-Specific:Location"]
+	12 -> 25 [label="" style=dotted]
+	12 -> 25 [label="" style=solid]
+	25 -> 26 [label="  True" style=dotted]
+	26 -> 27 [label="" style=dotted]
+	26 -> 27 [label="" style=solid]
+	28 [label="CC:ExternalServer:Internet"]
+	29 [label="DR:InformationStealing:User-Specific:Contacts"]
+	30 [label="P:InformationStealing:User-Specific:Contacts"]
+	12 -> 28 [label="" style=dotted]
+	12 -> 28 [label="" style=solid]
+	28 -> 29 [label="  True" style=dotted]
+	29 -> 30 [label="" style=dotted]
+	29 -> 30 [label="" style=solid]
+	31 [label="CC:ExternalServer:Internet"]
+	32 [label="P:PremiumCharges:SMS"]
+	12 -> 31 [label="" style=dotted]
+	12 -> 31 [label="" style=solid]
+	31 -> 32 [label="  True" style=dotted]
+	12 -> 32 [label="" style=solid]
+	33 [label="CC:ExternalServer:Internet"]
+	34 [label="P:PremiumCharges:Call"]
+	12 -> 33 [label="" style=dotted]
+	12 -> 33 [label="" style=solid]
+	33 -> 34 [label="  True" style=dotted]
+	12 -> 34 [label="" style=solid]
+	35 [label="CC:ExternalServer:Internet"]
+	36 [label="H:ScreenLocking"]
+	12 -> 35 [label="" style=dotted]
+	12 -> 35 [label="" style=solid]
+	35 -> 36 [label="  True" style=dotted]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+	}
+	subgraph cluster_2 {
+		label="Downloaded(Remote), Bytecode"
+		15
+	}
+	subgraph cluster_3 {
+		label="Hidden(Local), Bytecode"
+		9
+		10
+		11
+		12
+		13
+		14
+		16
+		17
+		18
+		19
+		20
+		21
+		22
+		23
+		24
+		25
+		26
+		27
+		28
+		29
+		30
+		31
+		32
+		33
+		34
+		35
+		36
+	}
+}

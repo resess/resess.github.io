@@ -1,0 +1,34 @@
+digraph "Graph" {
+	1 [label="EC:User:ApplicationLaunch"]
+	2 [label="CC:Device:Network"]
+	3 [label="DR:Time"]
+	4 [label="CC:Environment:Time"]
+	5 [label="DR:Internet"]
+	6 [label="CC:ExternalServer:Internet"]
+	7 [label="DR:InformationStealing:User-Specific:SMS"]
+	8 [label="P:InformationStealing:User-Specific:SMS"]
+	1 -> 2 [label="" style=dotted]
+	2 -> 3 [label="  True" style=dotted]
+	3 -> 4 [label="" style=dotted]
+	4 -> 5 [label="  True" style=dotted]
+	5 -> 6 [label="" style=dotted]
+	6 -> 7 [label="  True" style=dotted]
+	7 -> 8 [label="" style=dotted]
+	3 -> 4 [label="" style=solid]
+	5 -> 6 [label="" style=solid]
+	7 -> 8 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+		6
+	}
+	subgraph cluster_2 {
+		label="Downloaded(Remote), Bytecode"
+		7
+		8
+	}
+}

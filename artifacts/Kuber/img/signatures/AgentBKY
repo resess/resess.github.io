@@ -1,0 +1,86 @@
+digraph "Graph" {
+	1 [label="EC:System:DeveloperEvents"]
+	2 [label="EC:System:SMSEvents:SMSReceived"]
+	3 [label="DR:Device:SoftwareSpecs:InstalledApps:User-Specific"]
+	4 [label="CC:Device:SoftwareSpecs:InstalledApps:User-Specific"]
+	5 [label="DR:Internet"]
+	6 [label="CC:ExternalServer:Internet"]
+	7 [label="EC:User:ButtonClick"]
+	8 [label="EC:User:ButtonClick"]
+	9 [label="EC:User:SensitiveInput"]
+	10 [label="EC:User:ButtonClick"]
+	11 [label="DR:InformationStealing:User-Specific:Account:Banking"]
+	12 [label="P:InformationStealing:User-Specific:Account:Banking"]
+	13 [label="DR:Device:SoftwareSpec:AndroidVersion"]
+	14 [label="CC:Device:SoftwareSpec:AndroidVersion"]
+	15 [label="DR:InformationStealing:User-Specific:PhoneNumber"]
+	16 [label="P:InformationStealing:User-Specific:PhoneNumber"]
+	17 [label="DR:InformationStealing:Device"]
+	18 [label="P:InformationStealing:Device"]
+	19 [label="DR:InformationStealing:User-Specific:SMS"]
+	20 [label="P:InformationStealing:User-Specific:SMS"]
+	21 [label="EC:User:SensitiveInput"]
+	22 [label="EC:User:ButtonClick"]
+	23 [label="DR:InformationStealing:User-Specific:Account:Banking"]
+	24 [label="P:InformationStealing:User-Specific:Account:Banking"]
+	2 -> 19 [label="" style=dotted]
+	19 -> 20 [label="" style=dotted]
+	19 -> 20 [label="" style=solid]
+	5 -> 6 [label="" style=solid]
+	1 -> 3 [label="" style=dotted]
+	3 -> 4 [label="" style=dotted]
+	4 -> 8 [label="  True" style=dotted]
+	8 -> 9 [label="" style=dotted]
+	9 -> 10 [label="" style=dotted]
+	10 -> 11 [label="" style=dotted]
+	11 -> 12 [label="" style=dotted]
+	11 -> 12 [label="" style=solid]
+	12 -> 13 [label="" style=dotted]
+	13 -> 14 [label="" style=dotted]
+	13 -> 14 [label="" style=solid]
+	14 -> 15 [label="  True" style=dotted]
+	15 -> 16 [label="" style=dotted]
+	15 -> 16 [label="" style=solid]
+	16 -> 17 [label="" style=dotted]
+	14 -> 17 [label="  False" style=dotted]
+	17 -> 18 [label="" style=dotted]
+	17 -> 18 [label="" style=solid]
+	1 -> 5 [label="" style=dotted]
+	5 -> 6 [label="" style=dotted]
+	6 -> 7 [label="" style=dotted]
+	7 -> 21 [label="" style=dotted]
+	21 -> 22 [label="" style=dotted]
+	22 -> 23 [label="" style=dotted]
+	23 -> 24 [label="" style=dotted]
+	23 -> 24 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+		6
+		13
+		14
+		15
+		16
+		17
+		18
+		19
+		20
+	}
+	subgraph cluster_2 {
+		label="Downloaded(Remote), Web"
+		7
+		8
+		9
+		10
+		11
+		12
+		21
+		22
+		23
+		24
+	}
+}

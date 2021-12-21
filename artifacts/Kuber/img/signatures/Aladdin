@@ -1,0 +1,52 @@
+digraph "Graph" {
+	1 [label="EC:User:ApplicationLaunch"]
+	2 [label="P:PrivilegeAbuse:DeviceAdmin"]
+	14 [label="H:IconManipulation:HideIcon"]
+	3 [label="EC:User:InstallApp"]
+	4 [label="&#916;P:AdAbuse:AggressiveAdvertisement"]
+	5 [label="EC:System:BootEvents:BootComplete"]
+	6 [label="DR:Device:SoftwareSpec:InstalledApps:User-Specific"]
+	7 [label="CC:Device:SoftwareSpec:InstalledApps:User-Specific"]
+	8 [label="DR:Device:SoftwareSpec:AndroidVersion"]
+	9 [label="CC:Device:SoftwareSpec:AndroidVersion"]
+	10 [label="DR:Device:HardwareSpec:CPU"]
+	11 [label="CC:Device:HardwareSpec:CPU"]
+	12 [label="DR:AdConfig"]
+	13 [label="P:AdAbuse:BoostWebTraffic"]
+	1 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	2 -> 14 [label="" style=dotted]
+	3 -> 4 [label="" style=dotted]
+	5 -> 6 [label="" style=dotted]
+	6 -> 7 [label="" style=dotted]
+	7 -> 8 [label="" style=dotted]
+	8 -> 9 [label="" style=dotted]
+	9 -> 10 [label="" style=dotted]
+	10 -> 11 [label="" style=dotted]
+	11 -> 12 [label="" style=dotted]
+	12 -> 13 [label="" style=dotted]
+	6 -> 7 [label="" style=solid]
+	8 -> 9 [label="" style=solid]
+	10 -> 11 [label="" style=solid]
+	12 -> 13 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		5
+		6
+		7
+		8
+		9
+		10
+		11
+		12
+		13
+		14
+	}
+	subgraph cluster_2 {
+		label="Downloaded(Remote), Bytecode"
+		4
+	}
+}

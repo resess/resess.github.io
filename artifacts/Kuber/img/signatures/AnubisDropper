@@ -1,0 +1,80 @@
+digraph "Graph" {
+	1 [label="EC:System:BootEvents:BootComplete"]
+	2 [label="EC:System:BootEvents:QuickbootPoweron"]
+	3 [label="EC:System:DeviceStatus:UserPresent"]
+	4 [label="EC:System:DeviceStatus:ScreenOn"]
+	5 [label="EC:System:DeviceStatus:DreamingStopped"]
+	6 [label="EC:System:PackageEvents:PackageAdded"]
+	7 [label="EC:System:PackageEvents:PackageRemoved"]
+	8 [label="EC:System:PackageEvents:ExternalApplicationsAvailable"]
+	9 [label="EC:System:NetworkEvents:ConnectivityChange"]
+	10 [label="EC:System:NetworkEvents:WifiStateChange"]
+	11 [label="DR:Device:SoftwareSpecs:Sandbox"]
+	12 [label="CC:Device:SoftwareSpecs:Sandbox"]
+	13 [label="EC:Scheduling"]
+	14 [label="DR:Device:SoftwareSpecs:AndroidVersion"]
+	15 [label="CC:Device:SoftwareSpecs:AndroidVersion"]
+	16 [label="DR:Device:Sensor:Motion"]
+	17 [label="CC:Device:Sensor:Motion"]
+	18 [label="DR:Internet"]
+	19 [label="CC:ExternalServer:Internet"]
+	20 [label="EC:User:InstallApp"]
+	21 [label="&#916;EC:User:SensitiveInput"]
+	22 [label="&#916;DR:InformationStealing:User-Specific:Account"]
+	23 [label="&#916;P:InformationStealing:User-Specific:Account"]
+	11 -> 12 [label="" style=solid]
+	14 -> 15 [label="" style=solid]
+	16 -> 17 [label="" style=solid]
+	18 -> 19 [label="" style=solid]
+	1 -> 11 [label="" style=dotted]
+	2 -> 11 [label="" style=dotted]
+	3 -> 11 [label="" style=dotted]
+	4 -> 11 [label="" style=dotted]
+	5 -> 11 [label="" style=dotted]
+	6 -> 11 [label="" style=dotted]
+	7 -> 11 [label="" style=dotted]
+	8 -> 11 [label="" style=dotted]
+	9 -> 11 [label="" style=dotted]
+	10 -> 11 [label="" style=dotted]
+	11 -> 12 [label="" style=dotted]
+	12 -> 13 [label="  True" style=dotted]
+	13 -> 14 [label="" style=dotted]
+	14 -> 15 [label="" style=dotted]
+	15 -> 16 [label="  True" style=dotted]
+	16 -> 17 [label="" style=dotted]
+	17 -> 18 [label="  True" style=dotted]
+	18 -> 19 [label="" style=dotted]
+	19 -> 20 [label="  True" style=dotted]
+	20 -> 21 [label="" style=dotted]
+	21 -> 22 [label="" style=dotted]
+	22 -> 23 [label="" style=dotted]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+		9
+		10
+		11
+		12
+		13
+		14
+		15
+		16
+		17
+		18
+		19
+		20
+	}
+	subgraph cluster_2 {
+		label="Downloaded(Remote), Bytecode"
+		21
+		22
+		23
+	}
+}

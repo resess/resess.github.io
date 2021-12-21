@@ -1,0 +1,55 @@
+digraph "Graph" {
+	1 [label="EC:User:ApplicationLaunch"]
+	2 [label="DR:Internet"]
+	3 [label="CC:ExternalServer:Internet"]
+	4 [label="DR:Device:HardwareSpecs:NetworkOperator"]
+	5 [label="CC:Device:HardwareSpecs:NetworkOperator"]
+	6 [label="EC:User:SensitiveInput"]
+	7 [label="EC:User:ButtonClick"]
+	8 [label="DR:InformationStealing:User-Specific:PhoneNumber"]
+	14 [label="CC:Application:DataFormat:PhoneNumber"]
+	9 [label="P:InformationStealing:User-Specific:PhoneNumber"]
+	10 [label="P:InformationStealing:User-Specific:SMS"]
+	11 [label="&#916;P:PremiumCharges:SMS"]
+	12 [label="EC:System:SMSEvents:SMSReceived"]
+	13 [label="DR:InformationStealing:User-Specific:SMS"]
+	15 [label="H:IconManipulation:HideIcon"]
+	1 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	3 -> 4 [label="  True" style=dotted]
+	4 -> 5 [label="" style=dotted]
+	5 -> 6 [label="  True" style=dotted]
+	6 -> 7 [label="" style=dotted]
+	7 -> 8 [label="" style=dotted]
+	8 -> 14 [label="  True" style=dotted]
+	14 -> 9 [label="  True" style=dotted]
+	9 -> 11 [label="" style=dotted]
+	9 -> 15 [label="" style=dotted]
+	12 -> 13 [label="" style=dotted]
+	2 -> 3 [label="" style=solid]
+	4 -> 5 [label="" style=solid]
+	8 -> 9 [label="" style=solid]
+	8 -> 14 [label="" style=solid]
+	13 -> 10 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+		9
+		10
+		12
+		13
+		14
+		15
+	}
+	subgraph cluster_2 {
+		label="Downloaded(Remote), Web"
+		11
+	}
+}

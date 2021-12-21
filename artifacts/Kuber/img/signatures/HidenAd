@@ -1,0 +1,39 @@
+digraph "Graph" {
+	1 [label="EC:User:ApplicationLaunch"]
+	2 [label="EC:User:ButtonClick"]
+	3 [label="H:IconManipulation:HideIcon"]
+	4 [label="EC:System:BootEvents:BootComplete"]
+	5 [label="EC:Scheduling"]
+	6 [label="DR:Internet"]
+	7 [label="CC:ExternalServer:Internet"]
+	8 [label="EC:System:DeviceStatus:ScreenOn"]
+	9 [label="DR:Time"]
+	10 [label="CC:Environment:Time"]
+	11 [label="P:AdAbuse:AggressiveAds"]
+	1 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	4 -> 5 [label="" style=dotted]
+	5 -> 6 [label="" style=dotted]
+	6 -> 7 [label="" style=dotted]
+	7 -> 8 [label="  True" style=dotted]
+	8 -> 9 [label="" style=dotted]
+	9 -> 10 [label="" style=dotted]
+	10 -> 11 [label="  True" style=dotted]
+	6 -> 7 [label="" style=solid]
+	9 -> 10 [label="" style=solid]
+	6 -> 11 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+		9
+		10
+		11
+	}
+}

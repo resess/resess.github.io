@@ -1,0 +1,68 @@
+digraph "Graph" {
+	1 [label="EC:System:CallEvents:NewOutgoingCall"]
+	2 [label="EC:System:CallEvents:PhoneStateChange"]
+	3 [label="EC:System:SMSEvents:SMSReceived"]
+	4 [label="EC:System:SMSEvents:SMSSent"]
+	5 [label="EC:System:SMSEvents:WAPPushReceived"]
+	6 [label="EC:System:NetworkEvents:ConnectivityChange"]
+	7 [label="EC:System:NetworkEvents:WifiStateChange"]
+	8 [label="CC:Environment:Network"]
+	9 [label="DR:Internet"]
+	10 [label="CC:ExternalServer:Internet"]
+	13 [label="P:InformationStealing:User-Specific:CallAudio"]
+	11 [label="CC:ExternalServer:Internet"]
+	12 [label="DR:InformationStealing:User-Specific:CallAudio"]
+	14 [label="CC:ExternalServer:Internet"]
+	15 [label="DR:InformationStealing:User-Specific:Contacts"]
+	16 [label="P:InformationStealing:User-Specific:Contacts"]
+	17 [label="CC:ExternalServer:Internet"]
+	18 [label="DR:InformationStealing:User-Specific:SMS"]
+	19 [label="P:InformationStealing:User-Specific:SMS"]
+	1 -> 8 [label="" style=dotted]
+	2 -> 8 [label="" style=dotted]
+	8 -> 9 [label="  True" style=dotted]
+	1 -> 11 [label="" style=dotted]
+	2 -> 11 [label="" style=dotted]
+	11 -> 12 [label="  True" style=dotted]
+	12 -> 13 [label="" style=dotted]
+	8 -> 14 [label="  True" style=dotted]
+	14 -> 15 [label="  True" style=dotted]
+	15 -> 16 [label="" style=dotted]
+	3 -> 17 [label="" style=dotted]
+	4 -> 17 [label="" style=dotted]
+	5 -> 17 [label="" style=dotted]
+	17 -> 18 [label="  True" style=dotted]
+	18 -> 19 [label="" style=dotted]
+	6 -> 10 [label="" style=dotted]
+	7 -> 10 [label="" style=dotted]
+	10 -> 13 [label="" style=dotted]
+	9 -> 10 [label="" style=solid]
+	9 -> 11 [label="" style=solid]
+	9 -> 14 [label="" style=solid]
+	9 -> 17 [label="" style=solid]
+	12 -> 13 [label="" style=solid]
+	15 -> 16 [label="" style=solid]
+	18 -> 19 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+		9
+		10
+		11
+		12
+		13
+		14
+		15
+		16
+		17
+		18
+		19
+	}
+}

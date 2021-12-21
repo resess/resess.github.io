@@ -1,0 +1,23 @@
+digraph "Graph" {
+	1 [label="EC:User:ApplicationLaunch"]
+	2 [label="&#916;EC:User:SensitiveInput"]
+	3 [label="&#916;EC:User:ButtonClick"]
+	4 [label="&#916;DR:Account:Social"]
+	5 [label="&#916;P:InformationStealing:Account:Social"]
+	1 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	3 -> 4 [label="" style=dotted]
+	4 -> 5 [label="" style=dotted]
+	4 -> 5 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+	}
+	subgraph cluster_2 {
+		label="Downloaded(Remote), Web"
+		2
+		3
+		4
+		5
+	}
+}

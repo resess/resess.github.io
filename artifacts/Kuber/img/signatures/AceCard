@@ -1,0 +1,91 @@
+digraph "Graph" {
+	1 [label="EC:System:SMSEvents:SMSReceived"]
+	2 [label="EC:User:ApplicationLaunch"]
+	3 [label="DR:Application:Permission"]
+	4 [label="CC:Application:Permission"]
+	5 [label="P:PrivilegeAbuse:DeviceAdmin"]
+	6 [label="EC:System:SMSEvents:SMSSent"]
+	7 [label="CC:ExternalServer:SMS"]
+	8 [label="DR:InformationStealing:User-Specific:SMS"]
+	9 [label="P:InformationStealing:User-Specific:SMS"]
+	10 [label="H:IconManipulation:HideIcon"]
+	11 [label="DR:SMS"]
+	12 [label="CC:ExternalServer:SMS"]
+	13 [label="DR:InformationStealing:User-Specific:SMS"]
+	14 [label="P:InformationStealing:User-Specific:SMS"]
+	15 [label="CC:ExternalServer:SMS"]
+	16 [label="DR:InformationStealing:User-Specific:InstalledApps"]
+	17 [label="P:InformationStealing:User-Specific:InstalledApps"]
+	18 [label="CC:ExternalServer:SMS"]
+	19 [label="P:PremiumCharges:SMS"]
+	20 [label="CC:ExternalServer:SMS"]
+	21 [label="P:PremiumCharges:Call"]
+	22 [label="DR:InformationStealing:User-Specific:PhoneNumber"]
+	23 [label="P:InformationStealing:User-Specific:PhoneNumber"]
+	24 [label="DR:InformationStealing:Device"]
+	25 [label="P:InformationStealing:Device"]
+	8 -> 9 [label="" style=solid]
+	11 -> 12 [label="" style=solid]
+	13 -> 14 [label="" style=solid]
+	16 -> 17 [label="" style=solid]
+	11 -> 19 [label="" style=solid]
+	11 -> 21 [label="" style=solid]
+	11 -> 15 [label="" style=solid]
+	11 -> 18 [label="" style=solid]
+	11 -> 20 [label="" style=solid]
+	22 -> 23 [label="" style=solid]
+	23 -> 24 [label="" style=solid]
+	2 -> 3 [label="" style=dotted]
+	3 -> 4 [label="" style=dotted]
+	4 -> 5 [label="  False" style=dotted]
+	5 -> 6 [label="" style=dotted]
+	4 -> 6 [label="  True" style=dotted]
+	6 -> 7 [label="" style=dotted]
+	7 -> 8 [label="  True" style=dotted]
+	7 -> 10 [label="  False" style=dotted]
+	8 -> 9 [label="" style=dotted]
+	9 -> 10 [label="" style=dotted]
+	1 -> 11 [label="" style=dotted]
+	11 -> 12 [label="" style=dotted]
+	12 -> 13 [label="  True" style=dotted]
+	12 -> 15 [label="  False" style=dotted]
+	13 -> 14 [label="" style=dotted]
+	15 -> 16 [label="  True" style=dotted]
+	15 -> 18 [label="  False" style=dotted]
+	16 -> 17 [label="" style=dotted]
+	18 -> 19 [label="  True" style=dotted]
+	18 -> 20 [label="  False" style=dotted]
+	20 -> 21 [label="  True" style=dotted]
+	20 -> 22 [label="  False" style=dotted]
+	22 -> 23 [label="" style=dotted]
+	23 -> 24 [label="" style=dotted]
+	24 -> 25 [label="" style=dotted]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+		9
+		10
+		11
+		12
+		13
+		14
+		15
+		16
+		17
+		18
+		19
+		20
+		21
+		22
+		23
+		24
+		25
+	}
+}

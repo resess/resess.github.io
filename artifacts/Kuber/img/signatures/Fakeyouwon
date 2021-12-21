@@ -1,0 +1,27 @@
+digraph "Graph" {
+	1 [label="EC:System:BootEvents:BootComplete"]
+	2 [label="EC:System:PackageEvents:PackageAdded"]
+	3 [label="EC:System:PackageEvents:PackageRemoved"]
+	4 [label="DR:Internet"]
+	5 [label="CC:ExternalServer:Internet"]
+	6 [label="&#916;P:AdAbuse:Ad-ClickFraud"]
+	1 -> 4 [label="" style=dotted]
+	2 -> 4 [label="" style=dotted]
+	3 -> 4 [label="" style=dotted]
+	4 -> 5 [label="" style=dotted]
+	5 -> 6 [label="" style=dotted]
+	4 -> 5 [label="" style=solid]
+	4 -> 6 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+	}
+	subgraph cluster_2 {
+		label="Downloaded(Remote), Web"
+		6
+	}
+}

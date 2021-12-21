@@ -1,0 +1,52 @@
+digraph "Graph" {
+	1 [label="EC:User:ApplicationLaunch"]
+	2 [label="EC:System:BootEvents:BootComplete"]
+	3 [label="DR:Environment:Location"]
+	4 [label="CC:Environment:Location"]
+	5 [label="DR:Application:Permission"]
+	6 [label="CC:Application:Permission"]
+	7 [label="P:PrivilegeAbuse:DeviceAdmin"]
+	8 [label="DR:Time"]
+	9 [label="CC:Environment:Time"]
+	10 [label="DR:InformationStealing:Device"]
+	11 [label="P:InformationStealing:Device"]
+	12 [label="DR:Internet"]
+	13 [label="CC:ExternalServer:Internet"]
+	14 [label="P:Ransom"]
+	3 -> 4 [label="" style=solid]
+	5 -> 6 [label="" style=solid]
+	8 -> 9 [label="" style=solid]
+	10 -> 11 [label="" style=solid]
+	12 -> 13 [label="" style=solid]
+	1 -> 3 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	3 -> 4 [label="" style=dotted]
+	4 -> 5 [label="  True" style=dotted]
+	5 -> 6 [label="" style=dotted]
+	6 -> 7 [label="  False" style=dotted]
+	4 -> 8 [label="  True" style=dotted]
+	8 -> 9 [label="" style=dotted]
+	9 -> 10 [label="  True" style=dotted]
+	9 -> 12 [label="  False" style=dotted]
+	10 -> 11 [label="" style=dotted]
+	11 -> 12 [label="" style=dotted]
+	4 -> 13 [label="  True" style=dotted]
+	13 -> 14 [label="  True" style=dotted]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+		9
+		10
+		11
+		12
+		13
+		14
+	}
+}

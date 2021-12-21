@@ -1,0 +1,34 @@
+digraph "Graph" {
+	1 [label="EC:User:ApplicationLaunch"]
+	2 [label="DR:Application:Permission"]
+	3 [label="CC:Application:Permission"]
+	4 [label="P:PrivilegeAbuse:DeviceAdmin"]
+	5 [label="EC:User:ButtonClick"]
+	6 [label="DR:Internet"]
+	7 [label="EC:User:InstallApplication"]
+	8 [label="&#916;P:AdAbuse"]
+	1 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	3 -> 4 [label="  False" style=dotted]
+	4 -> 5 [label="" style=dotted]
+	3 -> 5 [label="  True" style=dotted]
+	5 -> 6 [label="" style=dotted]
+	6 -> 7 [label="" style=dotted]
+	7 -> 8 [label="" style=dotted]
+	2 -> 3 [label="" style=solid]
+	6 -> 8 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+	}
+	subgraph cluster_2 {
+		label="Downloaded(Remote), Bytecode"
+		8
+	}
+}

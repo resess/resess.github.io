@@ -1,0 +1,54 @@
+digraph "Graph" {
+	1 [label="EC:User:ApplicationLaunch"]
+	2 [label="EC:System:BootEvents:BootComplete"]
+	3 [label="EC:Scheduling"]
+	4 [label="DR:Device:Sensor:Temperature"]
+	5 [label="DR:Device:Sensor:Battery"]
+	6 [label="DR:Device:HardwareSpec:CPU"]
+	7 [label="CC:Device:Sensor:Temperature"]
+	8 [label="CC:Device:Sensor:Battery"]
+	9 [label="CC:Device:HardwareSpec:CPU"]
+	10 [label="CC:Device:HardwareSpec:ScreenStatus"]
+	11 [label="DR:Internet"]
+	12 [label="CC:ExternalServer:Internet"]
+	13 [label="DR:MiningConfig"]
+	14 [label="P:CryptocurrencyMining"]
+	1 -> 3 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	3 -> 4 [label="" style=dotted]
+	4 -> 5 [label="" style=dotted]
+	5 -> 6 [label="" style=dotted]
+	6 -> 7 [label="" style=dotted]
+	7 -> 8 [label="  True" style=dotted]
+	8 -> 9 [label="  True" style=dotted]
+	9 -> 10 [label="  True" style=dotted]
+	10 -> 11 [label="  True" style=dotted]
+	11 -> 12 [label="" style=dotted]
+	12 -> 13 [label="  False" style=dotted]
+	12 -> 14 [label="  True" style=dotted]
+	4 -> 7 [label="" style=solid]
+	5 -> 8 [label="" style=solid]
+	6 -> 9 [label="" style=solid]
+	11 -> 14 [label="" style=solid]
+	13 -> 14 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+		9
+		10
+		11
+		12
+		13
+	}
+	subgraph cluster_2 {
+		label="Hidden(Local), Native"
+		14
+	}
+}

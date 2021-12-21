@@ -1,0 +1,50 @@
+digraph "Graph" {
+	1 [label="EC:User:ApplicationLaunch"]
+	2 [label="EC:User:ButtonClick"]
+	3 [label="DR:Application:Permission"]
+	4 [label="CC:Application:Permission"]
+	5 [label="EC:User:SensitiveInput"]
+	6 [label="EC:User:ButtonClick"]
+	7 [label="DR:StealInformation:User-Specific:Account:Banking"]
+	8 [label="P:StealInformation:User-Specific:Account:Banking"]
+	9 [label="EC:User:GrantPermission"]
+	10 [label="EC:System:Bind:NotificationListener"]
+	11 [label="DR:Device:InstalledApp:User-Specific"]
+	12 [label="CC:Device:InstalledApp:User-Specific"]
+	13 [label="DR:InformationStealing:User-Specific:NotificationMessage"]
+	14 [label="P:InformationStealing:User-Specific:NotificationMessage"]
+	1 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	3 -> 4 [label="" style=dotted]
+	4 -> 5 [label="  True" style=dotted]
+	5 -> 6 [label="" style=dotted]
+	6 -> 7 [label="" style=dotted]
+	7 -> 8 [label="" style=dotted]
+	4 -> 9 [label="  False" style=dotted]
+	9 -> 10 [label="" style=dotted]
+	10 -> 11 [label="" style=dotted]
+	11 -> 12 [label="" style=dotted]
+	12 -> 13 [label="  True" style=dotted]
+	13 -> 14 [label="" style=dotted]
+	7 -> 8 [label="" style=solid]
+	11 -> 12 [label="" style=solid]
+	13 -> 14 [label="" style=solid]
+	3 -> 4 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+		9
+		10
+		11
+		12
+		13
+		14
+	}
+}

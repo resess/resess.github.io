@@ -1,0 +1,17 @@
+digraph "Graph" {
+	1 [label="EC:User:ApplicationLaunch"]
+	2 [label="DR:MiningConfig"]
+	3 [label="P:CryptocurrencyMining"]
+	1 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	2 -> 3 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+	}
+	subgraph cluster_2 {
+		label="Hidden(Local), Web"
+		3
+	}
+}

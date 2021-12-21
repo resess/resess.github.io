@@ -1,0 +1,70 @@
+digraph "Graph" {
+	1 [label="EC:User:ApplicationLaunch"]
+	2 [label="EC:User:ButtonClick"]
+	3 [label="EC:User:SensitiveInput"]
+	4 [label="EC:User:ButtonClick"]
+	5 [label="DR:InformationStealing:User-Specific"]
+	6 [label="P:InformationStealing:User-Specific"]
+	7 [label="DR:Environment:Time"]
+	8 [label="CC:Environment:Time"]
+	9 [label="H:IconManipulation:HideIcon"]
+	10 [label="EC:System:BootEvents:BootComplete"]
+	11 [label="EC:Scheduling"]
+	12 [label="DR:Device:HardwareSpecs:NetworkOperator"]
+	13 [label="CC:Device:HardwareSpecs:NetworkOperator"]
+	14 [label="DR:Internet"]
+	15 [label="CC:ExternalServer:Internet"]
+	16 [label="&#916;EC:User:SensitiveInput"]
+	17 [label="&#916;EC:User:ButtonClick"]
+	18 [label="&#916;DR:InformationStealing:User-Specific:Account:Social"]
+	19 [label="&#916;P:InformationStealing:User-Specific:Account:Social"]
+	5 -> 6 [label="" style=solid]
+	12 -> 13 [label="" style=solid]
+	14 -> 15 [label="" style=solid]
+	18 -> 19 [label="" style=solid]
+	1 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	3 -> 4 [label="" style=dotted]
+	4 -> 5 [label="" style=dotted]
+	5 -> 6 [label="" style=dotted]
+	1 -> 7 [label="" style=dotted]
+	7 -> 8 [label="" style=dotted]
+	8 -> 9 [label="  True" style=dotted]
+	10 -> 11 [label="" style=dotted]
+	11 -> 12 [label="" style=dotted]
+	12 -> 13 [label="" style=dotted]
+	13 -> 14 [label="  True" style=dotted]
+	14 -> 15 [label="" style=dotted]
+	15 -> 16 [label="  True" style=dotted]
+	16 -> 17 [label="" style=dotted]
+	17 -> 18 [label="" style=dotted]
+	18 -> 19 [label="" style=dotted]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		7
+		8
+		9
+		10
+		11
+		12
+		13
+		14
+		15
+	}
+	subgraph cluster_2 {
+		label="Downloaded(Remote), Web"
+		2
+		3
+		4
+		5
+		6
+	}
+	subgraph cluster_3 {
+		label="Downloaded(Remote), Bytecode"
+		16
+		17
+		18
+		19
+	}
+}

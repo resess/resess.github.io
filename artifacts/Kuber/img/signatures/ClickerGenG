@@ -1,0 +1,29 @@
+digraph "Graph" {
+	1 [label="EC:User:ApplicationLaunch"]
+	2 [label="EC:Scheduling"]
+	3 [label="DR:Time"]
+	4 [label="CC:Environment:Time"]
+	5 [label="CC:Device:Network"]
+	6 [label="EC:User:ButtonClick"]
+	7 [label="&#916;P:Unknown"]
+	1 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	3 -> 4 [label="" style=dotted]
+	4 -> 5 [label="" style=dotted]
+	5 -> 6 [label="" style=dotted]
+	6 -> 7 [label="" style=dotted]
+	3 -> 4 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+		6
+	}
+	subgraph cluster_2 {
+		label="Downloaded(Remote), Web"
+		7
+	}
+}

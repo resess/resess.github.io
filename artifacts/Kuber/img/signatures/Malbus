@@ -1,0 +1,48 @@
+digraph "Graph" {
+	1 [label="EC:User:ApplicationLaunch"]
+	2 [label="DR:Application:Permission"]
+	3 [label="CC:Application:Permission"]
+	4 [label="DR:Device:SoftwareSpec:AndroidVersion"]
+	5 [label="CC:Device:SoftwareSpec:AndroidVersion"]
+	6 [label="DR:Internet"]
+	7 [label="CC:ExternalServer:Internet"]
+	8 [label="&#916;EC:User:SensitiveInput"]
+	9 [label="&#916;EC:User:ButtonClick"]
+	10 [label="&#916;DR:InformationStealing:User-Specific:Account:Social"]
+	11 [label="&#916;P:InformationStealing:User-Specific:Account:Social"]
+	1 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	3 -> 4 [label="  False" style=dotted]
+	3 -> 6 [label="  True" style=dotted]
+	4 -> 5 [label="" style=dotted]
+	5 -> 6 [label="  True" style=dotted]
+	6 -> 7 [label="" style=dotted]
+	7 -> 8 [label="  True" style=dotted]
+	8 -> 9 [label="" style=dotted]
+	9 -> 10 [label="" style=dotted]
+	10 -> 11 [label="" style=dotted]
+	2 -> 3 [label="" style=solid]
+	4 -> 5 [label="" style=solid]
+	6 -> 7 [label="" style=solid]
+	10 -> 11 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+	}
+	subgraph cluster_2 {
+		label="Hidden(Local), Native"
+		6
+		7
+	}
+	subgraph cluster_3 {
+		label="Downloaded(Remote), Bytecode"
+		8
+		9
+		10
+		11
+	}
+}

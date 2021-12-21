@@ -1,0 +1,21 @@
+digraph "Graph" {
+	1 [label="EC:User:ApplicationLaunch"]
+	2 [label="EC:User:ButtonClick"]
+	3 [label="EC:User:ButtonClick"]
+	4 [label="EC:User:ButtonClick"]
+	5 [label="P:AdAbuse:AggressiveAds"]
+	1 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	2 -> 5 [label="" style=dotted]
+	3 -> 4 [label="" style=dotted]
+	3 -> 5 [label="" style=dotted]
+	4 -> 5 [label="" style=dotted]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+	}
+}

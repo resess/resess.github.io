@@ -1,0 +1,70 @@
+digraph "Graph" {
+	1 [label="EC:System:BootEvents:BootComplete"]
+	2 [label="DR:Device:SoftwareSpecs:Sandbox"]
+	3 [label="CC:Device:SoftwareSpecs:Sandbox"]
+	4 [label="DR:Environment:Location"]
+	5 [label="CC:Environment:Location"]
+	6 [label="DR:Device:SoftwareSpecs:InstalledApp:User-Specific"]
+	7 [label="CC:Device:SoftwareSpecs:InstalledApp:User-Specific"]
+	8 [label="EC:User:ApplicationLaunch"]
+	9 [label="EC:Scheduling"]
+	16 [label="DR:Application:Permission"]
+	17 [label="CC:Application:Permission"]
+	18 [label="P:PrivilegeAbuse:DeviceAdmin"]
+	10 [label="DR:Time"]
+	11 [label="CC:Environment:Time"]
+	12 [label="DR:Internet"]
+	13 [label="CC:ExternalServer:Internet"]
+	14 [label="EC:User:InstallApp"]
+	15 [label="P:Unknown"]
+	19 [label="H:IconManipulation:HideIcon"]
+	1 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	3 -> 4 [label="  False" style=dotted]
+	4 -> 5 [label="" style=dotted]
+	5 -> 6 [label="  True" style=dotted]
+	6 -> 7 [label="" style=dotted]
+	7 -> 9 [label="  False" style=dotted]
+	8 -> 9 [label="" style=dotted]
+	8 -> 19 [label="" style=dotted]
+	9 -> 16 [label="" style=dotted]
+	16 -> 17 [label="" style=dotted]
+	17 -> 18 [label="  False" style=dotted]
+	17 -> 10 [label="  True" style=dotted]
+	10 -> 11 [label="" style=dotted]
+	11 -> 12 [label="  True" style=dotted]
+	12 -> 13 [label="" style=dotted]
+	13 -> 14 [label="  True" style=dotted]
+	14 -> 15 [label="" style=dotted]
+	2 -> 3 [label="" style=solid]
+	4 -> 5 [label="" style=solid]
+	6 -> 7 [label="" style=solid]
+	10 -> 11 [label="" style=solid]
+	12 -> 13 [label="" style=solid]
+	12 -> 15 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+		8
+		9
+		10
+		11
+		12
+		13
+		14
+		16
+		17
+		18
+		19
+	}
+	subgraph cluster_2 {
+		label="Downloaded(Remote), Bytecode"
+		15
+	}
+}

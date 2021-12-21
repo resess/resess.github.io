@@ -1,0 +1,54 @@
+digraph "Graph" {
+	1 [label="EC:System:BindEvents:Accessibility"]
+	2 [label="DR:InformationStealing:Device"]
+	3 [label="P:InformationStealing:Device"]
+	4 [label="DR:Internet"]
+	5 [label="EC:User:InstallApp"]
+	6 [label="&#916;EC:System:DeveloperEvents"]
+	7 [label="&#916;CC:ExternalServer:Internet"]
+	8 [label="&#916;P:AdAbuse:Ad-ClickFraud"]
+	9 [label="&#916;CC:ExternalServer:Internet"]
+	10 [label="&#916;DR:InformationStealing:User-Specific:Account:Social"]
+	11 [label="&#916;P:InformationStealing:User-Specific:Account:Social"]
+	12 [label="&#916;CC:ExternalServer:Internet"]
+	13 [label="&#916;H:ScreenLocking"]
+	14 [label="&#916;P:PrivilegeAbuse:DeviceAdmin"]
+	1 -> 2 [label="" style=dotted]
+	2 -> 3 [label="" style=dotted]
+	3 -> 4 [label="" style=dotted]
+	4 -> 5 [label="" style=dotted]
+	5 -> 6 [label="" style=dotted]
+	6 -> 7 [label="" style=dotted]
+	7 -> 8 [label="  True" style=dotted]
+	6 -> 9 [label="" style=dotted]
+	6 -> 14 [label="" style=dotted]
+	9 -> 10 [label="  True" style=dotted]
+	10 -> 11 [label="" style=dotted]
+	9 -> 12 [label="" style=dotted]
+	12 -> 13 [label="  True" style=dotted]
+	2 -> 3 [label="" style=solid]
+	4 -> 7 [label="" style=solid]
+	4 -> 9 [label="" style=solid]
+	4 -> 12 [label="" style=solid]
+	10 -> 11 [label="" style=solid]
+	subgraph cluster_1 {
+		label="Direct, Bytecode"
+		1
+		2
+		3
+		4
+		5
+	}
+	subgraph cluster_2 {
+		label="Downloaded(Remote), Bytecode"
+		6
+		7
+		8
+		9
+		10
+		11
+		12
+		13
+		14
+	}
+}
