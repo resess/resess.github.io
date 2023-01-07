@@ -1,0 +1,206 @@
+Line 191 com.squareup.moshi.JsonUtf8Reader:peek ---> int p = peeked;
+Line 159 com.squareup.moshi.JsonUtf8Reader:beginObject ---> peeked = PEEKED_NONE;
+Line 192 com.squareup.moshi.JsonUtf8Reader:peek ---> if (p == PEEKED_NONE) {
+Line 183 com.squareup.moshi.JsonUtf8Reader:hasNext ---> int p = peeked;
+Line 193 com.squareup.moshi.JsonUtf8Reader:peek ---> p = doPeek();
+Line 184 com.squareup.moshi.JsonUtf8Reader:hasNext ---> if (p == PEEKED_NONE) {
+Line 231 com.squareup.moshi.JsonUtf8Reader:doPeek ---> int peekStack = scopes[stackSize - 1];
+Line 185 com.squareup.moshi.JsonUtf8Reader:hasNext ---> p = doPeek();
+Line 171 com.squareup.moshi.StandardJsonAdapters$7:<init> ---> static final JsonAdapter<Integer> INTEGER_JSON_ADAPTER = new JsonAdapter<Integer>() {
+Line 319 com.squareup.moshi.JsonUtf8Reader:doPeek ---> int c = nextNonWhitespace(true);
+Line 319 com.squareup.moshi.JsonUtf8Reader:doPeek ---> int c = nextNonWhitespace(true);
+Line 319 com.squareup.moshi.JsonUtf8Reader:doPeek ---> int c = nextNonWhitespace(true);
+Line 319 com.squareup.moshi.JsonUtf8Reader:doPeek ---> int c = nextNonWhitespace(true);
+Line 880 com.squareup.moshi.JsonUtf8Reader:nextInt ---> int p = peeked;
+Line 173 com.squareup.moshi.StandardJsonAdapters$7:fromJson ---> return reader.nextInt();
+Line 996 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> while (source.request(p + 1)) {
+Line 996 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> while (source.request(p + 1)) {
+Line 996 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> while (source.request(p + 1)) {
+Line 996 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> while (source.request(p + 1)) {
+Line 881 com.squareup.moshi.JsonUtf8Reader:nextInt ---> if (p == PEEKED_NONE) {
+Line 998 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> if (c == '\n' || c == ' ' || c == '\r' || c == '\t') {
+Line 997 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> int c = buffer.getByte(p++);
+Line 997 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> int c = buffer.getByte(p++);
+Line 1002 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> buffer.skip(p - 1);
+Line 998 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> if (c == '\n' || c == ' ' || c == '\r' || c == '\t') {
+Line 1002 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> buffer.skip(p - 1);
+Line 998 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> if (c == '\n' || c == ' ' || c == '\r' || c == '\t') {
+Line 997 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> int c = buffer.getByte(p++);
+Line 998 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> if (c == '\n' || c == ' ' || c == '\r' || c == '\t') {
+Line 997 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> int c = buffer.getByte(p++);
+Line 1002 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> buffer.skip(p - 1);
+Line 353 com.squareup.moshi.JsonUtf8Reader:doPeek ---> if (result != PEEKED_NONE) {
+Line 882 com.squareup.moshi.JsonUtf8Reader:nextInt ---> p = doPeek();
+Line 419 com.squareup.moshi.JsonUtf8Reader:peekNumber ---> int i = 0;
+Line 996 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> while (source.request(p + 1)) {
+Line 1002 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> buffer.skip(p - 1);
+Line 357 com.squareup.moshi.JsonUtf8Reader:doPeek ---> result = peekNumber();
+Line 422 com.squareup.moshi.JsonUtf8Reader:peekNumber ---> for (; true; i++) {
+Line 996 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> while (source.request(p + 1)) {
+Line 534 com.squareup.moshi.JsonUtf8Reader:nextName ---> if (p == PEEKED_UNQUOTED_NAME) {
+Line 529 com.squareup.moshi.JsonUtf8Reader:nextName ---> int p = peeked;
+Line 997 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> int c = buffer.getByte(p++);
+Line 997 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> int c = buffer.getByte(p++);
+Line 998 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> if (c == '\n' || c == ' ' || c == '\r' || c == '\t') {
+Line 492 com.squareup.moshi.JsonUtf8Reader:peekNumber ---> buffer.skip(i);
+Line 998 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> if (c == '\n' || c == ' ' || c == '\r' || c == '\t') {
+Line 1002 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> buffer.skip(p - 1);
+Line 536 com.squareup.moshi.JsonUtf8Reader:nextName ---> } else if (p == PEEKED_DOUBLE_QUOTED_NAME) {
+Line 828 com.squareup.moshi.JsonUtf8Reader:nextQuotedValue ---> long index = source.indexOfElement(runTerminator);
+Line 832 com.squareup.moshi.JsonUtf8Reader:nextQuotedValue ---> if (buffer.getByte(index) == '\\') {
+Line 1002 com.squareup.moshi.JsonUtf8Reader:nextNonWhitespace ---> buffer.skip(p - 1);
+Line 150 com.squareup.moshi.ClassJsonAdapter:fromJson ---> int index = reader.selectName(options);
+Line 61 com.squareup.moshi.internal.Util:jsonAnnotations ---> Set<Annotation> result = null;
+Line 545 com.squareup.moshi.JsonUtf8Reader:nextName ---> peeked = PEEKED_NONE;
+Line 150 com.squareup.moshi.ClassJsonAdapter:fromJson ---> int index = reader.selectName(options);
+Line 537 com.squareup.moshi.JsonUtf8Reader:nextName ---> result = nextQuotedValue(DOUBLE_QUOTE_OR_SLASH);
+Line 842 com.squareup.moshi.JsonUtf8Reader:nextQuotedValue ---> String result = buffer.readUtf8(index);
+Line 555 com.squareup.moshi.JsonUtf8Reader:selectName ---> if (p < PEEKED_SINGLE_QUOTED_NAME || p > PEEKED_BUFFERED_NAME) {
+Line 551 com.squareup.moshi.JsonUtf8Reader:selectName ---> int p = peeked;
+Line 551 com.squareup.moshi.JsonUtf8Reader:selectName ---> int p = peeked;
+Line 555 com.squareup.moshi.JsonUtf8Reader:selectName ---> if (p < PEEKED_SINGLE_QUOTED_NAME || p > PEEKED_BUFFERED_NAME) {
+Line 68 com.squareup.moshi.internal.Util:jsonAnnotations ---> return result != null ? Collections.unmodifiableSet(result) : Util.NO_ANNOTATIONS;
+Line 96 com.squareup.moshi.ClassJsonAdapter$1:createFieldBindings ---> Type fieldType = resolve(type, rawType, field.getGenericType());
+Line 600 com.squareup.moshi.JsonReader$Token:<clinit> ---> NULL,
+Line 548 com.squareup.moshi.JsonReader$Token:<clinit> ---> public enum Token {
+Line 148 com.squareup.moshi.ClassJsonAdapter:fromJson ---> reader.beginObject();
+Line 575 com.squareup.moshi.JsonUtf8Reader:selectName ---> result = findName(nextName, options);
+Line 844 com.squareup.moshi.JsonUtf8Reader:nextQuotedValue ---> return result;
+Line 562 com.squareup.moshi.JsonUtf8Reader:selectName ---> int result = source.select(options.doubleQuoteSuffix);
+Line 558 com.squareup.moshi.JsonUtf8Reader:selectName ---> if (p == PEEKED_BUFFERED_NAME) {
+Line 558 com.squareup.moshi.JsonUtf8Reader:selectName ---> if (p == PEEKED_BUFFERED_NAME) {
+Line 57 com.squareup.moshi.internal.Util:jsonAnnotations ---> return jsonAnnotations(annotatedElement.getAnnotations());
+Line 207 com.squareup.moshi.internal.Util:resolve ---> return toResolve;
+Line 105 com.squareup.moshi.ClassJsonAdapter$1:createFieldBindings ---> Json jsonAnnotation = field.getAnnotation(Json.class);
+Line 98 com.squareup.moshi.ClassJsonAdapter$1:createFieldBindings ---> String fieldName = field.getName();
+Line 198 com.squareup.moshi.JsonUtf8Reader:peek ---> return Token.BEGIN_OBJECT;
+Line 600 com.squareup.moshi.JsonReader$Token:<clinit> ---> NULL,
+Line 158 com.squareup.moshi.JsonUtf8Reader:beginObject ---> pushScope(JsonScope.EMPTY_OBJECT);
+Line 613 com.squareup.moshi.JsonUtf8Reader:findName ---> for (int i = 0, size = options.strings.length; i < size; i++) {
+Line 613 com.squareup.moshi.JsonUtf8Reader:findName ---> for (int i = 0, size = options.strings.length; i < size; i++) {
+Line 547 com.squareup.moshi.JsonUtf8Reader:nextName ---> return result;
+Line 563 com.squareup.moshi.JsonUtf8Reader:selectName ---> if (result != -1) {
+Line 621 com.squareup.moshi.JsonUtf8Reader:findName ---> return -1;
+Line 138 com.squareup.moshi.ClassJsonAdapter:fromJson ---> result = classFactory.newInstance();
+Line 562 com.squareup.moshi.JsonUtf8Reader:selectName ---> int result = source.select(options.doubleQuoteSuffix);
+Line 563 com.squareup.moshi.JsonUtf8Reader:selectName ---> if (result != -1) {
+Line 142 com.squareup.moshi.Moshi:adapter ---> success = true;
+Line 99 com.squareup.moshi.ClassJsonAdapter$1:createFieldBindings ---> JsonAdapter<Object> adapter = moshi.adapter(fieldType, annotations, fieldName);
+Line 102 com.squareup.moshi.ClassJsonAdapter$1:createFieldBindings ---> field.setAccessible(true);
+Line 106 com.squareup.moshi.ClassJsonAdapter$1:createFieldBindings ---> String name = jsonAnnotation != null ? jsonAnnotation.name() : fieldName;
+Line 134 com.squareup.moshi.JsonAdapter$2:fromJson ---> if (reader.peek() == JsonReader.Token.NULL) {
+Line 149 com.squareup.moshi.ClassJsonAdapter:fromJson ---> while (reader.hasNext()) {
+Line 269 com.squareup.moshi.JsonUtf8Reader:doPeek ---> return peeked = PEEKED_DOUBLE_QUOTED_NAME;
+Line 57 com.squareup.moshi.JsonScope:getPath ---> for (int i = 0; i < stackSize; i++) {
+Line 58 com.squareup.moshi.JsonScope:getPath ---> switch (stack[i]) {
+Line 225 com.squareup.moshi.JsonReader:pushScope ---> scopes[stackSize++] = newTop;
+Line 574 com.squareup.moshi.JsonUtf8Reader:selectName ---> String nextName = nextName();
+Line 614 com.squareup.moshi.JsonUtf8Reader:findName ---> if (name.equals(options.strings[i])) {
+Line 614 com.squareup.moshi.JsonUtf8Reader:findName ---> if (name.equals(options.strings[i])) {
+Line 577 com.squareup.moshi.JsonUtf8Reader:selectName ---> if (result == -1) {
+Line 151 com.squareup.moshi.ClassJsonAdapter:fromJson ---> if (index == -1) {
+Line 564 com.squareup.moshi.JsonUtf8Reader:selectName ---> peeked = PEEKED_NONE;
+Line 70 com.squareup.moshi.ClassFactory$2:newInstance ---> return (T) allocateInstance.invoke(unsafe, rawType);
+Line 584 com.squareup.moshi.JsonUtf8Reader:selectName ---> return result;
+Line 143 com.squareup.moshi.Moshi:adapter ---> return result;
+Line 107 com.squareup.moshi.ClassJsonAdapter$1:createFieldBindings ---> FieldBinding<Object> fieldBinding = new FieldBinding<>(name, field, adapter);
+Line 137 com.squareup.moshi.JsonAdapter$2:fromJson ---> return delegate.fromJson(reader);
+Line 187 com.squareup.moshi.JsonUtf8Reader:hasNext ---> return p != PEEKED_END_OBJECT && p != PEEKED_END_ARRAY && p != PEEKED_EOF;
+Line 57 com.squareup.moshi.JsonScope:getPath ---> for (int i = 0; i < stackSize; i++) {
+Line 67 com.squareup.moshi.JsonScope:getPath ---> result.append('.');
+Line 57 com.squareup.moshi.JsonScope:getPath ---> for (int i = 0; i < stackSize; i++) {
+Line 507 com.squareup.moshi.JsonReader:getPath ---> return JsonScope.getPath(stackSize, scopes, pathNames, pathIndices);
+Line 56 com.squareup.moshi.JsonScope:getPath ---> StringBuilder result = new StringBuilder().append('$');
+Line 579 com.squareup.moshi.JsonReader$Token:<clinit> ---> NAME,
+Line 548 com.squareup.moshi.JsonReader$Token:<clinit> ---> public enum Token {
+Line 93 com.squareup.moshi.ClassJsonAdapter$1:createFieldBindings ---> if (!includeField(platformType, field.getModifiers())) continue;
+Line 117 com.squareup.moshi.Types:getRawType ---> if (type instanceof Class<?>) {
+Line 63 com.squareup.moshi.ClassJsonAdapter$1:create ---> if (!annotations.isEmpty()) return null;
+Line 579 com.squareup.moshi.JsonUtf8Reader:selectName ---> peekedString = nextName;
+Line 151 com.squareup.moshi.ClassJsonAdapter:fromJson ---> if (index == -1) {
+Line 156 com.squareup.moshi.ClassJsonAdapter:fromJson ---> fieldsArray[index].read(reader, result);
+Line 149 com.squareup.moshi.ClassJsonAdapter:fromJson ---> while (reader.hasNext()) {
+Line 190 com.squareup.moshi.ClassJsonAdapter$FieldBinding:<init> ---> this.adapter = adapter;
+Line 269 com.squareup.moshi.JsonUtf8Reader:doPeek ---> return peeked = PEEKED_DOUBLE_QUOTED_NAME;
+Line 149 com.squareup.moshi.ClassJsonAdapter:fromJson ---> while (reader.hasNext()) {
+Line 79 com.squareup.moshi.JsonScope:getPath ---> return result.toString();
+Line 579 com.squareup.moshi.JsonReader$Token:<clinit> ---> NAME,
+Line 80 com.squareup.moshi.ClassJsonAdapter$1:create ---> Map<String, FieldBinding<?>> fields = new TreeMap<>();
+Line 91 com.squareup.moshi.ClassJsonAdapter$1:createFieldBindings ---> boolean platformType = Util.isPlatformType(rawType);
+Line 93 com.squareup.moshi.ClassJsonAdapter$1:createFieldBindings ---> if (!includeField(platformType, field.getModifiers())) continue;
+Line 57 com.squareup.moshi.internal.Util:jsonAnnotations ---> return jsonAnnotations(annotatedElement.getAnnotations());
+Line 61 com.squareup.moshi.internal.Util:jsonAnnotations ---> Set<Annotation> result = null;
+Line 119 com.squareup.moshi.ClassJsonAdapter$1:includeField ---> if (Modifier.isStatic(modifiers) || Modifier.isTransient(modifiers)) return false;
+Line 119 com.squareup.moshi.Types:getRawType ---> return (Class<?>) type;
+Line 81 com.squareup.moshi.ClassJsonAdapter$1:create ---> for (Type t = type; t != Object.class; t = Types.getGenericSuperclass(t)) {
+Line 152 com.squareup.moshi.ClassJsonAdapter:fromJson ---> reader.skipName();
+Line 194 com.squareup.moshi.ClassJsonAdapter$FieldBinding:read ---> T fieldValue = adapter.fromJson(reader);
+Line 187 com.squareup.moshi.JsonUtf8Reader:hasNext ---> return p != PEEKED_END_OBJECT && p != PEEKED_END_ARRAY && p != PEEKED_EOF;
+Line 507 com.squareup.moshi.JsonReader:getPath ---> return JsonScope.getPath(stackSize, scopes, pathNames, pathIndices);
+Line 209 com.squareup.moshi.JsonUtf8Reader:peek ---> return Token.NAME;
+Line 589 com.squareup.moshi.JsonUtf8Reader:skipName ---> throw new JsonDataException('Cannot skip unexpected ' + peek() + ' at ' + getPath());
+Line 95 com.squareup.moshi.internal.Util:isPlatformType ---> String name = rawType.getName();
+Line 82 com.squareup.moshi.ClassJsonAdapter$1:create ---> createFieldBindings(moshi, t, fields);
+Line 90 com.squareup.moshi.ClassJsonAdapter$1:createFieldBindings ---> Class<?> rawType = Types.getRawType(type);
+Line 96 com.squareup.moshi.internal.Util:isPlatformType ---> return name.startsWith('android.')
+Line 119 com.squareup.moshi.ClassJsonAdapter$1:includeField ---> if (Modifier.isStatic(modifiers) || Modifier.isTransient(modifiers)) return false;
+Line 97 com.squareup.moshi.ClassJsonAdapter$1:createFieldBindings ---> Set<? extends Annotation> annotations = Util.jsonAnnotations(field);
+Line 68 com.squareup.moshi.internal.Util:jsonAnnotations ---> return result != null ? Collections.unmodifiableSet(result) : Util.NO_ANNOTATIONS;
+Line 120 com.squareup.moshi.ClassJsonAdapter$1:includeField ---> return Modifier.isPublic(modifiers) || Modifier.isProtected(modifiers) || !platformType;
+Line 92 com.squareup.moshi.ClassJsonAdapter$1:createFieldBindings ---> for (Field field : rawType.getDeclaredFields()) {
+Line 96 com.squareup.moshi.ClassJsonAdapter$1:createFieldBindings ---> Type fieldType = resolve(type, rawType, field.getGenericType());
+Line 37 com.squareup.moshi.JsonDataException:<init> ---> super(message);
+Line 588 com.squareup.moshi.JsonUtf8Reader:skipName ---> if (failOnUnknown) {
+Line 149 com.squareup.moshi.ClassJsonAdapter:fromJson ---> while (reader.hasNext()) {
+Line 589 com.squareup.moshi.JsonUtf8Reader:skipName ---> throw new JsonDataException('Cannot skip unexpected ' + peek() + ' at ' + getPath());
+Line 589 com.squareup.moshi.JsonUtf8Reader:skipName ---> throw new JsonDataException('Cannot skip unexpected ' + peek() + ' at ' + getPath());
+Line 92 com.squareup.moshi.ClassJsonAdapter$1:createFieldBindings ---> for (Field field : rawType.getDeclaredFields()) {
+Line 120 com.squareup.moshi.ClassJsonAdapter$1:includeField ---> return Modifier.isPublic(modifiers) || Modifier.isProtected(modifiers) || !platformType;
+Line 98 com.squareup.moshi.JsonUtf8Reader:<init> ---> pushScope(JsonScope.EMPTY_DOCUMENT);
+Line 201 com.squareup.moshi.JsonReader:<init> ---> scopes = new int[32];
+Line 57 com.squareup.moshi.internal.Util:jsonAnnotations ---> return jsonAnnotations(annotatedElement.getAnnotations());
+Line 93 com.squareup.moshi.ClassJsonAdapter$1:createFieldBindings ---> if (!includeField(platformType, field.getModifiers())) continue;
+Line 207 com.squareup.moshi.internal.Util:resolve ---> return toResolve;
+Line 98 com.squareup.moshi.ClassJsonAdapter$1:createFieldBindings ---> String fieldName = field.getName();
+Line 548 com.squareup.moshi.JsonReader$Token:<clinit> ---> public enum Token {
+Line 566 com.squareup.moshi.JsonReader$Token:<clinit> ---> BEGIN_OBJECT,
+Line 589 com.squareup.moshi.JsonUtf8Reader:skipName ---> throw new JsonDataException('Cannot skip unexpected ' + peek() + ' at ' + getPath());
+Line 119 com.squareup.moshi.internal.Util:canonicalize ---> return c.isArray() ? new GenericArrayTypeImpl(canonicalize(c.getComponentType())) : c;
+Line 96 com.squareup.moshi.internal.Util:isPlatformType ---> return name.startsWith('android.')
+Line 137 com.squareup.moshi.Moshi:adapter ---> for (int i = 0, size = factories.size(); i < size; i++) {
+Line 362 com.squareup.moshi.Moshi$Lookup:<init> ---> this.fieldName = fieldName;
+Line 57 com.squareup.moshi.internal.Util:<clinit> ---> metadata = (Class<? extends Annotation>) Class.forName('kotlin.Metadata');
+Line 63 com.squareup.moshi.Moshi:<init> ---> this.factories = Collections.unmodifiableList(factories);
+Line 361 com.squareup.moshi.Moshi$Lookup:<init> ---> this.type = type;
+Line 166 com.squareup.moshi.Types:getRawType ---> if (type instanceof Class<?>) {
+Line 93 com.squareup.moshi.ClassJsonAdapter$1:createFieldBindings ---> if (!includeField(platformType, field.getModifiers())) continue;
+Line 97 com.squareup.moshi.ClassJsonAdapter$1:createFieldBindings ---> Set<? extends Annotation> annotations = Util.jsonAnnotations(field);
+Line 192 com.squareup.moshi.JsonAdapter:failOnUnknown ---> return new JsonAdapter<T>() {
+Line 196 com.squareup.moshi.JsonReader:of ---> return new JsonUtf8Reader(source);
+Line 34 com.squareup.moshi.JsonUtf8Reader:<clinit> ---> private static final ByteString CLOSING_BLOCK_COMMENT = ByteString.encodeUtf8('*/');
+Line 319 com.squareup.moshi.Moshi$LookupChain:pop ---> if (replaced != null) {
+Line 130 com.squareup.moshi.Moshi:adapter ---> boolean success = false;
+Line 99 com.squareup.moshi.ClassJsonAdapter$1:createFieldBindings ---> JsonAdapter<Object> adapter = moshi.adapter(fieldType, annotations, fieldName);
+Line 566 com.squareup.moshi.JsonReader$Token:<clinit> ---> BEGIN_OBJECT,
+Line 235 com.squareup.moshi.JsonAdapter$5:fromJson ---> reader.setFailOnUnknown(skipForbidden);
+Line 56 com.squareup.moshi.ClassJsonAdapter$1:create ---> Class<?> rawType = Types.getRawType(type);
+Line 117 com.squareup.moshi.Types:getRawType ---> if (type instanceof Class<?>) {
+Line 53 com.squareup.moshi.ClassJsonAdapter$1:create ---> if (!(type instanceof Class) && !(type instanceof ParameterizedType)) {
+Line 119 com.squareup.moshi.Types:getRawType ---> return (Class<?>) type;
+Line 57 com.squareup.moshi.ClassJsonAdapter$1:create ---> if (rawType.isInterface() || rawType.isEnum()) return null;
+Line 58 com.squareup.moshi.ClassJsonAdapter$1:create ---> if (Util.isPlatformType(rawType) && !Types.isAllowedPlatformType(rawType)) {
+Line 137 com.squareup.moshi.Moshi:adapter ---> JsonAdapter<T> result = (JsonAdapter<T>) factories.get(i).create(type, annotations, this);
+Line 58 com.squareup.moshi.ClassJsonAdapter$1:create ---> if (Util.isPlatformType(rawType) && !Types.isAllowedPlatformType(rawType)) {
+Line 137 com.squareup.moshi.Moshi:adapter ---> JsonAdapter<T> result = (JsonAdapter<T>) factories.get(i).create(type, annotations, this);
+Line 129 com.squareup.moshi.ClassJsonAdapter:<init> ---> this.classFactory = classFactory;
+Line 57 com.squareup.moshi.internal.Util:jsonAnnotations ---> return jsonAnnotations(annotatedElement.getAnnotations());
+Line 233 com.squareup.moshi.JsonAdapter$5:fromJson ---> return delegate.fromJson(reader);
+Line 84 com.squareup.moshi.ClassJsonAdapter$1:create ---> return new ClassJsonAdapter<>(classFactory, fields).nullSafe();
+Line 130 com.squareup.moshi.ClassJsonAdapter:<init> ---> this.fieldsArray = fieldsMap.values().toArray(new FieldBinding[fieldsMap.size()]);
+Line 138 com.squareup.moshi.Moshi:adapter ---> if (result == null) continue;
+Line 226 com.squareup.moshi.JsonReader:pushScope ---> }
+Line 198 com.squareup.moshi.JsonUtf8Reader:peek ---> return Token.BEGIN_OBJECT;
+Line 164 com.squareup.moshi.JsonUtf8Reader:beginObject ---> }
+Line 348 com.squareup.moshi.JsonUtf8Reader:doPeek ---> return peeked = PEEKED_BEGIN_OBJECT;
+Line 134 com.squareup.moshi.JsonAdapter$2:fromJson ---> if (reader.peek() == JsonReader.Token.NULL) {
+Line 57 com.squareup.moshi.MoshiTest:failOnUnknownThrowsOnUnknownFields ---> assertThat(expected).hasMessage('Cannot skip unexpected NAME at $.diameter');

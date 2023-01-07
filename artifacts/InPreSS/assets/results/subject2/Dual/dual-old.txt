@@ -1,0 +1,474 @@
+Line 153 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> List<Field> injectedFields = new ArrayList<Field>();
+Line 169 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> for (Constructor<T> constructor : getConstructorsForType(type)) {
+Line 155 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> for (Field field : c.getDeclaredFields()) {
+Line 154 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> for (Class<?> c = type; c != Object.class; c = c.getSuperclass()) {
+Line 120 dagger.internal.Keys:extractQualifier ---> Annotation qualifier = null;
+Line 111 dagger.internal.Keys:get ---> return get(type, extractQualifier(annotations, subject));
+Line 156 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> if (!field.isAnnotationPresent(Inject.class) || Modifier.isStatic(field.getModifiers())) {
+Line 160 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> injectedFields.add(field);
+Line 159 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> field.setAccessible(true);
+Line 155 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> for (Field field : c.getDeclaredFields()) {
+Line 130 dagger.internal.Keys:extractQualifier ---> return qualifier;
+Line 161 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> keys.add(Keys.get(field.getGenericType(), field.getAnnotations(), field));
+Line 111 dagger.internal.Keys:get ---> return get(type, extractQualifier(annotations, subject));
+Line 71 dagger.internal.Keys:get ---> type = boxIfPrimitive(type);
+Line 71 dagger.internal.Keys:get ---> type = boxIfPrimitive(type);
+Line 71 dagger.internal.Keys:get ---> type = boxIfPrimitive(type);
+Line 266 dagger.internal.Keys:boxIfPrimitive ---> if (type == byte.class) return Byte.class;
+Line 266 dagger.internal.Keys:boxIfPrimitive ---> if (type == byte.class) return Byte.class;
+Line 267 dagger.internal.Keys:boxIfPrimitive ---> if (type == short.class) return Short.class;
+Line 267 dagger.internal.Keys:boxIfPrimitive ---> if (type == short.class) return Short.class;
+Line 268 dagger.internal.Keys:boxIfPrimitive ---> if (type == int.class) return Integer.class;
+Line 268 dagger.internal.Keys:boxIfPrimitive ---> if (type == int.class) return Integer.class;
+Line 269 dagger.internal.Keys:boxIfPrimitive ---> if (type == long.class) return Long.class;
+Line 269 dagger.internal.Keys:boxIfPrimitive ---> if (type == long.class) return Long.class;
+Line 270 dagger.internal.Keys:boxIfPrimitive ---> if (type == char.class) return Character.class;
+Line 270 dagger.internal.Keys:boxIfPrimitive ---> if (type == char.class) return Character.class;
+Line 271 dagger.internal.Keys:boxIfPrimitive ---> if (type == boolean.class) return Boolean.class;
+Line 271 dagger.internal.Keys:boxIfPrimitive ---> if (type == boolean.class) return Boolean.class;
+Line 272 dagger.internal.Keys:boxIfPrimitive ---> if (type == float.class) return Float.class;
+Line 272 dagger.internal.Keys:boxIfPrimitive ---> if (type == float.class) return Float.class;
+Line 273 dagger.internal.Keys:boxIfPrimitive ---> if (type == double.class) return Double.class;
+Line 251 dagger.internal.Keys:getClassName ---> int start = 0;
+Line 111 dagger.internal.RuntimeAggregatingPlugin:getAtInjectBinding ---> for (int i = 0; i < plugins.length; i++) {
+Line 273 dagger.internal.Keys:boxIfPrimitive ---> if (type == double.class) return Double.class;
+Line 60 dagger.internal.Keys:get ---> return get(type, null);
+Line 274 dagger.internal.Keys:boxIfPrimitive ---> if (type == void.class) return Void.class;
+Line 255 dagger.internal.Keys:getClassName ---> return (key.indexOf('<', start) == -1 && key.indexOf('[', start) == -1)
+Line 252 dagger.internal.Keys:getClassName ---> if (key.startsWith('@') || key.startsWith('members/')) {
+Line 111 dagger.internal.RuntimeAggregatingPlugin:getAtInjectBinding ---> for (int i = 0; i < plugins.length; i++) {
+Line 60 dagger.internal.Keys:get ---> return get(type, null);
+Line 274 dagger.internal.Keys:boxIfPrimitive ---> if (type == void.class) return Void.class;
+Line 72 dagger.internal.Keys:get ---> if (annotation == null && type instanceof Class && !((Class<?>) type).isArray()) {
+Line 275 dagger.internal.Keys:boxIfPrimitive ---> return type;
+Line 97 dagger.internal.Linker:linkRequested ---> assertLockHeld();
+Line 105 dagger.internal.Linker:linkRequested ---> if (bindings.containsKey(key)) {
+Line 154 dagger.internal.Linker:assertLockHeld ---> if (!Thread.holdsLock(this)) throw new AssertionError();
+Line 256 dagger.internal.Keys:getClassName ---> ? key.substring(start)
+Line 178 dagger.internal.Linker:createJitBinding ---> String className = Keys.getClassName(key);
+Line 46 dagger.internal.plugins.reflect.ReflectivePlugin:getAtInjectBinding ---> return ReflectiveAtInjectBinding.create(c, mustBeInjectable);
+Line 37 dagger.internal.plugins.reflect.ReflectivePlugin:getAtInjectBinding ---> c = Class.forName(className);
+Line 113 dagger.internal.RuntimeAggregatingPlugin:getAtInjectBinding ---> return plugins[i].getAtInjectBinding(key, className, mustBeInjectable);
+Line 210 dagger.internal.Linker:requestBinding ---> assertLockHeld();
+Line 154 dagger.internal.Linker:assertLockHeld ---> if (!Thread.holdsLock(this)) throw new AssertionError();
+Line 72 dagger.internal.Keys:get ---> if (annotation == null && type instanceof Class && !((Class<?>) type).isArray()) {
+Line 275 dagger.internal.Keys:boxIfPrimitive ---> return type;
+Line 73 dagger.internal.Keys:get ---> return ((Class<?>) type).getName();
+Line 186 dagger.internal.Keys:getBuiltInBindingsKey ---> return null;
+Line 109 dagger.internal.Linker:linkRequested ---> Binding<?> jitBinding = createJitBinding(key, binding.requiredBy, mustBeInjectable);
+Line 255 dagger.internal.Keys:getClassName ---> return (key.indexOf('<', start) == -1 && key.indexOf('[', start) == -1)
+Line 103 dagger.internal.Linker:linkRequested ---> String key = deferredBinding.deferredKey;
+Line 104 dagger.internal.Linker:linkRequested ---> boolean mustBeInjectable = deferredBinding.mustBeInjectable;
+Line 221 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> return new ReflectiveAtInjectBinding<T>(provideKey, membersKey, singleton, type,
+Line 42 dagger.internal.plugins.reflect.ReflectivePlugin:getAtInjectBinding ---> if (c.isInterface()) {
+Line 213 dagger.internal.Linker:requestBinding ---> for (Linker linker = this; linker != null; linker = linker.base) {
+Line 252 dagger.ObjectGraph:getEntryPointBinding ---> for (ObjectGraph graph = this; graph != null; graph = graph.base) {
+Line 73 dagger.internal.Keys:get ---> return ((Class<?>) type).getName();
+Line 221 dagger.ObjectGraph:get ---> String key = Keys.get(type);
+Line 222 dagger.ObjectGraph:get ---> String entryPointKey = Keys.getMembersKey(type);
+Line 60 dagger.internal.Keys:get ---> return get(type, null);
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+Line 170 dagger.internal.Linker:createJitBinding ---> if (builtInBindingsKey != null) {
+Line 200 dagger.internal.Keys:getLazyKey ---> return null;
+Line 180 dagger.internal.Linker:createJitBinding ---> Binding<?> atInjectBinding = plugin.getAtInjectBinding(key, className, mustBeInjectable);
+Line 46 dagger.internal.plugins.reflect.ReflectivePlugin:getAtInjectBinding ---> return ReflectiveAtInjectBinding.create(c, mustBeInjectable);
+Line 262 dagger.ObjectGraph:getEntryPointBinding ---> Binding<?> binding = linker.requestBinding(key, moduleClass, false);
+Line 214 dagger.internal.Linker:requestBinding ---> binding = linker.bindings.get(key);
+Line 253 dagger.ObjectGraph:getEntryPointBinding ---> moduleClass = graph.entryPoints.get(entryPointKey);
+Line 60 dagger.internal.Keys:get ---> return get(type, null);
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+Line 174 dagger.internal.Linker:createJitBinding ---> if (lazyKey != null) {
+Line 113 dagger.internal.RuntimeAggregatingPlugin:getAtInjectBinding ---> return plugins[i].getAtInjectBinding(key, className, mustBeInjectable);
+Line 332 dagger.internal.Linker$DeferredBinding:<init> ---> this.deferredKey = deferredKey;
+Line 333 dagger.internal.Linker$DeferredBinding:<init> ---> this.mustBeInjectable = mustBeInjectable;
+Line 223 dagger.internal.Linker:requestBinding ---> Binding<?> deferredBinding = new DeferredBinding(key, requiredBy, mustBeInjectable);
+Line 60 dagger.internal.Binding:<init> ---> this.membersKey = membersKey;
+Line 61 dagger.internal.Binding:<init> ---> this.bits = (singleton ? SINGLETON : 0);
+Line 62 dagger.internal.Binding:<init> ---> this.requiredBy = requiredBy;
+Line 331 dagger.internal.Linker$DeferredBinding:<init> ---> super(null, null, false, requiredBy);
+Line 55 dagger.internal.Binding:<init> ---> protected Binding(String provideKey, String membersKey, boolean singleton, Object requiredBy) {
+Line 59 dagger.internal.Binding:<init> ---> this.provideKey = provideKey;
+Line 221 dagger.internal.Linker:requestBinding ---> if (binding == null) {
+Line 327 dagger.internal.Linker$DeferredBinding:<init> ---> private static class DeferredBinding extends Binding<Object> {
+Line 226 dagger.internal.Linker:requestBinding ---> return null;
+Line 224 dagger.ObjectGraph:get ---> Binding<T> binding = (Binding<T>) getEntryPointBinding(entryPointKey, key);
+Line 182 dagger.internal.Linker:createJitBinding ---> return atInjectBinding;
+Line 224 dagger.internal.Linker:requestBinding ---> toLink.add(deferredBinding);
+Line 263 dagger.ObjectGraph:getEntryPointBinding ---> if (binding == null || !binding.isLinked()) {
+Line 115 dagger.internal.Linker:linkRequested ---> toLink.add(jitBinding);
+Line 264 dagger.ObjectGraph:getEntryPointBinding ---> linker.linkRequested();
+Line 80 dagger.ExtensionTest:scopedGraphs ---> assertThat(app.get(B.class)).isNotSameAs(app.get(B.class));
+Line 100 dagger.internal.Linker:linkRequested ---> while ((binding = toLink.poll()) != null) {
+Line 266 dagger.internal.Keys:boxIfPrimitive ---> if (type == byte.class) return Byte.class;
+Line 267 dagger.internal.Keys:boxIfPrimitive ---> if (type == short.class) return Short.class;
+Line 266 dagger.internal.Keys:boxIfPrimitive ---> if (type == byte.class) return Byte.class;
+Line 268 dagger.internal.Keys:boxIfPrimitive ---> if (type == int.class) return Integer.class;
+Line 267 dagger.internal.Keys:boxIfPrimitive ---> if (type == short.class) return Short.class;
+Line 71 dagger.internal.Keys:get ---> type = boxIfPrimitive(type);
+Line 71 dagger.internal.Keys:get ---> type = boxIfPrimitive(type);
+Line 269 dagger.internal.Keys:boxIfPrimitive ---> if (type == long.class) return Long.class;
+Line 268 dagger.internal.Keys:boxIfPrimitive ---> if (type == int.class) return Integer.class;
+Line 266 dagger.internal.Keys:boxIfPrimitive ---> if (type == byte.class) return Byte.class;
+Line 266 dagger.internal.Keys:boxIfPrimitive ---> if (type == byte.class) return Byte.class;
+Line 270 dagger.internal.Keys:boxIfPrimitive ---> if (type == char.class) return Character.class;
+Line 269 dagger.internal.Keys:boxIfPrimitive ---> if (type == long.class) return Long.class;
+Line 267 dagger.internal.Keys:boxIfPrimitive ---> if (type == short.class) return Short.class;
+Line 267 dagger.internal.Keys:boxIfPrimitive ---> if (type == short.class) return Short.class;
+Line 271 dagger.internal.Keys:boxIfPrimitive ---> if (type == boolean.class) return Boolean.class;
+Line 270 dagger.internal.Keys:boxIfPrimitive ---> if (type == char.class) return Character.class;
+Line 268 dagger.internal.Keys:boxIfPrimitive ---> if (type == int.class) return Integer.class;
+Line 268 dagger.internal.Keys:boxIfPrimitive ---> if (type == int.class) return Integer.class;
+Line 272 dagger.internal.Keys:boxIfPrimitive ---> if (type == float.class) return Float.class;
+Line 271 dagger.internal.Keys:boxIfPrimitive ---> if (type == boolean.class) return Boolean.class;
+Line 269 dagger.internal.Keys:boxIfPrimitive ---> if (type == long.class) return Long.class;
+Line 269 dagger.internal.Keys:boxIfPrimitive ---> if (type == long.class) return Long.class;
+Line 273 dagger.internal.Keys:boxIfPrimitive ---> if (type == double.class) return Double.class;
+Line 272 dagger.internal.Keys:boxIfPrimitive ---> if (type == float.class) return Float.class;
+Line 270 dagger.internal.Keys:boxIfPrimitive ---> if (type == char.class) return Character.class;
+Line 270 dagger.internal.Keys:boxIfPrimitive ---> if (type == char.class) return Character.class;
+Line 274 dagger.internal.Keys:boxIfPrimitive ---> if (type == void.class) return Void.class;
+Line 273 dagger.internal.Keys:boxIfPrimitive ---> if (type == double.class) return Double.class;
+Line 271 dagger.internal.Keys:boxIfPrimitive ---> if (type == boolean.class) return Boolean.class;
+Line 271 dagger.internal.Keys:boxIfPrimitive ---> if (type == boolean.class) return Boolean.class;
+Line 169 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> for (Constructor<T> constructor : getConstructorsForType(type)) {
+Line 275 dagger.internal.Keys:boxIfPrimitive ---> return type;
+Line 72 dagger.internal.Keys:get ---> if (annotation == null && type instanceof Class && !((Class<?>) type).isArray()) {
+Line 274 dagger.internal.Keys:boxIfPrimitive ---> if (type == void.class) return Void.class;
+Line 272 dagger.internal.Keys:boxIfPrimitive ---> if (type == float.class) return Float.class;
+Line 272 dagger.internal.Keys:boxIfPrimitive ---> if (type == float.class) return Float.class;
+Line 169 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> for (Constructor<T> constructor : getConstructorsForType(type)) {
+Line 228 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:getConstructorsForType ---> return (Constructor<T>[]) type.getDeclaredConstructors();
+Line 168 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> Constructor<T> injectedConstructor = null;
+Line 170 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> if (!constructor.isAnnotationPresent(Inject.class)) {
+Line 73 dagger.internal.Keys:get ---> return ((Class<?>) type).getName();
+Line 275 dagger.internal.Keys:boxIfPrimitive ---> return type;
+Line 72 dagger.internal.Keys:get ---> if (annotation == null && type instanceof Class && !((Class<?>) type).isArray()) {
+Line 273 dagger.internal.Keys:boxIfPrimitive ---> if (type == double.class) return Double.class;
+Line 273 dagger.internal.Keys:boxIfPrimitive ---> if (type == double.class) return Double.class;
+Line 210 dagger.internal.Linker:requestBinding ---> assertLockHeld();
+Line 154 dagger.internal.Linker:assertLockHeld ---> if (!Thread.holdsLock(this)) throw new AssertionError();
+Line 194 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> Type[] types = injectedConstructor.getGenericParameterTypes();
+Line 153 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> List<Field> injectedFields = new ArrayList<Field>();
+Line 169 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> for (Constructor<T> constructor : getConstructorsForType(type)) {
+Line 173 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> if (injectedConstructor != null) {
+Line 60 dagger.internal.Keys:get ---> return get(type, null);
+Line 73 dagger.internal.Keys:get ---> return ((Class<?>) type).getName();
+Line 60 dagger.internal.Keys:get ---> return get(type, null);
+Line 274 dagger.internal.Keys:boxIfPrimitive ---> if (type == void.class) return Void.class;
+Line 274 dagger.internal.Keys:boxIfPrimitive ---> if (type == void.class) return Void.class;
+Line 60 dagger.internal.Keys:get ---> return get(type, null);
+Line 213 dagger.internal.Linker:requestBinding ---> for (Linker linker = this; linker != null; linker = linker.base) {
+Line 195 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> parameterCount = types.length;
+Line 214 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> supertype = null;
+Line 222 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> injectedFields.toArray(new Field[injectedFields.size()]), injectedConstructor,
+Line 150 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> List<String> keys = new ArrayList<String>();
+Line 176 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> injectedConstructor = constructor;
+Line 149 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> boolean singleton = type.isAnnotationPresent(Singleton.class);
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+Line 60 dagger.internal.Keys:get ---> return get(type, null);
+Line 72 dagger.internal.Keys:get ---> if (annotation == null && type instanceof Class && !((Class<?>) type).isArray()) {
+Line 275 dagger.internal.Keys:boxIfPrimitive ---> return type;
+Line 275 dagger.internal.Keys:boxIfPrimitive ---> return type;
+Line 72 dagger.internal.Keys:get ---> if (annotation == null && type instanceof Class && !((Class<?>) type).isArray()) {
+Line 214 dagger.internal.Linker:requestBinding ---> binding = linker.bindings.get(key);
+Line 258 dagger.internal.Linker:scope ---> return new SingletonBinding<T>(binding);
+Line 233 dagger.internal.Linker:requestBinding ---> return binding;
+Line 193 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> injectedConstructor.setAccessible(true);
+Line 59 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:<init> ---> this.fields = fields;
+Line 60 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:<init> ---> this.supertype = supertype;
+Line 61 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:<init> ---> this.keys = keys;
+Line 61 dagger.internal.Binding:<init> ---> this.bits = (singleton ? SINGLETON : 0);
+Line 62 dagger.internal.Binding:<init> ---> this.requiredBy = requiredBy;
+Line 62 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:<init> ---> this.parameterBindings = new Binding<?>[parameterCount];
+Line 63 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:<init> ---> this.fieldBindings = new Binding<?>[fields.length];
+Line 55 dagger.internal.Binding:<init> ---> protected Binding(String provideKey, String membersKey, boolean singleton, Object requiredBy) {
+Line 59 dagger.internal.Binding:<init> ---> this.provideKey = provideKey;
+Line 60 dagger.internal.Binding:<init> ---> this.membersKey = membersKey;
+Line 223 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> parameterCount, supertype, keys.toArray(new String[keys.size()]));
+Line 57 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:<init> ---> super(provideKey, membersKey, singleton, type);
+Line 210 dagger.internal.Linker:requestBinding ---> assertLockHeld();
+Line 154 dagger.internal.Linker:assertLockHeld ---> if (!Thread.holdsLock(this)) throw new AssertionError();
+Line 73 dagger.internal.Keys:get ---> return ((Class<?>) type).getName();
+Line 73 dagger.internal.Keys:get ---> return ((Class<?>) type).getName();
+Line 154 dagger.internal.Linker:assertLockHeld ---> if (!Thread.holdsLock(this)) throw new AssertionError();
+Line 210 dagger.internal.Linker:requestBinding ---> assertLockHeld();
+Line 265 dagger.ObjectGraph:getEntryPointBinding ---> binding = linker.requestBinding(key, moduleClass, false);
+Line 221 dagger.internal.Linker:requestBinding ---> if (binding == null) {
+Line 280 dagger.internal.Linker$SingletonBinding:<init> ---> private static class SingletonBinding<T> extends Binding<T> {
+Line 267 dagger.ObjectGraph:getEntryPointBinding ---> return binding;
+Line 286 dagger.internal.Linker$SingletonBinding:<init> ---> this.binding = binding;
+Line 58 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:<init> ---> this.constructor = constructor;
+Line 92 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:get ---> Object[] args = new Object[parameterBindings.length];
+Line 251 dagger.internal.Keys:getClassName ---> int start = 0;
+Line 97 dagger.internal.Linker:linkRequested ---> assertLockHeld();
+Line 105 dagger.internal.Linker:linkRequested ---> if (bindings.containsKey(key)) {
+Line 154 dagger.internal.Linker:assertLockHeld ---> if (!Thread.holdsLock(this)) throw new AssertionError();
+Line 221 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> return new ReflectiveAtInjectBinding<T>(provideKey, membersKey, singleton, type,
+Line 213 dagger.internal.Linker:requestBinding ---> for (Linker linker = this; linker != null; linker = linker.base) {
+Line 154 dagger.internal.Linker:assertLockHeld ---> if (!Thread.holdsLock(this)) throw new AssertionError();
+Line 210 dagger.internal.Linker:requestBinding ---> assertLockHeld();
+Line 60 dagger.internal.Keys:get ---> return get(type, null);
+Line 60 dagger.internal.Keys:get ---> return get(type, null);
+Line 213 dagger.internal.Linker:requestBinding ---> for (Linker linker = this; linker != null; linker = linker.base) {
+Line 233 dagger.internal.Linker:requestBinding ---> return binding;
+Line 282 dagger.internal.Linker$SingletonBinding:<init> ---> private Object onlyInstance = UNINITIALIZED;
+Line 225 dagger.ObjectGraph:get ---> return binding.get();
+Line 29 dagger.internal.Linker:access$200 ---> public final class Linker {
+Line 300 dagger.internal.Linker$SingletonBinding:get ---> if (onlyInstance == UNINITIALIZED) {
+Line 301 dagger.internal.Linker$SingletonBinding:get ---> onlyInstance = binding.get();
+Line 98 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:get ---> result = constructor.newInstance(args);
+Line 42 dagger.internal.plugins.reflect.ReflectivePlugin:getAtInjectBinding ---> if (c.isInterface()) {
+Line 255 dagger.internal.Keys:getClassName ---> return (key.indexOf('<', start) == -1 && key.indexOf('[', start) == -1)
+Line 252 dagger.internal.Keys:getClassName ---> if (key.startsWith('@') || key.startsWith('members/')) {
+Line 23 dagger.internal.ThrowingErrorHandler:<init> ---> public final class ThrowingErrorHandler implements Linker.ErrorHandler {
+Line 127 dagger.ObjectGraph:makeGraph ---> Linker linker = new Linker((base != null) ? base.linker : null, plugin,
+Line 127 dagger.ObjectGraph:makeGraph ---> Linker linker = new Linker((base != null) ? base.linker : null, plugin,
+Line 186 dagger.internal.Keys:getBuiltInBindingsKey ---> return null;
+Line 109 dagger.internal.Linker:linkRequested ---> Binding<?> jitBinding = createJitBinding(key, binding.requiredBy, mustBeInjectable);
+Line 46 dagger.internal.plugins.reflect.ReflectivePlugin:getAtInjectBinding ---> return ReflectiveAtInjectBinding.create(c, mustBeInjectable);
+Line 262 dagger.ObjectGraph:getEntryPointBinding ---> Binding<?> binding = linker.requestBinding(key, moduleClass, false);
+Line 229 dagger.internal.Linker:requestBinding ---> if (!binding.isLinked()) {
+Line 252 dagger.ObjectGraph:getEntryPointBinding ---> for (ObjectGraph graph = this; graph != null; graph = graph.base) {
+Line 61 dagger.internal.Binding:<init> ---> this.bits = (singleton ? SINGLETON : 0);
+Line 229 dagger.internal.Linker:requestBinding ---> if (!binding.isLinked()) {
+Line 214 dagger.internal.Linker:requestBinding ---> binding = linker.bindings.get(key);
+Line 213 dagger.internal.Linker:requestBinding ---> for (Linker linker = this; linker != null; linker = linker.base) {
+Line 49 dagger.internal.Linker:<init> ---> private final Map<String, Binding<?>> bindings = new HashMap<String, Binding<?>>();
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+Line 252 dagger.ObjectGraph:getEntryPointBinding ---> for (ObjectGraph graph = this; graph != null; graph = graph.base) {
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+Line 214 dagger.internal.Linker:requestBinding ---> binding = linker.bindings.get(key);
+Line 267 dagger.ObjectGraph:getEntryPointBinding ---> return binding;
+Line 300 dagger.internal.Linker$SingletonBinding:get ---> if (onlyInstance == UNINITIALIZED) {
+Line 110 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:get ---> return result;
+Line 46 dagger.internal.plugins.reflect.ReflectivePlugin:getAtInjectBinding ---> return ReflectiveAtInjectBinding.create(c, mustBeInjectable);
+Line 111 dagger.internal.RuntimeAggregatingPlugin:getAtInjectBinding ---> for (int i = 0; i < plugins.length; i++) {
+Line 220 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> String membersKey = Keys.getMembersKey(type);
+Line 256 dagger.internal.Keys:getClassName ---> ? key.substring(start)
+Line 178 dagger.internal.Linker:createJitBinding ---> String className = Keys.getClassName(key);
+Line 127 dagger.ObjectGraph:makeGraph ---> Linker linker = new Linker((base != null) ? base.linker : null, plugin,
+Line 170 dagger.internal.Linker:createJitBinding ---> if (builtInBindingsKey != null) {
+Line 200 dagger.internal.Keys:getLazyKey ---> return null;
+Line 113 dagger.internal.RuntimeAggregatingPlugin:getAtInjectBinding ---> return plugins[i].getAtInjectBinding(key, className, mustBeInjectable);
+Line 40 dagger.internal.Linker:<init> ---> private final Queue<Binding<?>> toLink = new LinkedList<Binding<?>>();
+Line 221 dagger.internal.Linker:requestBinding ---> if (binding == null) {
+Line 59 dagger.internal.Binding:<init> ---> this.provideKey = provideKey;
+Line 60 dagger.internal.Binding:<init> ---> this.membersKey = membersKey;
+Line 61 dagger.internal.Binding:<init> ---> this.bits = (singleton ? SINGLETON : 0);
+Line 223 dagger.internal.Linker:requestBinding ---> Binding<?> deferredBinding = new DeferredBinding(key, requiredBy, mustBeInjectable);
+Line 327 dagger.internal.Linker$DeferredBinding:<init> ---> private static class DeferredBinding extends Binding<Object> {
+Line 331 dagger.internal.Linker$DeferredBinding:<init> ---> super(null, null, false, requiredBy);
+Line 55 dagger.internal.Binding:<init> ---> protected Binding(String provideKey, String membersKey, boolean singleton, Object requiredBy) {
+Line 333 dagger.internal.Linker$DeferredBinding:<init> ---> this.mustBeInjectable = mustBeInjectable;
+Line 62 dagger.internal.Binding:<init> ---> this.requiredBy = requiredBy;
+Line 332 dagger.internal.Linker$DeferredBinding:<init> ---> this.deferredKey = deferredKey;
+Line 223 dagger.internal.Linker:requestBinding ---> Binding<?> deferredBinding = new DeferredBinding(key, requiredBy, mustBeInjectable);
+Line 226 dagger.internal.Linker:requestBinding ---> return null;
+Line 224 dagger.ObjectGraph:get ---> Binding<T> binding = (Binding<T>) getEntryPointBinding(entryPointKey, key);
+Line 99 dagger.internal.Binding:isLinked ---> return (bits & LINKED) != 0;
+Line 221 dagger.internal.Linker:requestBinding ---> if (binding == null) {
+Line 253 dagger.ObjectGraph:getEntryPointBinding ---> moduleClass = graph.entryPoints.get(entryPointKey);
+Line 99 dagger.internal.Binding:isLinked ---> return (bits & LINKED) != 0;
+Line 221 dagger.internal.Linker:requestBinding ---> if (binding == null) {
+Line 214 dagger.internal.Linker:requestBinding ---> binding = linker.bindings.get(key);
+Line 253 dagger.ObjectGraph:getEntryPointBinding ---> moduleClass = graph.entryPoints.get(entryPointKey);
+Line 224 dagger.ObjectGraph:get ---> Binding<T> binding = (Binding<T>) getEntryPointBinding(entryPointKey, key);
+Line 233 dagger.internal.Linker:requestBinding ---> return binding;
+Line 225 dagger.ObjectGraph:get ---> return binding.get();
+Line 301 dagger.internal.Linker$SingletonBinding:get ---> onlyInstance = binding.get();
+Line 192 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> provideKey = Keys.get(type);
+Line 113 dagger.internal.RuntimeAggregatingPlugin:getAtInjectBinding ---> return plugins[i].getAtInjectBinding(key, className, mustBeInjectable);
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+Line 255 dagger.internal.Keys:getClassName ---> return (key.indexOf('<', start) == -1 && key.indexOf('[', start) == -1)
+Line 104 dagger.internal.Linker:linkRequested ---> boolean mustBeInjectable = deferredBinding.mustBeInjectable;
+Line 60 dagger.internal.Linker:<init> ---> this.plugin = plugin;
+Line 103 dagger.internal.Linker:linkRequested ---> String key = deferredBinding.deferredKey;
+Line 174 dagger.internal.Linker:createJitBinding ---> if (lazyKey != null) {
+Line 182 dagger.internal.Linker:createJitBinding ---> return atInjectBinding;
+Line 224 dagger.internal.Linker:requestBinding ---> toLink.add(deferredBinding);
+Line 263 dagger.ObjectGraph:getEntryPointBinding ---> if (binding == null || !binding.isLinked()) {
+Line 229 dagger.internal.Linker:requestBinding ---> if (!binding.isLinked()) {
+Line 262 dagger.ObjectGraph:getEntryPointBinding ---> Binding<?> binding = linker.requestBinding(key, moduleClass, false);
+Line 229 dagger.internal.Linker:requestBinding ---> if (!binding.isLinked()) {
+Line 265 dagger.ObjectGraph:getEntryPointBinding ---> binding = linker.requestBinding(key, moduleClass, false);
+Line 230 dagger.internal.Linker:requestBinding ---> toLink.add(binding); // This binding was never linked; link it now!
+Line 263 dagger.ObjectGraph:getEntryPointBinding ---> if (binding == null || !binding.isLinked()) {
+Line 303 dagger.internal.Linker$SingletonBinding:get ---> return (T) onlyInstance;
+Line 60 dagger.internal.Keys:get ---> return get(type, null);
+Line 37 dagger.internal.plugins.reflect.ReflectivePlugin:getAtInjectBinding ---> c = Class.forName(className);
+Line 60 dagger.internal.Keys:get ---> return get(type, null);
+Line 71 dagger.internal.Keys:get ---> type = boxIfPrimitive(type);
+Line 71 dagger.internal.Keys:get ---> type = boxIfPrimitive(type);
+Line 282 dagger.internal.Linker$SingletonBinding:<init> ---> private Object onlyInstance = UNINITIALIZED;
+Line 30 dagger.internal.Linker:<clinit> ---> private static final Object UNINITIALIZED = new Object();
+Line 180 dagger.internal.Linker:createJitBinding ---> Binding<?> atInjectBinding = plugin.getAtInjectBinding(key, className, mustBeInjectable);
+Line 222 dagger.ObjectGraph:get ---> String entryPointKey = Keys.getMembersKey(type);
+Line 115 dagger.internal.Linker:linkRequested ---> toLink.add(jitBinding);
+Line 264 dagger.ObjectGraph:getEntryPointBinding ---> linker.linkRequested();
+Line 230 dagger.internal.Linker:requestBinding ---> toLink.add(binding); // This binding was never linked; link it now!
+Line 264 dagger.ObjectGraph:getEntryPointBinding ---> linker.linkRequested();
+Line 225 dagger.ObjectGraph:get ---> return binding.get();
+Line 71 dagger.internal.Keys:get ---> type = boxIfPrimitive(type);
+Line 71 dagger.internal.Keys:get ---> type = boxIfPrimitive(type);
+Line 266 dagger.internal.Keys:boxIfPrimitive ---> if (type == byte.class) return Byte.class;
+Line 267 dagger.internal.Keys:boxIfPrimitive ---> if (type == short.class) return Short.class;
+Line 266 dagger.internal.Keys:boxIfPrimitive ---> if (type == byte.class) return Byte.class;
+Line 268 dagger.internal.Keys:boxIfPrimitive ---> if (type == int.class) return Integer.class;
+Line 267 dagger.internal.Keys:boxIfPrimitive ---> if (type == short.class) return Short.class;
+Line 269 dagger.internal.Keys:boxIfPrimitive ---> if (type == long.class) return Long.class;
+Line 268 dagger.internal.Keys:boxIfPrimitive ---> if (type == int.class) return Integer.class;
+Line 270 dagger.internal.Keys:boxIfPrimitive ---> if (type == char.class) return Character.class;
+Line 269 dagger.internal.Keys:boxIfPrimitive ---> if (type == long.class) return Long.class;
+Line 271 dagger.internal.Keys:boxIfPrimitive ---> if (type == boolean.class) return Boolean.class;
+Line 270 dagger.internal.Keys:boxIfPrimitive ---> if (type == char.class) return Character.class;
+Line 272 dagger.internal.Keys:boxIfPrimitive ---> if (type == float.class) return Float.class;
+Line 271 dagger.internal.Keys:boxIfPrimitive ---> if (type == boolean.class) return Boolean.class;
+Line 273 dagger.internal.Keys:boxIfPrimitive ---> if (type == double.class) return Double.class;
+Line 272 dagger.internal.Keys:boxIfPrimitive ---> if (type == float.class) return Float.class;
+Line 29 dagger.internal.Linker:access$200 ---> public final class Linker {
+Line 60 dagger.internal.Keys:get ---> return get(type, null);
+Line 274 dagger.internal.Keys:boxIfPrimitive ---> if (type == void.class) return Void.class;
+Line 273 dagger.internal.Keys:boxIfPrimitive ---> if (type == double.class) return Double.class;
+Line 72 dagger.internal.Keys:get ---> if (annotation == null && type instanceof Class && !((Class<?>) type).isArray()) {
+Line 275 dagger.internal.Keys:boxIfPrimitive ---> return type;
+Line 111 dagger.internal.RuntimeAggregatingPlugin:getAtInjectBinding ---> for (int i = 0; i < plugins.length; i++) {
+Line 274 dagger.internal.Keys:boxIfPrimitive ---> if (type == void.class) return Void.class;
+Line 60 dagger.internal.Keys:get ---> return get(type, null);
+Line 222 dagger.ObjectGraph:get ---> String entryPointKey = Keys.getMembersKey(type);
+Line 221 dagger.ObjectGraph:get ---> String key = Keys.get(type);
+Line 73 dagger.internal.Keys:get ---> return ((Class<?>) type).getName();
+Line 64 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:<init> ---> }
+Line 275 dagger.internal.Keys:boxIfPrimitive ---> return type;
+Line 72 dagger.internal.Keys:get ---> if (annotation == null && type instanceof Class && !((Class<?>) type).isArray()) {
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+Line 60 dagger.internal.Keys:get ---> return get(type, null);
+Line 73 dagger.internal.Keys:get ---> return ((Class<?>) type).getName();
+Line 221 dagger.ObjectGraph:get ---> String key = Keys.get(type);
+Line 221 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:create ---> return new ReflectiveAtInjectBinding<T>(provideKey, membersKey, singleton, type,
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+Line 60 dagger.internal.Keys:get ---> return get(type, null);
+Line 78 dagger.ExtensionTest:scopedGraphs ---> assertThat(app.get(A.class)).isNotNull();
+Line 100 dagger.internal.Linker:linkRequested ---> while ((binding = toLink.poll()) != null) {
+Line 64 dagger.internal.plugins.reflect.ReflectiveAtInjectBinding:<init> ---> }
+Line 155 dagger.internal.Linker:assertLockHeld ---> }
+Line 79 dagger.ExtensionTest:scopedGraphs ---> assertThat(app.get(A.class)).isSameAs(app.get(A.class));
+Line 155 dagger.internal.Linker:assertLockHeld ---> }
+Line 100 dagger.internal.Linker:linkRequested ---> while ((binding = toLink.poll()) != null) {
+Line 79 dagger.ExtensionTest:scopedGraphs ---> assertThat(app.get(A.class)).isSameAs(app.get(A.class));
+Line 222 dagger.ObjectGraph:get ---> String entryPointKey = Keys.getMembersKey(type);
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+Line 71 dagger.internal.Keys:get ---> type = boxIfPrimitive(type);
+Line 266 dagger.internal.Keys:boxIfPrimitive ---> if (type == byte.class) return Byte.class;
+Line 267 dagger.internal.Keys:boxIfPrimitive ---> if (type == short.class) return Short.class;
+Line 268 dagger.internal.Keys:boxIfPrimitive ---> if (type == int.class) return Integer.class;
+Line 269 dagger.internal.Keys:boxIfPrimitive ---> if (type == long.class) return Long.class;
+Line 270 dagger.internal.Keys:boxIfPrimitive ---> if (type == char.class) return Character.class;
+Line 271 dagger.internal.Keys:boxIfPrimitive ---> if (type == boolean.class) return Boolean.class;
+Line 272 dagger.internal.Keys:boxIfPrimitive ---> if (type == float.class) return Float.class;
+Line 267 dagger.internal.Keys:boxIfPrimitive ---> if (type == short.class) return Short.class;
+Line 273 dagger.internal.Keys:boxIfPrimitive ---> if (type == double.class) return Double.class;
+Line 268 dagger.internal.Keys:boxIfPrimitive ---> if (type == int.class) return Integer.class;
+Line 274 dagger.internal.Keys:boxIfPrimitive ---> if (type == void.class) return Void.class;
+Line 60 dagger.internal.Keys:get ---> return get(type, null);
+Line 269 dagger.internal.Keys:boxIfPrimitive ---> if (type == long.class) return Long.class;
+Line 275 dagger.internal.Keys:boxIfPrimitive ---> return type;
+Line 72 dagger.internal.Keys:get ---> if (annotation == null && type instanceof Class && !((Class<?>) type).isArray()) {
+Line 98 dagger.internal.RuntimeAggregatingPlugin:getModuleAdapter ---> ModuleAdapter<T> result = plugins[i].getModuleAdapter(moduleClass, module);
+Line 270 dagger.internal.Keys:boxIfPrimitive ---> if (type == char.class) return Character.class;
+Line 100 dagger.internal.RuntimeAggregatingPlugin:getModuleAdapter ---> return result;
+Line 73 dagger.internal.Keys:get ---> return ((Class<?>) type).getName();
+Line 96 dagger.internal.RuntimeAggregatingPlugin:getModuleAdapter ---> for (int i = 0; i < plugins.length; i++) {
+Line 103 dagger.internal.RuntimeAggregatingPlugin:getModuleAdapter ---> logNotFound('Module adapter', moduleClass.getName(), e);
+Line 33 dagger.internal.plugins.loading.ClassloadingPlugin:getModuleAdapter ---> return instantiate(moduleClass.getName(), MODULE_ADAPTER_SUFFIX);
+Line 271 dagger.internal.Keys:boxIfPrimitive ---> if (type == boolean.class) return Boolean.class;
+Line 55 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> seedAdapters[s++] = plugin.getModuleAdapter(module.getClass(), module);
+Line 70 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> for (ModuleAdapter<?> adapter : seedAdapters) {
+Line 65 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> adaptersByModuleType.put(adapter.getModule().getClass(), adapter);
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+Line 60 dagger.internal.Keys:get ---> return get(type, null);
+Line 50 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:toMemberKeys ---> result[i] = Keys.getMembersKey(entryPoints[i]);
+Line 49 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:toMemberKeys ---> for (int i = 0; i < entryPoints.length; i++) {
+Line 96 dagger.internal.RuntimeAggregatingPlugin:getModuleAdapter ---> for (int i = 0; i < plugins.length; i++) {
+Line 98 dagger.internal.RuntimeAggregatingPlugin:getModuleAdapter ---> ModuleAdapter<T> result = plugins[i].getModuleAdapter(moduleClass, module);
+Line 272 dagger.internal.Keys:boxIfPrimitive ---> if (type == float.class) return Float.class;
+Line 70 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> for (ModuleAdapter<?> adapter : seedAdapters) {
+Line 64 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> for (ModuleAdapter<?> adapter : seedAdapters) {
+Line 55 dagger.internal.ModuleAdapter:getModule ---> return module;
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+Line 49 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:toMemberKeys ---> for (int i = 0; i < entryPoints.length; i++) {
+Line 102 dagger.internal.RuntimeAggregatingPlugin:getModuleAdapter ---> if (i == plugins.length - 1) throw e;
+Line 51 dagger.internal.plugins.reflect.ReflectivePlugin:getModuleAdapter ---> Module annotation = moduleClass.getAnnotation(Module.class);
+Line 273 dagger.internal.Keys:boxIfPrimitive ---> if (type == double.class) return Double.class;
+Line 65 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> adaptersByModuleType.put(adapter.getModule().getClass(), adapter);
+Line 59 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> Map<Class<?>, ModuleAdapter<?>> adaptersByModuleType
+Line 50 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:toMemberKeys ---> result[i] = Keys.getMembersKey(entryPoints[i]);
+Line 39 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:<init> ---> toMemberKeys(annotation.entryPoints()),
+Line 40 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:<init> ---> annotation.staticInjections(),
+Line 41 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:<init> ---> annotation.overrides(),
+Line 42 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:<init> ---> annotation.includes(),
+Line 43 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:<init> ---> annotation.complete());
+Line 55 dagger.internal.plugins.reflect.ReflectivePlugin:getModuleAdapter ---> return (ModuleAdapter<T>) new ReflectiveModuleAdapter(moduleClass, annotation);
+Line 115 dagger.ObjectGraph:makeGraph ---> for (ModuleAdapter<?> moduleAdapter : getAllModuleAdapters(plugin, modules).values()) {
+Line 52 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> if (module instanceof Class) {
+Line 50 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> int s = 0;
+Line 274 dagger.internal.Keys:boxIfPrimitive ---> if (type == void.class) return Void.class;
+Line 74 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> return adaptersByModuleType;
+Line 52 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:toMemberKeys ---> return result;
+Line 38 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:<init> ---> super(
+Line 51 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> for (Object module : seedModules) {
+Line 55 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> seedAdapters[s++] = plugin.getModuleAdapter(module.getClass(), module);
+Line 101 dagger.ObjectGraph:create ---> RuntimeAggregatingPlugin plugin = new RuntimeAggregatingPlugin(
+Line 27 dagger.internal.plugins.loading.ClassloadingPlugin:<init> ---> public final class ClassloadingPlugin implements Plugin {
+Line 275 dagger.internal.Keys:boxIfPrimitive ---> return type;
+Line 72 dagger.internal.Keys:get ---> if (annotation == null && type instanceof Class && !((Class<?>) type).isArray()) {
+Line 117 dagger.ObjectGraph:makeGraph ---> entryPoints.put(key, moduleAdapter.getModule().getClass());
+Line 119 dagger.ObjectGraph:makeGraph ---> for (Class<?> c : moduleAdapter.staticInjections) {
+Line 119 dagger.ObjectGraph:makeGraph ---> for (Class<?> c : moduleAdapter.staticInjections) {
+Line 115 dagger.ObjectGraph:makeGraph ---> for (ModuleAdapter<?> moduleAdapter : getAllModuleAdapters(plugin, modules).values()) {
+Line 116 dagger.ObjectGraph:makeGraph ---> for (String key : moduleAdapter.entryPoints) {
+Line 35 dagger.internal.ModuleAdapter:<init> ---> this.entryPoints = entryPoints;
+Line 117 dagger.ObjectGraph:makeGraph ---> entryPoints.put(key, moduleAdapter.getModule().getClass());
+Line 99 dagger.internal.RuntimeAggregatingPlugin:getModuleAdapter ---> result.module = (module != null) ? module : result.newModule();
+Line 101 dagger.ObjectGraph:create ---> RuntimeAggregatingPlugin plugin = new RuntimeAggregatingPlugin(
+Line 32 dagger.internal.plugins.reflect.ReflectivePlugin:<init> ---> public final class ReflectivePlugin implements Plugin {
+Line 73 dagger.internal.Keys:get ---> return ((Class<?>) type).getName();
+Line 55 dagger.internal.ModuleAdapter:getModule ---> return module;
+Line 116 dagger.ObjectGraph:makeGraph ---> for (String key : moduleAdapter.entryPoints) {
+Line 116 dagger.ObjectGraph:makeGraph ---> for (String key : moduleAdapter.entryPoints) {
+Line 55 dagger.internal.ModuleAdapter:getModule ---> return module;
+Line 101 dagger.ObjectGraph:create ---> RuntimeAggregatingPlugin plugin = new RuntimeAggregatingPlugin(
+Line 101 dagger.ObjectGraph:create ---> RuntimeAggregatingPlugin plugin = new RuntimeAggregatingPlugin(
+Line 35 dagger.internal.RuntimeAggregatingPlugin:<init> ---> public RuntimeAggregatingPlugin(Plugin ... plugins) {
+Line 39 dagger.internal.RuntimeAggregatingPlugin:<init> ---> this.plugins = plugins;
+Line 107 dagger.ObjectGraph:makeGraph ---> Map<String, Class<?>> entryPoints = new LinkedHashMap<String, Class<?>>();
+Line 117 dagger.ObjectGraph:makeGraph ---> entryPoints.put(key, moduleAdapter.getModule().getClass());
+Line 108 dagger.ObjectGraph:makeGraph ---> Map<Class<?>, StaticInjection> staticInjections
+Line 60 dagger.internal.Keys:get ---> return get(type, null);
+Line 117 dagger.ObjectGraph:makeGraph ---> entryPoints.put(key, moduleAdapter.getModule().getClass());
+Line 80 dagger.ObjectGraph:<init> ---> this.base = base;
+Line 103 dagger.ObjectGraph:create ---> return makeGraph(null, plugin, modules);
+Line 132 dagger.ObjectGraph:makeGraph ---> return new ObjectGraph(base, linker, plugin, staticInjections, entryPoints);
+Line 74 dagger.ObjectGraph:<init> ---> Map<String, Class<?>> entryPoints) {
+Line 81 dagger.ObjectGraph:<init> ---> this.linker = linker;
+Line 82 dagger.ObjectGraph:<init> ---> this.plugin = plugin;
+Line 83 dagger.ObjectGraph:<init> ---> this.staticInjections = staticInjections;
+Line 224 dagger.ObjectGraph:get ---> Binding<T> binding = (Binding<T>) getEntryPointBinding(entryPointKey, key);
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+Line 84 dagger.ObjectGraph:<init> ---> this.entryPoints = entryPoints;
+Line 252 dagger.ObjectGraph:getEntryPointBinding ---> for (ObjectGraph graph = this; graph != null; graph = graph.base) {
+Line 132 dagger.ObjectGraph:makeGraph ---> return new ObjectGraph(base, linker, plugin, staticInjections, entryPoints);
+Line 60 dagger.internal.Keys:get ---> return get(type, null);
+Line 256 dagger.ObjectGraph:getEntryPointBinding ---> if (moduleClass == null) {
+Line 253 dagger.ObjectGraph:getEntryPointBinding ---> moduleClass = graph.entryPoints.get(entryPointKey);
+Line 49 dagger.ExtensionTest$RootModule:<init> ---> @Module(entryPoints = { A.class, B.class }) static class RootModule { }
+Line 103 dagger.ObjectGraph:create ---> return makeGraph(null, plugin, modules);
+Line 222 dagger.ObjectGraph:get ---> String entryPointKey = Keys.getMembersKey(type);
+Line 71 dagger.internal.Keys:get ---> type = boxIfPrimitive(type);
+Line 257 dagger.ObjectGraph:getEntryPointBinding ---> throw new IllegalArgumentException('No entry point for ' + entryPointKey
+Line 77 dagger.ExtensionTest:scopedGraphs ---> ObjectGraph app = ObjectGraph.create(new RootModule());
+Line 77 dagger.ExtensionTest:scopedGraphs ---> ObjectGraph app = ObjectGraph.create(new RootModule());
+Line 81 dagger.ExtensionTest:scopedGraphs ---> assertFailNoEntryPoint(app, C.class);
+Line 103 dagger.ExtensionTest:assertFailNoEntryPoint ---> assertThat(graph.get(clazz)).isNull();
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+Line 266 dagger.internal.Keys:boxIfPrimitive ---> if (type == byte.class) return Byte.class;
+Line 105 dagger.ExtensionTest:assertFailNoEntryPoint ---> assertThat(e.getMessage()).contains('No entry point');

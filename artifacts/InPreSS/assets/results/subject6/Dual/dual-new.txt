@@ -1,0 +1,30 @@
+Line 274 org.apache.http.client.utils.URIBuilder:setPath ---> return setPathSegments(path != null ? URLEncodedUtils.splitPathSegments(path) : null);
+Line 301 org.apache.http.client.utils.URIBuilder:setPathSegments ---> this.encodedPath = null;
+Line 299 org.apache.http.client.utils.URIBuilder:setPathSegments ---> this.pathSegments = pathSegments != null && pathSegments.size() > 0 ? new ArrayList<String>(pathSegments) : null;
+Line 274 org.apache.http.client.utils.URIBuilder:setPath ---> return setPathSegments(path != null ? URLEncodedUtils.splitPathSegments(path) : null);
+Line 156 org.apache.http.client.utils.URIBuilder:buildString ---> if (this.encodedPath != null) {
+Line 158 org.apache.http.client.utils.URIBuilder:buildString ---> } else if (this.pathSegments != null) {
+Line 147 org.apache.http.client.utils.URIBuilder:buildString ---> if (InetAddressUtils.isIPv6Address(this.host)) {
+Line 263 org.apache.http.client.utils.URIBuilder:setPort ---> this.encodedSchemeSpecificPart = null;
+Line 135 org.apache.http.client.utils.URIBuilder:buildString ---> if (this.encodedSchemeSpecificPart != null) {
+Line 138 org.apache.http.client.utils.URIBuilder:buildString ---> if (this.encodedAuthority != null) {
+Line 140 org.apache.http.client.utils.URIBuilder:buildString ---> } else if (this.host != null) {
+Line 118 org.apache.http.conn.util.InetAddressUtils:isIPv6Address ---> return isIPv6StdAddress(input) || isIPv6HexCompressedAddress(input);
+Line 49 com.intuit.wasabi.export.rest.impl.DefaultRestEndPoint:getRestEndPointURI ---> uriBuilder.setPort(port);
+Line 264 org.apache.http.client.utils.URIBuilder:setPort ---> this.encodedAuthority = null;
+Line 132 org.apache.http.client.utils.URIBuilder:buildString ---> if (this.scheme != null) {
+Line 169 org.apache.http.client.utils.URIBuilder:buildString ---> if (this.encodedFragment != null) {
+Line 262 org.apache.http.client.utils.URIBuilder:setPort ---> this.port = port < 0 ? -1 : port;
+Line 152 org.apache.http.client.utils.URIBuilder:buildString ---> if (this.port >= 0) {
+Line 147 org.apache.http.client.utils.URIBuilder:buildString ---> if (InetAddressUtils.isIPv6Address(this.host)) {
+Line 265 org.apache.http.client.utils.URIBuilder:setPort ---> return this;
+Line 133 org.apache.http.client.utils.URIBuilder:buildString ---> sb.append(this.scheme).append(':');
+Line 171 org.apache.http.client.utils.URIBuilder:buildString ---> } else if (this.fragment != null) {
+Line 153 org.apache.http.client.utils.URIBuilder:buildString ---> sb.append(':').append(this.port);
+Line 150 org.apache.http.client.utils.URIBuilder:buildString ---> sb.append(this.host);
+Line 127 org.apache.http.client.utils.URIBuilder:build ---> return new URI(buildString());
+Line 51 com.intuit.wasabi.export.rest.impl.DefaultRestEndPoint:getRestEndPointURI ---> assignmentURI = uriBuilder.build();
+Line 174 org.apache.http.client.utils.URIBuilder:buildString ---> return sb.toString();
+Line 127 org.apache.http.client.utils.URIBuilder:build ---> return new URI(buildString());
+Line 55 com.intuit.wasabi.export.rest.impl.DefaultRestEndPoint:getRestEndPointURI ---> return assignmentURI;
+Line 47 com.intuit.wasabi.export.rest.impl.DefaultRestEndPointTest:testGetRestEndPointURI ---> then(uri.toString()).isEqualTo('http://host1:5path1');

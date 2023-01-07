@@ -1,0 +1,63 @@
+Line 520 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> final int b = bb.get() & 0xff;
+Line 520 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> final int b = bb.get() & 0xff;
+Line 520 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> final int b = bb.get() & 0xff;
+Line 520 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> final int b = bb.get() & 0xff;
+Line 520 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> final int b = bb.get() & 0xff;
+Line 152 org.apache.http.client.utils.URIBuilder:buildString ---> sb.append(encodePath(normalizePath(this.path)));
+Line 521 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> if (safechars.get(b)) {
+Line 677 org.apache.http.client.utils.URLEncodedUtils:encPath ---> return urlEncode(content, charset, PATHSAFE, false);
+Line 518 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> final ByteBuffer bb = charset.encode(content);
+Line 521 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> if (safechars.get(b)) {
+Line 521 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> if (safechars.get(b)) {
+Line 521 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> if (safechars.get(b)) {
+Line 521 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> if (safechars.get(b)) {
+Line 496 org.apache.http.client.utils.URIBuilder:normalizePath ---> String s = path;
+Line 497 org.apache.http.client.utils.URIBuilder:normalizePath ---> if (s == null) {
+Line 522 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> buf.append((char) b);
+Line 522 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> buf.append((char) b);
+Line 519 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> while (bb.hasRemaining()) {
+Line 522 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> buf.append((char) b);
+Line 519 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> while (bb.hasRemaining()) {
+Line 519 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> while (bb.hasRemaining()) {
+Line 517 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> final StringBuilder buf = new StringBuilder();
+Line 522 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> buf.append((char) b);
+Line 519 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> while (bb.hasRemaining()) {
+Line 519 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> while (bb.hasRemaining()) {
+Line 514 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> if (content == null) {
+Line 519 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> while (bb.hasRemaining()) {
+Line 522 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> buf.append((char) b);
+Line 509 org.apache.http.client.utils.URIBuilder:normalizePath ---> return s;
+Line 191 org.apache.http.client.utils.URIBuilder:encodePath ---> return URLEncodedUtils.encPath(path, this.charset != null ? this.charset : Consts.UTF_8);
+Line 533 org.apache.http.client.utils.URLEncodedUtils:urlEncode ---> return buf.toString();
+Line 256 org.apache.http.client.utils.URIBuilder:setPath ---> this.encodedPath = null;
+Line 152 org.apache.http.client.utils.URIBuilder:buildString ---> sb.append(encodePath(normalizePath(this.path)));
+Line 677 org.apache.http.client.utils.URLEncodedUtils:encPath ---> return urlEncode(content, charset, PATHSAFE, false);
+Line 149 org.apache.http.client.utils.URIBuilder:buildString ---> if (this.encodedPath != null) {
+Line 254 org.apache.http.client.utils.URIBuilder:setPath ---> this.path = path;
+Line 191 org.apache.http.client.utils.URIBuilder:encodePath ---> return URLEncodedUtils.encPath(path, this.charset != null ? this.charset : Consts.UTF_8);
+Line 151 org.apache.http.client.utils.URIBuilder:buildString ---> } else if (this.path != null) {
+Line 234 org.apache.http.client.utils.URIBuilder:setHost ---> this.host = host;
+Line 140 org.apache.http.client.utils.URIBuilder:buildString ---> if (InetAddressUtils.isIPv6Address(this.host)) {
+Line 152 org.apache.http.client.utils.URIBuilder:buildString ---> sb.append(encodePath(normalizePath(this.path)));
+Line 245 org.apache.http.client.utils.URIBuilder:setPort ---> this.encodedSchemeSpecificPart = null;
+Line 128 org.apache.http.client.utils.URIBuilder:buildString ---> if (this.encodedSchemeSpecificPart != null) {
+Line 131 org.apache.http.client.utils.URIBuilder:buildString ---> if (this.encodedAuthority != null) {
+Line 133 org.apache.http.client.utils.URIBuilder:buildString ---> } else if (this.host != null) {
+Line 49 com.intuit.wasabi.export.rest.impl.DefaultRestEndPoint:getRestEndPointURI ---> uriBuilder.setPort(port);
+Line 246 org.apache.http.client.utils.URIBuilder:setPort ---> this.encodedAuthority = null;
+Line 125 org.apache.http.client.utils.URIBuilder:buildString ---> if (this.scheme != null) {
+Line 162 org.apache.http.client.utils.URIBuilder:buildString ---> if (this.encodedFragment != null) {
+Line 244 org.apache.http.client.utils.URIBuilder:setPort ---> this.port = port < 0 ? -1 : port;
+Line 145 org.apache.http.client.utils.URIBuilder:buildString ---> if (this.port >= 0) {
+Line 140 org.apache.http.client.utils.URIBuilder:buildString ---> if (InetAddressUtils.isIPv6Address(this.host)) {
+Line 247 org.apache.http.client.utils.URIBuilder:setPort ---> return this;
+Line 126 org.apache.http.client.utils.URIBuilder:buildString ---> sb.append(this.scheme).append(':');
+Line 164 org.apache.http.client.utils.URIBuilder:buildString ---> } else if (this.fragment != null) {
+Line 146 org.apache.http.client.utils.URIBuilder:buildString ---> sb.append(':').append(this.port);
+Line 143 org.apache.http.client.utils.URIBuilder:buildString ---> sb.append(this.host);
+Line 120 org.apache.http.client.utils.URIBuilder:build ---> return new URI(buildString());
+Line 51 com.intuit.wasabi.export.rest.impl.DefaultRestEndPoint:getRestEndPointURI ---> assignmentURI = uriBuilder.build();
+Line 167 org.apache.http.client.utils.URIBuilder:buildString ---> return sb.toString();
+Line 120 org.apache.http.client.utils.URIBuilder:build ---> return new URI(buildString());
+Line 55 com.intuit.wasabi.export.rest.impl.DefaultRestEndPoint:getRestEndPointURI ---> return assignmentURI;
+Line 47 com.intuit.wasabi.export.rest.impl.DefaultRestEndPointTest:testGetRestEndPointURI ---> then(uri.toString()).isEqualTo('http://host1:5path1');

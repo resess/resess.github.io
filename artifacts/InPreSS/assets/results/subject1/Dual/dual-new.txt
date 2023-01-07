@@ -1,0 +1,465 @@
+Line 117 org.codehaus.jettison.json.JSONTokener:next ---> char c = this.mySource.charAt(this.myIndex);
+Line 119 org.codehaus.jettison.json.JSONTokener:next ---> return c;
+Line 224 org.codehaus.jettison.json.JSONObject:<init> ---> c = x.nextClean();
+Line 201 org.codehaus.jettison.json.JSONTokener:nextClean ---> return c;
+Line 201 org.codehaus.jettison.json.JSONTokener:nextClean ---> return c;
+Line 117 org.codehaus.jettison.json.JSONTokener:next ---> char c = this.mySource.charAt(this.myIndex);
+Line 205 org.codehaus.jettison.json.JSONObject:<init> ---> if (x.nextClean() != '{') {
+Line 210 org.codehaus.jettison.json.JSONObject:<init> ---> switch (c) {
+Line 224 org.codehaus.jettison.json.JSONObject:<init> ---> c = x.nextClean();
+Line 119 org.codehaus.jettison.json.JSONTokener:next ---> return c;
+Line 117 org.codehaus.jettison.json.JSONTokener:next ---> char c = this.mySource.charAt(this.myIndex);
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 225 org.codehaus.jettison.json.JSONObject:<init> ---> if (c == '=') {
+Line 201 org.codehaus.jettison.json.JSONTokener:nextClean ---> return c;
+Line 107 org.codehaus.jettison.json.JSONArray:<init> ---> if (x.nextClean() != '[') {
+Line 119 org.codehaus.jettison.json.JSONTokener:next ---> return c;
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 229 org.codehaus.jettison.json.JSONObject:<init> ---> } else if (c != ':') {
+Line 201 org.codehaus.jettison.json.JSONTokener:nextClean ---> return c;
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 107 org.codehaus.jettison.json.JSONArray:<init> ---> if (x.nextClean() != '[') {
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 73 org.codehaus.jettison.json.JSONTokener:back ---> if (this.myIndex > 0) {
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 74 org.codehaus.jettison.json.JSONTokener:back ---> this.myIndex -= 1;
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 73 org.codehaus.jettison.json.JSONTokener:back ---> if (this.myIndex > 0) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 74 org.codehaus.jettison.json.JSONTokener:back ---> this.myIndex -= 1;
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 73 org.codehaus.jettison.json.JSONTokener:back ---> if (this.myIndex > 0) {
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 74 org.codehaus.jettison.json.JSONTokener:back ---> this.myIndex -= 1;
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 205 org.codehaus.jettison.json.JSONObject:<init> ---> if (x.nextClean() != '{') {
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 73 org.codehaus.jettison.json.JSONTokener:back ---> if (this.myIndex > 0) {
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 74 org.codehaus.jettison.json.JSONTokener:back ---> this.myIndex -= 1;
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 73 org.codehaus.jettison.json.JSONTokener:back ---> if (this.myIndex > 0) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 74 org.codehaus.jettison.json.JSONTokener:back ---> this.myIndex -= 1;
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 73 org.codehaus.jettison.json.JSONTokener:back ---> if (this.myIndex > 0) {
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 74 org.codehaus.jettison.json.JSONTokener:back ---> this.myIndex -= 1;
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 118 org.codehaus.jettison.json.JSONTokener:next ---> this.myIndex += 1;
+Line 106 org.codehaus.jettison.json.JSONTokener:more ---> return this.myIndex < this.mySource.length();
+Line 232 org.codehaus.jettison.json.JSONObject:<init> ---> doPut(key, x.nextValue(), x.getThreshold(), true);
+Line 117 org.codehaus.jettison.json.JSONTokener:next ---> char c = this.mySource.charAt(this.myIndex);
+Line 116 org.codehaus.jettison.json.JSONTokener:next ---> if (more()) {
+Line 64 org.codehaus.jettison.json.JSONTokener:getThreshold ---> return threshold;
+Line 90 org.codehaus.jettison.json.JSONArray:<init> ---> }
+Line 119 org.codehaus.jettison.json.JSONTokener:next ---> return c;
+Line 76 org.codehaus.jettison.json.JSONTokener:back ---> }
+Line 164 org.codehaus.jettison.mapped.MappedNamespaceConvention:processAttributesAndNamespaces ---> }
+Line 33 com.thoughtworks.xstream.io.path.PathTrackingWriter:<init> ---> this.isNameEncoding = writer.underlyingWriter() instanceof AbstractWriter;
+Line 60 com.thoughtworks.xstream.io.AbstractWriter:underlyingWriter ---> return this;
+Line 240 org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName ---> if ( xns == null ) {
+Line 31 com.thoughtworks.xstream.core.util.ObjectIdDictionary:<init> ---> private final ReferenceQueue queue = new ReferenceQueue();
+Line 30 com.thoughtworks.xstream.core.util.ObjectIdDictionary:<init> ---> private final Map map = new HashMap();
+Line 28 com.thoughtworks.xstream.core.util.ObjectIdDictionary:<init> ---> public class ObjectIdDictionary {
+Line 37 com.thoughtworks.xstream.core.AbstractReferenceMarshaller:<init> ---> private ObjectIdDictionary implicitElements = new ObjectIdDictionary();
+Line 23 com.thoughtworks.xstream.io.WriterWrapper:<init> ---> protected WriterWrapper(HierarchicalStreamWriter wrapped) {
+Line 45 com.thoughtworks.xstream.core.AbstractReferenceMarshaller:<init> ---> this.writer = new PathTrackingWriter(writer, pathTracker);
+Line 34 com.thoughtworks.xstream.io.path.PathTrackingWriter:<init> ---> this.pathTracker = pathTracker;
+Line 33 com.thoughtworks.xstream.io.path.PathTrackingWriter:<init> ---> this.isNameEncoding = writer.underlyingWriter() instanceof AbstractWriter;
+Line 24 com.thoughtworks.xstream.io.WriterWrapper:<init> ---> this.wrapped = wrapped;
+Line 238 org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName ---> String xns = (String) getNamespaceURI( jns );
+Line 241 org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName ---> qname = new QName( name );
+Line 37 com.thoughtworks.xstream.core.AbstractReferenceMarshaller:<init> ---> private ObjectIdDictionary implicitElements = new ObjectIdDictionary();
+Line 38 com.thoughtworks.xstream.core.AbstractReferenceMarshaller:<init> ---> private PathTracker pathTracker = new PathTracker();
+Line 25 com.thoughtworks.xstream.core.ReferenceByXPathMarshaller:<init> ---> this.mode = mode;
+Line 45 com.thoughtworks.xstream.core.AbstractReferenceMarshaller:<init> ---> this.writer = new PathTrackingWriter(writer, pathTracker);
+Line 172 org.codehaus.jettison.mapped.MappedNamespaceConvention:getNamespaceURI ---> if ( ignoreNamespaces ) {
+Line 247 org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName ---> return qname;
+Line 37 com.thoughtworks.xstream.core.ReferenceByXPathMarshallingStrategy:createMarshallingContext ---> return new ReferenceByXPathMarshaller(writer, converterLookup, mapper, mode);
+Line 46 com.thoughtworks.xstream.io.AbstractWriter:<init> ---> this.nameCoder = (NameCoder)Cloneables.cloneIfPossible(nameCoder);
+Line 55 com.thoughtworks.xstream.core.util.Cloneables:clone ---> return null;
+Line 176 org.codehaus.jettison.mapped.MappedNamespaceConvention:getNamespaceURI ---> return (String) jnsToXns.get( prefix );
+Line 231 org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName ---> dot = 0;
+Line 70 org.codehaus.jettison.mapped.MappedNamespaceConvention:<init> ---> this.primitiveArrayKeys = config.getPrimitiveArrayKeys();
+Line 78 org.codehaus.jettison.mapped.Configuration:<init> ---> private Set primitiveArrayKeys = Collections.EMPTY_SET;
+Line 206 org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName ---> return createQName( rootName );
+Line 49 com.thoughtworks.xstream.core.AbstractReferenceMarshaller:convert ---> if (getMapper().isImmutableValueType(item.getClass())) {
+Line 60 com.thoughtworks.xstream.core.util.Cloneables:cloneIfPossible ---> return clone == null ? o : clone;
+Line 240 org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName ---> if ( xns == null ) {
+Line 237 org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName ---> String jns = name.substring( 0, dot );
+Line 65 org.codehaus.jettison.mapped.MappedXMLStreamReader:next ---> if (event == START_DOCUMENT) {
+Line 158 org.codehaus.jettison.mapped.Configuration:getPrimitiveArrayKeys ---> return primitiveArrayKeys;
+Line 155 org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement ---> JSONArray array = (JSONArray) newObj;
+Line 64 org.codehaus.jettison.Node:<init> ---> this.name = con.createQName(name, this);
+Line 66 org.codehaus.jettison.Node:<init> ---> this.attributes = new HashMap();
+Line 65 org.codehaus.jettison.Node:<init> ---> this.namespaces = new HashMap();
+Line 109 com.thoughtworks.xstream.core.TreeMarshaller:getMapper ---> return this.mapper;
+Line 45 com.thoughtworks.xstream.io.AbstractWriter:<init> ---> protected AbstractWriter(NameCoder nameCoder) {
+Line 46 com.thoughtworks.xstream.io.AbstractWriter:<init> ---> this.nameCoder = (NameCoder)Cloneables.cloneIfPossible(nameCoder);
+Line 74 com.thoughtworks.xstream.io.xml.StaxWriter:<init> ---> this.namespaceRepairingMode = namespaceRepairingMode;
+Line 73 com.thoughtworks.xstream.io.xml.StaxWriter:<init> ---> this.writeEnclosingDocument = writeEnclosingDocument;
+Line 72 com.thoughtworks.xstream.io.xml.StaxWriter:<init> ---> this.out = out;
+Line 71 com.thoughtworks.xstream.io.xml.StaxWriter:<init> ---> this.qnameMap = qnameMap;
+Line 84 com.thoughtworks.xstream.io.json.JettisonStaxWriter:<init> ---> this.convention = convention;
+Line 206 org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName ---> return createQName( rootName );
+Line 241 org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName ---> qname = new QName( name );
+Line 41 com.thoughtworks.xstream.core.ReferenceByXPathUnmarshaller:getCurrentReferenceKey ---> return pathTracker.getPath();
+Line 67 org.codehaus.jettison.mapped.MappedXMLStreamReader:next ---> } else if (event == CHARACTERS) {
+Line 412 org.codehaus.jettison.json.JSONTokener:newJSONObject ---> return new JSONObject(this);
+Line 201 org.codehaus.jettison.json.JSONObject:<init> ---> this();
+Line 261 org.codehaus.jettison.mapped.MappedXMLStreamReader:isAvoidArraySpecificEvents ---> Set<?> keys = convention.getPrimitiveArrayKeys();
+Line 70 org.codehaus.jettison.mapped.MappedNamespaceConvention:<init> ---> this.primitiveArrayKeys = config.getPrimitiveArrayKeys();
+Line 156 org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement ---> if (!processUniformArrayIfPossible(nextKey, array)) {
+Line 157 org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement ---> node = new Node(nextKey, convention);
+Line 49 com.thoughtworks.xstream.core.AbstractReferenceMarshaller:convert ---> if (getMapper().isImmutableValueType(item.getClass())) {
+Line 145 com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver:createWriter ---> return new JettisonStaxWriter(new QNameMap(), mof.createXMLStreamWriter(writer), getNameCoder(), convention);
+Line 31 com.thoughtworks.xstream.core.util.ObjectIdDictionary:<init> ---> private final ReferenceQueue queue = new ReferenceQueue();
+Line 30 com.thoughtworks.xstream.core.util.ObjectIdDictionary:<init> ---> private final Map map = new HashMap();
+Line 28 com.thoughtworks.xstream.core.util.ObjectIdDictionary:<init> ---> public class ObjectIdDictionary {
+Line 37 com.thoughtworks.xstream.core.ReferenceByXPathMarshallingStrategy:createMarshallingContext ---> return new ReferenceByXPathMarshaller(writer, converterLookup, mapper, mode);
+Line 416 org.codehaus.jettison.json.JSONTokener:newJSONArray ---> return new JSONArray(this);
+Line 60 org.codehaus.jettison.Node:<init> ---> this.name = con.createQName(name, this);
+Line 247 org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName ---> return qname;
+Line 128 com.thoughtworks.xstream.io.path.PathTracker:peekElement ---> Integer integer = ((Integer) indexMapStack[idx].get(pathStack[idx]));
+Line 165 com.thoughtworks.xstream.io.path.PathTracker:getPath ---> if (currentPath == null) {
+Line 71 org.codehaus.jettison.mapped.MappedXMLStreamReader:next ---> } else if (event == START_ELEMENT || event == END_ELEMENT) {
+Line 162 org.codehaus.jettison.json.JSONObject:<init> ---> this(false, null, true, true);
+Line 311 org.codehaus.jettison.mapped.MappedNamespaceConvention:getPrimitiveArrayKeys ---> return primitiveArrayKeys;
+Line 183 org.codehaus.jettison.mapped.MappedXMLStreamReader:processUniformArrayIfPossible ---> if (!isAvoidArraySpecificEvents(arrayKey)) {
+Line 161 org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement ---> processElement();
+Line 137 com.thoughtworks.xstream.mapper.MapperWrapper:isImmutableValueType ---> return isImmutableValueTypeMapper.isImmutableValueType(type);
+Line 37 com.thoughtworks.xstream.core.TreeMarshaller:<init> ---> this.writer = writer;
+Line 38 com.thoughtworks.xstream.core.TreeMarshaller:<init> ---> this.converterLookup = converterLookup;
+Line 39 com.thoughtworks.xstream.core.TreeMarshaller:<init> ---> this.mapper = mapper;
+Line 31 com.thoughtworks.xstream.core.util.ObjectIdDictionary:<init> ---> private final ReferenceQueue queue = new ReferenceQueue();
+Line 28 com.thoughtworks.xstream.core.util.ObjectIdDictionary:<init> ---> public class ObjectIdDictionary {
+Line 32 com.thoughtworks.xstream.core.TreeMarshaller:<init> ---> private ObjectIdDictionary parentObjects = new ObjectIdDictionary();
+Line 36 com.thoughtworks.xstream.core.TreeMarshaller:<init> ---> HierarchicalStreamWriter writer, ConverterLookup converterLookup, Mapper mapper) {
+Line 106 org.codehaus.jettison.json.JSONArray:<init> ---> this();
+Line 206 org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName ---> return createQName( rootName );
+Line 58 org.codehaus.jettison.Node:<init> ---> keys = object.keys();
+Line 129 com.thoughtworks.xstream.io.path.PathTracker:peekElement ---> int index = integer.intValue();
+Line 168 com.thoughtworks.xstream.io.path.PathTracker:getPath ---> for (int i = -pointer; ++i <= 0; ) {
+Line 72 org.codehaus.jettison.mapped.MappedXMLStreamReader:next ---> if (event == END_ELEMENT && nodes.size() > 0) {
+Line 138 org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement ---> nextKey = node.getName().getLocalPart();
+Line 171 org.codehaus.jettison.json.JSONObject:<init> ---> this.myHashMap = new LinkedHashMap();
+Line 58 org.codehaus.jettison.Node:<init> ---> keys = object.keys();
+Line 33 com.thoughtworks.xstream.io.xml.QNameMap:<init> ---> private String defaultNamespace = '';
+Line 27 com.thoughtworks.xstream.io.xml.QNameMap:<init> ---> public class QNameMap {
+Line 32 com.thoughtworks.xstream.io.xml.QNameMap:<init> ---> private String defaultPrefix = '';
+Line 144 com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver:createWriter ---> if (useSerializeAsArray) {
+Line 40 org.codehaus.jettison.mapped.MappedXMLOutputFactory:createXMLStreamWriter ---> return new MappedXMLStreamWriter(convention, writer);
+Line 145 com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver:createWriter ---> return new JettisonStaxWriter(new QNameMap(), mof.createXMLStreamWriter(writer), getNameCoder(), convention);
+Line 210 org.codehaus.jettison.mapped.MappedXMLStreamWriter:<init> ---> this.namespaceContext = convention;
+Line 209 org.codehaus.jettison.mapped.MappedXMLStreamWriter:<init> ---> this.writer = writer;
+Line 208 org.codehaus.jettison.mapped.MappedXMLStreamWriter:<init> ---> this.convention = convention;
+Line 41 org.codehaus.jettison.mapped.MappedXMLStreamWriter:<init> ---> private Stack<JSONProperty> stack = new Stack<JSONProperty>();
+Line 25 org.codehaus.jettison.AbstractXMLStreamWriter:<init> ---> private ArrayList<String> serializedAsArrays = new ArrayList<String>();
+Line 23 org.codehaus.jettison.AbstractXMLStreamWriter:<init> ---> public abstract class AbstractXMLStreamWriter implements XMLStreamWriter {
+Line 145 com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver:createWriter ---> return new JettisonStaxWriter(new QNameMap(), mof.createXMLStreamWriter(writer), getNameCoder(), convention);
+Line 63 org.codehaus.jettison.Node:<init> ---> public Node(String name, Convention con) throws XMLStreamException {
+Line 262 org.codehaus.jettison.mapped.MappedXMLStreamReader:isAvoidArraySpecificEvents ---> return keys != null && keys.contains(key);
+Line 238 org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName ---> String xns = (String) getNamespaceURI( jns );
+Line 231 org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName ---> dot = 0;
+Line 165 org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement ---> node = new Node((Node)nodes.peek(), nextKey, (JSONObject) newObj, convention);
+Line 170 org.codehaus.jettison.json.JSONObject:<init> ---> boolean escapeForwardSlash) {
+Line 145 org.codehaus.jettison.json.JSONObject:<init> ---> private boolean escapeForwardSlashAlways = true;
+Line 201 org.codehaus.jettison.json.JSONObject:<init> ---> this();
+Line 173 org.codehaus.jettison.json.JSONObject:<init> ---> this.ignoredElements = ignoredElements;
+Line 172 org.codehaus.jettison.json.JSONObject:<init> ---> this.dropRootElement = dropRootElement;
+Line 175 org.codehaus.jettison.json.JSONObject:<init> ---> this.escapeForwardSlashAlways = escapeForwardSlash;
+Line 174 org.codehaus.jettison.json.JSONObject:<init> ---> this.writeNullAsString = writeNullAsString;
+Line 144 org.codehaus.jettison.json.JSONObject:<init> ---> private boolean writeNullAsString = true;
+Line 49 com.thoughtworks.xstream.core.AbstractReferenceMarshaller:convert ---> if (getMapper().isImmutableValueType(item.getClass())) {
+Line 36 com.thoughtworks.xstream.core.AbstractReferenceMarshaller:<init> ---> private ObjectIdDictionary references = new ObjectIdDictionary();
+Line 52 org.codehaus.jettison.mapped.MappedXMLStreamReader:<init> ---> } else if (top instanceof JSONArray && !(((JSONArray)top).length() == 1 && ((JSONArray)top).get(0).equals(''))) {
+Line 89 org.codehaus.jettison.json.JSONArray:<init> ---> this.myArrayList = new ArrayList();
+Line 60 org.codehaus.jettison.Node:<init> ---> this.name = con.createQName(name, this);
+Line 54 org.codehaus.jettison.Node:<init> ---> this.attributes = new LinkedHashMap();
+Line 44 org.codehaus.jettison.Node:<init> ---> throws JSONException, XMLStreamException {
+Line 45 org.codehaus.jettison.Node:<init> ---> this.parent = parent;
+Line 53 org.codehaus.jettison.Node:<init> ---> this.namespaces = new LinkedHashMap();
+Line 575 org.codehaus.jettison.json.JSONObject:keys ---> return this.myHashMap.keySet().iterator();
+Line 53 org.codehaus.jettison.mapped.MappedXMLStreamReader:<init> ---> this.node = new Node(null, rootName, obj, convention);
+Line 162 org.codehaus.jettison.json.JSONObject:<init> ---> this(false, null, true, true);
+Line 130 com.thoughtworks.xstream.io.path.PathTracker:peekElement ---> if (index > 1) {
+Line 126 com.thoughtworks.xstream.io.path.PathTracker:peekElement ---> int idx = pointer + i - 1;
+Line 83 org.codehaus.jettison.mapped.MappedXMLStreamReader:next ---> if (currentValue != null) {
+Line 165 org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement ---> node = new Node((Node)nodes.peek(), nextKey, (JSONObject) newObj, convention);
+Line 575 org.codehaus.jettison.json.JSONObject:keys ---> return this.myHashMap.keySet().iterator();
+Line 145 com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver:createWriter ---> return new JettisonStaxWriter(new QNameMap(), mof.createXMLStreamWriter(writer), getNameCoder(), convention);
+Line 40 org.codehaus.jettison.mapped.MappedXMLOutputFactory:createXMLStreamWriter ---> return new MappedXMLStreamWriter(convention, writer);
+Line 53 com.thoughtworks.xstream.io.AbstractDriver:getNameCoder ---> return replacer;
+Line 145 com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver:createWriter ---> return new JettisonStaxWriter(new QNameMap(), mof.createXMLStreamWriter(writer), getNameCoder(), convention);
+Line 64 org.codehaus.jettison.Node:<init> ---> this.name = con.createQName(name, this);
+Line 157 org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement ---> node = new Node(nextKey, convention);
+Line 38 org.codehaus.jettison.AbstractXMLInputFactory:<init> ---> private int bufSize = INPUT_BUF_SIZE;
+Line 172 org.codehaus.jettison.mapped.MappedNamespaceConvention:getNamespaceURI ---> if ( ignoreNamespaces ) {
+Line 237 org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName ---> String jns = name.substring( 0, dot );
+Line 165 org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement ---> node = new Node((Node)nodes.peek(), nextKey, (JSONObject) newObj, convention);
+Line 39 org.codehaus.jettison.json.JSONTokener:<init> ---> private int threshold = -1;
+Line 59 org.codehaus.jettison.mapped.MappedXMLInputFactory:createJSONObject ---> return new JSONObject(tokener);
+Line 47 com.thoughtworks.xstream.core.TreeMarshaller:convertAnother ---> if (converter == null) {
+Line 30 com.thoughtworks.xstream.core.util.ObjectIdDictionary:<init> ---> private final Map map = new HashMap();
+Line 54 com.thoughtworks.xstream.core.AbstractReferenceMarshaller:convert ---> Id existingReference = (Id)references.lookupId(item);
+Line 1127 org.codehaus.jettison.json.JSONObject:equals ---> return false;
+Line 359 org.codehaus.jettison.json.JSONArray:length ---> return this.myArrayList.size();
+Line 46 org.codehaus.jettison.Node:<init> ---> this.object = object;
+Line 89 com.thoughtworks.xstream.converters.collections.CollectionConverter:populateCollection ---> while (reader.hasMoreChildren()) {
+Line 54 org.codehaus.jettison.Node:<init> ---> this.attributes = new LinkedHashMap();
+Line 60 org.codehaus.jettison.mapped.MappedXMLStreamReader:<init> ---> event = START_DOCUMENT;
+Line 53 org.codehaus.jettison.mapped.MappedXMLStreamReader:<init> ---> this.node = new Node(null, rootName, obj, convention);
+Line 58 org.codehaus.jettison.Node:<init> ---> keys = object.keys();
+Line 59 org.codehaus.jettison.mapped.MappedXMLInputFactory:createJSONObject ---> return new JSONObject(tokener);
+Line 171 org.codehaus.jettison.json.JSONObject:<init> ---> this.myHashMap = new LinkedHashMap();
+Line 135 com.thoughtworks.xstream.io.path.PathTracker:peekElement ---> name = pathStack[idx];
+Line 85 org.codehaus.jettison.mapped.MappedXMLStreamReader:next ---> } else if ((node.getKeys() != null && node.getKeys().hasNext()) || node.getArray() != null) {
+Line 58 org.codehaus.jettison.Node:<init> ---> keys = object.keys();
+Line 86 org.codehaus.jettison.mapped.MappedXMLStreamReader:next ---> processElement();
+Line 410 org.codehaus.jettison.json.JSONObject:get ---> return o;
+Line 43 org.codehaus.jettison.mapped.MappedNamespaceConvention:<init> ---> private Map<Object, Object> jnsToXns = new HashMap<Object, Object>();
+Line 39 org.codehaus.jettison.mapped.MappedXMLStreamWriter:<init> ---> private String valueKey = MIXED_CONTENT_VALUE_KEY;
+Line 52 com.thoughtworks.xstream.io.xml.StaxWriter:<init> ---> this(qnameMap, out, true, true, nameCoder);
+Line 83 com.thoughtworks.xstream.io.json.JettisonStaxWriter:<init> ---> super(qnameMap, out, nameCoder);
+Line 206 org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName ---> return createQName( rootName );
+Line 175 org.codehaus.jettison.AbstractXMLInputFactory:readAll ---> char[] buf = new char[bufSize];
+Line 179 org.codehaus.jettison.AbstractXMLInputFactory:readAll ---> int count = r.read(buf, len, buf.length-len);
+Line 184 org.codehaus.jettison.AbstractXMLInputFactory:readAll ---> } while (len < buf.length);
+Line 49 org.codehaus.jettison.mapped.MappedXMLStreamReader:<init> ---> Object top = obj.get(rootName);
+Line 44 org.codehaus.jettison.mapped.MappedXMLStreamReader:<init> ---> String rootName = (String) obj.keys().next();
+Line 85 org.codehaus.jettison.mapped.MappedXMLStreamReader:next ---> } else if ((node.getKeys() != null && node.getKeys().hasNext()) || node.getArray() != null) {
+Line 141 org.codehaus.jettison.Node:getKeys ---> return keys;
+Line 141 org.codehaus.jettison.Node:getKeys ---> return keys;
+Line 176 org.codehaus.jettison.mapped.MappedNamespaceConvention:getNamespaceURI ---> return (String) jnsToXns.get( prefix );
+Line 179 org.codehaus.jettison.AbstractXMLInputFactory:readAll ---> int count = r.read(buf, len, buf.length-len);
+Line 405 org.codehaus.jettison.json.JSONObject:get ---> Object o = opt(key);
+Line 575 org.codehaus.jettison.json.JSONObject:keys ---> return this.myHashMap.keySet().iterator();
+Line 121 com.thoughtworks.xstream.mapper.MapperWrapper:serializedClass ---> return serializedClassMapper.serializedClass(type);
+Line 85 org.codehaus.jettison.mapped.MappedXMLStreamReader:next ---> } else if ((node.getKeys() != null && node.getKeys().hasNext()) || node.getArray() != null) {
+Line 164 org.codehaus.jettison.mapped.MappedNamespaceConvention:processAttributesAndNamespaces ---> }
+Line 181 org.codehaus.jettison.AbstractXMLInputFactory:readAll ---> return (len == 0) ? '' : new String(buf, 0, len);
+Line 638 org.codehaus.jettison.json.JSONObject:opt ---> return key == null ? null : this.myHashMap.get(key);
+Line 44 org.codehaus.jettison.mapped.MappedXMLStreamReader:<init> ---> String rootName = (String) obj.keys().next();
+Line 128 com.thoughtworks.xstream.mapper.AnnotationMapper:serializedClass ---> return super.serializedClass(type);
+Line 48 org.codehaus.jettison.json.JSONTokener:<init> ---> this.mySource = s.trim();
+Line 44 org.codehaus.jettison.mapped.MappedXMLInputFactory:createXMLStreamReader ---> JSONObject root = createJSONObject(tokener);
+Line 145 com.thoughtworks.xstream.mapper.MapperWrapper:defaultImplementationOf ---> return defaultImplementationOfMapper.defaultImplementationOf(type);
+Line 121 com.thoughtworks.xstream.mapper.MapperWrapper:serializedClass ---> return serializedClassMapper.serializedClass(type);
+Line 61 org.codehaus.jettison.Node:<init> ---> }
+Line 103 org.codehaus.jettison.AbstractXMLStreamReader:getAttributeValue ---> return (String) node.getAttributes().get(new QName(ns, local));
+Line 165 org.codehaus.jettison.AbstractXMLInputFactory:createXMLStreamReader ---> return createXMLStreamReader(new JSONTokener(readAll(reader)));
+Line 45 org.codehaus.jettison.mapped.MappedXMLInputFactory:createXMLStreamReader ---> return new MappedXMLStreamReader(root, convention);
+Line 96 com.thoughtworks.xstream.core.util.ObjectIdDictionary:lookupId ---> Object id = map.get(new IdWrapper(obj));
+Line 52 org.codehaus.jettison.mapped.MappedXMLStreamReader:<init> ---> } else if (top instanceof JSONArray && !(((JSONArray)top).length() == 1 && ((JSONArray)top).get(0).equals(''))) {
+Line 146 org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement ---> newObj = node.getObject().get(nextKey);
+Line 149 org.codehaus.jettison.Node:getObject ---> return object;
+Line 32 com.thoughtworks.xstream.io.ReaderWrapper:hasMoreChildren ---> return wrapped.hasMoreChildren();
+Line 58 com.thoughtworks.xstream.mapper.LambdaMapper:serializedClass ---> return super.serializedClass(replacement == null ? type : replacement);
+Line 133 org.codehaus.jettison.Node:getAttributes ---> return attributes;
+Line 45 org.codehaus.jettison.mapped.MappedXMLInputFactory:createXMLStreamReader ---> return new MappedXMLStreamReader(root, convention);
+Line 69 com.thoughtworks.xstream.mapper.DefaultImplementationsMapper:defaultImplementationOf ---> return (Class)typeToImpl.get(type);
+Line 141 org.codehaus.jettison.Node:getKeys ---> return keys;
+Line 405 org.codehaus.jettison.json.JSONObject:get ---> Object o = opt(key);
+Line 205 org.codehaus.jettison.json.JSONObject:<init> ---> if (x.nextClean() != '{') {
+Line 50 com.thoughtworks.xstream.core.TreeUnmarshaller:convertAnother ---> return convertAnother(parent, type, null);
+Line 39 com.thoughtworks.xstream.io.path.PathTrackingReader:moveDown ---> }
+Line 121 com.thoughtworks.xstream.mapper.MapperWrapper:serializedClass ---> return serializedClassMapper.serializedClass(type);
+Line 103 org.codehaus.jettison.AbstractXMLStreamReader:getAttributeValue ---> return (String) node.getAttributes().get(new QName(ns, local));
+Line 165 org.codehaus.jettison.AbstractXMLInputFactory:createXMLStreamReader ---> return createXMLStreamReader(new JSONTokener(readAll(reader)));
+Line 100 com.thoughtworks.xstream.io.path.Path:<init> ---> }
+Line 90 com.thoughtworks.xstream.io.xml.AbstractPullReader:hasMoreChildren ---> return true;
+Line 145 org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement ---> nextKey = (String) node.getKeys().next();
+Line 638 org.codehaus.jettison.json.JSONObject:opt ---> return key == null ? null : this.myHashMap.get(key);
+Line 55 com.thoughtworks.xstream.core.TreeUnmarshaller:convertAnother ---> if (converter == null) {
+Line 92 com.thoughtworks.xstream.io.path.PathTracker:pushElement ---> }
+Line 137 com.thoughtworks.xstream.io.path.PathTracker:peekElement ---> return name;
+Line 61 com.thoughtworks.xstream.mapper.EnumMapper:serializedClass ---> return super.serializedClass(type);
+Line 41 com.thoughtworks.xstream.core.util.HierarchicalStreams:readClassAttribute ---> if (attributeName != null) {
+Line 88 com.thoughtworks.xstream.io.xml.StaxReader:getAttribute ---> return in.getAttributeValue(null, encodeAttribute(name));
+Line 32 com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy:unmarshal ---> return context.start(dataHolder);
+Line 44 com.thoughtworks.xstream.io.xml.StaxReader:<init> ---> this.in = in;
+Line 141 org.codehaus.jettison.Node:getKeys ---> return keys;
+Line 585 com.thoughtworks.xstream.XStream:<init> ---> this.converterLookup = converterLookup;
+Line 115 com.thoughtworks.xstream.io.xml.AbstractPullReader:moveUp ---> }
+Line 68 com.thoughtworks.xstream.mapper.DefaultImplementationsMapper:defaultImplementationOf ---> if (typeToImpl.containsKey(type)) {
+Line 149 com.thoughtworks.xstream.mapper.MapperWrapper:aliasForAttribute ---> return aliasForAttributeMapper.aliasForAttribute(attribute);
+Line 148 org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement ---> if (newObj instanceof String) {
+Line 157 com.thoughtworks.xstream.mapper.MapperWrapper:aliasForSystemAttribute ---> return aliasForSystemAttributeMapper.aliasForSystemAttribute(attribute);
+Line 72 com.thoughtworks.xstream.mapper.SecurityMapper:realClass ---> for (int i = 0; i < permissions.size(); ++i) {
+Line 66 com.thoughtworks.xstream.core.TreeUnmarshaller:convertAnother ---> return convert(parent, type, converter);
+Line 41 com.thoughtworks.xstream.io.xml.QNameMap:getJavaClassName ---> if (qnameToJava != null) {
+Line 122 com.thoughtworks.xstream.io.xml.AbstractPullReader:move ---> elementStack.push(pullElementName());
+Line 47 com.thoughtworks.xstream.io.xml.QNameMap:getJavaClassName ---> return qname.getLocalPart();
+Line 80 com.thoughtworks.xstream.io.xml.StaxReader:pullElementName ---> return qnameMap.getJavaClassName(qname);
+Line 35 com.thoughtworks.xstream.io.xml.AbstractPullReader:<init> ---> private final FastStack elementStack = new FastStack(16);
+Line 46 com.thoughtworks.xstream.io.AbstractReader:<init> ---> this.nameCoder = (NameCoder)Cloneables.cloneIfPossible(nameCoder);
+Line 33 com.thoughtworks.xstream.core.util.FastStack:push ---> stack[pointer++] = value;
+Line 26 com.thoughtworks.xstream.core.util.FastStack:<init> ---> stack = new Object[initialCapacity];
+Line 212 com.thoughtworks.xstream.io.xml.AbstractPullReader:getNodeName ---> return unescapeXmlName((String) elementStack.peek());
+Line 64 com.thoughtworks.xstream.io.AbstractReader:decodeNode ---> return nameCoder.decodeNode(name);
+Line 48 com.thoughtworks.xstream.core.util.FastStack:peek ---> return pointer == 0 ? null : stack[pointer - 1];
+Line 37 com.thoughtworks.xstream.io.naming.NoNameCoder:decodeNode ---> return nodeName;
+Line 52 com.thoughtworks.xstream.io.xml.AbstractXmlReader:unescapeXmlName ---> return decodeNode(name);
+Line 212 com.thoughtworks.xstream.io.xml.AbstractPullReader:getNodeName ---> return unescapeXmlName((String) elementStack.peek());
+Line 64 com.thoughtworks.xstream.io.AbstractReader:decodeNode ---> return nameCoder.decodeNode(name);
+Line 52 com.thoughtworks.xstream.io.xml.AbstractXmlReader:unescapeXmlName ---> return decodeNode(name);
+Line 44 com.thoughtworks.xstream.io.ReaderWrapper:getNodeName ---> return wrapped.getNodeName();
+Line 212 com.thoughtworks.xstream.io.xml.AbstractPullReader:getNodeName ---> return unescapeXmlName((String) elementStack.peek());
+Line 29 com.thoughtworks.xstream.core.util.HierarchicalStreams:readClassType ---> type = mapper.realClass(reader.getNodeName());
+Line 28 com.thoughtworks.xstream.core.util.HierarchicalStreams:readClassType ---> if (classAttribute == null) {
+Line 44 com.thoughtworks.xstream.io.ReaderWrapper:getNodeName ---> return wrapped.getNodeName();
+Line 48 com.thoughtworks.xstream.mapper.CachingMapper:realClass ---> realClassCache.put(elementName, result);
+Line 29 com.thoughtworks.xstream.core.util.HierarchicalStreams:readClassType ---> type = mapper.realClass(reader.getNodeName());
+Line 117 com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter:readItem ---> return readBareItem(reader, context, current);
+Line 38 com.thoughtworks.xstream.mapper.CachingMapper:realClass ---> Object cached = realClassCache.get(elementName);
+Line 39 com.thoughtworks.xstream.mapper.CachingMapper:realClass ---> if (cached != null) {
+Line 107 com.thoughtworks.xstream.core.TreeUnmarshaller:getRequiredType ---> return (Class)types.peek();
+Line 33 com.thoughtworks.xstream.core.util.FastStack:push ---> stack[pointer++] = value;
+Line 47 com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter:mapper ---> return mapper;
+Line 91 com.thoughtworks.xstream.mapper.MapperWrapper:<init> ---> isReferenceableMapper = (Mapper)wrapperMap.get('isReferenceable');
+Line 54 com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller:convert ---> final boolean isReferenceable = getMapper().isReferenceable(type);
+Line 72 com.thoughtworks.xstream.mapper.ImmutableTypesMapper:isReferenceable ---> return super.isReferenceable(type);
+Line 517 com.thoughtworks.xstream.XStream$1:lookupConverterForType ---> return defaultConverterLookup.lookupConverterForType(type);
+Line 48 com.thoughtworks.xstream.core.TreeMarshaller:convertAnother ---> converter = converterLookup.lookupConverterForType(item.getClass());
+Line 65 com.thoughtworks.xstream.core.DefaultConverterLookup:lookupConverterForType ---> Converter cachedConverter = type != null ? (Converter)typeToConverterMap.get(type.getName()) : null;
+Line 102 com.thoughtworks.xstream.core.DefaultConverterLookup:registerConverter ---> typeToConverterMap.clear();
+Line 77 com.thoughtworks.xstream.core.DefaultConverterLookup:lookupConverterForType ---> typeToConverterMap.put(type.getName(), converter);
+Line 48 com.thoughtworks.xstream.core.TreeMarshaller:convertAnother ---> converter = converterLookup.lookupConverterForType(item.getClass());
+Line 517 com.thoughtworks.xstream.XStream$1:lookupConverterForType ---> return defaultConverterLookup.lookupConverterForType(type);
+Line 65 com.thoughtworks.xstream.core.DefaultConverterLookup:lookupConverterForType ---> Converter cachedConverter = type != null ? (Converter)typeToConverterMap.get(type.getName()) : null;
+Line 132 com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter:readBareItem ---> return context.convertAnother(current, type);
+Line 131 com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter:readBareItem ---> Class type = HierarchicalStreams.readClassType(reader, mapper());
+Line 41 com.thoughtworks.xstream.mapper.CachingMapper:realClass ---> return (Class)cached;
+Line 48 com.thoughtworks.xstream.core.util.FastStack:peek ---> return pointer == 0 ? null : stack[pointer - 1];
+Line 79 com.thoughtworks.xstream.converters.collections.CollectionConverter:unmarshal ---> Collection collection = (Collection) createCollection(context.getRequiredType());
+Line 154 com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter:createCollection ---> Class defaultType = mapper().defaultImplementationOf(type);
+Line 54 com.thoughtworks.xstream.mapper.ImmutableTypesMapper:addImmutableType ---> unreferenceableTypes.add(type);
+Line 141 com.thoughtworks.xstream.mapper.MapperWrapper:isReferenceable ---> return isReferenceableMapper.isReferenceable(type);
+Line 55 com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller:convert ---> if (reference != null) {
+Line 79 com.thoughtworks.xstream.converters.collections.CollectionConverter:unmarshal ---> Collection collection = (Collection) createCollection(context.getRequiredType());
+Line 141 com.thoughtworks.xstream.mapper.MapperWrapper:isReferenceable ---> return isReferenceableMapper.isReferenceable(type);
+Line 517 com.thoughtworks.xstream.XStream$1:lookupConverterForType ---> return defaultConverterLookup.lookupConverterForType(type);
+Line 77 com.thoughtworks.xstream.core.DefaultConverterLookup:lookupConverterForType ---> typeToConverterMap.put(type.getName(), converter);
+Line 50 com.thoughtworks.xstream.core.TreeUnmarshaller:convertAnother ---> return convertAnother(parent, type, null);
+Line 82 com.thoughtworks.xstream.mapper.MapperWrapper:<init> ---> defaultImplementationOfMapper = (Mapper)wrapperMap.get('defaultImplementationOf');
+Line 33 com.thoughtworks.xstream.core.util.HierarchicalStreams:readClassType ---> return type;
+Line 54 com.thoughtworks.xstream.core.TreeUnmarshaller:convertAnother ---> type = mapper.defaultImplementationOf(type);
+Line 80 com.thoughtworks.xstream.converters.collections.CollectionConverter:unmarshal ---> populateCollection(reader, context, collection);
+Line 107 com.thoughtworks.xstream.core.TreeUnmarshaller:getRequiredType ---> return (Class)types.peek();
+Line 103 com.thoughtworks.xstream.converters.collections.CollectionConverter:createCollection ---> return super.createCollection(this.type != null ? this.type : type);
+Line 145 com.thoughtworks.xstream.mapper.MapperWrapper:defaultImplementationOf ---> return defaultImplementationOfMapper.defaultImplementationOf(type);
+Line 69 com.thoughtworks.xstream.mapper.ImmutableTypesMapper:isReferenceable ---> if (unreferenceableTypes.contains(type)) {
+Line 66 com.thoughtworks.xstream.core.TreeUnmarshaller:convertAnother ---> return convert(parent, type, converter);
+Line 72 com.thoughtworks.xstream.mapper.EnumMapper:isReferenceable ---> if (type != null && Enum.class.isAssignableFrom(type)) {
+Line 66 com.thoughtworks.xstream.core.DefaultConverterLookup:lookupConverterForType ---> if (cachedConverter != null) {
+Line 65 com.thoughtworks.xstream.core.DefaultConverterLookup:lookupConverterForType ---> Converter cachedConverter = type != null ? (Converter)typeToConverterMap.get(type.getName()) : null;
+Line 45 com.thoughtworks.xstream.core.TreeUnmarshaller:<init> ---> this.converterLookup = converterLookup;
+Line 55 com.thoughtworks.xstream.core.TreeUnmarshaller:convertAnother ---> if (converter == null) {
+Line 145 com.thoughtworks.xstream.mapper.MapperWrapper:defaultImplementationOf ---> return defaultImplementationOfMapper.defaultImplementationOf(type);
+Line 85 com.thoughtworks.xstream.converters.collections.CollectionConverter:populateCollection ---> populateCollection(reader, context, collection, collection);
+Line 89 com.thoughtworks.xstream.converters.collections.CollectionConverter:populateCollection ---> while (reader.hasMoreChildren()) {
+Line 79 com.thoughtworks.xstream.converters.collections.CollectionConverter:unmarshal ---> Collection collection = (Collection) createCollection(context.getRequiredType());
+Line 156 com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter:createCollection ---> return defaultType.newInstance();
+Line 72 com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller:convert ---> localResult = super.convert(parent, type, converter);
+Line 67 com.thoughtworks.xstream.core.DefaultConverterLookup:lookupConverterForType ---> return cachedConverter;
+Line 56 com.thoughtworks.xstream.core.TreeUnmarshaller:convertAnother ---> converter = converterLookup.lookupConverterForType(type);
+Line 91 com.thoughtworks.xstream.converters.collections.CollectionConverter:populateCollection ---> addCurrentElementToCollection(reader, context, collection, target);
+Line 92 com.thoughtworks.xstream.converters.collections.CollectionConverter:populateCollection ---> reader.moveUp();
+Line 92 com.thoughtworks.xstream.converters.collections.CollectionConverter:populateCollection ---> reader.moveUp();
+Line 42 com.thoughtworks.xstream.io.path.PathTrackingReader:moveUp ---> super.moveUp();
+Line 103 com.thoughtworks.xstream.converters.collections.CollectionConverter:createCollection ---> return super.createCollection(this.type != null ? this.type : type);
+Line 72 com.thoughtworks.xstream.core.TreeUnmarshaller:convert ---> return converter.unmarshal(reader, this);
+Line 517 com.thoughtworks.xstream.XStream$1:lookupConverterForType ---> return defaultConverterLookup.lookupConverterForType(type);
+Line 98 com.thoughtworks.xstream.converters.collections.CollectionConverter:addCurrentElementToCollection ---> final Object item = readItem(reader, context, collection); // call readBareItem when deprecated method is removed
+Line 42 com.thoughtworks.xstream.io.path.PathTrackingReader:moveUp ---> super.moveUp();
+Line 79 com.thoughtworks.xstream.converters.collections.CollectionConverter:unmarshal ---> Collection collection = (Collection) createCollection(context.getRequiredType());
+Line 117 com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter:readItem ---> return readBareItem(reader, context, current);
+Line 40 com.thoughtworks.xstream.io.ReaderWrapper:moveUp ---> wrapped.moveUp();
+Line 132 com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter:readBareItem ---> return context.convertAnother(current, type);
+Line 112 com.thoughtworks.xstream.io.xml.AbstractPullReader:moveUp ---> while (elementStack.size() >= currentDepth) {
+Line 50 com.thoughtworks.xstream.core.TreeUnmarshaller:convertAnother ---> return convertAnother(parent, type, null);
+Line 175 com.thoughtworks.xstream.io.json.JettisonMappedXmlDriverTest:testSingletonListWithSimpleObject ---> ArrayList list2 = (ArrayList)xstream.fromXML(json);
+Line 1268 com.thoughtworks.xstream.XStream:toXML ---> Writer writer = new StringWriter();
+Line 176 com.thoughtworks.xstream.io.json.JettisonMappedXmlDriverTest:testSingletonListWithSimpleObject ---> assertEquals(json, xstream.toXML(list2));
+Line 1270 com.thoughtworks.xstream.XStream:toXML ---> return writer.toString();

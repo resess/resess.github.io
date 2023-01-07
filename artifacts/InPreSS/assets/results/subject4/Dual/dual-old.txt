@@ -1,0 +1,1146 @@
+Line 1125 com.fasterxml.jackson.core.base.ParserBase:_getSourceReference ---> if (JsonParser.Feature.INCLUDE_SOURCE_IN_LOCATION.enabledIn(_features)) {
+Line 1126 com.fasterxml.jackson.core.base.ParserBase:_getSourceReference ---> return _ioContext.getSourceReference();
+Line 315 com.fasterxml.jackson.core.JsonParser$Feature:enabledIn ---> public boolean enabledIn(int flags) { return (flags & _mask) != 0; }
+Line 3707 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:getCurrentLocation ---> return new JsonLocation(_getSourceReference(),
+Line 141 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:<init> ---> _currInputRowStart = start;
+Line 143 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:<init> ---> _currInputProcessed = -start;
+Line 126 com.fasterxml.jackson.core.io.IOContext:getSourceReference ---> public Object getSourceReference() { return _sourceRef; }
+Line 1125 com.fasterxml.jackson.core.base.ParserBase:_getSourceReference ---> if (JsonParser.Feature.INCLUDE_SOURCE_IN_LOCATION.enabledIn(_features)) {
+Line 192 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_loadMore ---> _currInputRowStart -= _inputEnd;
+Line 191 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_loadMore ---> _currInputProcessed += _inputEnd;
+Line 1126 com.fasterxml.jackson.core.base.ParserBase:_getSourceReference ---> return _ioContext.getSourceReference();
+Line 3706 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:getCurrentLocation ---> int col = _inputPtr - _currInputRowStart + 1; // 1-based
+Line 66 com.fasterxml.jackson.core.JsonLocation:<init> ---> _totalChars = totalChars;
+Line 65 com.fasterxml.jackson.core.JsonLocation:<init> ---> _totalBytes = totalBytes;
+Line 64 com.fasterxml.jackson.core.JsonLocation:<init> ---> _sourceRef = sourceRef;
+Line 63 com.fasterxml.jackson.core.JsonLocation:<init> ---> {
+Line 3707 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:getCurrentLocation ---> return new JsonLocation(_getSourceReference(),
+Line 3707 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:getCurrentLocation ---> return new JsonLocation(_getSourceReference(),
+Line 68 com.fasterxml.jackson.core.JsonLocation:<init> ---> _columnNr = columnNr;
+Line 67 com.fasterxml.jackson.core.JsonLocation:<init> ---> _lineNr = lineNr;
+Line 49 com.fasterxml.jackson.core.JsonParseException:<init> ---> super(msg, (p == null) ? null : p.getCurrentLocation());
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3707 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:getCurrentLocation ---> return new JsonLocation(_getSourceReference(),
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 29 com.fasterxml.jackson.core.JsonProcessingException:<init> ---> _location = loc;
+Line 1804 com.fasterxml.jackson.core.JsonParser:_constructError ---> return new JsonParseException(this, msg)
+Line 25 com.fasterxml.jackson.core.JsonProcessingException:<init> ---> super(msg);
+Line 37 com.fasterxml.jackson.core.JsonProcessingException:<init> ---> this(msg, loc, null);
+Line 49 com.fasterxml.jackson.core.JsonParseException:<init> ---> super(msg, (p == null) ? null : p.getCurrentLocation());
+Line 50 com.fasterxml.jackson.core.JsonParseException:<init> ---> _processor = p;
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 200 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_loadMore ---> int space = _inputBuffer.length;
+Line 199 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_loadMore ---> if (_inputStream != null) {
+Line 1805 com.fasterxml.jackson.core.JsonParser:_constructError ---> .withRequestPayload(_requestPayload);
+Line 99 com.fasterxml.jackson.core.JsonParseException:withRequestPayload ---> _requestPayload = p;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 218 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_loadMore ---> return false;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 227 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_closeInput ---> if (_ioContext.isResourceManaged() || isEnabled(Feature.AUTO_CLOSE_SOURCE)) {
+Line 212 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_loadMore ---> _closeInput();
+Line 205 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_loadMore ---> int count = _inputStream.read(_inputBuffer, 0, space);
+Line 201 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_loadMore ---> if (space == 0) { // only occurs when we've been closed
+Line 703 com.fasterxml.jackson.core.base.ParserMinimalBase:_reportError ---> throw _constructError(String.format(msg, arg1, arg2));
+Line 100 com.fasterxml.jackson.core.JsonParseException:withRequestPayload ---> return this;
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3517 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> StringBuilder sb = new StringBuilder(matchedPart);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3526 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3521 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3519 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
+Line 128 com.fasterxml.jackson.core.io.IOContext:isResourceManaged ---> public boolean isResourceManaged() { return _managedResource; }
+Line 226 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_closeInput ---> if (_inputStream != null) {
+Line 206 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_loadMore ---> if (count > 0) {
+Line 1804 com.fasterxml.jackson.core.JsonParser:_constructError ---> return new JsonParseException(this, msg)
+Line 3532 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> _reportError('Unrecognized token '%s': was expecting %s', sb, msg);
+Line 3272 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3520 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 227 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_closeInput ---> if (_ioContext.isResourceManaged() || isEnabled(Feature.AUTO_CLOSE_SOURCE)) {
+Line 2627 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_handleUnexpectedValue ---> _reportInvalidToken(''+((char) c), '('true', 'false' or 'null')');
+Line 137 com.fasterxml.jackson.core.JsonParseException:getMessage ---> String msg = super.getMessage();
+Line 703 com.fasterxml.jackson.core.base.ParserMinimalBase:_reportError ---> throw _constructError(String.format(msg, arg1, arg2));
+Line 36 com.fasterxml.jackson.core.JsonLocation:<clinit> ---> public final static JsonLocation NA = new JsonLocation(null, -1L, -1L, -1, -1);
+Line 232 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_closeInput ---> }
+Line 30 com.fasterxml.jackson.core.JsonProcessingException:<init> ---> }
+Line 51 com.fasterxml.jackson.core.JsonParseException:<init> ---> }
+Line 3313 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 685 com.fasterxml.jackson.core.JsonParser:isEnabled ---> public boolean isEnabled(Feature f) { return f.enabledIn(_features); }
+Line 66 com.fasterxml.jackson.core.json.TestMaxErrorSize:_testShortErrorMessage ---> String msg = jpe.getMessage();
+Line 3518 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
+Line 69 com.fasterxml.jackson.core.json.TestMaxErrorSize:_testShortErrorMessage ---> assertTrue(msg.contains(expectedSuffix));

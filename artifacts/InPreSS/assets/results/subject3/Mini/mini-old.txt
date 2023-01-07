@@ -1,0 +1,36 @@
+Line 57 com.squareup.moshi.MoshiTest:failOnUnknownThrowsOnUnknownFields ---> assertThat(expected).hasMessage('Cannot skip unexpected NAME at $.diameter');
+Line 589 com.squareup.moshi.JsonUtf8Reader:skipName ---> throw new JsonDataException('Cannot skip unexpected ' + peek() + ' at ' + getPath());
+com.squareup.moshi.JsonUtf8Reader#peek()Lcom/squareup/moshi/JsonReader$Token;=Func11(com.squareup.moshi.JsonReader$Token.NAME);
+Line 589 com.squareup.moshi.JsonUtf8Reader:skipName ---> throw new JsonDataException('Cannot skip unexpected ' + peek() + ' at ' + getPath());
+Func40();
+stackSize=Func98();
+Line 137 com.squareup.moshi.JsonAdapter$2:fromJson ---> return delegate.fromJson(reader);
+Line 134 com.squareup.moshi.JsonAdapter$2:fromJson ---> if (reader.peek() == JsonReader.Token.NULL) {
+com.squareup.moshi.JsonUtf8Reader#peek()Lcom/squareup/moshi/JsonReader$Token;=Func103();
+NAME=Func107();
+com.squareup.moshi.JsonUtf8Reader#doPeek()I=Func114();
+$stack19=Func115(p);
+p=Func117();
+Line 134 com.squareup.moshi.JsonAdapter$2:fromJson ---> if (reader.peek() == JsonReader.Token.NULL) {
+Line 196 com.squareup.moshi.JsonReader:of ---> return new JsonUtf8Reader(source);
+Line 34 com.squareup.moshi.JsonUtf8Reader:<clinit> ---> private static final ByteString CLOSING_BLOCK_COMMENT = ByteString.encodeUtf8('*/');
+com.squareup.moshi.JsonAdapter#failOnUnknown()Lcom/squareup/moshi/JsonAdapter;=Func125(this.scopes, stack6, stack5);
+Line 98 com.squareup.moshi.JsonUtf8Reader:<init> ---> pushScope(JsonScope.EMPTY_DOCUMENT);
+Line 319 com.squareup.moshi.Moshi$LookupChain:pop ---> if (replaced != null) {
+scopes=Func126();
+fieldsArray=Func127();
+classFactory=Func128();
+adapter=Func146();
+Line 63 com.squareup.moshi.ClassJsonAdapter$1:create ---> if (!annotations.isEmpty()) return null;
+Line 58 com.squareup.moshi.ClassJsonAdapter$1:create ---> if (Util.isPlatformType(rawType) && !Types.isAllowedPlatformType(rawType)) {
+com.squareup.moshi.Types#getRawType(Ljava/lang/reflect/Type;)Ljava/lang/Class;=Func178(type);
+$stack30=Func182(i#10, stack22, this.factories, size);
+Line 137 com.squareup.moshi.Moshi:adapter ---> for (int i = 0, size = factories.size(); i < size; i++) {
+result=Func183(result, rawType);
+Line 166 com.squareup.moshi.Types:getRawType ---> if (type instanceof Class<?>) {
+Line 361 com.squareup.moshi.Moshi$Lookup:<init> ---> this.type = type;
+fieldName=Func184();
+Line 119 com.squareup.moshi.internal.Util:canonicalize ---> return c.isArray() ? new GenericArrayTypeImpl(canonicalize(c.getComponentType())) : c;
+Line 57 com.squareup.moshi.internal.Util:<clinit> ---> metadata = (Class<? extends Annotation>) Class.forName('kotlin.Metadata');
+com.squareup.moshi.Moshi$Builder#build()Lcom/squareup/moshi/Moshi;=Func356();
+factories=Func185();
