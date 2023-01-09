@@ -1,0 +1,224 @@
+Line 105 dagger.ExtensionTest:assertFailNoEntryPoint ---> assertThat(e.getMessage()).contains('No entry point');
+Line 257 dagger.ObjectGraph:getEntryPointBinding ---> throw new IllegalArgumentException('No entry point for ' + entryPointKey
+Line 253 dagger.ObjectGraph:getEntryPointBinding ---> moduleClass = graph.entryPoints.get(entryPointKey);
+Line 252 dagger.ObjectGraph:getEntryPointBinding ---> for (ObjectGraph graph = this; graph != null; graph = graph.base) {
+Line 224 dagger.ObjectGraph:get ---> Binding<T> binding = (Binding<T>) getEntryPointBinding(entryPointKey, key);
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+dagger.internal.Keys#get(Ljava/lang/reflect/Type;)Ljava/lang/String;=Func1();
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+Line 222 dagger.ObjectGraph:get ---> String entryPointKey = Keys.getMembersKey(type);
+Line 103 dagger.ExtensionTest:assertFailNoEntryPoint ---> assertThat(graph.get(clazz)).isNull();
+Line 81 dagger.ExtensionTest:scopedGraphs ---> assertFailNoEntryPoint(app, C.class);
+Line 115 dagger.internal.Linker:linkRequested ---> toLink.add(jitBinding);
+Line 182 dagger.internal.Linker:createJitBinding ---> return atInjectBinding;
+Line 113 dagger.internal.RuntimeAggregatingPlugin:getAtInjectBinding ---> return plugins[i].getAtInjectBinding(key, className, mustBeInjectable);
+Line 46 dagger.internal.plugins.reflect.ReflectivePlugin:getAtInjectBinding ---> return ReflectiveAtInjectBinding.create(c, mustBeInjectable);
+dagger.internal.plugins.reflect.ReflectiveAtInjectBinding#create(Ljava/lang/Class;Z)Ldagger/internal/Binding;=Func17();
+$stack92=Func24(type);
+Line 46 dagger.internal.plugins.reflect.ReflectivePlugin:getAtInjectBinding ---> return ReflectiveAtInjectBinding.create(c, mustBeInjectable);
+Line 42 dagger.internal.plugins.reflect.ReflectivePlugin:getAtInjectBinding ---> if (c.isInterface()) {
+Line 37 dagger.internal.plugins.reflect.ReflectivePlugin:getAtInjectBinding ---> c = Class.forName(className);
+Line 113 dagger.internal.RuntimeAggregatingPlugin:getAtInjectBinding ---> return plugins[i].getAtInjectBinding(key, className, mustBeInjectable);
+Line 111 dagger.internal.RuntimeAggregatingPlugin:getAtInjectBinding ---> for (int i = 0; i < plugins.length; i++) {
+Line 111 dagger.internal.RuntimeAggregatingPlugin:getAtInjectBinding ---> for (int i = 0; i < plugins.length; i++) {
+Line 180 dagger.internal.Linker:createJitBinding ---> Binding<?> atInjectBinding = plugin.getAtInjectBinding(key, className, mustBeInjectable);
+dagger.internal.Keys#getClassName(Ljava/lang/String;)Ljava/lang/String;=Func33(key);
+Line 109 dagger.internal.Linker:linkRequested ---> Binding<?> jitBinding = createJitBinding(key, binding.requiredBy, mustBeInjectable);
+$stack18=Func43(key, this.bindings);
+Line 104 dagger.internal.Linker:linkRequested ---> boolean mustBeInjectable = deferredBinding.mustBeInjectable;
+Line 103 dagger.internal.Linker:linkRequested ---> String key = deferredBinding.deferredKey;
+$stack1=Func44(this.linker);
+Func45(this.linker);
+$stack11=Func49(stack10, this.toLink);
+Line 333 dagger.internal.Linker$DeferredBinding:<init> ---> this.mustBeInjectable = mustBeInjectable;
+deferredKey=Func50(deferredKey);
+Line 62 dagger.internal.Binding:<init> ---> this.requiredBy = requiredBy;
+bits=Func51();
+membersKey=Func52();
+provideKey=Func53();
+Func54(this);
+Func55(requiredBy, this);
+mustBeInjectable=Func56(x1, this, x0);
+Line 223 dagger.internal.Linker:requestBinding ---> Binding<?> deferredBinding = new DeferredBinding(key, requiredBy, mustBeInjectable);
+binding=Func58(linker.bindings, key);
+Line 262 dagger.ObjectGraph:getEntryPointBinding ---> Binding<?> binding = linker.requestBinding(key, moduleClass, false);
+Line 253 dagger.ObjectGraph:getEntryPointBinding ---> moduleClass = graph.entryPoints.get(entryPointKey);
+Line 252 dagger.ObjectGraph:getEntryPointBinding ---> for (ObjectGraph graph = this; graph != null; graph = graph.base) {
+Line 224 dagger.ObjectGraph:get ---> Binding<T> binding = (Binding<T>) getEntryPointBinding(entryPointKey, key);
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+dagger.internal.Keys#get(Ljava/lang/reflect/Type;)Ljava/lang/String;=Func62();
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+Line 222 dagger.ObjectGraph:get ---> String entryPointKey = Keys.getMembersKey(type);
+dagger.internal.Keys#get(Ljava/lang/reflect/Type;)Ljava/lang/String;=Func77();
+Line 80 dagger.ExtensionTest:scopedGraphs ---> assertThat(app.get(B.class)).isNotSameAs(app.get(B.class));
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+Line 222 dagger.ObjectGraph:get ---> String entryPointKey = Keys.getMembersKey(type);
+Line 79 dagger.ExtensionTest:scopedGraphs ---> assertThat(app.get(A.class)).isSameAs(app.get(A.class));
+dagger.ObjectGraph#get(Ljava/lang/Class;)Ljava/lang/Object;=Func93(this.onlyInstance);
+Line 265 dagger.ObjectGraph:getEntryPointBinding ---> binding = linker.requestBinding(key, moduleClass, false);
+$stack7=Func107(this.toLink, binding, stack7);
+binding=Func112(linker.bindings, key);
+Line 262 dagger.ObjectGraph:getEntryPointBinding ---> Binding<?> binding = linker.requestBinding(key, moduleClass, false);
+Line 253 dagger.ObjectGraph:getEntryPointBinding ---> moduleClass = graph.entryPoints.get(entryPointKey);
+Line 252 dagger.ObjectGraph:getEntryPointBinding ---> for (ObjectGraph graph = this; graph != null; graph = graph.base) {
+Line 224 dagger.ObjectGraph:get ---> Binding<T> binding = (Binding<T>) getEntryPointBinding(entryPointKey, key);
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+dagger.internal.Keys#get(Ljava/lang/reflect/Type;)Ljava/lang/String;=Func117();
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+Line 222 dagger.ObjectGraph:get ---> String entryPointKey = Keys.getMembersKey(type);
+dagger.internal.Keys#get(Ljava/lang/reflect/Type;)Ljava/lang/String;=Func132();
+Line 79 dagger.ExtensionTest:scopedGraphs ---> assertThat(app.get(A.class)).isSameAs(app.get(A.class));
+onlyInstance=Func148(this.parameterBindings, this.constructor);
+$stack7=Func159(binding, this.toLink);
+Line 265 dagger.ObjectGraph:getEntryPointBinding ---> binding = linker.requestBinding(key, moduleClass, false);
+binding=Func169(binding);
+Line 282 dagger.internal.Linker$SingletonBinding:<init> ---> private Object onlyInstance = UNINITIALIZED;
+dagger.internal.Linker#access$200()Ljava/lang/Object;=Func170(dagger.internal.Linker.UNINITIALIZED);
+Line 282 dagger.internal.Linker$SingletonBinding:<init> ---> private Object onlyInstance = UNINITIALIZED;
+bits=Func171();
+Line 115 dagger.internal.Linker:linkRequested ---> toLink.add(jitBinding);
+Line 182 dagger.internal.Linker:createJitBinding ---> return atInjectBinding;
+Line 113 dagger.internal.RuntimeAggregatingPlugin:getAtInjectBinding ---> return plugins[i].getAtInjectBinding(key, className, mustBeInjectable);
+Line 46 dagger.internal.plugins.reflect.ReflectivePlugin:getAtInjectBinding ---> return ReflectiveAtInjectBinding.create(c, mustBeInjectable);
+dagger.internal.plugins.reflect.ReflectiveAtInjectBinding#create(Ljava/lang/Class;Z)Ldagger/internal/Binding;=Func174(stack17, fields, keys, supertype);
+parameterBindings=Func177(parameterCount);
+constructor=Func181(constructor);
+Line 62 dagger.internal.Binding:<init> ---> this.requiredBy = requiredBy;
+bits=Func182();
+membersKey=Func183(membersKey);
+provideKey=Func184(provideKey);
+Func185(this);
+singleton=Func186(provideKey, this, membersKey, singleton, type);
+singleton=Func187(provideKey#14, stack17, c#6, stack12, field#24, stack13, types#19, type, singleton, parameterCount#16);
+$stack17=Func189();
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+dagger.internal.Keys#get(Ljava/lang/reflect/Type;)Ljava/lang/String;=Func190(type);
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+supertype=Func206();
+parameterCount=Func207(c#6);
+Func209(c#6);
+dagger.internal.Keys#get(Ljava/lang/reflect/Type;)Ljava/lang/String;=Func210(type);
+injectedConstructor=Func226(type);
+injectedFields=Func234();
+keys=Func235();
+singleton=Func236(type);
+Line 46 dagger.internal.plugins.reflect.ReflectivePlugin:getAtInjectBinding ---> return ReflectiveAtInjectBinding.create(c, mustBeInjectable);
+Line 42 dagger.internal.plugins.reflect.ReflectivePlugin:getAtInjectBinding ---> if (c.isInterface()) {
+Line 37 dagger.internal.plugins.reflect.ReflectivePlugin:getAtInjectBinding ---> c = Class.forName(className);
+Line 113 dagger.internal.RuntimeAggregatingPlugin:getAtInjectBinding ---> return plugins[i].getAtInjectBinding(key, className, mustBeInjectable);
+Line 111 dagger.internal.RuntimeAggregatingPlugin:getAtInjectBinding ---> for (int i = 0; i < plugins.length; i++) {
+Line 111 dagger.internal.RuntimeAggregatingPlugin:getAtInjectBinding ---> for (int i = 0; i < plugins.length; i++) {
+Line 180 dagger.internal.Linker:createJitBinding ---> Binding<?> atInjectBinding = plugin.getAtInjectBinding(key, className, mustBeInjectable);
+dagger.internal.Keys#getClassName(Ljava/lang/String;)Ljava/lang/String;=Func237(key);
+Line 109 dagger.internal.Linker:linkRequested ---> Binding<?> jitBinding = createJitBinding(key, binding.requiredBy, mustBeInjectable);
+$stack18=Func247(key, this.bindings);
+Line 104 dagger.internal.Linker:linkRequested ---> boolean mustBeInjectable = deferredBinding.mustBeInjectable;
+Line 103 dagger.internal.Linker:linkRequested ---> String key = deferredBinding.deferredKey;
+$stack1=Func248(this.linker);
+Func249(this.linker);
+$stack11=Func253(stack10, this.toLink);
+Line 333 dagger.internal.Linker$DeferredBinding:<init> ---> this.mustBeInjectable = mustBeInjectable;
+deferredKey=Func254(deferredKey);
+Line 62 dagger.internal.Binding:<init> ---> this.requiredBy = requiredBy;
+bits=Func255();
+membersKey=Func256();
+provideKey=Func257();
+Func258(this);
+singleton=Func259(requiredBy, this);
+mustBeInjectable=Func260(x1, this, x0);
+Line 223 dagger.internal.Linker:requestBinding ---> Binding<?> deferredBinding = new DeferredBinding(key, requiredBy, mustBeInjectable);
+Line 223 dagger.internal.Linker:requestBinding ---> Binding<?> deferredBinding = new DeferredBinding(key, requiredBy, mustBeInjectable);
+binding=Func262(linker.bindings, key);
+Line 262 dagger.ObjectGraph:getEntryPointBinding ---> Binding<?> binding = linker.requestBinding(key, moduleClass, false);
+Line 253 dagger.ObjectGraph:getEntryPointBinding ---> moduleClass = graph.entryPoints.get(entryPointKey);
+Line 252 dagger.ObjectGraph:getEntryPointBinding ---> for (ObjectGraph graph = this; graph != null; graph = graph.base) {
+Line 224 dagger.ObjectGraph:get ---> Binding<T> binding = (Binding<T>) getEntryPointBinding(entryPointKey, key);
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+dagger.internal.Keys#get(Ljava/lang/reflect/Type;)Ljava/lang/String;=Func267();
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+Line 222 dagger.ObjectGraph:get ---> String entryPointKey = Keys.getMembersKey(type);
+dagger.internal.Keys#get(Ljava/lang/reflect/Type;)Ljava/lang/String;=Func282();
+Line 78 dagger.ExtensionTest:scopedGraphs ---> assertThat(app.get(A.class)).isNotNull();
+Line 103 dagger.ObjectGraph:create ---> return makeGraph(null, plugin, modules);
+Line 132 dagger.ObjectGraph:makeGraph ---> return new ObjectGraph(base, linker, plugin, staticInjections, entryPoints);
+Line 84 dagger.ObjectGraph:<init> ---> this.entryPoints = entryPoints;
+Line 83 dagger.ObjectGraph:<init> ---> this.staticInjections = staticInjections;
+Line 82 dagger.ObjectGraph:<init> ---> this.plugin = plugin;
+Line 81 dagger.ObjectGraph:<init> ---> this.linker = linker;
+Line 80 dagger.ObjectGraph:<init> ---> this.base = base;
+Line 74 dagger.ObjectGraph:<init> ---> Map<String, Class<?>> entryPoints) {
+Line 132 dagger.ObjectGraph:makeGraph ---> return new ObjectGraph(base, linker, plugin, staticInjections, entryPoints);
+plugin=Func298();
+bindings=Func299();
+Line 40 dagger.internal.Linker:<init> ---> private final Queue<Binding<?>> toLink = new LinkedList<Binding<?>>();
+Line 127 dagger.ObjectGraph:makeGraph ---> Linker linker = new Linker((base != null) ? base.linker : null, plugin,
+Func300(this);
+Line 127 dagger.ObjectGraph:makeGraph ---> Linker linker = new Linker((base != null) ? base.linker : null, plugin,
+Line 30 dagger.internal.Linker:<clinit> ---> private static final Object UNINITIALIZED = new Object();
+Line 127 dagger.ObjectGraph:makeGraph ---> Linker linker = new Linker((base != null) ? base.linker : null, plugin,
+Line 117 dagger.ObjectGraph:makeGraph ---> entryPoints.put(key, moduleAdapter.getModule().getClass());
+Line 55 dagger.internal.ModuleAdapter:getModule ---> return module;
+Line 117 dagger.ObjectGraph:makeGraph ---> entryPoints.put(key, moduleAdapter.getModule().getClass());
+Line 116 dagger.ObjectGraph:makeGraph ---> for (String key : moduleAdapter.entryPoints) {
+Line 119 dagger.ObjectGraph:makeGraph ---> for (Class<?> c : moduleAdapter.staticInjections) {
+Line 117 dagger.ObjectGraph:makeGraph ---> entryPoints.put(key, moduleAdapter.getModule().getClass());
+Line 55 dagger.internal.ModuleAdapter:getModule ---> return module;
+Line 117 dagger.ObjectGraph:makeGraph ---> entryPoints.put(key, moduleAdapter.getModule().getClass());
+Line 116 dagger.ObjectGraph:makeGraph ---> for (String key : moduleAdapter.entryPoints) {
+Line 119 dagger.ObjectGraph:makeGraph ---> for (Class<?> c : moduleAdapter.staticInjections) {
+Line 116 dagger.ObjectGraph:makeGraph ---> for (String key : moduleAdapter.entryPoints) {
+Line 115 dagger.ObjectGraph:makeGraph ---> for (ModuleAdapter<?> moduleAdapter : getAllModuleAdapters(plugin, modules).values()) {
+Line 74 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> return adaptersByModuleType;
+Line 65 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> adaptersByModuleType.put(adapter.getModule().getClass(), adapter);
+Line 55 dagger.internal.ModuleAdapter:getModule ---> return module;
+Line 65 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> adaptersByModuleType.put(adapter.getModule().getClass(), adapter);
+Line 70 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> for (ModuleAdapter<?> adapter : seedAdapters) {
+Line 64 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> for (ModuleAdapter<?> adapter : seedAdapters) {
+Line 70 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> for (ModuleAdapter<?> adapter : seedAdapters) {
+Line 59 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> Map<Class<?>, ModuleAdapter<?>> adaptersByModuleType
+Line 55 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> seedAdapters[s++] = plugin.getModuleAdapter(module.getClass(), module);
+Line 100 dagger.internal.RuntimeAggregatingPlugin:getModuleAdapter ---> return result;
+Line 99 dagger.internal.RuntimeAggregatingPlugin:getModuleAdapter ---> result.module = (module != null) ? module : result.newModule();
+Line 35 dagger.internal.ModuleAdapter:<init> ---> this.entryPoints = entryPoints;
+Line 38 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:<init> ---> super(
+Line 43 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:<init> ---> annotation.complete());
+Line 42 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:<init> ---> annotation.includes(),
+Line 41 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:<init> ---> annotation.overrides(),
+Line 40 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:<init> ---> annotation.staticInjections(),
+Line 52 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:toMemberKeys ---> return result;
+Line 50 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:toMemberKeys ---> result[i] = Keys.getMembersKey(entryPoints[i]);
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+dagger.internal.Keys#get(Ljava/lang/reflect/Type;)Ljava/lang/String;=Func301(type);
+Line 66 dagger.internal.Keys:getMembersKey ---> return 'members/' + get(key);
+Line 50 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:toMemberKeys ---> result[i] = Keys.getMembersKey(entryPoints[i]);
+Line 49 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:toMemberKeys ---> for (int i = 0; i < entryPoints.length; i++) {
+Line 49 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:toMemberKeys ---> for (int i = 0; i < entryPoints.length; i++) {
+Line 39 dagger.internal.plugins.reflect.ReflectiveModuleAdapter:<init> ---> toMemberKeys(annotation.entryPoints()),
+Line 55 dagger.internal.plugins.reflect.ReflectivePlugin:getModuleAdapter ---> return (ModuleAdapter<T>) new ReflectiveModuleAdapter(moduleClass, annotation);
+Line 51 dagger.internal.plugins.reflect.ReflectivePlugin:getModuleAdapter ---> Module annotation = moduleClass.getAnnotation(Module.class);
+Line 98 dagger.internal.RuntimeAggregatingPlugin:getModuleAdapter ---> ModuleAdapter<T> result = plugins[i].getModuleAdapter(moduleClass, module);
+Line 96 dagger.internal.RuntimeAggregatingPlugin:getModuleAdapter ---> for (int i = 0; i < plugins.length; i++) {
+Line 103 dagger.internal.RuntimeAggregatingPlugin:getModuleAdapter ---> logNotFound('Module adapter', moduleClass.getName(), e);
+Line 102 dagger.internal.RuntimeAggregatingPlugin:getModuleAdapter ---> if (i == plugins.length - 1) throw e;
+Line 33 dagger.internal.plugins.loading.ClassloadingPlugin:getModuleAdapter ---> return instantiate(moduleClass.getName(), MODULE_ADAPTER_SUFFIX);
+Line 98 dagger.internal.RuntimeAggregatingPlugin:getModuleAdapter ---> ModuleAdapter<T> result = plugins[i].getModuleAdapter(moduleClass, module);
+Line 96 dagger.internal.RuntimeAggregatingPlugin:getModuleAdapter ---> for (int i = 0; i < plugins.length; i++) {
+Line 55 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> seedAdapters[s++] = plugin.getModuleAdapter(module.getClass(), module);
+Line 52 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> if (module instanceof Class) {
+Line 51 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> for (Object module : seedModules) {
+Line 50 dagger.internal.RuntimeAggregatingPlugin:getAllModuleAdapters ---> int s = 0;
+Line 115 dagger.ObjectGraph:makeGraph ---> for (ModuleAdapter<?> moduleAdapter : getAllModuleAdapters(plugin, modules).values()) {
+staticInjections=Func316();
+Line 107 dagger.ObjectGraph:makeGraph ---> Map<String, Class<?>> entryPoints = new LinkedHashMap<String, Class<?>>();
+Line 103 dagger.ObjectGraph:create ---> return makeGraph(null, plugin, modules);
+Line 39 dagger.internal.RuntimeAggregatingPlugin:<init> ---> this.plugins = plugins;
+Line 35 dagger.internal.RuntimeAggregatingPlugin:<init> ---> public RuntimeAggregatingPlugin(Plugin ... plugins) {
+Line 101 dagger.ObjectGraph:create ---> RuntimeAggregatingPlugin plugin = new RuntimeAggregatingPlugin(
+Line 32 dagger.internal.plugins.reflect.ReflectivePlugin:<init> ---> public final class ReflectivePlugin implements Plugin {
+Line 101 dagger.ObjectGraph:create ---> RuntimeAggregatingPlugin plugin = new RuntimeAggregatingPlugin(
+Line 27 dagger.internal.plugins.loading.ClassloadingPlugin:<init> ---> public final class ClassloadingPlugin implements Plugin {
+Line 101 dagger.ObjectGraph:create ---> RuntimeAggregatingPlugin plugin = new RuntimeAggregatingPlugin(
+Line 101 dagger.ObjectGraph:create ---> RuntimeAggregatingPlugin plugin = new RuntimeAggregatingPlugin(
+Line 77 dagger.ExtensionTest:scopedGraphs ---> ObjectGraph app = ObjectGraph.create(new RootModule());
+Line 49 dagger.ExtensionTest$RootModule:<init> ---> @Module(entryPoints = { A.class, B.class }) static class RootModule { }
+Line 77 dagger.ExtensionTest:scopedGraphs ---> ObjectGraph app = ObjectGraph.create(new RootModule());

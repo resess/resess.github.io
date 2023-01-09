@@ -1,0 +1,60 @@
+Line 57 com.squareup.moshi.MoshiTest:failOnUnknownThrowsOnUnknownFields ---> assertThat(expected).hasMessage('Cannot skip unexpected NAME at $.diameter');
+Line 592 com.squareup.moshi.JsonUtf8Reader:skipName ---> throw new JsonDataException('Cannot skip unexpected ' + peeked + ' at ' + getPath());
+Func187(this, message);
+Line 592 com.squareup.moshi.JsonUtf8Reader:skipName ---> throw new JsonDataException('Cannot skip unexpected ' + peeked + ' at ' + getPath());
+com.squareup.moshi.JsonReader#getPath()Ljava/lang/String;=Func188(this.stackSize);
+Line 592 com.squareup.moshi.JsonUtf8Reader:skipName ---> throw new JsonDataException('Cannot skip unexpected ' + peeked + ' at ' + getPath());
+com.squareup.moshi.JsonUtf8Reader#nextName()Ljava/lang/String;=Func197();
+Line 591 com.squareup.moshi.JsonUtf8Reader:skipName ---> nextName(); // Move the path forward onto the offending name.
+com.squareup.moshi.JsonUtf8Reader#peek()Lcom/squareup/moshi/JsonReader$Token;=Func198(com.squareup.moshi.JsonReader$Token.NAME);
+Line 590 com.squareup.moshi.JsonUtf8Reader:skipName ---> Token peeked = peek();
+Func227();
+1463877470[1]=Func285();
+Line 40 com.squareup.moshi.internal.NullSafeJsonAdapter:fromJson ---> return delegate.fromJson(reader);
+Line 37 com.squareup.moshi.internal.NullSafeJsonAdapter:fromJson ---> if (reader.peek() == JsonReader.Token.NULL) {
+com.squareup.moshi.JsonUtf8Reader#peek()Lcom/squareup/moshi/JsonReader$Token;=Func290();
+NULL=Func291();
+NAME=Func294();
+peeked=Func301();
+<com.squareup.moshi.JsonReader$Token: com.squareup.moshi.JsonReader$Token NAME>=Func302(p);
+c=Func304();
+Line 37 com.squareup.moshi.internal.NullSafeJsonAdapter:fromJson ---> if (reader.peek() == JsonReader.Token.NULL) {
+Line 43 com.squareup.moshi.JsonAdapter:fromJson ---> T result = fromJson(reader);
+Line 225 com.squareup.moshi.JsonReader:pushScope ---> scopes[stackSize++] = newTop;
+scopes=Func126();
+Line 29 com.squareup.moshi.internal.NullSafeJsonAdapter:<init> ---> this.delegate = delegate;
+Line 136 com.squareup.moshi.JsonAdapter:nullSafe ---> return new NullSafeJsonAdapter<>(this);
+fieldsArray=Func127();
+classFactory=Func128();
+Line 176 com.squareup.moshi.internal.Util:resolve ---> return resolve(context, contextRawType, toResolve, new LinkedHashSet<TypeVariable>());
+com.squareup.moshi.internal.Util#resolve(Ljava/lang/reflect/Type;Ljava/lang/Class;Ljava/lang/reflect/Type;Ljava/util/Collection;)Ljava/lang/reflect/Type;=Func319(toResolve);
+Line 176 com.squareup.moshi.internal.Util:resolve ---> return resolve(context, contextRawType, toResolve, new LinkedHashSet<TypeVariable>());
+fieldType=Func320(rawType, type);
+Func321(platformType, rawType, l6, l7, l8, this);
+adapter=Func326();
+Line 176 com.squareup.moshi.internal.Util:resolve ---> return resolve(context, contextRawType, toResolve, new LinkedHashSet<TypeVariable>());
+com.squareup.moshi.internal.Util#resolve(Ljava/lang/reflect/Type;Ljava/lang/Class;Ljava/lang/reflect/Type;Ljava/util/Collection;)Ljava/lang/reflect/Type;=Func340(toResolve);
+Line 176 com.squareup.moshi.internal.Util:resolve ---> return resolve(context, contextRawType, toResolve, new LinkedHashSet<TypeVariable>());
+annotations=Func341(rawType, type);
+Func342(platformType, field, this);
+field=Func346(rawType);
+Line 113 com.squareup.moshi.internal.Util:isPlatformType ---> return name.startsWith('android.')
+name=Func347(rawType);
+com.squareup.moshi.Types#getRawType(Ljava/lang/reflect/Type;)Ljava/lang/Class;=Func349(type);
+Func351(type);
+t=Func353();
+Line 60 com.squareup.moshi.ClassJsonAdapter$1:create ---> if (Util.isPlatformType(rawType)) {
+Line 113 com.squareup.moshi.internal.Util:isPlatformType ---> return name.startsWith('android.')
+Line 60 com.squareup.moshi.ClassJsonAdapter$1:create ---> if (Util.isPlatformType(rawType)) {
+Line 59 com.squareup.moshi.ClassJsonAdapter$1:create ---> if (!annotations.isEmpty()) return null;
+com.squareup.moshi.Types#getRawType(Ljava/lang/reflect/Type;)Ljava/lang/Class;=Func178();
+i#10=Func182(this, annotations, i#10);
+i=Func355(i#10);
+Line 36 com.squareup.moshi.ArrayJsonAdapter$1:create ---> if (elementType == null) return null;
+result=Func183(this, i#10, annotations, this.factories);
+Line 137 com.squareup.moshi.Moshi:adapter ---> for (int i = 0, size = factories.size(); i < size; i++) {
+Line 137 com.squareup.moshi.Moshi:adapter ---> for (int i = 0, size = factories.size(); i < size; i++) {
+Line 98 com.squareup.moshi.Moshi:adapter ---> return adapter(type, annotations, null);
+Line 72 com.squareup.moshi.Moshi:adapter ---> return adapter(type, Util.NO_ANNOTATIONS);
+com.squareup.moshi.Moshi$Builder#build()Lcom/squareup/moshi/Moshi;=Func356();
+factories=Func185();

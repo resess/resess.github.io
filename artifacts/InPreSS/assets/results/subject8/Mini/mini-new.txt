@@ -1,0 +1,60 @@
+Line 60 com.actiontech.dble.plan.visitor.TestMySQLItemVisitor:testGroupbyHaving ---> MySqlSelectQueryBlock query = getQuery('select sum(col1) from table1 where a >1 ');
+Line 121 com.actiontech.dble.plan.visitor.TestMySQLItemVisitor:getQuery ---> SQLSelect select = getSelect(sql);
+Line 131 com.actiontech.dble.plan.visitor.TestMySQLItemVisitor:getSelect ---> SQLSelectStatement stament = getSelectStatement(sql);
+Line 136 com.actiontech.dble.plan.visitor.TestMySQLItemVisitor:getSelectStatement ---> SQLStatementParser parser = new MySqlStatementParser(sql);
+Line 137 com.actiontech.dble.plan.visitor.TestMySQLItemVisitor:getSelectStatement ---> return (SQLSelectStatement) parser.parseStatement();
+Line 61 com.alibaba.druid.sql.parser.SQLSelectParser:select ---> SQLSelectQuery query = query(select);
+hash_lower=Func1510();
+token=Func1499();
+Line 1065 com.alibaba.druid.sql.parser.SQLSelectParser:parseTableSourceQueryTableExpr ---> if (lexer.token == Token.LITERAL_ALIAS || lexer.identifierEquals(FnvHash.Constants.IDENTIFIED)
+Line 1072 com.alibaba.druid.sql.parser.SQLSelectParser:parseTableSourceQueryTableExpr ---> expr());
+pos=Func1406(this.pos);
+ch=Func1402(this.pos);
+token=Func1395(this.pos);
+Line 1129 com.alibaba.druid.sql.parser.SQLSelectParser:parseTableSourceRest ---> switch (lexer.token) {
+1214089924[244]=Func1374();
+Line 775 com.alibaba.druid.sql.parser.SQLSelectParser:parseGroupBy ---> if (lexer.token == Token.GROUP) {
+$stack6=Func1125();
+pos=Func1118(this.pos);
+pos=Func1092(stack1, this.pos, stack2);
+token=Func1091();
+com.alibaba.druid.sql.ast.expr.SQLIdentifierExpr#getName()Ljava/lang/String;=Func1087();
+Line 1191 com.alibaba.druid.sql.parser.SQLExprParser:methodRest ---> SQLAggregateExpr aggregateExpr = parseAggregateExpr(methodName);
+Line 36 com.alibaba.druid.sql.ast.expr.SQLMethodInvokeExpr:<init> ---> protected final List<SQLExpr> arguments       = new ArrayList<SQLExpr>();
+left=Func986();
+right=Func984();
+having=Func983();
+Func982();
+Line 860 com.alibaba.druid.sql.parser.SQLSelectParser:parseGroupBy ---> if (groupBy.getHaving() == null && lexer.token == Token.HAVING) {
+com.alibaba.druid.sql.ast.statement.SQLSelectGroupByClause#getHaving()Lcom/alibaba/druid/sql/ast/SQLExpr;=Func981(this.having);
+Line 860 com.alibaba.druid.sql.parser.SQLSelectParser:parseGroupBy ---> if (groupBy.getHaving() == null && lexer.token == Token.HAVING) {
+Line 137 com.actiontech.dble.plan.visitor.TestMySQLItemVisitor:getSelectStatement ---> return (SQLSelectStatement) parser.parseStatement();
+Line 132 com.actiontech.dble.plan.visitor.TestMySQLItemVisitor:getSelect ---> return stament.getSelect();
+Line 132 com.actiontech.dble.plan.visitor.TestMySQLItemVisitor:getSelect ---> return stament.getSelect();
+Line 122 com.actiontech.dble.plan.visitor.TestMySQLItemVisitor:getQuery ---> return (MySqlSelectQueryBlock) select.getQuery();
+Line 122 com.actiontech.dble.plan.visitor.TestMySQLItemVisitor:getQuery ---> return (MySqlSelectQueryBlock) select.getQuery();
+Line 61 com.actiontech.dble.plan.visitor.TestMySQLItemVisitor:testGroupbyHaving ---> SQLSelectGroupByClause groupBy = query.getGroupBy();
+com.alibaba.druid.sql.ast.statement.SQLSelectQueryBlock#getGroupBy()Lcom/alibaba/druid/sql/ast/statement/SQLSelectGroupByClause;=Func121(this.groupBy);
+Line 62 com.actiontech.dble.plan.visitor.TestMySQLItemVisitor:testGroupbyHaving ---> SQLExpr q = groupBy.getHaving();
+com.alibaba.druid.sql.ast.statement.SQLSelectGroupByClause#getHaving()Lcom/alibaba/druid/sql/ast/SQLExpr;=Func120(this.having);
+Line 63 com.actiontech.dble.plan.visitor.TestMySQLItemVisitor:testGroupbyHaving ---> MySQLItemVisitor v = new MySQLItemVisitor(this.currentDb, utf8Charset, null);
+Func116(this, this.left);
+Func113();
+Line 142 com.alibaba.druid.sql.ast.expr.SQLAggregateExpr:accept0 ---> for (SQLExpr arg : this.arguments) {
+Line 143 com.alibaba.druid.sql.ast.expr.SQLAggregateExpr:accept0 ---> if (arg != null) {
+value=Func971();
+systemVariables=Func967();
+INSTANCE=Func966();
+Line 164 com.alibaba.druid.sql.ast.expr.SQLAggregateExpr:accept0 ---> if (this.withinGroup != null) {
+Func83(this.right);
+com.alibaba.druid.sql.ast.expr.SQLBinaryOpExpr#getLeft()Lcom/alibaba/druid/sql/ast/SQLExpr;=Func74(this.left);
+fv=Func952();
+Line 142 com.alibaba.druid.sql.ast.expr.SQLAggregateExpr:accept0 ---> for (SQLExpr arg : this.arguments) {
+Line 143 com.alibaba.druid.sql.ast.expr.SQLAggregateExpr:accept0 ---> if (arg != null) {
+Line 144 com.alibaba.druid.sql.ast.expr.SQLAggregateExpr:accept0 ---> arg.accept(visitor);
+Line 164 com.alibaba.druid.sql.ast.expr.SQLAggregateExpr:accept0 ---> if (this.withinGroup != null) {
+itemName=Func2(a, itemLeft);
+Line 65 com.actiontech.dble.plan.visitor.TestMySQLItemVisitor:testGroupbyHaving ---> Item item = v.getItem();
+com.actiontech.dble.plan.visitor.MySQLItemVisitor#getItem()Lcom/actiontech/dble/plan/common/item/Item;=Func1(a, itemLeft);
+com.actiontech.dble.plan.common.item.Item#getItemName()Ljava/lang/String;=Func0(this.itemName);
+Line 66 com.actiontech.dble.plan.visitor.TestMySQLItemVisitor:testGroupbyHaving ---> Assert.assertEquals(true, 'SUM(col1)'.equals(item.getItemName()));

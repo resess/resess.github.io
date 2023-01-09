@@ -1,0 +1,923 @@
+Line 203 com.alibaba.druid.sql.dialect.mysql.visitor.MySqlOutputVisitor:<init> ---> super(appender);
+Line 901 com.actiontech.dble.plan.visitor.MySQLItemVisitor:initName ---> StringBuilder sb = new StringBuilder();
+Line 178 com.alibaba.druid.sql.visitor.SQLASTOutputVisitor:<init> ---> public SQLASTOutputVisitor(Appendable appender){
+Line 902 com.actiontech.dble.plan.visitor.MySQLItemVisitor:initName ---> MySqlOutputVisitor ov = new MySqlOutputVisitor(sb);
+Line 88 com.alibaba.druid.sql.visitor.SQLASTVisitorAdapter:<init> ---> public class SQLASTVisitorAdapter implements SQLASTVisitor {
+Line 133 com.actiontech.dble.DbleServer:<init> ---> private DbleServer() {
+Line 77 com.actiontech.dble.DbleServer:<clinit> ---> private static final DbleServer INSTANCE = new DbleServer();
+Line 18 com.actiontech.dble.server.variables.SystemVariables:<init> ---> public SystemVariables() {
+Line 91 com.actiontech.dble.DbleServer:<init> ---> private volatile SystemVariables systemVariables = new SystemVariables();
+Line 26 com.actiontech.dble.server.variables.SystemVariables$1:<init> ---> globalVariables.put('lower_case_table_names', new SystemGlobalVariable() {
+Line 77 com.actiontech.dble.DbleServer:<clinit> ---> private static final DbleServer INSTANCE = new DbleServer();
+Line 25 com.actiontech.dble.plan.common.item.ItemIdent:<init> ---> if (DbleServer.getInstance().getSystemVariables().isLowerCaseTableNames()) {
+Line 19 com.actiontech.dble.server.variables.SystemVariables:<init> ---> globalVariables = new HashMap<>();
+Line 26 com.actiontech.dble.server.variables.SystemVariables:pickGlobalVariables ---> globalVariables.put('lower_case_table_names', new SystemGlobalVariable() {
+Line 20 com.actiontech.dble.server.variables.SystemVariables:<init> ---> pickGlobalVariables();
+Line 21 com.actiontech.dble.server.variables.SystemVariables:<init> ---> sessionVariables = new HashMap<>();
+Line 108 com.actiontech.dble.DbleServer:getInstance ---> return INSTANCE;
+Line 26 com.actiontech.dble.server.variables.SystemVariables:pickGlobalVariables ---> globalVariables.put('lower_case_table_names', new SystemGlobalVariable() {
+Line 91 com.actiontech.dble.DbleServer:<init> ---> private volatile SystemVariables systemVariables = new SystemVariables();
+Line 25 com.actiontech.dble.plan.common.item.ItemIdent:<init> ---> if (DbleServer.getInstance().getSystemVariables().isLowerCaseTableNames()) {
+Line 40 com.actiontech.dble.server.variables.SystemVariables:isLowerCaseTableNames ---> Integer value = Integer.valueOf(globalVariables.get('lower_case_table_names').getVariable());
+Line 27 com.actiontech.dble.server.variables.SystemVariables$1:<init> ---> String value = '0';
+Line 811 com.actiontech.dble.DbleServer:getSystemVariables ---> return systemVariables;
+Line 34 com.actiontech.dble.server.variables.SystemVariables$1:getVariable ---> return value;
+Line 25 com.actiontech.dble.plan.common.item.ItemIdent:<init> ---> if (DbleServer.getInstance().getSystemVariables().isLowerCaseTableNames()) {
+Line 40 com.actiontech.dble.server.variables.SystemVariables:isLowerCaseTableNames ---> Integer value = Integer.valueOf(globalVariables.get('lower_case_table_names').getVariable());
+Line 41 com.actiontech.dble.server.variables.SystemVariables:isLowerCaseTableNames ---> return value != 0;
+Line 25 com.actiontech.dble.plan.common.item.ItemIdent:<init> ---> if (DbleServer.getInstance().getSystemVariables().isLowerCaseTableNames()) {
+Line 30 com.actiontech.dble.plan.common.item.ItemIdent:<init> ---> tempDbName = dbNameArg;
+Line 29 com.actiontech.dble.plan.common.item.ItemIdent:<init> ---> tempTableName = tableNameArg;
+Line 40 com.alibaba.druid.sql.ast.SQLObjectImpl:accept ---> accept0(visitor);
+Line 36 com.actiontech.dble.plan.common.item.ItemField:<init> ---> private int index = -1;
+Line 22 com.actiontech.dble.plan.common.item.ItemIdent:<init> ---> public ItemIdent(final String dbNameArg, final String tableNameArg, final String fieldNameArg) {
+Line 39 com.actiontech.dble.plan.common.item.ItemField:<init> ---> super(dbName, tableName, fieldName);
+Line 147 com.actiontech.dble.plan.common.item.Item:<init> ---> protected int decimals = NOT_FIXED_DEC;
+Line 158 com.actiontech.dble.plan.common.item.Item:<init> ---> protected int charsetIndex = 63;
+Line 33 com.actiontech.dble.plan.common.item.ItemIdent:<init> ---> this.dbName = tempDbName;
+Line 158 com.alibaba.druid.sql.visitor.SQLASTVisitorAdapter:visit ---> return true;
+Line 36 com.actiontech.dble.plan.common.item.ItemIdent:<init> ---> this.withUnValAble = true;
+Line 34 com.actiontech.dble.plan.common.item.ItemIdent:<init> ---> this.tableName = tempTableName;
+Line 35 com.actiontech.dble.plan.common.item.ItemIdent:<init> ---> this.itemName = fieldNameArg;
+Line 30 com.actiontech.dble.plan.common.item.Item:<clinit> ---> public abstract class Item {
+Line 146 com.actiontech.dble.plan.common.item.Item:<init> ---> protected int maxLength = 0;
+Line 350 com.actiontech.dble.plan.visitor.MySQLItemVisitor:endVisit ---> item = new ItemField(null, null, '*');
+Line 38 com.alibaba.druid.sql.ast.expr.SQLAllColumnExpr:accept0 ---> visitor.endVisit(this);
+Line 350 com.actiontech.dble.plan.visitor.MySQLItemVisitor:endVisit ---> item = new ItemField(null, null, '*');
+Line 351 com.actiontech.dble.plan.visitor.MySQLItemVisitor:endVisit ---> initName(x);
+Line 518 com.actiontech.dble.plan.visitor.MySQLItemVisitor:endVisit ---> item = new ItemSumCount(args, isDistinct, false, null);
+Line 166 com.alibaba.druid.sql.ast.expr.SQLAggregateExpr:accept0 ---> visitor.endVisit(this);
+Line 40 com.alibaba.druid.sql.ast.SQLObjectImpl:accept ---> accept0(visitor);
+Line 904 com.actiontech.dble.plan.visitor.MySQLItemVisitor:initName ---> expr.accept(ov);
+Line 526 com.actiontech.dble.plan.visitor.MySQLItemVisitor:endVisit ---> initName(x);
+Line 160 com.alibaba.druid.sql.ast.expr.SQLAggregateExpr:accept0 ---> acceptChild(visitor, this.keep);
+Line 23 com.actiontech.dble.server.variables.SystemVariables:<init> ---> }
+Line 79 com.actiontech.dble.DbleServer:<clinit> ---> private static final Logger LOGGER = LoggerFactory.getLogger('Server');
+Line 155 com.alibaba.druid.sql.visitor.SQLASTVisitorAdapter:preVisit ---> }
+Line 34 com.alibaba.druid.sql.ast.SQLObjectImpl:accept ---> if (visitor == null) {
+Line 35 com.alibaba.druid.sql.ast.statement.SQLTableSourceImpl:<init> ---> }
+Line 904 com.actiontech.dble.plan.visitor.MySQLItemVisitor:initName ---> expr.accept(ov);
+Line 40 com.alibaba.druid.sql.ast.SQLObjectImpl:accept ---> accept0(visitor);
+Line 58 com.alibaba.druid.sql.ast.SQLObjectImpl:acceptChild ---> if (child == null) {
+Line 447 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:parseInto ---> }
+Line 58 com.alibaba.druid.sql.parser.CharTypes:isFirstIdentifierChar ---> if (c <= firstIdentifierFlags.length) {
+Line 620 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isFirstIdentifierChar(ch)) {
+Line 59 com.alibaba.druid.sql.parser.CharTypes:isFirstIdentifierChar ---> return firstIdentifierFlags[c];
+Line 615 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (ch == '$' && charAt(pos + 1) == '{') {
+Line 620 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isFirstIdentifierChar(ch)) {
+Line 621 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (ch == '（') {
+Line 58 com.alibaba.druid.sql.parser.CharTypes:isFirstIdentifierChar ---> if (c <= firstIdentifierFlags.length) {
+Line 620 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isFirstIdentifierChar(ch)) {
+Line 625 com.alibaba.druid.sql.parser.Lexer:nextToken ---> } else if (ch == '）') {
+Line 356 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower = 0xcbf29ce484222325L;
+Line 620 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isFirstIdentifierChar(ch)) {
+Line 58 com.alibaba.druid.sql.parser.CharTypes:isFirstIdentifierChar ---> if (c <= firstIdentifierFlags.length) {
+Line 59 com.alibaba.druid.sql.parser.CharTypes:isFirstIdentifierChar ---> return firstIdentifierFlags[c];
+Line 615 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (ch == '$' && charAt(pos + 1) == '{') {
+Line 620 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isFirstIdentifierChar(ch)) {
+Line 58 com.alibaba.druid.sql.parser.CharTypes:isFirstIdentifierChar ---> if (c <= firstIdentifierFlags.length) {
+Line 631 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (ch == 'N' || ch == 'n') {
+Line 356 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower = 0xcbf29ce484222325L;
+Line 359 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 615 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (ch == '$' && charAt(pos + 1) == '{') {
+Line 59 com.alibaba.druid.sql.parser.CharTypes:isFirstIdentifierChar ---> return firstIdentifierFlags[c];
+Line 620 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isFirstIdentifierChar(ch)) {
+Line 615 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (ch == '$' && charAt(pos + 1) == '{') {
+Line 59 com.alibaba.druid.sql.parser.CharTypes:isFirstIdentifierChar ---> return firstIdentifierFlags[c];
+Line 386 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> this.ch = charAt(pos);
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 359 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 360 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 620 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isFirstIdentifierChar(ch)) {
+Line 621 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (ch == '（') {
+Line 620 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isFirstIdentifierChar(ch)) {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 360 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 357 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash = 0xcbf29ce484222325L;
+Line 377 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 621 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (ch == '（') {
+Line 625 com.alibaba.druid.sql.parser.Lexer:nextToken ---> } else if (ch == '）') {
+Line 621 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (ch == '（') {
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 386 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> this.ch = charAt(pos);
+Line 246 com.alibaba.druid.sql.parser.Lexer:scanChar ---> ch = charAt(++pos);
+Line 520 com.alibaba.druid.sql.parser.Lexer:nextTokenBy ---> char ch_next = charAt(pos + 1);
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 357 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash = 0xcbf29ce484222325L;
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 377 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 362 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 378 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 625 com.alibaba.druid.sql.parser.Lexer:nextToken ---> } else if (ch == '）') {
+Line 631 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (ch == 'N' || ch == 'n') {
+Line 625 com.alibaba.druid.sql.parser.Lexer:nextToken ---> } else if (ch == '）') {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 515 com.alibaba.druid.sql.parser.Lexer:nextTokenBy ---> while (ch == ' ') {
+Line 519 com.alibaba.druid.sql.parser.Lexer:nextTokenBy ---> if (ch == 'b' || ch == 'B') {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 522 com.alibaba.druid.sql.parser.Lexer:nextTokenBy ---> char ch_next_2 = charAt(pos + 2);
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 526 com.alibaba.druid.sql.parser.Lexer:nextTokenBy ---> token = Token.BY;
+Line 549 com.alibaba.druid.sql.parser.SQLSelectParser:parseGroupBy ---> accept(Token.BY);
+Line 525 com.alibaba.druid.sql.parser.Lexer:nextTokenBy ---> ch = ' ';
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 362 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 378 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 363 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 386 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> this.ch = charAt(pos);
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 377 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 631 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (ch == 'N' || ch == 'n') {
+Line 386 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> this.ch = charAt(pos);
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 58 com.alibaba.druid.sql.parser.CharTypes:isFirstIdentifierChar ---> if (c <= firstIdentifierFlags.length) {
+Line 620 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isFirstIdentifierChar(ch)) {
+Line 631 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (ch == 'N' || ch == 'n') {
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 548 com.alibaba.druid.sql.parser.SQLSelectParser:parseGroupBy ---> lexer.nextTokenBy();
+Line 516 com.alibaba.druid.sql.parser.Lexer:nextTokenBy ---> scanChar();
+Line 521 com.alibaba.druid.sql.parser.Lexer:nextTokenBy ---> if (ch_next == 'y' || ch_next == 'Y') {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 291 com.alibaba.druid.sql.parser.SQLParser:accept ---> if (lexer.token == token) {
+Line 604 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isWhitespace(ch)) {
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 363 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 357 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash = 0xcbf29ce484222325L;
+Line 377 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 378 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 611 com.alibaba.druid.sql.parser.Lexer:nextToken ---> ch = charAt(++pos);
+Line 298 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if ((ch == 'b' || ch == 'B' )
+Line 386 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> this.ch = charAt(pos);
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 59 com.alibaba.druid.sql.parser.CharTypes:isFirstIdentifierChar ---> return firstIdentifierFlags[c];
+Line 615 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (ch == '$' && charAt(pos + 1) == '{') {
+Line 58 com.alibaba.druid.sql.parser.CharTypes:isFirstIdentifierChar ---> if (c <= firstIdentifierFlags.length) {
+Line 620 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isFirstIdentifierChar(ch)) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 386 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> this.ch = charAt(pos);
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 246 com.alibaba.druid.sql.parser.Lexer:scanChar ---> ch = charAt(++pos);
+Line 523 com.alibaba.druid.sql.parser.Lexer:nextTokenBy ---> if (ch_next_2 == ' ') {
+Line 292 com.alibaba.druid.sql.parser.SQLParser:accept ---> lexer.nextToken();
+Line 121 com.alibaba.druid.sql.parser.CharTypes:isWhitespace ---> return (c <= whitespaceFlags.length && whitespaceFlags[c]) //
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 362 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 172 com.alibaba.druid.sql.parser.SQLExprParser:exprRest ---> expr = multiplicativeRest(expr);
+Line 378 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 386 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> this.ch = charAt(pos);
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 377 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 321 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (ch == '`') {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 386 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> this.ch = charAt(pos);
+Line 620 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isFirstIdentifierChar(ch)) {
+Line 208 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser:primaryRest ---> if (lexer.token() == Token.LITERAL_CHARS) {
+Line 615 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (ch == '$' && charAt(pos + 1) == '{') {
+Line 59 com.alibaba.druid.sql.parser.CharTypes:isFirstIdentifierChar ---> return firstIdentifierFlags[c];
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 600 com.alibaba.druid.sql.parser.Lexer:nextToken ---> this.lines = 0;
+Line 524 com.alibaba.druid.sql.parser.Lexer:nextTokenBy ---> pos += 2;
+Line 604 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isWhitespace(ch)) {
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 366 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos = 1;
+Line 363 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 357 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash = 0xcbf29ce484222325L;
+Line 173 com.alibaba.druid.sql.parser.SQLExprParser:exprRest ---> expr = additiveRest(expr);
+Line 316 com.alibaba.druid.sql.parser.SQLExprParser:multiplicativeRest ---> return expr;
+Line 377 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 604 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isWhitespace(ch)) {
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 600 com.alibaba.druid.sql.parser.Lexer:nextToken ---> this.lines = 0;
+Line 378 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 386 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> this.ch = charAt(pos);
+Line 645 com.alibaba.druid.sql.parser.Lexer:nextToken ---> switch (ch) {
+Line 259 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser:primaryRest ---> } else if (lexer.token() == Token.IDENTIFIER) {
+Line 268 com.alibaba.druid.sql.parser.Lexer:token ---> return token;
+Line 356 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower = 0xcbf29ce484222325L;
+Line 620 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isFirstIdentifierChar(ch)) {
+Line 246 com.alibaba.druid.sql.parser.Lexer:scanChar ---> ch = charAt(++pos);
+Line 386 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> this.ch = charAt(pos);
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 611 com.alibaba.druid.sql.parser.Lexer:nextToken ---> ch = charAt(++pos);
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 362 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 620 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isFirstIdentifierChar(ch)) {
+Line 58 com.alibaba.druid.sql.parser.CharTypes:isFirstIdentifierChar ---> if (c <= firstIdentifierFlags.length) {
+Line 357 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash = 0xcbf29ce484222325L;
+Line 188 com.alibaba.druid.sql.parser.SQLExprParser:bitXor ---> SQLExpr expr = primary();
+Line 174 com.alibaba.druid.sql.parser.SQLExprParser:exprRest ---> expr = shiftRest(expr);
+Line 1954 com.alibaba.druid.sql.parser.SQLExprParser:additiveRest ---> return expr;
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 378 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 121 com.alibaba.druid.sql.parser.CharTypes:isWhitespace ---> return (c <= whitespaceFlags.length && whitespaceFlags[c]) //
+Line 611 com.alibaba.druid.sql.parser.Lexer:nextToken ---> ch = charAt(++pos);
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 377 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 604 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isWhitespace(ch)) {
+Line 674 com.alibaba.druid.sql.parser.Lexer:nextToken ---> token = LPAREN;
+Line 321 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser:primaryRest ---> if (lexer.token() == Token.VARIANT && '@'.equals(lexer.stringVal())) {
+Line 268 com.alibaba.druid.sql.parser.Lexer:token ---> return token;
+Line 208 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser:primaryRest ---> if (lexer.token() == Token.LITERAL_CHARS) {
+Line 359 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 645 com.alibaba.druid.sql.parser.Lexer:nextToken ---> switch (ch) {
+Line 604 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isWhitespace(ch)) {
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 600 com.alibaba.druid.sql.parser.Lexer:nextToken ---> this.lines = 0;
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 363 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 615 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (ch == '$' && charAt(pos + 1) == '{') {
+Line 59 com.alibaba.druid.sql.parser.CharTypes:isFirstIdentifierChar ---> return firstIdentifierFlags[c];
+Line 356 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower = 0xcbf29ce484222325L;
+Line 362 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 189 com.alibaba.druid.sql.parser.SQLExprParser:bitXor ---> return bitXorRest(expr);
+Line 198 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser:primary ---> return super.primary();
+Line 1977 com.alibaba.druid.sql.parser.SQLExprParser:shiftRest ---> return expr;
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 377 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 604 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isWhitespace(ch)) {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 378 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 121 com.alibaba.druid.sql.parser.CharTypes:isWhitespace ---> return (c <= whitespaceFlags.length && whitespaceFlags[c]) //
+Line 268 com.alibaba.druid.sql.parser.Lexer:token ---> return token;
+Line 259 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser:primaryRest ---> } else if (lexer.token() == Token.IDENTIFIER) {
+Line 356 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower = 0xcbf29ce484222325L;
+Line 312 com.alibaba.druid.sql.parser.Lexer:nextTokenComma ---> if (ch == ',' || ch == '，') {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 360 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 171 com.alibaba.druid.sql.parser.SQLExprParser:exprRest ---> expr = bitXorRest(expr);
+Line 1053 com.alibaba.druid.sql.parser.SQLExprParser:methodRest ---> if (acceptLPAREN) {
+Line 742 com.alibaba.druid.sql.parser.Lexer:nextToken ---> token = Token.STAR;
+Line 121 com.alibaba.druid.sql.parser.CharTypes:isWhitespace ---> return (c <= whitespaceFlags.length && whitespaceFlags[c]) //
+Line 580 com.alibaba.druid.sql.parser.SQLSelectParser:parseGroupBy ---> lexer.nextToken();
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 611 com.alibaba.druid.sql.parser.Lexer:nextToken ---> ch = charAt(++pos);
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 620 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isFirstIdentifierChar(ch)) {
+Line 359 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 363 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 685 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanNumber ---> bufPos++;
+Line 275 com.alibaba.druid.sql.parser.SQLExprParser:multiplicative ---> SQLExpr expr = bitXor();
+Line 271 com.alibaba.druid.sql.parser.SQLExprParser:bitXorRest ---> return expr;
+Line 175 com.alibaba.druid.sql.parser.SQLExprParser:exprRest ---> expr = bitAndRest(expr);
+Line 95 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:query ---> if (lexer.token() == Token.LPAREN) {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 378 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 366 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos = 1;
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 298 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if ((ch == 'b' || ch == 'B' )
+Line 611 com.alibaba.druid.sql.parser.Lexer:nextToken ---> ch = charAt(++pos);
+Line 377 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 604 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isWhitespace(ch)) {
+Line 321 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser:primaryRest ---> if (lexer.token() == Token.VARIANT && '@'.equals(lexer.stringVal())) {
+Line 359 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 318 com.alibaba.druid.sql.parser.Lexer:nextTokenComma ---> if (ch == ')' || ch == '）') {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 377 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 271 com.alibaba.druid.sql.parser.SQLExprParser:bitXorRest ---> return expr;
+Line 172 com.alibaba.druid.sql.parser.SQLExprParser:exprRest ---> expr = multiplicativeRest(expr);
+Line 1054 com.alibaba.druid.sql.parser.SQLExprParser:methodRest ---> accept(Token.LPAREN);
+Line 140 com.alibaba.druid.sql.parser.SQLExprParser:expr ---> if (lexer.token == Token.STAR) {
+Line 604 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isWhitespace(ch)) {
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 600 com.alibaba.druid.sql.parser.Lexer:nextToken ---> this.lines = 0;
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 645 com.alibaba.druid.sql.parser.Lexer:nextToken ---> switch (ch) {
+Line 1124 com.alibaba.druid.sql.parser.SQLExprParser:methodRest ---> SQLAggregateExpr aggregateExpr = parseAggregateExpr(aggMethodName);
+Line 360 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 689 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanNumber ---> ch = charAt(++pos);
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 276 com.alibaba.druid.sql.parser.SQLExprParser:multiplicative ---> return multiplicativeRest(expr);
+Line 189 com.alibaba.druid.sql.parser.SQLExprParser:bitXor ---> return bitXorRest(expr);
+Line 176 com.alibaba.druid.sql.parser.SQLExprParser:exprRest ---> expr = bitOrRest(expr);
+Line 1788 com.alibaba.druid.sql.parser.SQLExprParser:bitAndRest ---> return expr;
+Line 118 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:query ---> if (lexer.token() == Token.SELECT) {
+Line 268 com.alibaba.druid.sql.parser.Lexer:token ---> return token;
+Line 298 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if ((ch == 'b' || ch == 'B' )
+Line 611 com.alibaba.druid.sql.parser.Lexer:nextToken ---> ch = charAt(++pos);
+Line 366 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos = 1;
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 397 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> Token tok = keywods.getKeyword(hash_lower);
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 321 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (ch == '`') {
+Line 378 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 366 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos = 1;
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 611 com.alibaba.druid.sql.parser.Lexer:nextToken ---> ch = charAt(++pos);
+Line 298 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if ((ch == 'b' || ch == 'B' )
+Line 329 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser:primaryRest ---> return super.primaryRest(expr);
+Line 360 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 324 com.alibaba.druid.sql.parser.Lexer:nextTokenComma ---> if (ch == '.') {
+Line 246 com.alibaba.druid.sql.parser.Lexer:scanChar ---> ch = charAt(++pos);
+Line 378 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 316 com.alibaba.druid.sql.parser.SQLExprParser:multiplicativeRest ---> return expr;
+Line 173 com.alibaba.druid.sql.parser.SQLExprParser:exprRest ---> expr = additiveRest(expr);
+Line 2739 com.alibaba.druid.sql.parser.SQLExprParser:accept ---> lexer.nextToken();
+Line 141 com.alibaba.druid.sql.parser.SQLExprParser:expr ---> lexer.nextToken();
+Line 611 com.alibaba.druid.sql.parser.Lexer:nextToken ---> ch = charAt(++pos);
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 803 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (Character.isLetter(ch)) {
+Line 1996 com.alibaba.druid.sql.parser.Lexer:isOperator ---> return true;
+Line 1520 com.alibaba.druid.sql.parser.SQLExprParser:parseAggregateExpr ---> accept(Token.RPAREN);
+Line 377 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 357 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash = 0xcbf29ce484222325L;
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 684 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanNumber ---> if (ch >= '0' && ch <= '9') {
+Line 316 com.alibaba.druid.sql.parser.SQLExprParser:multiplicativeRest ---> return expr;
+Line 1920 com.alibaba.druid.sql.parser.SQLExprParser:additive ---> SQLExpr expr = multiplicative();
+Line 1808 com.alibaba.druid.sql.parser.SQLExprParser:bitOrRest ---> return expr;
+Line 440 com.alibaba.druid.sql.parser.Lexer:nextTokenValue ---> if (ch == '\'') {
+Line 268 com.alibaba.druid.sql.parser.Lexer:token ---> return token;
+Line 95 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:query ---> if (lexer.token() == Token.LPAREN) {
+Line 321 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (ch == '`') {
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 197 com.alibaba.druid.sql.parser.Keywords:getKeyword ---> if (index < 0) {
+Line 196 com.alibaba.druid.sql.parser.Keywords:getKeyword ---> int index = Arrays.binarySearch(hashArray, hash);
+Line 388 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (bufPos == 1) {
+Line 397 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> Token tok = keywods.getKeyword(hash_lower);
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 321 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (ch == '`') {
+Line 1033 com.alibaba.druid.sql.parser.SQLExprParser:primaryRest ---> return methodRest(expr, true);
+Line 1071 com.alibaba.druid.sql.parser.SQLExprParser:methodRest ---> SQLIdentifierExpr identifierExpr = (SQLIdentifierExpr) expr;
+Line 377 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 330 com.alibaba.druid.sql.parser.Lexer:nextTokenComma ---> if (ch == 'a' || ch == 'A') {
+Line 604 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isWhitespace(ch)) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 377 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 174 com.alibaba.druid.sql.parser.SQLExprParser:exprRest ---> expr = shiftRest(expr);
+Line 1954 com.alibaba.druid.sql.parser.SQLExprParser:additiveRest ---> return expr;
+Line 246 com.alibaba.druid.sql.parser.Lexer:scanChar ---> ch = charAt(++pos);
+Line 246 com.alibaba.druid.sql.parser.Lexer:scanChar ---> ch = charAt(++pos);
+Line 246 com.alibaba.druid.sql.parser.Lexer:scanChar ---> ch = charAt(++pos);
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 808 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isOperator(ch)) {
+Line 2739 com.alibaba.druid.sql.parser.SQLExprParser:accept ---> lexer.nextToken();
+Line 378 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 3226 com.alibaba.druid.sql.parser.SQLExprParser:parseSelectItem ---> lexer.nextTokenComma();
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 362 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 658 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanNumber ---> if (ch == '0' && charAt(pos + 1) == 'b') {
+Line 689 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanNumber ---> ch = charAt(++pos);
+Line 1922 com.alibaba.druid.sql.parser.SQLExprParser:additive ---> if (lexer.token == Token.PLUS
+Line 1958 com.alibaba.druid.sql.parser.SQLExprParser:shift ---> SQLExpr expr = additive();
+Line 276 com.alibaba.druid.sql.parser.SQLExprParser:multiplicative ---> return multiplicativeRest(expr);
+Line 177 com.alibaba.druid.sql.parser.SQLExprParser:exprRest ---> expr = inRest(expr);
+Line 366 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos = 1;
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 298 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if ((ch == 'b' || ch == 'B' )
+Line 446 com.alibaba.druid.sql.parser.Lexer:nextTokenValue ---> if (ch == ''') {
+Line 118 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:query ---> if (lexer.token() == Token.SELECT) {
+Line 198 com.alibaba.druid.sql.parser.Keywords:getKeyword ---> return null;
+Line 388 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (bufPos == 1) {
+Line 200 com.alibaba.druid.sql.parser.Keywords:getKeyword ---> return tokens[index];
+Line 398 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (tok != null) {
+Line 196 com.alibaba.druid.sql.parser.Keywords:getKeyword ---> int index = Arrays.binarySearch(hashArray, hash);
+Line 197 com.alibaba.druid.sql.parser.Keywords:getKeyword ---> if (index < 0) {
+Line 388 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (bufPos == 1) {
+Line 1070 com.alibaba.druid.sql.parser.SQLExprParser:methodRest ---> if (expr instanceof SQLIdentifierExpr) {
+Line 55 com.alibaba.druid.sql.ast.expr.SQLIdentifierExpr:<init> ---> this.hashCode64 = hash_lower;
+Line 85 com.alibaba.druid.sql.ast.expr.SQLIdentifierExpr:nameHashCode64 ---> return hashCode64();
+Line 378 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 344 com.alibaba.druid.sql.parser.Lexer:nextTokenComma ---> nextToken();
+Line 121 com.alibaba.druid.sql.parser.CharTypes:isWhitespace ---> return (c <= whitespaceFlags.length && whitespaceFlags[c]) //
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 378 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 1977 com.alibaba.druid.sql.parser.SQLExprParser:shiftRest ---> return expr;
+Line 246 com.alibaba.druid.sql.parser.Lexer:scanChar ---> ch = charAt(++pos);
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 246 com.alibaba.druid.sql.parser.Lexer:scanChar ---> ch = charAt(++pos);
+Line 809 com.alibaba.druid.sql.parser.Lexer:nextToken ---> scanOperator();
+Line 377 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 600 com.alibaba.druid.sql.parser.Lexer:nextToken ---> this.lines = 0;
+Line 246 com.alibaba.druid.sql.parser.Lexer:scanChar ---> ch = charAt(++pos);
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 363 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 694 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanNumber ---> if (ch == '.') {
+Line 692 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanNumber ---> boolean isDouble = false;
+Line 737 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanNumber ---> if (isFirstIdentifierChar(ch) && !(ch == 'b' && bufPos == 1 && charAt(pos - 1) == '0')) {
+Line 58 com.alibaba.druid.sql.parser.CharTypes:isFirstIdentifierChar ---> if (c <= firstIdentifierFlags.length) {
+Line 1959 com.alibaba.druid.sql.parser.SQLExprParser:shift ---> return shiftRest(expr);
+Line 1929 com.alibaba.druid.sql.parser.SQLExprParser:additive ---> return expr;
+Line 1916 com.alibaba.druid.sql.parser.SQLExprParser:inRest ---> return expr;
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 321 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (ch == '`') {
+Line 452 com.alibaba.druid.sql.parser.Lexer:nextTokenValue ---> if (ch == '0') {
+Line 119 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:query ---> lexer.nextTokenValue();
+Line 398 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (tok != null) {
+Line 199 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:query ---> parseGroupBy(queryBlock);
+Line 399 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> token = tok;
+Line 200 com.alibaba.druid.sql.parser.Keywords:getKeyword ---> return tokens[index];
+Line 398 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (tok != null) {
+Line 586 com.alibaba.druid.sql.parser.SQLSelectParser:parseGroupBy ---> if (lexer.token == Token.WITH) {
+Line 1073 com.alibaba.druid.sql.parser.SQLExprParser:methodRest ---> hash_lower = identifierExpr.nameHashCode64();
+Line 94 com.alibaba.druid.sql.ast.expr.SQLIdentifierExpr:hashCode64 ---> return hashCode64;
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 377 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 604 com.alibaba.druid.sql.parser.Lexer:nextToken ---> if (isWhitespace(ch)) {
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 377 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 175 com.alibaba.druid.sql.parser.SQLExprParser:exprRest ---> expr = bitAndRest(expr);
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 841 com.alibaba.druid.sql.parser.Lexer:scanOperator ---> switch (ch) {
+Line 378 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 611 com.alibaba.druid.sql.parser.Lexer:nextToken ---> ch = charAt(++pos);
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 734 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanNumber ---> if (isDouble) {
+Line 59 com.alibaba.druid.sql.parser.CharTypes:isFirstIdentifierChar ---> return firstIdentifierFlags[c];
+Line 1977 com.alibaba.druid.sql.parser.SQLExprParser:shiftRest ---> return expr;
+Line 1778 com.alibaba.druid.sql.parser.SQLExprParser:bitAnd ---> SQLExpr expr = shift();
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 242 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:parseTableSource ---> if (lexer.token() == Token.LPAREN) {
+Line 71 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:parseFrom ---> if (lexer.token() != Token.FROM) {
+Line 178 com.alibaba.druid.sql.parser.SQLExprParser:exprRest ---> expr = relationalRest(expr);
+Line 388 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (bufPos == 1) {
+Line 464 com.alibaba.druid.sql.parser.Lexer:nextTokenValue ---> if (ch > '0' && ch <= '9') {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 246 com.alibaba.druid.sql.parser.Lexer:scanChar ---> ch = charAt(++pos);
+Line 406 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> token = Token.IDENTIFIER;
+Line 582 com.alibaba.druid.sql.parser.SQLSelectParser:parseGroupBy ---> SQLExpr having = this.exprParser.expr();
+Line 547 com.alibaba.druid.sql.parser.SQLSelectParser:parseGroupBy ---> if (lexer.token == (Token.GROUP)) {
+Line 399 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> token = tok;
+Line 616 com.alibaba.druid.sql.parser.SQLSelectParser:parseGroupBy ---> queryBlock.setGroupBy(groupBy);
+Line 85 com.alibaba.druid.sql.ast.expr.SQLIdentifierExpr:nameHashCode64 ---> return hashCode64();
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 378 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 298 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if ((ch == 'b' || ch == 'B' )
+Line 611 com.alibaba.druid.sql.parser.Lexer:nextToken ---> ch = charAt(++pos);
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 366 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos = 1;
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 378 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 1788 com.alibaba.druid.sql.parser.SQLExprParser:bitAndRest ---> return expr;
+Line 176 com.alibaba.druid.sql.parser.SQLExprParser:exprRest ---> expr = bitOrRest(expr);
+Line 246 com.alibaba.druid.sql.parser.Lexer:scanChar ---> ch = charAt(++pos);
+Line 921 com.alibaba.druid.sql.parser.Lexer:scanOperator ---> if (ch == '=') {
+Line 377 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 380 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash ^= ch;
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 579 com.alibaba.druid.sql.parser.Lexer:nextTokenIdent ---> if (isFirstIdentifierChar(ch)) {
+Line 58 com.alibaba.druid.sql.parser.CharTypes:isFirstIdentifierChar ---> if (c <= firstIdentifierFlags.length) {
+Line 737 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanNumber ---> if (isFirstIdentifierChar(ch) && !(ch == 'b' && bufPos == 1 && charAt(pos - 1) == '0')) {
+Line 1959 com.alibaba.druid.sql.parser.SQLExprParser:shift ---> return shiftRest(expr);
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 268 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:parseTableSource ---> if(lexer.token() == Token.UPDATE) {
+Line 89 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:parseFrom ---> queryBlock.setFrom(parseTableSource());
+Line 268 com.alibaba.druid.sql.parser.Lexer:token ---> return token;
+Line 77 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:parseFrom ---> if (lexer.token() == Token.UPDATE) { // taobao returning to urgly syntax
+Line 193 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:query ---> parseFrom(queryBlock);
+Line 268 com.alibaba.druid.sql.parser.Lexer:token ---> return token;
+Line 2458 com.alibaba.druid.sql.parser.SQLExprParser:relationalRest ---> return expr;
+Line 398 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (tok != null) {
+Line 470 com.alibaba.druid.sql.parser.Lexer:nextTokenValue ---> if (ch == '?') {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 140 com.alibaba.druid.sql.parser.SQLExprParser:expr ---> if (lexer.token == Token.STAR) {
+Line 579 com.alibaba.druid.sql.parser.SQLSelectParser:parseGroupBy ---> if (lexer.token == (Token.HAVING)) {
+Line 102 com.alibaba.druid.sql.ast.statement.SQLSelectQueryBlock:setGroupBy ---> this.groupBy = groupBy;
+Line 61 com.actiontech.dble.plan.visitor.TestMySQLItemVisitor:testGroupbyHaving ---> SQLSelectGroupByClause groupBy = query.getGroupBy();
+Line 1492 com.alibaba.druid.sql.parser.SQLExprParser:getAggreateFunction ---> int index = Arrays.binarySearch(aggregateFunctionHashCodes, hash_lower);
+Line 1493 com.alibaba.druid.sql.parser.SQLExprParser:getAggreateFunction ---> if (index < 0) {
+Line 377 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 321 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (ch == '`') {
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 397 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> Token tok = keywods.getKeyword(hash_lower);
+Line 1808 com.alibaba.druid.sql.parser.SQLExprParser:bitOrRest ---> return expr;
+Line 924 com.alibaba.druid.sql.parser.Lexer:scanOperator ---> } else if (ch == '>') {
+Line 378 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 381 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash *= 0x100000001b3L;
+Line 246 com.alibaba.druid.sql.parser.Lexer:scanChar ---> ch = charAt(++pos);
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 59 com.alibaba.druid.sql.parser.CharTypes:isFirstIdentifierChar ---> return firstIdentifierFlags[c];
+Line 75 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:parseFrom ---> lexer.nextTokenIdent();
+Line 753 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanNumber ---> token = Token.LITERAL_INT;
+Line 1779 com.alibaba.druid.sql.parser.SQLExprParser:bitAnd ---> return bitAndRest(expr);
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 268 com.alibaba.druid.sql.parser.Lexer:token ---> return token;
+Line 242 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:parseTableSource ---> if (lexer.token() == Token.LPAREN) {
+Line 277 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:parseTableSource ---> SQLExprTableSource tableReference = new SQLExprTableSource();
+Line 268 com.alibaba.druid.sql.parser.Lexer:token ---> return token;
+Line 71 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:parseFrom ---> if (lexer.token() != Token.FROM) {
+Line 180 com.alibaba.druid.sql.parser.SQLExprParser:exprRest ---> expr = andRest(expr);
+Line 406 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> token = Token.IDENTIFIER;
+Line 476 com.alibaba.druid.sql.parser.Lexer:nextTokenValue ---> if (ch == 'n' || ch == 'N') {
+Line 246 com.alibaba.druid.sql.parser.Lexer:scanChar ---> ch = charAt(++pos);
+Line 506 com.alibaba.druid.sql.parser.Lexer:nextTokenValue ---> if (isFirstIdentifierChar(ch)) {
+Line 58 com.alibaba.druid.sql.parser.CharTypes:isFirstIdentifierChar ---> if (c <= firstIdentifierFlags.length) {
+Line 583 com.alibaba.druid.sql.parser.SQLSelectParser:parseGroupBy ---> groupBy.setHaving(having);
+Line 95 com.alibaba.druid.sql.ast.statement.SQLSelectQueryBlock:getGroupBy ---> return this.groupBy;
+Line 64 com.actiontech.dble.plan.visitor.TestMySQLItemVisitor:testGroupbyHaving ---> q.accept(v);
+Line 1496 com.alibaba.druid.sql.parser.SQLExprParser:getAggreateFunction ---> return aggregateFunctions[index];
+Line 1950 com.alibaba.druid.sql.parser.Lexer:identifierEquals ---> if (token != Token.IDENTIFIER) {
+Line 378 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 176 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:query ---> if (lexer.identifierEquals(FnvHash.Constants.SQL_CALC_FOUND_ROWS)) {
+Line 388 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (bufPos == 1) {
+Line 196 com.alibaba.druid.sql.parser.Keywords:getKeyword ---> int index = Arrays.binarySearch(hashArray, hash);
+Line 197 com.alibaba.druid.sql.parser.Keywords:getKeyword ---> if (index < 0) {
+Line 208 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser:primaryRest ---> if (lexer.token() == Token.LITERAL_CHARS) {
+Line 3337 com.alibaba.druid.sql.parser.SQLExprParser:parseSelectItem ---> if (token == Token.LPAREN) {
+Line 177 com.alibaba.druid.sql.parser.SQLExprParser:exprRest ---> expr = inRest(expr);
+Line 928 com.alibaba.druid.sql.parser.Lexer:scanOperator ---> token = Token.GT;
+Line 377 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 369 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> ch = charAt(++pos);
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 579 com.alibaba.druid.sql.parser.Lexer:nextTokenIdent ---> if (isFirstIdentifierChar(ch)) {
+Line 2233 com.alibaba.druid.sql.parser.SQLExprParser:relationalRest ---> if (lexer.token == Token.EQ) {
+Line 1788 com.alibaba.druid.sql.parser.SQLExprParser:bitAndRest ---> return expr;
+Line 1792 com.alibaba.druid.sql.parser.SQLExprParser:bitOr ---> SQLExpr expr = bitAnd();
+Line 246 com.alibaba.druid.sql.parser.Lexer:scanChar ---> ch = charAt(++pos);
+Line 298 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if ((ch == 'b' || ch == 'B' )
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 366 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos = 1;
+Line 268 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:parseTableSource ---> if(lexer.token() == Token.UPDATE) {
+Line 38 com.alibaba.druid.sql.ast.statement.SQLExprTableSource:<init> ---> public SQLExprTableSource(){
+Line 77 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:parseFrom ---> if (lexer.token() == Token.UPDATE) { // taobao returning to urgly syntax
+Line 2049 com.alibaba.druid.sql.parser.SQLExprParser:andRest ---> return expr;
+Line 3222 com.alibaba.druid.sql.parser.SQLExprParser:parseSelectItem ---> Token token = lexer.token;
+Line 3286 com.alibaba.druid.sql.parser.SQLExprParser:parseSelectItem ---> if (token == Token.COMMA) {
+Line 500 com.alibaba.druid.sql.parser.Lexer:nextTokenValue ---> if (ch == ')') {
+Line 59 com.alibaba.druid.sql.parser.CharTypes:isFirstIdentifierChar ---> return firstIdentifierFlags[c];
+Line 71 com.alibaba.druid.sql.ast.statement.SQLSelectGroupByClause:setHaving ---> this.having = having;
+Line 62 com.actiontech.dble.plan.visitor.TestMySQLItemVisitor:testGroupbyHaving ---> SQLExpr q = groupBy.getHaving();
+Line 40 com.alibaba.druid.sql.ast.SQLObjectImpl:accept ---> accept0(visitor);
+Line 1511 com.alibaba.druid.sql.parser.SQLExprParser:parseAggregateExpr ---> aggregateExpr = new SQLAggregateExpr(methodName);
+Line 1960 com.alibaba.druid.sql.parser.Lexer:identifierEquals ---> return this.hash_lower == hash_lower;
+Line 398 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (tok != null) {
+Line 200 com.alibaba.druid.sql.parser.Keywords:getKeyword ---> return tokens[index];
+Line 259 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser:primaryRest ---> } else if (lexer.token() == Token.IDENTIFIER) {
+Line 268 com.alibaba.druid.sql.parser.Lexer:token ---> return token;
+Line 3341 com.alibaba.druid.sql.parser.SQLExprParser:parseSelectItem ---> expr = this.primaryRest(expr);
+Line 114 com.alibaba.druid.sql.ast.expr.SQLBinaryOperator:<init> ---> this.name_lcase = name.toLowerCase();
+Line 115 com.alibaba.druid.sql.ast.expr.SQLBinaryOperator:<init> ---> this.priority = priority;
+Line 52 com.alibaba.druid.sql.ast.expr.SQLBinaryOperator:<clinit> ---> GreaterThan('>', 110),
+Line 112 com.alibaba.druid.sql.ast.expr.SQLBinaryOperator:<init> ---> SQLBinaryOperator(String name, int priority){
+Line 113 com.alibaba.druid.sql.ast.expr.SQLBinaryOperator:<init> ---> this.name = name;
+Line 166 com.alibaba.druid.sql.parser.SQLExprParser:expr ---> return exprRest(expr);
+Line 1916 com.alibaba.druid.sql.parser.SQLExprParser:inRest ---> return expr;
+Line 156 com.alibaba.druid.sql.parser.SQLExprParser:expr ---> Token token = lexer.token;
+Line 157 com.alibaba.druid.sql.parser.SQLExprParser:expr ---> if (token == Token.COMMA) {
+Line 378 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 580 com.alibaba.druid.sql.parser.Lexer:nextTokenIdent ---> scanIdentifier();
+Line 1793 com.alibaba.druid.sql.parser.SQLExprParser:bitOr ---> return bitOrRest(expr);
+Line 1779 com.alibaba.druid.sql.parser.SQLExprParser:bitAnd ---> return bitAndRest(expr);
+Line 321 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (ch == '`') {
+Line 375 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> bufPos++;
+Line 279 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:parseTableSource ---> parseTableSourceQueryTableExpr(tableReference);
+Line 181 com.alibaba.druid.sql.parser.SQLExprParser:exprRest ---> expr = xorRest(expr);
+Line 3223 com.alibaba.druid.sql.parser.SQLExprParser:parseSelectItem ---> if (token == Token.IDENTIFIER) {
+Line 3290 com.alibaba.druid.sql.parser.SQLExprParser:parseSelectItem ---> if (token == Token.AS) {
+Line 506 com.alibaba.druid.sql.parser.Lexer:nextTokenValue ---> if (isFirstIdentifierChar(ch)) {
+Line 62 com.alibaba.druid.sql.ast.SQLObjectImpl:acceptChild ---> child.accept(visitor);
+Line 63 com.alibaba.druid.sql.ast.statement.SQLSelectGroupByClause:getHaving ---> return this.having;
+Line 137 com.alibaba.druid.sql.ast.expr.SQLBinaryOpExpr:accept0 ---> if (visitor.visit(this)) {
+Line 43 com.alibaba.druid.sql.ast.expr.SQLAggregateExpr:<init> ---> protected final List<SQLExpr> arguments        = new ArrayList<SQLExpr>();
+Line 159 com.alibaba.druid.sql.ast.expr.SQLAggregateExpr:accept0 ---> acceptChild(visitor, this.arguments);
+Line 176 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:query ---> if (lexer.identifierEquals(FnvHash.Constants.SQL_CALC_FOUND_ROWS)) {
+Line 321 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser:primaryRest ---> if (lexer.token() == Token.VARIANT && '@'.equals(lexer.stringVal())) {
+Line 399 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> token = tok;
+Line 268 com.alibaba.druid.sql.parser.Lexer:token ---> return token;
+Line 208 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser:primaryRest ---> if (lexer.token() == Token.LITERAL_CHARS) {
+Line 52 com.alibaba.druid.sql.ast.expr.SQLBinaryOperator:<clinit> ---> GreaterThan('>', 110),
+Line 178 com.alibaba.druid.sql.parser.SQLExprParser:exprRest ---> expr = relationalRest(expr);
+Line 159 com.alibaba.druid.sql.parser.SQLExprParser:expr ---> } else if (token == Token.EQ) {
+Line 377 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower ^= ((ch >= 'A' && ch <= 'Z') ? (ch + 32) : ch);
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 1808 com.alibaba.druid.sql.parser.SQLExprParser:bitOrRest ---> return expr;
+Line 518 com.actiontech.dble.plan.visitor.MySQLItemVisitor:endVisit ---> item = new ItemSumCount(args, isDistinct, false, null);
+Line 166 com.alibaba.druid.sql.ast.expr.SQLAggregateExpr:accept0 ---> visitor.endVisit(this);
+Line 388 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (bufPos == 1) {
+Line 198 com.alibaba.druid.sql.parser.Keywords:getKeyword ---> return null;
+Line 793 com.alibaba.druid.sql.parser.SQLSelectParser:parseTableSourceQueryTableExpr ---> if (lexer.token == Token.LITERAL_ALIAS || lexer.token == Token.IDENTIFIED
+Line 2073 com.alibaba.druid.sql.parser.SQLExprParser:xorRest ---> return expr;
+Line 3251 com.alibaba.druid.sql.parser.SQLExprParser:parseSelectItem ---> token = lexer.token;
+Line 3308 com.alibaba.druid.sql.parser.SQLExprParser:parseSelectItem ---> if (token == Token.LITERAL_ALIAS) {
+Line 507 com.alibaba.druid.sql.parser.Lexer:nextTokenValue ---> scanIdentifier();
+Line 40 com.alibaba.druid.sql.ast.SQLObjectImpl:accept ---> accept0(visitor);
+Line 138 com.alibaba.druid.sql.ast.expr.SQLBinaryOpExpr:accept0 ---> acceptChild(visitor, this.left);
+Line 159 com.alibaba.druid.sql.ast.expr.SQLAggregateExpr:accept0 ---> acceptChild(visitor, this.arguments);
+Line 81 com.actiontech.dble.plan.visitor.MySQLItemVisitor:getItem ---> expr.accept(fv);
+Line 48 com.alibaba.druid.sql.ast.SQLObjectImpl:acceptChild ---> if (children == null) {
+Line 181 com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser:query ---> parseSelectList(queryBlock);
+Line 268 com.alibaba.druid.sql.parser.Lexer:token ---> return token;
+Line 259 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser:primaryRest ---> } else if (lexer.token() == Token.IDENTIFIER) {
+Line 48 com.alibaba.druid.sql.parser.SQLParser:getDbType ---> return dbType;
+Line 2229 com.alibaba.druid.sql.parser.SQLExprParser:relationalRest ---> SQLBinaryOperator op = SQLBinaryOperator.GreaterThan;
+Line 2240 com.alibaba.druid.sql.parser.SQLExprParser:relationalRest ---> expr = new SQLBinaryOpExpr(expr, op, rightExp, getDbType());
+Line 1950 com.alibaba.druid.sql.parser.Lexer:identifierEquals ---> if (token != Token.IDENTIFIER) {
+Line 158 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser:primary ---> if (lexer.identifierEquals(FnvHash.Constants.OUTFILE)) {
+Line 378 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> hash_lower *= 0x100000001b3L;
+Line 167 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser$1:<clinit> ---> switch (tok) {
+Line 1793 com.alibaba.druid.sql.parser.SQLExprParser:bitOr ---> return bitOrRest(expr);
+Line 526 com.actiontech.dble.plan.visitor.MySQLItemVisitor:endVisit ---> initName(x);
+Line 398 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (tok != null) {
+Line 799 com.alibaba.druid.sql.parser.SQLSelectParser:parseTableSourceQueryTableExpr ---> tableReference.setExpr(expr());
+Line 182 com.alibaba.druid.sql.parser.SQLExprParser:exprRest ---> expr = orRest(expr);
+Line 3314 com.alibaba.druid.sql.parser.SQLExprParser:parseSelectItem ---> if ((token == Token.IDENTIFIER && hash_lower != FnvHash.Constants.CURRENT)
+Line 371 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> if (!isIdentifierChar(ch)) {
+Line 136 com.alibaba.druid.sql.parser.Lexer:charAt ---> if (index >= text.length()) {
+Line 158 com.alibaba.druid.sql.ast.expr.SQLAggregateExpr:accept0 ---> if (visitor.visit(this)) {
+Line 58 com.alibaba.druid.sql.ast.SQLObjectImpl:acceptChild ---> if (child == null) {
+Line 48 com.alibaba.druid.sql.ast.SQLObjectImpl:acceptChild ---> if (children == null) {
+Line 40 com.alibaba.druid.sql.ast.SQLObjectImpl:accept ---> accept0(visitor);
+Line 52 com.alibaba.druid.sql.ast.SQLObjectImpl:acceptChild ---> for (SQLObject child : children) {
+Line 53 com.alibaba.druid.sql.ast.SQLObjectImpl:acceptChild ---> acceptChild(visitor, child);
+Line 675 com.alibaba.druid.sql.parser.SQLSelectParser:parseSelectList ---> final SQLSelectItem selectItem = this.exprParser.parseSelectItem();
+Line 321 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser:primaryRest ---> if (lexer.token() == Token.VARIANT && '@'.equals(lexer.stringVal())) {
+Line 62 com.alibaba.druid.sql.ast.SQLObjectImpl:acceptChild ---> child.accept(visitor);
+Line 2240 com.alibaba.druid.sql.parser.SQLExprParser:relationalRest ---> expr = new SQLBinaryOpExpr(expr, op, rightExp, getDbType());
+Line 1960 com.alibaba.druid.sql.parser.Lexer:identifierEquals ---> return this.hash_lower == hash_lower;
+Line 154 com.alibaba.druid.sql.parser.SQLExprParser:expr ---> SQLExpr expr = primary();
+Line 156 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser:primary ---> final Token tok = lexer.token();
+Line 23 com.alibaba.druid.sql.parser.Token:<clinit> ---> public enum Token {
+Line 65 com.alibaba.druid.sql.ast.expr.SQLBinaryOpExpr:<init> ---> setRight(right);
+Line 904 com.actiontech.dble.plan.visitor.MySQLItemVisitor:initName ---> expr.accept(ov);
+Line 40 com.alibaba.druid.sql.ast.SQLObjectImpl:accept ---> accept0(visitor);
+Line 904 com.actiontech.dble.plan.visitor.MySQLItemVisitor:initName ---> expr.accept(ov);
+Line 3364 com.alibaba.druid.sql.parser.SQLExprParser:parseSelectItem ---> alias = as();
+Line 98 com.alibaba.druid.sql.parser.SQLParser:as ---> String alias = null;
+Line 88 com.alibaba.druid.sql.parser.SQLSelectParser:select ---> SQLSelectQuery query = query();
+Line 406 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:scanIdentifier ---> token = Token.IDENTIFIER;
+Line 1009 com.alibaba.druid.sql.parser.SQLSelectParser:expr ---> return this.exprParser.expr();
+Line 2133 com.alibaba.druid.sql.parser.SQLExprParser:orRest ---> return expr;
+Line 3343 com.alibaba.druid.sql.parser.SQLExprParser:parseSelectItem ---> expr = this.exprRest(expr);
+Line 329 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser:primaryRest ---> return super.primaryRest(expr);
+Line 171 com.alibaba.druid.sql.parser.SQLExprParser:exprRest ---> expr = bitXorRest(expr);
+Line 649 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> if (c <= identifierFlags.length) {
+Line 140 com.alibaba.druid.sql.parser.Lexer:charAt ---> return text.charAt(index);
+Line 904 com.actiontech.dble.plan.visitor.MySQLItemVisitor:initName ---> expr.accept(ov);
+Line 53 com.alibaba.druid.sql.ast.SQLObjectImpl:acceptChild ---> acceptChild(visitor, child);
+Line 52 com.alibaba.druid.sql.ast.SQLObjectImpl:acceptChild ---> for (SQLObject child : children) {
+Line 158 com.alibaba.druid.sql.ast.expr.SQLAggregateExpr:accept0 ---> if (visitor.visit(this)) {
+Line 58 com.alibaba.druid.sql.ast.SQLObjectImpl:acceptChild ---> if (child == null) {
+Line 329 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser:primaryRest ---> return super.primaryRest(expr);
+Line 40 com.alibaba.druid.sql.ast.SQLObjectImpl:accept ---> accept0(visitor);
+Line 63 com.alibaba.druid.sql.ast.expr.SQLBinaryOpExpr:<init> ---> this.left = left;
+Line 158 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser:primary ---> if (lexer.identifierEquals(FnvHash.Constants.OUTFILE)) {
+Line 268 com.alibaba.druid.sql.parser.Lexer:token ---> return token;
+Line 167 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser$1:<clinit> ---> switch (tok) {
+Line 117 com.alibaba.druid.sql.ast.expr.SQLBinaryOpExpr:setRight ---> this.right = right;
+Line 40 com.alibaba.druid.sql.ast.SQLObjectImpl:accept ---> accept0(visitor);
+Line 163 com.alibaba.druid.sql.ast.expr.SQLAggregateExpr:accept0 ---> acceptChild(visitor, this.withinGroup);
+Line 40 com.alibaba.druid.sql.ast.SQLObjectImpl:accept ---> accept0(visitor);
+Line 80 com.actiontech.dble.plan.visitor.MySQLItemVisitor:getItem ---> MySQLItemVisitor fv = new MySQLItemVisitor(currentDb, this.charsetIndex, this.metaManager);
+Line 167 com.alibaba.druid.sql.parser.SQLParser:as ---> return alias;
+Line 198 com.alibaba.druid.sql.parser.Keywords:getKeyword ---> return null;
+Line 236 com.alibaba.druid.sql.parser.SQLSelectParser:query ---> return query(null, true);
+Line 56 com.alibaba.druid.sql.ast.expr.SQLIdentifierExpr:<init> ---> }
+Line 140 com.alibaba.druid.sql.parser.SQLExprParser:expr ---> if (lexer.token == Token.STAR) {
+Line 184 com.alibaba.druid.sql.parser.SQLExprParser:exprRest ---> return expr;
+Line 271 com.alibaba.druid.sql.parser.SQLExprParser:bitXorRest ---> return expr;
+Line 650 com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer:isIdentifierChar ---> return identifierFlags[c];
+Line 34 com.alibaba.druid.sql.ast.SQLObjectImpl:accept ---> if (visitor == null) {
+Line 58 com.alibaba.druid.sql.ast.SQLObjectImpl:acceptChild ---> if (child == null) {
+Line 62 com.alibaba.druid.sql.ast.SQLObjectImpl:acceptChild ---> child.accept(visitor);
+Line 1037 com.alibaba.druid.sql.parser.SQLExprParser:primaryRest ---> return expr;
+Line 51 com.alibaba.druid.sql.ast.expr.SQLIntegerExpr:accept0 ---> visitor.endVisit(this);
+Line 136 com.actiontech.dble.plan.visitor.MySQLItemVisitor:endVisit ---> Item itemLeft = getItem(x.getLeft());
+Line 435 com.actiontech.dble.plan.visitor.MySQLItemVisitor:endVisit ---> initName(x);
+Line 99 com.alibaba.druid.sql.ast.expr.SQLBinaryOpExpr:getLeft ---> return this.left;
+Line 167 com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser:primary ---> switch (tok) {
+Line 282 com.actiontech.dble.plan.visitor.MySQLItemVisitor:endVisit ---> initName(x);
+Line 136 com.actiontech.dble.plan.visitor.MySQLItemVisitor:endVisit ---> Item itemLeft = getItem(x.getLeft());
+Line 23 com.actiontech.dble.plan.common.item.function.primary.ItemBoolFunc:<init> ---> args.add(a);
+Line 139 com.alibaba.druid.sql.ast.expr.SQLBinaryOpExpr:accept0 ---> acceptChild(visitor, this.right);
+Line 904 com.actiontech.dble.plan.visitor.MySQLItemVisitor:initName ---> expr.accept(ov);
+Line 58 com.alibaba.druid.sql.ast.SQLObjectImpl:acceptChild ---> if (child == null) {
+Line 100 com.actiontech.dble.plan.common.item.function.operator.cmpfunc.util.ArgComparator:<init> ---> this.a = a;
+Line 21 com.actiontech.dble.plan.common.item.function.operator.ItemBoolFunc2:<init> ---> cmp = new ArgComparator(a, b);
+Line 137 com.alibaba.druid.sql.ast.expr.SQLBinaryOpExpr:accept0 ---> if (visitor.visit(this)) {
+Line 58 com.alibaba.druid.sql.ast.SQLObjectImpl:acceptChild ---> if (child == null) {
+Line 40 com.alibaba.druid.sql.ast.SQLObjectImpl:accept ---> accept0(visitor);
+Line 949 com.actiontech.dble.plan.common.item.Item:setItemName ---> this.itemName = itemName;
+Line 142 com.alibaba.druid.sql.ast.expr.SQLBinaryOpExpr:accept0 ---> visitor.endVisit(this);
+Line 22 com.actiontech.dble.plan.common.item.function.operator.cmpfunc.ItemFuncGt:<init> ---> super(a, b);
+Line 20 com.actiontech.dble.plan.common.item.function.operator.ItemBoolFunc2:<init> ---> super(a, b);
+Line 250 com.actiontech.dble.plan.visitor.MySQLItemVisitor:endVisit ---> item = new ItemFuncGt(itemLeft, itemRight);
+Line 21 com.actiontech.dble.plan.common.item.function.operator.ItemBoolFunc2:<init> ---> cmp = new ArgComparator(a, b);
+Line 142 com.alibaba.druid.sql.ast.expr.SQLBinaryOpExpr:accept0 ---> visitor.endVisit(this);
+Line 945 com.actiontech.dble.plan.common.item.Item:getItemName ---> return itemName;
+Line 283 com.actiontech.dble.plan.visitor.MySQLItemVisitor:endVisit ---> item.setItemName(item.getItemName().replaceAll('\n\\t', ' '));
+Line 250 com.actiontech.dble.plan.visitor.MySQLItemVisitor:endVisit ---> item = new ItemFuncGt(itemLeft, itemRight);
+Line 283 com.actiontech.dble.plan.visitor.MySQLItemVisitor:endVisit ---> item.setItemName(item.getItemName().replaceAll('\n\\t', ' '));
+Line 76 com.actiontech.dble.plan.visitor.MySQLItemVisitor:getItem ---> return item;
+Line 949 com.actiontech.dble.plan.common.item.Item:setItemName ---> this.itemName = itemName;
+Line 66 com.actiontech.dble.plan.visitor.TestMySQLItemVisitor:testGroupbyHaving ---> Assert.assertEquals(true, 'SUM(col1)'.equals(item.getItemName()));
+Line 945 com.actiontech.dble.plan.common.item.Item:getItemName ---> return itemName;
+Line 66 com.actiontech.dble.plan.visitor.TestMySQLItemVisitor:testGroupbyHaving ---> Assert.assertEquals(true, 'SUM(col1)'.equals(item.getItemName()));
