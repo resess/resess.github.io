@@ -76,12 +76,12 @@ Line 247 dagger.internal.Keys:getClassName ---> int start = 0;
 Line 454 dagger.internal.Linker$DeferredBinding:<init> ---> super(null, null, false, requiredBy);
 Line 187 dagger.internal.Keys:getBuiltInBindingsKey ---> return null;
 Line 267 dagger.internal.Keys:boxIfPrimitive ---> if (type == boolean.class) return Boolean.class;
-Line 194 dagger.internal.Linker:assertLockHeld ---> if (!Thread.holdsLock(this)) throw new AssertionError();
 Line 307 dagger.ObjectGraph$DaggerObjectGraph:getInjectableTypeBinding ---> Binding<?> binding = linker.requestBinding(key, moduleClass, classLoader, false, true);
+Line 194 dagger.internal.Linker:assertLockHeld ---> if (!Thread.holdsLock(this)) throw new AssertionError();
 Line 274 dagger.internal.Linker:requestBinding ---> assertLockHeld();
 Line 269 dagger.internal.Keys:boxIfPrimitive ---> if (type == double.class) return Double.class;
-Line 287 dagger.internal.Linker:requestBinding ---> Binding<?> deferredBinding =
 Line 235 dagger.internal.ArrayQueue:poll ---> return result;
+Line 287 dagger.internal.Linker:requestBinding ---> Binding<?> deferredBinding =
 Line 269 dagger.internal.Keys:boxIfPrimitive ---> if (type == double.class) return Double.class;
 Line 248 dagger.internal.Keys:getClassName ---> if (key.startsWith('@') || key.startsWith('members/')) {
 Line 251 dagger.internal.Keys:getClassName ---> return (key.indexOf('<', start) == -1 && key.indexOf('[', start) == -1)
@@ -102,8 +102,8 @@ Line 274 dagger.internal.Linker:requestBinding ---> assertLockHeld();
 Line 194 dagger.internal.Linker:assertLockHeld ---> if (!Thread.holdsLock(this)) throw new AssertionError();
 Line 61 dagger.internal.Keys:get ---> return get(type, null);
 Line 270 dagger.internal.Keys:boxIfPrimitive ---> if (type == void.class) return Void.class;
-Line 287 dagger.internal.Linker:requestBinding ---> Binding<?> deferredBinding =
 Line 132 dagger.internal.Linker:linkRequested ---> while ((binding = toLink.poll()) != null) {
+Line 287 dagger.internal.Linker:requestBinding ---> Binding<?> deferredBinding =
 Line 61 dagger.internal.Keys:get ---> return get(type, null);
 Line 270 dagger.internal.Keys:boxIfPrimitive ---> if (type == void.class) return Void.class;
 Line 252 dagger.internal.Keys:getClassName ---> ? key.substring(start)
@@ -119,8 +119,8 @@ Line 308 dagger.ObjectGraph$DaggerObjectGraph:getInjectableTypeBinding ---> if (
 Line 277 dagger.internal.Linker:requestBinding ---> for (Linker linker = this; linker != null; linker = linker.base) {
 Line 73 dagger.internal.Keys:get ---> if (annotation == null && type instanceof Class && !((Class<?>) type).isArray()) {
 Line 271 dagger.internal.Keys:boxIfPrimitive ---> return type;
-Line 457 dagger.internal.Linker$DeferredBinding:<init> ---> this.mustHaveInjections = mustHaveInjections;
 Line 133 dagger.internal.Linker:linkRequested ---> if (binding instanceof DeferredBinding) {
+Line 457 dagger.internal.Linker$DeferredBinding:<init> ---> this.mustHaveInjections = mustHaveInjections;
 Line 73 dagger.internal.Keys:get ---> if (annotation == null && type instanceof Class && !((Class<?>) type).isArray()) {
 Line 271 dagger.internal.Keys:boxIfPrimitive ---> return type;
 Line 251 dagger.internal.Keys:getClassName ---> return (key.indexOf('<', start) == -1 && key.indexOf('[', start) == -1)
@@ -175,8 +175,8 @@ Line 67 dagger.internal.Keys:getMembersKey ---> return 'members/'.concat(key.get
 Line 268 dagger.ObjectGraph$DaggerObjectGraph:get ---> ClassLoader classLoader = type.getClassLoader();
 Line 61 dagger.internal.Keys:get ---> return get(type, null);
 Line 325 dagger.internal.Linker:scope ---> return new SingletonBinding<T>(binding);
-Line 83 dagger.ExtensionTest:scopedGraphs ---> assertThat(app.get(A.class)).isNotNull();
 Line 312 dagger.ObjectGraph$DaggerObjectGraph:getInjectableTypeBinding ---> return binding;
+Line 83 dagger.ExtensionTest:scopedGraphs ---> assertThat(app.get(A.class)).isNotNull();
 Line 96 dagger.internal.loaders.ReflectiveAtInjectBinding:get ---> Object[] args = new Object[parameterBindings.length];
 Line 60 dagger.internal.loaders.ReflectiveAtInjectBinding:<init> ---> this.constructor = constructor;
 Line 353 dagger.internal.Linker$SingletonBinding:<init> ---> this.binding = binding;
@@ -225,8 +225,8 @@ Line 193 dagger.ObjectGraph$DaggerObjectGraph:makeGraph ---> Linker linker =
 Line 64 dagger.internal.Linker:<init> ---> public Linker(Linker base, Loader plugin, ErrorHandler errorHandler) {
 Line 41 dagger.internal.Linker:<init> ---> private final Queue<Binding<?>> toLink = new ArrayQueue<Binding<?>>();
 Line 44 dagger.internal.Linker:<init> ---> private boolean attachSuccess = true;
-Line 47 dagger.internal.Linker:<init> ---> private final List<String> errors = new ArrayList<String>();
 Line 170 dagger.ObjectGraph$DaggerObjectGraph:makeGraph ---> StandardBindings baseBindings =
+Line 47 dagger.internal.Linker:<init> ---> private final List<String> errors = new ArrayList<String>();
 Line 50 dagger.internal.Linker:<init> ---> private final Map<String, Binding<?>> bindings = new HashMap<String, Binding<?>>();
 Line 68 dagger.internal.Linker:<init> ---> this.base = base;
 Line 69 dagger.internal.Linker:<init> ---> this.plugin = plugin;
@@ -243,8 +243,8 @@ Line 139 dagger.internal.TestingModuleAdapter:create ---> Module annotation = mo
 Line 29 dagger.internal.TestingLoader:getModuleAdapter ---> ModuleAdapter<T> adapter = TestingModuleAdapter.create(type);
 Line 40 dagger.internal.TestingModuleAdapter:<init> ---> annotation.complete(),
 Line 38 dagger.internal.TestingModuleAdapter:<init> ---> annotation.overrides(),
-Line 37 dagger.internal.TestingModuleAdapter:<init> ---> annotation.staticInjections(),
 Line 147 dagger.internal.TestingModuleAdapter:create ---> return new TestingModuleAdapter<M>(moduleClass, annotation);
+Line 37 dagger.internal.TestingModuleAdapter:<init> ---> annotation.staticInjections(),
 Line 41 dagger.internal.TestingModuleAdapter:<init> ---> annotation.library());
 Line 39 dagger.internal.TestingModuleAdapter:<init> ---> annotation.includes(),
 Line 50 dagger.internal.TestingModuleAdapter:injectableTypesToKeys ---> : Keys.getMembersKey(injectableType);
@@ -286,11 +286,11 @@ Line 168 dagger.ObjectGraph$DaggerObjectGraph:makeGraph ---> Map<Class<?>, Stati
 Line 167 dagger.ObjectGraph$DaggerObjectGraph:makeGraph ---> Map<String, Class<?>> injectableTypes = new LinkedHashMap<String, Class<?>>();
 Line 322 dagger.ObjectGraph$StandardBindings:access$000 ---> private static final class StandardBindings extends BindingsGroup {
 Line 198 dagger.ObjectGraph$DaggerObjectGraph:makeGraph ---> return new DaggerObjectGraph(
-Line 134 dagger.ObjectGraph:createWith ---> return DaggerObjectGraph.makeGraph(null, loader, modules);
 Line 26 dagger.internal.TestingLoader:<init> ---> public final class TestingLoader extends Loader {
+Line 134 dagger.ObjectGraph:createWith ---> return DaggerObjectGraph.makeGraph(null, loader, modules);
+Line 178 dagger.ObjectGraph$DaggerObjectGraph:makeGraph ---> injectableTypes.put(moduleAdapter.injectableTypes[i], moduleAdapter.moduleClass);
 Line 178 dagger.ObjectGraph$DaggerObjectGraph:makeGraph ---> injectableTypes.put(moduleAdapter.injectableTypes[i], moduleAdapter.moduleClass);
 Line 157 dagger.ObjectGraph$DaggerObjectGraph:<init> ---> this.injectableTypes = checkNotNull(injectableTypes, 'injectableTypes');
-Line 178 dagger.ObjectGraph$DaggerObjectGraph:makeGraph ---> injectableTypes.put(moduleAdapter.injectableTypes[i], moduleAdapter.moduleClass);
 Line 86 dagger.ExtensionTest:scopedGraphs ---> assertFailNoEntryPoint(app, C.class);
 Line 82 dagger.ExtensionTest:scopedGraphs ---> ObjectGraph app = ObjectGraph.createWith(new TestingLoader(), new RootModule());
 Line 198 dagger.ObjectGraph$DaggerObjectGraph:makeGraph ---> return new DaggerObjectGraph(
@@ -298,8 +298,8 @@ Line 199 dagger.ObjectGraph$DaggerObjectGraph:makeGraph ---> base, linker, plugi
 Line 163 dagger.ObjectGraph$DaggerObjectGraph:checkNotNull ---> return object;
 Line 267 dagger.ObjectGraph$DaggerObjectGraph:get ---> String injectableTypeKey = type.isInterface() ? key : Keys.getMembersKey(type);
 Line 108 dagger.ExtensionTest:assertFailNoEntryPoint ---> assertThat(graph.get(clazz)).isNull();
-Line 134 dagger.ObjectGraph:createWith ---> return DaggerObjectGraph.makeGraph(null, loader, modules);
 Line 268 dagger.ObjectGraph$DaggerObjectGraph:get ---> ClassLoader classLoader = type.getClassLoader();
+Line 134 dagger.ObjectGraph:createWith ---> return DaggerObjectGraph.makeGraph(null, loader, modules);
 Line 157 dagger.ObjectGraph$DaggerObjectGraph:<init> ---> this.injectableTypes = checkNotNull(injectableTypes, 'injectableTypes');
 Line 67 dagger.internal.Keys:getMembersKey ---> return 'members/'.concat(key.getName());
 Line 271 dagger.ObjectGraph$DaggerObjectGraph:get ---> (Binding<T>) getInjectableTypeBinding(classLoader, injectableTypeKey, key);

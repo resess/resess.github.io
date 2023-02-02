@@ -20,8 +20,8 @@ Line 3730 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:getCurrentLocatio
 Line 3543 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
 Line 67 com.fasterxml.jackson.core.JsonLocation:<init> ---> _lineNr = lineNr;
 Line 68 com.fasterxml.jackson.core.JsonLocation:<init> ---> _columnNr = columnNr;
-Line 28 com.fasterxml.jackson.core.exc.StreamReadException:<init> ---> super(msg, (p == null) ? null : p.getCurrentLocation());
 Line 65 com.fasterxml.jackson.core.JsonLocation:<init> ---> _totalBytes = totalBytes;
+Line 28 com.fasterxml.jackson.core.exc.StreamReadException:<init> ---> super(msg, (p == null) ? null : p.getCurrentLocation());
 Line 66 com.fasterxml.jackson.core.JsonLocation:<init> ---> _totalChars = totalChars;
 Line 63 com.fasterxml.jackson.core.JsonLocation:<init> ---> {
 Line 64 com.fasterxml.jackson.core.JsonLocation:<init> ---> _sourceRef = sourceRef;
@@ -99,8 +99,8 @@ Line 3544 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidTok
 Line 3296 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
 Line 3544 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
 Line 3296 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
-Line 3544 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
 Line 3296 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
+Line 3544 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
 Line 3544 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
 Line 3296 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> int c = firstByte & 0xFF;
 Line 3544 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
@@ -326,10 +326,10 @@ Line 3337 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForErr
 Line 3543 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
 Line 3337 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
 Line 3543 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
-Line 3337 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
-Line 3543 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
 Line 3543 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
 Line 3337 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3337 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
+Line 3543 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
 Line 3543 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
 Line 3337 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_decodeCharForError ---> return c;
 Line 3543 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> int i = (int) _inputBuffer[_inputPtr++];
@@ -606,10 +606,10 @@ Line 3544 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidTok
 Line 3542 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
 Line 3544 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
 Line 3542 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
-Line 3544 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
-Line 3542 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
 Line 3542 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
 Line 3544 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3544 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
+Line 3542 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
 Line 3542 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
 Line 3544 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> char c = (char) _decodeCharForError(i);
 Line 3542 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> while ((_inputPtr < _inputEnd) || _loadMore()) {
@@ -861,9 +861,10 @@ Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidTok
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 1058 com.fasterxml.jackson.core.base.ParserBase:_validJsonTokenList ---> return _validJsonValueList();
@@ -877,7 +878,6 @@ Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidTok
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
-Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
@@ -888,18 +888,18 @@ Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidTok
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
-Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
@@ -996,27 +996,6 @@ Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidTok
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
-Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
-Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
-Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
-Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
@@ -1028,29 +1007,11 @@ Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidTok
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
@@ -1059,8 +1020,17 @@ Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidTok
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
@@ -1083,6 +1053,36 @@ Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidTok
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
@@ -1108,12 +1108,9 @@ Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidTok
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
-Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
@@ -1123,6 +1120,9 @@ Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidTok
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
+Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
+Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3545 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> if (!Character.isJavaIdentifierPart(c)) {
@@ -1131,8 +1131,8 @@ Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidTok
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
 Line 3550 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> sb.append(c);
-Line 87 com.fasterxml.jackson.core.JsonParseException:withRequestPayload ---> return this;
 Line 722 com.fasterxml.jackson.core.base.ParserMinimalBase:_reportError ---> throw _constructError(String.format(msg, arg1, arg2));
+Line 87 com.fasterxml.jackson.core.JsonParseException:withRequestPayload ---> return this;
 Line 3556 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_reportInvalidToken ---> _reportError('Unrecognized token '%s': was expecting %s', sb, msg);
 Line 1840 com.fasterxml.jackson.core.JsonParser:_constructError ---> return new JsonParseException(this, msg)
 Line 66 com.fasterxml.jackson.core.json.TestMaxErrorSize:_testShortErrorMessage ---> String msg = jpe.getMessage();
