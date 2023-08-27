@@ -9,8 +9,8 @@
               text-align: center;
             }
         </style>
-        <meta name="Description" content="Mandoline is a dynamic slicer for Android apps.">
-        <link rel="shortcut icon" href="./img/mandoline_Logo.png" type="image/x-icon">
+        <meta name="Description" content="ViaLin: Path-Aware Dynamic Taint Analysis for Android">
+        <!-- <link rel="shortcut icon" href="./img/mandoline_Logo.png" type="image/x-icon"> -->
         <link rel="stylesheet" href="./assets/css/just-the-docs.css">
         <script type="text/javascript" src="./assets/js/vendor/lunr.min.js"></script> <script type="text/javascript" src="./assets/js/just-the-docs.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,12 +18,12 @@
         <meta name="generator" content="Jekyll v3.8.6" />
         <meta property="og:title" content="Home" />
         <meta property="og:locale" content="en_US" />
-        <meta name="description" content="Mandoline is a dynamic slicer for Android apps." />
-        <meta property="og:description" content="Mandoline is a dynamic slicer for Android apps." />
+        <meta name="description" content="ViaLin: Path-Aware Dynamic Taint Analysis for Android" />
+        <meta property="og:description" content="ViaLin: Path-Aware Dynamic Taint Analysis for Android" />
         <link rel="canonical" href="./index.html" />
         <meta property="og:url" content="./index.html" />
         <meta property="og:site_name" content="ViaLin" />
-        <script type="application/ld+json"> {"url":"./index.html","description":"Mandoline is a dynamic slicer for Android apps.","name":"Mandoline","headline":"Home","@type":"WebSite","@context":"https://schema.org"}</script>
+        <script type="application/ld+json"> {"url":"./index.html","description":"ViaLin: Path-Aware Dynamic Taint Analysis for Android","name":"ViaLin","headline":"Home","@type":"WebSite","@context":"https://schema.org"}</script>
     <body>
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
             <symbol id="link" viewBox="0 0 16 16">
@@ -35,7 +35,7 @@
         <div class="side-bar">
             <div class="site-header">
                 <div id="texts" style="display:inline;">
-                    <a href="./index.html" class="site-title lh-tight"> <span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;">ViaLin</span> </a> <button class="menu-button fs-3 js-main-nav-trigger" data-text-toggle="Hide" type="button">Menu</button>
+                    <a href="./index.html" class="site-title lh-tight"> <span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;">Mandoline</span> </a> <button class="menu-button fs-3 js-main-nav-trigger" data-text-toggle="Hide" type="button">Menu</button>
                 </div>
                 <!-- <div id="image" style="display:inline;">
                     <img src="./img/mandoline_Logo_noname.png" alt = "logo" width="50" height="50" />
@@ -45,10 +45,8 @@
                 <nav role="navigation" aria-label="Main navigation">
                     <ul class="navigation-list">
                         <li class="navigation-list-item active"><a href="./index.html" class="navigation-list-link active">Home</a>
-                        <li class="navigation-list-item"><a href="./docs/artifact/index.html" class="navigation-list-link">Artifact</a>
-                        <li class="navigation-list-item"><a href="./docs/EvaluationPackage/index.html" class="navigation-list-link">Evaluation Package</a>
-                        <li class="navigation-list-item"><a href="./docs/EvaluationResults/index.html" class="navigation-list-link">Evaluation Results</a>
-                        <li class="navigation-list-item"><a href="./docs/Rules/index.html" class="navigation-list-link">Rules</a>
+                        <li class="navigation-list-item"><a href="./docs/groundtruth/index.html" class="navigation-list-link">Ground Truth</a>
+                        <li class="navigation-list-item"><a href="./docs/tool/index.html" class="navigation-list-link">Tool</a>
                     </ul>
                     </ul>
                 </nav>
@@ -62,16 +60,15 @@
         <div class="page">
         <div id="main-content" class="page-content" role="main">
         <p class="fs-6 fw-300" style="padding-top: 25px;"></p>
-
+        <!-- <div class="img-container">
+            <img src="./img/mandoline_Logo.png" alt="logo" width="300" height="300">
+        </div> -->
         <p class="fs-6 fw-300">Dynamic Slicing of Android Applications with Trace-Based Alias Analysis.</p>
         <hr />
-        <p><span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;">
-
-            Dynamic taint analysis – a program analysis technique that checks whether information flows between particular source and sink locations in the program, has numerous applications in security, program comprehension, and software testing. Specifically, in mobile software, taint analysis is often used to determine whether mobile apps contain stealthy behaviors that leak user-sensitive information to unauthorized third-party servers. While a number of dynamic taint analysis techniques for Android software have been recently proposed, none of them is able to report the complete information propagation path, only reporting flow endpoints, i.e., sources and sinks of the detected information flows. This design optimizes for runtime performance and allows the techniques to run efficiently on a mobile device. Yet, it impedes the applicability and usefulness of the techniques: an analyst using the tool would need to manually identify information propagation paths, e.g., to determine whether appropriate sanitization occurred before the information is released, which is a challenging task in large real-world applications.
+        <p>Dynamic taint analysis – a program analysis technique that checks whether information flows between particular source and sink locations in the program, has numerous applications in security, program comprehension, and software testing. Specifically, in mobile software, taint analysis is often used to determine whether mobile apps contain stealthy behaviors that leak user-sensitive information to unauthorized third-party servers. While a number of dynamic taint analysis techniques for Android software have been recently proposed, none of them is able to report the complete information propagation path, only reporting flow endpoints, i.e., sources and sinks of the detected information flows. This design optimizes for runtime performance and allows the techniques to run efficiently on a mobile device. Yet, it impedes the applicability and usefulness of the techniques: an analyst using the tool would need to manually identify information propagation paths, e.g., to determine whether appropriate sanitization occurred before the information is released, which is a challenging task in large real-world applications.
 
             In this paper, we address this problem by proposing a dynamic taint analysis technique that reports accurate taint propagation paths. We implement it in a tool, ViaLin, and evaluate it on a set of existing benchmark applications and on 16 large Android applications from the Google Play store. Our evaluation shows that ViaLin accurately detects taint flow paths and, at the same time, is able to run on a mobile device with a relatively low time and memory overhead.
 
-            Please use the menu on the let to navigate the supplementary material
-        </p>
+            Please use the menu on the let to navigate the supplementary material</p>
         <p><span style="font-size:20px;"><b>Publication</b></span></p>
         <p><a href=""><span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;">ViaLin</span>: Path-Aware Dynamic Taint Analysis for Android</a></p>

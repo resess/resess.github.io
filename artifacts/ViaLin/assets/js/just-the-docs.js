@@ -1,5 +1,3 @@
----
----
 (function (jtd, undefined) {
 
 // Event handling
@@ -46,14 +44,17 @@ function initNav() {
 
 function initSearch() {
   var request = new XMLHttpRequest();
-  request.open('GET', '{{ "assets/js/search-data.json" | absolute_url }}', true);
+  request.open('GET', 'https://resess.github.io/artifacts/Mandoline/assets/js/search-data.json', true);
 
   request.onload = function(){
     if (request.status >= 200 && request.status < 400) {
       // Success!
       var data = JSON.parse(request.responseText);
-
-      lunr.tokenizer.separator = /[\s\-/]+/
+      
+      
+      lunr.tokenizer.separator = /[\s/]+/
+      
+      
       var index = lunr(function () {
         this.ref('id');
         this.field('title', { boost: 200 });
@@ -291,4 +292,4 @@ jtd.onReady(function(){
 
 })(window.jtd = window.jtd || {});
 
-{% include js/custom.js %}
+
