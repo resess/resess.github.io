@@ -1,0 +1,856 @@
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@64--->if (event == START_DOCUMENT) {
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@66--->} else if (event == CHARACTERS) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@148--->event.type = pullNextEvent();
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@70--->} else if (event == START_ELEMENT || event == END_ELEMENT) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getValue: LineNo@180--->Event event = readEvent();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getValue: LineNo@179--->mark();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@135--->return (Event) lookahead.push(readRealEvent());
+com.thoughtworks.xstream.io.xml.StaxReader:pullNextEvent: LineNo@58--->switch(in.next()) {
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@71--->if (event == END_ELEMENT && nodes.size() > 0) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@131--->if (marked) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getValue: LineNo@197--->event = readEvent();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:mark: LineNo@160--->marked = true;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@135--->return (Event) lookahead.push(readRealEvent());
+com.thoughtworks.xstream.io.xml.StaxReader:pullText: LineNo@84--->return in.getText();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@147--->Event event = pool.hasStuff() ? (Event)pool.pop() : new Event();
+com.thoughtworks.xstream.core.util.FastStack:pop: LineNo@42--->final Object result = stack[--pointer];
+com.thoughtworks.xstream.io.xml.StaxReader:pullNextEvent: LineNo@58--->switch(in.next()) {
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@74--->if (currentValue != null) {
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@88--->if (nodes.size() > 0) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@132--->if (lookback.hasStuff()) {
+com.thoughtworks.xstream.core.util.FastStack:hasStuff: LineNo@66--->return pointer > 0;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@131--->if (marked) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@147--->Event event = pool.hasStuff() ? (Event)pool.pop() : new Event();
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@89--->Node next = (Node)nodes.peek();
+org.codehaus.jettison.mapped.MappedXMLStreamReader:getText: LineNo@176--->return currentValue;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@150--->event.value = pullText();
+com.thoughtworks.xstream.core.util.FastStack:hasStuff: LineNo@66--->return pointer > 0;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@147--->Event event = pool.hasStuff() ? (Event)pool.pop() : new Event();
+com.thoughtworks.xstream.core.util.FastStack:pop: LineNo@44--->return result;
+com.thoughtworks.xstream.io.xml.StaxReader:pullNextEvent: LineNo@66--->return TEXT;
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@75--->event = CHARACTERS;
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@90--->if (event == START_ELEMENT && next.getName().getLocalPart().equals(valueKey)) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@132--->if (lookback.hasStuff()) {
+com.thoughtworks.xstream.core.util.FastStack:push: LineNo@34--->return value;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@132--->if (lookback.hasStuff()) {
+com.thoughtworks.xstream.core.util.FastStack:hasStuff: LineNo@66--->return pointer > 0;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@147--->Event event = pool.hasStuff() ? (Event)pool.pop() : new Event();
+com.thoughtworks.xstream.core.util.FastStack:hasStuff: LineNo@66--->return pointer > 0;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@149--->if (event.type == TEXT) {
+org.codehaus.jettison.util.FastStack:peek: LineNo@38--->if (empty())
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@135--->return (Event) lookahead.push(readRealEvent());
+com.thoughtworks.xstream.io.xml.StaxReader:pullText: LineNo@84--->return in.getText();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@149--->if (event.type == TEXT) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@147--->Event event = pool.hasStuff() ? (Event)pool.pop() : new Event();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@148--->event.type = pullNextEvent();
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@64--->if (event == START_DOCUMENT) {
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@95--->return event;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:moveUp: LineNo@113--->move();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@148--->event.type = pullNextEvent();
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@90--->if (event == START_ELEMENT && next.getName().getLocalPart().equals(valueKey)) {
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@67--->event = END_ELEMENT;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@135--->return (Event) lookahead.push(readRealEvent());
+com.thoughtworks.xstream.io.ReaderWrapper:getValue: LineNo@48--->return wrapped.getValue();
+com.thoughtworks.xstream.core.util.FastStack:push: LineNo@34--->return value;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@132--->if (lookback.hasStuff()) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@135--->return (Event) lookahead.push(readRealEvent());
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@147--->Event event = pool.hasStuff() ? (Event)pool.pop() : new Event();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@151--->} else if (event.type == START_NODE) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@156--->return event;
+org.codehaus.jettison.util.FastStack:empty: LineNo@34--->return size() == 0;
+com.thoughtworks.xstream.core.util.FastStack:push: LineNo@30--->if (pointer + 1 >= stack.length) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getValue: LineNo@184--->if (text != null && text.length() > 0) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getValue: LineNo@176--->String last = null;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@150--->event.value = pullText();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getValue: LineNo@182--->if (event.type == TEXT) {
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@66--->} else if (event == CHARACTERS) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:move: LineNo@118--->final Event event = readEvent();
+com.thoughtworks.xstream.io.xml.StaxReader:pullNextEvent: LineNo@58--->switch(in.next()) {
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@95--->return event;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getValue: LineNo@180--->Event event = readEvent();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@148--->event.type = pullNextEvent();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getValue: LineNo@182--->if (event.type == TEXT) {
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@88--->if (nodes.size() > 0) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getValue: LineNo@194--->} else if (event.type != COMMENT) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@135--->return (Event) lookahead.push(readRealEvent());
+com.thoughtworks.xstream.core.util.FastStack:push: LineNo@30--->if (pointer + 1 >= stack.length) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@156--->return event;
+com.thoughtworks.xstream.core.util.FastStack:push: LineNo@33--->stack[pointer++] = value;
+com.thoughtworks.xstream.converters.basic.StringConverter:fromString: LineNo@89--->String s = (String)cache.get(str);
+com.thoughtworks.xstream.core.util.WeakCache:get: LineNo@59--->Reference reference = (Reference)map.get(key);
+com.thoughtworks.xstream.core.util.FastStack:pop: LineNo@43--->stack[pointer] = null;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getValue: LineNo@185--->if (last == null) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getValue: LineNo@183--->String text = event.value;
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@69--->currentValue = null;
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@72--->node = (Node) nodes.peek();
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@64--->if (event == START_DOCUMENT) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@131--->if (marked) {
+com.thoughtworks.xstream.io.xml.StaxReader:pullNextEvent: LineNo@58--->switch(in.next()) {
+com.thoughtworks.xstream.core.util.FastStack:pop: LineNo@42--->final Object result = stack[--pointer];
+com.thoughtworks.xstream.io.xml.AbstractPullReader:reset: LineNo@165--->lookback.push(lookahead.pop());
+com.thoughtworks.xstream.io.xml.AbstractPullReader:reset: LineNo@164--->while(lookahead.hasStuff()) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:reset: LineNo@164--->while(lookahead.hasStuff()) {
+com.thoughtworks.xstream.core.util.FastStack:hasStuff: LineNo@66--->return pointer > 0;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getValue: LineNo@194--->} else if (event.type != COMMENT) {
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@89--->Node next = (Node)nodes.peek();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getValue: LineNo@197--->event = readEvent();
+com.thoughtworks.xstream.core.util.FastStack:push: LineNo@33--->stack[pointer++] = value;
+com.thoughtworks.xstream.core.util.WeakCache:get: LineNo@60--->return reference != null ? reference.get() : null;
+com.thoughtworks.xstream.converters.SingleValueConverterWrapper:fromString: LineNo@41--->return wrapped.fromString(str);
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getValue: LineNo@200--->if (buffer != null) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getValue: LineNo@186--->last = text;
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@74--->if (currentValue != null) {
+org.codehaus.jettison.util.FastStack:empty: LineNo@34--->return size() == 0;
+org.codehaus.jettison.util.FastStack:peek: LineNo@38--->if (empty())
+com.thoughtworks.xstream.io.xml.AbstractPullReader:moveUp: LineNo@112--->while (elementStack.size() >= currentDepth) {
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@66--->} else if (event == CHARACTERS) {
+com.thoughtworks.xstream.converters.collections.CollectionConverter:populateCollection: LineNo@92--->reader.moveUp();
+com.thoughtworks.xstream.core.util.FastStack:hasStuff: LineNo@66--->return pointer > 0;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@138--->if (lookback.hasStuff()) {
+com.thoughtworks.xstream.io.xml.StaxReader:pullNextEvent: LineNo@64--->return END_NODE;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:moveUp: LineNo@111--->int currentDepth = elementStack.size();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:reset: LineNo@165--->lookback.push(lookahead.pop());
+com.thoughtworks.xstream.core.util.FastStack:pop: LineNo@44--->return result;
+com.thoughtworks.xstream.core.util.FastStack:hasStuff: LineNo@66--->return pointer > 0;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:reset: LineNo@164--->while(lookahead.hasStuff()) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getValue: LineNo@199--->reset();
+org.codehaus.jettison.util.FastStack:peek: LineNo@38--->if (empty())
+com.thoughtworks.xstream.core.util.FastStack:pop: LineNo@42--->final Object result = stack[--pointer];
+com.thoughtworks.xstream.io.xml.AbstractPullReader:reset: LineNo@165--->lookback.push(lookahead.pop());
+com.thoughtworks.xstream.converters.basic.StringConverter:fromString: LineNo@89--->String s = (String)cache.get(str);
+com.thoughtworks.xstream.converters.basic.StringConverter:fromString: LineNo@88--->if (cache != null && str != null && (lengthLimit < 0 || str.length() <= lengthLimit)) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getValue: LineNo@203--->return (last == null) ? '' : last;
+com.thoughtworks.xstream.converters.SingleValueConverterWrapper:unmarshal: LineNo@49--->return fromString(reader.getValue());
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@76--->} else if ((node.getKeys() != null && node.getKeys().hasNext()) || node.getArray() != null) {
+org.codehaus.jettison.util.FastStack:peek: LineNo@38--->if (empty())
+com.thoughtworks.xstream.core.util.FastStack:size: LineNo@62--->return pointer;
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@70--->} else if (event == START_ELEMENT || event == END_ELEMENT) {
+com.thoughtworks.xstream.io.path.PathTrackingReader:moveUp: LineNo@42--->super.moveUp();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@138--->if (lookback.hasStuff()) {
+com.thoughtworks.xstream.core.util.FastStack:size: LineNo@62--->return pointer;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:moveUp: LineNo@112--->while (elementStack.size() >= currentDepth) {
+com.thoughtworks.xstream.core.util.FastStack:push: LineNo@30--->if (pointer + 1 >= stack.length) {
+com.thoughtworks.xstream.core.util.FastStack:push: LineNo@33--->stack[pointer++] = value;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:reset: LineNo@167--->marked = false;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:move: LineNo@118--->final Event event = readEvent();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:reset: LineNo@165--->lookback.push(lookahead.pop());
+org.codehaus.jettison.util.FastStack:empty: LineNo@34--->return size() == 0;
+com.thoughtworks.xstream.core.util.FastStack:pop: LineNo@44--->return result;
+com.thoughtworks.xstream.converters.basic.StringConverter:fromString: LineNo@95--->s = str;
+com.thoughtworks.xstream.converters.basic.StringConverter:fromString: LineNo@91--->if (s == null) {
+com.thoughtworks.xstream.io.ReaderWrapper:getValue: LineNo@48--->return wrapped.getValue();
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@76--->} else if ((node.getKeys() != null && node.getKeys().hasNext()) || node.getArray() != null) {
+org.codehaus.jettison.Node:getKeys: LineNo@139--->return keys;
+com.thoughtworks.xstream.core.util.FastStack:pop: LineNo@43--->stack[pointer] = null;
+org.codehaus.jettison.util.FastStack:peek: LineNo@41--->return get(size() - 1);
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@71--->if (event == END_ELEMENT && nodes.size() > 0) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@148--->event.type = pullNextEvent();
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@88--->if (nodes.size() > 0) {
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@80--->event = END_ELEMENT;
+com.thoughtworks.xstream.core.util.FastStack:pop: LineNo@44--->return result;
+com.thoughtworks.xstream.io.ReaderWrapper:moveUp: LineNo@40--->wrapped.moveUp();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@139--->return (Event) lookback.pop();
+com.thoughtworks.xstream.core.util.FastStack:size: LineNo@62--->return pointer;
+com.thoughtworks.xstream.core.util.FastStack:push: LineNo@34--->return value;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@131--->if (marked) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:hasMoreChildren: LineNo@85--->mark();
+com.thoughtworks.xstream.core.util.FastStack:push: LineNo@30--->if (pointer + 1 >= stack.length) {
+com.thoughtworks.xstream.core.util.FastStack:push: LineNo@33--->stack[pointer++] = value;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@138--->if (lookback.hasStuff()) {
+com.thoughtworks.xstream.converters.basic.StringConverter:fromString: LineNo@98--->return s;
+com.thoughtworks.xstream.converters.SingleValueConverterWrapper:unmarshal: LineNo@49--->return fromString(reader.getValue());
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@76--->} else if ((node.getKeys() != null && node.getKeys().hasNext()) || node.getArray() != null) {
+org.codehaus.jettison.Node:getKeys: LineNo@139--->return keys;
+org.codehaus.jettison.Node:getArray: LineNo@155--->return array;
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@72--->node = (Node) nodes.peek();
+com.thoughtworks.xstream.io.xml.StaxReader:pullNextEvent: LineNo@58--->switch(in.next()) {
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@95--->return event;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:move: LineNo@119--->pool.push(event);
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@139--->return (Event) lookback.pop();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:moveUp: LineNo@113--->move();
+com.thoughtworks.xstream.core.util.FastStack:pop: LineNo@42--->final Object result = stack[--pointer];
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@138--->if (lookback.hasStuff()) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:mark: LineNo@160--->marked = true;
+com.thoughtworks.xstream.core.util.FastStack:push: LineNo@34--->return value;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@139--->return (Event) lookback.pop();
+com.thoughtworks.xstream.converters.SingleValueConverterWrapper:fromString: LineNo@41--->return wrapped.fromString(str);
+com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller:convert: LineNo@66--->result = super.convert(parent, type, converter);
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@76--->} else if ((node.getKeys() != null && node.getKeys().hasNext()) || node.getArray() != null) {
+com.thoughtworks.xstream.io.xml.StaxReader:pullNextEvent: LineNo@58--->switch(in.next()) {
+com.thoughtworks.xstream.core.util.FastStack:push: LineNo@34--->return value;
+com.thoughtworks.xstream.core.util.FastStack:push: LineNo@30--->if (pointer + 1 >= stack.length) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:move: LineNo@118--->final Event event = readEvent();
+com.thoughtworks.xstream.core.util.FastStack:hasStuff: LineNo@66--->return pointer > 0;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@135--->return (Event) lookahead.push(readRealEvent());
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@131--->if (marked) {
+com.thoughtworks.xstream.core.util.FastStack:pop: LineNo@42--->final Object result = stack[--pointer];
+com.thoughtworks.xstream.core.TreeUnmarshaller:convert: LineNo@81--->types.popSilently();
+com.thoughtworks.xstream.converters.SingleValueConverterWrapper:unmarshal: LineNo@49--->return fromString(reader.getValue());
+com.thoughtworks.xstream.core.TreeUnmarshaller:convert: LineNo@72--->return converter.unmarshal(reader, this);
+com.thoughtworks.xstream.io.ReaderWrapper:hasMoreChildren: LineNo@32--->return wrapped.hasMoreChildren();
+com.thoughtworks.xstream.core.util.FastStack:push: LineNo@34--->return value;
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@79--->if (nodes.size() > 0) {
+com.thoughtworks.xstream.io.xml.StaxReader:pullNextEvent: LineNo@64--->return END_NODE;
+com.thoughtworks.xstream.core.util.FastStack:pop: LineNo@42--->final Object result = stack[--pointer];
+com.thoughtworks.xstream.core.util.FastStack:push: LineNo@33--->stack[pointer++] = value;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@147--->Event event = pool.hasStuff() ? (Event)pool.pop() : new Event();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@132--->if (lookback.hasStuff()) {
+com.thoughtworks.xstream.core.util.FastStack:hasStuff: LineNo@66--->return pointer > 0;
+com.thoughtworks.xstream.core.TreeUnmarshaller:convert: LineNo@81--->types.popSilently();
+com.thoughtworks.xstream.core.TreeUnmarshaller:convert: LineNo@72--->return converter.unmarshal(reader, this);
+com.thoughtworks.xstream.converters.collections.CollectionConverter:populateCollection: LineNo@89--->while (reader.hasMoreChildren()) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:hasMoreChildren: LineNo@93--->return false;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:hasMoreChildren: LineNo@87--->switch (readEvent().type) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@135--->return (Event) lookahead.push(readRealEvent());
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@81--->node = (Node) nodes.pop();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@149--->if (event.type == TEXT) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@148--->event.type = pullNextEvent();
+com.thoughtworks.xstream.core.util.FastStack:pop: LineNo@44--->return result;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@147--->Event event = pool.hasStuff() ? (Event)pool.pop() : new Event();
+com.thoughtworks.xstream.core.util.FastStack:hasStuff: LineNo@66--->return pointer > 0;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@132--->if (lookback.hasStuff()) {
+com.thoughtworks.xstream.core.TreeUnmarshaller:convert: LineNo@72--->return converter.unmarshal(reader, this);
+com.thoughtworks.xstream.converters.collections.CollectionConverter:unmarshal: LineNo@81--->return collection;
+com.thoughtworks.xstream.io.ReaderWrapper:hasMoreChildren: LineNo@32--->return wrapped.hasMoreChildren();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:hasMoreChildren: LineNo@87--->switch (readEvent().type) {
+org.codehaus.jettison.util.FastStack:pop: LineNo@27--->if (empty())
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@151--->} else if (event.type == START_NODE) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@147--->Event event = pool.hasStuff() ? (Event)pool.pop() : new Event();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readEvent: LineNo@135--->return (Event) lookahead.push(readRealEvent());
+com.thoughtworks.xstream.core.TreeUnmarshaller:convert: LineNo@81--->types.popSilently();
+com.thoughtworks.xstream.core.TreeUnmarshaller:convert: LineNo@81--->types.popSilently();
+com.thoughtworks.xstream.core.TreeUnmarshaller:convert: LineNo@72--->return converter.unmarshal(reader, this);
+com.thoughtworks.xstream.io.path.Path:hashCode: LineNo@149--->for (int i = 0; i < chunks.length; i++) {
+com.thoughtworks.xstream.io.path.Path:hashCode: LineNo@148--->int result = 543645643;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:hasMoreChildren: LineNo@92--->reset();
+org.codehaus.jettison.util.FastStack:empty: LineNo@34--->return size() == 0;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:readRealEvent: LineNo@156--->return event;
+com.thoughtworks.xstream.core.util.FastStack:push: LineNo@30--->if (pointer + 1 >= stack.length) {
+com.thoughtworks.xstream.core.util.FastStack:popSilently: LineNo@38--->stack[--pointer] = null;
+com.thoughtworks.xstream.core.TreeUnmarshaller:convert: LineNo@72--->return converter.unmarshal(reader, this);
+com.thoughtworks.xstream.io.path.Path:hashCode: LineNo@149--->for (int i = 0; i < chunks.length; i++) {
+com.thoughtworks.xstream.io.path.Path:hashCode: LineNo@150--->result = 29 * result + chunks[i].hashCode();
+com.thoughtworks.xstream.io.xml.AbstractPullReader:reset: LineNo@164--->while(lookahead.hasStuff()) {
+com.thoughtworks.xstream.core.util.FastStack:push: LineNo@33--->stack[pointer++] = value;
+com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller:convert: LineNo@72--->localResult = super.convert(parent, type, converter);
+com.thoughtworks.xstream.io.path.Path:hashCode: LineNo@149--->for (int i = 0; i < chunks.length; i++) {
+com.thoughtworks.xstream.io.path.Path:hashCode: LineNo@150--->result = 29 * result + chunks[i].hashCode();
+com.thoughtworks.xstream.core.util.FastStack:hasStuff: LineNo@66--->return pointer > 0;
+com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller:convert: LineNo@78--->parentStack.popSilently();
+com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller:convert: LineNo@74--->result = localResult;
+com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller:convert: LineNo@76--->values.put(currentReferenceKey, result == null ? NULL : result);
+com.thoughtworks.xstream.io.path.Path:hashCode: LineNo@152--->return result;
+com.thoughtworks.xstream.core.TreeUnmarshaller:convertAnother: LineNo@56--->converter = converterLookup.lookupConverterForType(type);
+com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller:convert: LineNo@81--->return result;
+com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter:createCollection: LineNo@154--->Class defaultType = mapper().defaultImplementationOf(type);
+com.thoughtworks.xstream.core.util.FastStack:popSilently: LineNo@38--->stack[--pointer] = null;
+com.thoughtworks.xstream.core.TreeUnmarshaller:start: LineNo@133--->Class type = HierarchicalStreams.readClassType(reader, mapper);
+com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller:convert: LineNo@75--->if (currentReferenceKey != null) {
+com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller:convert: LineNo@79--->}
+com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller:convert: LineNo@76--->values.put(currentReferenceKey, result == null ? NULL : result);
+com.thoughtworks.xstream.core.TreeUnmarshaller:convertAnother: LineNo@66--->return convert(parent, type, converter);
+com.thoughtworks.xstream.core.TreeUnmarshaller:convertAnother: LineNo@50--->return convertAnother(parent, type, null);
+org.codehaus.jettison.json.JSONTokener:next: LineNo@100--->char c = this.mySource.charAt(this.myIndex);
+com.thoughtworks.xstream.mapper.PackageAliasingMapper:realClass: LineNo@77--->final String name = dot < 0 ? '' : elementName.substring(0, dot) + '.';
+com.thoughtworks.xstream.mapper.PackageAliasingMapper:realClass: LineNo@78--->final String packageName = (String)nameToPackage.get(name);
+com.thoughtworks.xstream.mapper.MapperWrapper:realClass: LineNo@125--->return realClassMapper.realClass(elementName);
+com.thoughtworks.xstream.mapper.PackageAliasingMapper:realClass: LineNo@73--->int length = elementName.length();
+org.codehaus.jettison.json.JSONTokener:next: LineNo@102--->return c;
+org.codehaus.jettison.json.JSONTokener:next: LineNo@100--->char c = this.mySource.charAt(this.myIndex);
+org.codehaus.jettison.json.JSONTokener:nextValue: LineNo@312--->back();
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@153--->char c = next();
+com.thoughtworks.xstream.mapper.PackageAliasingMapper:realClass: LineNo@80--->if (packageName != null) {
+com.thoughtworks.xstream.mapper.PackageAliasingMapper:realClass: LineNo@76--->dot = elementName.lastIndexOf('.', length);
+com.thoughtworks.xstream.core.util.CompositeClassLoader:loadClass: LineNo@136--->return classLoader.loadClass(name);
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@205--->c = next();
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@206--->switch (c) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@102--->return c;
+org.codehaus.jettison.json.JSONTokener:next: LineNo@101--->this.myIndex += 1;
+org.codehaus.jettison.json.JSONTokener:back: LineNo@56--->if (this.myIndex > 0) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:more: LineNo@89--->return this.myIndex < this.mySource.length();
+com.thoughtworks.xstream.mapper.PackageAliasingMapper:realClass: LineNo@77--->final String name = dot < 0 ? '' : elementName.substring(0, dot) + '.';
+com.thoughtworks.xstream.mapper.PackageAliasingMapper:realClass: LineNo@78--->final String packageName = (String)nameToPackage.get(name);
+com.thoughtworks.xstream.mapper.PackageAliasingMapper:realClass: LineNo@86--->} while (dot >= 0);
+com.thoughtworks.xstream.mapper.PackageAliasingMapper:realClass: LineNo@85--->length = dot - 1;
+com.thoughtworks.xstream.mapper.DefaultMapper:realClass: LineNo@79--->return Class.forName(elementName, initialize, classLoader);
+org.codehaus.jettison.json.JSONTokener:next: LineNo@100--->char c = this.mySource.charAt(this.myIndex);
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@240--->if (c == quote) {
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@205--->c = next();
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@205--->c = next();
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@206--->switch (c) {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@153--->char c = next();
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@154--->if (c == '/') {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@100--->char c = this.mySource.charAt(this.myIndex);
+org.codehaus.jettison.json.JSONTokener:back: LineNo@57--->this.myIndex -= 1;
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+com.thoughtworks.xstream.mapper.PackageAliasingMapper:realClass: LineNo@80--->if (packageName != null) {
+com.thoughtworks.xstream.mapper.PackageAliasingMapper:realClass: LineNo@76--->dot = elementName.lastIndexOf('.', length);
+com.thoughtworks.xstream.mapper.MapperWrapper:realClass: LineNo@125--->return realClassMapper.realClass(elementName);
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@153--->char c = next();
+org.codehaus.jettison.json.JSONTokener:back: LineNo@57--->this.myIndex -= 1;
+org.codehaus.jettison.json.JSONTokener:next: LineNo@102--->return c;
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@205--->c = next();
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:more: LineNo@89--->return this.myIndex < this.mySource.length();
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@240--->if (c == quote) {
+org.codehaus.jettison.mapped.DefaultConverter:convertToJSONPrimitive: LineNo@35--->primitive = ENFORCE_32BIT_INTEGER ? Integer.valueOf(text) : Long.valueOf(text);
+org.codehaus.jettison.json.JSONTokener:more: LineNo@89--->return this.myIndex < this.mySource.length();
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@179--->} else if (c == '#') {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@102--->return c;
+org.codehaus.jettison.json.JSONTokener:next: LineNo@101--->this.myIndex += 1;
+org.codehaus.jettison.json.JSONArray:<init>: LineNo@103--->x.back();
+com.thoughtworks.xstream.mapper.PackageAliasingMapper:realClass: LineNo@85--->length = dot - 1;
+com.thoughtworks.xstream.mapper.PackageAliasingMapper:realClass: LineNo@86--->} while (dot >= 0);
+com.thoughtworks.xstream.mapper.PackageAliasingMapper:realClass: LineNo@77--->final String name = dot < 0 ? '' : elementName.substring(0, dot) + '.';
+com.thoughtworks.xstream.mapper.PackageAliasingMapper:realClass: LineNo@78--->final String packageName = (String)nameToPackage.get(name);
+com.thoughtworks.xstream.mapper.DynamicProxyMapper:realClass: LineNo@55--->return super.realClass(elementName);
+com.thoughtworks.xstream.security.RegExpTypePermission:allows: LineNo@31--->if (type != null) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:more: LineNo@89--->return this.myIndex < this.mySource.length();
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@205--->c = next();
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@206--->switch (c) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@100--->char c = this.mySource.charAt(this.myIndex);
+org.codehaus.jettison.json.JSONTokener:more: LineNo@89--->return this.myIndex < this.mySource.length();
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@101--->this.myIndex += 1;
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@205--->c = next();
+org.codehaus.jettison.mapped.DefaultConverter:convertToJSONPrimitive: LineNo@36--->} catch (Exception e) {/**/}
+org.codehaus.jettison.json.JSONArray:<init>: LineNo@109--->x.back();
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@154--->if (c == '/') {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@100--->char c = this.mySource.charAt(this.myIndex);
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@183--->} else if (c == 0 || c > ' ') {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@153--->char c = next();
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@153--->char c = next();
+org.codehaus.jettison.json.JSONTokener:next: LineNo@101--->this.myIndex += 1;
+org.codehaus.jettison.json.JSONTokener:back: LineNo@56--->if (this.myIndex > 0) {
+com.thoughtworks.xstream.mapper.PackageAliasingMapper:realClass: LineNo@76--->dot = elementName.lastIndexOf('.', length);
+com.thoughtworks.xstream.mapper.PackageAliasingMapper:realClass: LineNo@80--->if (packageName != null) {
+com.thoughtworks.xstream.mapper.MapperWrapper:realClass: LineNo@125--->return realClassMapper.realClass(elementName);
+com.thoughtworks.xstream.security.RegExpTypePermission:allows: LineNo@33--->for (int i = 0; i < patterns.length; ++i)
+com.thoughtworks.xstream.security.RegExpTypePermission:allows: LineNo@34--->if (patterns[i].matcher(name).matches())
+com.thoughtworks.xstream.security.RegExpTypePermission:allows: LineNo@32--->final String name = type.getName();
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@154--->if (c == '/') {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@100--->char c = this.mySource.charAt(this.myIndex);
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@240--->if (c == quote) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@102--->return c;
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@101--->this.myIndex += 1;
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:more: LineNo@89--->return this.myIndex < this.mySource.length();
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@205--->c = next();
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@153--->char c = next();
+org.codehaus.jettison.mapped.DefaultConverter:convertToJSONPrimitive: LineNo@38--->if (primitive == null) {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@153--->char c = next();
+org.codehaus.jettison.json.JSONTokener:next: LineNo@101--->this.myIndex += 1;
+org.codehaus.jettison.json.JSONTokener:back: LineNo@56--->if (this.myIndex > 0) {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@179--->} else if (c == '#') {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@102--->return c;
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@184--->return c;
+org.codehaus.jettison.json.JSONArray:<init>: LineNo@97--->if (x.nextClean() != '[') {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:more: LineNo@89--->return this.myIndex < this.mySource.length();
+org.codehaus.jettison.json.JSONTokener:back: LineNo@57--->this.myIndex -= 1;
+com.thoughtworks.xstream.mapper.PackageAliasingMapper:realClass: LineNo@86--->} while (dot >= 0);
+com.thoughtworks.xstream.mapper.ClassAliasingMapper:realClass: LineNo@79--->return super.realClass(elementName);
+com.thoughtworks.xstream.mapper.PackageAliasingMapper:realClass: LineNo@88--->return super.realClass(elementName);
+com.thoughtworks.xstream.security.RegExpTypePermission:allows: LineNo@33--->for (int i = 0; i < patterns.length; ++i)
+com.thoughtworks.xstream.security.RegExpTypePermission:allows: LineNo@34--->if (patterns[i].matcher(name).matches())
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@179--->} else if (c == '#') {
+org.codehaus.jettison.json.JSONTokener:nextValue: LineNo@301--->char c = nextClean();
+org.codehaus.jettison.json.JSONTokener:next: LineNo@102--->return c;
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@206--->switch (c) {
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@205--->c = next();
+org.codehaus.jettison.json.JSONTokener:next: LineNo@101--->this.myIndex += 1;
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:more: LineNo@89--->return this.myIndex < this.mySource.length();
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:more: LineNo@89--->return this.myIndex < this.mySource.length();
+org.codehaus.jettison.mapped.DefaultConverter:convertToJSONPrimitive: LineNo@40--->Double v = Double.valueOf(text);
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:more: LineNo@89--->return this.myIndex < this.mySource.length();
+org.codehaus.jettison.json.JSONTokener:back: LineNo@57--->this.myIndex -= 1;
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@183--->} else if (c == 0 || c > ' ') {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@153--->char c = next();
+org.codehaus.jettison.json.JSONArray:<init>: LineNo@97--->if (x.nextClean() != '[') {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@100--->char c = this.mySource.charAt(this.myIndex);
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@154--->if (c == '/') {
+com.thoughtworks.xstream.mapper.PackageAliasingMapper:realClass: LineNo@88--->return super.realClass(elementName);
+com.thoughtworks.xstream.mapper.MapperWrapper:realClass: LineNo@125--->return realClassMapper.realClass(elementName);
+com.thoughtworks.xstream.security.RegExpTypePermission:allows: LineNo@33--->for (int i = 0; i < patterns.length; ++i)
+com.thoughtworks.xstream.core.util.CompositeClassLoader$1:addAll: LineNo@110--->result |= add(iter.next());
+org.codehaus.jettison.json.JSONTokener:next: LineNo@100--->char c = this.mySource.charAt(this.myIndex);
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@154--->if (c == '/') {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@183--->} else if (c == 0 || c > ' ') {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@153--->char c = next();
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@240--->if (c == quote) {
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@205--->c = next();
+org.codehaus.jettison.json.JSONTokener:next: LineNo@101--->this.myIndex += 1;
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@153--->char c = next();
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@101--->this.myIndex += 1;
+org.codehaus.jettison.mapped.DefaultConverter:convertToJSONPrimitive: LineNo@47--->} catch (Exception e) {/**/}
+org.codehaus.jettison.mapped.MappedNamespaceConvention:convertToJSONPrimitive: LineNo@282--->return typeConverter.convertToJSONPrimitive( text );
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@100--->char c = this.mySource.charAt(this.myIndex);
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@154--->if (c == '/') {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@184--->return c;
+org.codehaus.jettison.json.JSONArray:<init>: LineNo@100--->if (x.nextClean() == ']') {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@102--->return c;
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@179--->} else if (c == '#') {
+com.thoughtworks.xstream.mapper.MapperWrapper:realClass: LineNo@125--->return realClassMapper.realClass(elementName);
+com.thoughtworks.xstream.mapper.ClassAliasingMapper:realClass: LineNo@79--->return super.realClass(elementName);
+com.thoughtworks.xstream.mapper.SecurityMapper:realClass: LineNo@74--->if (permission.allows(type))
+com.thoughtworks.xstream.mapper.SecurityMapper:realClass: LineNo@73--->final TypePermission permission = (TypePermission)permissions.get(i);
+com.thoughtworks.xstream.security.RegExpTypePermission:allows: LineNo@37--->return false;
+com.thoughtworks.xstream.core.util.CompositeClassLoader$1:add: LineNo@116--->Object classLoader = ((WeakReference)ref).get();
+com.thoughtworks.xstream.core.util.CompositeClassLoader$1:add: LineNo@117--->if (classLoader != null) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@102--->return c;
+org.codehaus.jettison.json.JSONObject:<init>: LineNo@187--->c = x.nextClean();
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@179--->} else if (c == '#') {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@184--->return c;
+org.codehaus.jettison.json.JSONTokener:nextValue: LineNo@307--->return nextString(c);
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@205--->c = next();
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@206--->switch (c) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:more: LineNo@89--->return this.myIndex < this.mySource.length();
+org.codehaus.jettison.json.JSONTokener:next: LineNo@101--->this.myIndex += 1;
+org.codehaus.jettison.json.JSONTokener:more: LineNo@89--->return this.myIndex < this.mySource.length();
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@101--->this.myIndex += 1;
+org.codehaus.jettison.mapped.DefaultConverter:convertToJSONPrimitive: LineNo@50--->if (primitive == null) {
+org.codehaus.jettison.mapped.DefaultConverter:convertToJSONPrimitive: LineNo@31--->if(text == null) return text;
+org.codehaus.jettison.json.JSONTokener:next: LineNo@102--->return c;
+org.codehaus.jettison.json.JSONTokener:nextValue: LineNo@301--->char c = nextClean();
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@179--->} else if (c == '#') {
+org.codehaus.jettison.json.JSONArray:<init>: LineNo@100--->if (x.nextClean() == ']') {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@153--->char c = next();
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@183--->} else if (c == 0 || c > ' ') {
+org.codehaus.jettison.json.JSONArray:length: LineNo@327--->return this.myArrayList.size();
+org.codehaus.jettison.json.JSONArray:opt: LineNo@338--->return (index < 0 || index >= length()) ?
+com.thoughtworks.xstream.mapper.DefaultMapper:realClass: LineNo@66--->Class resultingClass = Primitives.primitiveType(elementName);
+com.thoughtworks.xstream.mapper.DynamicProxyMapper:realClass: LineNo@52--->if (elementName.equals(alias)) {
+com.thoughtworks.xstream.mapper.MapperWrapper:realClass: LineNo@125--->return realClassMapper.realClass(elementName);
+com.thoughtworks.xstream.mapper.SecurityMapper:realClass: LineNo@72--->for (int i = 0; i < permissions.size(); ++i) {
+com.thoughtworks.xstream.mapper.SecurityMapper:realClass: LineNo@74--->if (permission.allows(type))
+com.thoughtworks.xstream.core.util.CompositeClassLoader:loadClass: LineNo@125--->cleanup();
+com.thoughtworks.xstream.core.util.CompositeClassLoader$1:addAll: LineNo@108--->boolean result = false;
+com.thoughtworks.xstream.core.util.CompositeClassLoader$1:add: LineNo@118--->return super.add(classLoader);
+com.thoughtworks.xstream.core.util.CompositeClassLoader$1:addAll: LineNo@109--->for(Iterator iter = c.iterator(); iter.hasNext(); ) {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@153--->char c = next();
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@183--->} else if (c == 0 || c > ' ') {
+org.codehaus.jettison.json.JSONObject:<init>: LineNo@180--->key = x.nextValue().toString();
+org.codehaus.jettison.json.JSONTokener:nextValue: LineNo@301--->char c = nextClean();
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@203--->StringBuffer sb = new StringBuffer();
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@240--->if (c == quote) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@100--->char c = this.mySource.charAt(this.myIndex);
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@154--->if (c == '/') {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@100--->char c = this.mySource.charAt(this.myIndex);
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@154--->if (c == '/') {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@154--->if (c == '/') {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@100--->char c = this.mySource.charAt(this.myIndex);
+org.codehaus.jettison.mapped.DefaultConverter:convertToJSONPrimitive: LineNo@51--->if(text.trim().equalsIgnoreCase('true') || text.trim().equalsIgnoreCase('false')) {
+org.codehaus.jettison.mapped.DefaultConverter:convertToJSONPrimitive: LineNo@32--->Object primitive = null;
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@153--->char c = next();
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@183--->} else if (c == 0 || c > ' ') {
+org.codehaus.jettison.json.JSONArray:<init>: LineNo@105--->if (x.nextClean() == ',') {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@184--->return c;
+org.codehaus.jettison.json.JSONArray:opt: LineNo@338--->return (index < 0 || index >= length()) ?
+com.thoughtworks.xstream.mapper.MapperWrapper:realClass: LineNo@125--->return realClassMapper.realClass(elementName);
+com.thoughtworks.xstream.core.util.Primitives:primitiveType: LineNo@100--->return (Class)NAMED_PRIMITIVE.get(name);
+com.thoughtworks.xstream.mapper.DynamicProxyMapper:realClass: LineNo@55--->return super.realClass(elementName);
+com.thoughtworks.xstream.mapper.ArrayMapper:realClass: LineNo@74--->return super.realClass(elementName);
+com.thoughtworks.xstream.mapper.SecurityMapper:realClass: LineNo@71--->final Class type = super.realClass(elementName);
+com.thoughtworks.xstream.security.ExplicitTypePermission:allows: LineNo@49--->if (type == null)
+com.thoughtworks.xstream.mapper.SecurityMapper:realClass: LineNo@72--->for (int i = 0; i < permissions.size(); ++i) {
+com.thoughtworks.xstream.core.util.CompositeClassLoader:loadClass: LineNo@125--->cleanup();
+com.thoughtworks.xstream.core.util.CompositeClassLoader$1:addAll: LineNo@110--->result |= add(iter.next());
+com.thoughtworks.xstream.core.util.CompositeClassLoader$1:addAll: LineNo@109--->for(Iterator iter = c.iterator(); iter.hasNext(); ) {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@184--->return c;
+org.codehaus.jettison.json.JSONTokener:nextValue: LineNo@304--->switch (c) {
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@241--->return sb.toString();
+org.codehaus.jettison.json.JSONTokener:next: LineNo@102--->return c;
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@179--->} else if (c == '#') {
+org.codehaus.jettison.json.JSONTokener:nextValue: LineNo@301--->char c = nextClean();
+org.codehaus.jettison.json.JSONTokener:next: LineNo@102--->return c;
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@179--->} else if (c == '#') {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@179--->} else if (c == '#') {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@102--->return c;
+org.codehaus.jettison.mapped.DefaultConverter:convertToJSONPrimitive: LineNo@56--->if (primitive == null || !primitive.toString().equals(text)) {
+org.codehaus.jettison.mapped.DefaultConverter:convertToJSONPrimitive: LineNo@58--->primitive = text;
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@184--->return c;
+org.codehaus.jettison.json.JSONArray:<init>: LineNo@105--->if (x.nextClean() == ',') {
+org.codehaus.jettison.json.JSONArray:opt: LineNo@338--->return (index < 0 || index >= length()) ?
+com.thoughtworks.xstream.mapper.ArrayMapper:realClass: LineNo@58--->while (elementName.endsWith('-array')) {
+com.thoughtworks.xstream.mapper.ArrayMapper:realClass: LineNo@55--->int dimensions = 0;
+com.thoughtworks.xstream.mapper.DefaultMapper:realClass: LineNo@66--->Class resultingClass = Primitives.primitiveType(elementName);
+com.thoughtworks.xstream.mapper.MapperWrapper:realClass: LineNo@125--->return realClassMapper.realClass(elementName);
+com.thoughtworks.xstream.mapper.MapperWrapper:realClass: LineNo@125--->return realClassMapper.realClass(elementName);
+com.thoughtworks.xstream.mapper.MapperWrapper:realClass: LineNo@125--->return realClassMapper.realClass(elementName);
+com.thoughtworks.xstream.mapper.SecurityMapper:realClass: LineNo@74--->if (permission.allows(type))
+com.thoughtworks.xstream.security.ExplicitTypePermission:allows: LineNo@51--->return names.contains(type.getName());
+com.thoughtworks.xstream.mapper.SecurityMapper:realClass: LineNo@73--->final TypePermission permission = (TypePermission)permissions.get(i);
+com.thoughtworks.xstream.core.util.CompositeClassLoader:loadClass: LineNo@126--->copy.addAll(classLoaders);
+com.thoughtworks.xstream.core.util.CompositeClassLoader$1:addAll: LineNo@112--->return result;
+com.thoughtworks.xstream.core.util.CompositeClassLoader:loadClass: LineNo@105--->List copy = new ArrayList(classLoaders.size()) {
+org.codehaus.jettison.json.JSONObject:<init>: LineNo@187--->c = x.nextClean();
+org.codehaus.jettison.json.JSONObject:<init>: LineNo@188--->if (c == '=') {
+org.codehaus.jettison.json.JSONTokener:nextValue: LineNo@307--->return nextString(c);
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@183--->} else if (c == 0 || c > ' ') {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@153--->char c = next();
+org.codehaus.jettison.json.JSONObject:<init>: LineNo@172--->c = x.nextClean();
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@183--->} else if (c == 0 || c > ' ') {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@153--->char c = next();
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@183--->} else if (c == 0 || c > ' ') {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@153--->char c = next();
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@95--->if(getSerializedAsArrays().contains(property.getKey())) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@95--->if(getSerializedAsArrays().contains(property.getKey())) {
+org.codehaus.jettison.mapped.DefaultConverter:convertToJSONPrimitive: LineNo@61--->return primitive;
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@95--->if(getSerializedAsArrays().contains(property.getKey())) {
+org.codehaus.jettison.json.JSONTokener:nextValue: LineNo@301--->char c = nextClean();
+org.codehaus.jettison.json.JSONArray:<init>: LineNo@110--->this.myArrayList.add(x.nextValue());
+org.codehaus.jettison.json.JSONArray:get: LineNo@160--->Object o = opt(index);
+org.codehaus.jettison.json.JSONArray:get: LineNo@161--->if (o == null) {
+org.codehaus.jettison.json.JSONArray:getJSONObject: LineNo@254--->Object o = get(index);
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName: LineNo@215--->String xns = (String) getNamespaceURI( jns );
+com.thoughtworks.xstream.mapper.ClassAliasingMapper:realClass: LineNo@72--->Class type = Primitives.primitiveType(mappedName);
+com.thoughtworks.xstream.mapper.ArrayMapper:realClass: LineNo@63--->if (dimensions > 0) {
+com.thoughtworks.xstream.mapper.DefaultMapper:realClass: LineNo@67--->if( resultingClass != null ){
+com.thoughtworks.xstream.mapper.SecurityMapper:realClass: LineNo@71--->final Class type = super.realClass(elementName);
+com.thoughtworks.xstream.mapper.SecurityMapper:realClass: LineNo@74--->if (permission.allows(type))
+com.thoughtworks.xstream.core.util.CompositeClassLoader:loadClass: LineNo@124--->synchronized(this) {
+com.thoughtworks.xstream.core.util.CompositeClassLoader:loadClass: LineNo@126--->copy.addAll(classLoaders);
+com.thoughtworks.xstream.mapper.DefaultMapper:realClass: LineNo@79--->return Class.forName(elementName, initialize, classLoader);
+com.thoughtworks.xstream.core.util.CompositeClassLoader$1:<init>: LineNo@105--->List copy = new ArrayList(classLoaders.size()) {
+org.codehaus.jettison.json.JSONObject:<init>: LineNo@192--->} else if (c != ':') {
+org.codehaus.jettison.json.JSONObject:<init>: LineNo@180--->key = x.nextValue().toString();
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@184--->return c;
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@153--->char c = next();
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@184--->return c;
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@184--->return c;
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@100--->jo.put(property.getKey(), value);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty:getKey: LineNo@56--->return key;
+org.codehaus.jettison.mapped.MappedNamespaceConvention:convertToJSONPrimitive: LineNo@282--->return typeConverter.convertToJSONPrimitive( text );
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@93--->value = convention.convertToJSONPrimitive((String)value);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:withProperty: LineNo@163--->} else if(getSerializedAsArrays().contains(property.getKey())) {
+org.codehaus.jettison.AbstractXMLStreamWriter:getSerializedAsArrays: LineNo@88--->return serializedAsArrays;
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:withProperty: LineNo@143--->if(add && value instanceof String) {
+org.codehaus.jettison.json.JSONTokener:nextValue: LineNo@304--->switch (c) {
+org.codehaus.jettison.json.JSONArray:get: LineNo@164--->return o;
+org.codehaus.jettison.mapped.MappedXMLStreamReader:<init>: LineNo@51--->this.node = new Node(null, rootName, ((JSONArray)top).getJSONObject(0), convention);
+org.codehaus.jettison.json.JSONArray:get: LineNo@160--->Object o = opt(index);
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName: LineNo@217--->if ( xns == null ) {
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName: LineNo@218--->qname = new QName( name );
+com.thoughtworks.xstream.mapper.MapperWrapper:defaultImplementationOf: LineNo@145--->return defaultImplementationOfMapper.defaultImplementationOf(type);
+com.thoughtworks.xstream.core.util.Primitives:primitiveType: LineNo@100--->return (Class)NAMED_PRIMITIVE.get(name);
+com.thoughtworks.xstream.mapper.ArrayMapper:realClass: LineNo@74--->return super.realClass(elementName);
+com.thoughtworks.xstream.mapper.DefaultMapper:realClass: LineNo@71--->boolean initialize = true;
+com.thoughtworks.xstream.mapper.SecurityMapper:realClass: LineNo@75--->return type;
+com.thoughtworks.xstream.core.util.CompositeClassLoader:loadClass: LineNo@127--->}
+com.thoughtworks.xstream.core.util.CompositeClassLoader:loadClass: LineNo@105--->List copy = new ArrayList(classLoaders.size()) {
+org.codehaus.jettison.json.JSONObject:<init>: LineNo@195--->put(key, x.nextValue());
+org.codehaus.jettison.json.JSONTokener:nextValue: LineNo@301--->char c = nextClean();
+org.codehaus.jettison.json.JSONTokener:next: LineNo@101--->this.myIndex += 1;
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONObject:<init>: LineNo@168--->if (x.nextClean() != '{') {
+org.codehaus.jettison.json.JSONObject:<init>: LineNo@172--->c = x.nextClean();
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@100--->jo.put(property.getKey(), value);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty:getKey: LineNo@56--->return key;
+org.codehaus.jettison.json.JSONObject:put: LineNo@869--->if (key == null) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@93--->value = convention.convertToJSONPrimitive((String)value);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@105--->return new JSONPropertyObject(getKey(), jo);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:getValue: LineNo@78--->return object.toString();
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@91--->Object value = property.getValue();
+org.codehaus.jettison.AbstractXMLStreamWriter:getSerializedAsArrays: LineNo@88--->return serializedAsArrays;
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:withProperty: LineNo@148--->Object old = object.opt(property.getKey());
+org.codehaus.jettison.json.JSONTokener:nextValue: LineNo@310--->return new JSONObject(this);
+org.codehaus.jettison.json.JSONArray:getJSONObject: LineNo@255--->if (o instanceof JSONObject) {
+org.codehaus.jettison.json.JSONArray:getJSONObject: LineNo@254--->Object o = get(index);
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName: LineNo@203--->int dot = name.lastIndexOf( '.' );
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName: LineNo@224--->return qname;
+org.codehaus.jettison.Node:<init>: LineNo@57--->keys = object.keys();
+org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement: LineNo@134--->nodes.push(node);
+com.thoughtworks.xstream.mapper.DefaultImplementationsMapper:defaultImplementationOf: LineNo@71--->return super.defaultImplementationOf(type);
+com.thoughtworks.xstream.mapper.DefaultMapper:defaultImplementationOf: LineNo@86--->return type;
+com.thoughtworks.xstream.mapper.ClassAliasingMapper:realClass: LineNo@72--->Class type = Primitives.primitiveType(mappedName);
+com.thoughtworks.xstream.mapper.ClassAliasingMapper:realClass: LineNo@71--->if (mappedName != null) {
+com.thoughtworks.xstream.mapper.MapperWrapper:realClass: LineNo@125--->return realClassMapper.realClass(elementName);
+com.thoughtworks.xstream.mapper.DefaultMapper:realClass: LineNo@73--->if (elementName.startsWith(XSTREAM_PACKAGE_ROOT)) {
+com.thoughtworks.xstream.mapper.MapperWrapper:realClass: LineNo@125--->return realClassMapper.realClass(elementName);
+com.thoughtworks.xstream.mapper.CachingMapper:realClass: LineNo@47--->Class result = super.realClass(elementName);
+com.thoughtworks.xstream.core.util.CompositeClassLoader:loadClass: LineNo@130--->for (Iterator iterator = copy.iterator(); iterator.hasNext();) {
+com.thoughtworks.xstream.core.util.CompositeClassLoader:loadClass: LineNo@131--->ClassLoader classLoader = (ClassLoader) iterator.next();
+org.codehaus.jettison.json.JSONTokener:nextValue: LineNo@304--->switch (c) {
+org.codehaus.jettison.json.JSONTokener:more: LineNo@89--->return this.myIndex < this.mySource.length();
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONObject:<init>: LineNo@173--->switch (c) {
+org.codehaus.jettison.json.JSONTokener:nextClean: LineNo@153--->char c = next();
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@100--->jo.put(property.getKey(), value);
+org.codehaus.jettison.json.JSONObject:put: LineNo@872--->if (value != null) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty:getKey: LineNo@56--->return key;
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@91--->Object value = property.getValue();
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:withProperty: LineNo@165--->values.put(value);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:withProperty: LineNo@163--->} else if(getSerializedAsArrays().contains(property.getKey())) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty:getKey: LineNo@56--->return key;
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:withProperty: LineNo@165--->values.put(value);
+com.thoughtworks.xstream.core.TreeUnmarshaller:start: LineNo@135--->Iterator validations = validationList.iterator();
+org.codehaus.jettison.json.JSONObject:<init>: LineNo@164--->this();
+org.codehaus.jettison.json.JSONArray:getJSONObject: LineNo@256--->return (JSONObject)o;
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName: LineNo@207--->if ( dot == -1 ) {
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName: LineNo@208--->dot = 0;
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName: LineNo@215--->String xns = (String) getNamespaceURI( jns );
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName: LineNo@205--->String local = name;
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName: LineNo@185--->return createQName( rootName );
+org.codehaus.jettison.mapped.MappedXMLStreamReader:<init>: LineNo@51--->this.node = new Node(null, rootName, ((JSONArray)top).getJSONObject(0), convention);
+org.codehaus.jettison.json.JSONObject:keys: LineNo@519--->return this.myHashMap.keySet().iterator();
+org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement: LineNo@133--->node = new Node(nextKey, convention);
+org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement: LineNo@135--->currentValue = (String) newObj;
+com.thoughtworks.xstream.mapper.MapperWrapper:defaultImplementationOf: LineNo@145--->return defaultImplementationOfMapper.defaultImplementationOf(type);
+com.thoughtworks.xstream.mapper.ClassAliasingMapper:realClass: LineNo@73--->if (type != null) {
+com.thoughtworks.xstream.mapper.ClassAliasingMapper:realClass: LineNo@69--->String mappedName = (String) nameToType.get(elementName);
+com.thoughtworks.xstream.mapper.DefaultMapper:realClass: LineNo@76--->classLoader = classLoaderReference.getReference();
+com.thoughtworks.xstream.core.ClassLoaderReference:getReference: LineNo@31--->return reference;
+com.thoughtworks.xstream.mapper.CachingMapper:realClass: LineNo@47--->Class result = super.realClass(elementName);
+com.thoughtworks.xstream.mapper.CachingMapper:realClass: LineNo@48--->realClassCache.put(elementName, result);
+com.thoughtworks.xstream.core.util.CompositeClassLoader:loadClass: LineNo@132--->if (classLoader == contextClassLoader) {
+org.codehaus.jettison.json.JSONTokener:nextValue: LineNo@313--->return new JSONArray(this);
+org.codehaus.jettison.json.JSONTokener:next: LineNo@101--->this.myIndex += 1;
+org.codehaus.jettison.json.JSONObject:<init>: LineNo@179--->x.back();
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:<init>: LineNo@114--->public JSONPropertyObject(String key, JSONObject object) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:<init>: LineNo@115--->super(key);
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:more: LineNo@89--->return this.myIndex < this.mySource.length();
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty:<init>: LineNo@52--->this.key = key;
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@104--->}
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@105--->return new JSONPropertyObject(getKey(), jo);
+org.codehaus.jettison.json.JSONObject:put: LineNo@878--->return this;
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:<init>: LineNo@114--->public JSONPropertyObject(String key, JSONObject object) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:<init>: LineNo@115--->super(key);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@92--->if(add && value instanceof String) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:<init>: LineNo@116--->this.object = object;
+org.codehaus.jettison.json.JSONArray:put: LineNo@602--->return this;
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty:getKey: LineNo@56--->return key;
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:withProperty: LineNo@166--->object.put(property.getKey(), values);
+com.thoughtworks.xstream.core.util.PrioritizedList:iterator: LineNo@44--->return new PrioritizedItemIterator(this.set.iterator());
+org.codehaus.jettison.json.JSONObject:<init>: LineNo@138--->this.myHashMap = new LinkedHashMap();
+org.codehaus.jettison.Node:<init>: LineNo@45--->this.object = object;
+org.codehaus.jettison.json.JSONArray:<init>: LineNo@87--->this.myArrayList = new ArrayList();
+org.codehaus.jettison.json.JSONObject:<init>: LineNo@138--->this.myHashMap = new LinkedHashMap();
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName: LineNo@214--->String jns = name.substring( 0, dot );
+org.codehaus.jettison.mapped.MappedNamespaceConvention:getNamespaceURI: LineNo@151--->if ( ignoreNamespaces ) {
+org.codehaus.jettison.Node:<init>: LineNo@63--->this.name = con.createQName(name, this);
+org.codehaus.jettison.Node:<init>: LineNo@63--->this.name = con.createQName(name, this);
+org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement: LineNo@133--->node = new Node(nextKey, convention);
+org.codehaus.jettison.Node:<init>: LineNo@57--->keys = object.keys();
+org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement: LineNo@134--->nodes.push(node);
+org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement: LineNo@136--->event = START_ELEMENT;
+com.thoughtworks.xstream.mapper.DefaultImplementationsMapper:defaultImplementationOf: LineNo@71--->return super.defaultImplementationOf(type);
+com.thoughtworks.xstream.mapper.ClassAliasingMapper:realClass: LineNo@76--->elementName = mappedName;
+com.thoughtworks.xstream.mapper.DefaultMapper:realClass: LineNo@76--->classLoader = classLoaderReference.getReference();
+com.thoughtworks.xstream.mapper.CachingMapper:realClass: LineNo@49--->return result;
+com.thoughtworks.xstream.io.json.JettisonStaxWriter:startNode: LineNo@91--->|| Map.class.isAssignableFrom(clazz)
+com.thoughtworks.xstream.core.util.CompositeClassLoader:loadClass: LineNo@133--->contextClassLoader = null;
+org.codehaus.jettison.json.JSONArray:<init>: LineNo@96--->this();
+org.codehaus.jettison.json.JSONTokener:back: LineNo@56--->if (this.myIndex > 0) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty:<init>: LineNo@51--->public JSONProperty(String key) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@99--->if (more()) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@100--->char c = this.mySource.charAt(this.myIndex);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@105--->return new JSONPropertyObject(getKey(), jo);
+com.thoughtworks.xstream.XStream:setupDefaultSecurity: LineNo@793--->classes[i] = (Class)iter.next();
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:<init>: LineNo@116--->this.object = object;
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty:<init>: LineNo@51--->public JSONProperty(String key) {
+org.codehaus.jettison.json.JSONObject:<init>: LineNo@164--->this();
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@93--->value = convention.convertToJSONPrimitive((String)value);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:withProperty: LineNo@166--->object.put(property.getKey(), values);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty:getKey: LineNo@56--->return key;
+com.thoughtworks.xstream.core.TreeUnmarshaller:start: LineNo@135--->Iterator validations = validationList.iterator();
+org.codehaus.jettison.json.JSONObject:get: LineNo@358--->Object o = opt(key);
+org.codehaus.jettison.mapped.MappedNamespaceConvention:<init>: LineNo@37--->private Map jnsToXns = new HashMap();
+org.codehaus.jettison.json.JSONObject:opt: LineNo@582--->return key == null ? null : this.myHashMap.get(key);
+org.codehaus.jettison.json.JSONObject:get: LineNo@358--->Object o = opt(key);
+org.codehaus.jettison.json.JSONObject:get: LineNo@359--->if (o == null) {
+org.codehaus.jettison.mapped.MappedXMLStreamReader:<init>: LineNo@50--->} else if (top instanceof JSONArray && (((JSONArray)top).length() == 1 && ((JSONArray)top).get(0).equals(''))) {
+org.codehaus.jettison.json.JSONArray:length: LineNo@327--->return this.myArrayList.size();
+org.codehaus.jettison.json.JSONObject:get: LineNo@363--->return o;
+org.codehaus.jettison.Node:getObject: LineNo@147--->return object;
+org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement: LineNo@130--->newObj = node.getObject().get(nextKey);
+org.codehaus.jettison.mapped.MappedXMLStreamReader:<init>: LineNo@50--->} else if (top instanceof JSONArray && (((JSONArray)top).length() == 1 && ((JSONArray)top).get(0).equals(''))) {
+org.codehaus.jettison.mapped.MappedXMLStreamReader:<init>: LineNo@42--->String rootName = (String) obj.keys().next();
+org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement: LineNo@130--->newObj = node.getObject().get(nextKey);
+org.codehaus.jettison.json.JSONArray:length: LineNo@327--->return this.myArrayList.size();
+org.codehaus.jettison.mapped.MappedXMLStreamReader:<init>: LineNo@47--->Object top = obj.get(rootName);
+org.codehaus.jettison.mapped.MappedXMLInputFactory:createXMLStreamReader: LineNo@44--->return new MappedXMLStreamReader(root, convention);
+org.codehaus.jettison.json.JSONObject:keys: LineNo@519--->return this.myHashMap.keySet().iterator();
+org.codehaus.jettison.Node:getKeys: LineNo@139--->return keys;
+org.codehaus.jettison.mapped.MappedXMLInputFactory:createXMLStreamReader: LineNo@43--->JSONObject root = new JSONObject(tokener);
+org.codehaus.jettison.mapped.MappedXMLStreamReader:<init>: LineNo@42--->String rootName = (String) obj.keys().next();
+org.codehaus.jettison.mapped.MappedNamespaceConvention:getNamespaceURI: LineNo@155--->return (String) jnsToXns.get( prefix );
+org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement: LineNo@129--->nextKey = (String) node.getKeys().next();
+com.thoughtworks.xstream.io.AbstractReader:decodeNode: LineNo@64--->return nameCoder.decodeNode(name);
+com.thoughtworks.xstream.core.util.FastStack:push: LineNo@34--->return value;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getNodeName: LineNo@212--->return unescapeXmlName((String) elementStack.peek());
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@90--->if (event == START_ELEMENT && next.getName().getLocalPart().equals(valueKey)) {
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName: LineNo@185--->return createQName( rootName );
+com.thoughtworks.xstream.io.xml.AbstractXmlReader:unescapeXmlName: LineNo@52--->return decodeNode(name);
+com.thoughtworks.xstream.io.naming.NoNameCoder:decodeNode: LineNo@37--->return nodeName;
+com.thoughtworks.xstream.core.util.FastStack:peek: LineNo@48--->return pointer == 0 ? null : stack[pointer - 1];
+org.codehaus.jettison.Node:getName: LineNo@143--->return name;
+org.codehaus.jettison.AbstractXMLStreamReader:getName: LineNo@117--->return node.getName();
+org.codehaus.jettison.mapped.MappedXMLStreamReader:<init>: LineNo@50--->} else if (top instanceof JSONArray && (((JSONArray)top).length() == 1 && ((JSONArray)top).get(0).equals(''))) {
+org.codehaus.jettison.Node:<init>: LineNo@66--->}
+com.thoughtworks.xstream.io.AbstractReader:decodeNode: LineNo@64--->return nameCoder.decodeNode(name);
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getNodeName: LineNo@212--->return unescapeXmlName((String) elementStack.peek());
+org.codehaus.jettison.Node:getName: LineNo@143--->return name;
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@89--->Node next = (Node)nodes.peek();
+org.codehaus.jettison.Node:getKeys: LineNo@139--->return keys;
+org.codehaus.jettison.util.FastStack:push: LineNo@24--->}
+com.thoughtworks.xstream.io.xml.AbstractXmlReader:unescapeXmlName: LineNo@52--->return decodeNode(name);
+org.codehaus.jettison.AbstractXMLStreamReader:getName: LineNo@117--->return node.getName();
+org.codehaus.jettison.util.FastStack:empty: LineNo@34--->return size() == 0;
+org.codehaus.jettison.util.FastStack:peek: LineNo@38--->if (empty())
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@76--->} else if ((node.getKeys() != null && node.getKeys().hasNext()) || node.getArray() != null) {
+org.codehaus.jettison.Node:getKeys: LineNo@139--->return keys;
+org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement: LineNo@137--->return;
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getNodeName: LineNo@212--->return unescapeXmlName((String) elementStack.peek());
+org.codehaus.jettison.AbstractXMLStreamReader:getName: LineNo@117--->return node.getName();
+com.thoughtworks.xstream.io.xml.StaxReader:pullElementName: LineNo@79--->QName qname = in.getName();
+org.codehaus.jettison.util.FastStack:peek: LineNo@38--->if (empty())
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@76--->} else if ((node.getKeys() != null && node.getKeys().hasNext()) || node.getArray() != null) {
+org.codehaus.jettison.mapped.MappedXMLStreamReader:processElement: LineNo@132--->if (newObj instanceof String) {
+com.thoughtworks.xstream.io.ReaderWrapper:getNodeName: LineNo@44--->return wrapped.getNodeName();
+org.codehaus.jettison.Node:getName: LineNo@143--->return name;
+org.codehaus.jettison.util.FastStack:peek: LineNo@41--->return get(size() - 1);
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@88--->if (nodes.size() > 0) {
+com.thoughtworks.xstream.io.AbstractReader:decodeNode: LineNo@64--->return nameCoder.decodeNode(name);
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getNodeName: LineNo@212--->return unescapeXmlName((String) elementStack.peek());
+com.thoughtworks.xstream.io.path.PathTracker:pushElement: LineNo@79--->pathStack[pointer] = name;
+org.codehaus.jettison.AbstractXMLStreamReader:getName: LineNo@117--->return node.getName();
+org.codehaus.jettison.mapped.MappedXMLStreamReader:next: LineNo@89--->Node next = (Node)nodes.peek();
+com.thoughtworks.xstream.io.xml.AbstractXmlReader:unescapeXmlName: LineNo@52--->return decodeNode(name);
+com.thoughtworks.xstream.io.naming.NoNameCoder:decodeNode: LineNo@37--->return nodeName;
+com.thoughtworks.xstream.core.util.FastStack:peek: LineNo@48--->return pointer == 0 ? null : stack[pointer - 1];
+com.thoughtworks.xstream.io.xml.StaxReader:pullElementName: LineNo@79--->QName qname = in.getName();
+com.thoughtworks.xstream.io.xml.QNameMap:getJavaClassName: LineNo@47--->return qname.getLocalPart();
+com.thoughtworks.xstream.mapper.MapperWrapper:defaultImplementationOf: LineNo@145--->return defaultImplementationOfMapper.defaultImplementationOf(type);
+com.thoughtworks.xstream.io.AbstractReader:decodeNode: LineNo@64--->return nameCoder.decodeNode(name);
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getNodeName: LineNo@212--->return unescapeXmlName((String) elementStack.peek());
+com.thoughtworks.xstream.io.xml.StaxReader:pullElementName: LineNo@80--->return qnameMap.getJavaClassName(qname);
+com.thoughtworks.xstream.io.xml.AbstractXmlReader:unescapeXmlName: LineNo@52--->return decodeNode(name);
+com.thoughtworks.xstream.core.util.HierarchicalStreams:readClassType: LineNo@29--->type = mapper.realClass(reader.getNodeName());
+com.thoughtworks.xstream.mapper.CachingMapper:realClass: LineNo@39--->if (cached != null) {
+com.thoughtworks.xstream.mapper.MapperWrapper:isReferenceable: LineNo@141--->return isReferenceableMapper.isReferenceable(type);
+com.thoughtworks.xstream.io.json.JettisonStaxWriter:startNode: LineNo@89--->if (clazz != null && out instanceof AbstractXMLStreamWriter) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:moveDown: LineNo@104--->if (elementStack.size() < currentDepth) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:moveDown: LineNo@104--->if (elementStack.size() < currentDepth) {
+com.thoughtworks.xstream.core.util.FastStack:push: LineNo@33--->stack[pointer++] = value;
+com.thoughtworks.xstream.mapper.AnnotationMapper:defaultImplementationOf: LineNo@136--->final Class defaultImplementation = super.defaultImplementationOf(type);
+com.thoughtworks.xstream.mapper.DefaultImplementationsMapper:defaultImplementationOf: LineNo@68--->if (typeToImpl.containsKey(type)) {
+com.thoughtworks.xstream.io.xml.AbstractPullReader:getNodeName: LineNo@212--->return unescapeXmlName((String) elementStack.peek());
+com.thoughtworks.xstream.mapper.CachingMapper:realClass: LineNo@38--->Object cached = realClassCache.get(elementName);
+com.thoughtworks.xstream.mapper.ImmutableTypesMapper:isReferenceable: LineNo@69--->if (unreferenceableTypes.contains(type)) {
+com.thoughtworks.xstream.io.json.JettisonStaxWriter:startNode: LineNo@90--->if (Collection.class.isAssignableFrom(clazz)
+com.thoughtworks.xstream.io.xml.AbstractPullReader:moveDown: LineNo@102--->while (elementStack.size() <= currentDepth) {
+com.thoughtworks.xstream.core.util.FastStack:size: LineNo@62--->return pointer;
+com.thoughtworks.xstream.mapper.MapperWrapper:defaultImplementationOf: LineNo@145--->return defaultImplementationOfMapper.defaultImplementationOf(type);
+com.thoughtworks.xstream.io.ReaderWrapper:getNodeName: LineNo@44--->return wrapped.getNodeName();
+com.thoughtworks.xstream.mapper.DefaultMapper:realClass: LineNo@77--->initialize = elementName.charAt(0) == '[';
+com.thoughtworks.xstream.mapper.ImmutableTypesMapper:isReferenceable: LineNo@70--->return false;
+com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller:convert: LineNo@54--->final boolean isReferenceable = getMapper().isReferenceable(type);
+com.thoughtworks.xstream.core.util.FastStack:size: LineNo@62--->return pointer;
+org.codehaus.jettison.AbstractXMLInputFactory:readAll: LineNo@161--->char[] buf = new char[INPUT_BUF_SIZE];
+org.codehaus.jettison.AbstractXMLInputFactory:createXMLStreamReader: LineNo@151--->return createXMLStreamReader(new JSONTokener(readAll(reader)));
+com.thoughtworks.xstream.io.json.JettisonStaxWriter:startNode: LineNo@97--->if (!((AbstractXMLStreamWriter)out).getSerializedAsArrays().contains(key)) {
+org.codehaus.jettison.AbstractXMLStreamWriter:<init>: LineNo@25--->ArrayList serializedAsArrays = new ArrayList();
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:<init>: LineNo@38--->private String valueKey = '$';
+com.thoughtworks.xstream.XStream$1:lookupConverterForType: LineNo@517--->return defaultConverterLookup.lookupConverterForType(type);
+com.thoughtworks.xstream.mapper.AnnotationMapper:defaultImplementationOf: LineNo@136--->final Class defaultImplementation = super.defaultImplementationOf(type);
+com.thoughtworks.xstream.core.util.HierarchicalStreams:readClassType: LineNo@29--->type = mapper.realClass(reader.getNodeName());
+com.thoughtworks.xstream.mapper.MapperWrapper:isReferenceable: LineNo@141--->return isReferenceableMapper.isReferenceable(type);
+com.thoughtworks.xstream.io.json.JettisonStaxWriter:startNode: LineNo@91--->|| Map.class.isAssignableFrom(clazz)
+org.codehaus.jettison.AbstractXMLInputFactory:readAll: LineNo@167--->return (len == 0) ? '' : new String(buf, 0, len);
+org.codehaus.jettison.mapped.MappedXMLInputFactory:createXMLStreamReader: LineNo@43--->JSONObject root = new JSONObject(tokener);
+org.codehaus.jettison.AbstractXMLStreamWriter:getSerializedAsArrays: LineNo@88--->return serializedAsArrays;
+com.thoughtworks.xstream.core.DefaultConverterLookup:lookupConverterForType: LineNo@65--->Converter cachedConverter = type != null ? (Converter)typeToConverterMap.get(type.getName()) : null;
+com.thoughtworks.xstream.core.DefaultConverterLookup:lookupConverterForType: LineNo@66--->if (cachedConverter != null) {
+com.thoughtworks.xstream.core.TreeUnmarshaller:convertAnother: LineNo@54--->type = mapper.defaultImplementationOf(type);
+com.thoughtworks.xstream.mapper.AnnotationMapper:defaultImplementationOf: LineNo@140--->return defaultImplementation;
+com.thoughtworks.xstream.core.util.HierarchicalStreams:readClassType: LineNo@33--->return type;
+com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter:readBareItem: LineNo@132--->return context.convertAnother(current, type);
+com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller:convert: LineNo@54--->final boolean isReferenceable = getMapper().isReferenceable(type);
+org.codehaus.jettison.json.JSONTokener:<init>: LineNo@46--->this.mySource = s;
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeStartDocument: LineNo@205--->current = new JSONPropertyObject(null, new JSONObject());
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createKey: LineNo@256--->StringBuffer builder = new StringBuffer();
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeStartElement: LineNo@211--->String key = convention.createKey(prefix, ns, local);
+com.thoughtworks.xstream.core.DefaultConverterLookup:lookupConverterForType: LineNo@67--->return cachedConverter;
+com.thoughtworks.xstream.core.TreeUnmarshaller:convertAnother: LineNo@56--->converter = converterLookup.lookupConverterForType(type);
+com.thoughtworks.xstream.mapper.MapperWrapper:defaultImplementationOf: LineNo@145--->return defaultImplementationOfMapper.defaultImplementationOf(type);
+com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter:readBareItem: LineNo@131--->Class type = HierarchicalStreams.readClassType(reader, mapper());
+com.thoughtworks.xstream.core.TreeUnmarshaller:convertAnother: LineNo@50--->return convertAnother(parent, type, null);
+org.codehaus.jettison.json.JSONObject:<init>: LineNo@168--->if (x.nextClean() != '{') {
+com.thoughtworks.xstream.io.xml.StaxWriter:endNode: LineNo@147--->out.writeEndElement();
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createKey: LineNo@262--->return builder.append( local ).toString();
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createKey: LineNo@257--->String jns = getJSONNamespace( ns );
+com.thoughtworks.xstream.XStream$1:lookupConverterForType: LineNo@517--->return defaultConverterLookup.lookupConverterForType(type);
+com.thoughtworks.xstream.core.TreeUnmarshaller:convertAnother: LineNo@54--->type = mapper.defaultImplementationOf(type);
+com.thoughtworks.xstream.core.TreeUnmarshaller:convertAnother: LineNo@55--->if (converter == null) {
+org.codehaus.jettison.json.JSONArray:<init>: LineNo@88--->}
+org.codehaus.jettison.json.JSONTokener:back: LineNo@59--->}
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeStartDocument: LineNo@205--->current = new JSONPropertyObject(null, new JSONObject());
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeEndElement: LineNo@237--->if (stack.isEmpty()) throw new XMLStreamException('Too many closing tags.');
+com.thoughtworks.xstream.io.xml.StaxWriter:endNode: LineNo@147--->out.writeEndElement();
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createKey: LineNo@256--->StringBuffer builder = new StringBuffer();
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeStartElement: LineNo@211--->String key = convention.createKey(prefix, ns, local);
+com.thoughtworks.xstream.io.path.PathTrackingWriter:startNode: LineNo@44--->super.startNode(name, clazz);
+com.thoughtworks.xstream.XStream$1:lookupConverterForType: LineNo@517--->return defaultConverterLookup.lookupConverterForType(type);
+com.thoughtworks.xstream.io.xml.StaxWriter:getXMLStreamWriter: LineNo@224--->return this.out;
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeStartElement: LineNo@211--->String key = convention.createKey(prefix, ns, local);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeStartElement: LineNo@212--->current = new JSONPropertyString(key);
+com.thoughtworks.xstream.core.TreeUnmarshaller:convertAnother: LineNo@56--->converter = converterLookup.lookupConverterForType(type);
+com.thoughtworks.xstream.io.json.JettisonStaxWriter:startNode: LineNo@89--->if (clazz != null && out instanceof AbstractXMLStreamWriter) {
+org.codehaus.jettison.json.JSONTokener:next: LineNo@102--->return c;
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeEndElement: LineNo@238--->current = stack.pop().withProperty(current);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:withProperty: LineNo@142--->Object value = property.getValue();
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeEndElement: LineNo@237--->if (stack.isEmpty()) throw new XMLStreamException('Too many closing tags.');
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty:withProperty: LineNo@65--->return withProperty(property, true);
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createKey: LineNo@262--->return builder.append( local ).toString();
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createKey: LineNo@257--->String jns = getJSONNamespace( ns );
+com.thoughtworks.xstream.io.WriterWrapper:startNode: LineNo@33--->((ExtendedHierarchicalStreamWriter) wrapped).startNode(name, clazz);
+com.thoughtworks.xstream.io.xml.StaxWriter:getXMLStreamWriter: LineNo@224--->return this.out;
+com.thoughtworks.xstream.io.xml.StaxWriter:startNode: LineNo@191--->out.writeStartElement(prefix, qname.getLocalPart(), uri);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeEndElement: LineNo@238--->current = stack.pop().withProperty(current);
+com.thoughtworks.xstream.core.DefaultConverterLookup:lookupConverterForType: LineNo@65--->Converter cachedConverter = type != null ? (Converter)typeToConverterMap.get(type.getName()) : null;
+com.thoughtworks.xstream.io.json.JettisonStaxWriter:startNode: LineNo@88--->XMLStreamWriter out = getXMLStreamWriter();
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:<init>: LineNo@75--->super(key);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:<init>: LineNo@74--->public JSONPropertyString(String key) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeStartElement: LineNo@212--->current = new JSONPropertyString(key);
+com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller:convert: LineNo@65--->} else if (!isReferenceable) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeStartDocument: LineNo@205--->current = new JSONPropertyObject(null, new JSONObject());
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty:withProperty: LineNo@65--->return withProperty(property, true);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:getValue: LineNo@119--->return object;
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeEndElement: LineNo@238--->current = stack.pop().withProperty(current);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeStartElement: LineNo@211--->String key = convention.createKey(prefix, ns, local);
+com.thoughtworks.xstream.io.json.JettisonStaxWriter:startNode: LineNo@88--->XMLStreamWriter out = getXMLStreamWriter();
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeStartElement: LineNo@212--->current = new JSONPropertyString(key);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty:withProperty: LineNo@65--->return withProperty(property, true);
+com.thoughtworks.xstream.io.xml.StaxWriter:startNode: LineNo@191--->out.writeStartElement(prefix, qname.getLocalPart(), uri);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty:<init>: LineNo@51--->public JSONProperty(String key) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:withProperty: LineNo@142--->Object value = property.getValue();
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:<init>: LineNo@75--->super(key);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:<init>: LineNo@74--->public JSONPropertyString(String key) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@87--->JSONObject jo = new JSONObject();
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeStartElement: LineNo@212--->current = new JSONPropertyString(key);
+org.codehaus.jettison.json.JSONObject:<init>: LineNo@139--->}
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty:<init>: LineNo@51--->public JSONProperty(String key) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:access$100: LineNo@30--->public class MappedXMLStreamWriter extends AbstractXMLStreamWriter {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@90--->if (object.length() > 0) jo.put(valueKey, getValue());
+org.codehaus.jettison.json.JSONObject:put: LineNo@869--->if (key == null) {
+com.thoughtworks.xstream.core.TreeUnmarshaller:start: LineNo@136--->while (validations.hasNext()) {

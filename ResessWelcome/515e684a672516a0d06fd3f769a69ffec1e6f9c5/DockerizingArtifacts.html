@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Literature Review</title>
+
+    <!-- link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+        <style>
+            code {
+              font-family: Consolas,"courier new";
+              color: crimson;
+              padding: 2px;
+              font-size: 105%;
+              margin: 0;
+                padding: 0;
+                
+            }
+            pre{
+                background-color: #EBECE4; 
+                white-space: pre-line;
+            }
+           
+            </style>
+
+
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><span class="mb-0 h1">ReSSeS Lab's Internal Page</span></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarNavDropdown" class="navbar-collapse collapse">
+                <ul class="navbar-nav mr-auto"></ul>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link" href="index.html">Getting Started</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="WritingMistakes.html">Writing Mistakes</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="Latex.html">LaTeX</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="wrapper">
+        <h1 class="header">Creating a Docker Image for Your Tool</h1>
+
+            <h4 id="1-install-docker-on-your-machine">1. Install Docker on your machine</h4>
+            <p><em>For Ubuntu:</em></p>
+            <p>First, update your packages:</p>
+            <pre><code>$ sudo apt update</code></pre>
+            <p>Next, install docker with apt-get:</p>
+            <pre><code>$ sudo apt install docker.io</code></pre>
+            <p>Finally, verify that Docker is installed correctly:</p>
+            <pre><code>$ sudo docker run hello-world</code></pre>
+            <ul>
+            <li><em>For MacOSX:</em> you can follow <a href="https://docs.docker.com/docker-for-mac/install/">this link</a>.</li>
+            <li><em>For Windows:</em> you can follow <a href="https://docs.docker.com/docker-for-windows/install/">this link</a>.</li>
+            </ul>
+
+            <h4 id="2-create-your-project">2. Create your project</h4>
+            <p>Create a folder on your computer (e.g., docker-test). It must contain the following file:</p>
+            <ul>
+            <li>A <em>Dockerfile</em> file (containing the necessary instructions to create the environment).</li>
+            </ul>
+            <p>If you want to add your source code to the docker you can also put all files and data you want to copy to your container. For example, let's say we have a <em>main.py</em> file (python file that will contain the code to be executed).</p>           
+            <pre><code>.  
+            |-- Dockerfile
+            |-- main.py 
+            0 directories, 2 files </code></pre>
+
+            <h4 id="3-edit-the-docker-file">3. Edit the Docker file</h4>
+            <p>The first thing to do when you want to create your Dockerfile is to ask yourself what you want to do. Our goal here is to launch Python code. To do this, our Docker must contain all the dependencies necessary to launch Python. 
+                A linux (Ubuntu) with Python installed on it should be enough.</p>
+            <pre><code class="language-python">
+                # A dockerfile must always start by importing the base image.
+                # We use the keyword &quot;FROM&quot; to do that.
+                FROM ubuntu:18.04
+                
+                # Install &quot;software-properties-common&quot; (for the &quot;add-apt-repository&quot;)
+                RUN apt-get update &amp;&amp; apt-get install -y \
+                software-properties-common
+
+                # Install &quot;python3.8&quot;
+                RUN apt-get install -y python3-pip python3.8-dev  python3.8 &amp;&amp; \
+                python3.8 -m pip install --upgrade pip &amp;&amp; \
+                rm -rf /var/lib/apt/lists/*
+                RUN echo &#39;alias python=python3.8&#39; &gt;&gt; ~/.bashrc
+
+                # we define the review as the root directory of our image
+                WORKDIR /review
+
+            # In order to launch our python code, we must import it into our image.
+            # We use the keyword &#39;COPY&#39; to do that.
+            # The first parameter &#39;main.py&#39; is the name of the file on the host.
+            # The second parameter &#39;/review&#39; is the path where to put the file on the image.
+            # Here we put the file at the image root folder.
+            COPY main.py /review
+
+            # You can also copy all the content of our review folder to our root review directory
+            COPY . /review
+
+            WORKDIR /review
+            </code></pre>
+            <p>The first step to take when you create a Docker file is to access the <a href="https://hub.docker.com/">DockerHub</a> website. This site contains many pre-designed images to save your time (for example: all images for linux or code languages).</p>
+            <h4 id="4-build-the-docker-image-from-a-dockerfile">4. Build the Docker Image from a Dockerfile</h4>
+            <p>Once your code is ready and the Dockerfile is written, all you have to do is create your image to contain your application:</p>
+            <pre><code>$ cd path/to/docker-test; docker build -t python-test:v1 .
+            </code></pre>
+            <p>The <em>-t</em> option allows you to define the name of your image. In our case we have chosen <em>python-test</em> but you can put what you want. You can also give your image a tag <em>v1</em>.</p>
+            <h4 id="5-run-the-docker-image-in-a-container">5. Run the Docker Image in a Container</h4>
+            <p>Once the image is created, you can run it in a container:</p>
+            <pre><code>$ docker run -it python-test:v1
+            </code></pre>
+            <p>You need to put the name of your image after <em>docker run</em>. The <em>-i</em> option allows you to interact with the image (running commands and getting output). You can pass <em>d</em> option to keep the container running in the background. </p>
+            <p>Running the above command brings you to:</p>
+            <pre><code>$ root@45a36de6b636:/review#
+            </code></pre>
+            <p>Where you can run your python script or do what you want. &#39;45a36de6b636&#39; is the container ID that you image is running in. You can attach to a container as many times you want via &#39;exec&#39; command:</p>
+            <pre><code>$ docker exec -it 45a36de6b636 bash
+            </code></pre>
+            <p>You can also give your container a name to attach to it later using its name:</p>
+            <pre><code>$ docker run --name container-test -it python-test:v1
+            </code></pre>
+            <p>In our case we have chosen <em>container-test</em> but you can put what you want:</p>
+            <pre><code>$ docker exec -it container-test bash
+            </code></pre>
+            <p>List all existing containers (running and not running).</p>
+            <pre><code>$ docker ps -a
+            </code></pre>
+            <p>List all existing images.</p>
+            <pre><code>$ docker images
+            </code></pre>
+            <h4 id="6-push-the-docker-image-to-dockerio">6. Push the Docker Image to Docker.io</h4>
+            <p>If you want to make your image available in docker hub, you can create a snapshot of your container as following:</p>
+            <pre><code>$ docker commit container-test testusername/myfirstimage:vfinal
+            </code></pre>
+            <p>Replace <em>testusername</em> with your docker username (you need to sign up in docker.io) and <em>myfirstimage</em> with the actual image name that will be available in docker.io. 
+                As before, you can give it a tag <em>vfinal</em>. The default tag is <em>latest</em>.</p>
+            <p>Then, you need to login to the docker hub using your username and password:</p>
+            <pre><code>$ docker login
+            </code></pre>
+            <p>Now, you are able to push it to Docker.io:</p>
+            <pre><code>$ docker push testusername/myfirstimage:vfinal
+            </code></pre>
+            <h4 id="7-pull-and-run-the-docker-image">7. Pull and Run the Docker Image</h4>
+            <p>To download and open the container, run the following two commands (<strong>Note:</strong> downloading the docker image may take more or less time depending on the Internet speed)</p>
+            <pre><code>docker pull testusername/myfirstimage:vfinal
+            docker run -it testusername/myfirstimage:vfinal
+            </code></pre>
+
+		<p>
+
+		Have fun!
+		<p>
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">ReSeSS Lab - 4095, Fred Kaiser Building, UBC</span>
+        </div>
+    </footer>
+
+    <!-- script.js is the js for collapsible items -->
+    <script src="js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

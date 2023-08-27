@@ -1,0 +1,31 @@
+Line 57 com.squareup.moshi.MoshiTest:failOnUnknownThrowsOnUnknownFields ---> assertThat(expected).hasMessage('Cannot skip unexpected NAME at $.diameter');
+Line 589 com.squareup.moshi.JsonUtf8Reader:skipName ---> throw new JsonDataException('Cannot skip unexpected ' + peek() + ' at ' + getPath());
+Func1(message, this);
+Line 589 com.squareup.moshi.JsonUtf8Reader:skipName ---> throw new JsonDataException('Cannot skip unexpected ' + peek() + ' at ' + getPath());
+com.squareup.moshi.JsonReader#getPath()Ljava/lang/String;=Func2(this.stackSize);
+Line 589 com.squareup.moshi.JsonUtf8Reader:skipName ---> throw new JsonDataException('Cannot skip unexpected ' + peek() + ' at ' + getPath());
+com.squareup.moshi.JsonUtf8Reader#peek()Lcom/squareup/moshi/JsonReader$Token;=Func11(com.squareup.moshi.JsonReader$Token.NAME);
+Line 589 com.squareup.moshi.JsonUtf8Reader:skipName ---> throw new JsonDataException('Cannot skip unexpected ' + peek() + ' at ' + getPath());
+Func40();
+stackSize=Func98();
+Line 137 com.squareup.moshi.JsonAdapter$2:fromJson ---> return delegate.fromJson(reader);
+Line 134 com.squareup.moshi.JsonAdapter$2:fromJson ---> if (reader.peek() == JsonReader.Token.NULL) {
+com.squareup.moshi.JsonUtf8Reader#peek()Lcom/squareup/moshi/JsonReader$Token;=Func103();
+NULL=Func104();
+NAME=Func107();
+com.squareup.moshi.JsonUtf8Reader#doPeek()I=Func114();
+$stack19=Func115(p);
+p=Func117();
+Line 134 com.squareup.moshi.JsonAdapter$2:fromJson ---> if (reader.peek() == JsonReader.Token.NULL) {
+fieldsArray=Func124();
+classFactory=Func125();
+adapter=Func143();
+Line 63 com.squareup.moshi.ClassJsonAdapter$1:create ---> if (!annotations.isEmpty()) return null;
+Line 58 com.squareup.moshi.ClassJsonAdapter$1:create ---> if (Util.isPlatformType(rawType) && !Types.isAllowedPlatformType(rawType)) {
+com.squareup.moshi.internal.Util#isPlatformType(Ljava/lang/Class;)Z=Func173();
+Line 58 com.squareup.moshi.ClassJsonAdapter$1:create ---> if (Util.isPlatformType(rawType) && !Types.isAllowedPlatformType(rawType)) {
+com.squareup.moshi.Types#getRawType(Ljava/lang/reflect/Type;)Ljava/lang/Class;=Func175(type);
+$stack30=Func179(i#10, type#2);
+i=Func180(i#10);
+result=Func181(type#2);
+Line 119 com.squareup.moshi.internal.Util:canonicalize ---> return c.isArray() ? new GenericArrayTypeImpl(canonicalize(c.getComponentType())) : c;

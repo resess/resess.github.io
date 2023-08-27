@@ -1,0 +1,114 @@
+com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller#convert(Ljava/lang/Object;Ljava/lang/Class;Lcom/thoughtworks/xstream/converters/Converter;)Ljava/lang/Object;=Func_6();
+412044995[0]=Func_8();
+com.thoughtworks.xstream.mapper.MapperWrapper#isReferenceable(Ljava/lang/Class;)Z=Func_255(null);
+com.thoughtworks.xstream.mapper.ImmutableTypesMapper#isReferenceable(Ljava/lang/Class;)Z=Func_256();
+converter=Func_260(null);
+cachedConverter=Func_264(null);
+type=Func_268(null);
+com.thoughtworks.xstream.mapper.DefaultImplementationsMapper#defaultImplementationOf(Ljava/lang/Class;)Ljava/lang/Class;=Func_273(null);
+type=Func_284(null);
+com.thoughtworks.xstream.mapper.CachingMapper#realClass(Ljava/lang/String;)Ljava/lang/Class;=Func_287(null);
+contextClassLoader=Func_322();
+name=Func_363(null);
+cached=Func_397(null);
+com.thoughtworks.xstream.io.ReaderWrapper#getNodeName()Ljava/lang/String;=Func_399(null);
+com.thoughtworks.xstream.core.util.FastStack#size()I=Func_420(null);
+next=Func_439();
+event=Func_447();
+currentValue=Func_448(null);
+name=Func_454(null);
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createQName: LineNo@203--->int dot = name.lastIndexOf( '.' );
+newObj=Func_471(null);
+nextKey=Func_479(null);
+org.codehaus.jettison.Node#getKeys()Ljava/util/Iterator;=Func_480(null);
+com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter:createCollection: LineNo@154--->Class defaultType = mapper().defaultImplementationOf(type);
+converter=Func_485();
+com.thoughtworks.xstream.core.TreeUnmarshaller:start: LineNo@133--->Class type = HierarchicalStreams.readClassType(reader, mapper);
+keys=Func_486(null);
+object=Func_489(null);
+org.codehaus.jettison.mapped.MappedXMLStreamReader:<init>: LineNo@51--->this.node = new Node(null, rootName, ((JSONArray)top).getJSONObject(0), convention);
+org.codehaus.jettison.json.JSONArray#getJSONObject(I)Lorg/codehaus/jettison/json/JSONObject;=Func_490(null);
+org.codehaus.jettison.mapped.MappedXMLStreamReader:<init>: LineNo@51--->this.node = new Node(null, rootName, ((JSONArray)top).getJSONObject(0), convention);
+org.codehaus.jettison.json.JSONArray#length()I=Func_502(null);
+org.codehaus.jettison.json.JSONArray#length()I=Func_503(null);
+top=Func_504(null);
+rootName=Func_505(null);
+org.codehaus.jettison.mapped.MappedXMLInputFactory:createXMLStreamReader: LineNo@43--->JSONObject root = new JSONObject(tokener);
+myHashMap=Func_509();
+org.codehaus.jettison.json.JSONTokener:nextValue: LineNo@310--->return new JSONObject(this);
+org.codehaus.jettison.json.JSONArray:<init>: LineNo@100--->if (x.nextClean() == ']') {
+org.codehaus.jettison.json.JSONTokener#nextClean()C=Func_546(null);
+myIndex=Func_552(null);
+org.codehaus.jettison.json.JSONArray:<init>: LineNo@100--->if (x.nextClean() == ']') {
+myIndex=Func_565(null);
+myArrayList=Func_573();
+org.codehaus.jettison.json.JSONTokener:nextValue: LineNo@313--->return new JSONArray(this);
+myIndex=Func_575(null);
+org.codehaus.jettison.json.JSONObject:<init>: LineNo@195--->put(key, x.nextValue());
+myIndex=Func_602(null);
+key=Func_609(null);
+org.codehaus.jettison.json.JSONTokener:nextString: LineNo@203--->StringBuffer sb = new StringBuffer();
+quote=Func_662(null);
+myIndex=Func_671(null);
+myHashMap=Func_713();
+org.codehaus.jettison.json.JSONTokener:<init>: LineNo@46--->this.mySource = s;
+org.codehaus.jettison.AbstractXMLInputFactory#readAll(Ljava/io/Reader;)Ljava/lang/String;=Func_716(null);
+org.codehaus.jettison.AbstractXMLInputFactory:readAll: LineNo@161--->char[] buf = new char[INPUT_BUF_SIZE];
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:withProperty: LineNo@163--->} else if(getSerializedAsArrays().contains(property.getKey())) {
+org.codehaus.jettison.AbstractXMLStreamWriter#getSerializedAsArrays()Ljava/util/ArrayList;=Func_725(null);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:withProperty: LineNo@163--->} else if(getSerializedAsArrays().contains(property.getKey())) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty#getKey()Ljava/lang/String;=Func_726(null);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:withProperty: LineNo@143--->if(add && value instanceof String) {
+value=Func_728(null);
+current=Func_735(null);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@105--->return new JSONPropertyObject(getKey(), jo);
+object=Func_737(null);
+key=Func_738(null);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty:<init>: LineNo@51--->public JSONProperty(String key) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:<init>: LineNo@115--->super(key);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:<init>: LineNo@114--->public JSONPropertyObject(String key, JSONObject object) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@105--->return new JSONPropertyObject(getKey(), jo);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty#getKey()Ljava/lang/String;=Func_739(null);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@105--->return new JSONPropertyObject(getKey(), jo);
+org.codehaus.jettison.json.JSONObject#put(Ljava/lang/String;Ljava/lang/Object;)Lorg/codehaus/jettison/json/JSONObject;=Func_742(null);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@95--->if(getSerializedAsArrays().contains(property.getKey())) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty#getKey()Ljava/lang/String;=Func_748(null);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@95--->if(getSerializedAsArrays().contains(property.getKey())) {
+org.codehaus.jettison.AbstractXMLStreamWriter#getSerializedAsArrays()Ljava/util/ArrayList;=Func_749(null);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@95--->if(getSerializedAsArrays().contains(property.getKey())) {
+value=Func_750(null);
+org.codehaus.jettison.mapped.DefaultConverter:convertToJSONPrimitive: LineNo@35--->primitive = ENFORCE_32BIT_INTEGER ? Integer.valueOf(text) : Long.valueOf(text);
+primitive=Func_761();
+org.codehaus.jettison.mapped.MappedXMLStreamWriter#access$100(Lorg/codehaus/jettison/mapped/MappedXMLStreamWriter;)Lorg/codehaus/jettison/mapped/MappedNamespaceConvention;=Func_765(null);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@92--->if(add && value instanceof String) {
+value=Func_767(null);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@90--->if (object.length() > 0) jo.put(valueKey, getValue());
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:withProperty: LineNo@87--->JSONObject jo = new JSONObject();
+add=Func_770(null);
+cachedConverter=Func_774(null);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeStartElement: LineNo@212--->current = new JSONPropertyString(key);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty:<init>: LineNo@51--->public JSONProperty(String key) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:<init>: LineNo@74--->public JSONPropertyString(String key) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeStartElement: LineNo@212--->current = new JSONPropertyString(key);
+key=Func_776(null);
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createKey: LineNo@257--->String jns = getJSONNamespace( ns );
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createKey: LineNo@256--->StringBuffer builder = new StringBuffer();
+class$java$util$Map=Func_780(null);
+out=Func_783(null);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeStartElement: LineNo@212--->current = new JSONPropertyString(key);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty:<init>: LineNo@51--->public JSONProperty(String key) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyString:<init>: LineNo@74--->public JSONPropertyString(String key) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeStartElement: LineNo@212--->current = new JSONPropertyString(key);
+key=Func_787(null);
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createKey: LineNo@257--->String jns = getJSONNamespace( ns );
+org.codehaus.jettison.mapped.MappedNamespaceConvention:createKey: LineNo@256--->StringBuffer builder = new StringBuffer();
+org.codehaus.jettison.AbstractXMLStreamWriter#getSerializedAsArrays()Ljava/util/ArrayList;=Func_791(null);
+out=Func_794(null);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter:writeStartDocument: LineNo@205--->current = new JSONPropertyObject(null, new JSONObject());
+object=Func_796();
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONProperty:<init>: LineNo@51--->public JSONProperty(String key) {
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:<init>: LineNo@115--->super(key);
+org.codehaus.jettison.mapped.MappedXMLStreamWriter$JSONPropertyObject:<init>: LineNo@114--->public JSONPropertyObject(String key, JSONObject object) {
+org.codehaus.jettison.AbstractXMLStreamWriter:<init>: LineNo@25--->ArrayList serializedAsArrays = new ArrayList();
+com.thoughtworks.xstream.XStream:setupDefaultSecurity: LineNo@793--->classes[i] = (Class)iter.next();
+org.codehaus.jettison.mapped.MappedNamespaceConvention:<init>: LineNo@37--->private Map jnsToXns = new HashMap();

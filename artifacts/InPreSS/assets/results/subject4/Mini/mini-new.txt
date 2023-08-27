@@ -1,0 +1,24 @@
+Line 69 com.fasterxml.jackson.core.json.TestMaxErrorSize:_testShortErrorMessage ---> assertTrue(msg.contains(expectedSuffix));
+Line 111 com.fasterxml.jackson.core.JsonParseException:getMessage ---> return super.getMessage();
+Line 66 com.fasterxml.jackson.core.json.TestMaxErrorSize:_testShortErrorMessage ---> String msg = jpe.getMessage();
+Line 29 com.fasterxml.jackson.core.exc.StreamReadException:<init> ---> _processor = p;
+_location=Func1142(loc);
+c=Func1143(this, msg);
+$stack12=Func1144(this, msg, loc);
+Line 28 com.fasterxml.jackson.core.exc.StreamReadException:<init> ---> super(msg, (p == null) ? null : p.getCurrentLocation());
+com.fasterxml.jackson.core.json.UTF8StreamJsonParser#getCurrentLocation()Lcom/fasterxml/jackson/core/JsonLocation;=Func1145(this._inputPtr, this._currInputRowStart, this._currInputProcessed, this);
+Line 28 com.fasterxml.jackson.core.exc.StreamReadException:<init> ---> super(msg, (p == null) ? null : p.getCurrentLocation());
+Line 38 com.fasterxml.jackson.core.JsonParseException:<init> ---> super(p, msg);
+Func1163(this, msg);
+987666875[1]=Func1164(this, matchedPart, firstByte, arg2);
+_inputPtr=Func1175();
+Line 2651 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_handleUnexpectedValue ---> _reportInvalidToken(''+((char) c), _validJsonTokenList());
+Line 1058 com.fasterxml.jackson.core.base.ParserBase:_validJsonTokenList ---> return _validJsonValueList();
+Line 1073 com.fasterxml.jackson.core.base.ParserBase:_validJsonValueList ---> return '(JSON String, Number, Array, Object or token 'null', 'true' or 'false')';
+Line 1070 com.fasterxml.jackson.core.base.ParserBase:_validJsonValueList ---> if (isEnabled(Feature.ALLOW_NON_NUMERIC_NUMBERS)) {
+Line 1058 com.fasterxml.jackson.core.base.ParserBase:_validJsonTokenList ---> return _validJsonValueList();
+Line 2651 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:_handleUnexpectedValue ---> _reportInvalidToken(''+((char) c), _validJsonTokenList());
+Line 167 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:<init> ---> _currInputProcessed = -start + bytesPreProcessed;
+Line 165 com.fasterxml.jackson.core.json.UTF8StreamJsonParser:<init> ---> _currInputRowStart = start - bytesPreProcessed;
+Line 248 com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper:constructParser ---> int bytesProcessed = _inputPtr - prevInputPtr;
+Line 246 com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper:constructParser ---> int prevInputPtr = _inputPtr;
