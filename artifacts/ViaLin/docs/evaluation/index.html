@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <title>Home - ViaLin</title>
+        <style>
+            .img-container {
+              text-align: center;
+            }
+        </style>
+        <meta name="Description" content="ViaLin: Path-Aware Dynamic Taint Analysis for Android.">
+        <!-- <link rel="shortcut icon" href="../../img/mandoline_Logo.png" type="image/x-icon"> -->
+        <link rel="stylesheet" href="../../assets/css/just-the-docs.css">
+        <script type="text/javascript" src="../../assets/js/vendor/lunr.min.js"></script> <script type="text/javascript" src="../../assets/js/just-the-docs.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home | ViaLin</title>
+        <meta name="generator" content="Jekyll v3.8.6" />
+        <meta property="og:title" content="Home" />
+        <meta property="og:locale" content="en_US" />
+        <meta name="description" content="ViaLin: Path-Aware Dynamic Taint Analysis for Android." />
+        <meta property="og:description" content="ViaLin: Path-Aware Dynamic Taint Analysis for Android." />
+        <link rel="canonical" href="../../index.html" />
+        <meta property="og:url" content="../../index.html" />
+        <meta property="og:site_name" content="ViaLin" />
+        <script type="application/ld+json"> {"url":"../../index.html","description":"ViaLin: Path-Aware Dynamic Taint Analysis for Android.","name":"ViaLin","headline":"Home","@type":"WebSite","@context":"https://schema.org"}</script>
+    <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="link" viewBox="0 0 16 16">
+                <title>Link</title>
+                <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+            </symbol>
+        </svg>
+        <div class="page-wrap">
+        <div class="side-bar">
+         <div class="site-header">
+            <div id="texts" style="display:inline;">
+                <a href="../../index.html" class="site-title lh-tight"> <span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;">ViaLin</span> </a> <button class="menu-button fs-3 js-main-nav-trigger" data-text-toggle="Hide" type="button">Menu</button>
+            </div>
+            <!-- <div id="image" style="display:inline;">
+                <img src="../../img/mandoline_Logo_noname.png" alt = "logo" width="50" height="50" />
+            </div> -->
+        </div>
+            <div class="navigation main-nav js-main-nav">
+                <nav role="navigation" aria-label="Main navigation">
+                    <ul class="navigation-list">
+                        <li class="navigation-list-item"><a href="../../index.html" class="navigation-list-link">Home</a>
+                        <li class="navigation-list-item"><a href="../../docs/artifact/index.html" class="navigation-list-link">Artifact</a>
+                        <li class="navigation-list-item active"><a href="../../docs/evaluation/index.html" class="navigation-list-link active">Evaluation Package</a>
+                        <li class="navigation-list-item"><a href="../../docs/results/index.html" class="navigation-list-link">Results</a>
+                        <li class="navigation-list-item"><a href="../../docs/rules/index.html" class="navigation-list-link">Rules</a>
+                    </ul>
+                    </ul>
+                </nav>
+            </div>
+            <footer class="site-footer">
+                <p class="text-small text-grey-dk-000 mb-0">Online Appendix</p>
+            </footer>
+        </div>
+        <div class="main-content-wrap js-main-content" tabindex="0">
+        <div class="main-content">
+        <div class="page">
+        <div id="main-content" class="page-content" role="main">
+
+<h1 id="evaluation-package">Evaluation Package</h1>
+
+<p>This page describes both the <a href="#droidiccbench">DroidICCBench</a> and the <a href="#GPBench">GPBench</a> benchmarks along with the configuration used to run the benchmarks.
+The evaluation package scripts and configuration files can be downloaded <a href="../../data/evaluation_package.zip">here</a></p>
+<p>This package is organized in the following structure:</p>
+<pre><code>.
+├── android-record-replay/
+├── DroidICCBench/
+│   ├── scripts/
+│   │   ├── run_droidbench<span class="hljs-selector-class">.py</span>
+│   │   └── translate_droidbench<span class="hljs-selector-class">.py</span>
+│   └── config/
+│       ├── app1<span class="hljs-selector-class">.src</span><span class="hljs-selector-class">.log</span>
+│       ├── app1<span class="hljs-selector-class">.sink</span><span class="hljs-selector-class">.log</span>
+│       └── ...
+└── GPBench/
+    ├── scripts/
+    │   ├── run_gp<span class="hljs-selector-class">.py</span>
+    │   ├── run_overhead<span class="hljs-selector-class">.py</span>
+    │   └── translate_gp<span class="hljs-selector-class">.py</span>
+    └── config/
+        ├── app1<span class="hljs-selector-class">.src</span><span class="hljs-selector-class">.log</span>
+        ├── app1<span class="hljs-selector-class">.sink</span><span class="hljs-selector-class">.log</span>
+        └── ...
+</code></pre><p>The apps can be downloaded <a href="https://www.mediafire.com/file/7sz884kfqw2w85q/apps.zip/file">here</a></p>
+<p>The apps package is organized in the following structure:</p>
+<pre><code>.
+├── DroidICCBench/
+│   └── apps/
+│       ├── Category1/
+│       │   ├── app1
+│       │   ├── app2
+│       │   └── ...
+│       ├── Category2/
+│       └── ...
+└── GPBench/
+    └── apps/
+        ├── app1
+        ├── app2
+        └── ...
+</code></pre><p>The evaluation package contains the <code>android-touch-record-replay</code> tool which we used to record and replay the execution for each app.</p>
+<p>Next, we describe the DroidICCBench and GPBench sections of the evaluation package.</p>
+<hr>
+<h2 id="droidiccbench">DroidICCBench</h2>
+<h3 id="apps">Apps</h3>
+<p>The benchmark consists of 217 apps from <a href="https://github.com/secure-software-engineering/DroidBench/tree/develop">DroidBench</a> and <a href="https://github.com/fgwei/ICC-Bench">ICCbench</a>. We had to exclude eight
+apps for which we cannot reliably trigger the flow in an automated
+way, e.g., because it is triggered when the phone memory is low.
+The 8 eight excluded apps are:</p>
+<ol>
+<li>Callbacks.AnonymousClass1</li>
+<li>Callbacks.LocationLeak1</li>
+<li>Callbacks.LocationLeak2</li>
+<li>Callbacks.LocationLeak3</li>
+<li>Callbacks.RegisterGlobal1</li>
+<li>Callbacks.RegisterGlobal2</li>
+<li>GeneralJava.FactoryMethods1</li>
+<li>Lifecycle.ActivityLifecycle3</li>
+</ol>
+<p>For the remaining 209 apps, as the benchmark apps were developed for an older Android API (level 19), where permissions to run any sensitive, we modified the apps to request permissions using the approach if the newer Android versions. At the end, we used 209 apps in our evaluation. The apps are grouped into categories under the <code>DroidICCBench/apps</code> folder.</p>
+<h3 id="configuration">Configuration</h3>
+<p>The combined sources list is under <code>DroidICCBench/config/source_full_list.txt</code>, the combined sinks list is under <code>DroidICCBench/config/sinks_full_list.txt</code>.
+The replay script for each app is at <code>DroidICCBench/config/[app].replay.txt</code>, apps without an execution script use the default script <code>DroidICCBench/config/trigger_flow.replay.txt</code>.</p>
+<h3 id="replication">Replication</h3>
+<p>The script <code>DroidICCBench/scripts/run_droidbench.py</code> runs the specified benchmark app by selecting its number, the number of each benchmark is its line number in the <code>DroidICCBench/config/droidbench_apks.log</code>. The script <code>DroidICCBench/scripts/translate_droidbench.py</code> extracts the paths from the Android logcat and translates it into a human readable format.</p>
+<hr>
+<h2 id="gpbench">GPBench</h2>
+<h3 id="apps">Apps</h3>
+<p>We used the benchmark of Google Play applications from Zhang et al [37]. We excluded from our study three out of the 19 apps, as their backend servers were non-functional at the time of writing and we thus could not execute them dynamically. The remaining 16 apps are listed below:</p>
+<p><img src="https://anonforreview.github.io//SupplementaryMaterials/img/subjects.png" alt="drawing" width="400"/></p>
+<h3 id="configuration">Configuration</h3>
+<p>The sources short list for each app <code>GPBench/config/[app-name].src.log</code>, the sinks short list for each app is under <code>GPBench/config/[app-name].sink.log</code>.
+The long list of sources is at <code>GPBench/config/source_long_list.txt</code> and the long list of sinks is <code>GPBench/config/sinks_long_list.log</code>.
+The replay script for each app is at <code>GPBench/config//[app].replay.txt</code>.</p>
+<h3 id="replication">Replication</h3>
+<p>The script <code>GPBench/scripts/run_gp.py</code> runs the specified benchmark app.
+The script <code>GPBench/scripts/run_overhead.py</code> runs the overhead experiment.
+The script <code>GPBench/scripts/translate_gp.py</code> extracts the paths from the Android logcat and translates it into a human readable format.</p>
+<hr>
+<h2 id="fake-whatsapp-client">Fake WhatsApp client</h2>
+<h3 id="app">App</h3>
+<p>We cannot distribute the YoWhatsApp malicious apk online, instead, we provide its following indicators:</p>
+<p>package name: com.gbbwhatsapp</p>
+<p>sha1 hash: a8dbfd8d48e4a4952e1a822ce1323a37348f0c1c</p>
+<p>sha256 hash: 89c23dc02f4f67972a5c4cd9ccc61f7c08c95173d07a980c7340101ba597939e</p>
+<p>md5: 531d0a00d3b7221b4ac712fbfe846029</p>
+<p>blog describing the malware: <a href="https://securelist.com/malicious-whatsapp-mod-distributed-through-legitimate-apps/107690/">link</a></p>
+<h3 id="sources-and-sinks">Sources and Sinks</h3>
+<ul>
+<li>Sources configuration <a href="../../data/YoWhatsApp.src.txt">file</a></li>
+<li>Sink configuration <a href="../../data/YoWhatsApp.sink.txt">file</a></li>
+</ul>
+<h3 id="vialin-path">ViaLin Path</h3>
+<p>The path provided to the analysts is available <a href="../../data/YoWhatsAppPath.log">here</a></p>
+
+
