@@ -398,7 +398,9 @@ form,
 hr,
 noscript,
 table {
-  margin-top: 0; }
+  margin-top: 0; 
+  margin-bottom: 0;
+}
 
 h1,
 h2,
@@ -1246,7 +1248,7 @@ tbody tr:last-of-type th,
 tbody tr:last-of-type td {
   border-bottom: 0; }
 tbody tr:last-of-type td {
-  padding-bottom: 0.75rem; }
+  padding-bottom: 0rem; }
 
 thead th {
   border-bottom: 1px solid #eeebee; }
@@ -5970,4 +5972,91 @@ div.scroll-container {
 
 div.scroll-container img {
   padding: 10px;
+}
+
+table {
+  border-collapse: collapse; /* Collapse table borders */
+  width: auto; /* Make table full width */
+  border: 2px solid #0000003d; /* Set border thickness and color */
+}
+
+th {
+  border-top: 2px solid #0000003d; /* Thicker top border */
+  border-bottom: 2px solid #0000003d; /* Thicker bottom border */
+  border-left: 2px solid #0000003d; /* Thicker left border */
+  border-right: 2px solid #0000003d; /* Thicker right border */
+  background-color: #f2f2f2; /* Background color */
+  padding: 2px; /* Padding in cells */
+  text-align: center; /* Centering text */
+}
+
+td {
+  border: 1px solid #dddddd; /* Set cell borders */
+  text-align: left; /* Align text to the left */
+  padding-top: 2px; 
+  padding-bottom: 2px; 
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* Applying a thicker border */
+.thick-border-bottom {
+  border-bottom: 2px solid #0000001e;
+}
+
+.rounded-rectangle {
+  background-color: #f2f2f200;  /* Light grey background */
+  border: 1px solid #333333;  /* Dark grey border */
+  border-radius: 3px;  /* Rounded corners */
+  line-height: 1; /* Make the box tight */
+  padding-left: 1px;  /*left/right padding */
+  padding-right: 1px;  /*left/right padding */
+  display: inline-block;  /* Allows for proper padding */
+  color: #333333;  /* Dark grey text color */
+}
+
+.rounded-rectangle-lightblue {
+  background-color: #E4F2FF;  /* Light grey background */
+  border: 2px solid #95CCFB;  /* Dark grey border */
+  border-radius: 3px;  /* Rounded corners */
+  line-height: 1.4; /* Make the box tight */
+  padding-left: 5px;  /*left/right padding */
+  padding-right: 5px;  /*left/right padding */
+  display: inline-block;  /* Allows for proper padding */
+  color: #333333;  /* Dark grey text color */
+  font-weight: bold;
+}
+
+.rounded-rectangle-lightyellow {
+  background-color: #FEF491;  /* Light grey background */
+  border: 2px solid #F1A959;  /* Dark grey border */
+  border-radius: 3px;  /* Rounded corners */
+  line-height: 1.4; /* Make the box tight */
+  padding-left: 5px;  /*left/right padding */
+  padding-right: 5px;  /*left/right padding */
+  display: inline-block;  /* Allows for proper padding */
+  color: #333333;  /* Dark grey text color */
+  font-weight: bold;
+}
+
+.rounded-rectangle-lightpink {
+  background-color: #F7C3C1;  /* Light grey background */
+  border: 2px solid #E2968C;  /* Dark grey border */
+  border-radius: 3px;  /* Rounded corners */
+  line-height: 1.4; /* Make the box tight */
+  padding-left: 5px;  /*left/right padding */
+  padding-right: 5px;  /*left/right padding */
+  display: inline-block;  /* Allows for proper padding */
+  color: #333333;  /* Dark grey text color */
+  font-weight: bold;
+}
+
+.side-by-side {
+  display: inline-block;
+  width: 47%; /* or any percentage that fits your layout */
+  margin-right: 4%; /* optional spacing between images */
 }
