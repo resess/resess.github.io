@@ -1,0 +1,353 @@
+\usepackage{booktabs}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{color,xcolor}
+\usepackage{amsmath, amssymb}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{subcaption}
+\usepackage{framed}
+\usepackage[normalem]{ ulem}
+\usepackage{adjustbox}
+\usepackage[sort,nocompress]{cite}
+
+\let\subparagraph\relax
+
+% \texttt hypenation
+\usepackage[htt]{hyphenat}
+
+%\usepackage[compact]{titlesec}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
+\patchcmd{\ttlh@hang}{\noindent}{}{}{}
+\makeatother
+
+
+% define colors
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{fcolor}{rgb}{0.36, 0.54, 0.66}
+
+%\newcommand{\website}{\url{APPENDIX WEBSITE}\xspace}
+
+\newcommand{\del}[1]{\redsout{#1}}
+\newcommand{\add}[1]{\textcolor{red}{#1}}
+
+
+%\newcommand{\saa}{s1\xspace}
+%\newcommand{\sba}{s2\xspace}
+%\newcommand{\sab}{s3\xspace}
+%\newcommand{\sbb}{s4\xspace}
+%\newcommand{\sca}{s5\xspace}
+
+\newcommand{\saa}{s1\xspace}
+\newcommand{\sab}{s2\xspace}
+\newcommand{\sbb}{s3\xspace}
+
+\newcommand\redsout{\bgroup\markoverwith{\textcolor{red}{\rule[0.5ex]{2pt}{0.4pt}}}\ULon}
+
+\newcommand{\pluto}{Pluto TV\xspace}
+\newcommand{\pc}{PC Health\xspace}
+\newcommand{\mcdo}{McDonald's\xspace}
+\newcommand{\smartS}{Samsung Smart Switch\xspace}
+\newcommand{\pint}{Pinterest\xspace}
+\newcommand{\temu}{Temu\xspace}
+\newcommand{\news}{Local News\xspace}
+\newcommand{\wpress}{WordPress\xspace}
+\newcommand{\wiki}{Wikipedia\xspace}
+\newcommand{\knine}{K9-Mail\xspace}
+\newcommand{\myexp}{MyExpenses}
+
+
+\newcommand{\benchnotgp}{\emph{BenchNotGP\xspace}}
+\newcommand{\benchgp}{\emph{BenchGP\xspace}}
+\newcommand{\topgp}{\emph{TopGP\xspace}}
+
+
+%\newcommand{\avgm}{24.2}
+%\newcommand{\avga}{20.3}
+%
+
+\newcommand{\avgm}{28.8}
+\newcommand{\avga}{19.8}
+\newcommand{\avgbnotgpa}{81.5}
+\newcommand{\avgbnotgpm}{88.7}
+\newcommand{\avgbgpa}{64.0}
+\newcommand{\avgbgpm}{75.7}
+\newcommand{\avgbgpt}{65.7}  
+\newcommand{\avgbgpMT}{76.7}
+
+
+
+
+
+\renewcommand{\paragraph}[1]{\vskip 0.05in \noindent {\bf #1.}}
+\newcommand{\rotateright}[1]{\rotatebox[origin=c]{90}{#1}}
+\newcommand{\replace}[2]{\sout{#1}~{\color{red}#2}}
+
+
+
+\usepackage{filecontents,lipsum}  % http://ctan.org/pkg/lipsum
+%\usepackage[noadjust]{cite}
+% \usepackage{supertabular} %%% This does not work either. Stupid package!!!
+\usepackage{longtable}  %%% It is not working in a two-column environment. Don't know what to do. Stupid package!!!
+\usepackage{balance}
+\usepackage{boxedminipage}
+\usepackage[linesnumbered]{algorithm2e}
+%\usepackage{times}
+\usepackage{url}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage{multicol, multirow, makecell}% http://ctan.org/pkg/multirow
+\usepackage{tabularx, tabulary}
+\usepackage{hhline}     % http://ctan.org/pkg/hhline
+%\usepackage{amssymb}
+%\usepackage{amsmath}
+%\usepackage{amsfonts}
+\usepackage{xspace}
+\usepackage{array}
+
+\usepackage{courier}
+\usepackage{ragged2e}   % for '\RaggedRight' macro (allows hyphenation)
+\usepackage{newfloat}
+\DeclareFloatingEnvironment[name={Algorithm}]{algfigure}
+
+
+\newenvironment{MyColorPar}[1]{%
+    \leavevmode\color{#1}\ignorespaces%
+}{%
+}%
+
+
+\newcommand{\summ}[1] {
+\setlength{\fboxsep}{3pt}%
+\setlength{\fboxrule}{0.1pt}%
+\vspace{0.05in}\noindent\fbox{
+\begin{minipage}{0.97\columnwidth}
+%\faLightbulbO~~ % add two spaces after the light blub
+\textit{~#1}
+\end{minipage}
+}\vspace{0.05in}}
+
+
+
+\usepackage{fontawesome}
+
+%\newcommand{\newfindingindicator}{{\tiny \faStarO}}
+%\newcommand{\oldfindingindicator}{{\tiny \faArrowRight}}
+%\newcommand{\tinystar}{{\tiny \faStarO}}
+
+%%%%%%%%%%%% For checkmarks:
+\usepackage{pifont}
+
+
+
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\cmarkwithcross}{\textcolor{red}{\ding{51}}\textsuperscript{\textcolor{red}{\kern-0.5em\tiny\ding{55}}}}
+
+%%%%%%%%%%%% Multiple-line text in a table cell:
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+
+%%%%%%%%%%%% For text in circle\rectange:
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\usetikzlibrary{backgrounds,positioning}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circled,draw,inner sep=0pt, minimum size=2.2em] (char) {#1};}}
+
+\newcommand*\icccircled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=0pt, minimum size=3em] (char) {#1};}}
+
+\newcommand*\smallcircled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=0pt, minimum size=1 em] (char) {#1};}}
+
+\newcommand*\rectangled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=rectangle,draw,inner sep=1pt, minimum width={width("DB11.5")}, minimum height = 0.3cm] (char) {#1};}}
+
+
+%%%%% We define a new command to rotate the box by 90 degrees, non-clock counter wise
+\newcommand{\rotateboxbyninety}{\rotatebox[origin=c]{90}}
+
+\DeclareMathAlphabet\mathbfcal{OMS}{cmsy}{b}{n}
+
+\pagestyle{empty}
+%\pagestyle{plain}
+%\pagenumbering{arabic}
+
+%%%%%%%%%%%% For images
+\usepackage{graphicx}
+% *** SUBFIGURE PACKAGES ***
+%\usepackage[tight,footnotesize]{subfigure}
+%\graphicspath{ {images/} }
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+
+%%%%% We define a new column type to enable automatically wrapping text in a multiple-row cell
+% \newcolumntype{P}[1]{>{\RaggedRight}p{#1}}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
+
+%%%%%%%%%%%%% For code
+\usepackage{listings}
+
+\definecolor{stringcolor}{rgb}{0,0,0}
+\definecolor{keywordcolor}{rgb}{0,0,1}
+\definecolor{identifiercolor}{rgb}{0,0,0}
+\definecolor{commentcolor}{rgb}{0,0.5,0}
+
+\lstdefinelanguage{JavaScript}{
+    keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+    keywordstyle=\color{keywordcolor},
+    ndkeywords={class, export, boolean, throw, implements, import, this},
+    ndkeywordstyle=\color{darkgray}\bfseries,
+    identifierstyle=\color{identifiercolor},
+    sensitive=false,
+    comment=[l]{//},
+    morecomment=[s]{/*}{*/},
+    commentstyle=\color{commentcolor}\ttfamily,
+    stringstyle=\color{stringcolor}\ttfamily,
+    morestring=[b]',
+    morestring=[b]"
+}
+
+\lstset{
+  language=Java,
+  breaklines=true,
+  basicstyle={\linespread{0.9}\footnotesize\ttfamily},
+  captionpos=b,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  numbers=left,
+  numberstyle=\footnotesize\color{gray},
+  keywordstyle=\color{keywordcolor},
+  commentstyle=\color{commentcolor},
+  stringstyle=\color{stringcolor},
+  xleftmargin=8pt,
+  numbersep=4pt,
+  tabsize=1,
+  inputencoding=utf8,
+  extendedchars=true
+}
+
+%%%%%%%%%%%%%% For link
+\usepackage{hyperref}
+
+%%%%%%%%%%%%  For referencing words (useful for table entries)
+\makeatletter
+\newcommand{\refword}[2]{%
+\phantomsection
+#1\def\@currentlabel{\unexpanded{#1}}\label{#2}
+}
+\makeatother
+
+
+%%%%%%%%%%%% For nested itemize bullet characters
+
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemiii}{$\diamond$}
+\renewcommand{\labelitemiv}{$\ast$}
+
+\newcommand{\st}{$\langle$}
+\newcommand{\et}{$\rangle$\xspace}
+
+\newcommand{\mm}{\textsc{MatchMakers}\xspace}
+\newcommand{\hs}{\textsc{HSim}\xspace}
+
+\newcommand{\hos}{\emph{hospital}\xspace}
+\newcommand{\gas}{\emph{gasBoilerSystem}\xspace}
+\newcommand{\random}{\emph{randomTight}\xspace}
+
+\let\oldnl\nl% Store \nl in \oldnl
+\newcommand{\nonl}{\renewcommand{\nl}{\let\nl\oldnl}}% Remove line number for one line
+
+\usepackage{tcolorbox}
+    \newcommand{\summary}[1]{
+    \vspace{0.05in}
+    \begin{tcolorbox}[
+        width=1\columnwidth,
+        colback=black!04,
+        top=0.05in,
+        bottom=0.05in,
+        left=0.05in,
+        right=0.05in
+        ]
+    \small{
+    %\textbf{Summary.}
+    #1}
+    \end{tcolorbox}
+}
+
+
+\newtheorem{defn}{Definition}
+\newtheorem{strt}{Heuristic}
+\newtheorem{cnc}{Conclusion}
+
+\newenvironment{definition}{{\vspace{0.1in}} \defn }{{\vspace{0.1in}}}
+\newenvironment{strategy}{{\vspace{0.00in}} \strt }{{\vspace{0.05in}}}
+\newenvironment{conclusion}{{\vspace{0.00in}} \cnc }{{\vspace{0.05in}}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Adjust floating issue %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Alter some LaTeX defaults for better treatment of figures:
+    % See p.105 of "TeX Unbound" for suggested values.
+    % See pp. 199-200 of Lamport's "LaTeX" book for details.
+    %   General parameters, for ALL pages:
+    \renewcommand{\topfraction}{0.9}	% max fraction of floats at top
+    \renewcommand{\bottomfraction}{0.8}	% max fraction of floats at bottom
+    %   Parameters for TEXT pages (not float pages):
+    \setcounter{topnumber}{2}
+    \setcounter{bottomnumber}{2}
+    \setcounter{totalnumber}{2}     % 2 may work better
+    \setcounter{dbltopnumber}{2}    % for 2-column pages
+    \renewcommand{\dbltopfraction}{0.9}	% fit big float above 2-col. text
+    \renewcommand{\textfraction}{0.07}	% allow minimal text w. figs
+    %   Parameters for FLOAT pages (not text pages):
+    \renewcommand{\floatpagefraction}{0.7}	% require fuller float pages
+	% N.B.: floatpagefraction MUST be less than topfraction !!
+    \renewcommand{\dblfloatpagefraction}{0.7}	% require fuller float pages
+
+	% remember to use [htp] or [htpb] for placement
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\usepackage{stfloats}
+\usepackage{afterpage}
+
+%%% to eliminate widows and orphans
+\clubpenalty = 10000
+\widowpenalty = 10000
+\displaywidowpenalty = 10000
+
+%\usepackage{ulem}
+
+%\settopmatter{printacmref, printccs, printfolios=false}
+
+
+%%% For data bars, e.g., in tables
+\definecolor{barcolor}{RGB}{99,142,198}
+\definecolor{barcolorlight}{RGB}{168,194,220}
+\definecolor{barcolordark}{RGB}{0,0,0}
+\newcommand{\databar}[2]{{\color{barcolor}\rule{#1cm}{6pt}} #2} % as used in old papers, for compatibility
+\newcommand{\databarX}[3]{{\color{#3}\rule{#1cm}{6pt}} #2} % with parameter to change color
+
+\usepackage{colortbl}
+%\definecolor{category1Color}{rgb}{0.80, 0.80, 0.80}
+%\definecolor{category2Color}{rgb}{0.90, 0.90, 0.90}
+
+\definecolor{category1Color}{rgb}{0.90, 0.90, 0.90}
+\definecolor{category2Color}{rgb}{1, 1, 1}
+
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash\hspace{0pt}}p{#1}} 

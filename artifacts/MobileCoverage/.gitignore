@@ -1,0 +1,18 @@
+_site
+.sass-cache
+.jekyll-metadata
+
+#For tex auxiliary/generated files
+*.aux
+*.synctex.gz
+*.log
+*.out
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex(busy)
+tools.pdf
+websiteToolTbl.pdf
+latexmkrc
+standalone.cfg
