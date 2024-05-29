@@ -1,0 +1,37 @@
+\documentclass[preview, convert]{standalone} 
+\input{macro}
+
+\begin{document}
+
+%------- MOVE TO APPENDIX ---
+\begin{table}
+    \setlength{\tabcolsep}{1.5pt}
+    \renewcommand{\arraystretch}{1.1}
+	\centering
+    \caption{Coverage Results for Open-Source Apps (\benchgp)}
+    \label{tbl:cov-results-benchgp}
+	\resizebox{0.8\linewidth}{!}{%
+    \begin{tabular}{|C{0.5cm}|l||c|c|c|c|c|c|c|}
+        \hline
+        \multirow{2}{*}{ID}	                &\multirow{2}{*}{App Name}  &   \multirow{2}{*}{Year}       &  \multirow{2}{*}{Login}            & \multirow{2}{*}{Crash}                  &\multirow{2}{*}{ \#Activities}	& \multicolumn{3}{l|}{\#Reached Activities (\%)}\\ \cline{7-9}
+          ~                                 &                           &                               &                                   &                                         &                                 & Tool          & Manual        & Combined      \\ \hline \hline
+        1                               &	battery                     &	2012                        &                                   &                                         & 1                               & 1 (100.0\%)   & 1 (100.0\%)   & 1 (100.0\%)  \\ \hline 
+        2                               &	lockpatterngenerator        &	2013                        &                                   &                                         & 3                               & 3 (100.0\%)   & 3 (100.0\%)   & 3 (100.0\%)  \\ \hline 
+        3                               &	passwordmaker               &	2014                        &                                   &                                         & 3                               & 3 (100.0\%)   & 3 (100.0\%)   & 3 (100.0\%)  \\ \hline 
+        4                               &	tomdroid                    &	2014                        &                                   &                                         & 8                               & 6 (75.0\%)    & 7 (87.5\%)    & 7 (87.5\%)   \\ \hline 
+        5                               &	frozenbubble                &	2017                        &                                   &                                         & 4                               & 2 (50.0\%)    & 3 (75.0\%)    & 3 (75.0\%)   \\ \hline 
+        6                               &	A2dp                        &	2020                        &                                   &                                         & 9                               & 7 (77.8\%)    & 8 (88.9\%)    & 8 (88.9\%)   \\ \hline 
+        7                               &	BookCatalogue               &	2020                        &                                   &                                         & 35                              & 20 (57.1\%)   & 21 (60.0\%)   & 21 (60.0\%)  \\ \hline 
+        8                               &	anymemo                     &	2021                        &                                   &                                         & 28                              & 16 (57.1\%)   & 16 (57.1\%)   & 16 (57.1\%)  \\ \hline 
+        9                               &	KeePassDroid                &	2022                        &                                   &                                         & 15                              & 4 (26.7\%)    & 9 (60.0\%)    & 9 (60.0\%)   \\ \hline   
+        10                              &	whohasmystuff               &	2022                        & \checkmark                        &                                         & 7                               & 6 (85.7\%)    & 5 (71.4\%)    & 5 (85.7\%)   \\ \hline 
+        11                              &	k9mail                      &	2023                        & \checkmark                        &                                         & 33                              & 10 (30.3\%)   & 21 (63.6\%)   & 21 (63.6\%)  \\ \hline 
+        12                              &	myexpenses                  &	2023                        & \checkmark                        & \checkmark                              & 43                              & 25 (58.1\%)   & 36 (83.7\%)   & 36 (83.7\%)  \\ \hline 
+        13                              &	wikipedia                   &	2023                        & \checkmark                        &                                         & 48                              & 34 (70.8\%)   & 42 (87.5\%)   & 42 (87.5\%)  \\ \hline 
+        14                              &	Wordpress                   &	2023                        & \checkmark                        &                                         & 111                             & 23 (20.7\%)   & 40 (36.0\%)   & 40 (36.0\%)  \\ \hline 
+\hline        
+        \multicolumn{2}{|l}{Average}								    & \multicolumn{3}{c|}{}		                                                                                    & 23.5                        & \avgbgpt\%    & \avgbgpm\%    & \avgbgpMT\% \\ \hline 
+    \end{tabular}
+    }
+\end{table}
+\end{document}

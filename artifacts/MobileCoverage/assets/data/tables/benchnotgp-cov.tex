@@ -1,0 +1,74 @@
+\documentclass[preview, convert]{standalone} 
+\input{macro}
+
+\begin{document}
+
+%------- MOVE TO APPENDIX ---
+
+
+\begin{table}
+    \setlength{\tabcolsep}{1.5pt}
+    \renewcommand{\arraystretch}{1.1}
+	\centering
+    \caption{Coverage Results for Open-Source Apps (\benchnotgp)}
+    \label{tbl:cov-results-benchnotgp}
+	\resizebox{0.8\linewidth}{!}{%
+    \begin{tabular}{|C{0.5cm}|l||c|c|c|c|c|c|c|}
+        \hline
+        \multirow{2}{*}{ID}	            &\multirow{2}{*}{App Name}  &  \multirow{2}{*}{Year}     & \multirow{2}{*}{Login}    & \multirow{2}{*}{Crash}                  &\multirow{2}{*}{ \#Activities} & \multicolumn{3}{l|}{\#Reached Activities (\%)} 	        \\ \cline{7-9}
+                                        &                           &                            &                           &                                         &                               & Tool             & Manual              & Total          \\ 
+        \hline \hline                          
+            1                           & triangle                  & 2007                          &                           &                                         & 1                             & 1 (100.0\%)      & 1 (100.0\%)          & 1 (100.0\%)     \\ \hline
+            2                           & SpriteText                & 2008                          &                           &                                         & 1                             & 1 (100.0\%)      & 1 (100.0\%)          & 1 (100.0\%)     \\ \hline
+            3                           & batterydog                & 2011                          &                           &                                         & 2                             & 2 (100.0\%)      & 2 (100.0\%)          & 2 (100.0\%)     \\ \hline
+            4                           & HNdroid                   & 2011                          &                           & \checkmark                              & 5                             & 1 (20.0\%)       & 1 (20.0\%)           & 1 (20.0\%)     \\ \hline
+            5                           & quicksettings             & 2011                          &                           &                                         & 11                            & 10 (90.9\%)      & 11 (100.0\%)         & 11 (100.0\%)     \\ \hline
+            6                           & zooborns                  & 2011                          &                           &                                         & 2                             & 1 (50.0\%)       & 1 (50.0\%)           & 1 (50.0\%)      \\ \hline
+            7                           & aka                       & 2012                          &                           &                                         & 4                             & 4 (100.0\%)      & 4 (100.0\%)          & 4 (100.0\%)     \\ \hline
+            8                           & alogcat                   & 2012                          &                           &                                         & 2                             & 2 (100.0\%)      & 2 (100.0\%)          & 2 (100.0\%)     \\ \hline
+            9                           & anycut                    & 2012                          &                           &                                         & 4                             & 4 (100.0\%)      & 4 (100.0\%)          & 4 (100.0\%)     \\ \hline
+            10                          & autoanswer                & 2012                          &                           &                                         & 1                             & 1 (100.0\%)      & 1 (100.0\%)          & 1 (100.0\%)     \\ \hline
+            11                          & Bites                     & 2012                          &                           & \checkmark                              & 5                             & 2 (40.0\%)       & 2 (40.0\%)           & 2 (40.0\%)     \\ \hline
+            12                          & bomber                    & 2012                          &                           &                                         & 2                             & 1 (50.0\%)       & 1 (50.0\%)           & 1 (50.0\%)     \\ \hline
+            13                          & dialer2                   & 2012                          &                           &                                         & 5                             & 2 (40.0\%)       & 4 (80.0\%)           & 4 (80.0\%)     \\ \hline
+            14                          & fileexplorer              & 2012                          &                           &                                         & 1                             & 1 (100.0\%)      & 1 (100.0\%)          & 1 (100.0\%)     \\ \hline
+            15                          & gestures                  & 2012                          &                           &                                         & 1                             & 1 (100.0\%)      & 1 (100.0\%)          & 1 (100.0\%)     \\ \hline
+            16                          & jamendo                   & 2012                          &                           &                                         & 14                            & 8 (57.1\%)       & 9 (64.3\%)           & 9 (64.3\%)     \\ \hline
+            17                          & mileage                   & 2012                          &                           &                                         & 50                            & 28 (56.0\%)      & 47 (94.0\%)          & 47 (94.0\%)     \\ \hline
+            18                          & mnv                       & 2012                          &                           &                                         & 8                             & 7 (87.5\%)       & 8 (100.0\%)          & 8 (100.0\%)     \\ \hline
+            19                          & Nectroid                  & 2012                          &                           &                                         & 6                             & 6 (100.0\%)      & 6 (100.0\%)          & 6 (100.0\%)     \\ \hline
+            20                          & Photostream               & 2012                          &                           &                                         & 4                             & 3 (75.0\%)       & 3 (75.0\%)           & 3 (75.0\%)     \\ \hline
+            21                          & sanity                    & 2012                          &                           &                                         & 28                            & 25 (89.3\%)      & 27 (96.4\%)          & 27 (96.4\%)     \\ \hline
+            22                          & soundboard                & 2012                          &                           &                                         & 1                             & 1 (100.0\%)      & 1 (100.0\%)          & 1 (100.0\%)     \\ \hline
+            23                          & SyncMyPix                 & 2012                          &                           &                                         & 7                             & 4 (57.1\%)       & 5 (71.4\%)           & 5 (71.4\%)     \\ \hline
+            24                          & worldclock                & 2012                          &                           &                                         & 2                             & 2 (100.0\%)      & 2 (100.0\%)          & 2 (100.0\%)     \\ \hline
+            25                          & LNM                       & 2013                          &                           &                                         & 4                             & 3 (75.0\%)       & 3 (75.0\%)           & 3 (75.0\%)     \\ \hline
+            26                          & acal                      & 2014                          &                           &                                         & 26                            & 19 (73.1\%)      & 19 (73.1\%)          & 19 (73.1\%)         \\ \hline
+            27                          & DalvikExplorer            & 2014                          &                           &                                         & 16                            & 16 (100.0\%)     & 16 (100.0\%)         & 16 (100.0\%)     \\ \hline
+            28                          & importcontacts            & 2014                          &                           &                                         & 4                             & 4 (100.0\%)      & 4 (100.0\%)          & 4 (100.0\%)     \\ \hline
+            29                          & MunchLife                 & 2014                          &                           &                                         & 2                             & 2 (100.0\%)      & 2 (100.0\%)          & 2 (100.0\%)     \\ \hline
+            30                          & netcounter                & 2014                          &                           &                                         & 3                             & 3 (100.0\%)      & 3 (100.0\%)          & 3 (100.0\%)     \\ \hline
+            31                          & RandomMusicPlayer         & 2014                          &                           &                                         & 1                             & 1 (100.0\%)      & 1 (100.0\%)          & 1 (100.0\%)     \\ \hline
+            32                          & Yahtzee                   & 2014                          &                           &                                         & 2                             & 2 (100.0\%)      & 2 (100.0\%)          & 2 (100.0\%)     \\ \hline
+            33                          & aagtl                     & 2015                          &                           &                                         & 4                             & 1 (25.0\%)       & 2 (50.0\%)           & 2 (50.0\%)             \\ \hline
+            34                          & aarddict                  & 2015                          &                           &                                         & 6                             & 2 (33.3\%)       & 2 (33.3\%)           & 2 (33.3\%)         \\ \hline
+            35                          & aGrep                     & 2015                          &                           &                                         & 6                             & 6 (100.0\%)      & 6 (100.0\%)          & 6 (100.0\%)         \\ \hline
+            36                          & manpages                  & 2015                          &                           &                                         & 2                             & 2 (100.0\%)      & 2 (100.0\%)          & 2 (100.0\%)          \\ \hline
+            37                          & SpriteMethodTest          & 2015                          &                           &                                         & 3                             & 3 (100.0\%)      & 3 (100.0\%)          & 3 (100.0\%)          \\ \hline
+            38                          & weightchart               & 2015                          &                           &                                         & 5                             & 1 (20.0\%)       & 5 (100.0\%)          & 5 (100.0\%)          \\ \hline
+            39                          & Amazed                    & 2016                          &                           &                                         & 1                             & 1 (100.0\%)      & 1 (100.0\%)          & 1 (100.0\%)           \\ \hline        
+            40                          & MultiSmsSender            & 2016                          &                           &                                         & 6                             & 6 (100.0\%)      & 6 (100.0\%)          & 6 (100.0\%)             \\ \hline
+            41                          & DivideAndConquer          & 2017                          &                           &                                         & 3                             & 3 (100.0\%)      & 3 (100.0\%)          & 3 (100.0\%)             \\ \hline
+            42                          & ringdroid                 & 2017                          &                           &                                         & 5                             & 3 (60.0\%)       & 3 (100.0\%)          & 3 (100.0\%)             \\ \hline
+            43                          & swiftp                    & 2017                          &                           &                                         & 2                             & 2 (100.0\%)      & 2 (100.0\%)          & 2 (100.0\%)             \\ \hline
+            44                          & adsdroid                  & 2018                          &                           &                                         & 2                             & 2 (100.0\%)      & 2 (100.0\%)          & 2 (100.0\%)         \\ \hline
+            45                          & alarmclock                & 2021                          &                           &                                         & 2                             & 1 (50.0\%)       & 2 (100.0\%)          & 2 (100.0\%)         \\ \hline
+            46                          & blokish                   & 2021                          &                           &                                         & 3                             & 3 (100.0\%)      & 3 (100.0\%)          & 3 (100.0\%)         \\ \hline
+            47                          & hotdeath                  & 2022                          &                           &                                         & 3                             & 3 (100.0\%)      & 3 (100.0\%)          & 3 (100.0\%)          \\ 
+            \hline \hline
+            \multicolumn{2}{|l}{Average}								    & \multicolumn{3}{c|}{}									                                                      & 6.0                         & \avgbnotgpa\%     & \avgbnotgpm\%   & \avgbnotgpm\% \\ \hline 
+    \end{tabular}
+    }
+\end{table}
+
+\end{document}

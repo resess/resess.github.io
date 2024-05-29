@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <title>Home - It Is All About Data</title>
+        <style>
+            .img-container {
+              text-align: center;
+            }
+        </style>
+        <meta name="Description" content="It Is All About Data: A Survey on the Effects of Data on Adversarial Robustness">
+        <link rel="stylesheet" href="../../assets/css/just-the-docs.css">
+        <script type="text/javascript" src="../../assets/js/vendor/lunr.min.js"></script> 
+        <script type="text/javascript" src="../../assets/js/just-the-docs.js"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home | Data for ML Robustness</title>
+        <meta name="generator" content="Jekyll v3.8.6" />
+        <meta property="og:title" content="Home" />
+        <meta property="og:locale" content="en_US" />
+        <meta name="description" content="It Is All About Data: A Survey on the Effects of Data on Adversarial Robustness" />
+        <meta property="og:description" content="It Is All About Data: A Survey on the Effects of Data on Adversarial Robustness" />
+        <link rel="canonical" href="../../index.html" />
+        <meta property="og:url" content="../../index.html" />
+        <meta property="og:site_name" content="Data for ML Robustness" />
+        <script type="application/ld+json"> {"url":"../../index.html","description":"It Is All About Data: A Survey on the Effects of Data on Adversarial Robustness.","name":"Data for ML Robustness","headline":"Home","@type":"WebSite","@context":"https://schema.org"}</script>
+    <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="link" viewBox="0 0 16 16">
+                <title>Link</title>
+                <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+            </symbol>
+        </svg>
+        <div class="page-wrap">
+        <div class="side-bar">
+         <div class="site-header">
+            <div id="texts" style="display:inline;">
+                <a href="../../index.html" class="site-title lh-tight"> <span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;"></span> </a> <button class="menu-button fs-3 js-main-nav-trigger" data-text-toggle="Hide" type="button">Menu</button>
+            </div>
+            <!-- <div id="image" style="display:inline;">
+                <img src="../../img/mandoline_Logo_noname.png" alt = "logo" width="50" height="50" />
+            </div> -->
+        </div>
+            <div class="navigation main-nav js-main-nav">
+                <nav role="navigation" aria-label="Main navigation">
+                    <ul class="navigation-list">
+                        <li class="navigation-list-item"><a href="../../index.html" class="navigation-list-link">Home</a>
+                        <li class="navigation-list-item"><a href="../../docs/literatureCollection/index.html" class="navigation-list-link">Literature Collection</a>
+                        <li class="navigation-list-item"><a href="../../docs/literatureCategorization/index.html" class="navigation-list-link">Literature Categorization</a>
+                        <li class="navigation-list-item"><a href="../../docs/keyInsights/index.html" class="navigation-list-link">Key Insights</a>
+                        <li class="navigation-list-item"><a href="../../docs/relatedWork/index.html" class="navigation-list-link">More Information</a>
+                        <li class="navigation-list-item active"><a href="../../docs/notationsAndAcronyms/index.html" class="navigation-list-link active">Main Notations & Acronyms</a>
+                    </ul>
+                    </ul>
+                </nav>
+            </div>
+            <footer class="site-footer">
+                <p class="text-small text-grey-dk-000 mb-0">CSUR 2023</p>
+            </footer>
+        </div>
+        <div class="main-content-wrap js-main-content" tabindex="0">
+        <div class="main-content">
+        <div class="page">
+        <div id="main-content" class="page-content" role="main">
+<div class="page">
+    <div id="main-content" class="page-content" role="main">
+        <h1 id="notations_and_acronyms"> <a href="#notations_acronyms""
+                class="anchor-heading"><svg class="d-inline-block v-align-middle" viewBox="0 0 16 16"
+                    version="1.1" width="18" height="18" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                    </path>
+                </svg></a>Main Notations & Acronyms</h1>
+        <hr />
+        <h3 id="notations">Notations</h3>
+        <p>
+            The main notations used in the paper:
+
+            <table>
+                <tr>
+                    <th class="center-text">
+                        <span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;font-size: 18px;font-weight: bold;">
+                        Symbol
+                        </span>
+                    </th>
+                    <th><span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;font-size: 18px;font-weight: bold;">Definition</span></th>
+                </tr>
+                <tr>
+                    <td class="center-text">\(n\)</td>
+                    <td>The number of input samples</td>
+                </tr>
+                <tr>
+                    <td class="center-text">\(d\)</td>
+                    <td>The dimensionality of input data</td>
+                </tr>
+                <tr>
+                    <td class="center-text">\(\mu\)</td>
+                    <td>The mean of a distribution</td>
+                </tr>
+                <tr>
+                    <td class="center-text">\(\sigma^2\)</td>
+                    <td>The variance of a distribution</td>
+                </tr>
+                <tr>
+                    <td class="center-text">\(\mathcal{N}(\mu, \sigma^2)\)</td>
+                    <td>Gaussian / Normal distribution with mean \(\mu\), variance \(\sigma^2\)</td>
+                </tr>
+                <tr>
+                    <td class="center-text">\(L_p\)</td>
+                    <td>\(L_p\) norm used to measure the magnitude of attacks</td>
+                </tr>
+                <tr>
+                    <td class="center-text">\(\epsilon\)</td>
+                    <td>The maximum allowable perturbation in adversarial attacks</td>
+                </tr>
+            </table>
+
+        
+            <!-- The notations used in the paper:
+            <img src="../../img/Notations.png" alt="Notations used in the survey." width="70%" /> -->
+            <hr>
+            <h3 id="notations">Acronyms</h3>
+
+            The main acronyms used in the paper: 
+            <table border="5">
+                <tr>
+                    <th class="center-text"><span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;font-size: 18px;font-weight: bold;">Category</span></th>
+                    <th><span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;font-size: 18px;font-weight: bold;">Acronym</span></th>
+                    <th><span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;font-size: 18px;font-weight: bold;">Definition</span></th>
+                </tr>
+                <tr>
+                    <td rowspan="11">Machine Learning</td>
+                    <td>AI</td>
+                    <td>Artificial Intelligence</td>
+                </tr>
+                <tr>
+                    <td>CNN</td>
+                    <td>Convolutional Neural Network</td>
+                </tr>
+                <tr>
+                    <td>DNN</td>
+                    <td>Deep Neural Network</td>
+                </tr>
+                <tr>
+                    <td>GAN</td>
+                    <td>Generative Adversarial Network</td>
+                </tr>
+                <tr>
+                    <td>GPT</td>
+                    <td>Generative Pre-Trained Transfomer</td>
+                </tr>
+                <tr>
+                    <td>\(k\)-NN</td>
+                    <td>\(k\)-Nearest Neighbor</td>
+                </tr>
+                <tr>
+                    <td>LDA</td>
+                    <td>Linear Discriminant Analysis</td>
+                </tr>
+                <tr>
+                    <td>ML</td>
+                    <td>Machine Learning</td>
+                </tr>
+                <tr>
+                    <td>PCA</td>
+                    <td>Principle Component Analysis</td>
+                </tr>
+                <tr>
+                    <td>ReLU</td>
+                    <td>Rectified Linear activation Unit</td>
+                </tr>
+                <tr class="thick-border-bottom">
+                    <td>SVM</td>
+                    <td>Support Vector Machine</td>
+                </tr>
+                <tr>
+                    <td rowspan="9">Common Attacks</td>
+                    <td>BIM</td>
+                    <td>Basic Iterative Method</td>
+                </tr>
+                <tr>
+                    <td>C&W</td>
+                    <td>Carlini & Wagner Attacks</td>
+                </tr>
+                <tr>
+                    <td>FGSM</td>
+                    <td>Fast Gradient Sign Method</td>
+                </tr>
+                <tr>
+                    <td>FAB</td>
+                    <td>Fast Adaptive Boundary</td>
+                </tr>
+                <tr>
+                    <td>JSMA</td>
+                    <td>Jacobian-based Saliency Map Approach</td>
+                </tr>
+                <tr>
+                    <td>ILCM</td>
+                    <td>Iterative Least-likely Class Method</td>
+                </tr>
+                <tr>
+                    <td>MIM</td>
+                    <td>Momentum Iterative Method</td>
+                </tr>
+                <tr>
+                    <td>PGD</td>
+                    <td>Projected Gradient Descent</td>
+                </tr>
+                <tr class="thick-border-bottom">
+                    <td>UAP</td>
+                    <td>Universal Adversarial Perturbation</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Data Properties</td>
+                    <td>AdvSNR</td>
+                    <td>Adversarial Signal to Noise Ratio</td>
+                </tr>
+                <tr class="thick-border-bottom">
+                    <td>SNR</td>
+                    <td>Signal to Noise Ratio</td>
+                </tr>
+                <tr>
+                    <td rowspan="5">Others</td>
+                    <td>CV</td>
+                    <td>Computer Vision</td>
+                </tr>
+                <tr>
+                    <td>CL</td>
+                    <td>Computer Linguistics</td>
+                </tr>
+                <tr>
+                    <td>IS</td>
+                    <td>Information System</td>
+                </tr>
+                <tr>
+                    <td>JCR</td>
+                    <td>Journal Citation Reports</td>
+                </tr>
+                <tr>
+                    <td>SEC</td>
+                    <td>Security</td>
+                </tr>
+            </table>
+            
+
+            <!-- <img src="../../img/Acronyms.png" alt="Acronyms used in the survey." width="65%"> -->
+        </p>
+
