@@ -1,0 +1,81 @@
+{
+  "tool": {
+    "decomposition": {
+      "partition0": [
+        {
+          "id": "AbstractActionBean"
+        },
+        {
+          "id": "Account"
+        },
+        {
+          "id": "AccountActionBean"
+        },
+        {
+          "id": "AccountMapper"
+        },
+        {
+          "id": "AccountService"
+        },
+        {
+          "id": "Cart"
+        },
+        {
+          "id": "CartActionBean"
+        },
+        {
+          "id": "CartItem"
+        },
+        {
+          "id": "CatalogActionBean"
+        },
+        {
+          "id": "CatalogService"
+        },
+        {
+          "id": "Category"
+        },
+        {
+          "id": "CategoryMapper"
+        },
+        {
+          "id": "Item"
+        },
+        {
+          "id": "ItemMapper"
+        },
+        {
+          "id": "LineItem"
+        },
+        {
+          "id": "LineItemMapper"
+        },
+        {
+          "id": "Order"
+        },
+        {
+          "id": "OrderActionBean"
+        },
+        {
+          "id": "OrderMapper"
+        },
+        {
+          "id": "OrderService"
+        },
+        {
+          "id": "Product"
+        },
+        {
+          "id": "ProductMapper"
+        },
+        {
+          "id": "Sequence"
+        },
+        {
+          "id": "SequenceMapper"
+        }
+      ]
+    }
+  }
+}
+

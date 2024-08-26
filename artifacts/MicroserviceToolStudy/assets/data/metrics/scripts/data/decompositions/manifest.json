@@ -1,0 +1,101 @@
+{
+  "applications": {
+    "demo": {
+      "cargo": { "n_partitions": true, "5_partitions": true },
+      "datacentric": { "n_partitions": true },
+      "hydec": { "n_partitions": true },
+      "mono2micro": {
+        "2_partitions": true,
+        "3_partitions": true,
+        "4_partitions": true,
+        "5_partitions": true,
+        "6_partitions": true,
+        "7_partitions": true,
+        "8_partitions": true,
+        "9_partitions": true
+      },
+      "tomicroservices": {
+        "2_partitions": true,
+        "3_partitions": true,
+        "4_partitions": true,
+        "5_partitions": true,
+        "6_partitions": true,
+        "7_partitions": true,
+        "8_partitions": true,
+        "9_partitions": true,
+        "10_partitions": true
+      },
+      "ground_truth": { "n_partitions": true },
+      "mosaic": { "n_partitions": true }
+    },
+    "jpetstore": {
+      "cargo": {
+        "3_partitions": true,
+        "5_partitions": true,
+        "n_partitions": true
+      },
+      "datacentric": { "n_partitions": true },
+      "hydec": { "n_partitions": true },
+      "log2ms": { "n_partitions": true },
+      "mono2micro": { "3_partitions": true, "5_partitions": true },
+      "tomicroservices": { "3_partitions": true, "5_partitions": true },
+      "ground_truth": { "n_partitions": true },
+      "mosaic": { "n_partitions": true }
+    },
+    "partsunlimited": {
+      "cargo": { "5_partitions": true, "n_partitions": true },
+      "datacentric": { "n_partitions": true },
+      "hydec": { "n_partitions": true },
+      "mono2micro": { "5_partitions": true },
+      "tomicroservices": { "5_partitions": true },
+      "ground_truth": { "n_partitions": true },
+      "mosaic": { "n_partitions": true }
+    },
+    "spring-petclinic": {
+      "cargo": { "3_partitions": true, "n_partitions": true },
+      "datacentric": { "n_partitions": true },
+      "hydec": { "n_partitions": true },
+      "log2ms": { "n_partitions": true },
+      "mono2micro": { "3_partitions": true, "5_partitions": true },
+      "tomicroservices": { "3_partitions": true, "5_partitions": true },
+      "ground_truth": { "n_partitions": true },
+      "mosaic": { "n_partitions": true }
+    }
+  },
+  "tools": {
+    "cargo": {
+      "granularity": "class",
+      "original": "original.json"
+    },
+    "datacentric": {
+      "granularity": "class"
+    },
+    "hydec": {
+      "granularity": "class"
+    },
+    "log2ms": {
+      "granularity": "class"
+    },
+    "mono2micro": {
+      "granularity": "class",
+      "original": "original.json",
+      "decomposition_types": ["business", "natural"]
+    },
+    "tomicroservices": {
+      "granularity": "method",
+      "original": "original.txt",
+      "decomposition_types": [
+        "overhead",
+        "functionality",
+        "coupling",
+        "cohesion"
+      ]
+    },
+    "ground_truth": {
+      "granularity": "class"
+    },
+    "mosaic": {
+      "granularity": "method"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "demo": {
+    "method_name_list": "../../../data/relationships/demo/method-level/methods.txt",
+    "relationships_graphs": {
+      "commits": "../../../data/relationships/demo/method-level/commit_graph.csv",
+      "contributors": "../../../data/relationships/demo/method-level/contributor_graph.csv",
+      "class-names": "../../../data/relationships/demo/method-level/method_name_graph.csv",
+      "static": "../../../data/relationships/demo/method-level/static_dependencies_graph.csv"
+    }
+  },
+  "jpetstore": {
+    "method_name_list": "../../../data/relationships/jpetstore/method-level/methods.txt",
+    "relationships_graphs": {
+      "commits": "../../../data/relationships/jpetstore/method-level/commit_graph.csv",
+      "contributors": "../../../data/relationships/jpetstore/method-level/contributor_graph.csv",
+      "class-names": "../../../data/relationships/jpetstore/method-level/method_name_graph.csv",
+      "static": "../../../data/relationships/jpetstore/method-level/static_dependencies_graph.csv"
+    }
+  },
+  "partsunlimited": {
+    "method_name_list": "../../../data/relationships/partsunlimited/method-level/methods.txt",
+    "relationships_graphs": {
+      "commits": "../../../data/relationships/partsunlimited/method-level/commit_graph.csv",
+      "contributors": "../../../data/relationships/partsunlimited/method-level/contributor_graph.csv",
+      "class-names": "../../../data/relationships/partsunlimited/method-level/method_name_graph.csv",
+      "static": "../../../data/relationships/partsunlimited/method-level/static_dependencies_graph.csv"
+    }
+  },
+  "spring-petclinic": {
+    "method_name_list": "../../../data/relationships/spring-petclinic/method-level/methods.txt",
+    "relationships_graphs": {
+      "commits": "../../../data/relationships/spring-petclinic/method-level/commit_graph.csv",
+      "contributors": "../../../data/relationships/spring-petclinic/method-level/contributor_graph.csv",
+      "class-names": "../../../data/relationships/spring-petclinic/method-level/method_name_graph.csv",
+      "static": "../../../data/relationships/spring-petclinic/method-level/static_dependencies_graph.csv"
+    }
+  },
+  "spring-petclinic": {
+    "method_name_list": "../../../data/relationships/open-mrs/method-level/methods.txt",
+    "relationships_graphs": {
+      "commits": "../../../data/relationships/open-mrs/method-level/commit_graph.csv",
+      "contributors": "../../../data/relationships/open-mrs/method-level/contributor_graph.csv",
+      "class-names": "../../../data/relationships/open-mrs/method-level/method_name_graph.csv",
+      "static": "../../../data/relationships/open-mrs/method-level/static_dependencies_graph.csv"
+    }
+  }
+}
