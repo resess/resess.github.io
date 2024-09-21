@@ -6,6 +6,7 @@ from access.decompositions import DecompositionRepository
 from access.manifest import Manifest
 from utils.utils import Utils
 import csv
+import os
 
 
 class GroundTruthCleaner:
@@ -23,11 +24,11 @@ class GroundTruthCleaner:
 
     def extract_rsfs(self, applications):
         for application in applications:
-            decomp_folder = self.decomposition_repository.get_decomposition_folder(
+            decomp_folder = os.path.abspath(self.decomposition_repository.get_decomposition_folder(
                 "ground_truth", application, "n_partitions", "default"
-            )
+            ))
 
-            output_folder = "../../../code/scripts/metrics/data/applications"
+            output_folder = os.path.abspath("./data/applications")
             original_class_path = f"{decomp_folder}/{application}_classes.csv"
             class_rsf = ""
             csv_reader = csv.reader(open(original_class_path), delimiter=",")
@@ -48,10 +49,10 @@ class GroundTruthCleaner:
             #         class_rsf += f"contain {partition} {class_name}\n"
 
             with open(
-                f"{output_folder}/{application}/ground_truth/ground_truth.rsf", "w"
+                f"{output_folder}/{application}/ground_truth/ground_truth.rsf", "w", newline='\n'
             ) as class_output:
                 class_output.write(class_rsf)
-            with open(f"{decomp_folder}/class_decomposition.rsf", "w") as class_output:
+            with open(f"{decomp_folder}/class_decomposition.rsf", "w", newline='\n') as class_output:
                 class_output.write(class_rsf)
 
             original_method_path = f"{decomp_folder}/{application}_methods.csv"
@@ -78,22 +79,21 @@ class GroundTruthCleaner:
             #         method_rsf += f"contain {partition} {method_name}\n"
 
             with open(
-                f"{output_folder}/{application}/ground_truth/method_ground_truth.rsf",
-                "w",
+                f"{output_folder}/{application}/ground_truth/method_ground_truth.rsf", "w", newline='\n'
             ) as method_output:
                 method_output.write(method_rsf)
             with open(
-                f"{decomp_folder}/method_decomposition.rsf", "w"
+                f"{decomp_folder}/method_decomposition.rsf", "w", newline='\n'
             ) as method_output:
                 method_output.write(method_rsf)
 
     def clean_new(self, applications):
         for application in applications:
-            decomp_folder = self.decomposition_repository.get_decomposition_folder(
+            decomp_folder = os.path.abspath(self.decomposition_repository.get_decomposition_folder(
                 "ground_truth", application, "n_partitions", "default"
-            )
-            original_class_path = f"{decomp_folder}/{application}_classes.csv"
-            original_method_path = f"{decomp_folder}/{application}_methods.csv"
+            ))
+            original_class_path = os.path.abspath(f"{decomp_folder}/{application}_classes.csv")
+            original_method_path = os.path.abspath(f"{decomp_folder}/{application}_methods.csv")
 
             class_decomp = {}
             with open(original_class_path, "r") as original_class_assigments:
@@ -107,12 +107,12 @@ class GroundTruthCleaner:
                         class_decomp[partition] = []
                     class_decomp[partition].append({"id": class_name})
 
-            class_decomp_path = (
+            class_decomp_path = os.path.abspath((
                 self.decomposition_repository.get_class_decomposition_path(
                     "ground_truth", application, "n_partitions", filtered=False
                 )
-            )
-            with open(class_decomp_path, "w") as class_decomposition_file:
+            ))
+            with open(class_decomp_path, "w", newline='\n') as class_decomposition_file:
                 json.dump(
                     {"tool": {"decomposition": class_decomp}}, class_decomposition_file
                 )
@@ -148,12 +148,12 @@ class GroundTruthCleaner:
             #             method_decomp[partition] = []
             #         method_decomp[partition].append({"id": method_name})
 
-            method_decomp_path = (
+            method_decomp_path = os.path.abspath((
                 self.decomposition_repository.get_method_decomposition_path(
                     "ground_truth", application, "n_partitions", filtered=False
                 )
-            )
-            with open(method_decomp_path, "w") as method_decomposition_file:
+            ))
+            with open(method_decomp_path, "w", newline='\n') as method_decomposition_file:
                 json.dump(
                     {"tool": {"decomposition": method_decomp}},
                     method_decomposition_file,
@@ -184,12 +184,12 @@ class GroundTruthCleaner:
                             decomposition[partition] = []
                         decomposition[partition].append({"id": class_name})
 
-                decomposition_path = (
+                decomposition_path = os.path.abspath((
                     self.decomposition_repository.get_class_decomposition_path(
                         "ground_truth", application, partition_count, filtered=False
                     )
-                )
-                with open(decomposition_path, "w") as class_decomposition_file:
+                ))
+                with open(decomposition_path, "w", newline='\n') as class_decomposition_file:
                     json.dump(
                         {"tool": {"decomposition": decomposition}},
                         class_decomposition_file,

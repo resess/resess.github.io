@@ -1,29 +1,33 @@
 {
   "applications": {
     "demo": {
-      "cargo": { "n_partitions": true, "5_partitions": true },
+      "cargo": { 
+        "4_partitions": true,
+        "5_partitions": false,
+        "n_partitions": false
+      },
       "datacentric": { "n_partitions": true },
       "hydec": { "n_partitions": true },
       "mono2micro": {
-        "2_partitions": true,
-        "3_partitions": true,
+        "2_partitions": false,
+        "3_partitions": false,
         "4_partitions": true,
-        "5_partitions": true,
-        "6_partitions": true,
-        "7_partitions": true,
-        "8_partitions": true,
-        "9_partitions": true
+        "5_partitions": false,
+        "6_partitions": false,
+        "7_partitions": false,
+        "8_partitions": false,
+        "9_partitions": false
       },
       "tomicroservices": {
-        "2_partitions": true,
-        "3_partitions": true,
+        "2_partitions": false,
+        "3_partitions": false,
         "4_partitions": true,
-        "5_partitions": true,
-        "6_partitions": true,
-        "7_partitions": true,
-        "8_partitions": true,
-        "9_partitions": true,
-        "10_partitions": true
+        "5_partitions": false,
+        "6_partitions": false,
+        "7_partitions": false,
+        "8_partitions": false,
+        "9_partitions": false,
+        "10_partitions": false
       },
       "ground_truth": { "n_partitions": true },
       "mosaic": { "n_partitions": true }
@@ -31,19 +35,19 @@
     "jpetstore": {
       "cargo": {
         "3_partitions": true,
-        "5_partitions": true,
-        "n_partitions": true
+        "5_partitions": false,
+        "n_partitions": false
       },
       "datacentric": { "n_partitions": true },
       "hydec": { "n_partitions": true },
       "log2ms": { "n_partitions": true },
-      "mono2micro": { "3_partitions": true, "5_partitions": true },
-      "tomicroservices": { "3_partitions": true, "5_partitions": true },
+      "mono2micro": { "3_partitions": true, "5_partitions": false },
+      "tomicroservices": { "3_partitions": true, "5_partitions": false },
       "ground_truth": { "n_partitions": true },
       "mosaic": { "n_partitions": true }
     },
     "partsunlimited": {
-      "cargo": { "5_partitions": true, "n_partitions": true },
+      "cargo": { "5_partitions": true, "n_partitions": false },
       "datacentric": { "n_partitions": true },
       "hydec": { "n_partitions": true },
       "mono2micro": { "5_partitions": true },
@@ -52,19 +56,19 @@
       "mosaic": { "n_partitions": true }
     },
     "spring-petclinic": {
-      "cargo": { "3_partitions": true, "n_partitions": true },
+      "cargo": { "3_partitions": true, "n_partitions": false },
       "datacentric": { "n_partitions": true },
       "hydec": { "n_partitions": true },
       "log2ms": { "n_partitions": true },
-      "mono2micro": { "3_partitions": true, "5_partitions": true },
-      "tomicroservices": { "3_partitions": true, "5_partitions": true },
+      "mono2micro": { "3_partitions": true, "5_partitions": false },
+      "tomicroservices": { "3_partitions": true, "5_partitions": false },
       "ground_truth": { "n_partitions": true },
       "mosaic": { "n_partitions": true }
     }
   },
   "tools": {
     "cargo": {
-      "granularity": "class",
+      "granularity": "method",
       "original": "original.json"
     },
     "datacentric": {

@@ -38,7 +38,7 @@ class Manifest:
     def get_partition_count_options(self, application, tool):
         if tool == "mem":
             return get_subfolder_names(
-                f"../../../code/scripts/metrics/data/decompositions/{application}/mem"
+                f"./data/decompositions/{application}/mem"
             )
         return list(
             filter(

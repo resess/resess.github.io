@@ -70,7 +70,7 @@ for app in ["demo", "petclinic", "jpetstore", "PartsUnlimitedMRP"]:
 
                 with open(
                     f"{data_path}/{data_app_name}/mem/{variant}{variant_suffix}/class_decomposition.json",
-                    "w",
+                    "w", newline='\n'
                 ) as decomp_file:
                     decomp_file.write(
                         json.dumps({"MEM": {"decomposition": decomp}}, indent=4)

@@ -5,6 +5,7 @@ from access.data_repository import DataRepository
 from access.manifest import Manifest
 from utils.utils import Utils
 import numpy as np
+import os
 
 
 class Evaluator:
@@ -56,7 +57,7 @@ class Evaluator:
 
         return (interdependent_pairs / total_pairs) * 100
 
-    def calculte_ratio_icf_ecf(
+    def calculate_commit_mq(
         self, decomposition, partition_assignments, app_name, granularity
     ):
         internal_changes = {}
@@ -66,9 +67,11 @@ class Evaluator:
             internal_changes[partition_name] = 0
             external_changes[partition_name] = 0
 
+        filename = os.path.abspath(f"./data/relationship_graphs/{app_name}/class_level/commits.csv")
         with open(
-            f"./data/relationship_graphs/{app_name}/class_level/evolutionary_commits.csv"
+            filename
         ) as edge_file:
+
             for line in edge_file.readlines():
                 row = line.strip().split(",")
                 source = Utils().shorten_name(row[1], granularity, True)
@@ -96,7 +99,7 @@ class Evaluator:
                 cf += (2 * icf) / ((2 * icf) + ecf)
 
         if len(decomposition) == 0:
-            print(f"WARNING: Decomposition is empty")
+            print(f"WARNING: Decomposition is empty for file {filename} [calculate_commit_mq]")
             return 0
         return (cf / len(decomposition)) * 100
 
@@ -110,8 +113,9 @@ class Evaluator:
             internal_changes[partition_name] = 0
             external_changes[partition_name] = 0
 
+        filename = os.path.abspath(f"./data/relationship_graphs/{app_name}/class_level/contributors.csv")
         with open(
-            f"./data/relationship_graphs/{app_name}/class_level/evolutionary_contributors.csv"
+            filename
         ) as edge_file:
             for line in edge_file.readlines():
                 row = line.strip().split(",")
@@ -140,7 +144,7 @@ class Evaluator:
                 cf += (2 * icf) / ((2 * icf) + ecf)
 
         if len(decomposition) == 0:
-            print(f"WARNING: Decomposition is empty")
+            print(f"WARNING: Decomposition is empty for file {filename}[calculte_contrib_mq]")
             return 0
         return (cf / len(decomposition)) * 100
 
@@ -169,7 +173,7 @@ class Evaluator:
                 cf += (2 * internal_edges) / ((2 * internal_edges) + external_edges)
 
         if len(decomposition) == 0:
-            print(f"WARNING: Decomposition is empty")
+            print(f"WARNING: Decomposition is empty [calculate_normalized_turbomq]")
             return 0
         return (cf / len(decomposition)) * 100
 
@@ -287,7 +291,7 @@ class Evaluator:
             fosci_mq = self.calculate_fosci_mq(
                 edges, decomposition, partition_assignments
             )
-            rei = self.calculte_ratio_icf_ecf(
+            rei = self.calculate_commit_mq(
                 decomposition, partition_assignments, application, granularity
             )
             contrib_mq = self.calculte_contrib_mq(

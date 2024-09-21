@@ -1,13 +1,14 @@
 import json
 import os
+import pandas as pd
 
 class DataRepository:
     def __init__(self, decompositions_path):
-        application_src_base = os.path.abspath("../../../code/scripts/metrics/casestudies")
+        application_src_base = os.path.abspath("./casestudies")
         
-        self.data_base = os.path.abspath("../../../code/scripts/metrics/data")
+        self.data_base = os.path.abspath("./data")
         
-        self.base_file_path = os.path.abspath("../../../code/scripts/metrics/data")
+        self.base_file_path = os.path.abspath("./data")
 
         self.application_src_paths = {
             "demo": f"{application_src_base}/demo/src/main/java",
@@ -21,7 +22,7 @@ class DataRepository:
         self.entropy_output_path = f"{self.data_base}/metrics/entropy.csv"
         self.statistics_output_path = f"{self.data_base}/metrics/statistics.csv"
 
-        self.config_path = "./config.json"
+        # self.config_path = "./config.json"
 
     def get_method_list(self, application):
         with open(
@@ -37,10 +38,10 @@ class DataRepository:
         return f"{self.base_file_path}/relationship_graphs/{application}/method_level/history.log"
 
     def get_commit_graph_path(self, application):
-        return f"{self.base_file_path}/relationship_graphs/{application}/method_level/commit_graph.csv"
+        return f"{self.base_file_path}/relationship_graphs/{application}/class_level/commits.csv"
 
     def get_contributor_graph_path(self, application):
-        return f"{self.base_file_path}/relationship_graphs/{application}/method_level/contributor_graph.csv"
+        return f"{self.base_file_path}/relationship_graphs/{application}/class_level/contributors.csv"
 
     def get_decompositions_manifest(self):
         manifest_file = open(f"{self.decompositions_path}/manifest.json", "r")
@@ -57,76 +58,125 @@ class DataRepository:
         return f"{folder_path}/{granularity.split('_')[0]}_visualization.json"
 
     def write_metrics_to_csv(self, rows):
-        csv_data = (
-            "Application,Tool,Partition Count,Decomposition Type,Commits,Contributors,Class Names,"
-            "Static Structural,Granularity,SMQ,CMQ,CDP,TurboMQ_commits,TurbomMQ_contributors\n"
-        )
+        data = []
         for row in rows:
             if row["tool"] == "mem":
                 partition_count = row["partition"].split("_")[0] + "_partitions"
                 variant = row["partition"][2:].replace("_partitions", "")
-                csv_data += (
-                    f"{row['application']},{row['tool']},{partition_count},{variant},"
-                    f"X,X,X,"
-                    f"{row['structural_static']},{row['granularity']},{row['structural_static-fosci']},X,{row['CDP']},{row['commits']},{row['contributors']}\n"
-                )
+                row_data = {
+                    "Application": row["application"],
+                    "Tool": row["tool"],
+                    "Partition Count": partition_count,
+                    "Decomposition Type": variant,
+                    "Commits": "X",
+                    "Contributors": "X",
+                    "Class Names": "X",
+                    "Static Structural": row["structural_static"],
+                    "Granularity": row["granularity"],
+                    "SMQ": row["structural_static-fosci"],
+                    "CMQ": "X",
+                    "CDP": row["CDP"],
+                    "TurboMQ_commits": row["commits"],
+                    "TurbomMQ_contributors": row["contributors"],
+                }
             else:
-                csv_data += (
-                    f"{row['application']},{row['tool']},{row['partition']},{row['decomposition_type']},"
-                    f"X,X,X,"
-                    f"{row['structural_static']},{row['granularity']},{row['structural_static-fosci']},X,{row['CDP']},{row['commits']},{row['contributors']}\n"
-                )
-
-        out_file = open(self.metrics_output_path, "w")
-        out_file.write(csv_data)
-        out_file.close()
+                row_data ={
+                    "Application": row['application'],
+                    "Tool": row['tool'],
+                    "Partition Count": row['partition'],
+                    "Decomposition Type": row['decomposition_type'],
+                    "Commits": "X",
+                    "Contributors": "X",
+                    "Class Names": "X",
+                    "Static Structural": row['structural_static'],
+                    "Granularity": row['granularity'],
+                    "SMQ": row['structural_static-fosci'],
+                    "CMQ": "X",
+                    "CDP": row['CDP'],
+                    "TurboMQ_commits": row['commits'],
+                    "TurbomMQ_contributors": row['contributors']
+                }  
+            data.append(row_data)
+        df = pd.DataFrame(data)
+        df = df.sort_values(by=['Decomposition Type', 'Tool', 'Application'])
+        df.to_csv(self.metrics_output_path, index=False)
 
     def write_entropy_to_csv(self, rows):
-        csv_data = "Application,Tool,Partition Count,Variant,Granularity,Database Entropy,Use Case Entropy, M2M Use Case Entropy, Sarah BCP\n"
+        data = []
         for row in rows:
             if row["tool"] == "mem":
                 partition_count = row["long_partition"].split("_")[0]
                 variant = row["long_partition"][2:].replace("_partitions", "")
-                csv_data += (
-                    f"{row['application']},{row['tool']},{partition_count},{variant},"
-                    f"{row['granularity']},"
-                    f"{row['database_entropy']},{row['use_case_entropy']},{row['m2m_use_case_entropy']},{row['sarah_bcp']}\n"
-                )
+                row_data ={
+                    "Application": row['application'],  
+                    "Tool": row['tool'],
+                    "Partition Count": partition_count,
+                    "Variant": variant,
+                    "Granularity": row['granularity'],
+                    "Database Entropy": row['database_entropy'],
+                    "Use Case Entropy": row['use_case_entropy'], 
+                    "M2M Use Case Entropy": row['m2m_use_case_entropy'], 
+                    "Sarah BCP": row['sarah_bcp']
+                }
             else:
-                csv_data += (
-                    f"{row['application']},{row['tool']},{row['partition_count']},{row['variant']},"
-                    f"{row['granularity']},"
-                    f"{row['database_entropy']},{row['use_case_entropy']},{row['m2m_use_case_entropy']},{row['sarah_bcp']}\n"
-                )
-
-        out_file = open(self.entropy_output_path, "w")
-        out_file.write(csv_data)
-        out_file.close()
+                row_data ={
+                    "Application": row['application'],  
+                    "Tool": row['tool'],
+                    "Partition Count": row['partition_count'],
+                    "Variant": row['variant'],
+                    "Granularity": row['granularity'],
+                    "Database Entropy": row['database_entropy'],
+                    "Use Case Entropy": row['use_case_entropy'], 
+                    "M2M Use Case Entropy": row['m2m_use_case_entropy'], 
+                    "Sarah BCP": row['sarah_bcp']
+                }
+            data.append(row_data)
+        df = pd.DataFrame(data)
+        df = df.sort_values(by=['Variant', 'Tool', 'Application'])
+        df.to_csv(self.entropy_output_path, index=False)
 
     def write_statistics_to_csv(self, rows):
-        csv_data = "Application,Tool,Partition Count,Variant,Granularity,NED,Completeness,Actual Partition Count,Min,Max,Mean,Stdev,Median\n"
+        data = []
         for row in rows:
             if row["tool"] == "mem":
                 partition_count = row["long_partition"].split("_")[0]
                 variant = row["long_partition"][2:].replace("_partitions", "")
-                csv_data += (
-                    f"{row['application']},{row['tool']},{partition_count},{variant},"
-                    f"{row['granularity']},{row['ned']},"
-                    f"{row['completeness']},{row['actual_partition_count']},"
-                    f"{row['min']},{row['max']},{row['mean']},{row['stdev']},{row['median']}\n"
-                )
+                row_data = {
+                    "Application": row['application'],
+                    "Tool": row['tool'],
+                    "Partition Count": partition_count,
+                    "Variant": variant,
+                    "Granularity": row['granularity'],
+                    "NED": row['ned'],
+                    "Completeness": row['completeness'],
+                    "Actual Partition Count": row['actual_partition_count'],
+                    "Min": row['min'],
+                    "Max": row['max'],
+                    "Mean": row['mean'],
+                    "Stdev": row['stdev'],
+                    "Median": row['median']
+                }
             else:
-                csv_data += (
-                    f"{row['application']},{row['tool']},{row['partition_count']},{row['variant']},"
-                    f"{row['granularity']},{row['ned']},"
-                    f"{row['completeness']},{row['actual_partition_count']},"
-                    f"{row['min']},{row['max']},{row['mean']},{row['stdev']},{row['median']}\n"
-                )
-
-        out_file = open(self.statistics_output_path, "w")
-        out_file.write(csv_data)
-        out_file.close()
-
+                row_data = {
+                    "Application": row['application'],
+                    "Tool": row['tool'],
+                    "Partition Count": row['partition_count'],
+                    "Variant": row['variant'],
+                    "Granularity": row['granularity'],
+                    "NED": row['ned'],
+                    "Completeness": row['completeness'],
+                    "Actual Partition Count": row['actual_partition_count'],
+                    "Min": row['min'],
+                    "Max": row['max'],
+                    "Mean": row['mean'],
+                    "Stdev": row['stdev'],
+                    "Median": row['median']
+                }
+            data.append(row_data)
+        df = pd.DataFrame(data)
+        df = df.sort_values(by=['Variant', 'Tool', 'Application'])
+        df.to_csv(self.statistics_output_path, index=False)
+        
     def get_dependency_path(self, application):
         return f"{self.data_base}/applications/{application}/dependencies.xml"
 

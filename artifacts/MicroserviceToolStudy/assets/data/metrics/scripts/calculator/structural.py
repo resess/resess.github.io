@@ -60,7 +60,7 @@ class StructuralRelationshipExtractor:
                 if method != dependency:
                     csv_output += f"{counter},{method},{dependency},{dependency_counts[dependency]}\n"
 
-        output_file = open(output_path, "w")
+        output_file = open(output_path, "w", newline='\n')
         output_file.write(csv_output)
         output_file.close()
 

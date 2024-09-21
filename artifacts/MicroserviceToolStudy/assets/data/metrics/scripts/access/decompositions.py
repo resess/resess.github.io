@@ -67,10 +67,11 @@ class DecompositionRepository:
 
     def write_decomposition(self, tool, application, partition_count, variant, granularity, decomposition, filtered=True):
         file_path = self.get_decomposition_path(tool, application, partition_count, granularity, variant, filtered)
-        with open(file_path, "w") as filtered_decomposition_file:
+        with open(file_path, "w", newline='\n') as filtered_decomposition_file:
             for partition_name in decomposition.keys():
                 old_partition = decomposition[partition_name]
                 new_partition = list(map(lambda node: {"id": node}, old_partition))
+                new_partition.sort(key=lambda x: x['id'])
                 decomposition[partition_name] = new_partition
 
             filtered_decomposition_file.write(json.dumps({"tool": {"decomposition": decomposition}}, indent=4))

@@ -2,6 +2,7 @@ import json
 import csv
 import os
 import subprocess
+import pandas as pd 
 
 from access.decompositions import DecompositionRepository
 from access.manifest import Manifest
@@ -18,16 +19,24 @@ class MojofmCalculator:
         self.decomposition_repository = decomposition_repository
 
     def write_table(self):
-        csv_data = (
-            "Application,Tool,Partition Count,Decomposition Type,Granularity,Mojo-D,Mojo,C2C 50,C2C 33,C2C 10\n"
-        )
+        data = []
         for row in self.table:
-            csv_data += f"{row['application']},{row['tool']},{row['partition']},{row['granularity']}," \
-                        f"{row['decomposition_type']},X,{row['mojo']},{row['c2c_50']},{row['c2c_33']},{row['c2c_10']}\n"
-
-        out_file = open(self.OUTPUT_PATH, "w")
-        out_file.write(csv_data)
-        out_file.close()
+            row_data = {
+                "Application": row['application'],
+                "Tool": row['tool'],
+                "Partition Count": row['partition'],
+                "Decomposition Type": row['decomposition_type'],
+                "Granularity": row['granularity'],
+                "Mojo-D": "X",
+                "Mojo": row['mojo'],
+                "C2C 50": row['c2c_50'],
+                "C2C 33": row['c2c_33'],
+                "C2C 10": row['c2c_10']
+            }
+            data.append(row_data)
+        df = pd.DataFrame(data)
+        df = df.sort_values(by=['Decomposition Type', 'Tool', 'Application'])
+        df.to_csv(self.OUTPUT_PATH, index=False)
 
     def compute_mojo(self, json_graph, ground_truth_rsf_file, row):
         if ".json" in json_graph:
@@ -97,7 +106,7 @@ class MojofmCalculator:
 
         rsfFilename = json_graph_name.replace(".json", "") + ".rsf"
         # write the cluster relationships into the rsf file
-        with open(rsfFilename, "w") as rsfFile:
+        with open(rsfFilename, "w", newline='\n') as rsfFile:
             rsfFile.write(("\n").join(entityRelations))
 
     def get_class_names_from_rsf(self, rsf_file):
@@ -141,12 +150,12 @@ class MojofmCalculator:
             for n in graph:
                 csv_writer.writerow(n)
 
-    def calculate(self, manifest: Manifest):
+    def calculate(self, applications, manifest: Manifest):
         manifest_file = open(os.path.abspath(f"{self.DECOMPOSITIONS_PATH}/manifest.json"), "r")
         manifest2 = json.load(manifest_file)
         manifest_file.close()
 
-        for application in manifest2["applications"].keys():
+        for application in applications:
             print(f"Calculating MoJoFM for application: {application}")
             for tool in manifest.get_available_tools(application):
                 print(f"-> Calculating MoJoFM for tool: {tool}")
@@ -214,12 +223,9 @@ class MojofmCalculator:
                         if decomposition_type != "default":
                             folder_path += f"/{decomposition_type}"
 
-                        if granularity == "class":
-                            decomposition_path = (
-                                f"{folder_path}/method_decomposition.json"
-                            )
-                        else:
-                            decomposition_path = f"{folder_path}/decomposition.json"
+                        decomposition_path = (
+                            f"{folder_path}/method_decomposition.json"
+                        )
 
                         ground_truth_rsf_file = f"{self.applications_path}/{application}/ground_truth/method_ground_truth.rsf"
 

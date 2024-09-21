@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "metrics"
+version = "0.1.0"
+description = ""
+authors = ["Sarah Bornais"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+scipy = "^1.14.1"
+nltk = "^3.9.1"
+pandas = "^2.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -126,81 +126,48 @@ class VisualizationGenerator:
             print(f"WARNING: Graph is empty for {application} {granularity}")
         return dep_graph
 
-    def copy_visualizations(self):
-        self.copy_visualization("jpetstore", "ground_truth")
-        self.copy_visualization(
-            "jpetstore", "mono2micro", p_count="3", variant="business"
-        )
-        self.copy_visualization("jpetstore", "hydec")
-        self.copy_visualization("jpetstore", "datacentric")
-        self.copy_visualization("jpetstore", "log2ms")
-        self.copy_visualization(
-            "jpetstore",
-            "tomicroservices",
-            granularity="method",
-            p_count="3",
-            variant="functionality",
-        )
-        self.copy_visualization("jpetstore", "cargo", granularity="method", p_count="3")
+    def copy_visualizations(self, applications):
+        if "jpetstore" in applications:
+            self.copy_visualization("jpetstore", "ground_truth")
+            self.copy_visualization("jpetstore", "mono2micro", p_count="3", variant="business")
+            self.copy_visualization("jpetstore", "hydec")
+            self.copy_visualization("jpetstore", "datacentric")
+            self.copy_visualization("jpetstore", "log2ms")
+            self.copy_visualization("jpetstore", "tomicroservices", granularity="method", p_count="3", variant="functionality")
+            self.copy_visualization("jpetstore", "cargo", granularity="method", p_count="3")
 
-        self.copy_visualization("spring-petclinic", "ground_truth")
-        self.copy_visualization(
-            "spring-petclinic", "mono2micro", p_count="3", variant="business"
-        )
-        self.copy_visualization("spring-petclinic", "hydec")
-        self.copy_visualization("spring-petclinic", "datacentric")
-        self.copy_visualization("spring-petclinic", "log2ms")
-        self.copy_visualization(
-            "spring-petclinic",
-            "tomicroservices",
-            granularity="method",
-            p_count="3",
-            variant="functionality",
-        )
-        self.copy_visualization(
-            "spring-petclinic", "cargo", granularity="method", p_count="3"
-        )
+        if "spring-petclinic" in applications:
+            self.copy_visualization("spring-petclinic", "ground_truth")
+            self.copy_visualization("spring-petclinic", "mono2micro", p_count="3", variant="business")
+            self.copy_visualization("spring-petclinic", "hydec")
+            self.copy_visualization("spring-petclinic", "datacentric")
+            self.copy_visualization("spring-petclinic", "log2ms")
+            self.copy_visualization("spring-petclinic", "tomicroservices", granularity="method", p_count="3", variant="functionality")
+            self.copy_visualization("spring-petclinic", "cargo", granularity="method", p_count="3")
 
-        self.copy_visualization("partsunlimited", "ground_truth")
-        self.copy_visualization(
-            "partsunlimited", "mono2micro", p_count="5", variant="business"
-        )
-        self.copy_visualization("partsunlimited", "hydec")
-        self.copy_visualization("partsunlimited", "datacentric")
-        # self.copy_visualization("partsunlimited", "log2ms")
-        self.copy_visualization(
-            "partsunlimited",
-            "tomicroservices",
-            granularity="method",
-            p_count="5",
-            variant="functionality",
-        )
-        self.copy_visualization(
-            "partsunlimited", "cargo", granularity="method", p_count="5"
-        )
+        if "partsunlimited" in applications:
+            self.copy_visualization("partsunlimited", "ground_truth")
+            self.copy_visualization("partsunlimited", "mono2micro", p_count="5", variant="business")
+            self.copy_visualization("partsunlimited", "hydec")
+            self.copy_visualization("partsunlimited", "datacentric")
+            # self.copy_visualization("partsunlimited", "log2ms")
+            self.copy_visualization("partsunlimited", "tomicroservices", granularity="method", p_count="5", variant="functionality")
+            self.copy_visualization("partsunlimited", "cargo", granularity="method", p_count="5")
 
-        self.copy_visualization("demo", "ground_truth")
-        self.copy_visualization("demo", "mono2micro", p_count="4", variant="business")
-        self.copy_visualization("demo", "hydec")
-        self.copy_visualization("demo", "datacentric")
-        # self.copy_visualization("demo", "log2ms")
-        self.copy_visualization(
-            "demo",
-            "tomicroservices",
-            granularity="method",
-            p_count="4",
-            variant="functionality",
-        )
-        self.copy_visualization("demo", "cargo", granularity="method", p_count="5")
+        if "demo" in applications: 
+            self.copy_visualization("demo", "ground_truth")
+            self.copy_visualization("demo", "mono2micro", p_count="4", variant="business")
+            self.copy_visualization("demo", "hydec")
+            self.copy_visualization("demo", "datacentric")
+            # self.copy_visualization("demo", "log2ms")
+            self.copy_visualization("demo", "tomicroservices", granularity="method", p_count="4", variant="functionality",)
+            self.copy_visualization("demo", "cargo", granularity="method", p_count="4")
 
-    def copy_visualization(
-        self, app, tool, granularity="class", p_count="n", variant="default"
-    ):
+    def copy_visualization(self, app, tool, granularity="class", p_count="n", variant="default"):
         p_count = f"{p_count}_partitions"
-        visualization_path = self.data_repository.get_visualization_path(
-            app, tool, p_count, variant, granularity
-        )
-        base_path = "../../../data/decomposition_visualizations"
+        visualization_path = os.path.abspath(self.data_repository.get_visualization_path(app, tool, p_count, variant, granularity))
+        base_path = os.path.abspath("../../../data/decomposition_visualizations")
+        print (f'Copying {visualization_path} to {base_path}')
         if app == "jpetstore":
             app_name = "1_jpetstore"
         elif app == "spring-petclinic":
@@ -222,14 +189,20 @@ class VisualizationGenerator:
             tool_name = "5_log2ms"
         elif tool == "tomicroservices":
             tool_name = "6_tomicroservices"
-        else:
+        elif tool == "cargo":
             tool_name = "7_cargo"
+        elif tool == "mem": 
+            tool_name = "8_mem"
+        elif tool == "mosaic":
+            tool_name = "9_mosaic"
+        else:
+            tool_name = "unknown"
         output_path = (
             f"{base_path}/{app_name}/{tool_name}/{granularity}_visualization.json"
         )
 
         with open(visualization_path, "r") as vis_file:
-            with open(output_path, "w") as out_file:
+            with open(output_path, "w", newline='\n') as out_file:
                 vis = vis_file.read()
                 out_file.write(vis)
 
@@ -388,11 +361,11 @@ class VisualizationGenerator:
                                     granularity.split("_")[0],
                                 )
                             )
-                            with open(visualization_path, "w") as visualization_file:
+                            with open(visualization_path, "w", newline='\n') as visualization_file:
                                 visualization_file.write(
                                     json.dumps(
                                         visualization_json, indent=4, sort_keys=True
                                     )
                                 )
 
-        self.copy_visualizations()
+        self.copy_visualizations(applications)

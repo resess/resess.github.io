@@ -25,7 +25,7 @@ class StatisticCalculator():
         total_node_count = self.utils.get_decomposition_size(decomposition)
 
         if len(decomposition.keys()) <= 2:
-            print("WARNING: Decomposition has 0 or 1 partitions")
+            print(f"WARNING: Decomposition for tool {decomp_id.get_tool()} on application {decomp_id.get_application()} of variant {decomp_id.get_variant()} with granularity {decomp_id.get_granularity()} has 0 or 1 partitions")
             return 0
 
         e = 0.68

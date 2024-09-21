@@ -13,7 +13,7 @@ class EvolutionaryRelationshipExtrator:
         application_src_path = data_repo.get_application_src_path(app)
         out_path = data_repo.get_git_log_path(app)
 
-        output_file = open(out_path, "w")
+        output_file = open(out_path, "w", newline='\n')
         output_file.write("")
         output_file.close()
 
@@ -68,60 +68,76 @@ class EvolutionaryRelationshipExtrator:
             f"Found {len(methods) - len(missing_methods)} out of {len(methods)} methods ({(len(methods) - len(missing_methods))/len(methods)}%)"
         )
 
-    def _parse_logs(self, application, data_repo: DataRepository, app_repo: ApplicationRepository):
-        log_file = open(data_repo.get_git_log_path(application), "r")
-        method_commits = {}
-        commit_authors = {}
-        current_method = ""
+    def _generate_graphs(self, application, data_repo: DataRepository):
+        with open(data_repo.get_git_log_path(application), "r") as history_file:
+            commit_map = {}
+            author_map = {}
+            curr_method = ""
+            for line in history_file.readlines():
+                if line.startswith("method:"):
+                    curr_method = line.split("method: ")[1].split(" | ")[0]
+                else:
+                    assert line.startswith("commit:")
+                    commit_hash = line.split("commit: ")[1].split(" | ")[0]
+                    author = line.split("author: ")[1].strip()
 
-        for line in log_file.readlines():
-            if line.startswith("method"):
-                method_name = line.split("|")[0].replace("method: ", "").strip()
-                method_commits[method_name] = set()
-                current_method = method_name
-            else:
-                commit_hash = line.split("|")[0].replace("commit: ", "").strip()
-                author = line.split("|")[1].replace("author: ", "").strip()
-                method_commits[current_method].add(commit_hash)
-                commit_authors[commit_hash] = author
+                    if commit_hash not in commit_map.keys():
+                        commit_map[commit_hash] = []
+                    commit_map[commit_hash].append(curr_method)
 
-        return (method_commits, commit_authors)
+                    if author not in author_map.keys():
+                        author_map[author] = set()
+                    author_map[author].add(curr_method)
+
+            edges = {}
+
+            for commit in commit_map.keys():
+                methods = commit_map[commit]
+                for method_a in methods:
+                    for method_b in methods:
+                        if method_a == method_b:
+                            continue
+
+                        if method_a <= method_b:
+                            edge_label = f"{method_a},{method_b}"
+                        else:
+                            edge_label = f"{method_b},{method_a}"
+
+                        if edge_label not in edges.keys():
+                            edges[edge_label] = 0
+                        edges[edge_label] += 0.5
+
+            with open(data_repo.get_commit_graph_path(application), "w", newline='\n') as outfile:
+                sorted_keys = sorted(edges.keys())
+                for edge_label in sorted_keys:
+                    edge = edges[edge_label]
+                    outfile.write(f"0,{edge_label},{edge}\n")
+
+            a_edges = {}
+
+            for author in author_map.keys():
+                methods = author_map[author]
+                for method_a in methods:
+                    for method_b in methods:
+                        if method_a == method_b:
+                            continue
+
+                        if method_a <= method_b:
+                            edge_label = f"{method_a},{method_b}"
+                        else:
+                            edge_label = f"{method_b},{method_a}"
+
+                        if edge_label not in a_edges.keys():
+                            a_edges[edge_label] = 0
+                        a_edges[edge_label] += 0.5
+
+            with open(data_repo.get_contributor_graph_path(application), "w", newline='\n') as outfile:
+                sorted_keys = sorted(a_edges.keys())
+                for edge_label in sorted_keys:
+                    edge = a_edges[edge_label]
+                    outfile.write(f"0,{edge_label},{edge}\n")
+
 
     def extract_method_relationships(self, application, data_repo: DataRepository, app_repo: ApplicationRepository):
         self._generate_method_logs(application, data_repo, app_repo)
-        method_commits, commit_authors = self._parse_logs(application, data_repo, app_repo)
-        commit_graph = ",methodA,methodB,weight\n"
-        contributor_graph = ",methodA,methodB,weight\n"
-        for methodA in method_commits.keys():
-            for methodB in method_commits.keys():
-                if methodA != methodB:
-                    methodACommits = method_commits[methodA]
-                    methodBCommits = method_commits[methodB]
-                    intersection = methodACommits.intersection(methodBCommits)
-                    union = methodACommits.union(methodBCommits)
-                    commit_weight = np.divide(len(intersection), len(union))
-                    if commit_weight > 0:
-                        commit_graph += f"0,{methodA},{methodB},{commit_weight}\n"
-
-                    methodAContributors = set(
-                        list(map(lambda hash: commit_authors[hash], methodACommits))
-                    )
-                    methodBContributors = set(
-                        list(map(lambda hash: commit_authors[hash], methodBCommits))
-                    )
-
-                    intersection = methodAContributors.intersection(methodBContributors)
-                    union = methodAContributors.union(methodBContributors)
-                    contributor_weight = np.divide(len(intersection), len(union))
-                    if contributor_weight > 0:
-                        contributor_graph += (
-                            f"0,{methodA},{methodB},{contributor_weight}\n"
-                        )
-
-        commit_output_file = open(data_repo.get_commit_graph_path(application), "w")
-        commit_output_file.write(commit_graph)
-
-        contributor_output_file = open(
-            data_repo.get_contributor_graph_path(application), "w"
-        )
-        contributor_output_file.write(contributor_graph)
+        self._generate_graphs(application, data_repo)

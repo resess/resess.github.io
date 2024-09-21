@@ -21,27 +21,27 @@ from cleaning.mono2micro import Mono2MicroCleaner
 from cleaning.mosaic import MosaicCleaner
 from utils.utils import Utils
 
-CLEAN_CARGO = False
+CLEAN_CARGO = True
 # Extracts ground truth for applications from {app}_{classes/methods}.csv
-CLEAN_GROUND_TRUTH = False
-CLEAN_MONO2MICRO = False
-CLEAN_MOSAIC = False
+CLEAN_GROUND_TRUTH = True
+CLEAN_MONO2MICRO = True
+CLEAN_MOSAIC = True
 
-CONSTRUCT_METHOD_DECOMPOSITIONS = False
+CONSTRUCT_METHOD_DECOMPOSITIONS = True
 
 # Copies filtered version of decomposition from {class/method}_decomposition.json
 # to filtered_{class/method}_decomposition.json
-FILTER_DECOMPOSITIONS = False
+FILTER_DECOMPOSITIONS = True
 
-EXTRACT_EVOLUTIONARY_RELATIONSHIPS = False
-EXTRACT_STRUCTURAL_RELATIONSHIPS = False
-EXTRACT_DATA_ACCESS_RELATIONSHIPS = False
-EXTRACT_SEMANTIC_RELATIONSHIPS = False
+EXTRACT_EVOLUTIONARY_RELATIONSHIPS = True
+EXTRACT_STRUCTURAL_RELATIONSHIPS = True
+EXTRACT_DATA_ACCESS_RELATIONSHIPS = True
+EXTRACT_SEMANTIC_RELATIONSHIPS = True
 # Extracts ground truth for applications from {app}_{classes/methods}.csv
 # into the data/applications/{app}/ground_truth folder
-EXTRACT_RSFS = False
+EXTRACT_RSFS = True
 
-GENERATE_VISUALIZATIONS = False
+GENERATE_VISUALIZATIONS = True
 CALCULATE_METRICS = True
 CALCULATE_MOJOFM = True
 CALCULATE_ENTROPY = True
@@ -111,8 +111,8 @@ if __name__ == "__main__":
         print("Extracting data access relationships...")
         for application in applications:
             app = Application(application, application_repository)
-            print('Method')
-            print(DataAccess(app, DependencyGraph(app, data_repository)).get_table_accesses())
+            # print('Method')
+            DataAccess(app, DependencyGraph(app, data_repository)).get_table_accesses()
 
     if EXTRACT_SEMANTIC_RELATIONSHIPS:
         print("Extracting semantic relationships...")
@@ -133,7 +133,7 @@ if __name__ == "__main__":
 
     if CALCULATE_MOJOFM:
         print("Calculating mojofm...")
-        MojofmCalculator("./data/applications", decomposition_repository).calculate(manifest)
+        MojofmCalculator("./data/applications", decomposition_repository).calculate(applications, manifest)
 
     if CALCULATE_ENTROPY:
         print("Calculating entropy...")
@@ -144,3 +144,5 @@ if __name__ == "__main__":
         print("Calculating partition statistics...")
         StatisticCalculator(data_repository, manifest,
                             decomposition_repository, application_repository, utils).calculate_statistics(applications)
+
+    print ('done')

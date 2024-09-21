@@ -18,11 +18,11 @@ class MethodLevelDecompositionConstructor:
         decomposition_folder = self.decomposition_repository.get_decomposition_folder(tool, application,
                                                                                       partition_count, variant)
 
-        method_level_tools = ["tomicroservices", "cargo", "mosaic"]
+        method_level_tools = ["tomicroservices", "cargo", "mosaic", "ground_truth"]
         if tool in method_level_tools:
             if tool == "tomicroservices":
                 with open(f"{decomposition_folder}/decomposition.json", "r") as old_file:
-                    with open(f"{decomposition_folder}/method_decomposition.json", "w") as new_file:
+                    with open(f"{decomposition_folder}/method_decomposition.json", "w", newline='\n') as new_file:
                         old_json = json.load(old_file)
                         pretty_json = json.dumps(old_json)
                         new_file.write(pretty_json)
@@ -30,7 +30,7 @@ class MethodLevelDecompositionConstructor:
             return
 
         with open(f"{decomposition_folder}/decomposition.json", "r") as old_file:
-            with open(f"{decomposition_folder}/class_decomposition.json", "w") as new_file:
+            with open(f"{decomposition_folder}/class_decomposition.json", "w", newline='\n') as new_file:
                 old_json = json.load(old_file)
                 pretty_json = json.dumps(old_json)
                 new_file.write(pretty_json)
@@ -51,7 +51,6 @@ class MethodLevelDecompositionConstructor:
                             self.migrate_class_decompositions(application, tool, partition_count, variant)
 
     def construct_method_decompositions(self, applications):
-        no_method_decomposition = ["mem"]
         for application in applications:
             print(f"Constructing for application: {application}")
             for tool in self.manifest.get_available_tools(application):
@@ -64,12 +63,12 @@ class MethodLevelDecompositionConstructor:
                         if self.manifest.get_granularity(tool) == "class":
                             granularities.append("class_level")
                         for granularity in granularities:
-                            if "method" in granularity and tool in no_method_decomposition:
+                            if "method" in granularity and tool not in ["cargo", "tomicroservices", "mosaic", "ground_truth"]:
                                 class_decomposition = self.decomposition_repository.get_decomposition(tool,
                                                                                                       application,
                                                                                                       partition_count,
                                                                                                       "class_level",
-                                                                                                      variant)
+                                                                                                      variant, filtered=False)
 
                                 class_assignments = self.utils.get_node_partition_assignments(class_decomposition)
 

@@ -4,6 +4,7 @@ from access.applications import ApplicationRepository
 from access.decompositions import DecompositionRepository
 from access.manifest import Manifest
 from utils.utils import Utils
+import os
 
 
 class CargoCleaner:
@@ -20,6 +21,7 @@ class CargoCleaner:
                 original_path = self.decomposition_repository.get_raw_decomposition_path("cargo", application,
                                                                                          partition_count)
 
+                print (f'INFO: cargo raw decomposition path is {original_path}') 
                 with open(original_path, "r") as original_file:
                     original_json = json.load(original_file)
 
@@ -48,10 +50,10 @@ class CargoCleaner:
                     elif not node.startswith("org.springframework"):
                         print(f"WARNING: Node not present: {node}")
 
-                method_decomposition_path = self.decomposition_repository.get_method_decomposition_path("cargo",
+                method_decomposition_path = os.path.abspath(self.decomposition_repository.get_method_decomposition_path("cargo",
                                                                                                         application,
                                                                                                         partition_count,
-                                                                                                        filtered=False)
+                                                                                                        filtered=False))
                 with open(method_decomposition_path, "w") as method_decomposition_file:
                     json.dump({"tool": {"decomposition": method_decomposition}}, method_decomposition_file)
 

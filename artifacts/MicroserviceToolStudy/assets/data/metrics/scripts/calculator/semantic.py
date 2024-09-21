@@ -278,7 +278,7 @@ def processIdentifierFile(fileName, granularity):
 
 def writeCSV(listList, fileName):
     pd.DataFrame.from_records(listList).to_csv(fileName)
-    print(fileName)
+    print(f'write to file {fileName}')
 
 
 # calculate class name similarity
