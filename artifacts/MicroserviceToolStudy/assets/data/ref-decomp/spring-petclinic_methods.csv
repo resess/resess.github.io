@@ -1,0 +1,113 @@
+source_method,reference decomposition,duplicated,notes
+org.springframework.samples.petclinic.model.BaseEntity.getId(),customers,TRUE,
+org.springframework.samples.petclinic.model.BaseEntity.isNew(),customers,TRUE,
+org.springframework.samples.petclinic.model.BaseEntity.setId(Integer id),customers,TRUE,
+org.springframework.samples.petclinic.model.NamedEntity.getName(),customers,TRUE,
+org.springframework.samples.petclinic.model.NamedEntity.setName(String name),customers,TRUE,
+org.springframework.samples.petclinic.model.NamedEntity.toString(),customers,TRUE,
+org.springframework.samples.petclinic.model.Person.getFirstName(),customers,TRUE,
+org.springframework.samples.petclinic.model.Person.getLastName(),customers,TRUE,
+org.springframework.samples.petclinic.model.Person.setFirstName(String firstName),customers,TRUE,
+org.springframework.samples.petclinic.model.Person.setLastName(String lastName),customers,TRUE,
+org.springframework.samples.petclinic.owner.Owner.addPet(Pet pet),customers,,
+"org.springframework.samples.petclinic.owner.Owner.addVisit(Integer petId,Visit visit)",customers,,not in microservice
+org.springframework.samples.petclinic.owner.Owner.getAddress(),customers,,
+org.springframework.samples.petclinic.owner.Owner.getCity(),customers,,
+org.springframework.samples.petclinic.owner.Owner.getPet(Integer id),customers,,not in microservice
+org.springframework.samples.petclinic.owner.Owner.getPet(String name),customers,,
+"org.springframework.samples.petclinic.owner.Owner.getPet(String name,boolean ignoreNew)",customers,,
+org.springframework.samples.petclinic.owner.Owner.getPets(),customers,,
+org.springframework.samples.petclinic.owner.Owner.getTelephone(),customers,,
+org.springframework.samples.petclinic.owner.Owner.setAddress(String address),customers,,
+org.springframework.samples.petclinic.owner.Owner.setCity(String city),customers,,
+org.springframework.samples.petclinic.owner.Owner.setTelephone(String telephone),customers,,
+org.springframework.samples.petclinic.owner.Owner.toString(),customers,,
+"org.springframework.samples.petclinic.owner.OwnerController.addPaginationModel(int page,Model model,Page<Owner> paginated)",customers,,not in microservice
+org.springframework.samples.petclinic.owner.OwnerController.findOwner(Integer ownerId),customers,,
+"org.springframework.samples.petclinic.owner.OwnerController.findPaginatedForOwnersLastName(int page,String lastname)",customers,,not in microservice
+"org.springframework.samples.petclinic.owner.OwnerController.initCreationForm(Map<String,Object> model)",customers,,not in microservice
+org.springframework.samples.petclinic.owner.OwnerController.initFindForm(),customers,,not in microservice
+"org.springframework.samples.petclinic.owner.OwnerController.initUpdateOwnerForm(int ownerId,Model model)",customers,,not in microservice
+org.springframework.samples.petclinic.owner.OwnerController.OwnerController(OwnerRepository clinicService),customers,,
+"org.springframework.samples.petclinic.owner.OwnerController.processCreationForm(Owner owner,BindingResult result)",customers,,
+"org.springframework.samples.petclinic.owner.OwnerController.processFindForm(int page,Owner owner,BindingResult result,Model model)",customers,,not in microservice
+"org.springframework.samples.petclinic.owner.OwnerController.processUpdateOwnerForm(Owner owner,BindingResult result,int ownerId)",customers,,
+org.springframework.samples.petclinic.owner.OwnerController.setAllowedFields(WebDataBinder dataBinder),customers,,
+org.springframework.samples.petclinic.owner.OwnerController.showOwner(int ownerId),customers,,
+org.springframework.samples.petclinic.owner.OwnerRepository.findAll(Pageable pageable),customers,,not in microservice
+org.springframework.samples.petclinic.owner.OwnerRepository.findById(Integer id),customers,,
+"org.springframework.samples.petclinic.owner.OwnerRepository.findByLastName(String lastName,Pageable pageable)",customers,,not in microservice
+org.springframework.samples.petclinic.owner.OwnerRepository.findPetTypes(),customers,,
+org.springframework.samples.petclinic.owner.OwnerRepository.save(Owner owner),customers,,not in microservice
+org.springframework.samples.petclinic.owner.Pet.addVisit(Visit visit),customers,,not in microservice
+org.springframework.samples.petclinic.owner.Pet.getBirthDate(),customers,,
+org.springframework.samples.petclinic.owner.Pet.getType(),customers,,
+org.springframework.samples.petclinic.owner.Pet.getVisits(),customers,,not in microservice
+org.springframework.samples.petclinic.owner.Pet.setBirthDate(LocalDate birthDate),customers,,
+org.springframework.samples.petclinic.owner.Pet.setType(PetType type),customers,,
+org.springframework.samples.petclinic.owner.PetController.findOwner(int ownerId),customers,,not in microservice
+"org.springframework.samples.petclinic.owner.PetController.findPet(int ownerId,Integer petId)",customers,,
+"org.springframework.samples.petclinic.owner.PetController.initCreationForm(Owner owner,ModelMap model)",customers,,not in microservice
+org.springframework.samples.petclinic.owner.PetController.initOwnerBinder(WebDataBinder dataBinder),customers,,not in microservice
+org.springframework.samples.petclinic.owner.PetController.initPetBinder(WebDataBinder dataBinder),customers,,not in microservice
+"org.springframework.samples.petclinic.owner.PetController.initUpdateForm(Owner owner,int petId,ModelMap model)",customers,,not in microservice
+org.springframework.samples.petclinic.owner.PetController.PetController(OwnerRepository owners),customers,,
+org.springframework.samples.petclinic.owner.PetController.populatePetTypes(),customers,,
+"org.springframework.samples.petclinic.owner.PetController.processCreationForm(Owner owner,Pet pet,BindingResult result,ModelMap model)",customers,,
+"org.springframework.samples.petclinic.owner.PetController.processUpdateForm(Pet pet,BindingResult result,Owner owner,ModelMap model)",customers,,
+org.springframework.samples.petclinic.owner.PetValidator.supports(Class<?> clazz),customers,,not in microservice
+"org.springframework.samples.petclinic.owner.PetValidator.validate(Object obj,Errors errors)",customers,,
+org.springframework.samples.petclinic.PetClinicApplication.main(String[] args),customers,TRUE,
+"org.springframework.samples.petclinic.owner.PetTypeFormatter.parse(String text,Locale locale)",uncounted,,not in microservice
+org.springframework.samples.petclinic.owner.PetTypeFormatter.PetTypeFormatter(OwnerRepository owners),uncounted,,not in microservice
+"org.springframework.samples.petclinic.owner.PetTypeFormatter.print(PetType petType,Locale locale)",uncounted,,not in microservice
+"org.springframework.samples.petclinic.PetClinicRuntimeHints.registerHints(RuntimeHints hints,ClassLoader classLoader)",uncounted,,not in microservice
+org.springframework.samples.petclinic.system.CrashController.triggerException(),uncounted,,not in microservice
+org.springframework.samples.petclinic.system.WelcomeController.welcome(),uncounted,,not in microservice
+org.springframework.samples.petclinic.model.BaseEntity.getId(),vets,TRUE,
+org.springframework.samples.petclinic.model.BaseEntity.isNew(),vets,TRUE,
+org.springframework.samples.petclinic.model.BaseEntity.setId(Integer id),vets,TRUE,
+org.springframework.samples.petclinic.model.NamedEntity.getName(),vets,TRUE,
+org.springframework.samples.petclinic.model.NamedEntity.setName(String name),vets,TRUE,
+org.springframework.samples.petclinic.model.NamedEntity.toString(),vets,TRUE,
+org.springframework.samples.petclinic.model.Person.getFirstName(),vets,TRUE,
+org.springframework.samples.petclinic.model.Person.getLastName(),vets,TRUE,
+org.springframework.samples.petclinic.model.Person.setFirstName(String firstName),vets,TRUE,
+org.springframework.samples.petclinic.model.Person.setLastName(String lastName),vets,TRUE,
+org.springframework.samples.petclinic.PetClinicApplication.main(String[] args),vets,TRUE,
+org.springframework.samples.petclinic.system.CacheConfiguration.cacheConfiguration(),vets,,not in microservice
+org.springframework.samples.petclinic.system.CacheConfiguration.petclinicCacheConfigurationCustomizer(),vets,,
+org.springframework.samples.petclinic.vet.Vet.addSpecialty(Specialty specialty),vets,,
+org.springframework.samples.petclinic.vet.Vet.getNrOfSpecialties(),vets,,
+org.springframework.samples.petclinic.vet.Vet.getSpecialties(),vets,,
+org.springframework.samples.petclinic.vet.Vet.getSpecialtiesInternal(),vets,,
+org.springframework.samples.petclinic.vet.Vet.setSpecialtiesInternal(Set<Specialty> specialties),vets,,
+org.springframework.samples.petclinic.vet.VetController.showResourcesVetList(),vets,,
+"org.springframework.samples.petclinic.vet.VetController.showVetList(int page,Model model)",vets,,not in microservice
+org.springframework.samples.petclinic.vet.VetController.VetController(VetRepository clinicService),vets,,
+org.springframework.samples.petclinic.vet.VetRepository.findAll(),vets,,
+org.springframework.samples.petclinic.vet.VetRepository.findAll(Pageable pageable),vets,,not in microservice
+org.springframework.samples.petclinic.vet.Vets.getVetList(),vets,,
+org.springframework.samples.petclinic.model.BaseEntity.getId(),visits,TRUE,
+org.springframework.samples.petclinic.model.BaseEntity.isNew(),visits,TRUE,
+org.springframework.samples.petclinic.model.BaseEntity.setId(Integer id),visits,TRUE,
+org.springframework.samples.petclinic.model.NamedEntity.getName(),visits,TRUE,
+org.springframework.samples.petclinic.model.NamedEntity.setName(String name),visits,TRUE,
+org.springframework.samples.petclinic.model.NamedEntity.toString(),visits,TRUE,
+org.springframework.samples.petclinic.model.Person.getFirstName(),visits,TRUE,
+org.springframework.samples.petclinic.model.Person.getLastName(),visits,TRUE,
+org.springframework.samples.petclinic.model.Person.setFirstName(String firstName),visits,TRUE,
+org.springframework.samples.petclinic.model.Person.setLastName(String lastName),visits,TRUE,
+org.springframework.samples.petclinic.owner.Visit.getDate(),visits,,
+org.springframework.samples.petclinic.owner.Visit.getDescription(),visits,,
+org.springframework.samples.petclinic.owner.Visit.setDate(LocalDate date),visits,,
+org.springframework.samples.petclinic.owner.Visit.setDescription(String description),visits,,
+org.springframework.samples.petclinic.owner.Visit.Visit(),visits,,not in microservice
+org.springframework.samples.petclinic.owner.VisitController.initNewVisitForm(),visits,,not in microservice
+"org.springframework.samples.petclinic.owner.VisitController.loadPetWithVisit(int ownerId,int petId,Map<String,Object> model)",visits,,
+"org.springframework.samples.petclinic.owner.VisitController.processNewVisitForm(Owner owner,int petId,Visit visit,BindingResult result)",visits,,
+org.springframework.samples.petclinic.owner.VisitController.setAllowedFields(WebDataBinder dataBinder),visits,,not in microservice
+org.springframework.samples.petclinic.owner.VisitController.VisitController(OwnerRepository owners),visits,,
+org.springframework.samples.petclinic.PetClinicApplication.main(String[] args),visits,TRUE,
+"org.springframework.samples.petclinic.vet.VetController.addPaginationModel(int page,Page<Vet> paginated,Model model)",visits,,not in microservice
+org.springframework.samples.petclinic.vet.VetController.findPaginated(int page),visits,,not in microservice

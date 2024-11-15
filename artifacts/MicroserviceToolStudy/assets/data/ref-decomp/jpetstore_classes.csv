@@ -1,0 +1,27 @@
+class full name,class short name,reference decomposition,duplicate
+org.mybatis.jpetstore.web.actions.AbstractActionBean,AbstractActionBean,account,TRUE
+org.mybatis.jpetstore.web.actions.AbstractActionBean,AbstractActionBean,order,TRUE
+org.mybatis.jpetstore.web.actions.AbstractActionBean,AbstractActionBean,catalog,TRUE
+org.mybatis.jpetstore.domain.Account,Account,account,
+org.mybatis.jpetstore.web.actions.AccountActionBean,AccountActionBean,account,
+org.mybatis.jpetstore.mapper.AccountMapper,AccountMapper,account,
+org.mybatis.jpetstore.service.AccountService,AccountService,account,
+org.mybatis.jpetstore.domain.Cart,Cart,order,
+org.mybatis.jpetstore.web.actions.CartActionBean,CartActionBean,catalog,
+org.mybatis.jpetstore.domain.CartItem,CartItem,order,
+org.mybatis.jpetstore.mapper.CategoryMapper,CatagoryMapper,catalog,
+org.mybatis.jpetstore.web.actions.CatalogActionBean,CatalogActionBean,catalog,
+org.mybatis.jpetstore.service.CatalogService,CatalogService,catalog,
+org.mybatis.jpetstore.domain.Category,Category,catalog,
+org.mybatis.jpetstore.domain.Item,Item,catalog,
+org.mybatis.jpetstore.mapper.ItemMapper,ItemMapper,catalog,
+org.mybatis.jpetstore.domain.LineItem,LineItem,order,
+org.mybatis.jpetstore.mapper.LineItemMapper,LineItemMapper,order,
+org.mybatis.jpetstore.domain.Order,Order,order,
+org.mybatis.jpetstore.web.actions.OrderActionBean,OrderAcdtionBean,order,
+org.mybatis.jpetstore.mapper.OrderMapper,OrderMapper,order,
+org.mybatis.jpetstore.service.OrderService,OrderService,order,
+org.mybatis.jpetstore.domain.Product,Product,catalog,
+org.mybatis.jpetstore.mapper.ProductMapper,ProductMapper,catalog,
+org.mybatis.jpetstore.domain.Sequence,Sequence,order,
+org.mybatis.jpetstore.mapper.SequenceMapper,SequenceMapper,order,

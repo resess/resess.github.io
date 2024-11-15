@@ -1,0 +1,149 @@
+{
+  "tool": {
+    "decomposition": {
+      "partition0": [
+        {
+          "id": "Ackermann"
+        },
+        {
+          "id": "AckermannIterative"
+        },
+        {
+          "id": "AckServlet"
+        },
+        {
+          "id": "AlcoholCalculator"
+        },
+        {
+          "id": "AlcoholResult"
+        },
+        {
+          "id": "AssertionException"
+        },
+        {
+          "id": "Book"
+        },
+        {
+          "id": "Borrower"
+        },
+        {
+          "id": "Calculator"
+        },
+        {
+          "id": "CartesianProduct"
+        },
+        {
+          "id": "CheckUtils"
+        },
+        {
+          "id": "DbServlet"
+        },
+        {
+          "id": "DinnerPrices"
+        },
+        {
+          "id": "EmptyDataSource"
+        },
+        {
+          "id": "Fibonacci"
+        },
+        {
+          "id": "FibonacciIterative"
+        },
+        {
+          "id": "FibServlet"
+        },
+        {
+          "id": "FunctionalField"
+        },
+        {
+          "id": "IPersistenceLayer"
+        },
+        {
+          "id": "LibraryActionResults"
+        },
+        {
+          "id": "LibraryBookListAvailableServlet"
+        },
+        {
+          "id": "LibraryBookListSearchServlet"
+        },
+        {
+          "id": "LibraryBorrowerListSearchServlet"
+        },
+        {
+          "id": "LibraryLendServlet"
+        },
+        {
+          "id": "LibraryRegisterBookServlet"
+        },
+        {
+          "id": "LibraryRegisterBorrowerServlet"
+        },
+        {
+          "id": "LibraryUtils"
+        },
+        {
+          "id": "Loan"
+        },
+        {
+          "id": "LoginServlet"
+        },
+        {
+          "id": "LoginUtils"
+        },
+        {
+          "id": "MathServlet"
+        },
+        {
+          "id": "NotImplementedException"
+        },
+        {
+          "id": "ParameterObject"
+        },
+        {
+          "id": "PasswordResult"
+        },
+        {
+          "id": "PasswordResultEnums"
+        },
+        {
+          "id": "PersistenceLayer"
+        },
+        {
+          "id": "RegisterServlet"
+        },
+        {
+          "id": "RegistrationResult"
+        },
+        {
+          "id": "RegistrationStatusEnums"
+        },
+        {
+          "id": "RegistrationUtils"
+        },
+        {
+          "id": "ServletUtils"
+        },
+        {
+          "id": "SqlData"
+        },
+        {
+          "id": "SqlRuntimeException"
+        },
+        {
+          "id": "StringUtils"
+        },
+        {
+          "id": "TailRecursive"
+        },
+        {
+          "id": "User"
+        },
+        {
+          "id": "WebAppListener"
+        }
+      ]
+    }
+  }
+}

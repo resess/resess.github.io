@@ -1,0 +1,32 @@
+class full name,class short name,reference decomposition,duplicated,notes
+org.springframework.samples.petclinic.model.BaseEntity,BaseEntity,customers,TRUE,
+org.springframework.samples.petclinic.model.BaseEntity,BaseEntity,visits,TRUE,
+org.springframework.samples.petclinic.model.BaseEntity,BaseEntity,vets,TRUE,
+org.springframework.samples.petclinic.system.CacheConfiguration,CacheConfiguration,vets,,
+org.springframework.samples.petclinic.system.CrashController,CrashController,uncounted,,not in microservice
+org.springframework.samples.petclinic.model.NamedEntity,NamedEntity,customers,TRUE,
+org.springframework.samples.petclinic.model.NamedEntity,NamedEntity,visits,TRUE,
+org.springframework.samples.petclinic.model.NamedEntity,NamedEntity,vets,TRUE,
+org.springframework.samples.petclinic.owner.Owner,Owner,customers,,
+org.springframework.samples.petclinic.owner.OwnerController,OwnerController,customers,,
+org.springframework.samples.petclinic.owner.OwnerRepository,OwnerRepository,customers,,
+org.springframework.samples.petclinic.model.Person,Person,customers,TRUE,
+org.springframework.samples.petclinic.model.Person,Person,visits,TRUE,
+org.springframework.samples.petclinic.model.Person,Person,vets,TRUE,
+org.springframework.samples.petclinic.owner.Pet,Pet,customers,,
+org.springframework.samples.petclinic.PetClinicApplication,PetClinicApplication,customers,TRUE,
+org.springframework.samples.petclinic.PetClinicApplication,PetClinicApplication,vets,TRUE,
+org.springframework.samples.petclinic.PetClinicApplication,PetClinicApplication,visits,TRUE,
+org.springframework.samples.petclinic.PetClinicRuntimeHints,PetClinicRuntimeHints,uncounted,,not in microservice
+org.springframework.samples.petclinic.owner.PetController,PetController,customers,,
+org.springframework.samples.petclinic.owner.PetType,PetType,customers,,
+org.springframework.samples.petclinic.owner.PetTypeFormatter,PetTypeFormatter,uncounted,,not in microservice
+org.springframework.samples.petclinic.owner.PetValidator,PetValidator,customers,,
+org.springframework.samples.petclinic.vet.Specialty,Specialty,vets,,
+org.springframework.samples.petclinic.vet.Vet,Vet,vets,,
+org.springframework.samples.petclinic.vet.VetController,VetController,vets,,
+org.springframework.samples.petclinic.vet.VetRepository,VetRepository,vets,,
+org.springframework.samples.petclinic.vet.Vets,Vets,vets,,
+org.springframework.samples.petclinic.owner.Visit,Visit,visits,,
+org.springframework.samples.petclinic.owner.VisitController,VisitController,visits,,
+org.springframework.samples.petclinic.system.WelcomeController,WelcomeController,uncounted,,not in microservice

@@ -1,0 +1,526 @@
+source_method,reference_decomposition,duplicate,notes
+smpl.ordering.OrderingConfiguration.getApplicationContext(),catalog,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.getTelemetryClient(),catalog,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.main(String[] args),catalog,TRUE,class duplicate in all five partitions
+smpl.ordering.OrderingConfiguration.mongoTemplate(),catalog,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.OrderingConfiguration(),catalog,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.orderingServiceProperties(),catalog,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.repositoryFactory(),catalog,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.setApplicationContext(ApplicationContext context),catalog,TRUE,not in microservice
+smpl.ordering.repositories.RepositoryFactory.getFactory(),catalog,TRUE,
+smpl.ordering.repositories.RepositoryFactory.init(String storage),catalog,TRUE,
+smpl.ordering.repositories.RepositoryFactory.RepositoryFactory(String storage),catalog,TRUE,
+smpl.ordering.repositories.RepositoryFactory.reset(String storage),catalog,TRUE,
+smpl.ordering.SimpleCORSFilter.destroy(),catalog,TRUE,
+"smpl.ordering.SimpleCORSFilter.doFilter(ServletRequest req,ServletResponse res,FilterChain chain)",catalog,TRUE,
+smpl.ordering.SimpleCORSFilter.init(FilterConfig filterConfig),catalog,TRUE,
+smpl.ordering.TestPath.reset(),catalog,TRUE,
+smpl.ordering.Utility.getTelemetryClient(),catalog,TRUE,not in microservice
+smpl.ordering.Utility.isNullOrEmpty(String str),catalog,TRUE,
+"smpl.ordering.Utility.validateStringField(String field,String fieldName,int count,StringBuilder errors)",catalog,TRUE,
+smpl.ordering.controllers.CatalogController.addCatalogItem(CatalogItem info),catalog,,
+smpl.ordering.controllers.CatalogController.getCatalogItem(String sku),catalog,,
+smpl.ordering.controllers.CatalogController.getCatalogItems(),catalog,,
+smpl.ordering.controllers.CatalogController.getRepository(),catalog,,not in microservice
+smpl.ordering.controllers.CatalogController.removeCatalogItem(String sku),catalog,,
+"smpl.ordering.controllers.CatalogController.upsertCatalogItem(String sku,CatalogItem info)",catalog,,
+smpl.ordering.models.CatalogItem.CatalogItem(),catalog,,
+smpl.ordering.models.CatalogItem.CatalogItem(CatalogItem catalogItem),catalog,,
+"smpl.ordering.models.CatalogItem.CatalogItem(String skuNumber,String description,double price,int inventory,int leadTime)",catalog,,
+smpl.ordering.models.CatalogItem.getDescription(),catalog,,
+smpl.ordering.models.CatalogItem.getInventory(),catalog,,
+smpl.ordering.models.CatalogItem.getLeadTime(),catalog,,not in microservice
+smpl.ordering.models.CatalogItem.getPrice(),catalog,,
+smpl.ordering.models.CatalogItem.getSkuNumber(),catalog,,
+smpl.ordering.models.CatalogItem.setDescription(String description),catalog,,
+smpl.ordering.models.CatalogItem.setInventory(int inventory),catalog,,
+smpl.ordering.models.CatalogItem.setLeadTime(int leadTime),catalog,,not in microservice
+smpl.ordering.models.CatalogItem.setPrice(double price),catalog,,
+smpl.ordering.models.CatalogItem.setSkuNumber(String skuNumber),catalog,,
+smpl.ordering.models.CatalogItem.validate(),catalog,,
+smpl.ordering.repositories.CatalogItemsRepository.getCatalogItem(String sku),catalog,,
+smpl.ordering.repositories.CatalogItemsRepository.getCatalogItems(),catalog,,
+"smpl.ordering.repositories.CatalogItemsRepository.removeCatalogItem(String sku,String eTag)",catalog,,
+"smpl.ordering.repositories.CatalogItemsRepository.upsertCatalogItem(String sku,CatalogItem catalogItem,String eTag)",catalog,,
+"smpl.ordering.repositories.mock.MockCatalogItemsRepository.compareSkuNumbers(String sku,CatalogItem catalogItem)",catalog,,
+smpl.ordering.repositories.mock.MockCatalogItemsRepository.getCatalogItem(String sku),catalog,,
+smpl.ordering.repositories.mock.MockCatalogItemsRepository.getCatalogItems(),catalog,,
+smpl.ordering.repositories.mock.MockCatalogItemsRepository.MockCatalogItemsRepository(),catalog,,
+"smpl.ordering.repositories.mock.MockCatalogItemsRepository.removeCatalogItem(String sku,String eTag)",catalog,,
+smpl.ordering.repositories.mock.MockCatalogItemsRepository.reset(),catalog,,
+"smpl.ordering.repositories.mock.MockCatalogItemsRepository.upsertCatalogItem(String sku,CatalogItem catalogItem,String eTag)",catalog,,
+smpl.ordering.repositories.mongodb.models.CatalogItem.CatalogItem(),catalog,,
+smpl.ordering.repositories.mongodb.models.CatalogItem.CatalogItem(smpl.ordering.models.CatalogItem from),catalog,,
+smpl.ordering.repositories.mongodb.models.CatalogItem.getId(),catalog,,
+smpl.ordering.repositories.mongodb.models.CatalogItem.setId(String id),catalog,,
+smpl.ordering.repositories.mongodb.models.CatalogItem.toCatalogItem(),catalog,,
+smpl.ordering.repositories.mongodb.MongoCatalogItemsRepository.findExistingCatalogItem(String sku),catalog,,
+smpl.ordering.repositories.mongodb.MongoCatalogItemsRepository.getCatalogItem(String sku),catalog,,
+smpl.ordering.repositories.mongodb.MongoCatalogItemsRepository.getCatalogItems(),catalog,,
+smpl.ordering.repositories.mongodb.MongoCatalogItemsRepository.MongoCatalogItemsRepository(MongoTemplate template),catalog,,
+"smpl.ordering.repositories.mongodb.MongoCatalogItemsRepository.removeCatalogItem(String sku,String eTag)",catalog,,
+smpl.ordering.repositories.mongodb.MongoCatalogItemsRepository.reset(),catalog,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoCatalogItemsRepository.upsertCatalogItem(String sku,smpl.ordering.models.CatalogItem catalogItem,String eTag)",catalog,,
+smpl.ordering.repositories.RepositoryFactory.getCatalogItemsRepository(),catalog,,
+smpl.ordering.OrderingConfiguration.getApplicationContext(),dealer,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.getTelemetryClient(),dealer,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.main(String[] args),dealer,TRUE,class duplicate in all five partitions
+smpl.ordering.OrderingConfiguration.mongoTemplate(),dealer,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.OrderingConfiguration(),dealer,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.orderingServiceProperties(),dealer,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.repositoryFactory(),dealer,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.setApplicationContext(ApplicationContext context),dealer,TRUE,not in microservice
+smpl.ordering.Utility.getTelemetryClient(),dealer,TRUE,not in microservice
+smpl.ordering.Utility.isNullOrEmpty(String str),dealer,TRUE,
+"smpl.ordering.Utility.validateStringField(String field,String fieldName,int count,StringBuilder errors)",dealer,TRUE,
+smpl.ordering.controllers.DealerController.addDealer(DealerInfo info),dealer,,
+smpl.ordering.controllers.DealerController.getDealer(String name),dealer,,
+smpl.ordering.controllers.DealerController.getDealers(),dealer,,
+smpl.ordering.controllers.DealerController.getRepository(),dealer,,not in microservice
+smpl.ordering.controllers.DealerController.removeDealer(String name),dealer,,
+"smpl.ordering.controllers.DealerController.updateDealer(String name,DealerInfo info)",dealer,,
+smpl.ordering.models.DealerInfo.DealerInfo(),dealer,,not in microservice
+smpl.ordering.models.DealerInfo.DealerInfo(DealerInfo other),dealer,,not in microservice
+smpl.ordering.models.DealerInfo.DealerInfo(String name),dealer,,not in microservice
+smpl.ordering.models.DealerInfo.getAddress(),dealer,,
+smpl.ordering.models.DealerInfo.getContact(),dealer,,
+smpl.ordering.models.DealerInfo.getEmail(),dealer,,
+smpl.ordering.models.DealerInfo.getName(),dealer,,
+smpl.ordering.models.DealerInfo.getPhone(),dealer,,
+smpl.ordering.models.DealerInfo.setAddress(String address),dealer,,
+smpl.ordering.models.DealerInfo.setContact(String contact),dealer,,
+smpl.ordering.models.DealerInfo.setEmail(String email),dealer,,
+smpl.ordering.models.DealerInfo.setName(String name),dealer,,
+smpl.ordering.models.DealerInfo.setPhone(String phone),dealer,,
+smpl.ordering.models.DealerInfo.validate(),dealer,,
+smpl.ordering.repositories.DealersRepository.getDealer(String name),dealer,,
+smpl.ordering.repositories.DealersRepository.getDealers(),dealer,,
+"smpl.ordering.repositories.DealersRepository.removeDealer(String name,String eTag)",dealer,,
+"smpl.ordering.repositories.DealersRepository.upsertDealer(DealerInfo dealer,String eTag)",dealer,,
+smpl.ordering.repositories.mongodb.MongoDealersRepository.getDealer(String name),dealer,,
+smpl.ordering.repositories.mongodb.MongoDealersRepository.getDealers(),dealer,,
+smpl.ordering.repositories.mongodb.MongoDealersRepository.MongoDealersRepository(MongoTemplate template),dealer,,
+"smpl.ordering.repositories.mongodb.MongoDealersRepository.removeDealer(String name,String eTag)",dealer,,
+"smpl.ordering.repositories.mongodb.MongoDealersRepository.upsertDealer(DealerInfo dealer,String eTag)",dealer,,
+smpl.ordering.repositories.mongodb.MongoDealersRepository.reset(),dealer,,not in microservice
+smpl.ordering.repositories.RepositoryFactory.getDealersRepository(),dealer,,not in microservice
+smpl.ordering.OrderingConfiguration.getApplicationContext(),order,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.getTelemetryClient(),order,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.main(String[] args),order,TRUE,class duplicate in all five partitions
+smpl.ordering.OrderingConfiguration.mongoTemplate(),order,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.OrderingConfiguration(),order,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.orderingServiceProperties(),order,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.repositoryFactory(),order,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.setApplicationContext(ApplicationContext context),order,TRUE,not in microservice
+smpl.ordering.repositories.RepositoryFactory.getFactory(),order,TRUE,
+smpl.ordering.repositories.RepositoryFactory.init(String storage),order,TRUE,
+smpl.ordering.repositories.RepositoryFactory.RepositoryFactory(String storage),order,TRUE,
+smpl.ordering.repositories.RepositoryFactory.reset(String storage),order,TRUE,
+smpl.ordering.SimpleCORSFilter.destroy(),order,TRUE,
+"smpl.ordering.SimpleCORSFilter.doFilter(ServletRequest req,ServletResponse res,FilterChain chain)",order,TRUE,
+smpl.ordering.SimpleCORSFilter.init(FilterConfig filterConfig),order,TRUE,
+smpl.ordering.TestPath.reset(),order,TRUE,
+smpl.ordering.Utility.getTelemetryClient(),order,TRUE,not in microservice
+smpl.ordering.Utility.isNullOrEmpty(String str),order,TRUE,
+"smpl.ordering.Utility.validateStringField(String field,String fieldName,int count,StringBuilder errors)",order,TRUE,
+smpl.ordering.BadRequestException.BadRequestException(String message),order,,
+smpl.ordering.ConflictingRequestException.ConflictingRequestException(String message),order,,
+"smpl.ordering.controllers.OrderController.addEvent(String orderId,OrderEventInfo info)",order,,
+smpl.ordering.controllers.OrderController.createOrder(String from),order,,
+smpl.ordering.controllers.OrderController.deleteOrder(String orderId),order,,
+smpl.ordering.controllers.OrderController.getOrderById(String orderId),order,,
+smpl.ordering.controllers.OrderController.getOrders(),order,,not in microservice
+"smpl.ordering.controllers.OrderController.getOrdersByDealerName(String dealer,OrderStatus status)",order,,
+smpl.ordering.controllers.OrderController.getQuotes(),order,,not in microservice
+"smpl.ordering.controllers.OrderController.updateOrder(String orderId,Order order)",order,,
+"smpl.ordering.controllers.OrderController.updateStatus(String orderId,OrderUpdateInfo info)",order,,
+smpl.ordering.models.Order.addEvent(OrderEventInfo event),order,,
+smpl.ordering.models.Order.equals(Object o),order,,
+smpl.ordering.models.Order.getEvents(),order,,
+smpl.ordering.models.Order.getOrderDate(),order,,
+smpl.ordering.models.Order.getOrderId(),order,,
+smpl.ordering.models.Order.getQuoteId(),order,,
+smpl.ordering.models.Order.getStatus(),order,,
+smpl.ordering.models.Order.hashCode(),order,,
+smpl.ordering.models.Order.Order(),order,,
+smpl.ordering.models.Order.setEvents(List<OrderEventInfo> events),order,,
+smpl.ordering.models.Order.setOrderDate(String orderDate),order,,
+smpl.ordering.models.Order.setOrderId(String orderId),order,,
+smpl.ordering.models.Order.setQuoteId(String quoteId),order,,
+smpl.ordering.models.Order.setStatus(OrderStatus status),order,,
+smpl.ordering.models.Order.validate(),order,,
+smpl.ordering.models.OrderEventInfo.getComments(),order,,
+smpl.ordering.models.OrderEventInfo.getDate(),order,,
+smpl.ordering.models.OrderEventInfo.OrderEventInfo(),order,,
+smpl.ordering.models.OrderEventInfo.OrderEventInfo(String comments),order,,
+"smpl.ordering.models.OrderEventInfo.OrderEventInfo(String date,String comments)",order,,
+smpl.ordering.models.OrderEventInfo.setComments(String comments),order,,
+smpl.ordering.models.OrderEventInfo.setDate(String date),order,,
+smpl.ordering.models.OrderUpdateInfo.getEventInfo(),order,,
+smpl.ordering.models.OrderUpdateInfo.getStatus(),order,,
+smpl.ordering.models.OrderUpdateInfo.OrderUpdateInfo(),order,,
+"smpl.ordering.models.OrderUpdateInfo.OrderUpdateInfo(OrderStatus status,String comments)",order,,
+smpl.ordering.models.OrderUpdateInfo.setEventInfo(OrderEventInfo eventInfo),order,,
+smpl.ordering.models.OrderUpdateInfo.setStatus(OrderStatus status),order,,
+smpl.ordering.repositories.mock.MockOrderRepository.createOrder(String from),order,,
+smpl.ordering.repositories.mock.MockOrderRepository.getOrder(String id),order,,
+smpl.ordering.repositories.mock.MockOrderRepository.getOrderByQuoteId(String id),order,,
+"smpl.ordering.repositories.mock.MockOrderRepository.getOrdersByDealerName(String name,OrderStatus status)",order,,
+smpl.ordering.repositories.mock.MockOrderRepository.getOrdersByStatus(OrderStatus status),order,,
+smpl.ordering.repositories.mock.MockOrderRepository.hasOrder(String id),order,,
+smpl.ordering.repositories.mock.MockOrderRepository.MockOrderRepository(QuoteRepository quotes),order,,
+"smpl.ordering.repositories.mock.MockOrderRepository.removeOrder(String id,String eTag)",order,,
+smpl.ordering.repositories.mock.MockOrderRepository.reset(),order,,
+"smpl.ordering.repositories.mock.MockOrderRepository.updateOrder(String id,Order order,String eTag)",order,,
+"smpl.ordering.repositories.mock.MockOrderRepository.updateOrder(String id,OrderUpdateInfo info,String eTag)",order,,
+smpl.ordering.repositories.mongodb.models.OrderDetails.getId(),order,,
+smpl.ordering.repositories.mongodb.models.OrderDetails.OrderDetails(),order,,
+smpl.ordering.repositories.mongodb.models.OrderDetails.OrderDetails(Order from),order,,
+smpl.ordering.repositories.mongodb.models.OrderDetails.setId(String id),order,,
+smpl.ordering.repositories.mongodb.MongoOrderRepository.createOrder(String from),order,,
+smpl.ordering.repositories.mongodb.MongoOrderRepository.findExistingOrder(String id),order,,
+smpl.ordering.repositories.mongodb.MongoOrderRepository.getOrder(String id),order,,
+smpl.ordering.repositories.mongodb.MongoOrderRepository.getOrderByQuoteId(String id),order,,
+"smpl.ordering.repositories.mongodb.MongoOrderRepository.getOrdersByDealerName(String dealer,OrderStatus status)",order,,
+smpl.ordering.repositories.mongodb.MongoOrderRepository.getOrdersByStatus(OrderStatus status),order,,
+smpl.ordering.repositories.mongodb.MongoOrderRepository.hasOrder(String id),order,,
+"smpl.ordering.repositories.mongodb.MongoOrderRepository.MongoOrderRepository(MongoTemplate template,QuoteRepository quotes)",order,,
+"smpl.ordering.repositories.mongodb.MongoOrderRepository.removeOrder(String id,String eTag)",order,,
+smpl.ordering.repositories.mongodb.MongoOrderRepository.reset(),order,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOrderRepository.saveOrder(String id,Order order,OrderDetails existing)",order,,
+"smpl.ordering.repositories.mongodb.MongoOrderRepository.updateOrder(String id,Order order,String eTag)",order,,
+"smpl.ordering.repositories.mongodb.MongoOrderRepository.updateOrder(String id,OrderUpdateInfo info,String eTag)",order,,
+smpl.ordering.repositories.OrderRepository.createOrder(String from),order,,
+smpl.ordering.repositories.OrderRepository.getOrder(String id),order,,
+smpl.ordering.repositories.OrderRepository.getOrderByQuoteId(String id),order,,
+"smpl.ordering.repositories.OrderRepository.getOrdersByDealerName(String dealer,OrderStatus status)",order,,
+smpl.ordering.repositories.OrderRepository.getOrdersByStatus(OrderStatus status),order,,
+smpl.ordering.repositories.OrderRepository.hasOrder(String id),order,,
+"smpl.ordering.repositories.OrderRepository.removeOrder(String id,String eTag)",order,,
+"smpl.ordering.repositories.OrderRepository.updateOrder(String id,Order order,String eTag)",order,,
+"smpl.ordering.repositories.OrderRepository.updateOrder(String id,OrderUpdateInfo info,String eTag)",order,,
+smpl.ordering.repositories.RepositoryFactory.getOrderRepository(),order,,
+smpl.ordering.OrderingConfiguration.getApplicationContext(),quote,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.getTelemetryClient(),quote,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.main(String[] args),quote,TRUE,class duplicate in all five partitions
+smpl.ordering.OrderingConfiguration.mongoTemplate(),quote,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.OrderingConfiguration(),quote,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.orderingServiceProperties(),quote,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.repositoryFactory(),quote,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.setApplicationContext(ApplicationContext context),quote,TRUE,not in microservice
+smpl.ordering.repositories.RepositoryFactory.getFactory(),quote,TRUE,
+smpl.ordering.repositories.RepositoryFactory.init(String storage),quote,TRUE,
+smpl.ordering.repositories.RepositoryFactory.RepositoryFactory(String storage),quote,TRUE,
+smpl.ordering.repositories.RepositoryFactory.reset(String storage),quote,TRUE,
+smpl.ordering.SimpleCORSFilter.destroy(),quote,TRUE,
+"smpl.ordering.SimpleCORSFilter.doFilter(ServletRequest req,ServletResponse res,FilterChain chain)",quote,TRUE,
+smpl.ordering.SimpleCORSFilter.init(FilterConfig filterConfig),quote,TRUE,
+smpl.ordering.TestPath.reset(),quote,TRUE,
+smpl.ordering.Utility.getTelemetryClient(),quote,TRUE,not in microservice
+smpl.ordering.Utility.isNullOrEmpty(String str),quote,TRUE,
+"smpl.ordering.Utility.validateStringField(String field,String fieldName,int count,StringBuilder errors)",quote,TRUE,
+smpl.ordering.controllers.QuoteController.createQuote(Quote info),quote,,
+smpl.ordering.controllers.QuoteController.deleteQuote(String quoteId),quote,,
+smpl.ordering.controllers.QuoteController.getQuoteById(String quoteId),quote,,
+smpl.ordering.controllers.QuoteController.getQuotesByCustomerName(String name),quote,,
+smpl.ordering.controllers.QuoteController.getRepository(),quote,,not in microservice
+"smpl.ordering.controllers.QuoteController.updateQuote(String quoteId,Quote info)",quote,,
+"smpl.ordering.models.Quote.addQuoteItem(String sku,double amount)",quote,,
+smpl.ordering.models.Quote.equals(Object o),quote,,
+smpl.ordering.models.Quote.getCity(),quote,,
+smpl.ordering.models.Quote.getCustomerName(),quote,,
+smpl.ordering.models.Quote.getDealerName(),quote,,
+smpl.ordering.models.Quote.getDiscount(),quote,,
+smpl.ordering.models.Quote.getPostalCode(),quote,,
+smpl.ordering.models.Quote.getQuoteId(),quote,,
+smpl.ordering.models.Quote.getQuoteItems(),quote,,
+smpl.ordering.models.Quote.getState(),quote,,
+smpl.ordering.models.Quote.getTotalCost(),quote,,
+smpl.ordering.models.Quote.getValidUntil(),quote,,
+smpl.ordering.models.Quote.hashCode(),quote,,
+smpl.ordering.models.Quote.Quote(),quote,,
+smpl.ordering.models.Quote.Quote(Quote quote),quote,,
+smpl.ordering.models.Quote.setCity(String city),quote,,
+smpl.ordering.models.Quote.setCustomerName(String customerName),quote,,
+smpl.ordering.models.Quote.setDealerName(String dealerName),quote,,
+smpl.ordering.models.Quote.setDiscount(double discount),quote,,
+smpl.ordering.models.Quote.setPostalCode(String postalCode),quote,,
+smpl.ordering.models.Quote.setQuoteId(String quoteId),quote,,
+smpl.ordering.models.Quote.setQuoteItems(List<QuoteItemInfo> quoteItems),quote,,
+smpl.ordering.models.Quote.setState(String state),quote,,
+smpl.ordering.models.Quote.setTotalCost(double totalCost),quote,,
+smpl.ordering.models.Quote.setValidUntil(String validUntil),quote,,
+smpl.ordering.models.Quote.validate(),quote,,
+smpl.ordering.models.QuoteItemInfo.compareTo(QuoteItemInfo other),quote,,
+smpl.ordering.models.QuoteItemInfo.equals(Object o),quote,,
+smpl.ordering.models.QuoteItemInfo.getAmount(),quote,,
+smpl.ordering.models.QuoteItemInfo.getSkuNumber(),quote,,
+smpl.ordering.models.QuoteItemInfo.hashCode(),quote,,
+smpl.ordering.models.QuoteItemInfo.QuoteItemInfo(),quote,,
+"smpl.ordering.models.QuoteItemInfo.QuoteItemInfo(String sku,double amount)",quote,,
+smpl.ordering.models.QuoteItemInfo.setAmount(double amount),quote,,
+smpl.ordering.models.QuoteItemInfo.setSkuNumber(String sku),quote,,
+smpl.ordering.repositories.mock.MockQuoteRepository.createQuote(Quote quote),quote,,
+smpl.ordering.repositories.mock.MockQuoteRepository.getQuote(String id),quote,,
+smpl.ordering.repositories.mock.MockQuoteRepository.getQuoteIdsByDealerName(String dealerName),quote,,
+smpl.ordering.repositories.mock.MockQuoteRepository.getQuotesByCustomerName(String customerName),quote,,
+"smpl.ordering.repositories.mock.MockQuoteRepository.MockQuoteRepository(CatalogItemsRepository catalog,DealersRepository dealers)",quote,,
+"smpl.ordering.repositories.mock.MockQuoteRepository.removeQuote(String id,String eTag)",quote,,
+smpl.ordering.repositories.mock.MockQuoteRepository.reset(),quote,,
+"smpl.ordering.repositories.mock.MockQuoteRepository.updateQuote(String id,Quote from,String eTag)",quote,,
+smpl.ordering.repositories.mongodb.models.OrderDetails.toOrder(),quote,,
+smpl.ordering.repositories.mongodb.models.QuoteDetails.getCustomerName(),quote,,
+smpl.ordering.repositories.mongodb.models.QuoteDetails.getDealerName(),quote,,
+smpl.ordering.repositories.mongodb.models.QuoteDetails.getId(),quote,,
+smpl.ordering.repositories.mongodb.models.QuoteDetails.getQuoteId(),quote,,
+smpl.ordering.repositories.mongodb.models.QuoteDetails.QuoteDetails(),quote,,
+smpl.ordering.repositories.mongodb.models.QuoteDetails.QuoteDetails(Quote from),quote,,
+smpl.ordering.repositories.mongodb.models.QuoteDetails.setId(String id),quote,,
+smpl.ordering.repositories.mongodb.models.QuoteDetails.toQuote(),quote,,
+smpl.ordering.repositories.mongodb.MongoQuoteRepository.createQuote(Quote from),quote,,
+smpl.ordering.repositories.mongodb.MongoQuoteRepository.findExistingQuote(String id),quote,,
+smpl.ordering.repositories.mongodb.MongoQuoteRepository.getQuote(String id),quote,,
+smpl.ordering.repositories.mongodb.MongoQuoteRepository.getQuoteIdsByDealerName(String dealerName),quote,,
+smpl.ordering.repositories.mongodb.MongoQuoteRepository.getQuotesByCustomerName(String customerName),quote,,
+"smpl.ordering.repositories.mongodb.MongoQuoteRepository.MongoQuoteRepository(MongoTemplate template,DealersRepository dealers)",quote,,
+"smpl.ordering.repositories.mongodb.MongoQuoteRepository.removeQuote(String id,String eTag)",quote,,
+smpl.ordering.repositories.mongodb.MongoQuoteRepository.reset(),quote,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoQuoteRepository.updateQuote(String id,Quote from,String eTag)",quote,,
+smpl.ordering.repositories.QuoteRepository.createQuote(Quote from),quote,,
+smpl.ordering.repositories.QuoteRepository.getQuote(String id),quote,,
+smpl.ordering.repositories.QuoteRepository.getQuoteIdsByDealerName(String dealerName),quote,,
+smpl.ordering.repositories.QuoteRepository.getQuotesByCustomerName(String customerName),quote,,
+"smpl.ordering.repositories.QuoteRepository.removeQuote(String id,String eTag)",quote,,
+"smpl.ordering.repositories.QuoteRepository.updateQuote(String id,Quote quote,String eTag)",quote,,
+smpl.ordering.repositories.RepositoryFactory.getQuoteRepository(),quote,,
+smpl.ordering.OrderingConfiguration.getApplicationContext(),shipment,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.getTelemetryClient(),shipment,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.main(String[] args),shipment,TRUE,class duplicate in all five partitions
+smpl.ordering.OrderingConfiguration.mongoTemplate(),shipment,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.OrderingConfiguration(),shipment,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.orderingServiceProperties(),shipment,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.repositoryFactory(),shipment,TRUE,not in microservice
+smpl.ordering.OrderingConfiguration.setApplicationContext(ApplicationContext context),shipment,TRUE,not in microservice
+smpl.ordering.repositories.RepositoryFactory.getFactory(),shipment,TRUE,
+smpl.ordering.repositories.RepositoryFactory.init(String storage),shipment,TRUE,
+smpl.ordering.repositories.RepositoryFactory.RepositoryFactory(String storage),shipment,TRUE,
+smpl.ordering.repositories.RepositoryFactory.reset(String storage),shipment,TRUE,
+smpl.ordering.SimpleCORSFilter.destroy(),shipment,TRUE,
+"smpl.ordering.SimpleCORSFilter.doFilter(ServletRequest req,ServletResponse res,FilterChain chain)",shipment,TRUE,
+smpl.ordering.SimpleCORSFilter.init(FilterConfig filterConfig),shipment,TRUE,
+smpl.ordering.TestPath.reset(),shipment,TRUE,
+smpl.ordering.Utility.getTelemetryClient(),shipment,TRUE,not in microservice
+smpl.ordering.Utility.isNullOrEmpty(String str),shipment,TRUE,
+"smpl.ordering.Utility.validateStringField(String field,String fieldName,int count,StringBuilder errors)",shipment,TRUE,
+"smpl.ordering.controllers.ShipmentController.addEvent(String id,ShipmentEventInfo event)",shipment,,
+smpl.ordering.controllers.ShipmentController.createShipmentRecord(ShipmentRecord info),shipment,,
+smpl.ordering.controllers.ShipmentController.deleteShipment(String orderId),shipment,,
+smpl.ordering.controllers.ShipmentController.getDeliveries(),shipment,,not in microservice
+smpl.ordering.controllers.ShipmentController.getOrderRepository(),shipment,,not in microservice
+smpl.ordering.controllers.ShipmentController.getQuoteRepository(),shipment,,not in microservice
+smpl.ordering.controllers.ShipmentController.getShipment(String id),shipment,,
+smpl.ordering.controllers.ShipmentController.getShipmentRepository(),shipment,,not in microservice
+smpl.ordering.controllers.ShipmentController.getShipments(OrderStatus status),shipment,,
+"smpl.ordering.controllers.ShipmentController.updateShipment(String id,ShipmentRecord record)",shipment,,
+smpl.ordering.models.Delivery.getOrder(),shipment,,not in microservice
+smpl.ordering.models.Delivery.getQuote(),shipment,,not in microservice
+smpl.ordering.models.Delivery.getShipmentRecord(),shipment,,not in microservice
+smpl.ordering.models.Delivery.setOrder(Order order),shipment,,not in microservice
+smpl.ordering.models.Delivery.setQuote(Quote quote),shipment,,not in microservice
+smpl.ordering.models.Delivery.setShipmentRecord(ShipmentRecord shipmentRecord),shipment,,
+smpl.ordering.models.DeliveryAddress.DeliveryAddress(),shipment,,
+"smpl.ordering.models.DeliveryAddress.DeliveryAddress(String street,String city,String state,String postalCode,String specialInstructions)",shipment,,
+smpl.ordering.models.DeliveryAddress.getCity(),shipment,,
+smpl.ordering.models.DeliveryAddress.getPostalCode(),shipment,,
+smpl.ordering.models.DeliveryAddress.getSpecialInstructions(),shipment,,
+smpl.ordering.models.DeliveryAddress.getState(),shipment,,
+smpl.ordering.models.DeliveryAddress.getStreet(),shipment,,
+smpl.ordering.models.DeliveryAddress.isNotEmpty(String str),shipment,,
+smpl.ordering.models.DeliveryAddress.setCity(String city),shipment,,
+smpl.ordering.models.DeliveryAddress.setPostalCode(String postalCode),shipment,,
+smpl.ordering.models.DeliveryAddress.setSpecialInstructions(String specialInstructions),shipment,,
+smpl.ordering.models.DeliveryAddress.setState(String state),shipment,,
+smpl.ordering.models.DeliveryAddress.setStreet(String street),shipment,,
+smpl.ordering.models.DeliveryAddress.validate(),shipment,,
+smpl.ordering.models.PhoneInfo.getKind(),shipment,,
+smpl.ordering.models.PhoneInfo.getPhoneNumber(),shipment,,
+smpl.ordering.models.PhoneInfo.PhoneInfo(),shipment,,
+"smpl.ordering.models.PhoneInfo.PhoneInfo(String phoneNumber,String kind)",shipment,,
+smpl.ordering.models.PhoneInfo.setKind(String kind),shipment,,
+smpl.ordering.models.PhoneInfo.setPhoneNumber(String phoneNumber),shipment,,
+smpl.ordering.models.ShipmentEventInfo.getComments(),shipment,,
+smpl.ordering.models.ShipmentEventInfo.getDate(),shipment,,
+smpl.ordering.models.ShipmentEventInfo.setComments(String comments),shipment,,
+smpl.ordering.models.ShipmentEventInfo.setDate(String date),shipment,,
+smpl.ordering.models.ShipmentEventInfo.ShipmentEventInfo(),shipment,,
+"smpl.ordering.models.ShipmentEventInfo.ShipmentEventInfo(String date,String comments)",shipment,,
+smpl.ordering.models.ShipmentEventInfo.validate(),shipment,,
+smpl.ordering.models.ShipmentRecord.addEvent(ShipmentEventInfo event),shipment,,
+"smpl.ordering.models.ShipmentRecord.addEvent(String date,String comments)",shipment,,
+smpl.ordering.models.ShipmentRecord.getAlternateContactPhone(),shipment,,
+smpl.ordering.models.ShipmentRecord.getContactName(),shipment,,
+smpl.ordering.models.ShipmentRecord.getDeliveryAddress(),shipment,,
+smpl.ordering.models.ShipmentRecord.getDeliveryDate(),shipment,,
+smpl.ordering.models.ShipmentRecord.getEvents(),shipment,,
+smpl.ordering.models.ShipmentRecord.getOrderId(),shipment,,
+smpl.ordering.models.ShipmentRecord.getPrimaryContactPhone(),shipment,,
+smpl.ordering.models.ShipmentRecord.setAlternateContactPhone(PhoneInfo alternateContactPhone),shipment,,
+smpl.ordering.models.ShipmentRecord.setContactName(String contactName),shipment,,
+smpl.ordering.models.ShipmentRecord.setDeliveryAddress(DeliveryAddress deliveryAddress),shipment,,
+smpl.ordering.models.ShipmentRecord.setDeliveryDate(String deliveryDate),shipment,,
+smpl.ordering.models.ShipmentRecord.setOrderId(String orderId),shipment,,
+smpl.ordering.models.ShipmentRecord.setPrimaryContactPhone(PhoneInfo primaryContactPhone),shipment,,
+smpl.ordering.models.ShipmentRecord.ShipmentRecord(),shipment,,
+smpl.ordering.models.ShipmentRecord.ShipmentRecord(ShipmentRecord other),shipment,,
+smpl.ordering.models.ShipmentRecord.validate(),shipment,,
+"smpl.ordering.repositories.mock.MockShipmentRepository.addEvent(String id,ShipmentEventInfo event)",shipment,,
+smpl.ordering.repositories.mock.MockShipmentRepository.createShipment(ShipmentRecord info),shipment,,
+smpl.ordering.repositories.mock.MockShipmentRepository.getShipmentById(String id),shipment,,
+smpl.ordering.repositories.mock.MockShipmentRepository.getShipments(OrderStatus status),shipment,,
+smpl.ordering.repositories.mock.MockShipmentRepository.MockShipmentRepository(OrderRepository orders),shipment,,
+"smpl.ordering.repositories.mock.MockShipmentRepository.removeShipment(String id,String eTag)",shipment,,
+smpl.ordering.repositories.mock.MockShipmentRepository.reset(),shipment,,
+smpl.ordering.repositories.mock.MockShipmentRepository.updateShipment(ShipmentRecord info),shipment,,
+smpl.ordering.repositories.mongodb.models.ShipmentDetails.getId(),shipment,,
+smpl.ordering.repositories.mongodb.models.ShipmentDetails.setId(String id),shipment,,
+smpl.ordering.repositories.mongodb.models.ShipmentDetails.ShipmentDetails(),shipment,,
+smpl.ordering.repositories.mongodb.models.ShipmentDetails.ShipmentDetails(ShipmentRecord from),shipment,,
+smpl.ordering.repositories.mongodb.models.ShipmentDetails.toShipmentRecord(),shipment,,
+"smpl.ordering.repositories.mongodb.MongoShipmentRepository.addEvent(String id,ShipmentEventInfo event)",shipment,,
+smpl.ordering.repositories.mongodb.MongoShipmentRepository.createShipment(ShipmentRecord info),shipment,,
+smpl.ordering.repositories.mongodb.MongoShipmentRepository.findExistingShipmentDetails(String id),shipment,,
+smpl.ordering.repositories.mongodb.MongoShipmentRepository.getShipmentById(String id),shipment,,
+smpl.ordering.repositories.mongodb.MongoShipmentRepository.getShipments(OrderStatus status),shipment,,
+"smpl.ordering.repositories.mongodb.MongoShipmentRepository.MongoShipmentRepository(MongoTemplate template,OrderRepository orders)",shipment,,
+"smpl.ordering.repositories.mongodb.MongoShipmentRepository.removeShipment(String id,String eTag)",shipment,,
+smpl.ordering.repositories.mongodb.MongoShipmentRepository.reset(),shipment,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoShipmentRepository.saveUpdates(ShipmentDetails existing,ShipmentRecord result)",shipment,,
+smpl.ordering.repositories.mongodb.MongoShipmentRepository.updateShipment(ShipmentRecord info),shipment,,
+smpl.ordering.repositories.RepositoryFactory.getShipmentRepository(),shipment,,
+"smpl.ordering.repositories.ShipmentRepository.addEvent(String id,ShipmentEventInfo event)",shipment,,
+smpl.ordering.repositories.ShipmentRepository.createShipment(ShipmentRecord info),shipment,,
+smpl.ordering.repositories.ShipmentRepository.getShipmentById(String id),shipment,,
+smpl.ordering.repositories.ShipmentRepository.getShipments(OrderStatus status),shipment,,
+"smpl.ordering.repositories.ShipmentRepository.removeShipment(String id,String eTag)",shipment,,
+smpl.ordering.repositories.ShipmentRepository.updateShipment(ShipmentRecord info),shipment,,
+smpl.ordering.AppInsightsFilter.destroy(),uncounted,,not in microservice
+"smpl.ordering.AppInsightsFilter.doFilter(ServletRequest req,ServletResponse res,FilterChain chain)",uncounted,,not in microservice
+smpl.ordering.AppInsightsFilter.init(FilterConfig filterConfig),uncounted,,not in microservice
+smpl.ordering.controllers.PingController.getStatus(),uncounted,,not in microservice
+smpl.ordering.controllers.PingController.ping(),uncounted,,not in microservice
+smpl.ordering.MongoDBProperties.getDatabase(),uncounted,,not in microservice
+smpl.ordering.MongoDBProperties.getHost(),uncounted,,not in microservice
+smpl.ordering.MongoDBProperties.setDatabase(String database),uncounted,,not in microservice
+smpl.ordering.MongoDBProperties.setHost(String host),uncounted,,not in microservice
+smpl.ordering.OrderingInitializer.configure(SpringApplicationBuilder application),uncounted,,not in microservice
+smpl.ordering.OrderingInitializer.getApplicationPath(),uncounted,,not in microservice
+smpl.ordering.OrderingInitializer.onStartup(ServletContext servletContext),uncounted,,not in microservice
+smpl.ordering.OrderingServiceProperties.getInstrumentationKey(),uncounted,,not in microservice
+smpl.ordering.OrderingServiceProperties.getPingMessage(),uncounted,,not in microservice
+smpl.ordering.OrderingServiceProperties.getStorage(),uncounted,,not in microservice
+smpl.ordering.OrderingServiceProperties.getValidationMessage(),uncounted,,not in microservice
+smpl.ordering.OrderingServiceProperties.setInstrumentationKey(String instrumentationKey),uncounted,,not in microservice
+smpl.ordering.OrderingServiceProperties.setPingMessage(String message),uncounted,,not in microservice
+smpl.ordering.OrderingServiceProperties.setStorage(String storage),uncounted,,not in microservice
+smpl.ordering.OrderingServiceProperties.setValidationMessage(String validationMessage),uncounted,,not in microservice
+smpl.ordering.PostgresqlProperties.getDriverClass(),uncounted,,not in microservice
+smpl.ordering.PostgresqlProperties.getPassword(),uncounted,,not in microservice
+smpl.ordering.PostgresqlProperties.getUrl(),uncounted,,not in microservice
+smpl.ordering.PostgresqlProperties.getUsername(),uncounted,,not in microservice
+smpl.ordering.PostgresqlProperties.setDriverClass(String driverClass),uncounted,,not in microservice
+smpl.ordering.PostgresqlProperties.setPassword(String password),uncounted,,not in microservice
+smpl.ordering.PostgresqlProperties.setUrl(String url),uncounted,,not in microservice
+smpl.ordering.PostgresqlProperties.setUsername(String username),uncounted,,not in microservice
+smpl.ordering.PropertyHelper.getProperties(),uncounted,,not in microservice
+smpl.ordering.PropertyHelper.getPropValues(String propFileName),uncounted,,not in microservice
+"smpl.ordering.repositories.mock.MockDealersRepository.compareDealerNames(String name,DealerInfo info)",uncounted,,not in microservice
+smpl.ordering.repositories.mock.MockDealersRepository.getDealer(String name),uncounted,,not in microservice
+smpl.ordering.repositories.mock.MockDealersRepository.getDealers(),uncounted,,not in microservice
+smpl.ordering.repositories.mock.MockDealersRepository.MockDealersRepository(),uncounted,,not in microservice
+"smpl.ordering.repositories.mock.MockDealersRepository.removeDealer(String name,String eTag)",uncounted,,not in microservice
+smpl.ordering.repositories.mock.MockDealersRepository.reset(),uncounted,,not in microservice
+"smpl.ordering.repositories.mock.MockDealersRepository.upsertDealer(DealerInfo dealer,String eTag)",uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.models.Dealer.Dealer(),uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.models.Dealer.Dealer(DealerInfo from),uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.models.Dealer.getId(),uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.models.Dealer.setId(String id),uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.models.Dealer.toDealerInfo(),uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.aggregate(Aggregation aggregation,Class<?> inputType,Class<O> outputType)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.aggregate(Aggregation aggregation,String collectionName,Class<O> outputType)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.aggregate(TypedAggregation<?> aggregation,Class<O> outputType)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.aggregate(TypedAggregation<?> aggregation,String collectionName,Class<O> outputType)",uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.collectionExists(Class<T> entityClass),uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.collectionExists(String collectionName),uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.count(Query query,Class<?> entityClass)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.count(Query query,String collectionName)",uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.createCollection(Class<T> entityClass),uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.createCollection(Class<T> entityClass,CollectionOptions collectionOptions)",uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.createCollection(String collectionName),uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.createCollection(String collectionName,CollectionOptions collectionOptions)",uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.dropCollection(Class<T> entityClass),uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.dropCollection(String collectionName),uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.execute(Class<?> entityClass,CollectionCallback<T> action)",uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.execute(DbCallback<T> action),uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.execute(String collectionName,CollectionCallback<T> action)",uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.executeCommand(DBObject command),uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.executeCommand(DBObject command,int options)",uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.executeCommand(String jsonCommand),uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.executeInSession(DbCallback<T> action),uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.executeQuery(Query query,String collectionName,DocumentCallbackHandler dch)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.exists(Query query,Class<?> entityClass)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.exists(Query query,Class<?> entityClass,String collectionName)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.exists(Query query,String collectionName)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.find(Query query,Class<T> entityClass)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.find(Query query,Class<T> entityClass,String collectionName)",uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.findAll(Class<T> entityClass),uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.findAll(Class<T> entityClass,String collectionName)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.findAllAndRemove(Query query,Class<T> entityClass)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.findAllAndRemove(Query query,Class<T> entityClass,String collectionName)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.findAllAndRemove(Query query,String collectionName)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.findAndModify(Query query,Update update,Class<T> entityClass)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.findAndModify(Query query,Update update,Class<T> entityClass,String collectionName)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.findAndModify(Query query,Update update,FindAndModifyOptions options,Class<T> entityClass)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.findAndModify(Query query,Update update,FindAndModifyOptions options,Class<T> entityClass,String collectionName)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.findAndRemove(Query query,Class<T> entityClass)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.findAndRemove(Query query,Class<T> entityClass,String collectionName)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.findById(Object id,Class<T> entityClass)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.findById(Object id,Class<T> entityClass,String collectionName)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.findOne(Query query,Class<T> entityClass)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.findOne(Query query,Class<T> entityClass,String collectionName)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.geoNear(NearQuery near,Class<T> entityClass)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.geoNear(NearQuery near,Class<T> entityClass,String collectionName)",uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.getCollection(String collectionName),uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.getCollectionName(Class<?> entityClass),uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.getCollectionNames(),uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.getConverter(),uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.group(Criteria criteria,String inputCollectionName,GroupBy groupBy,Class<T> entityClass)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.group(String inputCollectionName,GroupBy groupBy,Class<T> entityClass)",uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.indexOps(Class<?> entityClass),uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.indexOps(String collectionName),uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.insert(Collection<? extends Object> batchToSave,Class<?> entityClass)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.insert(Collection<? extends Object> batchToSave,String collectionName)",uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.insert(Object objectToSave),uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.insert(Object objectToSave,String collectionName)",uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.insertAll(Collection<? extends Object> objectsToSave),uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.mapReduce(Query query,String inputCollectionName,String mapFunction,String reduceFunction,Class<T> entityClass)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.mapReduce(Query query,String inputCollectionName,String mapFunction,String reduceFunction,MapReduceOptions mapReduceOptions,Class<T> entityClass)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.mapReduce(String inputCollectionName,String mapFunction,String reduceFunction,Class<T> entityClass)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.mapReduce(String inputCollectionName,String mapFunction,String reduceFunction,MapReduceOptions mapReduceOptions,Class<T> entityClass)",uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.MongoOperationsWithRetry(MongoOperations underlying),uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.remove(Object object),uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.remove(Object object,String collection)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.remove(Query query,Class<?> entityClass)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.remove(Query query,Class<?> entityClass,String collectionName)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.remove(Query query,String collectionName)",uncounted,,not in microservice
+smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.save(Object objectToSave),uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.save(Object objectToSave,String collectionName)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.sendTelemetry(Date start,Date end,String operation,boolean success)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.updateFirst(Query query,Update update,Class<?> entityClass)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.updateFirst(Query query,Update update,Class<?> entityClass,String collectionName)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.updateFirst(Query query,Update update,String collectionName)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.updateMulti(Query query,Update update,Class<?> entityClass)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.updateMulti(Query query,Update update,Class<?> entityClass,String collectionName)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.updateMulti(Query query,Update update,String collectionName)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.upsert(Query query,Update update,Class<?> entityClass)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.upsert(Query query,Update update,Class<?> entityClass,String collectionName)",uncounted,,not in microservice
+"smpl.ordering.repositories.mongodb.MongoOperationsWithRetry.upsert(Query query,Update update,String collectionName)",uncounted,,not in microservice
