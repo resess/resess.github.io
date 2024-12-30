@@ -1,0 +1,171 @@
+{
+  "tool": {
+    "decomposition": {
+      "partition0": [
+        {
+          "id": "smpl.ordering.AppInsightsFilter"
+        },
+        {
+          "id": "smpl.ordering.BadRequestException"
+        },
+        {
+          "id": "smpl.ordering.ConflictingRequestException"
+        },
+        {
+          "id": "smpl.ordering.controllers.CatalogController"
+        },
+        {
+          "id": "smpl.ordering.controllers.DealerController"
+        },
+        {
+          "id": "smpl.ordering.controllers.OrderController"
+        },
+        {
+          "id": "smpl.ordering.controllers.PingController"
+        },
+        {
+          "id": "smpl.ordering.controllers.QuoteController"
+        },
+        {
+          "id": "smpl.ordering.controllers.QuoteController"
+        },
+        {
+          "id": "smpl.ordering.models.CatalogItem"
+        },
+        {
+          "id": "smpl.ordering.models.DealerInfo"
+        },
+        {
+          "id": "smpl.ordering.models.Delivery"
+        },
+        {
+          "id": "smpl.ordering.models.DeliveryAddress"
+        },
+        {
+          "id": "smpl.ordering.models.Order"
+        },
+        {
+          "id": "smpl.ordering.models.OrderEventInfo"
+        },
+        {
+          "id": "smpl.ordering.models.OrderStatus"
+        },
+        {
+          "id": "smpl.ordering.models.OrderUpdateInfo"
+        },
+        {
+          "id": "smpl.ordering.models.PhoneInfo"
+        },
+        {
+          "id": "smpl.ordering.models.Quote"
+        },
+        {
+          "id": "smpl.ordering.models.QuoteItemInfo"
+        },
+        {
+          "id": "smpl.ordering.models.ShipmentEventInfo"
+        },
+        {
+          "id": "smpl.ordering.models.ShipmentRecord"
+        },
+        {
+          "id": "smpl.ordering.MongoDBProperties"
+        },
+        {
+          "id": "smpl.ordering.OrderingConfiguration"
+        },
+        {
+          "id": "smpl.ordering.OrderingInitializer"
+        },
+        {
+          "id": "smpl.ordering.OrderingServiceProperties"
+        },
+        {
+          "id": "smpl.ordering.PostgresqlProperties"
+        },
+        {
+          "id": "smpl.ordering.PropertyHelper"
+        },
+        {
+          "id": "ConflictingRequestException"
+        },
+        {
+          "id": "smpl.ordering.repositories.CatalogItemsRepository"
+        },
+        {
+          "id": "smpl.ordering.repositories.DealersRepository"
+        },
+        {
+          "id": "smpl.ordering.repositories.mock.MockCatalogItemsRepository"
+        },
+        {
+          "id": "smpl.ordering.repositories.mock.MockDealersRepository"
+        },
+        {
+          "id": "smpl.ordering.repositories.mock.MockOrderRepository"
+        },
+        {
+          "id": "smpl.ordering.repositories.mock.MockQuoteRepository"
+        },
+        {
+          "id": "smpl.ordering.repositories.mock.MockShipmentRepository"
+        },
+        {
+          "id": "smpl.ordering.repositories.mongodb.models.CatalogItem"
+        },
+        {
+          "id": "smpl.ordering.repositories.mongodb.models.Dealer"
+        },
+        {
+          "id": "smpl.ordering.repositories.mongodb.models.OrderDetails"
+        },
+        {
+          "id": "smpl.ordering.repositories.mongodb.models.QuoteDetails"
+        },
+        {
+          "id": "smpl.ordering.repositories.mongodb.models.ShipmentDetails"
+        },
+        {
+          "id": "smpl.ordering.repositories.mongodb.MongoCatalogItemsRepository"
+        },
+        {
+          "id": "smpl.ordering.repositories.mongodb.MongoDealersRepository"
+        },
+        {
+          "id": "smpl.ordering.repositories.mongodb.MongoOperationsWithRetry"
+        },
+        {
+          "id": "smpl.ordering.repositories.mongodb.MongoOrderRepository"
+        },
+        {
+          "id": "smpl.ordering.repositories.mongodb.MongoOrderRepository"
+        },
+        {
+          "id": "smpl.ordering.repositories.mongodb.MongoShipmentRepository"
+        },
+        {
+          "id": "smpl.ordering.repositories.OrderRepository"
+        },
+        {
+          "id": "smpl.ordering.repositories.QuoteRepository"
+        },
+        {
+          "id": "smpl.ordering.repositories.RepositoryFactory"
+        },
+        {
+          "id": "smpl.ordering.repositories.ShipmentRepository"
+        },
+        {
+          "id": "smpl.ordering.SimpleCORSFilter"
+        },
+        {
+          "id": "smpl.ordering.TestPath"
+        },
+        {
+          "id": "smpl.ordering.Utility"
+        }
+      ]
+    }
+  }
+}
+
