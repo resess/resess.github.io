@@ -45,7 +45,7 @@
                 <nav role="navigation" aria-label="Main navigation">
                     <ul class="navigation-list">
                         <li class="navigation-list-item"><a href="../../index.html" class="navigation-list-link">Home</a>
-                        <li class="navigation-list-item active"><a href="../../docs/artifact/index.html" class="navigation-list-link active">Artifact</a>
+                        <li class="navigation-list-item active"><a href="../../docs/artifact/index.html" class="navigation-list-link active">Implementation</a>
                         <li class="navigation-list-item"><a href="../../docs/evaluation/index.html" class="navigation-list-link">Evaluation Package</a>
                         <li class="navigation-list-item"><a href="../../docs/results/index.html" class="navigation-list-link">Results</a>
                         <li class="navigation-list-item"><a href="../../docs/rules/index.html" class="navigation-list-link">Rules</a>
@@ -64,58 +64,6 @@
 <!-- <p class="fs-6 fw-300" style="padding-top: 25px;"> <span style="font-variant:small-caps;font-family:'Times New Roman', Times, serif;">ViaLin</span>'s implementation is available <a href="https://github.com/resess/ViaLin">here</a>.
 </p> -->
 
-<p>This page describes how to install and run ViaLin. </p>
-<ol>
-<li><p>Install and build Android AOSP version 8.0.0 by following the instructions in the <a href="https://source.android.com/docs/setup/build/building">Android manual</a> (in our evaluation, we targeted android-8.0.0_r21, lunch 31).</p>
-</li>
-<li><p>Download the <a href="../../data/ViaLinArtifact.zip">artifact</a> and unpack it to vialin/</p>
-</li>
-<li><p>Change the directory to path-taint folder, then build the tool with <code>mvn package install</code></p>
-</li>
-<li><p>Copy vialin/android-src/openjdk_java_files.mk to [AOSP]/libcore/openjdk_java_files.mk</p>
-</li>
-<li><p>Copy vialin/android-src/droiddoc.mk to [AOSP]/build/make/core/droiddoc.mk</p>
-</li>
-<li><p>Copy vialin/android-src/droiddoc_core.mk to [AOSP]/build/core/droiddoc.mk</p>
-</li>
-<li><p>Copy vialin/android-src/java.mk to [AOSP]/build/core/java.mk</p>
-</li>
-<li><p>Copy vialin/android-src/Thread.java to [AOSP]/libcore/ojluni/src/main/java/java/lang/Thread.java</p>
-</li>
-<li><p>Copy vialin/android-src/PathTaint.java to [AOSP]/libcore/ojluni/src/main/java/java/lang/PathTaint.java</p>
-</li>
-<li><p>Copy vialin/android-src/TaintDroid.java to [AOSP]/libcore/ojluni/src/main/java/java/lang/TaintDroid.java</p>
-</li>
-<li><p>Copy vialin/android-src/instruction_builder.cc to [AOSP]/art/compiler/optimizing/instruction_builder.cc</p>
-</li>
-<li><p>Copy vialin/android-src/java_lang_Thread.cc to [AOSP]/art/runtime/native/java_lang_Thread.cc</p>
-</li>
-</ol>
-<ol>d
-<li><p>Copy vialin/android-src/register_line-inl.h to [AOSP]/art/runtime/verifier/register_line-inl.h</p>
-</li>
-<li><p>Copy vialin/android-src/method_verifier.cc to [AOSP]/art/runtime/verifier/method_verifier.cc </p>
-</li>
-<li><p>Copy vialin/android-src/register_line.cc to [AOSP]/art/runtime/verifier/register_line.cc </p>
-</li>
-<li><p>Copy vialin/android-src/class_linker.cc to [AOSP]/art/runtime/class_linker.cc </p>
-</li>
-<li><p>Replace [path-to-jar] in java.mk to the jar file built from step #3</p>
-</li>
-<li><p>Create a folder called <code>framework_analysis_results</code>, place its path in [framework_analysis_results] in the java.mk</p>
-</li>
-<li><p>Create folder class_info/ inside <code>framework_analysis_results</code></p>
-</li>
-<li><p>Replace [path-to-sources] ang [path-to-sink] in java.mk with path to the absolute path of <code>GPBench/config/empty.txt</code> from the evaluation package</p>
-</li>
-</ol>
-<ol>
-<li><p>Change the directory to the [AOSP], follow the &quot;Setting up the environment&quot;, &quot;Choosing a target&quot;, and &quot;Building the code&quot; section of the <a href="https://source.android.com/docs/setup/build/building">Building Android Manual</a></p>
-</li>
-<li><p>Flash an Android device by following the instructions in the Android Manual <a href="https://source.android.com/docs/setup/build/running">Flashing Devices</a></p>
-</li>
-<li><p>An example on how to taint and install an app on the device is in the evaluation package <code>GPBench/scripts/run_gp.py</code>, run from the vialin directory <code>python3 GPBench/scripts/run_gp.py</code>, modify the paths in the script to point to the correct folder for the AOSP, <code>framework_analysis_results</code>, source/sink lists, the android-record-and-replay tool included in vialin, and the path to the apk.</p>
-</li>
-</ol>
+<p>ViaLin implementation is available at <a href="https://github.com/resess/ViaLin">https://github.com/resess/ViaLin</a></p>
 
 
