@@ -1,0 +1,162 @@
+
+% !TeX TXS-program:compile = txs:///pdflatex/[--shell-escape]
+% as image: imgmagick -density 300 
+\documentclass[preview, convert]{standalone} 
+\input{macro}
+
+\begin{document}
+
+\begin{table*}[t]
+  \setlength{\tabcolsep}{1.5pt}
+  \renewcommand{\arraystretch}{1.1}
+  \caption*{Activation Properties (out of 185 activities)}
+  %\vspace{-0.1in}
+  \label{tbl:prop}%
+  \centering
+  % Indentation, Label, Percentage, Bar, Empty
+  %\begin{subtable}[t]{\linewidth}
+      \begin{tabular}[t]{|P{0.1cm}P{1.3cm}P{0.1cm}|P{1.8cm}|P{9cm}|}%P{1cm}|}
+      \hline 
+      \multicolumn{3}{|l|}{\textbf{Property}}      & \textbf{\# of Activities (\%)} & \textbf{Reasons} \\ \hline %&  
+      \multicolumn{3}{|l|}{\textbf{1. Exported}} & 31 (16.8\%) & \makecell[l]{2. Alternate entry (29)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.2. Information (2)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.2. Disabled for all end-users (1)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.1. Software (1)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{7. Environment (1)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{8. Usage patterns (1)}\\ \hline
+     \multicolumn{3}{|l|}{\multirow{1}{*}{\textbf{2. Activation Location}}} & 185 (100\%) & \makecell[l]{}\\ \hline
+     \multicolumn{3}{|l|}{\multirow{1}{*}{\textbf{Code}}} & 149 (80.5\%) & \makecell[l]{}\\ \hline
+      & \multicolumn{2}{l|}{\textbf{GUI/lifecycle}} & 114 (61.6\%) & \makecell[l]{1. Server (20)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{2. Alternate entry (15)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.1. Equipment (12)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.2. Information (14)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.1. Disabled for app version (26)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.2. Disabled for all end-users (9)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{5. Error handling (11)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.1. Software (9)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.2. Hardware (9)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{7. Environment (7)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{8. Usage patterns (3)}\\ \hline
+      & \multicolumn{2}{l|}{\textbf{Other Android}} & 25 (13.5\%) & \makecell[l]{1. Server (13)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{2. Alternate entry (1)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.2. Information (2)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.1. Disabled for app version (1)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{5. Error handling (9)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.1. Software (2)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.2. Hardware (1)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{7. Environment (1)}\\ \hline
+      & \multicolumn{2}{l|}{\textbf{App-specific}} & 10 (5.4\%) & \makecell[l]{1. Server (9)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.1. Equipment (1)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{5. Error handling (1)}\\ \hline
+     \multicolumn{3}{|l|}{\multirow{5}{*}{\textbf{Manifest}}} & 36 (19.5\%) & \makecell[l]{2. Alternate entry (34)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.1. Equipment (1)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.2. Information (2)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.2. Disabled for all end-users (1)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.1. Software (1)}\\ \hline
+     \multicolumn{3}{|l|}{\multirow{1}{*}{\textbf{3. Activation Guards}}} & 138 (74.6\%) & \makecell[l]{}\\ \hline
+     \multicolumn{3}{|l|}{\multirow{1}{*}{\textbf{Enforcement}}} & 138 (74.6\%) & \makecell[l]{}\\ \hline
+      & \multicolumn{2}{l|}{\textbf{In Code}} & 117 (63.2\%) & \makecell[l]{1. Server (32)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{2. Alternate entry (12)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.1. Equipment (13)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.2. Information (14)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.1. Disabled for app version (15)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.2. Disabled for all end-users (5)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{5. Error handling (20)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.1. Software (11)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.2. Hardware (9)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{7. Environment (7)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{8. Usage patterns (3)}\\ \hline
+      & \multicolumn{2}{l|}{\textbf{In Resources}} & 21 (11.4\%) & \makecell[l]{1. Server (39)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{2. Alternate entry (35)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.1. Equipment (5)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.2. Information (15)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.1. Disabled for app version (12)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.2. Disabled for all end-users (2)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{5. Error handling (15)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.1. Software (8)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.2. Hardware (3)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{7. Environment (4)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{8. Usage patterns (2)}\\ \hline
+     \multicolumn{3}{|l|}{\multirow{1}{*}{\textbf{Restriction}}} & 138 (74.6\%) & \makecell[l]{}\\ \hline
+      & \multicolumn{2}{l|}{\textbf{Mandatory}} & 91 (49.2\%) & \makecell[l]{1. Server (29)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{2. Alternate entry (14)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.1. Equipment (10)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.2. Information (12)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.1. Disabled for app version (9)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.2. Disabled for all end-users (1)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{5. Error handling (15)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.1. Software (7)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.2. Hardware (5)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{7. Environment (5)}\\ \hline
+      & \multicolumn{2}{l|}{\textbf{Discretionary}} & 47 (25.4\%) & \makecell[l]{1. Server (6)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.1. Equipment (3)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.2. Information (2)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.1. Disabled for app version (16)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.2. Disabled for all end-users (9)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{5. Error handling (5)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.1. Software (4)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.2. Hardware (5)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{7. Environment (3)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{8. Usage patterns (3)}\\ \hline
+     \multicolumn{3}{|l|}{\multirow{1}{*}{\textbf{4. Data }}} & 143 (77.3\%) & \makecell[l]{}\\ \hline
+     \multicolumn{3}{|l|}{\multirow{1}{*}{\textbf{Type}}} & 143 (77.3\%) & \makecell[l]{}\\ \hline
+      & \multicolumn{2}{l|}{\textbf{Parameters}} & 123 (66.5\%) & \makecell[l]{1. Server (39)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{2. Alternate entry (35)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.1. Equipment (5)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.2. Information (15)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.1. Disabled for app version (12)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.2. Disabled for all end-users (2)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{5. Error handling (15)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.1. Software (8)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.2. Hardware (3)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{7. Environment (4)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{8. Usage patterns (2)}\\ \hline
+      & \multicolumn{2}{l|}{\textbf{Execution Dependencies}} & 52 (28.1\%) & \makecell[l]{1. Server (10)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{2. Alternate entry (12)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.1. Equipment (11)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.2. Information (5)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.1. Disabled for app version (5)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.2. Disabled for all end-users (2)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{5. Error handling (11)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.1. Software (5)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.2. Hardware (3)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{7. Environment (2)}\\ \hline
+     \multicolumn{3}{|l|}{\multirow{1}{*}{\textbf{Format}}} & 143 (77.3\%) & \makecell[l]{}\\ \hline
+      & \multicolumn{2}{l|}{\textbf{Primitive}} & 107 (57.8\%) & \makecell[l]{1. Server (30)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{2. Alternate entry (29)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.1. Equipment (8)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.2. Information (14)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.1. Disabled for app version (13)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.2. Disabled for all end-users (2)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{5. Error handling (14)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.1. Software (7)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.2. Hardware (2)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{7. Environment (5)}\\ \hline
+      & \multicolumn{2}{l|}{\textbf{Strings}} & 69 (37.3\%) & \makecell[l]{1. Server (23)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{2. Alternate entry (27)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.1. Equipment (2)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.2. Information (6)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.1. Disabled for app version (6)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.2. Disabled for all end-users (2)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{5. Error handling (5)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.1. Software (6)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.2. Hardware (1)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{7. Environment (4)}\\ \hline
+      & \multicolumn{2}{l|}{\textbf{Objects}} & 86 (46.5\%) & \makecell[l]{1. Server (28)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{2. Alternate entry (14)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.1. Equipment (11)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{3.2. Information (8)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.1. Disabled for app version (9)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{4.2. Disabled for all end-users (3)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{5. Error handling (15)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.1. Software (5)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{6.2. Hardware (4)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{7. Environment (1)}\\ \cline{5-5}
+      & \multicolumn{2}{l|}{\textbf{}} &  & \makecell[l]{8. Usage patterns (2)}\\ \hline
+     
+     
+      \end{tabular}    
+  %\end{subtable}
+\end{table*}
+
+\end{document}

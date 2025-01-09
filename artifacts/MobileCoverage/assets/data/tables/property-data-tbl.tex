@@ -1,0 +1,38 @@
+
+% !TeX TXS-program:compile = txs:///pdflatex/[--shell-escape]
+% as image: imgmagick -density 300 
+\documentclass[preview, convert]{standalone} 
+\input{macro}
+
+\begin{document}
+
+\begin{table}[tb]
+  \setlength{\tabcolsep}{3pt}% padding left and right of cell content, default 6pt
+  \caption*{Used Data Types}
+  \label{tbl:conditionsDataFull}
+  \resizebox{\columnwidth}{!}{%
+  \begin{tabular}{|P{5cm}|P{5cm}|P{3cm}|}
+  \hline
+  \textbf{Params}                 & \textbf{Exec. Dependencies}       & \# of Activities (\%)\\ \hline\hline
+  Primitives only                 & Primitives only                   & 0                 \\ \hline
+  Primitives only                 & Primitives + Strings              & 0                 \\ \hline
+  Primitives only                 & Primitives + Strings + Objects    & 6 (3.2\%)                \\ \hline
+  Primitives only                 & No                                & 18 (9.8\%)                \\ \hline
+  No                              & Primitives only                   & 0                \\ \hline
+  Primitives + Strings            & Primitives only                   & 2 (1.1\%)                     \\ \hline
+  Primitives + Strings            & Primitives + Strings              & 2 (1.1\%)                     \\ \hline
+  Primitives + Strings            & Primitives + Strings + Objects    & 13 (7\%)                     \\ \hline
+  Primitives + Strings            & No                                & 35 (18.9\%)                     \\ \hline
+  No                              & Primitives + Strings              & 0                     \\ \hline
+  Primitives + Strings + Objects  & Primitives only                   & 5 (2.7\%)                     \\ \hline
+  Primitives + Strings + Objects  & Primitives + Strings              & 0                    \\ \hline
+  Primitives + Strings + Objects  & Primitives + Strings + Objects    & 4 (2.2\%)                     \\ \hline
+  Primitives + Strings + Objects  & No                                & 38 (20.5\%)                \\ \hline
+  No                              & Primitives + Strings + Objects    & 20 (10.8\%)                \\ \hline
+  
+\end{tabular}%
+  }
+  \end{table}     
+  
+
+\end{document}

@@ -150,6 +150,15 @@
 \newcommand{\xmark}{\ding{55}}%
 \newcommand{\cmarkwithcross}{\textcolor{red}{\ding{51}}\textsuperscript{\textcolor{red}{\kern-0.5em\tiny\ding{55}}}}
 
+
+\newcommand{\circleempty}{%
+    \tikz[baseline=-2pt]{\draw[fill=white] (0,0) circle (0.07);}%
+}
+\newcommand{\circlefull}{%
+    \tikz[baseline=-2pt]{\draw[fill=black!60] (0,0) circle (0.07);}%
+}
+
+
 %%%%%%%%%%%% Multiple-line text in a table cell:
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 
