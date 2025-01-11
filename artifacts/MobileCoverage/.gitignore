@@ -12,6 +12,7 @@ _site
 *.fdb_latexmk
 *.fls
 *.synctex(busy)
+~*.xlsx
 tools.pdf
 websiteToolTbl.pdf
 latexmkrc
