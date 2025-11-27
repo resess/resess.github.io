@@ -1,0 +1,73 @@
+\documentclass[preview, convert]{standalone} 
+\input{macro}
+
+\begin{document}
+
+%------- MOVE TO APPENDIX ---
+
+\begin{table*}[!h]
+    \setlength{\tabcolsep}{1pt}
+    \renewcommand{\arraystretch}{1.2}
+	\centering
+	\vspace{-0.1in}
+	\caption{Coverage for Google Play Apps (\topgp)}
+	\label{tbl:cov-results}
+	\vspace{-0.1in}
+	\resizebox{0.69\linewidth}{!}{%
+	\begin{tabular}{|C{0.42cm}|l||c|c|c|c|c|c|c|c|}
+		\hline
+		\multirow{2}{*}{ID}	& \multirow{2}{*}{App Name}				& \multirow{2}{*}{\makecell{\#Down-\\loads}}			& \multirow{2}{*}{\makecell{Popu-\\larity}}   & \multirow{2}{*}{Category} 	      & \multirow{2}{*}{\makecell{\#Acti-\\vities}}	& \multicolumn{3}{c|}{\#Reached Activities (\%)} 	\\ \cline{7-9}
+							& 										&										&								           &							      &  	                     		&Tools					            & Manual		      &	Total		\\ \hline \hline
+        
+                            1 & WhatsAppMessenger                   & 5B+ & 4 & Communication                    & 387 & 117 (30.2\%) & 131 (33.9\%) & 152 (39.3\%) \\ \hline
+                            2 & SpotifyMusicandPodcasts             & 1B+ & 36 & Music \& Audio                  & 98 & 13 (13.3\%) & 31 (31.6\%) & 31 (31.6\%) \\ \hline
+                            3 & Instagram                           & 1B+ & 25 & Social Media                    & 264 & 12 (4.5\%) & 17 (6.4\%) & 17 (6.4\%) \\ \hline
+                            4 & TikTok                              & 1B+ & 6 & Social Media                     & 325 & 49 (15.1\%) & 79 (24.3\%) & 83 (25.5\%) \\ \hline
+        {\bf 5}             & {\bf Pinterest}                       & {\bf 500M+} & {\bf 53} & {\bf Lifestyle}     & {\bf 30} & {\bf 13 (43.3\%)} & {\bf  15 (50.0\%)} & {\bf  15 (50.0\%)} \\ \hline
+                            6 & Uber-Requestaride                   & 500M+ & 23 & Maps \& Navigation            & 128 & 2 (1.6\%) & 2 (1.6\%) & 2 (1.6\%) \\ \hline
+                            7 & AmazonPrimeVideo                    & 500M+ & 17 & Entertainment                 & 80 & 23 (28.8\%) & 35 (43.8\%) & 35 (43.8\%) \\ \hline
+                            8 & Google Wallet                       & 500M+ & 8 & Finance                        & 69 & 3 (4.3\%) & 3 (4.3\%) & 4 (5.8\%) \\ \hline
+                            9 & CapCut-VideoEditor                  & 500M+ & 8 & Video Players                  & 178 & 48 (27.0\%) & 54 (30.3\%) & 61 (34.3\%) \\ \hline
+        {\bf 10}            & {\bf SamsungSmartSwitchMobile}        & {\bf 100M+}   & {\bf 20} & {\bf Tools}     & {\bf 51} & {\bf 10 (19.6\%)} & {\bf 10 (19.6\%)} & {\bf 10 (19.6\%)}\\ \hline
+                            11 & Duolingo                           & 100M+ & 51 & Education                     & 128 & 25 (20.3\%) & 26 (21.1\%) & 31 (24.2\%) \\ \hline
+                            12 & AudibleAudioEntertainment          & 100M+ & 32 & Books \& Reference            & 63 & 12 (19.0\%) & 18 (28.6\%) & 18 (28.6\%) \\ \hline
+                            13 & CanvaDesignPhotoVideo              & 100M+ & 31 & Art \& Design                 & 29 & 7 (24.1\%) & 9 (31.0\%) & 10 (34.5\%) \\ \hline
+                            14 & MicrosoftTeams                     & 100M+ & 15 & Business                      & 299 & 7 (2.3\%) & 8 (2.7\%) & 8 (2.7\%) \\ \hline
+        {\bf 15}            & {\bf Pluto TV}                        & {\bf 100M+} & {\bf 2} & {\bf Entertainment} & {\bf 13} & {\bf 1 (7.7\%)} & {\bf 1 (7.7\%)} & {\bf 1 (7.7\%)}\\ \hline
+                            16 & BumbleDatingFriendsapp             & 50M+ & 73 & Dating                         & 199 & 11 (5.5\%) & 38 (19.1\%) & 42 (21.1\%) \\ \hline
+                            17 & BeCloserShareyourlocation          & 10M+ & >200 & Parenting                    & 16 & 5 (31.3\%) & 10 (62.5\%) & 10 (62.5\%) \\ \hline
+                            18 & CardBoard                          & 10M+ & >200 & Libraries \& Demo  & 17 & 7 (41.2\%) & 8 (47.1\%) & 8 (47.1\%) \\ \hline
+                            19 & FIFA+ - Your Home for Football     & 10M+ & 70 & Sports                         & 35 & 7 (20.0\%) & 6 (25.7\%) & 8 (22.9\%) \\ \hline
+                            20 & Expedia: Hotels, Flights \& Car    & 10M+ & 68 & Travel \& Local                & 84 & 26 (31.0\%) & 25 (39.3\%) & 29 (34.5\%) \\ \hline
+        {\bf 21}            & {\bf TemuShopLikeaBillionaire}        & {\bf 10M+} & {\bf 1} & {\bf Shopping}  & {\bf 31} & {\bf 9 (29.0\%)} & {\bf 13 (41.9\%)} & {\bf 13 (41.9\%)}\\ \hline
+                            22 & TheWeatherNetwork                  & 10M+ & 64 & Weather                        & 63 & 19 (30.2\%) & 25 (38.1\%) & 26 (41.3\%) \\ \hline
+                            23 & PictureThis-PlantIdentifier        & 10M+ & 25 & Education                      & 197 & 41 (20.8\%) & 37 (18.8\%) & 45 (22.8\%) \\ \hline
+                            24 & Ticketmaster                       & 10M+ & 22 & Events                         & 110 & 9 (8.2\%) & 16 (14.5\%) & 18 (16.4\%) \\ \hline
+                            25 & ShopAllYourFavoriteBrands          & 10M+ & 19 & Shopping                       & 10 & 3 (30.0\%) & 3 (30.0\%) & 4 (40.0\%) \\ \hline
+                            26 & Lensa                              & 10M+ & 1 & Photography                     & 46 & 27 (58.7\%) & 27 (63.0\%) & 32 (69.6\%) \\ \hline
+        {\bf 27}            & {\bf McDonaldsCanada}                 & {\bf 5M+} & {\bf 14} & {\bf Food \& Drink}  & {\bf 157} & {\bf 33 (21.0\%)} & {\bf 35 (22.3\%)} & {\bf 35 (22.3\%)}\\ \hline
+                            28 & FeverLocalEventsTickets            & 5M+ & >200 & Events                        & 125 & 27 (21.6\%) & 36 (28.8\%) & 36 (28.8\%) \\ \hline
+                            29 & SephoraBuyMakeupSkincare           & 5M+ & 75 & Beauty                          & 130 & 42 (32.3\%) & 52 (40.0\%) & 56 (43.1\%) \\ \hline
+                            30 & Wonder - AI Art Generator          & 5M+ & 3 & Art \& Design                    & 76 & 9 (11.8\%) & 8 (10.5\%) & 10 (13.2\%) \\ \hline
+                            31 & AutoTrader-ShopCarDeals            & 1M+ & >200 & Auto \& Vehicles              & 60 & 17 (28.3\%) & 24 (40.0\%) & 25 (41.7\%) \\ \hline
+                            32 & MessengerLite-SMSLauncher          & 1M+ & 93 & Personalization & 65 & 11 (16.9\%) & 18 (27.7\%) & 19 (29.2\%) \\ \hline
+        {\bf 33}            & {\bf LocalNews}                       & {\bf 1M+} & {\bf 74} & {\bf News \& Magaz.}  & {\bf 75} & {\bf 32 (42.7\%)} & {\bf 36 (48.0\%)} & {\bf 37 (49.3\%)} \\ \hline
+                            34 & AIMirrorAIArtPhotoEditor           & 1M+ & 55 & Photography  & 63 & 1 (1.6\%) & 5 (7.9\%) & 5 (7.9\%) \\ \hline
+                            35 & AirCanada+Aeroplan                 & 1M+ & 53 & Travel \& Local  & 29 & 3 (10.3\%) & 4 (13.8\%) & 4 (13.8\%) \\ \hline
+                            36 & FeelsyStressAnxietyRelief          & 1M+ & 27 & Health \& Fitness  & 34 & 4 (11.8\%) & 7 (20.6\%) & 7 (20.6\%) \\ \hline
+                            37 & ChatGPTpoweredChat-NovaAI          & 1M+ & 5 & Productivity  & 19 & 2 (10.5\%) & 3 (15.8\%) & 3 (15.8\%) \\ \hline
+                            38 & REALTOR.caRealEstateHomes          & 500K+ & >200 & House \& Home  & 15 & 8 (53.3\%) & 9 (60.0\%) & 9 (60.0\%) \\ \hline
+                            39 & ShoppersDrugMart                   & 500K+ & >200 & Medical  & 17 & 1 (5.9\%) & 2 (11.8\%) & 2 (11.8\%) \\ \hline
+                            40 & VIZManga                           & 500K+ & >200 & Comics  & 32 & 17 (53.1\%) & 17 (53.1\%) & 17 (53.1\%) \\ \hline
+                            41 & CBCSportsScoresNews                & 500K+ & 102 & Sports  & 35 & 11 (31.4\%) & 11 (31.4\%) & 11 (31.4\%) \\ \hline
+        {\bf 42}            & {\bf PC Health}                       & {\bf 500K+} & {\bf 14} & {\bf Health \& Fitness}  & {\bf 29} & {\bf 6 (20.7\%)} & {\bf 8 (27.6\%)} & {\bf 8 (27.6\%)} \\ \hline
+                            \hline
+        \multicolumn{2}{|l}{Average}								& \multicolumn{3}{c|}{}		  & 93.1 & \avgt\% & \avgm\% & \avgHT\% \\ 
+        \hline
+	\end{tabular}
+	}
+\vspace{-0.15in}
+\end{table*}
+
+
+\end{document}

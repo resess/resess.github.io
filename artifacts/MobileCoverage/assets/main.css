@@ -247,8 +247,8 @@ table {
         padding-bottom: 5px; }
       .site-nav .page-link {
         display: block;
-        padding: 5px 10px;
-        margin-left: 20px; }
+        margin-left: 20px;
+        padding: 5px 10px; }
         .site-nav .page-link:not(:last-child) {
           margin-right: 0; } }
 
