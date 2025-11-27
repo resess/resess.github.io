@@ -1,0 +1,123 @@
+{
+  "1": {
+    "title": "Benchmark",
+    "content": "Here is the list of all clients failed after the upgrade (168 client-library pairs): . Failed Clients . Here is the list of libraries categorized in 8 bins (84 unique libraries): . List of Libraries and bins . . As running the client and library projects needs merging two projects in one and creating a merged jar to run Slicer4J, we provide the merged and ready to run folders in a Google Drive folder (https://drive.google.com/file/d/1XZ_lJG7cgMJvOSvlURCJgSG3Hu-cFvWM/view?usp=share_link). . . Here, there is a page for each subject including the client and the library GitHub links as well as the zip files of the source code for the specific versions used in the study: . Subject#1 (Jettison/Xstream) . Subject#2 (Square-Dagger/Modelmapper) . Subject#3 (Moshi/Retrofit) . Subject#4 (Jackson-Core/Mockserver) . Subject#5 (Antlr4-Runtime/Fizzed-Rocker) . Subject#6 (Httpcomponents-Client/Wasabi) . Subject#7 (Jackson-Databind/OpenAPI-Generator) . Subject#8 (Alibaba-Druid/Dble) .",
+    "url": "http://localhost:4000/docs/benchmark",
+    "relUrl": "/docs/benchmark"
+  },
+  "2": {
+    "title": "Implementation",
+    "content": "The source code of our framework is available on GitHub: https://github.com/resess/InPreSS .",
+    "url": "http://localhost:4000/docs/implementation",
+    "relUrl": "/docs/implementation"
+  },
+  "3": {
+    "title": "Home",
+    "content": "Responsibility in Context: On Applicability of Slicing in Semantic Regression Analysis . . Numerous program slicing approaches aim at helping developers troubleshoot regression failures – one of the most time-consuming development tasks. The main idea behind these approaches is to identify a subset of interdependent program statements relevant to the failure, minimizing the amount of code developers need to inspect. Accuracy and reduction rate achieved by these techniques are key considerations toward their applicability in practice: inspecting only the statements identified in the slice should be faster and more efficient than inspecting the code in full. This paper reports on our experiment applying one of the most recent and accurate slicing approaches, dual slicing, to the task of troubleshooting regression failures in eight large, open-source software projects. The results of our experiments show that slices produced in this setup are still very large to be comfortably managed. Moreover, we observe that most statements in the slice deal with propagation of information between changed code blocks; these statements are essential for obtaining the necessary context for the changes but are not responsible for the failure directly. Motivated by this insight, we propose a novel approach, implemented in a tool named InPreSS, for reducing the size of a slice by accurately identifying and summarizing the propagation-related code blocks. Our evaluation of InPreSS shows that it is able to produce slices that are 75% shorter than the original ones for our case-study projects (299 vs. 2,449 code-level statements, on average), thus, reducing the amount of information developers need to inspect without losing the necessary contextual information. We believe our study and the proposed approach will help promote the efficient integration of slicing-based techniques in debugging activities and will inspire further research in this area. . . This website contains artifacts used for experimental evaluation described in the paper. We anonymized all information which can be related back to the authors of the paper. .",
+    "url": "http://localhost:4000/",
+    "relUrl": "/"
+  },
+  "4": {
+    "title": "Results",
+    "content": "The detailed information about experiment results is provided below. . Here, there is a page for each subject including the original traces, the dual slices, and slice summaries: . Subject#1 (Jettison/Xstream) . Subject#2 (Square-Dagger/Modelmapper) . Subject#3 (Moshi/Retrofit) . Subject#4 (Jackson-Core/Mockserver) . Subject#5 (Antlr4-Runtime/Fizzed-Rocker) . Subject#6 (Httpcomponents-Client/Wasabi) . Subject#7 (Jackson-Databind/OpenAPI-Generator) . Subject#8 (Alibaba-Druid/Dble) .",
+    "url": "http://localhost:4000/docs/results",
+    "relUrl": "/docs/results"
+  },
+  "5": {
+    "title": "",
+    "content": "Client (Xstream) . GitHub . | Zip file . | . | Library (Jettison) . Old (1.2) . GitHub . | Zip file . | . | New (1.4) . GitHub . | Zip file . | . | . | .",
+    "url": "http://localhost:4000/docs/data/s1/",
+    "relUrl": "/docs/data/s1/"
+  },
+  "6": {
+    "title": "",
+    "content": "Client (Modelmapper) . GitHub . | Zip file . | . | Library (Square-Dagger) . Old (0.9.1) . GitHub . | Zip file . | . | New (1.2.5) . GitHub . | Zip file . | . | . | .",
+    "url": "http://localhost:4000/docs/data/s2/",
+    "relUrl": "/docs/data/s2/"
+  },
+  "7": {
+    "title": "",
+    "content": "Client (Retrofit) . GitHub . | Zip file . | . | Library (Moshi) . Old (1.8.0) . GitHub . | Zip file . | . | New (1.9.2) . GitHub . | Zip file . | . | . | .",
+    "url": "http://localhost:4000/docs/data/s3/",
+    "relUrl": "/docs/data/s3/"
+  },
+  "8": {
+    "title": "",
+    "content": "Client (Mockserver) . GitHub . | Zip file . | . | Library (Jackson-Core) . Old (2.9.9) . GitHub . | Zip file . | . | New (2.10.1) . GitHub . | Zip file . | . | . | .",
+    "url": "http://localhost:4000/docs/data/s4/",
+    "relUrl": "/docs/data/s4/"
+  },
+  "9": {
+    "title": "",
+    "content": "Client (Fizzed/Rocker) . GitHub . | Zip file . | . | Library (Antlr4-Runtime) . Old (4.5.3) . GitHub . | Zip file . | . | New (4.7.2) . GitHub . | Zip file . | . | . | .",
+    "url": "http://localhost:4000/docs/data/s5/",
+    "relUrl": "/docs/data/s5/"
+  },
+  "10": {
+    "title": "",
+    "content": "Client (Wasabi) . GitHub . | Zip file . | . | Library (Httpcomponents-Client) . Old (4.5.1) . GitHub . | Zip file . | . | New (4.5.10) . GitHub . | Zip file . | . | . | .",
+    "url": "http://localhost:4000/docs/data/s6/",
+    "relUrl": "/docs/data/s6/"
+  },
+  "11": {
+    "title": "",
+    "content": "Client (OpenAPI-Generator) . GitHub . | Zip file . | . | Library (Jackson-Databind) . Old (2.9.10) . GitHub . | Zip file . | . | New (2.10.1) . GitHub . | Zip file . | . | . | .",
+    "url": "http://localhost:4000/docs/data/s7/",
+    "relUrl": "/docs/data/s7/"
+  },
+  "12": {
+    "title": "",
+    "content": "Client (Dble) . GitHub . | Zip file . | . | Library (Alibaba-Druid) . Old (1.1.14) . GitHub . | Zip file . | . | New (1.1.21) . GitHub . | Zip file . | . | . | .",
+    "url": "http://localhost:4000/docs/data/s8/",
+    "relUrl": "/docs/data/s8/"
+  },
+  "13": {
+    "title": "",
+    "content": "Original . Old Trace . | New Trace . | . | Dual Slice . Old Trace . | New Trace . | . | Minimized . Old Trace . | New Trace . | . | .",
+    "url": "http://localhost:4000/docs/res/s1/",
+    "relUrl": "/docs/res/s1/"
+  },
+  "14": {
+    "title": "",
+    "content": "Original . Old Trace . | New Trace . | . | Dual Slice . Old Trace . | New Trace . | . | Minimized . Old Trace . | New Trace . | . | .",
+    "url": "http://localhost:4000/docs/res/s2/",
+    "relUrl": "/docs/res/s2/"
+  },
+  "15": {
+    "title": "",
+    "content": "Original . Old Trace . | New Trace . | . | Dual Slice . Old Trace . | New Trace . | . | Minimized . Old Trace . | New Trace . | . | .",
+    "url": "http://localhost:4000/docs/res/s3/",
+    "relUrl": "/docs/res/s3/"
+  },
+  "16": {
+    "title": "",
+    "content": "Original . Old Trace . | New Trace . | . | Dual Slice . Old Trace . | New Trace . | . | Minimized . Old Trace . | New Trace . | . | .",
+    "url": "http://localhost:4000/docs/res/s4/",
+    "relUrl": "/docs/res/s4/"
+  },
+  "17": {
+    "title": "",
+    "content": "Original . Old Trace . | New Trace . | . | Dual Slice . Old Trace . | New Trace . | . | Minimized . Old Trace . | New Trace . | . | .",
+    "url": "http://localhost:4000/docs/res/s5/",
+    "relUrl": "/docs/res/s5/"
+  },
+  "18": {
+    "title": "",
+    "content": "Original . Old Trace . | New Trace . | . | Dual Slice . Old Trace . | New Trace . | . | Minimized . Old Trace . | New Trace . | . | .",
+    "url": "http://localhost:4000/docs/res/s6/",
+    "relUrl": "/docs/res/s6/"
+  },
+  "19": {
+    "title": "",
+    "content": "Original . Old Trace . | New Trace . | . | Dual Slice . Old Trace . | New Trace . | . | Minimized . Old Trace . | New Trace . | . | .",
+    "url": "http://localhost:4000/docs/res/s7/",
+    "relUrl": "/docs/res/s7/"
+  },
+  "20": {
+    "title": "",
+    "content": "Original . Old Trace . | New Trace . | . | Dual Slice . Old Trace . | New Trace . | . | Minimized . Old Trace . | New Trace . | . | .",
+    "url": "http://localhost:4000/docs/res/s8/",
+    "relUrl": "/docs/res/s8/"
+  }
+  
+}
