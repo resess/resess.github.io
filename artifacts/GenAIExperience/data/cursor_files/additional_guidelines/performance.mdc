@@ -1,0 +1,14 @@
+---
+description: This rule specifies the performance optimization guidelines for the application. 
+alwaysApply: true
+---
+
+The project implementation must comply with the following performance optimization guidelines:
+- Use dynamic loading for non-critical components. 
+- Implement caching strategies for frequently accessed data. 
+- Optimize API response times. 
+- Optimize image and asset delivery. 
+- Ensure database schemas and queries are optimized with proper indexing for performance. 
+- Use lazy loading and pagination for large datasets. 
+- Use efficient algorithms and data structures. 
+

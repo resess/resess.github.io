@@ -1,0 +1,154 @@
+---
+description: This rule describes frontend design. 
+alwaysApply: true
+---
+
+The frontend must comply with the following design:
+
+# Frontend Architecture Layers
+The frontend follows the recommended architecture outlined in the official Android documentation. It consists of an UI layer and Data layer. Each layer can have sub-layers. The architecture is organized as follow:
+
+- UI layer: Consists of UI Elements sub-layer and State Holder sub-layer. UI Elements sub-layer renders data on the screen, consisting of feature-specific UI Elements, reusable UI Components, Theme, and Navigation. Reusable UI Components contain UI elements that are reusable across screens. Theme defines colors, typography, etc. of the app. Navigation manages screen transitions. State Holders sub-layer holds data, exposes the data to the UI, and handles UI logic. 
+
+
+- Data layer: Consists of Repositories sub-layer and Data Sources sub-layer. Data Sources sub-layer defines data that are stored locally on the device local or fetched remotely. Repositories sub-layer specifies the abstraction over data sources.
+
+There are also application-level cross-cutting concerns that apply across layers, including Utils and DI. 
+
+- Utils defines common helpers, utilities, constants, and extension functions 
+
+- DI are Hilt dependency injection modules that define how to create and provide dependencies
+
+# UI Layer Design 
+
+The UI layer of the frontend is roughly organized by features of the app:
+- Authentication: Allow users to sign in via Google Authentication Service.
+- Group: Allow users to view the list and details of groups they own or joined, create/delete a group, and join/leave a group. 
+- Voting: Allow both owners and members to vote on movies using the swiping gesture. 
+
+# Data Layer Design 
+
+The Data layer of the frontend is organized by domain:
+- User domain: Manages user authentication state, authorization tokens, and user data.
+- VotingGroup domain: Manages group data, voting session states, membership information, and vote submissions.
+- Movie domain: Manages movie data and genre information.
+
+# Frontend Code Structure 
+
+Kotlin code of the frontend Android application is under `frontend/app/src/main/java/com/movieswipe`. In this folder, organize the code by architectural layers into the following packages: 
+
+```
+/app
+├── /ui    				# Contain code of the UI layer.	                   	
+│      ├── /ui_elements  		# Contain code of the UI layer, UI Elements sub-layer.	 	
+│      ├── /stateholders    		# Contain code of the UI layer, State Holders sub-layer.	 
+│      ├── /resuable_ui_components # Contain code of the UI layer cross-cutting concerns Reusable UI Components.
+│      ├── /theme  			# Contain code of the UI layer cross-cutting concerns Theme.	
+│      └── /navigation  		# Contain code of the UI layer cross-cutting concerns Navigation.
+├── /data                   		# Contain code of the Data layer.
+│      ├── /repositories     		# Contain code of the Data layer, Repositories sub-layer.
+│      └── /datasources    	        	# Contain code of the Data layer, Data Sources sub-layer.
+├── /utils  			
+└── /di  			
+```
+
+- Inside the `/ui` folder, organize files by the following features: Authentication, Group, and Voting.
+- Inside the `/data` folder, organize files by the following domains: User, VotingGroup, and Movie.
+
+# Frontend Architecture Diagram
+Here is the frontend architecture diagram written in Mermaid. Each box in the diagram represents a component in a specific layer. Each edge represents a dependency between the components.
+
+```mermaid
+block-beta
+columns 5
+block:uielements
+columns 1
+space
+space
+A_UI["Authentication UI Elements"]
+space
+G_UI["Group UI Elements"]
+space
+V_UI["Voting UI Elements"]
+end
+
+block:stateholder
+columns 1
+GOOGLE["Google Authentication (External APIs)"]
+space
+A_SH["Authentication State Holders"]
+space
+G_SH["Group State Holders"]
+space
+V_SH["Voting State Holders"]
+end
+
+block:repositories
+columns 1
+space
+U_R["User Repositories"]
+space
+M_R["Movie Repositories"]
+space
+VG_R["VotingGroup Repositories"]
+space
+N_S["Notification Service (global)"]
+space
+FCM["Firebase Cloud Messaging (External APIs)"]
+end
+
+block:datasources
+columns 1
+space
+U_DS["User Data Sources"]
+space
+M_DS["Movie Data Sources"]
+space
+VG_DS["VotingGroup Data Sources"]
+space
+TS_DS["Token Storage Data Sources"]
+end
+
+block:external
+columns 1
+space
+BE["Back-end"]
+space
+DE["Device"]
+end
+
+block:uicrosscutting:1
+columns 1
+REUSE_UI["Reusable UI Components"]
+THEME_UICC["Theme"]
+NAVI_UICC["Navigation"]
+end
+
+block:na:4
+columns 4
+end
+
+block:applicationcrosscutting:5
+columns 1
+DI_CC["Dependency Injection (DI)"]
+UTIL_CC["Utils"]
+end
+
+A_UI --> A_SH
+G_UI --> G_SH
+V_UI --> V_SH
+A_SH --> GOOGLE
+A_SH --> U_R
+G_SH --> VG_R
+G_SH --> M_R
+V_SH --> VG_R
+U_R --> U_DS
+U_R --> TS_DS
+VG_R --> VG_DS
+M_R --> M_DS
+N_S --> FCM
+U_DS --> BE
+VG_DS --> BE
+M_DS --> BE
+TS_DS --> DE
+```

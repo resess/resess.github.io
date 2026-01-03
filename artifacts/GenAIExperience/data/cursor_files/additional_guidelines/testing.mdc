@@ -1,0 +1,11 @@
+---
+description: This rule specifies the testing guidelines for the application.
+alwaysApply: true 
+---
+
+The project tests must comply with the following testing guidelines:
+- Follow test-driven development. 
+- Use descriptive and meaningful names. For test variables, use names like inputX, mockX, actualX, expectedX, etc. For test cases, use names that clearly describe the expected behavior. 
+- Implement proper error handling and logging in tests to provide clear failure messages. 
+- Write comprehensive API-level backend tests for each backend API.
+- Write comprehensive end-to-end tests for each app feature.

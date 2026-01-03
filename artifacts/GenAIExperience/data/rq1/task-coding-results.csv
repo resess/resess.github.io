@@ -1,0 +1,47 @@
+Category,Subcategories,Concept
+Explain concepts,Explain implementation concepts,Get answers on how-to questions
+Explain concepts,Explain implementation concepts,Ask questions on math for routing calculation
+Explain concepts,Explain implementation concepts,Understand other group’s code 
+Explain concepts,Explain implementation concepts,Learn language syntax and code examples on a given task
+Explain concepts,Explain implementation concepts,Learn to use Frontend APIs such as Glide and Retrofit
+Explain concepts,Explain implementation concepts,Learn about new technologies needed for this project
+Explain concepts,Explain implementation concepts,Help integrate the systems and the external modules 
+Explain concepts,Explain implementation concepts,Access documentation insights
+Explain concepts,Explain concepts in requirements and design,Explain UML diagram types
+Explain concepts,Explain concepts in requirements and design,Discover external APIs to use
+Explain concepts,Explain concepts in requirements and design,"Get technical assistance such as encryption, external APIs"
+Explain concepts,Explain concepts in requirements and design,Suggest frameworks/technologies to use for a given task
+Explain concepts,Explain concepts in testing,Get answers to questions about automated testing
+Explain concepts,Explain concepts in testing,Get technical assistance
+Explain concepts,Explain concepts in testing,Gain familiarity with the syntax of the Espresso and Jest 
+Generate artifacts,Generate documents,"Write clear, well reasoned justifications for unfixed Codacy issues "
+Generate artifacts,Generate documents,Convert logs to markdown for easier access
+Generate artifacts,Generate documents,Generate Markdown documentation
+Generate artifacts,Generate implementation,Generate code
+Generate artifacts,Generate implementation,Generate code for new endpoint from natural language
+Generate artifacts,Generate implementation,Generate GitHub Action scripts
+Generate artifacts,Generate implementation,"Write KDocs for public functions, interfaces, and classes. "
+Generate artifacts,Generate requirements and design,Generate requirement/design ideas for students to build off
+Generate artifacts,Generate requirements and design,Generate boilerplate PlantUML code for all diagrams
+Generate artifacts,Generate tests,Generate tests
+Generate artifacts,Generate tests,Suggest the most appropriate way to create a test case to increase code coverage 
+Generate artifacts,Generate tests,"Brainstorm test cases, generate starter code for unit test"
+Generate artifacts,Generate tests,Generate boilerplate code for tests
+Refine artifacts,Refine documents,"Format report, improve writing"
+Refine artifacts,Refine documents,Refine the wording for our documentation. 
+Refine artifacts,Refine documents,Convert document to markdown format
+Refine artifacts,Refine implementation,Debug code
+Refine artifacts,Refine implementation,Refine code
+Refine artifacts,Refine implementation,Fix Codacy errors
+Refine artifacts,Refine implementation,Ask and clarify how to resolve codacy issues
+Refine artifacts,Refine implementation,Identify potential bugs and performance bottlenecks
+Refine artifacts,Refine implementation,Refine UI elements
+Refine artifacts,Refine implementation,Refactor existing code
+Refine artifacts,Refine implementation,Analyze code and find potential sources of errors
+Refine artifacts,Refine requirement and design,Refine functional requirements and non-functional requirement
+Refine artifacts,Refine requirement and design,Give feedback on design and use cases
+Refine artifacts,Refine requirement and design,Give feedback on overall requirement and design
+Refine artifacts,Refine requirement and design,Refine requirement/design ideas
+Refine artifacts,Refine tests,Debug tests
+Refine artifacts,Refine tests,Refine testing approach
+Refine artifacts,Refine tests,Refine test cases

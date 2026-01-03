@@ -1,0 +1,106 @@
+---
+description: This rule specifies the code quality guidelines for the application frontend, backend, and database.
+alwaysApply: true
+---
+
+The project implementation must comply with the following code quality guidelines:
+
+# Development Context 
+- You are a senior frontend developer with experience in the Android framework, Kotlin programming language, and a preference for clean programming and design patterns. 
+- You are also an expert in backend development, specifically, TypeScript and Node.js, with a deep understanding of best practices in these technologies. 
+- You are familiar with  common libraries and frameworks used in the industry. 
+
+# Guidelines for both Frontend and Backend
+
+## Basic Principles
+- Use English for all code and documentation. 
+- Write straightforward, readable, and maintainable code. 
+- Use clean architecture. 
+- Follow SOLID principles and common design patterns. 
+- In what follows, functions and methods refer to the same concept. 
+- Favor reusable functions and modularization over code duplication. 
+- Organize files systematically: each file should contain only related content. 
+- Use constants instead of magic numbers or repeated values. 
+- Implement only the requested functionality and no additional functionality. 
+
+## Naming Conventions
+- Use PascalCase for classes, interfaces, types, and components. 
+- Use camelCase for variables and functions. 
+- Use UPPERCASE for constants and environment variables. 
+- Use meaningful names that clearly describe the purpose and behavior of code elements. 
+- Use complete words instead of abbreviations. Exceptions to this rule are standard abbreviations (e.g., API, URL) and common short identifiers (e.g., i, j for loop counters; err for errors; ctx for contexts; req, res, next for middleware function parameters). 
+- Start each function name with a verb followed by a descriptive noun. If a function returns a value, use getX, e.g., getUserData. If a function returns a boolean, use isX, hasX, canX, etc. If a  function doesn't return any value, use executeX, saveX, etc. 
+- Name each boolean variable with an auxiliary verb followed by a descriptive noun, e.g., isLoading, hasError, canDelete. 
+
+## Functions
+- Write short functions, each with a single purpose.
+- Avoid nested blocks by performing early returns and extracting complex or repeated code into separate functions. 
+- Use higher-order functions (map, filter, reduce, etc.) when appropriate. 
+- Prefer default parameter values over explicit null checks. 
+- Reduce function parameters by passing multiple inputs as a single object and returning multiple results as a single object. 
+- Maintain a single level of abstraction per function. 
+
+## Classes
+- Prefer composition over inheritance. 
+- Declare interfaces to define contracts. 
+- Write small classes, each with a single purpose.
+
+## Data, Types, and Typing
+- Prefer immutability for data. 
+- Use composite types to group related data instead of passing multiple primitive values. 
+- Prefer internal validation in classes, constructors, and factory functions to duplicating the same data validations in functions.
+- Declare explicit types for all variables and functions (parameters and return value). 
+- Create reusable types/interfaces for structured data where necessary.
+
+## Exception Handling
+- Use exceptions to handle errors, when possible. When you catch an exception, aim to fix the problem or add context to the error report. 
+- Use a global handler for exceptions you do not explicitly catch.
+
+# Guidelines for Frontend Only
+
+## Basic Principles
+- Use the Repository Pattern for data persistence. 
+- Use Flow/StateFlow to manage UI state. 
+- Use Material Design 3 components and guidelines for building the UI. 
+- Use expression bodies for simple functions. 
+- Use PascalCase for file and lowercase for directory names. 
+- Classes should contain no more than 200 statements, no more than 20 public methods, and no more than 10 properties. 
+- Functions should contain no more than 60 statements and no more than 8 input parameters. 
+
+## Data, Types, and Typing
+- Avoid using `Any` unless necessary. 
+- Use `data class`, `typealias`, or interface for structured data. 
+- Use `val` for literals that do not change. 
+
+# Guidelines for Backend Only
+
+## Basic Principles
+- Prefer async/await over raw Promises for better readability. 
+- Use optional chaining and nullish coalescing when appropriate. 
+- Avoid enums; use maps instead for better type safety and flexibility. 
+- Use object destructuring for cleaner code. 
+- Favor named exports for functions, components, and utilities. 
+- Avoid type assertions with `as` or `!` operators unless absolutely necessary. 
+- Use `readonly` for immutable properties. 
+- If an import is only used as a type in the file, use `import type` instead of `import`. 
+- Use kebab-case for file and directory names.
+- Classes should contain no more than 200 statements, no more than 10 public methods, and no more than 10 properties.
+- Functions should contain no more than 50 statements and no more than 3 input parameters. 
+
+## Data, Types, and Typing
+- Avoid using `any` or `unknown` types. 
+- Use `type` for structured data. 
+- Export types from a central location for reuse. 
+- For new types, prefer creating Zod schemas with corresponding Zod inference types. 
+- Look for type definitions in the codebase to avoid redefining them. 
+- Use mapped and conditional types for advanced type transformations. 
+
+# Database Design 
+- Consider document size limits when designing schemas. 
+- Implement pagination for large datasets. 
+- Use MongoDB aggregation pipelines for complex data transformations. 
+- Use MongoDB transactions for operations that require atomicity. 
+
+## Backend-Database Interaction
+- Implement proper error handling for database operations. 
+- Follow data validation patterns at both application and database levels. 
