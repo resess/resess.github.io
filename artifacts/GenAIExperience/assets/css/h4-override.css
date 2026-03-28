@@ -1,0 +1,21 @@
+/* Override h4 font size to make it more readable */
+h4 {
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+}
+@media (min-width: 31.25rem) {
+    h4 {
+        font-size: 15px !important;
+    }
+}
+
+/* Markdown-style blockquotes */
+blockquote {
+    border-left: 4px solid #d1d9e0;
+    padding-left: 1em;
+    margin: 1em 0;
+    color: #656d76;
+    font-style: italic;
+}
+

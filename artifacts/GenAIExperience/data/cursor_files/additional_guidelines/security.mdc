@@ -1,0 +1,12 @@
+---
+description: This rule specifies the security guidelines for the application. 
+alwaysApply: true
+---
+
+The project implementation must comply with the following security guidelines:
+- Use HTTPS for all communications. 
+- Protect all backend APIs with proper authentication and authorization. 
+- Validate and sanitize all inputs to prevent injection attacks. 
+- Store sensitive configuration in environment variables instead of hardcoding them in code. 
+- Implement rate limiting on backend API endpoints and external APIs to prevent abuse. 
+- Follow the principle of least privilege for API access. 

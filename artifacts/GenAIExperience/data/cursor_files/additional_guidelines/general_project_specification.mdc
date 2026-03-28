@@ -1,0 +1,30 @@
+---
+description: This rule provides general project specification. 
+alwaysApply: true
+---
+
+The project implementation must comply with the following general project specification guidelines:
+
+# Technology stack
+
+You are required to develop a client-server software system with the client (frontend) running on a mobile device and the server (backend) running in the cloud. 
+
+## Frontend: an Android/Kotlin mobile application
+- Must run natively on Android (not in a browser)
+- Must run on at least one real device and on a Pixel 7 emulator running Android Tiramisu (API 33).
+- Must be written in Kotlin. Using other frameworks, e.g., Expo, ReactNative, Xamarin, Flutter, etc. is not permitted. 
+- Must use Jetpack Compose  (rather than Views) for Android UI.
+
+## Backend: a Node.js/TypeScript server
+- Must run on Node.js
+- Must be implemented in TypeScript
+- If your backend uses a database, you must use MongoDB. 
+
+## Using third-party libraries, services, and frameworks
+- You should implement the major functionalities of the project using Kotlin for the frontend and Node.js for the backend.
+- Using third-party services, such as Firebase, MongoDB Atlas, Realm, AWS Amplify, Azure Functions and App Service, Azure Supabase, Parse Platform, etc., to implement major project functionality, e.g., database management, authentication, and critical application operations, is strictly forbidden.
+- An exception to this rule is Firebase's push notification support, which is required and permitted.
+- If you plan to use any third-party library or service not listed here to support a major functionality of your project, please check with me beforehand, to make sure the use of the specific library is allowed and the functionality will be considered as part of your work. 
+
+# Code Management 
+All code of the project (frontend and backend) should be stored in **one** Git repository, well-structured internally. 

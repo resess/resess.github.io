@@ -1,0 +1,165 @@
+---
+description: This rule describes the backend design.
+alwaysApply: true
+---
+
+The backend must comply with the following design:
+
+# Backend Architecture Layers
+
+The backend follows a layered architecture that has Presentation, Business and Data layers. Each layer can have sub-layers. The architecture is organized as follow: 
+
+- Presentation layer: Consists of the Routes sub-layer and the Controllers sub-layer. Routes sub-layer defines all the endpoints and links them to the Controllers sub-layer. Controllers sub-layer handles incoming HTTP requests.
+
+- Business layer: Contains Services that define the core business logic implementation.
+
+- Data layer: Consists of the Repositories sub-layer and the Models sub-layer. Repositories sub-layer contains data access functions that interact with the database. Models sub-layer defines the structure of the data (e.g., database schemas).
+
+There are also cross-cutting concerns that apply across layers, including Config, Middleware, Types, and Utils.
+
+- Config stores configuration such as environment variables or DB settings.
+
+- Middleware defines functions that process requests and responses before they reach route handlers or after responses are generated. Such functions handle cross-cutting concerns, such as API authentication, logging, input and output validation, etc.
+
+- Types store the shared custom TypeScript type definitions and interfaces.
+
+- Utils store the helper or utility functions.
+
+# Backend Domains
+
+Each backend layer and sub-layer is structured around the following domains:
+- User domain: Manages user authentication, user data, and integration with Google Authentication Service .
+- VotingGroup domain: Manages groups, memberships, and collective movie selection through voting sessions.
+- Movie domain: Manages movie data, genre information, and integration with TMDB APIs.
+
+# Backend Code Structure
+
+Typescript code of the backend Node.js application is under the `/backend` folder. In this folder, organize the code by architectural layers into the following packages:
+
+```
+├── /src                          
+│	├── /routes           # Contain code of the Presentation layer, Routes sub-layer.
+│	├── /controllers      # Contain code of the Presentation layer, Controllers sub-layer.
+│	├── /services         # Contain code of the Business Logic layer.
+│	├── /repositories     # Contain code of the Data layer, Repositories sub-layer.
+│	├── /models           # Contain code of the Data layer, Models sub-layer.
+│	├── /config           # Contain code of the Config cross-cutting concern.
+│	├── /middleware       # Contain code of the Middleware cross-cutting concern.
+│	├── /types            # Contain code of the Types cross-cutting concern.
+│	└── /utils            # Contain code of the Utils cross-cutting concern.
+├──  /tests	            # Contain tests.
+└── /docs               # Store the OpenAPI specification of backend APIs.
+```
+
+- Inside `/routes`, `/controllers`, `/services`, `/repositories`, `/models` folders, organize files by User, VotingGroup, and Movie domains.
+
+
+# Backend Architecture Diagram
+
+Here is the backend architecture diagram written in Mermaid. Each box in the diagram represents a component in a specific layer or sub-layer for a specific domain. Each edge represents a dependency between the components.
+
+```mermaid
+block-beta
+  block
+    columns 1
+    block
+      FE["Front-end"]
+      block:presentation_layer
+        block:routes_sub_layer
+          columns 1
+          U_R["User Routes"]
+          space
+          VG_R["VotingGroup Routes"]
+          space
+          M_R["Movie Routes"]
+        end
+        block:controllers_sub_layer
+          columns 1
+          U_C["User Controllers"]
+          space
+          VG_C["VotingGroup Controllers"]
+          space
+          M_C["Movie Controllers"]
+        end
+      end
+      block:business_layer
+          columns 1
+          U_S["User Services"]
+          space
+          VG_S["VotingGroup Services"]
+          space
+          M_S["Movie Services"]
+          space
+          N_S["Notification Services"]
+      end
+      block:data_layer
+        block:repositories_sub_layer
+          columns 1
+          U_RP["User Repositories"]
+          space
+          VG_RP["VotingGroup Repositories"]
+          space
+          M_RP["Movie Repositories"]
+        end
+        block:models_sub_layer
+          columns 1
+          U_M["User Models"]
+          space
+          VG_M["VotingGroup Models"]
+          space
+          M_M["Movie Models"]
+        end
+      end 
+      block:external_apis
+        columns 1
+        DB[("DB (MongoDB)")]
+        space
+        GOOGLE["Google Authentication (External APIs)"]
+        space
+        TMDB["TMDB (External APIs)"]
+        space
+        FCM["Firebase Cloud Messaging (External APIs)"]
+      end
+    end
+
+    block:cross_cutting
+      columns 1
+      Config
+      Middleware
+      Types
+      Utils
+    end
+  end
+
+  FE --> U_R
+  FE --> VG_R
+  FE --> M_R
+
+  U_R --> U_C
+  VG_R --> VG_C
+  M_R --> M_C
+
+  U_C --> U_S
+  VG_C --> VG_S
+  M_C --> M_S
+
+  VG_S --> M_S
+  VG_S --> N_S
+  M_S --> N_S
+  N_S --> U_S
+  N_S --> FCM
+  
+  U_S --> U_RP
+  VG_S --> VG_RP
+  M_S --> M_RP
+
+  U_RP --> U_M
+  VG_RP --> VG_M
+  M_RP --> M_M
+
+  U_M --> DB
+  VG_M --> DB
+  M_M --> DB
+  U_S --> GOOGLE
+  M_S --> TMDB
+```

@@ -1,0 +1,15 @@
+Category,Sub-categories,Concepts
+Generate artifacts,Pros of using AI to generate artifacts,Automating tedious tasks
+Generate artifacts,Cons of using AI to generate artifacts,Confusing/incorrect suggestions
+Generate artifacts,Cons of using AI to generate artifacts,Difficulties to understand / debug generated code
+Generate artifacts,Cons of using AI to generate artifacts,"Outdated/deprecated libraries, incorrect dependencies"
+Generate artifacts,Cons of using AI to generate artifacts,Do not precisely follow instructions
+Generate artifacts,Cons of using AI to generate artifacts,No global project context
+Refine artifacts,Pros of using AI to refining artifacts,Help debugging issues and code review comments 
+Refine artifacts,Pros of using AI to refining artifacts,"Fixing grammar, clarity, and conciseness of writing"
+Refine artifacts,Pros of using AI to refining artifacts,Good feedback on requirement and design
+Refine artifacts,Cons of using AI to refining artifacts,No course-specific context
+Refine artifacts,Cons of using AI to refining artifacts,Unsatisfactory and repetitive suggestions
+Explain concepts,Pros of using AI to explain concepts,"Learning new languages, frameworks, etc."
+Explain concepts,Cons of using AI to explain concepts,Too generic / impractical solutions
+Explain concepts,Cons of using AI to explain concepts,Over-reliance

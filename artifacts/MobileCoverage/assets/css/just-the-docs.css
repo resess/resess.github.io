@@ -168,6 +168,8 @@ hr { height: 1px; padding: 0; margin: 2rem 0; background-color: #eeebee; border:
 
 .js-main-content:focus { outline: none; }
 
+.header-note {padding-right: 1rem; padding-left: 1rem;}
+
 .page { padding-right: 1rem; padding-left: 1rem; padding-top: 1rem; padding-bottom: 1rem; }
 @media (min-width: 50rem) { .page { padding-right: 2rem; padding-left: 2rem; } }
 @media (min-width: 50rem) { .page { padding-top: 2rem; padding-bottom: 2rem; } }
