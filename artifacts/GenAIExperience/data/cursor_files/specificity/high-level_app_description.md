@@ -1,0 +1,5 @@
+# Description
+
+The name of the app is MovieSwipe. In the app, a user can create a group and invite other users to join the group via an invitation code. The group owner can also delete the group. Upon joining a group, users are asked to specify what genres of movies they like (comedy, horror, action, etc.). The group owner can then start a voting session and the app shows 10 movie recommendations that group members can swipe right for “interested” or left for “not interested”. MovieSwipe’s smart recommendation system looks at everyone’s choices and finds the best match that most people will be happy with. When voting ends, the app shows the winning movie with its details to everyone in the group.
+
+We intend the app to use Google authentication, the TMDB external API to retrieve a set of movies by genre, Firebase Cloud Messaging to notify group members when the owner starts and ends the voting session via push notification, and Socket.IO to automatically update the user interface in several places (live updates), e.g., when a member joins or leaves a group.

@@ -24,39 +24,39 @@ const navigationConfig = {
             path: "docs/2.rq1_aggregated_student_data_and_statistical_test_results.html"
         },
         { 
-            title: "3. RQ1: Coding Process and Results", 
-            href: "docs/3.rq1_coding_process_and_results.html",
-            path: "docs/3.rq1_coding_process_and_results.html"
+            title: "3. RQ1: Coding Results", 
+            href: "docs/3.rq1_coding_results.html",
+            path: "docs/3.rq1_coding_results.html"
         },
         { 
-            title: "4. RQ2: MovieSwipe Description", 
+            title: "4. RQ2: MovieSwipe Formal Use Specifications", 
             href: "docs/4.rq2_movieswipe_description.html",
             path: "docs/4.rq2_movieswipe_description.html"
         },
         { 
-            title: "5. RQ2: MovieSwipe Design", 
-            href: "docs/5.rq2_movieswipe_design.html",
-            path: "docs/5.rq2_movieswipe_design.html"
+            title: "5. RQ2: MovieSwipe Project Structure", 
+            href: "docs/5.rq2_movieswipe_project_structure.html",
+            path: "docs/5.rq2_movieswipe_project_structure.html"
         },
         { 
-            title: "6. RQ2: Project Requirement, Code Quality, and Testing Guidelines", 
-            href: "docs/6.rq2_project_requirement_code_quality_and_testing_guidelines.html",
-            path: "docs/6.rq2_project_requirement_code_quality_and_testing_guidelines.html"
+            title: "6. RQ2: MovieSwipe Design Diagrams", 
+            href: "docs/6.rq2_movieswipe_design.html",
+            path: "docs/6.rq2_movieswipe_design.html"
         },
         { 
-            title: "7. RQ2: Scenario Setup and Prompts", 
-            href: "docs/7.rq2_scenario_setup_and_prompts.html",
-            path: "docs/7.rq2_scenario_setup_and_prompts.html"
+            title: "7. RQ2: Project Requirement, Code Quality, and Testing Guidelines", 
+            href: "docs/7.rq2_project_requirement_code_quality_and_testing_guidelines.html",
+            path: "docs/7.rq2_project_requirement_code_quality_and_testing_guidelines.html"
         },
         { 
-            title: "8. RQ2: MovieSwipe Implementation and Demonstration", 
-            href: "docs/8.rq2_movieswipe_implementation_and_demo.html",
-            path: "docs/8.rq2_movieswipe_implementation_and_demo.html"
+            title: "8. RQ2: Scenario Setup and Prompts", 
+            href: "docs/8.rq2_scenario_setup_and_prompts.html",
+            path: "docs/8.rq2_scenario_setup_and_prompts.html"
         },
         { 
-            title: "9. RQ2: Assessment Criteria", 
-            href: "docs/9.rq2_assessment_criteria.html",
-            path: "docs/9.rq2_assessment_criteria.html"
+            title: "9. RQ2: MovieSwipe Implementation and Demonstration", 
+            href: "docs/9.rq2_movieswipe_implementation_and_demo.html",
+            path: "docs/9.rq2_movieswipe_implementation_and_demo.html"
         },
         { 
             title: "10. RQ2: Expert Developer Observational Notes and Inter-rater Reliability for Assessing Generated Artifacts", 
@@ -84,25 +84,40 @@ function getCurrentPagePath() {
 }
 
 /**
+ * Get the directory portion of a site-relative path (e.g. "docs/foo.html" -> "docs")
+ */
+function getCurrentDirectory(currentPath) {
+    const lastSlash = currentPath.lastIndexOf('/');
+    return lastSlash === -1 ? '' : currentPath.substring(0, lastSlash);
+}
+
+/**
+ * Build a relative href from the current page directory to a target site-root path
+ */
+function getRelativePath(fromDir, toPath) {
+    const fromParts = fromDir ? fromDir.split('/') : [];
+    const toParts = toPath.split('/');
+
+    let commonPrefixLength = 0;
+    while (
+        commonPrefixLength < fromParts.length &&
+        commonPrefixLength < toParts.length - 1 &&
+        fromParts[commonPrefixLength] === toParts[commonPrefixLength]
+    ) {
+        commonPrefixLength++;
+    }
+
+    const upCount = fromParts.length - commonPrefixLength;
+    const downParts = toParts.slice(commonPrefixLength);
+
+    return `${'../'.repeat(upCount)}${downParts.join('/')}`;
+}
+
+/**
  * Get the correct href for navigation items based on current page location
  */
 function getNavigationHref(item, currentPath) {
-    // Determine if we're in a docs subdirectory
-    const isInDocs = currentPath.startsWith('docs/') || window.location.pathname.includes('/docs/');
-    
-    if (isInDocs) {
-        // If we're in docs/, need ../ for root items
-        if (item.path === 'index.html') {
-            return '../index.html';
-        } else if (item.path.startsWith('docs/')) {
-            // For other docs items, remove the docs/ prefix since we're already in docs/
-            return item.path.replace('docs/', '');
-        }
-    } else {
-        // If we're at root, use paths as-is
-        return item.href;
-    }
-    return item.href;
+    return getRelativePath(getCurrentDirectory(currentPath), item.path);
 }
 
 /**

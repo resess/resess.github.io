@@ -2,14 +2,16 @@
 
 ## Setup
 
-### MovieSwipe description: 
+### Project specificity:
 
 * [Formal Use Case Specifications](../../zip/cursor_files.zip)
 
-### MovieSwipe Design: 
+### Design granularity: 
 
-* [`design_frontend.mdc`](../design/design_frontend.mdc)
-* [`design_backend.mdc`](../design/design_backend.mdc)
+* [`structure_frontend.mdc`](../granularity/structure_frontend.mdc)
+* [`structure_backend.mdc`](../granularity/structure_backend.mdc)
+* [`design_frontend.mdc`](../granularity/design_frontend.mdc)
+* [`design_backend.mdc`](../granularity/design_backend.mdc)
 
 ### Additional Cursor Rules that are applied: 
 
@@ -21,119 +23,146 @@
 
 ---
 
-## Prompts
+## Prompts (by-design-components)
 
-### > Prompt 0
+### > Prompt 0: Base Prompt
 
-> I want you to implement a collaborative movie selection app that helps groups decide what movie to watch together using an interactive swiping mechanism. Let’s start step by step. PLEASE DO NOT DO ANYTHING BEFORE I ASK.
+> I want you to implement a collaborative movie selection app that helps groups decide what movie to watch together using an interactive swiping mechanism. 
+> 
+> Let’s start step-by-step. Please do not do anything before I ask. 
+
 
 ### > Prompt 0.1: Backend Structure
 
-> Create ONLY the Node.js TypeScript backend structure - folders and placeholder files. No implementation. I'll add features in separate prompts.  
->
-> @design_backend.mdc
-
+> Create ONLY the Node.js TypeScript backend structure - folders and placeholder files. Do not add implementation. I'll add features in separate prompts.  
+> 
+> @structure_backend.mdc 
 
 ### > Prompt 0.2: Frontend Structure
 
-> Create ONLY the Android application frontend structure - folders and placeholder files. No implementation. I'll add features in separate prompts.  
->
-> @design_frontend.mdc
+> Create ONLY the Android application frontend structure - folders and placeholder files. Do not add implementation. I'll add features in separate prompts.  
+> 
+> @structure_frontend.mdc
 
 ---
 
 ### > Prompt 1.0: Use Case X Base Prompt
 
-> I want you to implement a collaborative movie selection app that helps groups decide what movie to watch together using an interactive swiping mechanism. I want to implement the ‘[USE CASE]’ use case. 
-> 
-> [FORMAL USE CASE DESCRIPTION] 
-> 
-> Let’s start step by step. PLEASE DO NOT DO ANYTHING BEFORE I ASK.
+> The formal use case specification for all project features are in `./formal_use_case_specifications/`.  
+> * [If this is the first use case] So far, you have not implemented any use case yet.  
+> * [If this is not the first use case] So far, you have already implemented use cases A,B,C.  
+>
+> You will now implement use case X. 
+> The formal use case specification of the use case can be found in:
+@./formal_use_case_specifications/ucx_<use_case_name>.md
+>
+> Let’s start step by step. Please do not do anything before I ask.
 
 
 ### > Prompt 1.1.0: Backend Base Prompt
 
-> I want to implement the **backend** of the [USE CASE] use case. You must ensure that the packages you use in the code are added as dependencies. PLEASE DO NOT DO ANYTHING BEFORE I ASK.
+> I want to implement the **backend** of the use case. You must ensure that the packages you use in the code are added as dependencies.
+> Please do not do anything before I ask.
 
-### > Prompt 1.1.1: Backend Model for Domain X
+### > Prompt 1.1.1: Backend Model
 
-> Create/update the necessary models for the [DOMAIN] domain of [USE CASE]. 
-The details of backend domains and the design is described in @design_backend.mdc.
-You can create/update cross-cutting concerns whenever necessary.
-PLEASE ONLY DO WHAT I ASKED AND NOTHING ELSE.
+> The details of backend design are described in @design_backend.mdc.
+> Create/update the necessary models for the use case.
+> You can create/update cross-cutting concerns whenever necessary.
+> Please only do what I asked and nothing else.
 
-### > Prompt 1.1.2: Backend Repositories for Domain X
+### > Prompt 1.1.2: Backend Repository
 
-> Create/update the necessary repositories for the [DOMAIN] domain of [USE CASE] use case.
-The details of backend domains and design is described in @design_backend.mdc.
-You can create/update cross-cutting concerns whenever necessary.
-PLEASE ONLY DO WHAT I ASKED AND NOTHING ELSE.
+> The details of backend design are described in @design_backend.mdc.
+> Create/update the necessary repositories for the use case.
+> You can create/update cross-cutting concerns whenever necessary.
+> Please only do what I asked and nothing else.
 
-### > Prompt 1.1.3: Backend Services for Domain X
+### > Prompt 1.1.3: Backend Service
 
-> Create/update the necessary services for the [DOMAIN] domain of [USE CASE] use case.
-The details of backend domains and design is described in @design_backend.mdc.
-You can create/update cross-cutting concerns whenever necessary.
-PLEASE ONLY DO WHAT I ASKED AND NOTHING ELSE.
-
-### > Prompt 1.1.4: Backend Controllers for Domain X
-
-> Create/update the necessary controllers for the [DOMAIN] domain of [USE CASE] use case.
-The details of backend domains and design is described in @design_backend.mdc.
-You can create/update cross-cutting concerns whenever necessary.
-PLEASE ONLY DO WHAT I ASKED AND NOTHING ELSE.
+> The details of backend design are described in @design_backend.mdc.
+> Create/update the necessary services for the use case.
+> You can create/update cross-cutting concerns whenever necessary.
+> Please only do what I asked and nothing else.
 
 
-### > Prompt 1.1.5: Backend Routes for Domain X
+### > Prompt 1.1.4: Backend Controller
 
-> Create/update the necessary routes for the [DOMAIN] domain of [USE CASE] use case.
-The details of backend domains and design is described in @design_backend.mdc.
-You can create/update cross-cutting concerns whenever necessary.
-Reiterate, and connect all layers: routes, controllers, services, repositories, and models. Ensure that all backend endpoints are fully-functional.
-PLEASE ONLY DO WHAT I ASKED AND NOTHING ELSE.
+> The details of backend design are described in @design_backend.mdc.
+> Create/update the necessary controllers for the use case.
+> You can create/update cross-cutting concerns whenever necessary.
+> Please only do what I asked and nothing else.
 
-### > Repeat Prompts 1.1.1 - 1.1.5 for Each Domain Relevant To This Use Case
+### > Prompt 1.1.5: Backend Route
 
-
-### > Prompt 1.2.0: Frontend Base Prompt
-
-> Now, I want to implement the **frontend** of the [USE CASE] use case.
-The backend of the [USE CASE] has been implemented. 
-You must ensure that the packages you use in the code are added as dependencies.
-PLEASE DO NOT DO ANYTHING BEFORE I ASK.
-
-### > Prompt 1.2.1: Frontend UI Elements for Domain X
-
-> Create/update the necessary UI Elements for the [DOMAIN] domain of [USE CASE] use case. 
-The details of frontend domains and design are described in @design_frontend.mdc.
-You can create/update UI-layer or application-level cross-cutting concerns whenever necessary. PLEASE ONLY DO WHAT I ASKED AND NOTHING ELSE.
+> The details of backend design are described in @design_backend.mdc.
+> Create/update the necessary routes for the use case.
+> You can create/update cross-cutting concerns whenever necessary.
+> Reiterate, and connect all layers: routes, controllers, services, repositories, and models. Ensure that all backend endpoints are fully-functional.
+> Please only do what I asked and nothing else.
 
 
-### > Prompt 1.2.2: Frontend State Holders for Domain X
+### > Prompt 1.1.6: Backend Tests
 
-Create/update the necessary state holders for the [DOMAIN] domain of [USE CASE] use case.
-The details of frontend domains and design are described in @design_frontend.mdc.
-You can create/update UI-layer or application-level cross-cutting concerns whenever necessary.
-PLEASE ONLY DO WHAT I ASKED AND NOTHING ELSE.
+> Please generate tests for the **backend** of the app. Backend testing should focus on backend APIs. Run all tests and make sure the implementation passes all the tests for the API. Update the implementation and the interface file `backend/docs/<COMPONENT_NAME>.yml`, if needed.
+> 
+> Please only do what I asked and nothing else.
 
 
-### > Prompt 1.2.3: Frontend Repositories for Domain X
 
-> Create/update the necessary repositories for the [DOMAIN] domain of [USE CASE] use case.
-The details of frontend domains and design are described in @design_frontend.mdc.
-You can create/update UI-layer or application-level cross-cutting concerns whenever necessary.
-PLEASE ONLY DO WHAT I ASKED AND NOTHING ELSE.
+### > Prompt 1.2.1: E2E Tests
 
-### > Prompt 1.2.4: Frontend Data Sources for Domain X
+> The backend part needed for the use case has already been implemented. The backend API specifications for each backend component can be found in files named `backend/docs/`<COMPONENT_NAME>.yml`. 
+> Please generate end-to-end user-level tests (in Android) for the use case based on the formal use case specifications.
+> 
+> Please only do what I asked and nothing else. 
 
-> Create/update the necessary data sources for the [DOMAIN] domain of [USE CASE] use case.
-The details of frontend domains and design are described in @design_frontend.mdc.
-You can create/update UI-layer or application-level cross-cutting concerns whenever necessary.
-Reiterate, and connect all layers: UI elements, state holders, repositories, and data stores. Ensure that the frontend is well integrated with the backend and the [USE CASE] use case is fully-functional.
-PLEASE ONLY DO WHAT I ASKED AND NOTHING ELSE.
 
-### > Repeat Prompts 1.2.1 - 1.2.4 for Each Domain Relevant To This Use Case
+### > Prompt 1.2.2: Frontend Base Prompt
+
+> The backend part needed for the use case has already been implemented. 
+> Now, I want to implement the **frontend** of the use case.
+> You must ensure that the packages you use in the code are added as dependencies.
+> Please do not do anything before I ask.
+
+
+### > Prompt 1.2.3: Frontend UI Element
+
+> The details of frontend design are described in @design_frontend.mdc.
+> Create/update the necessary UI Elements for the use case. 
+> You can create/update UI-layer or application-level cross-cutting concerns whenever necessary. 
+> 
+> Please only do what I asked and nothing else.
+
+
+### > Prompt 1.2.4: Frontend State Holder
+
+> The details of frontend design are described in @design_frontend.mdc.
+> Create/update the necessary State Holders for the use case. 
+> You can create/update UI-layer or application-level cross-cutting concerns whenever necessary. 
+> 
+> Please only do what I asked and nothing else.
+
+
+### > Prompt 1.2.5: Frontend Repository
+
+> The details of frontend design are described in @design_frontend.mdc.
+> Create/update the necessary Repositories for the use case. 
+> You can create/update UI-layer or application-level cross-cutting concerns whenever necessary. 
+> 
+> Please only do what I asked and nothing else.
+
+
+### > Prompt 1.2.6: Frontend Data Source
+
+
+> The details of frontend design are described in @design_frontend.mdc.
+> Create/update the necessary Data Sources for the use case. 
+> You can create/update UI-layer or application-level cross-cutting concerns whenever necessary. 
+> Reiterate, and connect all layers: UI elements, state holders, repositories, and data sources. Ensure that the frontend is well integrated with the backend and the use case is fully-functional.
+> 
+> Please only do what I asked and nothing else.
 
 ---
 
-### > Repeat Prompt 1.0 till Prompt 1.2.4 for all use cases
+### > Repeat Prompt 1.0 till Prompt 1.2.6 for all use cases

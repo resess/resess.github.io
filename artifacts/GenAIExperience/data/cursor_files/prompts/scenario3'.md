@@ -1,4 +1,4 @@
-# Scenario 3 
+# Scenario 3' 
 
 ## Setup
 
@@ -22,7 +22,7 @@
 
 ---
 
-## Prompts (by-feature)
+## Prompts (by-use-case)
 
 ### > Prompt 0: Base Prompt
 
@@ -45,27 +45,22 @@
 
 ---
 
-### > Prompt 1.0: Feature X Base Prompt 
+### > Prompt 1.0: Use Case X Base Prompt 
 
 > The formal use case specification for all project features are in `./formal_use_case_specifications/`.  
-> * [If this is the first feature] So far, you have not implemented any feature yet.  
-> * [If this is not the first feature] So far, you have already implemented features A,B,C.  
+> * [If this is the first use case] So far, you have not implemented any use case yet.  
+> * [If this is not the first use case] So far, you have already implemented use cases A,B,C.  
 >
-> You will now implement feature X. 
-> The feature consists of the following use cases (UC):
-> * UCX:
-> * UCY:
-> * ...
-> The formal use case specification of the feature can be found in:
-> * `./formal_use_case_specifications/ucx_<use_case_name>.md`
-> * `./formal_use_case_specifications/ucx_<use_case_name>.md`
-> * ...
+> You will now implement use case X. 
+> The formal use case specification of the use case can be found in:
+@./formal_use_case_specifications/ucx_<use_case_name>.md
+>
 > Let’s start step by step. Please do not do anything before I ask.
 
 
 ### > Prompt 1.1.1: Backend Implementation
 
-> Please implement the **backend** part needed for the feature.
+> Please implement the **backend** part needed for the use case.
 > 
 > Please organize the generated code into coherent components, adding components or augmenting existing components, as necessary.  
 >
@@ -83,18 +78,18 @@
 
 ### > Prompt 1.2.1: E2E Tests
 
-> The backend part needed for the feature has already been implemented. The backend API specifications for each backend component can be found in files named `backend/docs/`<COMPONENT_NAME>.yml`. 
-> Please generate end-to-end user-level tests (in Android) for the feature based on the formal use case specifications.
+> The backend part needed for the use case has already been implemented. The backend API specifications for each backend component can be found in files named `backend/docs/`<COMPONENT_NAME>.yml`. 
+> Please generate end-to-end user-level tests (in Android) for the use case based on the formal use case specifications.
 > 
 > Please only do what I asked and nothing else. 
 
 
 ### > Prompt 1.2.2: Frontend Implementation
 
-> The backend part needed for the feature has already been implemented. The backend API specifications can be found in the file named `backend/docs/api.yml`. Please implement the **frontend** part of the feature based on the formal use case specifications. Please deploy the **frontend** app, connect it with the backend, and make sure that the implementation is functional. Please run all the tests and make sure the implementation passes all the tests you generated for the feature. 
+> The backend part needed for the use case has already been implemented. The backend API specifications can be found in the file named `backend/docs/api.yml`. Please implement the **frontend** part of the use case based on the formal use case specifications. Please deploy the **frontend** app, connect it with the backend, and make sure that the implementation is functional. Please run all the tests and make sure the implementation passes all the tests you generated for the use case. 
 > 
 > Please only do what I asked and nothing else. 
 
 ---
 
-### > Repeat Prompts 1.0 till Prompt 1.2.2 for all features
+### > Repeat Prompts 1.0 till Prompt 1.2.2 for all use cases
