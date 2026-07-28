@@ -9,59 +9,59 @@ const navigationConfig = {
             path: "index.html"
         },
         { 
-            title: "0. Course Project Description", 
-            href: "docs/0.course_project_description.html",
-            path: "docs/0.course_project_description.html"
+            title: "Course Project Description", 
+            href: "docs/course_project_description.html",
+            path: "docs/course_project_description.html"
         },
         { 
-            title: "1. AI Reflection Questions", 
-            href: "docs/1.ai_reflection_questions.html",
-            path: "docs/1.ai_reflection_questions.html"
+            title: "AI Reflection Questions", 
+            href: "docs/ai_reflection_questions.html",
+            path: "docs/ai_reflection_questions.html"
         },
         { 
-            title: "2. RQ1: Aggregated Student Data and Statistical Test Results", 
-            href: "docs/2.rq1_aggregated_student_data_and_statistical_test_results.html",
-            path: "docs/2.rq1_aggregated_student_data_and_statistical_test_results.html"
+            title: "RQ1: Aggregated Student Data and Statistical Test Results", 
+            href: "docs/rq1_aggregated_student_data_and_statistical_test_results.html",
+            path: "docs/rq1_aggregated_student_data_and_statistical_test_results.html"
         },
         { 
-            title: "3. RQ1: Coding Results", 
-            href: "docs/3.rq1_coding_results.html",
-            path: "docs/3.rq1_coding_results.html"
+            title: "RQ1: Coding Results", 
+            href: "docs/rq1_coding_results.html",
+            path: "docs/rq1_coding_results.html"
         },
         { 
-            title: "4. RQ2: MovieSwipe Formal Use Specifications", 
-            href: "docs/4.rq2_movieswipe_description.html",
-            path: "docs/4.rq2_movieswipe_description.html"
+            title: "RQ2: MovieSwipe Formal Use Specifications", 
+            href: "docs/rq2_movieswipe_description.html",
+            path: "docs/rq2_movieswipe_description.html"
         },
         { 
-            title: "5. RQ2: MovieSwipe Project Structure", 
-            href: "docs/5.rq2_movieswipe_project_structure.html",
-            path: "docs/5.rq2_movieswipe_project_structure.html"
+            title: "RQ2: MovieSwipe Project Structure", 
+            href: "docs/rq2_movieswipe_project_structure.html",
+            path: "docs/rq2_movieswipe_project_structure.html"
         },
         { 
-            title: "6. RQ2: MovieSwipe Design Diagrams", 
-            href: "docs/6.rq2_movieswipe_design.html",
-            path: "docs/6.rq2_movieswipe_design.html"
+            title: "RQ2: MovieSwipe Design Diagrams", 
+            href: "docs/rq2_movieswipe_design.html",
+            path: "docs/rq2_movieswipe_design.html"
         },
         { 
-            title: "7. RQ2: Project Requirement, Code Quality, and Testing Guidelines", 
-            href: "docs/7.rq2_project_requirement_code_quality_and_testing_guidelines.html",
-            path: "docs/7.rq2_project_requirement_code_quality_and_testing_guidelines.html"
+            title: "RQ2: Project Requirement, Code Quality, and Testing Guidelines", 
+            href: "docs/rq2_project_requirement_code_quality_and_testing_guidelines.html",
+            path: "docs/rq2_project_requirement_code_quality_and_testing_guidelines.html"
         },
         { 
-            title: "8. RQ2: Scenario Setup and Prompts", 
-            href: "docs/8.rq2_scenario_setup_and_prompts.html",
-            path: "docs/8.rq2_scenario_setup_and_prompts.html"
+            title: "RQ2: Scenario Setup and Prompts", 
+            href: "docs/rq2_scenario_setup_and_prompts.html",
+            path: "docs/rq2_scenario_setup_and_prompts.html"
         },
         { 
-            title: "9. RQ2: MovieSwipe Implementation and Demonstration", 
-            href: "docs/9.rq2_movieswipe_implementation_and_demo.html",
-            path: "docs/9.rq2_movieswipe_implementation_and_demo.html"
+            title: "RQ2: MovieSwipe Implementation and Demonstration", 
+            href: "docs/rq2_movieswipe_implementation_and_demo.html",
+            path: "docs/rq2_movieswipe_implementation_and_demo.html"
         },
         { 
-            title: "10. RQ2: Expert Developer Observational Notes and Inter-rater Reliability for Assessing Generated Artifacts", 
-            href: "docs/10.rq2_expert_developer_observational_notes_and_inter-rater_reliability_for_assessing_generated_artifacts.html",
-            path: "docs/10.rq2_expert_developer_observational_notes_and_inter-rater_reliability_for_assessing_generated_artifacts.html"
+            title: "RQ2: Expert Developer Observational Notes and Inter-rater Reliability for Assessing Generated Artifacts", 
+            href: "docs/rq2_expert_developer_observational_notes_and_inter-rater_reliability_for_assessing_generated_artifacts.html",
+            path: "docs/rq2_expert_developer_observational_notes_and_inter-rater_reliability_for_assessing_generated_artifacts.html"
         }
     ]
 };
