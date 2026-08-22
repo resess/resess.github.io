@@ -10,6 +10,26 @@ h4 {
     }
 }
 
+/* Navigation groups (RQ1, RQ2, ...) - static, always-open section headers */
+.nav-group-header {
+    margin-top: 0.5rem;
+    color: #808080;
+    font-size: 12px !important;
+    font-weight: 420;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    cursor: default;
+}
+
+/* Make nested child links match the purple of top-level links */
+.navigation-list-child-list .navigation-list-link {
+    color: #7253ed;
+}
+
+.navigation-list-child-list .navigation-list-link.active {
+    color: #27262b;
+}
+
 /* Markdown-style blockquotes */
 blockquote {
     border-left: 4px solid #d1d9e0;

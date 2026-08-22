@@ -1,20 +1,24 @@
 // Navigation configuration for GenAI Experience pages
 // Update this file to modify navigation across all pages
 
+// Items can either be a leaf (with a `path`) or a group (with `children`).
 const navigationConfig = {
     items: [
         { 
             title: "Home", 
-            href: "index.html",
             path: "index.html"
         },
         { 
             title: "Course Project Description", 
+<<<<<<< HEAD
             href: "docs/course_project_description.html",
+=======
+>>>>>>> dc6311e95e402706ed1f628c54bbb2ec70eb33aa
             path: "docs/course_project_description.html"
         },
         { 
             title: "AI Reflection Questions", 
+<<<<<<< HEAD
             href: "docs/ai_reflection_questions.html",
             path: "docs/ai_reflection_questions.html"
         },
@@ -62,6 +66,55 @@ const navigationConfig = {
             title: "RQ2: Expert Developer Observational Notes and Inter-rater Reliability for Assessing Generated Artifacts", 
             href: "docs/rq2_expert_developer_observational_notes_and_inter-rater_reliability_for_assessing_generated_artifacts.html",
             path: "docs/rq2_expert_developer_observational_notes_and_inter-rater_reliability_for_assessing_generated_artifacts.html"
+=======
+            path: "docs/ai_reflection_questions.html"
+        },
+        { 
+            title: "RQ1",
+            children: [
+                {
+                    title: "Aggregated Student Data and Statistical Test Results",
+                    path: "docs/rq1_aggregated_student_data_and_statistical_test_results.html"
+                },
+                { 
+                    title: "Coding Results", 
+                    path: "docs/rq1_coding_results.html"
+                }
+            ]
+        },
+        { 
+            title: "RQ2",
+            children: [
+                {
+                    title: "MovieSwipe Formal Use Specifications",
+                    path: "docs/rq2_movieswipe_description.html"
+                },
+                { 
+                    title: "MovieSwipe Project Structure", 
+                    path: "docs/rq2_movieswipe_project_structure.html"
+                },
+                { 
+                    title: "MovieSwipe Design Diagrams", 
+                    path: "docs/rq2_movieswipe_design.html"
+                },
+                { 
+                    title: "Project Requirement, Code Quality, and Testing Guidelines", 
+                    path: "docs/rq2_project_requirement_code_quality_and_testing_guidelines.html"
+                },
+                { 
+                    title: "Scenario Setup and Prompts", 
+                    path: "docs/rq2_scenario_setup_and_prompts.html"
+                },
+                { 
+                    title: "MovieSwipe Implementation and Demonstration", 
+                    path: "docs/rq2_movieswipe_implementation_and_demo.html"
+                },
+                { 
+                    title: "Expert Developer Observational Notes and Inter-rater Reliability for Assessing Generated Artifacts",
+                    path: "docs/rq2_expert_developer_observational_notes_and_inter-rater_reliability_for_assessing_generated_artifacts.html"
+                }
+            ]
+>>>>>>> dc6311e95e402706ed1f628c54bbb2ec70eb33aa
         }
     ]
 };
@@ -121,6 +174,73 @@ function getNavigationHref(item, currentPath) {
 }
 
 /**
+ * Normalize a site-relative path for comparison
+ */
+function normalizePath(path) {
+    return (path || '').replace(/^\/+|\/+$/g, '');
+}
+
+/**
+ * Determine whether a leaf item corresponds to the current page
+ */
+function isItemActive(item, currentPath) {
+    if (!item.path) {
+        return false;
+    }
+    const normalizedCurrentPath = normalizePath(currentPath) || 'index.html';
+    const normalizedItemPath = normalizePath(item.path);
+    return normalizedItemPath === normalizedCurrentPath ||
+        (normalizedCurrentPath === '' && normalizedItemPath === 'index.html');
+}
+
+/**
+ * Build a leaf <li> containing a link to a page
+ */
+function createLeafItem(item, currentPath) {
+    const li = document.createElement('li');
+    li.className = 'navigation-list-item';
+
+    const a = document.createElement('a');
+    a.href = getNavigationHref(item, currentPath);
+    a.className = 'navigation-list-link';
+    a.textContent = item.title;
+
+    if (isItemActive(item, currentPath)) {
+        li.classList.add('active');
+        a.classList.add('active');
+    }
+
+    li.appendChild(a);
+    return li;
+}
+
+/**
+ * Build a group <li> with a static (non-clickable) header and its child links,
+ * always shown expanded.
+ */
+function createGroupItem(item, currentPath) {
+    // 'active' keeps the child list visible (see .navigation-list-item.active
+    // .navigation-list-child-list in the theme CSS).
+    const li = document.createElement('li');
+    li.className = 'navigation-list-item nav-group active';
+
+    const header = document.createElement('span');
+    header.className = 'navigation-list-link nav-group-header';
+    header.textContent = item.title;
+
+    const childList = document.createElement('ul');
+    childList.className = 'navigation-list-child-list';
+
+    item.children.forEach(child => {
+        childList.appendChild(createLeafItem(child, currentPath));
+    });
+
+    li.appendChild(header);
+    li.appendChild(childList);
+    return li;
+}
+
+/**
  * Render the navigation menu
  */
 function renderNavigation() {
@@ -143,27 +263,9 @@ function renderNavigation() {
     
     // Create list items
     navigationConfig.items.forEach(item => {
-        const li = document.createElement('li');
-        li.className = 'navigation-list-item';
-        
-        const a = document.createElement('a');
-        const href = getNavigationHref(item, currentPath);
-        a.href = href;
-        a.className = 'navigation-list-link';
-        a.textContent = item.title;
-        
-        // Check if this is the active item
-        const normalizedCurrentPath = currentPath.replace(/^\/+|\/+$/g, '') || 'index.html';
-        const normalizedItemPath = item.path.replace(/^\/+|\/+$/g, '');
-        
-        if (normalizedItemPath === normalizedCurrentPath || 
-            (normalizedCurrentPath === '' && normalizedItemPath === 'index.html') ||
-            (normalizedCurrentPath === 'index.html' && normalizedItemPath === 'index.html')) {
-            li.classList.add('active');
-            a.classList.add('active');
-        }
-        
-        li.appendChild(a);
+        const li = Array.isArray(item.children)
+            ? createGroupItem(item, currentPath)
+            : createLeafItem(item, currentPath);
         ul.appendChild(li);
     });
     
