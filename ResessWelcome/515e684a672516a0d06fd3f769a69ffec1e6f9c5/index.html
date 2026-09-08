@@ -316,30 +316,84 @@
 		    Follow the instructions <a href="https://eng-services.ece.ubc.ca/instructions-to-setup-printer-queue-for-ricoh-printers/?login">here</a>.
 	    </div> 
 
-            <button class="collapsible">Access to group servers (zeus, thanos, etc.)</button>
+            <button class="collapsible">Access to group servers (zeus, athena, thanos, apollo)</button>
             <div class="content">
                 <ul>
 		    <li>If agreed with Prof. Rubin that you need access to one of the servers, 
 			you will need to create an @ece.ubc.ca account following the instructions above. </li>
-                    <li>To access Zeus, ssh [your ece account]@zeus.ece.ubc.ca</li>
-                    <li>If you want to login remotely,
+                    <li>You then need to send another email to <a href="mailto:it@ece.ubc.ca">it@ece.ubc.ca</a> titled
+                        "To request access to ReSeSS lab servers" and specify your full name, student number,
+                        name of supervisor (Prof. Julia Rubin), ece username, and your role in the lab (MASC student, Undergraduate researcher, etc.).</li>
+                    <li>Available servers:
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-sm bg-white">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>Server</th>
+                                        <th>CPU</th>
+                                        <th>Memory</th>
+                                        <th>Storage (/data)</th>
+                                        <th>GPU</th>
+                                        <th>Good for</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>zeus</td>
+                                        <td>Intel Xeon E5-2630 v4<br>10 cores / 20 threads</td>
+                                        <td>503 GB DDR4</td>
+                                        <td>5.3 TB HDD</td>
+                                        <td>None</td>
+                                        <td>Memory-heavy jobs, e.g., static analysis; Android emulators</td>
+                                    </tr>
+                                    <tr>
+                                        <td>athena</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>thanos</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>apollo</td>
+                                        <td>2x Intel Xeon Silver 4410Y<br>24 cores / 48 threads</td>
+                                        <td>251 GB DDR5</td>
+                                        <td>40 TB NVMe</td>
+                                        <td>2x NVIDIA A100 80 GB</td>
+                                        <td>GPU-heavy jobs, e.g., LLM experiments, CNN training</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li>To access a server, run <code class="cmd">ssh [your ece account]@[server].ece.ubc.ca</code>, replacing <code class="cmd">[server]</code> with the server you need,
+                        e.g., <code class="cmd">ssh [your ece account]@zeus.ece.ubc.ca</code>.
+                        You must be on the UBC network: ubcprivate on campus, or the UBC VPN off campus.
+                        ubcsecure and other Wi-Fi networks will not work.</li>
+                    <li>If you want to login remotely without using UBC VPN,
                         <ul>
-                            <li> login to ece server – ssh
-                                [your ece mail account]@ece.ubc.ca</li>
-                            <li>login to zeus machine - ssh
-                                [your ece mail account]@zeus.ece.ubc.ca </li>
+                            <li> login to ece server – <code class="cmd">ssh [your ece account]@ece.ubc.ca</code></li>
+                            <li>login to the server – <code class="cmd">ssh [your ece account]@[server].ece.ubc.ca</code></li>
                         </ul>
                     </li>
 
-                    <li>Imparant: how to use the servers:
+                    <li>Important: how to use the servers:
                         <ul>
 			    <li>Servers are shared by multiple group members. Be careful in your use, not to overwrite anyone's work </li>
-                            <li>Create a home directory with your username under zeus:/data. </li>
+                            <li>Create a home directory with your username under /data. </li>
                             <li> Put all your files and install any software in that folder. </li>
                             <li>Put everything that you want to share with the group, including software installations in
                                 /data/common,
                                 e.g., under /data/common/software/XXX. </li>
-                            <li>Do not place any files under /home, it will block access to the servers for everyone!!!</li>                                
+                            <li>[Critical] Do not place any files under /home, it will block access to the servers for everyone!!!</li>                                
                         </ul>
                     </li>
 

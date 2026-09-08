@@ -5,3 +5,13 @@ code {
     font-size: 1rem;
   }
   
+
+/* shell commands: monospace with a light background */
+code.cmd {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.9rem;
+    color: #212529;
+    background-color: #e9ecef;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
