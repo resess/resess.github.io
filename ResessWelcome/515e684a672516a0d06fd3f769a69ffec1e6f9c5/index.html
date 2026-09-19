@@ -332,7 +332,8 @@
                                         <th>Server</th>
                                         <th>CPU</th>
                                         <th>Memory</th>
-                                        <th>Storage (/data)</th>
+                                        <th>Disks</th>
+                                        <th>/data storage</th>
                                         <th>GPU</th>
                                         <th>Good for</th>
                                     </tr>
@@ -341,32 +342,36 @@
                                     <tr>
                                         <td>zeus</td>
                                         <td>Intel Xeon E5-2630 v4<br>10 cores / 20 threads</td>
-                                        <td>503 GB DDR4</td>
-                                        <td>5.3 TB HDD</td>
+                                        <td>512 GB DDR4 ECC<br>8x 64 GB</td>
+                                        <td>2x 6 TB HDD<br>RAID 1</td>
+                                        <td>5.3 TB</td>
                                         <td>None</td>
                                         <td>Memory-heavy jobs, e.g., static analysis; Android emulators</td>
                                     </tr>
                                     <tr>
-                                        <td>athena</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
+                                        <td>thanos</td>
+                                        <td>2x Intel Xeon E5-2697 v4</td>
+                                        <td>512 GB DDR4-2666 ECC</td>
+                                        <td>2x 5 TB SATA HDD<br>RAID 5</td>
+                                        <td>7 TB</td>
+                                        <td>None</td>
+                                        <td>CPU-heavy jobs, e.g., parallel batch experiments</td>
                                     </tr>
                                     <tr>
-                                        <td>thanos</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
+                                        <td>athena</td>
+                                        <td>2x Intel Xeon Silver 4216<br>32 cores / 64 threads</td>
+                                        <td>1 TB DDR4 ECC<br>16x 64 GB</td>
+                                        <td>3.82 TB SATA HDD</td>
+                                        <td>2.5 TB</td>
+                                        <td>None</td>
+                                        <td>Memory-heavy jobs, e.g., large in-memory datasets</td>
                                     </tr>
                                     <tr>
                                         <td>apollo</td>
                                         <td>2x Intel Xeon Silver 4410Y<br>24 cores / 48 threads</td>
-                                        <td>251 GB DDR5</td>
-                                        <td>40 TB NVMe</td>
+                                        <td>256 GB DDR5 ECC<br>8x 32 GB</td>
+                                        <td>8x 7.63 TB NVMe SSD<br>RAID 6</td>
+                                        <td>39.4 TB</td>
                                         <td>2x NVIDIA A100 80 GB</td>
                                         <td>GPU-heavy jobs, e.g., LLM experiments, CNN training</td>
                                     </tr>
